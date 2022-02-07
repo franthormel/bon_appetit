@@ -91,6 +91,26 @@ flutter:
   #       - asset: fonts/TrajanPro.ttf
   #       - asset: fonts/TrajanPro_Bold.ttf
   #         weight: 700
-  #
+  fonts:
+    - family: Radley
+      fonts:
+        - asset: fonts/Radley/Radley-Regular.ttf
+        - asset: fonts/Radley/Radley-Italic.ttf
+          style: italic
+    - family: Futura PT
+      fonts:
+        - asset: fonts/Futura/FuturaPT-Light.otf
+          weight: 300
+        - asset: fonts/Futura/FuturaPT-Regular.otf
+          weight: 400
+          style: normal
+        - asset: fonts/Futura/FuturaPT-Medium.otf
+          weight: 500
+        - asset: fonts/Futura/FuturaPT-SemiBold.otf
+          weight: 600
+        - asset: fonts/Futura/FuturaPT-Bold.otf
+          weight: 700
+        - asset: fonts/Futura/FuturaPT-ExtraBold.otf
+          weight: 800
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
