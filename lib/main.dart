@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
-import 'home.dart';
+import 'screens/home.dart';
+
+import 'theme.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,10 +13,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       title: 'Bon Appetit',
-      home: HomePage(),
+      theme: theme,
+      home: const HomePage(),
     );
   }
 }
-
