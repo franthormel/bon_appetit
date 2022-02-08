@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
+import '../widgets/index.dart';
+
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
 
@@ -25,14 +27,12 @@ class HomePage extends StatelessWidget {
         ),
       ),
       body: ListView(
-        padding: const EdgeInsets.all(8.0),
-        children: [
-          ClipRRect(
-            borderRadius: BorderRadius.circular(8.0),
-            child: Image.asset(
-              'assets/images/recipes/0419-breakfast-sandwich.jpg',
-            ),
-          ),
+        padding: const EdgeInsets.symmetric(
+          horizontal: 16.0,
+          vertical: 20.0,
+        ),
+        children: const [
+          TodayRecipesWidget(),
         ],
       ),
     );

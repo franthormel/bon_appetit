@@ -12,12 +12,24 @@ class BonAppetitColors {
   static const white = Colors.white;
 }
 
-ThemeData get theme {
-  final theme = ThemeData.light();
-
-  return theme.copyWith(
-    appBarTheme: theme.appBarTheme.copyWith(
-      backgroundColor: BonAppetitColors.black,
-    ),
-  );
+class BonAppetitTheme {
+  static ThemeData get theme {
+    return ThemeData(
+      brightness: Brightness.light,
+      fontFamily: 'Futura PT',
+      primaryColor: BonAppetitColors.black,
+      appBarTheme: const AppBarTheme(
+        backgroundColor: BonAppetitColors.black,
+      ),
+      chipTheme: const ChipThemeData(
+        backgroundColor: BonAppetitColors.sizzlingSunrise,
+      ),
+      textTheme: const TextTheme(
+        headline4: TextStyle(
+          color: BonAppetitColors.black,
+          fontWeight: FontWeight.w600,
+        ),
+      ),
+    );
+  }
 }
