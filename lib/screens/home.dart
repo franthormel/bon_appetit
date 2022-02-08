@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
+import '../../theme.dart';
 import '../widgets/index.dart';
 
 class HomePage extends StatelessWidget {
@@ -27,12 +28,20 @@ class HomePage extends StatelessWidget {
         ),
       ),
       body: ListView(
-        padding: const EdgeInsets.symmetric(
-          horizontal: 16.0,
-          vertical: 20.0,
-        ),
-        children: const [
-          TodayRecipesWidget(),
+        children: [
+          Container(
+            color: BonAppetitColors.floralWhite,
+            padding: const EdgeInsets.symmetric(
+              horizontal: 16.0,
+              vertical: 20.0,
+            ),
+            child: Column(
+              children: const [
+                TodayMainRecipesWidget(),
+                SizedBox(height: 16.0),
+              ],
+            ),
+          ),
         ],
       ),
     );

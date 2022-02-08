@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
 
-class TodayRecipesWidget extends StatelessWidget {
-  const TodayRecipesWidget({Key? key}) : super(key: key);
+import '../../services/mock_data.dart';
+
+class TodayMainRecipesWidget extends StatelessWidget {
+  const TodayMainRecipesWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    final todayRecipe = MockDataService.todayMainRecipe;
+
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -12,26 +16,22 @@ class TodayRecipesWidget extends StatelessWidget {
           children: [
             ClipRRect(
               borderRadius: BorderRadius.circular(24.0),
-              child: Image.asset(
-                'assets/images/recipes/one-pot-baked-pasta-with-sausage-and-broccoli-rabe.jpg',
-              ),
+              child: Image.asset(todayRecipe.imageUrl),
             ),
-            const Padding(
-              padding: EdgeInsets.only(left: 8.0),
-              child: Chip(
-                label: Text("Today's Recipe"),
-              ),
+            Padding(
+              padding: const EdgeInsets.only(left: 8.0),
+              child: Chip(label: Text(todayRecipe.tag!)),
             ),
           ],
         ),
         const SizedBox(height: 16.0),
         Text(
-          'Baked Pasta With Sausage and Broccoli Rabe',
+          todayRecipe.title,
           style: Theme.of(context).textTheme.headline4,
         ),
         const SizedBox(height: 16.0),
         Text(
-          'This weeknight-friendly pasta uses one skillet, one pot, and plenty of cheese.',
+          todayRecipe.description!,
           style: Theme.of(context).textTheme.bodyText1,
         ),
         const SizedBox(height: 16.0),
@@ -39,7 +39,7 @@ class TodayRecipesWidget extends StatelessWidget {
           children: [
             const Icon(Icons.star),
             Text(
-              '4.39 (55)',
+              todayRecipe.rating,
               style: Theme.of(context).textTheme.bodyText1,
             ),
           ],
