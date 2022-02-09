@@ -1,5 +1,10 @@
+import 'package:json_annotation/json_annotation.dart';
+
 import 'recipe.dart';
 
+part 'recipe_dataset.g.dart';
+
+@JsonSerializable()
 class RecipeDataset {
   /// Today's main recipe
   final Recipe mainRecipe;
@@ -19,4 +24,9 @@ class RecipeDataset {
     required this.suggestedRecipes,
     required this.trendingRecipes,
   });
+
+  factory RecipeDataset.fromJson(Map<String, dynamic> json) =>
+      _$RecipeDatasetFromJson(json);
+
+  Map<String, dynamic> toJson() => _$RecipeDatasetToJson(this);
 }

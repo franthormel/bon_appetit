@@ -36,7 +36,7 @@ class HomePage extends StatelessWidget {
               horizontal: 16.0,
               vertical: 20.0,
             ),
-            child: const MainRecipesWidget(),
+            child: MainRecipesWidget(),
           ),
         ],
       ),
