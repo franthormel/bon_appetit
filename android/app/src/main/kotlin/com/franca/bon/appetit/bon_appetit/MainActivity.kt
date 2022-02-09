@@ -1,4 +1,4 @@
-package com.franca.bon.appetit.bon_appetit
+package com.franca.demo.bon.appetit
 
 import io.flutter.embedding.android.FlutterActivity
 
