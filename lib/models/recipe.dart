@@ -1,20 +1,24 @@
 class Recipe {
+  /// Used for filtering recipes
+  final List<String> categories;
+  final String description;
   final String imageUrl;
   final String title;
 
-  final double ratingValue;
   final int ratingCount;
+  final double ratingValue;
 
+  /// Used as a [Chip] label
   final String? tag;
-  final String? description;
 
   Recipe({
+    required this.categories,
+    required this.description,
     required this.imageUrl,
     required this.title,
-    required this.ratingValue,
     required this.ratingCount,
+    required this.ratingValue,
     this.tag,
-    this.description,
   });
 
   String get rating => "$ratingValue ($ratingCount)";

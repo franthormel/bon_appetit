@@ -28,7 +28,7 @@ class TodayMainRecipesWidget extends StatelessWidget {
         ),
         const SizedBox(height: 16.0),
         Text(
-          recipe.description!,
+          recipe.description,
           style: Theme.of(context).textTheme.bodyText1,
         ),
         const SizedBox(height: 16.0),
