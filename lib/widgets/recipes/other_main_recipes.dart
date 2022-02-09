@@ -26,6 +26,7 @@ class OtherMainRecipesWidget extends StatelessWidget {
         const SizedBox(width: 16.0),
         Expanded(
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
                 recipe.title,

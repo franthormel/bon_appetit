@@ -22,15 +22,17 @@ class _MainRecipesWidgetState extends State<MainRecipesWidget> {
   }
 
   Future<void> loadRecipeDataset() async {
-    setState(() async {
-      recipeDataset = await MockDataService.recipeDataset;
+    final result = await MockDataService.recipeDataset;
+
+    setState(() {
+      recipeDataset = result;
     });
   }
 
   @override
   Widget build(BuildContext context) {
     return (recipeDataset == null)
-        ? const Text('No data')
+        ? Container()
         : Column(
             children: [
               TodayMainRecipesWidget(recipe: recipeDataset!.mainRecipe),

@@ -13,6 +13,11 @@ class BonAppetitTheme {
         chipTheme: const ChipThemeData(
           backgroundColor: BonAppetitColors.sizzlingSunrise,
         ),
+        progressIndicatorTheme: const ProgressIndicatorThemeData(
+          circularTrackColor: BonAppetitColors.mediumChampagne,
+          color: BonAppetitColors.sizzlingSunrise,
+          refreshBackgroundColor: BonAppetitColors.dimGray,
+        ),
         textTheme: const TextTheme(
           headline4: TextStyle(
             color: BonAppetitColors.black,

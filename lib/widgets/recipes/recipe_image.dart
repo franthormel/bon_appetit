@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../cached_image_progress.dart';
+
 class RecipeImageWidget extends StatelessWidget {
   final String imageUrl;
   final String? tag;
@@ -16,11 +18,16 @@ class RecipeImageWidget extends StatelessWidget {
       children: [
         ClipRRect(
           borderRadius: BorderRadius.circular(24.0),
-          child: Image.asset(imageUrl),
+          child: CachedImageProgressWidget(
+            imageUrl: imageUrl,
+          ),
         ),
         if (tag != null)
           Padding(
-            padding: const EdgeInsets.only(left: 8.0),
+            padding: const EdgeInsets.only(
+              left: 8.0,
+              top: 8.0,
+            ),
             child: Chip(label: Text(tag!)),
           ),
       ],
