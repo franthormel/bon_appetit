@@ -24,6 +24,7 @@ class MockDataService {
           imageUrl:
               "assets/images/recipes/0320-Dutch-Oven-Squash-Squash-au-Vin.jpg",
           title: "Squash au Vin",
+          tag: "Vegetarian",
           ratingCount: 32,
           ratingValue: 3.92,
         ),
