@@ -19,11 +19,11 @@ Recipe _$RecipeFromJson(Map<String, dynamic> json) => Recipe(
     );
 
 Map<String, dynamic> _$RecipeToJson(Recipe instance) => <String, dynamic>{
-      'categories': instance.categories,
       'description': instance.description,
       'imageUrl': instance.imageUrl,
       'title': instance.title,
+      'categories': instance.categories,
+      'tag': instance.tag,
       'ratingCount': instance.ratingCount,
       'ratingValue': instance.ratingValue,
-      'tag': instance.tag,
     };

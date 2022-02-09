@@ -4,17 +4,18 @@ part 'recipe.g.dart';
 
 @JsonSerializable()
 class Recipe {
-  /// Used for filtering recipes
-  final List<String> categories;
   final String description;
   final String imageUrl;
   final String title;
 
-  final int ratingCount;
-  final double ratingValue;
+  /// Used for filtering recipes
+  final List<String> categories;
 
   /// Used as a [Chip] label
   final String? tag;
+
+  final int ratingCount;
+  final double ratingValue;
 
   Recipe({
     required this.categories,

@@ -1,8 +1,8 @@
 import 'package:bon_appetit/widgets/recipes/recipe_image.dart';
 import 'package:flutter/material.dart';
 
-import '../../models/recipe.dart';
-import 'recipe_rating.dart';
+import '../../../models/recipe.dart';
+import '../recipe_rating.dart';
 
 class OtherMainRecipesWidget extends StatelessWidget {
   final Recipe recipe;
