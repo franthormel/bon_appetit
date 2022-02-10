@@ -14,15 +14,19 @@ class RecipeDataset {
 
   /// List of recipes on 'What to cook today/tonight'
   final List<Recipe> suggestedRecipes;
+  final List<String> suggestedTags;
 
   /// List of recipes on 'Trending Now'
   final List<Recipe> trendingRecipes;
+  final List<String> trendingTags;
 
   RecipeDataset({
     required this.mainRecipe,
     required this.otherMainRecipes,
     required this.suggestedRecipes,
+    required this.suggestedTags,
     required this.trendingRecipes,
+    required this.trendingTags,
   });
 
   factory RecipeDataset.fromJson(Map<String, dynamic> json) =>

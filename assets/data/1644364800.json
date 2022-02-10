@@ -50,6 +50,7 @@
       "imageUrl": "https://assets.bonappetit.com/photos/5c7eb0780c62115eae0b91f8/3:4/w_1920%2Cc_limit/Breakfast-Blondies-recipe-16x9-01032019.jpg",
       "ratingCount": 65,
       "ratingValue": 4.35,
+      "tag": null,
       "title": "Breakfast Blondies"
     },
     {
@@ -91,9 +92,12 @@
       "imageUrl": "https://assets.bonappetit.com/photos/5c740fd1d37ef1103deff5c2/3:4/w_1920%2Cc_limit/peri-peri-meatballs-3.jpg",
       "ratingCount": 49,
       "ratingValue": 4.71,
+      "tag": null,
       "title": "Piri-Piri Meatballs"
     }
   ],
   "suggestedRecipes": [],
-  "trendingRecipes": []
+  "suggestedTags": ["Pasta", "Vegetarian", "Weeknight"],
+  "trendingRecipes": [],
+  "trendingTags": ["Dinner", "Dessert", "Drinks"]
 }
