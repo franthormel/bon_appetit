@@ -33,7 +33,7 @@ class OtherMainRecipesWidget extends StatelessWidget {
                 style: Theme.of(context).textTheme.headline6,
               ),
               const SizedBox(height: 12.0),
-              RecipeRatingWidget(rating: recipe.rating),
+              if (recipe.rating != null) RecipeRatingWidget(rating: recipe.rating!),
             ],
           ),
         ),

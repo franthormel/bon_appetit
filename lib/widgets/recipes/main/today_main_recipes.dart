@@ -32,7 +32,7 @@ class TodayMainRecipesWidget extends StatelessWidget {
           style: Theme.of(context).textTheme.bodyText1,
         ),
         const SizedBox(height: 16.0),
-        RecipeRatingWidget(rating: recipe.rating),
+        if (recipe.rating != null) RecipeRatingWidget(rating: recipe.rating!),
       ],
     );
   }

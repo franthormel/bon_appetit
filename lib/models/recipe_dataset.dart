@@ -20,6 +20,9 @@ class RecipeDataset {
   final List<Recipe> trendingRecipes;
   final List<String> trendingTags;
 
+  // TODO Add recipe details either add them as a
+  // separate object here or as properties
+
   RecipeDataset({
     required this.mainRecipe,
     required this.otherMainRecipes,

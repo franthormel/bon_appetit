@@ -23,8 +23,10 @@
     "description": "This weeknight-friendly pasta uses one skillet, one pot, and plenty of cheese.",
     "imageUrl": "https://assets.bonappetit.com/photos/5a31a6035468684549cf8def/3:4/w_1920%2Cc_limit/one-pot-baked-pasta-with-sausage-and-broccoli-rabe.jpg",
     "title": "Baked Pasta With Sausage and Broccoli Rabe",
-    "ratingCount": 55,
-    "ratingValue": 4.39,
+    "rating": {
+      "count": 55,
+      "value": 4.39
+    },
     "tag": "Today's Recipe"
   },
   "otherMainRecipes": [
@@ -48,8 +50,10 @@
       ],
       "description": "Forget breakfast bars or muffins: Our new favorite grab-and-go breakfast is a blondie. Think of them like a healthyish muffin in bar form. Made with almond butter and flaxseed meal, they’re grain-free and packed full of protein.",
       "imageUrl": "https://assets.bonappetit.com/photos/5c7eb0780c62115eae0b91f8/3:4/w_1920%2Cc_limit/Breakfast-Blondies-recipe-16x9-01032019.jpg",
-      "ratingCount": 65,
-      "ratingValue": 4.35,
+      "rating": {
+        "count": 65,
+        "value": 4.35
+      },
       "tag": null,
       "title": "Breakfast Blondies"
     },
@@ -69,8 +73,10 @@
       ],
       "description": "What would happen if you gave winter squash the coq au vin treatment? Layers of flavor from browned mushrooms, wine, and miso that give the classic a run for its money.",
       "imageUrl": "https://assets.bonappetit.com/photos/5e399f26dbed3c00080d0e58/3:4/w_1920%2Cc_limit/0320-Dutch-Oven-Squash-Squash-au-Vin.jpg",
-      "ratingCount": 32,
-      "ratingValue": 3.92,
+      "rating": {
+        "count": 32,
+        "value": 3.92
+      },
       "tag": "Vegetarian",
       "title": "Squash au Vin"
     },
@@ -90,8 +96,10 @@
       ],
       "description": "Fresh piri-piri chiles can be difficult to find in the U.S., so for our take on a vibrant piri-piri sauce, we subbed in a fresh Fresno chile, which carries noticeable heat and a delicious fruity flavor. You can also double the sauce recipe and use it on anything from chicken to pasta the next day.",
       "imageUrl": "https://assets.bonappetit.com/photos/5c740fd1d37ef1103deff5c2/3:4/w_1920%2Cc_limit/peri-peri-meatballs-3.jpg",
-      "ratingCount": 49,
-      "ratingValue": 4.71,
+      "rating": {
+        "count": 49,
+        "value": 4.71
+      },
       "tag": null,
       "title": "Piri-Piri Meatballs"
     }

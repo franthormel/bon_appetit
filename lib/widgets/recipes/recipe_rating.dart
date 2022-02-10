@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
+import '../../models/recipe_rating.dart';
+
 class RecipeRatingWidget extends StatelessWidget {
-  final String rating;
+  final RecipeRating rating;
 
   const RecipeRatingWidget({
     required this.rating,
@@ -14,7 +16,7 @@ class RecipeRatingWidget extends StatelessWidget {
       children: [
         const Icon(Icons.star),
         Text(
-          rating,
+          rating.text,
           style: Theme.of(context).textTheme.bodyText1,
         ),
       ],

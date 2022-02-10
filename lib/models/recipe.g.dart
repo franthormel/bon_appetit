@@ -13,8 +13,9 @@ Recipe _$RecipeFromJson(Map<String, dynamic> json) => Recipe(
       description: json['description'] as String,
       imageUrl: json['imageUrl'] as String,
       title: json['title'] as String,
-      ratingCount: json['ratingCount'] as int,
-      ratingValue: (json['ratingValue'] as num).toDouble(),
+      rating: json['rating'] == null
+          ? null
+          : RecipeRating.fromJson(json['rating'] as Map<String, dynamic>),
       tag: json['tag'] as String?,
     );
 
@@ -24,6 +25,5 @@ Map<String, dynamic> _$RecipeToJson(Recipe instance) => <String, dynamic>{
       'title': instance.title,
       'categories': instance.categories,
       'tag': instance.tag,
-      'ratingCount': instance.ratingCount,
-      'ratingValue': instance.ratingValue,
+      'rating': instance.rating,
     };
