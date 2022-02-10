@@ -1,9 +1,10 @@
+import 'package:bon_appetit/models/index.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:provider/provider.dart';
 
-import '../widgets/index.dart';
 import '../services/mock_data.dart';
+import '../widgets/index.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -28,17 +29,17 @@ class HomePage extends StatelessWidget {
           height: 50.0,
         ),
       ),
-      body: FutureProvider(
-        lazy: false,
+      body: FutureProvider<RecipeDataset?>(
         create: (context) => MockDataService.fetchRecipeDataset(),
+        initialData: null,
+        lazy: false,
         child: ListView(
           primary: true,
-          children: const [
-            MainRecipesWidget(),
+          children: [
+            const MainRecipesWidget(),
             WhatToCookWidget(),
           ],
         ),
-        initialData: null,
       ),
     );
   }

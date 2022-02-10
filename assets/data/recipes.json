@@ -275,7 +275,15 @@
       "tag": "Easy"
     }
   ],
-  "suggestedTags": ["Pasta", "Vegetarian", "Weeknight"],
+  "suggestedTags": [
+    "Pasta",
+    "Vegetarian",
+    "Weeknight"
+  ],
   "trendingRecipes": [],
-  "trendingTags": ["Dinner", "Dessert", "Drinks"]
+  "trendingTags": [
+    "Dinner",
+    "Dessert",
+    "Drinks"
+  ]
 }
