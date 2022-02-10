@@ -1,13 +1,13 @@
 import 'package:bon_appetit/widgets/recipes/recipe_image.dart';
 import 'package:flutter/material.dart';
 
-import '../../../models/recipe.dart';
+import '../../../models/index.dart';
 import '../recipe_rating.dart';
 
-class OtherMainRecipesWidget extends StatelessWidget {
+class OtherMainRecipeWidget extends StatelessWidget {
   final Recipe recipe;
 
-  const OtherMainRecipesWidget({
+  const OtherMainRecipeWidget({
     required this.recipe,
     Key? key,
   }) : super(key: key);

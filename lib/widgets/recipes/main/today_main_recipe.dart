@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-import '../../../models/recipe.dart';
+import '../../../models/index.dart';
 import '../recipe_image.dart';
 import '../recipe_rating.dart';
 
-class TodayMainRecipesWidget extends StatelessWidget {
+class TodayMainRecipeWidget extends StatelessWidget {
   final Recipe recipe;
 
-  const TodayMainRecipesWidget({
+  const TodayMainRecipeWidget({
     required this.recipe,
     Key? key,
   }) : super(key: key);

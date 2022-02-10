@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../models/recipe_rating.dart';
+import '../../models/index.dart';
 
 class RecipeRatingWidget extends StatelessWidget {
   final RecipeRating rating;
