@@ -1,3 +1,4 @@
+import 'package:bon_appetit/style/colors.dart';
 import 'package:flutter/material.dart';
 
 class WhatToCookOptionWidget extends StatelessWidget {
@@ -18,6 +19,15 @@ class WhatToCookOptionWidget extends StatelessWidget {
       label: Text(label),
       selected: selected,
       onSelected: onSelected,
+      labelStyle: labelStyle(context),
     );
+  }
+
+  /// Returns [TextStyle] with its [color] properties set to
+  /// [BonAppetitColors.white] if [selected] property is set to [true]
+  TextStyle? labelStyle(BuildContext context) {
+    final style = Theme.of(context).chipTheme.labelStyle;
+
+    return selected ? style?.copyWith(color: BonAppetitColors.white) : style;
   }
 }

@@ -12,6 +12,8 @@ class BonAppetitTheme {
         backgroundColor: BonAppetitColors.black,
       ),
       chipTheme: const ChipThemeData(
+        backgroundColor: BonAppetitColors.platinum,
+        selectedColor: BonAppetitColors.black,
         labelStyle: TextStyle(
           color: BonAppetitColors.black,
           fontWeight: FontWeight.w500,
