@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 
 import '../../../models/index.dart';
 
-class SuggestedRecipeWidget extends StatelessWidget {
+class WhatToCookRecipeWidget extends StatelessWidget {
   final Recipe recipe;
 
-  const SuggestedRecipeWidget({
+  const WhatToCookRecipeWidget({
     required this.recipe,
     Key? key,
   }) : super(key: key);

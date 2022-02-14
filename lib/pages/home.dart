@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:provider/provider.dart';
 
+import '../services/app_state.dart';
 import '../services/mock_data.dart';
 import '../widgets/index.dart';
 
@@ -29,12 +30,20 @@ class HomePage extends StatelessWidget {
           height: 50.0,
         ),
       ),
-      body: FutureProvider<RecipeDataset?>(
-        create: (context) => MockDataService.fetchRecipeDataset(),
-        initialData: null,
-        lazy: false,
+      body: MultiProvider(
+        providers: [
+          ChangeNotifierProvider<AppState>(
+            create: (context) => AppState(),
+            lazy: false,
+          ),
+          FutureProvider<RecipeDataset?>(
+            create: (context) => MockDataService.fetchRecipeDataset(),
+            initialData: null,
+            lazy: false,
+          ),
+        ],
         child: Consumer<RecipeDataset?>(
-          builder: (context, recipeDataset, child) => (recipeDataset == null)
+          builder: (context, dataset, child) => (dataset == null)
               ? Container()
               : ListView(
                   primary: true,
