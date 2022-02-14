@@ -4,6 +4,7 @@ import '../../designed_container.dart';
 import '../../header_subtext.dart';
 import '../../header_text.dart';
 import 'what_to_cook_options.dart';
+import 'what_to_cook_recipes.dart';
 
 // Suggested recipes.
 // Appears below main recipes
@@ -27,6 +28,7 @@ class _WhatToCookWidgetState extends State<WhatToCookWidget> {
           HeaderSubtext(text: 'Fast, fresh and foolproof'),
           Divider(color: Colors.transparent),
           WhatToCookOptionsWidget(),
+          WhatToCookRecipesWidget(),
         ],
       ),
     );

@@ -1,7 +1,7 @@
-import 'package:bon_appetit/models/index.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../../../models/index.dart';
 import '../../../style/colors.dart';
 import '../../designed_container.dart';
 import 'other_main_recipe.dart';
@@ -12,7 +12,7 @@ class MainRecipesWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final recipeDataset = context.watch<RecipeDataset>();
+    final recipeDataset = Provider.of<RecipeDataset>(context, listen: false);
 
     return DesignedContainerWidget(
       color: BonAppetitColors.floralWhite,

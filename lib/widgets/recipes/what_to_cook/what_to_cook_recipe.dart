@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 import '../../../models/index.dart';
+import '../recipe_image.dart';
+import '../recipe_rating.dart';
 
 class WhatToCookRecipeWidget extends StatelessWidget {
   final Recipe recipe;
@@ -12,6 +14,12 @@ class WhatToCookRecipeWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return SizedBox(
+      width: 200.0,
+      child: Text(
+        recipe.title,
+        style: Theme.of(context).textTheme.headline6,
+      ),
+    );
   }
 }

@@ -1,5 +1,6 @@
-import 'package:bon_appetit/style/colors.dart';
 import 'package:flutter/material.dart';
+
+import '../../../style/colors.dart';
 
 class WhatToCookOptionWidget extends StatelessWidget {
   final String label;
