@@ -1,11 +1,7 @@
-import 'package:bon_appetit/models/index.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:provider/provider.dart';
 
-import '../services/app_state.dart';
-import '../services/mock_data.dart';
-import '../widgets/index.dart';
+import '_home/home_providers.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -30,30 +26,7 @@ class HomePage extends StatelessWidget {
           height: 50.0,
         ),
       ),
-      body: MultiProvider(
-        providers: [
-          ChangeNotifierProvider<AppState>(
-            create: (context) => AppState(),
-            lazy: false,
-          ),
-          FutureProvider<RecipeDataset?>(
-            create: (context) => MockDataService.fetchRecipeDataset(),
-            initialData: null,
-            lazy: false,
-          ),
-        ],
-        child: Consumer<RecipeDataset?>(
-          builder: (context, dataset, child) => (dataset == null)
-              ? Container()
-              : ListView(
-                  primary: true,
-                  children: const [
-                    MainRecipesWidget(),
-                    WhatToCookWidget(),
-                  ],
-                ),
-        ),
-      ),
+      body: const HomeProvidersWidget(),
     );
   }
 }
