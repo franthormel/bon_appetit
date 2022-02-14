@@ -36,15 +36,4 @@ class RecipeDataset {
       _$RecipeDatasetFromJson(json);
 
   Map<String, dynamic> toJson() => _$RecipeDatasetToJson(this);
-
-  /// Use this instead of [suggestedTags] when
-  /// creating [WhatToCookOptionWidget]s otherwise
-  /// an 'All' option will not be available.
-  List<String> get optionsWhatToCook {
-    final tags = suggestedTags;
-
-    tags.insert(0, "All");
-
-    return tags;
-  }
 }

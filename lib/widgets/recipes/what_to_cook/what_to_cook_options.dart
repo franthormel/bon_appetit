@@ -16,7 +16,7 @@ class WhatToCookOptionsWidget extends StatefulWidget {
 class _WhatToCookOptionsWidgetState extends State<WhatToCookOptionsWidget> {
   @override
   Widget build(BuildContext context) {
-    final recipeDataset = context.watch<RecipeDataset>();
+    final recipeDataset = Provider.of<RecipeDataset>(context, listen: false);
     final appState = Provider.of<AppState>(context);
 
     return Wrap(
@@ -25,28 +25,21 @@ class _WhatToCookOptionsWidgetState extends State<WhatToCookOptionsWidget> {
     );
   }
 
-  /// The [WhatToCookOptionsWidget] has to call [setState()]
-  /// here that's  why a utility widget method is being used.
-  WhatToCookOptionWidget chipOption(String option, AppState appState) {
-    return WhatToCookOptionWidget(
-      label: option,
-      selected: appState.optionIsWhatToCook(option),
-      onSelected: (selected) {
-        setState(() {
-          appState.changeOptionWhatToCook(option);
-        });
-      },
-    );
-  }
-
   /// Returns an array of [WhatToCookOptionWidget].
-  /// Place this inside a [Wrap] widget.
+  /// * Place this inside a [Wrap] widget.
+  /// * [WhatToCookOptionsWidget] has to call [setState()]
+  /// here that's why a utility widget method is being used.
   List<Widget> chipOptions(RecipeDataset recipeDataset, AppState appState) {
-    final tags = recipeDataset.suggestedTags;
     final widgets = <Widget>[];
 
-    for (final option in tags) {
-      final widget = chipOption(option, appState);
+    for (final option in recipeDataset.suggestedTags) {
+      final widget = WhatToCookOptionWidget(
+        label: option,
+        selected: appState.optionIsWhatToCook(option),
+        onSelected: (selected) {
+          appState.changeOptionWhatToCook(option);
+        },
+      );
 
       widgets.add(widget);
     }
