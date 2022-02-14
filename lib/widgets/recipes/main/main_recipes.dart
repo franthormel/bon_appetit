@@ -12,29 +12,27 @@ class MainRecipesWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final recipeDataset = context.watch<RecipeDataset?>();
+    final recipeDataset = context.watch<RecipeDataset>();
 
-    return (recipeDataset == null)
-        ? Container()
-        : DesignedContainerWidget(
-            color: BonAppetitColors.floralWhite,
-            child: Column(
-              children: [
-                TodayMainRecipeWidget(recipe: recipeDataset.mainRecipe),
-                const SizedBox(height: 24.0),
-                OtherMainRecipeWidget(
-                  recipe: recipeDataset.otherMainRecipes[0],
-                ),
-                const SizedBox(height: 24.0),
-                OtherMainRecipeWidget(
-                  recipe: recipeDataset.otherMainRecipes[1],
-                ),
-                const SizedBox(height: 24.0),
-                OtherMainRecipeWidget(
-                  recipe: recipeDataset.otherMainRecipes[2],
-                ),
-              ],
-            ),
-          );
+    return DesignedContainerWidget(
+      color: BonAppetitColors.floralWhite,
+      child: Column(
+        children: [
+          TodayMainRecipeWidget(recipe: recipeDataset.mainRecipe),
+          const SizedBox(height: 24.0),
+          OtherMainRecipeWidget(
+            recipe: recipeDataset.otherMainRecipes[0],
+          ),
+          const SizedBox(height: 24.0),
+          OtherMainRecipeWidget(
+            recipe: recipeDataset.otherMainRecipes[1],
+          ),
+          const SizedBox(height: 24.0),
+          OtherMainRecipeWidget(
+            recipe: recipeDataset.otherMainRecipes[2],
+          ),
+        ],
+      ),
+    );
   }
 }

@@ -33,12 +33,16 @@ class HomePage extends StatelessWidget {
         create: (context) => MockDataService.fetchRecipeDataset(),
         initialData: null,
         lazy: false,
-        child: ListView(
-          primary: true,
-          children: [
-            const MainRecipesWidget(),
-            WhatToCookWidget(),
-          ],
+        child: Consumer<RecipeDataset?>(
+          builder: (context, recipeDataset, child) => (recipeDataset == null)
+              ? Container()
+              : ListView(
+                  primary: true,
+                  children: const [
+                    MainRecipesWidget(),
+                    WhatToCookWidget(),
+                  ],
+                ),
         ),
       ),
     );

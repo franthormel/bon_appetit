@@ -1,3 +1,4 @@
+import 'package:bon_appetit/style/colors.dart';
 import 'package:flutter/material.dart';
 
 import '../cached_image_progress.dart';
@@ -28,7 +29,10 @@ class RecipeImageWidget extends StatelessWidget {
               left: 8.0,
               top: 8.0,
             ),
-            child: Chip(label: Text(tag!)),
+            child: Chip(
+              backgroundColor: BonAppetitColors.sizzlingSunrise,
+              label: Text(tag!),
+            ),
           ),
       ],
     );

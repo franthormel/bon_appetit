@@ -12,7 +12,10 @@ class BonAppetitTheme {
         backgroundColor: BonAppetitColors.black,
       ),
       chipTheme: const ChipThemeData(
-        backgroundColor: BonAppetitColors.sizzlingSunrise,
+        labelStyle: TextStyle(
+          color: BonAppetitColors.black,
+          fontWeight: FontWeight.w500,
+        ),
       ),
       progressIndicatorTheme: const ProgressIndicatorThemeData(
         circularTrackColor: BonAppetitColors.mediumChampagne,
