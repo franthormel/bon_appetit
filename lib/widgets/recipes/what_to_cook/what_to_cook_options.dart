@@ -30,20 +30,14 @@ class _WhatToCookOptionsWidgetState extends State<WhatToCookOptionsWidget> {
   /// * [WhatToCookOptionsWidget] has to call [setState()]
   /// here that's why a utility widget method is being used.
   List<Widget> chipOptions(RecipeDataset recipeDataset, AppState appState) {
-    final widgets = <Widget>[];
-
-    for (final option in recipeDataset.suggestedTags) {
-      final widget = WhatToCookOptionWidget(
+    return recipeDataset.suggestedTags.map((option) {
+      return WhatToCookOptionWidget(
         label: option,
         selected: appState.optionIsWhatToCook(option),
         onSelected: (selected) {
           appState.changeOptionWhatToCook(option);
         },
       );
-
-      widgets.add(widget);
-    }
-
-    return widgets;
+    }).toList();
   }
 }
