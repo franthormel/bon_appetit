@@ -10,5 +10,12 @@ class AppState extends ChangeNotifier {
     }
   }
 
+  /// Use this method in checking whether to filter
+  /// or not filter the "What to cook" recipes.
+  bool get filterWhatToCook => _optionWhatToCook != "All";
+
   bool optionIsWhatToCook(String option) => _optionWhatToCook == option;
+
+  bool optionsIsWhatToCook(List<String> options) =>
+      options.contains(_optionWhatToCook);
 }

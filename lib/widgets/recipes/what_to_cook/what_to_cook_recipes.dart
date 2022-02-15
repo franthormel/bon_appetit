@@ -1,7 +1,10 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../../../models/recipe.dart';
 import '../../../models/recipe_dataset.dart';
+import '../../../services/app_state.dart';
 import 'what_to_cook_recipe.dart';
 
 class WhatToCookRecipesWidget extends StatelessWidget {
@@ -9,21 +12,34 @@ class WhatToCookRecipesWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final recipeDataset = Provider.of<RecipeDataset>(context, listen: false);
+    final suggestedRecipes = filterRecipes(context);
 
     return SizedBox(
       height: 400.0,
       child: ListView.separated(
         primary: false,
         itemBuilder: (context, index) {
-          final recipe = recipeDataset.suggestedRecipes[index];
+          final recipe = suggestedRecipes[index];
 
           return WhatToCookRecipeWidget(recipe: recipe);
         },
         scrollDirection: Axis.horizontal,
         separatorBuilder: (context, index) => const SizedBox(width: 18.0),
-        itemCount: recipeDataset.suggestedRecipes.length,
+        itemCount: suggestedRecipes.length,
       ),
     );
+  }
+
+  List<Recipe> filterRecipes(BuildContext context) {
+    final recipeDataset = Provider.of<RecipeDataset>(context, listen: false);
+    final appState = Provider.of<AppState>(context);
+
+    if (appState.filterWhatToCook) {
+      return recipeDataset.suggestedRecipes
+          .where((recipe) => appState.optionsIsWhatToCook(recipe.categories))
+          .toList();
+    }
+
+    return recipeDataset.suggestedRecipes;
   }
 }
