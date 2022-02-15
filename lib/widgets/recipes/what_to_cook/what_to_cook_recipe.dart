@@ -16,9 +16,24 @@ class WhatToCookRecipeWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       width: 200.0,
-      child: Text(
-        recipe.title,
-        style: Theme.of(context).textTheme.headline6,
+      child: Column(
+        children: [
+          RecipeImageWidget(
+            imageUrl: recipe.imageUrl,
+            tag: recipe.tag,
+          ),
+          const Divider(color: Colors.transparent),
+          Expanded(
+            child: Text(
+              recipe.title,
+              maxLines: 3,
+              overflow: TextOverflow.ellipsis,
+              style: Theme.of(context).textTheme.headline6,
+            ),
+          ),
+          const Divider(color: Colors.transparent),
+          if (recipe.rating != null)RecipeRatingWidget(rating: recipe.rating!),
+        ],
       ),
     );
   }

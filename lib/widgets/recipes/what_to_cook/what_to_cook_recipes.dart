@@ -11,15 +11,19 @@ class WhatToCookRecipesWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     final recipeDataset = Provider.of<RecipeDataset>(context, listen: false);
 
-    return ListView.separated(
-      itemBuilder: (context, index) {
-        final recipe = recipeDataset.suggestedRecipes[index];
+    return SizedBox(
+      height: 400.0,
+      child: ListView.separated(
+        primary: false,
+        itemBuilder: (context, index) {
+          final recipe = recipeDataset.suggestedRecipes[index];
 
-        return WhatToCookRecipeWidget(recipe: recipe);
-      },
-      scrollDirection: Axis.horizontal,
-      separatorBuilder: (context, index) => const SizedBox(width: 1.0),
-      itemCount: recipeDataset.suggestedRecipes.length,
+          return WhatToCookRecipeWidget(recipe: recipe);
+        },
+        scrollDirection: Axis.horizontal,
+        separatorBuilder: (context, index) => const SizedBox(width: 18.0),
+        itemCount: recipeDataset.suggestedRecipes.length,
+      ),
     );
   }
 }

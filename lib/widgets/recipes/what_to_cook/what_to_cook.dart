@@ -28,6 +28,7 @@ class _WhatToCookWidgetState extends State<WhatToCookWidget> {
           HeaderSubtext(text: 'Fast, fresh and foolproof'),
           Divider(color: Colors.transparent),
           WhatToCookOptionsWidget(),
+          Divider(color: Colors.transparent),
           WhatToCookRecipesWidget(),
         ],
       ),
