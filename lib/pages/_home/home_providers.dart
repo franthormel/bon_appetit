@@ -29,6 +29,8 @@ class HomeProvidersWidget extends StatelessWidget {
               print(">>> Title $e");
               print(">>> Stack ${e.stackTrace}");
             }
+
+            return null;
           },
         ),
       ],

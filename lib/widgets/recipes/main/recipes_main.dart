@@ -4,8 +4,8 @@ import 'package:provider/provider.dart';
 import '../../../models/index.dart';
 import '../../../style/colors.dart';
 import '../../designed_container.dart';
-import 'other_main_recipe.dart';
-import 'today_main_recipe.dart';
+import 'recipe_main.dart';
+import 'recipe_other.dart';
 
 class MainRecipesWidget extends StatelessWidget {
   const MainRecipesWidget({Key? key}) : super(key: key);
@@ -19,15 +19,15 @@ class MainRecipesWidget extends StatelessWidget {
       child: Column(
         children: [
           TodayMainRecipeWidget(recipe: dataset.recipes.main),
-          const SizedBox(height: 24.0),
+          const Divider(color: Colors.transparent),
           OtherMainRecipeWidget(
             recipe: dataset.recipes.others[0],
           ),
-          const SizedBox(height: 24.0),
+          const Divider(color: Colors.transparent),
           OtherMainRecipeWidget(
             recipe: dataset.recipes.others[1],
           ),
-          const SizedBox(height: 24.0),
+          const Divider(color: Colors.transparent),
           OtherMainRecipeWidget(
             recipe: dataset.recipes.others[2],
           ),

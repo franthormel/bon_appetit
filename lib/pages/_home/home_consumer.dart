@@ -12,6 +12,8 @@ class HomeConsumerWidget extends StatelessWidget {
       children: const [
         MainRecipesWidget(),
         WhatToCookWidget(),
+        MainArticleWidget(),
+        OtherArticlesWidget(),
       ],
     );
   }

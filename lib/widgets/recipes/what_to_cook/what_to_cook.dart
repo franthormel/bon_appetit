@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../designed_container.dart';
-import '../../header_subtext.dart';
-import '../../header_text.dart';
+import '../../header_section.dart';
 import 'what_to_cook_options.dart';
 import 'what_to_cook_recipes.dart';
 
@@ -23,9 +22,10 @@ class _WhatToCookWidgetState extends State<WhatToCookWidget> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: const [
-          HeaderTextWidget(text: 'WHAT TO COOK TONIGHT'),
-          Divider(color: Colors.transparent),
-          HeaderSubtext(text: 'Fast, fresh and foolproof'),
+          HeaderSectionWidget(
+            title: 'WHAT TO COOK TONIGHT',
+            subtitle: 'Fast, fresh and foolproof',
+          ),
           Divider(color: Colors.transparent),
           WhatToCookOptionsWidget(),
           Divider(color: Colors.transparent),
