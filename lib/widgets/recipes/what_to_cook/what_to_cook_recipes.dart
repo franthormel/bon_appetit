@@ -2,8 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import '../../../models/recipe.dart';
-import '../../../models/recipe_dataset.dart';
+import '../../../models/index.dart';
 import '../../../services/app_state.dart';
 import 'what_to_cook_recipe.dart';
 

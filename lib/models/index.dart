@@ -1,3 +1,2 @@
-export 'recipe.dart';
-export 'recipe_dataset.dart';
-export 'recipe_rating.dart';
+export 'recipes/index.dart';
+export 'articles/index.dart';
