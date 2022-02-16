@@ -1,12 +1,12 @@
 import 'package:json_annotation/json_annotation.dart';
 
-import 'recipe.dart';
+import '../recipes/recipe.dart';
 
 part 'recipe_dataset.g.dart';
 
 @JsonSerializable()
 class RecipeDataset {
-  /// Today's main recipe
+  /// Today's recipe
   final Recipe mainRecipe;
 
   /// Accompanies 'Today's Recipe' on the side
