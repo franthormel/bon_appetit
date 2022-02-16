@@ -8,17 +8,17 @@ part of 'recipe_dataset.dart';
 
 RecipeDataset _$RecipeDatasetFromJson(Map<String, dynamic> json) =>
     RecipeDataset(
-      mainRecipe: Recipe.fromJson(json['mainRecipe'] as Map<String, dynamic>),
-      otherMainRecipes: (json['otherMainRecipes'] as List<dynamic>)
+      main: Recipe.fromJson(json['main'] as Map<String, dynamic>),
+      others: (json['others'] as List<dynamic>)
           .map((e) => Recipe.fromJson(e as Map<String, dynamic>))
           .toList(),
-      suggestedRecipes: (json['suggestedRecipes'] as List<dynamic>)
+      suggested: (json['suggested'] as List<dynamic>)
           .map((e) => Recipe.fromJson(e as Map<String, dynamic>))
           .toList(),
       suggestedTags: (json['suggestedTags'] as List<dynamic>)
           .map((e) => e as String)
           .toList(),
-      trendingRecipes: (json['trendingRecipes'] as List<dynamic>)
+      trending: (json['trending'] as List<dynamic>)
           .map((e) => Recipe.fromJson(e as Map<String, dynamic>))
           .toList(),
       trendingTags: (json['trendingTags'] as List<dynamic>)
@@ -28,10 +28,10 @@ RecipeDataset _$RecipeDatasetFromJson(Map<String, dynamic> json) =>
 
 Map<String, dynamic> _$RecipeDatasetToJson(RecipeDataset instance) =>
     <String, dynamic>{
-      'mainRecipe': instance.mainRecipe,
-      'otherMainRecipes': instance.otherMainRecipes,
-      'suggestedRecipes': instance.suggestedRecipes,
+      'main': instance.main,
+      'others': instance.others,
+      'suggested': instance.suggested,
       'suggestedTags': instance.suggestedTags,
-      'trendingRecipes': instance.trendingRecipes,
+      'trending': instance.trending,
       'trendingTags': instance.trendingTags,
     };

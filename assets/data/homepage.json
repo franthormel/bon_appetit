@@ -1,14 +1,14 @@
 {
   "articles": {
-    "mainArticle": {
+    "main": {
       "imageUrl": "https://assets.bonappetit.com/photos/62041220fbef7937a3e43de4/1:1/w_2560%2Cc_limit/20220208%2520AST%2520Ketchup%2520LEDE.jpg",
       "title": "A Skeptic Tries: Ketchup",
       "subtitle": "Kid-me was grossed out by the sticky red sauce. Adult-me was willing to give it another shot."
     },
-    "otherArticles": []
+    "others": []
   },
   "recipes": {
-    "mainRecipe": {
+    "main": {
       "categories": [
         "Broccoli Rabe",
         "Vegetable",
@@ -38,7 +38,7 @@
       },
       "tag": "Today's Recipe"
     },
-    "otherMainRecipes": [
+    "others": [
       {
         "categories": [
           "Cookie",
@@ -113,7 +113,7 @@
         "title": "Piri-Piri Meatballs"
       }
     ],
-    "suggestedRecipes": [
+    "suggested": [
       {
         "categories": [
           "Dinner",
@@ -290,7 +290,7 @@
       "Vegetarian",
       "Weeknight"
     ],
-    "trendingRecipes": [],
+    "trending": [],
     "trendingTags": [
       "All",
       "Dinner",

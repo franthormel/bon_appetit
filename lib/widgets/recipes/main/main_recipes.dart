@@ -18,18 +18,18 @@ class MainRecipesWidget extends StatelessWidget {
       color: BonAppetitColors.floralWhite,
       child: Column(
         children: [
-          TodayMainRecipeWidget(recipe: dataset.recipes.mainRecipe),
+          TodayMainRecipeWidget(recipe: dataset.recipes.main),
           const SizedBox(height: 24.0),
           OtherMainRecipeWidget(
-            recipe: dataset.recipes.otherMainRecipes[0],
+            recipe: dataset.recipes.others[0],
           ),
           const SizedBox(height: 24.0),
           OtherMainRecipeWidget(
-            recipe: dataset.recipes.otherMainRecipes[1],
+            recipe: dataset.recipes.others[1],
           ),
           const SizedBox(height: 24.0),
           OtherMainRecipeWidget(
-            recipe: dataset.recipes.otherMainRecipes[2],
+            recipe: dataset.recipes.others[2],
           ),
         ],
       ),

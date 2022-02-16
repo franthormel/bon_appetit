@@ -32,7 +32,7 @@ class WhatToCookRecipeWidget extends StatelessWidget {
             ),
           ),
           const Divider(color: Colors.transparent),
-          if (recipe.rating != null)RecipeRatingWidget(rating: recipe.rating!),
+          if (recipe.rating != null) RecipeRatingWidget(rating: recipe.rating!),
         ],
       ),
     );

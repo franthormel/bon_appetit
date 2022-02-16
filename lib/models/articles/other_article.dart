@@ -15,7 +15,8 @@ class OtherArticle extends Article {
     required String subtitle,
   }) : super(imageUrl: imageUrl, title: title, subtitle: subtitle);
 
-  factory OtherArticle.fromJson(Map<String, dynamic> json) => _$OtherArticleFromJson(json);
+  factory OtherArticle.fromJson(Map<String, dynamic> json) =>
+      _$OtherArticleFromJson(json);
 
   @override
   Map<String, dynamic> toJson() => _$OtherArticleToJson(this);

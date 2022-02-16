@@ -7,12 +7,14 @@ part 'article_dataset.g.dart';
 
 @JsonSerializable()
 class ArticleDataset {
-  final MainArticle mainArticle;
-  final List<OtherArticle> otherArticles;
+  final MainArticle main;
+
+  /// Usually there are four (4) articles
+  final List<OtherArticle> others;
 
   ArticleDataset({
-    required this.mainArticle,
-    required this.otherArticles,
+    required this.main,
+    required this.others,
   });
 
   factory ArticleDataset.fromJson(Map<String, dynamic> json) =>

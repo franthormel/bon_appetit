@@ -14,7 +14,8 @@ class Article {
     required this.subtitle,
   });
 
-  factory Article.fromJson(Map<String, dynamic> json) => _$ArticleFromJson(json);
+  factory Article.fromJson(Map<String, dynamic> json) =>
+      _$ArticleFromJson(json);
 
   Map<String, dynamic> toJson() => _$ArticleToJson(this);
 }

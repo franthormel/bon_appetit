@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -22,7 +23,12 @@ class HomeProvidersWidget extends StatelessWidget {
           initialData: null,
           lazy: false,
           catchError: (context, error) {
-            print((error as Error).stackTrace);
+            if (kDebugMode) {
+              final e = error as Error;
+
+              print(">>> Title $e");
+              print(">>> Stack ${e.stackTrace}");
+            }
           },
         ),
       ],

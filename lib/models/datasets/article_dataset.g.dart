@@ -8,15 +8,14 @@ part of 'article_dataset.dart';
 
 ArticleDataset _$ArticleDatasetFromJson(Map<String, dynamic> json) =>
     ArticleDataset(
-      mainArticle:
-          MainArticle.fromJson(json['mainArticle'] as Map<String, dynamic>),
-      otherArticles: (json['otherArticles'] as List<dynamic>)
+      main: MainArticle.fromJson(json['main'] as Map<String, dynamic>),
+      others: (json['others'] as List<dynamic>)
           .map((e) => OtherArticle.fromJson(e as Map<String, dynamic>))
           .toList(),
     );
 
 Map<String, dynamic> _$ArticleDatasetToJson(ArticleDataset instance) =>
     <String, dynamic>{
-      'mainArticle': instance.mainArticle,
-      'otherArticles': instance.otherArticles,
+      'main': instance.main,
+      'others': instance.others,
     };
