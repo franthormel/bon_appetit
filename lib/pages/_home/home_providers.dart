@@ -17,13 +17,16 @@ class HomeProvidersWidget extends StatelessWidget {
           create: (context) => AppState(),
           lazy: false,
         ),
-        FutureProvider<RecipeDataset?>(
-          create: (context) => MockDataService.fetchRecipeDataset(),
+        FutureProvider<HomepageDataset?>(
+          create: (context) => MockDataService.fetchHomepageDataset(),
           initialData: null,
           lazy: false,
+          catchError: (context, error) {
+            print((error as Error).stackTrace);
+          },
         ),
       ],
-      child: Consumer<RecipeDataset?>(
+      child: Consumer<HomepageDataset?>(
         builder: (context, dataset, child) {
           return dataset == null ? Container() : const HomeConsumerWidget();
         },

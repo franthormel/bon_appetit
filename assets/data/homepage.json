@@ -1,0 +1,301 @@
+{
+  "articles": {
+    "mainArticle": {
+      "imageUrl": "https://assets.bonappetit.com/photos/62041220fbef7937a3e43de4/1:1/w_2560%2Cc_limit/20220208%2520AST%2520Ketchup%2520LEDE.jpg",
+      "title": "A Skeptic Tries: Ketchup",
+      "subtitle": "Kid-me was grossed out by the sticky red sauce. Adult-me was willing to give it another shot."
+    },
+    "otherArticles": []
+  },
+  "recipes": {
+    "mainRecipe": {
+      "categories": [
+        "Broccoli Rabe",
+        "Vegetable",
+        "Fontina",
+        "Cheese",
+        "Cheddar",
+        "Pasta Shells",
+        "Quick",
+        "Easy",
+        "Weeknight Meals",
+        "One Pot Meals",
+        "Main",
+        "Nut-Free",
+        "Dinner",
+        "Pasta",
+        "Rigatoni",
+        "Pasta & Noodles",
+        "Sausage",
+        "Meat"
+      ],
+      "description": "This weeknight-friendly pasta uses one skillet, one pot, and plenty of cheese.",
+      "imageUrl": "https://assets.bonappetit.com/photos/5a31a6035468684549cf8def/3:4/w_720,c_limit/one-pot-baked-pasta-with-sausage-and-broccoli-rabe.jpg",
+      "title": "Baked Pasta With Sausage and Broccoli Rabe",
+      "rating": {
+        "count": 55,
+        "value": 4.39
+      },
+      "tag": "Today's Recipe"
+    },
+    "otherMainRecipes": [
+      {
+        "categories": [
+          "Cookie",
+          "Dessert",
+          "Bar Cookie",
+          "Walnut",
+          "Nut",
+          "Hazelnut",
+          "Pecan",
+          "Flaxseed Meal",
+          "Flour",
+          "Snack",
+          "Gluten Free",
+          "Vegetarian",
+          "Healthyish",
+          "Baking",
+          "Breakfast"
+        ],
+        "description": "Forget breakfast bars or muffins: Our new favorite grab-and-go breakfast is a blondie. Think of them like a healthyish muffin in bar form. Made with almond butter and flaxseed meal, they’re grain-free and packed full of protein.",
+        "imageUrl": "https://assets.bonappetit.com/photos/5c7eb0780c62115eae0b91f8/3:4/w_720,c_limit/Breakfast-Blondies-recipe-16x9-01032019.jpg",
+        "rating": {
+          "count": 65,
+          "value": 4.35
+        },
+        "tag": null,
+        "title": "Breakfast Blondies"
+      },
+      {
+        "categories": [
+          "French",
+          "European",
+          "Kabocha Squash",
+          "Squash",
+          "Vegetable",
+          "Delicata Squash",
+          "Winter",
+          "Main",
+          "Nut-Free",
+          "Healthyish",
+          "Dinner"
+        ],
+        "description": "What would happen if you gave winter squash the coq au vin treatment? Layers of flavor from browned mushrooms, wine, and miso that give the classic a run for its money.",
+        "imageUrl": "https://assets.bonappetit.com/photos/5e399f26dbed3c00080d0e58/3:4/w_720,c_limit/0320-Dutch-Oven-Squash-Squash-au-Vin.jpg",
+        "rating": {
+          "count": 32,
+          "value": 3.92
+        },
+        "tag": "Vegetarian",
+        "title": "Squash au Vin"
+      },
+      {
+        "categories": [
+          "Meatball",
+          "Ground Beef",
+          "Beef",
+          "Meat",
+          "Chile",
+          "Vegetable",
+          "Fresno Chile",
+          "Main",
+          "Starter",
+          "Nut-Free",
+          "Dinner"
+        ],
+        "description": "Fresh piri-piri chiles can be difficult to find in the U.S., so for our take on a vibrant piri-piri sauce, we subbed in a fresh Fresno chile, which carries noticeable heat and a delicious fruity flavor. You can also double the sauce recipe and use it on anything from chicken to pasta the next day.",
+        "imageUrl": "https://assets.bonappetit.com/photos/5c740fd1d37ef1103deff5c2/3:4/w_720,c_limit/peri-peri-meatballs-3.jpg",
+        "rating": {
+          "count": 49,
+          "value": 4.71
+        },
+        "tag": null,
+        "title": "Piri-Piri Meatballs"
+      }
+    ],
+    "suggestedRecipes": [
+      {
+        "categories": [
+          "Dinner",
+          "Weeknight",
+          "Sheet-Pan Dinners",
+          "Easy",
+          "Vegetarian",
+          "Nut-Free",
+          "Sweet Potato",
+          "Potato",
+          "Vegetable",
+          "Carrot",
+          "Tomatillo",
+          "Side",
+          "Roast"
+        ],
+        "description": "Roasted sweet potatoes and carrots get gussied up with a zippy green salsa in this weeknight sheet pan recipe from Ali Slagle’s cookbook I Dream of Dinner (So You Don’t Have To). The verdant carrot top salsa is the real star here, balancing tart fresh tomatillos with gently charred scallions and lots of lime juice. The result is a bright condiment that can also perk up any protein, salad, grain—or even tortilla chips. If your carrots came without greens, use cilantro in their place.",
+        "imageUrl": "https://assets.bonappetit.com/photos/61f7f4828b85aed2e4c64b3a/3:4/w_720,c_limit/roasted-roots-with-green-salsa.jpg",
+        "title": "Roasted Roots With Green Salsa",
+        "rating": {
+          "count": 1,
+          "value": 5.0
+        },
+        "tag": null
+      },
+      {
+        "categories": [
+          "Soup",
+          "Soups and Stews",
+          "American",
+          "Broccoli",
+          "Vegetable",
+          "Cheddar",
+          "Cheese",
+          "Yogurt",
+          "Other Ingredients",
+          "Easy",
+          "One Pot Meals",
+          "Main",
+          "Vegetarian",
+          "Nut-Free",
+          "Simmer",
+          "Dinner"
+        ],
+        "description": "Our better-than-ever broccoli cheddar soup recipe is lighter and brighter than some you may have had in the past. It boasts a creaminess that comes from blended potatoes and broccoli stalks rather than heavy cream or the roux that many recipes call for—which means that, minus the optional garnish, this creamy soup is also gluten-free. Grating a block of sharp cheddar is crucial for this comfort food classic as the preshredded stuff is often mixed with an anti-caking agent that can wreak havoc with the silky texture of this delicious soup.\r\nThe other main player in broccoli cheese soup is, of course, the green stuff. The broccoli florets play two roles in this recipe: Half are added to the puréed base lending it a verdant hue, while the rest are mixed in toward the end, offering a nice crunch to break up the richness. Finally, in a nod to crusty bread bowls, we’ve added cheddar-topped croutons to every serving.\r\nFor a dairy-free broccoli soup, check out Andy Baraghani’s recipe with turmeric, peanuts, and crispy shallots or Hetty McKinnon’s broccoli and cashew number for a cream of broccoli soup experience that is completely vegan.",
+        "imageUrl": "https://assets.bonappetit.com/photos/5e346e46f280950008e613c0/3:4/w_720,c_limit/Basically-Broccoli-Cheddar-Soup.jpg",
+        "title": "Broccoli Cheddar Soup With Cheesy Croutons",
+        "rating": {
+          "count": 112,
+          "value": 4.5
+        },
+        "tag": "Easy"
+      },
+      {
+        "categories": [
+          "Dinner",
+          "Vegetarian",
+          "Vegan",
+          "Nut-Free",
+          "Dairy-Free",
+          "Gluten Free",
+          "Stock",
+          "Fennel",
+          "Vegetable",
+          "Southern",
+          "American",
+          "Soul Food"
+        ],
+        "description": "Potlikker (or “pot liquor”) is the brothy, nutrient-dense liquid gold traditionally left behind after boiling greens and beans. An ingredient whose use sheds light on the complex racialized history of Southern cooking, potlikker was once valued only by diligent enslaved Africans who saved the nourishing broth for their families after cooking greens. Chef Carla Hall, for whom potlikker was an essential element of her childhood, switches up the order, making potlikker from scratch to use as an ultra-concentrated broth—for Hall, that’s often the first step in imbuing a dish with layers of powerful flavor. In this herbaceous version, Hall doubles down on the fennel’s licorice notes by adding a glug of Pernod, an anise-based liqueur that’s a natural pairing with seafood and vegetables.\r\nUse this potlikker as a base for Hall’s Shrimp and Grits With Fennel Potlikker, her Lemony Spring Vegetable and Barley Bowl, or any dish that would benefit from an intensely aromatic broth.",
+        "imageUrl": "https://assets.bonappetit.com/photos/61f93f042afaff301442b22a/3:4/w_720,c_limit/Fennel%20Potlikker.jpg",
+        "title": "Fennel Potlikker",
+        "rating": null,
+        "tag": "Vegan"
+      },
+      {
+        "categories": [
+          "Easy",
+          "Quick",
+          "Weeknight",
+          "Dinner",
+          "Breakfast",
+          "Lunch",
+          "Vegetarian",
+          "Nut-Free",
+          "Egg",
+          "Canned Tomato",
+          "Tomato",
+          "Vegetable",
+          "Kale",
+          "Leafy Greens",
+          "Harissa",
+          "Condiments, Sauces & Pastes",
+          "Main"
+        ],
+        "description": "These baked eggs are as good for a speedy weeknight dinner as they are for a festive brunch, and the pan-crisped croutons soak up just enough sauce to create wonderfully crispy-gone-soggy texture. Some brands of harissa are spicier than others, so be sure to taste as you go and adjust the crushed red pepper flake usage depending on how spicy you’d like your finished product.",
+        "imageUrl": "https://assets.bonappetit.com/photos/61f835df91c05315a4e02114/3:4/w_720,c_limit/Halloumi%20and%20egg.jpg",
+        "title": "Baked Eggs and Greens in Harissa Tomato Sauce",
+        "rating": null,
+        "tag": "Quick"
+      },
+      {
+        "categories": [
+          "Turkey",
+          "Poultry",
+          "Mushroom",
+          "Vegetable",
+          "Pasta",
+          "Dinner",
+          "Green Bean",
+          "Easy",
+          "Weeknight",
+          "Thanksgiving"
+        ],
+        "description": "Tetrazzini—a classic homey pasta dish usually made with chicken—gets the Thanksgiving treatment with this recipe adapted from chef and cookbook author Cal Peternell’s latest book, Burnt Toast and Other Disasters. Even the driest, overcooked turkey can be revitalized when added to a rich bath of mushrooms, heavy cream, and white wine. The result is a luscious sauce for coating a pot of pasta, as well as any “etceteras” from your holiday table: roasted brussels sprouts, sautéed green beans, cooked greens, and even cranberry sauce all make great additions.",
+        "imageUrl": "https://assets.bonappetit.com/photos/6189af140d1d8bec625178e0/3:4/w_720,c_limit/20211028%20Turkey%20Etcetrazzini.jpg",
+        "title": "Turkey Etcetrazzini",
+        "rating": {
+          "count": 8,
+          "value": 4.5
+        },
+        "tag": "Easy"
+      },
+      {
+        "categories": [
+          "Dinner",
+          "Vegetarian",
+          "Vegan",
+          "Nut-Free",
+          "Dairy-Free",
+          "Rice and Grain Bowl",
+          "Barley",
+          "Rice & Grains",
+          "Mint",
+          "Herbs & Spices",
+          "Pea",
+          "Vegetable",
+          "Asparagus",
+          "Side",
+          "Main",
+          "Spring"
+        ],
+        "description": "This one-pot dish from chef Carla Hall is basically spring in a bowl, bursting with fresh asparagus, tender green peas, lemon, and mint. It’s important to buy pearl barley for this recipe: Compared to whole grain hulled barley, which is chewy and requires lots of cooking liquid, the pearl barley used here cooks in less time and results in a creamier texture (think arborio rice). Another quick-cooking grain like pearled farro would also work well here. Making Hall’s Fennel Potlikker is a crucial first step here, so be sure to read through that recipe first.",
+        "imageUrl": "https://assets.bonappetit.com/photos/61f93f0a91c05315a4e0211a/3:4/w_720,c_limit/Lemony%20Spring%20Vegetable%20and%20Barley%20Bowl.jpg",
+        "title": "Lemony Spring Vegetable and Barley Bowl",
+        "rating": null,
+        "tag": "Vegan"
+      },
+      {
+        "categories": [
+          "Dinner",
+          "One Pot Meals",
+          "Weeknight",
+          "Easy",
+          "Nut-Free",
+          "Gluten Free",
+          "Steak",
+          "Beef",
+          "Meat",
+          "Broccoli Rabe",
+          "Vegetable",
+          "Cheese",
+          "Main"
+        ],
+        "description": "Is there a better way to eat steak than under a melty layer of pepper Jack with lemony broccoli rabe? We think not! Pickled peppers are the secret star of this dish, lending acidity and just the right amount of heat to an otherwise rich one-skillet meal. (Don’t throw out the pickled pepper liquid—it makes a great addition to a vinaigrette or Bloody Mary.) The steak should be pretty rare when you shingle it over the vegetables, but don’t worry: After a few minutes under the broiler, it will be perfectly cooked.",
+        "imageUrl": "https://assets.bonappetit.com/photos/61f82103bccddc88319220ef/3:4/w_720,c_limit/20220113-0322-hot-+-fast2075-1.jpg",
+        "title": "Skillet Cheesesteak With Broccoli Rabe",
+        "rating": null,
+        "tag": "Easy"
+      }
+    ],
+    "suggestedTags": [
+      "All",
+      "Pasta",
+      "Vegetarian",
+      "Weeknight"
+    ],
+    "trendingRecipes": [],
+    "trendingTags": [
+      "All",
+      "Dinner",
+      "Dessert",
+      "Drinks"
+    ]
+  }
+}

@@ -30,15 +30,15 @@ class WhatToCookRecipesWidget extends StatelessWidget {
   }
 
   List<Recipe> filterRecipes(BuildContext context) {
-    final recipeDataset = Provider.of<RecipeDataset>(context, listen: false);
+    final dataset = Provider.of<HomepageDataset>(context, listen: false);
     final appState = Provider.of<AppState>(context);
 
     if (appState.filterWhatToCook) {
-      return recipeDataset.suggestedRecipes
+      return dataset.recipes.suggestedRecipes
           .where((recipe) => appState.optionsIsWhatToCook(recipe.categories))
           .toList();
     }
 
-    return recipeDataset.suggestedRecipes;
+    return dataset.recipes.suggestedRecipes;
   }
 }
