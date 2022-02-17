@@ -25,23 +25,22 @@ class BonAppetitTheme {
         refreshBackgroundColor: BonAppetitColors.dimGray,
       ),
       textTheme: const TextTheme(
-        headline4: TextStyle(
-          color: BonAppetitColors.black,
-          fontWeight: FontWeight.w600,
-        ),
-        headline6: TextStyle(
-          color: BonAppetitColors.black,
-          fontWeight: FontWeight.w600,
-        ),
-        subtitle1: TextStyle(
-          color: BonAppetitColors.dimGray,
-          fontWeight: FontWeight.w500,
-        ),
-        subtitle2: TextStyle(
-          fontWeight: FontWeight.w600,
-          letterSpacing: 1.0,
-        )
-      ),
+          headline4: TextStyle(
+            color: BonAppetitColors.black,
+            fontWeight: FontWeight.w600,
+          ),
+          headline6: TextStyle(
+            color: BonAppetitColors.black,
+            fontWeight: FontWeight.w600,
+          ),
+          subtitle1: TextStyle(
+            color: BonAppetitColors.dimGray,
+            fontWeight: FontWeight.w500,
+          ),
+          subtitle2: TextStyle(
+            fontWeight: FontWeight.w600,
+            letterSpacing: 1.0,
+          )),
     );
   }
 }

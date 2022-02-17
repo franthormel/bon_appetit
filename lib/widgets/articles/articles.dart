@@ -2,12 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../../models/index.dart';
-import '../../style/colors.dart';
-import '../cached_image_progress.dart';
-import '../header_section.dart';
-import 'article_other.dart';
-import 'article_main.dart';
 import '../designed_container.dart';
+import '../header_section.dart';
+import 'article_main.dart';
+import 'article_other.dart';
 
 class ArticlesWidget extends StatelessWidget {
   const ArticlesWidget({Key? key}) : super(key: key);
@@ -27,8 +25,11 @@ class ArticlesWidget extends StatelessWidget {
           ),
           const SizedBox(height: 32.0),
           OtherArticleWidget(article: dataset.articles.others[0]),
+          const Divider(color: Colors.transparent),
           OtherArticleWidget(article: dataset.articles.others[1]),
+          const Divider(color: Colors.transparent),
           OtherArticleWidget(article: dataset.articles.others[2]),
+          const Divider(color: Colors.transparent),
           OtherArticleWidget(article: dataset.articles.others[3]),
         ],
       ),

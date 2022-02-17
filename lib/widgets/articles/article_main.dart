@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 
 import '../../models/index.dart';
-import '../header_body.dart';
-import '../cached_image_progress.dart';
-
 import '../../style/colors.dart';
+import '../cached_image_progress.dart';
+import '../header_body.dart';
 
 class MainArticleWidget extends StatelessWidget {
   final MainArticle article;
