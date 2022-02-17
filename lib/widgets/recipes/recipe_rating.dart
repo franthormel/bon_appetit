@@ -18,7 +18,7 @@ class RecipeRatingWidget extends StatelessWidget {
         const SizedBox(width: 3.0),
         Text(
           rating.text,
-          style: Theme.of(context).textTheme.bodyText1,
+          style: Theme.of(context).textTheme.subtitle1,
         ),
       ],
     );

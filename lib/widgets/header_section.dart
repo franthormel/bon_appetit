@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../style/colors.dart';
+
 class HeaderSectionWidget extends StatelessWidget {
   final String title;
   final String subtitle;
@@ -17,7 +19,7 @@ class HeaderSectionWidget extends StatelessWidget {
     return Column(
       children: [
         Text(
-          title,
+          title.toUpperCase(),
           textAlign: TextAlign.center,
           style: Theme.of(context)
               .textTheme
@@ -28,7 +30,10 @@ class HeaderSectionWidget extends StatelessWidget {
         Text(
           subtitle,
           textAlign: TextAlign.center,
-          style: Theme.of(context).textTheme.bodyText1?.copyWith(color: color),
+          style: Theme.of(context)
+              .textTheme
+              .subtitle1
+              ?.copyWith(color: color ?? BonAppetitColors.black),
         ),
       ],
     );

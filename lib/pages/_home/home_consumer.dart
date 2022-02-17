@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../style/colors.dart';
 import '../../widgets/index.dart';
 
 class HomeConsumerWidget extends StatelessWidget {
@@ -7,14 +8,23 @@ class HomeConsumerWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView(
-      primary: true,
-      children: const [
-        MainRecipesWidget(),
-        WhatToCookWidget(),
-        MainArticleWidget(),
-        OtherArticlesWidget(),
-      ],
+    return Container(
+      color: BonAppetitColors.white,
+      child: ListView.separated(
+        primary: true,
+        itemCount: children.length,
+        itemBuilder: (context, index) => children[index],
+        separatorBuilder: (context, index) => const SizedBox(height: 14.0),
+      ),
     );
+  }
+
+  List<Widget> get children {
+    return const [
+      MainRecipesWidget(),
+      WhatToCookWidget(),
+      MainArticleWidget(),
+      OtherArticlesWidget(),
+    ];
   }
 }

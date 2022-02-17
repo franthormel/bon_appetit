@@ -23,7 +23,7 @@ class _WhatToCookWidgetState extends State<WhatToCookWidget> {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: const [
           HeaderSectionWidget(
-            title: 'WHAT TO COOK TONIGHT',
+            title: 'What to cook tonight',
             subtitle: 'Fast, fresh and foolproof',
           ),
           Divider(color: Colors.transparent),

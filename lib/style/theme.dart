@@ -33,8 +33,9 @@ class BonAppetitTheme {
           color: BonAppetitColors.black,
           fontWeight: FontWeight.w600,
         ),
-        bodyText1: TextStyle(
-          color: BonAppetitColors.black,
+        subtitle1: TextStyle(
+          color: BonAppetitColors.dimGray,
+          fontWeight: FontWeight.w500,
         ),
       ),
     );

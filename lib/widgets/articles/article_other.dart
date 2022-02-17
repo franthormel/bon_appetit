@@ -12,6 +12,11 @@ class OtherArticleWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    // TODO Finish this
+    return Column(
+      children: [
+        Text(article.title),
+      ],
+    );
   }
 }
