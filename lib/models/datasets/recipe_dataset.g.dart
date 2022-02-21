@@ -15,14 +15,8 @@ RecipeDataset _$RecipeDatasetFromJson(Map<String, dynamic> json) =>
       suggested: (json['suggested'] as List<dynamic>)
           .map((e) => Recipe.fromJson(e as Map<String, dynamic>))
           .toList(),
-      suggestedTags: (json['suggestedTags'] as List<dynamic>)
-          .map((e) => e as String)
-          .toList(),
       trending: (json['trending'] as List<dynamic>)
           .map((e) => Recipe.fromJson(e as Map<String, dynamic>))
-          .toList(),
-      trendingTags: (json['trendingTags'] as List<dynamic>)
-          .map((e) => e as String)
           .toList(),
     );
 
@@ -31,7 +25,5 @@ Map<String, dynamic> _$RecipeDatasetToJson(RecipeDataset instance) =>
       'main': instance.main,
       'others': instance.others,
       'suggested': instance.suggested,
-      'suggestedTags': instance.suggestedTags,
       'trending': instance.trending,
-      'trendingTags': instance.trendingTags,
     };
