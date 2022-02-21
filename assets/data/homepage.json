@@ -87,7 +87,6 @@
           "count": 65,
           "value": 4.35
         },
-        "tag": null,
         "title": "Breakfast Blondies"
       },
       {
@@ -133,7 +132,6 @@
           "count": 49,
           "value": 4.71
         },
-        "tag": null,
         "title": "Piri-Piri Meatballs"
       }
     ],
@@ -160,8 +158,7 @@
         "rating": {
           "count": 1,
           "value": 5.0
-        },
-        "tag": null
+        }
       },
       {
         "categories": [
@@ -209,7 +206,6 @@
         "description": "Potlikker (or “pot liquor”) is the brothy, nutrient-dense liquid gold traditionally left behind after boiling greens and beans. An ingredient whose use sheds light on the complex racialized history of Southern cooking, potlikker was once valued only by diligent enslaved Africans who saved the nourishing broth for their families after cooking greens. Chef Carla Hall, for whom potlikker was an essential element of her childhood, switches up the order, making potlikker from scratch to use as an ultra-concentrated broth—for Hall, that’s often the first step in imbuing a dish with layers of powerful flavor. In this herbaceous version, Hall doubles down on the fennel’s licorice notes by adding a glug of Pernod, an anise-based liqueur that’s a natural pairing with seafood and vegetables.\r\nUse this potlikker as a base for Hall’s Shrimp and Grits With Fennel Potlikker, her Lemony Spring Vegetable and Barley Bowl, or any dish that would benefit from an intensely aromatic broth.",
         "imageUrl": "https://assets.bonappetit.com/photos/61f93f042afaff301442b22a/3:4/w_720,c_limit/Fennel%20Potlikker.jpg",
         "title": "Fennel Potlikker",
-        "rating": null,
         "tag": "Vegan"
       },
       {
@@ -235,7 +231,6 @@
         "description": "These baked eggs are as good for a speedy weeknight dinner as they are for a festive brunch, and the pan-crisped croutons soak up just enough sauce to create wonderfully crispy-gone-soggy texture. Some brands of harissa are spicier than others, so be sure to taste as you go and adjust the crushed red pepper flake usage depending on how spicy you’d like your finished product.",
         "imageUrl": "https://assets.bonappetit.com/photos/61f835df91c05315a4e02114/3:4/w_720,c_limit/Halloumi%20and%20egg.jpg",
         "title": "Baked Eggs and Greens in Harissa Tomato Sauce",
-        "rating": null,
         "tag": "Quick"
       },
       {
@@ -282,7 +277,6 @@
         "description": "This one-pot dish from chef Carla Hall is basically spring in a bowl, bursting with fresh asparagus, tender green peas, lemon, and mint. It’s important to buy pearl barley for this recipe: Compared to whole grain hulled barley, which is chewy and requires lots of cooking liquid, the pearl barley used here cooks in less time and results in a creamier texture (think arborio rice). Another quick-cooking grain like pearled farro would also work well here. Making Hall’s Fennel Potlikker is a crucial first step here, so be sure to read through that recipe first.",
         "imageUrl": "https://assets.bonappetit.com/photos/61f93f0a91c05315a4e0211a/3:4/w_720,c_limit/Lemony%20Spring%20Vegetable%20and%20Barley%20Bowl.jpg",
         "title": "Lemony Spring Vegetable and Barley Bowl",
-        "rating": null,
         "tag": "Vegan"
       },
       {
@@ -304,8 +298,342 @@
         "description": "Is there a better way to eat steak than under a melty layer of pepper Jack with lemony broccoli rabe? We think not! Pickled peppers are the secret star of this dish, lending acidity and just the right amount of heat to an otherwise rich one-skillet meal. (Don’t throw out the pickled pepper liquid—it makes a great addition to a vinaigrette or Bloody Mary.) The steak should be pretty rare when you shingle it over the vegetables, but don’t worry: After a few minutes under the broiler, it will be perfectly cooked.",
         "imageUrl": "https://assets.bonappetit.com/photos/61f82103bccddc88319220ef/3:4/w_720,c_limit/20220113-0322-hot-+-fast2075-1.jpg",
         "title": "Skillet Cheesesteak With Broccoli Rabe",
-        "rating": null,
         "tag": "Easy"
+      },
+      {
+        "categories": [
+          "Dinner",
+          "One Pot Meals",
+          "Dairy-Free",
+          "Weeknight",
+          "Easy",
+          "Pasta",
+          "Ditalini",
+          "Pasta & Noodles",
+          "Orzo",
+          "Olive",
+          "Other Ingredients",
+          "Spinach",
+          "Leafy Greens",
+          "Vegetable",
+          "Main"
+        ],
+        "description": "In this hearty-yet-streamlined puttanesca from Ali Slagle’s cookbook I Dream of Dinner (So You Don’t Have To), the dried pasta cooks directly in a tomato-rich broth full of capers and olives for maximum flavor absorption with one fewer pot to clean. The crunchy anchovy panko topping is optional but highly recommended.",
+        "imageUrl": "https://assets.bonappetit.com/photos/61f7f1b95851a853ef804dbe/3:4/w_720,c_limit/puttanesca.jpg",
+        "title": "One-Pot Puttanesca",
+        "rating": {
+          "count": 16,
+          "value": 5.0
+        },
+        "tag": "Easy"
+      },
+      {
+        "categories": [
+          "Soup",
+          "Soups and Stews",
+          "Dinner",
+          "Main",
+          "Cauliflower",
+          "Vegetable",
+          "Healthyish",
+          "Nut-Free",
+          "Vegetarian",
+          "Easy",
+          "Simmer"
+        ],
+        "description": "Most permutations of cauliflower (roasted florets, cauliflower rice, yes, even cauliflower gnocchi) rarely tempt me. But when you simmer a whole head of cauliflower with onion, garlic, and half-and-half, then blend it all until thick and velvety, it makes a sublime creamy cauliflower soup that’s all the more remarkable because it's so quick to prepare. Half-and-half adds just the right amount of rich dairy flavor to help the cauliflower taste its best, but you could also use milk, heavy cream (or mix equal parts of both for DIY half-and-half), or plant-based milk. Don’t skip the white pepper or the fresh lemon juice—they’re the secret ingredients that’ll have you craving spoonful after spoonful. The cheesy mustard croutons on top offer an ideal mix of sharp and rich flavors, but this creamy soup would also be delicious topped with toasted sunflower seeds, a spoonful of chili crisp, or some pesto.",
+        "imageUrl": "https://assets.bonappetit.com/photos/61f43764c85fdc9e98ae7078/3:4/w_720,c_limit/20220118%20Cauliflower%20Soup%20LEDE.jpg",
+        "title": "Creamy Cauliflower Soup With Cheesy Mustard Croutons",
+        "rating": {
+          "count": 7,
+          "value": 4.5
+        },
+        "tag": "Easy"
+      },
+      {
+        "categories": [
+          "Dinner",
+          "Vegetarian",
+          "Nut-Free",
+          "Pasta",
+          "Turnip",
+          "Vegetable",
+          "Southern",
+          "American",
+          "Soul Food",
+          "Miso",
+          "Condiments, Sauces & Pastes",
+          "Main"
+        ],
+        "description": "“Turnips and their greens do not get enough love, in my opinion,” says chef Carla Hall. When simmered in butter and miso, delicate hakurei turnips turn tender and sweet, providing a perfect contrast to their peppery greens. Building on Hall’s Smoked Paprika and Sun-Dried Tomato Potlikker, this brothy pasta is hearty and warming without being too heavy. Making the Smoked Paprika and Sun-Dried Tomato Potlikker is a crucial first step here, so be sure to read through that recipe first.",
+        "imageUrl": "https://assets.bonappetit.com/photos/61f93ef93c17d5f529cd904d/3:4/w_720,c_limit/Brothy%20Pasta%20With%20Miso-Butter%20Turnips.jpg",
+        "title": "Brothy Pasta With Miso-Butter Turnips"
+      },
+      {
+        "categories": [
+          "Dinner",
+          "Vietnamese",
+          "Southeast Asian",
+          "Asian",
+          "Main",
+          "Dairy-Free",
+          "Gluten-Free",
+          "Nut-Free",
+          "Vegan",
+          "Vegetarian",
+          "Simmer",
+          "Soup",
+          "Soups and Stews",
+          "Rice Noodle",
+          "Noodle",
+          "Pasta & Noodles",
+          "Oyster Mushroom",
+          "Mushroom",
+          "Vegetable",
+          "Tofu",
+          "Other Ingredients",
+          "Shiitake Mushroom",
+          "Kombu",
+          "Seaweed"
+        ],
+        "description": "Pho was the dish my family gathered around every Sunday, whether we were at home or at our favorite spot in Los Angeles’s Chinatown. Even as I started to cook more vegetarian food as an adult, my craving for a filling, soul-edifying pho remained, and I spent years chasing down the right combination of ingredients that would produce a vegan pho broth just as umami-packed as one with beef bones. Here I landed on a mix of dried shiitake mushrooms, kombu (dried kelp), and miso to bring a nuanced complexity to the broth. (Read more about how I developed the recipe here.)",
+        "imageUrl": "https://assets.bonappetit.com/photos/61f434a2a00646c3c79d8b98/3:4/w_720,c_limit/20220118%20Vegetarian%20Pho%20LEDE.jpg",
+        "title": "Vegan Pho",
+        "rating": {
+          "count": 13,
+          "value": 4.6
+        },
+        "tag": "Vegan"
+      },
+      {
+        "categories": [
+          "Soup",
+          "Soups and Stews",
+          "Beef",
+          "Meat",
+          "Short Rib",
+          "Radish",
+          "Vegetable",
+          "Daikon",
+          "Nut-Free",
+          "Gluten-Free",
+          "Dinner",
+          "Main",
+          "One Pot Meals",
+          "Asian"
+        ],
+        "description": "Beef and daikon are a classic pairing in Asian soups. Daikon brings a pleasant sweetness to the broth—it’s so juicy and soft when done right—while beef contributes richness and depth. To make this soup, you’ll start with bone-in short ribs, separating the meat from the bones and browning both with aromatics to build deep caramelized flavor. Then you’ll deglaze the pot with rice wine and cook everything down with added spices. The end result is a comforting soup brimming with cubes of fall-apart beef and super tender daikon that will get you through the last leg of winter.",
+        "imageUrl": "https://assets.bonappetit.com/photos/61f43695b7fba5e3be0da65b/3:4/w_720,c_limit/20220118%20Beef%20and%20Radish%20LEDE.jpg",
+        "title": "Five-Spice Short Rib and Daikon Soup",
+        "rating": {
+          "count": 1,
+          "value": 5.0
+        }
+      },
+      {
+        "categories": [
+          "Dinner",
+          "Weeknight",
+          "Easy",
+          "Nut-Free",
+          "Pasta",
+          "Spaghetti",
+          "Pasta & Noodles",
+          "Shrimp",
+          "Shellfish",
+          "Seafood",
+          "Chile",
+          "Vegetable",
+          "Jalapeño",
+          "Main"
+        ],
+        "description": "This recipe uses the time-tested trio of garlic, butter, and lemon to coat spaghetti and seafood in a glossy, flavorful sauce. Along with fresh jalapeño, canned roasted green chiles—an oft-overlooked pantry superstar—lend bright vegetal heat.",
+        "imageUrl": "https://assets.bonappetit.com/photos/61f81590d1e92c476ce28c89/3:4/w_720,c_limit/20220113-0322-hot-+-fast2342.jpg",
+        "title": "Green Chile Shrimp Scampi With Spaghetti",
+        "rating": {
+          "count": 8,
+          "value": 3.3
+        },
+        "tag": "Easy"
+      },
+      {
+        "categories": [
+          "Dinner",
+          "Lunch",
+          "5 Ingredients or Fewer",
+          "One Pot Meals",
+          "Weeknight",
+          "Easy",
+          "Quick",
+          "Nut-Free",
+          "Dairy-Free",
+          "Burger",
+          "Ground Chicken",
+          "Chicken",
+          "Poultry",
+          "Bacon",
+          "Cured Meat",
+          "Meat"
+        ],
+        "description": "The chicken burgers from Ali Slagle’s cookbook I Dream of Dinner (So You Don’t Have To) have a little secret—they’re cooked in bacon fat, which adds flavor and moisture to the ground meat. And that’s not all: The chicken meatballs are smashed into a thin layer and topped with thinly sliced onion and jalapeño, yielding browned, juicy burgers juxtaposed with the sweetness and heat of the charred vegetables. Layer it all onto a toasty bun with the crispy bacon and as much ketchup as you please, then wonder how only a handful of ingredients brought such big flavor.",
+        "imageUrl": "https://assets.bonappetit.com/photos/61f7eb50b7fba5e3be0da65d/3:4/w_720,c_limit/20211207-0222-Smash-Burger-+-Web-Extras9030.jpg",
+        "title": "Chicken-Bacon Smash Burgers",
+        "rating": {
+          "count": 7,
+          "value": 3.3
+        },
+        "tag": "Quick"
+      },
+      {
+        "categories": [
+          "Greek",
+          "European",
+          "Pasta",
+          "Ground Beef",
+          "Beef",
+          "Meat",
+          "Bake",
+          "Dinner",
+          "Bechamel"
+        ],
+        "description": "Moussaka might be the most famous Greek casserole, but it certainly isn’t the only one. Similar to Greek moussaka, pastitsio starts out with layers of spiced meat and gets finished with creamy, cheesy béchamel sauce before getting baked. Pastitsio, however, uses pasta, specifically the titular extra-large hollow noodles sometimes referred to as Greek macaroni (we love Loi brand). Bucatini will work in a pinch, as will Romano cheese subbed in for the salty, fragrant Greek cheese kasseri, which you can find at specialty markets.",
+        "imageUrl": "https://assets.bonappetit.com/photos/61b770d0eebeca16d300df49/3:4/w_720,c_limit/20211208%20Pastitsio%20LEDE.jpg",
+        "title": "Pastitsio",
+        "rating": {
+          "count": 27,
+          "value": 4.9
+        }
+      },
+      {
+        "categories": [
+          "Dinner",
+          "Weeknight",
+          "Easy",
+          "Quick",
+          "One Pot Meals",
+          "Gluten-Free",
+          "Nut-Free",
+          "Dairy-Free",
+          "Swordfish",
+          "Fish",
+          "Seafood",
+          "Mahi-Mahi",
+          "Asparagus",
+          "Vegetable",
+          "Navy Bean",
+          "Bean",
+          "White Bean",
+          "Main"
+        ],
+        "description": "Swordfish is perfect for hot-and-fast applications like this springy skillet from Ali Slagle’s cookbook I Dream of Dinner (So You Don’t Have To) because it cooks quickly without drying out. Swap in another fatty fish—like mahi-mahi or salmon—and whatever crunchy vegetables (like green beans or snap peas) and small white beans (like navy or Great Northern) you have on hand. Serve alongside orzo, Israeli couscous, bulgur, or crusty bread for sopping up the lemony juices.",
+        "imageUrl": "https://assets.bonappetit.com/photos/61f7fdebbccddc88319220ed/3:4/w_720,c_limit/Swordfish%20With%20Asparagus%20and%20Beans.jpg",
+        "title": "Swordfish With Asparagus and Beans",
+        "rating": {
+          "count": 3,
+          "value": 4.5
+        },
+        "tag": "Quick"
+      },
+      {
+        "categories": [
+          "Dinner",
+          "Vegetarian",
+          "Vegan",
+          "Stock",
+          "Taiwanese",
+          "East Asian",
+          "Asian",
+          "Shiitake Mushroom",
+          "Mushroom",
+          "Vegetable",
+          "Portobello Mushroom",
+          "Napa Cabbage",
+          "Cabbage",
+          "Leafy Greens",
+          "Lunar New Year",
+          "Main"
+        ],
+        "description": "This comforting hot pot base gets plenty of umami from mushrooms and alliums, which means there’s no need for meat. Chef Eric Sze of New York City’s 886 and wenwen likes pairing a mild, refreshing broth like this one with a spicier broth in a divided pot because switching between the two “makes your palate dance,” Sze explains. If you want to spice up this broth, however, you can add 4 Tbsp. Pixian chili bean paste and 15 dried chao tian jiao (or dried chiles de árbol) and cook for 2 minutes before adding the onions. Even if you aren’t making hot pot, you can use this broth as a flavorful (and vegan!) base for stews, soups, braises—or just something comforting to sip on.",
+        "imageUrl": "https://assets.bonappetit.com/photos/61f8205db7fba5e3be0da661/3:4/w_720,c_limit/Herbal-Mushroom-Broth.jpg",
+        "title": "Herbal Mushroom Hot Pot Broth",
+        "rating": {
+          "count": 3,
+          "value": 5.0
+        },
+        "tag": "Vegan"
+      },
+      {
+        "categories": [
+          "Dinner",
+          "Easy",
+          "Weeknight Meals",
+          "Soups and Stews",
+          "Soup",
+          "Vegan",
+          "Vegetarian",
+          "Dairy-Free",
+          "Nut-Free",
+          "Gluten-Free",
+          "Red Lentil",
+          "Lentil",
+          "Vegetable",
+          "Simmer",
+          "Main"
+        ],
+        "description": "Simple doesn’t have to mean boring—case in point, this red lentil soup that’s topped with crispy garlic chips and chile-infused oil and that comes together in just about 40 minutes. Preserved lemon, a pantry superstar if there ever was one, adds a brightness that cuts through the rich, stewy lentils. Because preserved lemons can vary in salt and acidity depending on the brand, you’ll want to adjust the amount of salt and lemon accordingly. As for the herbs, dill and basil work especially well in this soup, but you can use any tender herbs you have on hand. And if the toppers feel too involved for a Wednesday night (I get it!), feel free to spoon over a bit of your favorite store-bought chili crisp instead. ",
+        "imageUrl": "https://assets.bonappetit.com/photos/61f438452386a674750a5f37/3:4/w_720,c_limit/20220118%20Lentil%20Soup%20LEDE.jpg",
+        "title": "Red Lentil Soup With Preserved Lemon and Crispy Garlic",
+        "rating": {
+          "count": 9,
+          "value": 4.3
+        },
+        "tag": "Easy"
+      },
+      {
+        "categories": [
+          "Vegan",
+          "Pasta",
+          "Black Pepper",
+          "Weeknight",
+          "Easy",
+          "Quick And Easy",
+          "Quick",
+          "Mushroom",
+          "Vegetable",
+          "Vegetarian",
+          "Cashew",
+          "Nut",
+          "Dinner"
+        ],
+        "description": "Delicious, a little fancy, and deceptively simple to make, this vegan cacio e pepe is a frequent star in Chrissy Tracey’s weeknight meal rotation. While the pasta is good on its own, sautéed mixed mushrooms stirred into the pasta add a dose of veggies and some intrigue. ",
+        "imageUrl": "https://assets.bonappetit.com/photos/61b819004a4b16fe192529e0/3:4/w_720,c_limit/20211208%20Vegan%20Cacio%20e%20Pepe%20LEDE.jpg",
+        "title": "Vegan Cacio e Pepe",
+        "rating": {
+          "count": 31,
+          "value": 4.2
+        },
+        "tag": "Quick"
+      },
+      {
+        "categories": [
+          "5 Ingredients or Fewer",
+          "Stock",
+          "Gluten-Free",
+          "Nut-Free",
+          "Dairy-Free",
+          "Southern",
+          "American",
+          "Soul Food",
+          "Ham",
+          "Meat"
+        ],
+        "description": "Potlikker (or “pot liquor”) is the brothy, nutrient-dense liquid gold traditionally left behind after boiling greens and beans. An ingredient whose use sheds light on the complex racialized history of Southern cooking, potlikker was once valued only by diligent enslaved Africans who saved the nourishing broth for their families after cooking greens. Chef Carla Hall, for whom potlikker was an essential element of her childhood, switches up the order, making potlikker from scratch to use as an ultra-concentrated broth—for Hall, that’s often the first step in imbuing a dish with layers of meaty flavor. Here she makes potlikker with dry-cured country ham. If you can’t find country ham, smoked ham hocks will bring similar intensity.",
+        "imageUrl": "https://assets.bonappetit.com/photos/61f93f042afaff301442b22b/3:4/w_720,c_limit/Country-Ham-Potlikker.jpg",
+        "title": "Country Ham Potlikker",
+        "rating": {
+          "count": 3,
+          "value": 4.5
+        }
       }
     ],
     "trending": []

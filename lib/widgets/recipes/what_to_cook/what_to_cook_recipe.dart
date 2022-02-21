@@ -17,6 +17,7 @@ class WhatToCookRecipeWidget extends StatelessWidget {
     return SizedBox(
       width: 200.0,
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           RecipeImageWidget(
             imageUrl: recipe.imageUrl,
