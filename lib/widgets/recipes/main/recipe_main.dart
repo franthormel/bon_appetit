@@ -18,7 +18,7 @@ class TodayMainRecipeWidget extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        RecipeImageWidget(imageUrl: recipe.imageUrl, tag: recipe.tag),
+        RecipeImageWidget(imageUrl: recipe.imageUrl, tag: "Today's Recipe"),
         const Divider(color: Colors.transparent),
         HeaderBodyWidget(title: recipe.title, body: recipe.description),
         const SizedBox(height: 16.0),

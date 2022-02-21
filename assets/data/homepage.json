@@ -33,37 +33,36 @@
     ]
   },
   "recipes": {
-    "main": {
-      "categories": [
-        "Broccoli Rabe",
-        "Vegetable",
-        "Fontina",
-        "Cheese",
-        "Cheddar",
-        "Pasta Shells",
-        "Quick",
-        "Easy",
-        "Weeknight Meals",
-        "One Pot Meals",
-        "Main",
-        "Nut-Free",
-        "Dinner",
-        "Pasta",
-        "Rigatoni",
-        "Pasta & Noodles",
-        "Sausage",
-        "Meat"
-      ],
-      "description": "This weeknight-friendly pasta uses one skillet, one pot, and plenty of cheese.",
-      "imageUrl": "https://assets.bonappetit.com/photos/5a31a6035468684549cf8def/3:4/w_720,c_limit/one-pot-baked-pasta-with-sausage-and-broccoli-rabe.jpg",
-      "title": "Baked Pasta With Sausage and Broccoli Rabe",
-      "rating": {
-        "count": 55,
-        "value": 4.39
+    "main": [
+      {
+        "categories": [
+          "Broccoli Rabe",
+          "Vegetable",
+          "Fontina",
+          "Cheese",
+          "Cheddar",
+          "Pasta Shells",
+          "Quick",
+          "Easy",
+          "Weeknight Meals",
+          "One Pot Meals",
+          "Main",
+          "Nut-Free",
+          "Dinner",
+          "Pasta",
+          "Rigatoni",
+          "Pasta & Noodles",
+          "Sausage",
+          "Meat"
+        ],
+        "description": "This weeknight-friendly pasta uses one skillet, one pot, and plenty of cheese.",
+        "imageUrl": "https://assets.bonappetit.com/photos/5a31a6035468684549cf8def/3:4/w_720,c_limit/one-pot-baked-pasta-with-sausage-and-broccoli-rabe.jpg",
+        "title": "Baked Pasta With Sausage and Broccoli Rabe",
+        "rating": {
+          "count": 55,
+          "value": 4.39
+        }
       },
-      "tag": "Today's Recipe"
-    },
-    "others": [
       {
         "categories": [
           "Cookie",

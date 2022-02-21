@@ -13,24 +13,19 @@ class MainRecipesWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final dataset = Provider.of<HomepageDataset>(context, listen: false);
+    final recipes = dataset.recipes.main;
 
     return DesignedContainerWidget(
       color: BonAppetitColors.floralWhite,
       child: Column(
         children: [
-          TodayMainRecipeWidget(recipe: dataset.recipes.main),
+          TodayMainRecipeWidget(recipe: recipes[0]),
           const Divider(color: Colors.transparent),
-          OtherMainRecipeWidget(
-            recipe: dataset.recipes.others[0],
-          ),
+          OtherMainRecipeWidget(recipe: recipes[1]),
           const Divider(color: Colors.transparent),
-          OtherMainRecipeWidget(
-            recipe: dataset.recipes.others[1],
-          ),
+          OtherMainRecipeWidget(recipe: recipes[2]),
           const Divider(color: Colors.transparent),
-          OtherMainRecipeWidget(
-            recipe: dataset.recipes.others[2],
-          ),
+          OtherMainRecipeWidget(recipe: recipes[3]),
         ],
       ),
     );
