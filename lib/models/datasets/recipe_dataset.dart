@@ -6,20 +6,15 @@ part 'recipe_dataset.g.dart';
 
 @JsonSerializable()
 class RecipeDataset {
-  /// Today's recipe
   final Recipe main;
 
-  /// Accompanies 'Today's Recipe' on the side
-  /// Usually there are three (3) other recipes
+
   final List<Recipe> others;
 
-  /// List of recipes on 'What to cook today/tonight'
-  /// Usually there are around twenty (~20) recipes
   final List<Recipe> suggested;
   final List<String> suggestedTags;
 
-  /// List of recipes on 'Trending Now'
-  /// Usually there are around twenty (~20) recipes
+
   final List<Recipe> trending;
   final List<String> trendingTags;
 
