@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import '../../../../models/index.dart';
 import '../../../../services/app_state.dart';
 import 'horizontal_list_option.dart';
 
 class HorizontalListOptionsWidget extends StatelessWidget {
+  final List<String> options;
   final void Function()? onSelected;
 
   const HorizontalListOptionsWidget({
+    required this.options,
     this.onSelected,
     Key? key,
   }) : super(key: key);
@@ -19,7 +20,7 @@ class HorizontalListOptionsWidget extends StatelessWidget {
 
     return Wrap(
       spacing: 8.0,
-      children: RecipeOptions.suggestedOptions.map((option) {
+      children: options.map((option) {
         return HorizontalListOptionWidget(
           label: option,
           selected: appState.optionIsWhatToCook(option),

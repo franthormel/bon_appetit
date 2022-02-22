@@ -1,15 +1,24 @@
 import 'package:flutter/material.dart';
 
+import '../../../../models/index.dart';
 import '../../../designed_container.dart';
 import '../../../header_section.dart';
-import 'horizontal_list_options.dart';
 import 'horizontal_list_contents.dart';
+import 'horizontal_list_options.dart';
 
-// Suggested recipes.
-// Appears below main recipes
-// Second from the top.
 class HorizontalListRecipesWidget extends StatefulWidget {
-  const HorizontalListRecipesWidget({Key? key}) : super(key: key);
+  final String title;
+  final String subtitle;
+  final List<String> options;
+  final List<Recipe> recipes;
+
+  const HorizontalListRecipesWidget({
+    required this.title,
+    required this.subtitle,
+    required this.options,
+    required this.recipes,
+    Key? key,
+  }) : super(key: key);
 
   @override
   State<HorizontalListRecipesWidget> createState() => _WhatToCookWidgetState();
@@ -30,14 +39,20 @@ class _WhatToCookWidgetState extends State<HorizontalListRecipesWidget> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          const HeaderSectionWidget(
-            title: 'What to cook tonight',
-            subtitle: 'Fast, fresh and foolproof',
+          HeaderSectionWidget(
+            title: widget.title,
+            subtitle: widget.subtitle,
           ),
           const Divider(color: Colors.transparent),
-          HorizontalListOptionsWidget(onSelected: jumpToStartPosition),
+          HorizontalListOptionsWidget(
+            options: widget.options,
+            onSelected: jumpToStartPosition,
+          ),
           const Divider(color: Colors.transparent),
-          HorizontalListRecipeContentsWidget(controller: scrollController),
+          HorizontalListRecipeContentsWidget(
+            controller: scrollController,
+            recipes: widget.recipes,
+          ), // SOURCE NEW
         ],
       ),
     );

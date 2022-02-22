@@ -1,49 +1,32 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 
 import '../../../../models/index.dart';
-import '../../../../services/app_state.dart';
 import 'horizontal_list_recipe.dart';
 
 class HorizontalListRecipeContentsWidget extends StatelessWidget {
   final ScrollController? controller;
+  final List<Recipe> recipes;
 
   const HorizontalListRecipeContentsWidget({
+    required this.recipes,
     this.controller,
     Key? key,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    final suggestedRecipes = filterRecipes(context);
-
     return SizedBox(
       height: 400.0,
       child: ListView.separated(
         controller: controller,
         primary: false,
-        itemBuilder: (context, index) {
-          final recipe = suggestedRecipes[index];
-
-          return HorizontalListRecipeWidget(recipe: recipe);
-        },
+        itemBuilder: (context, index) => HorizontalListRecipeWidget(
+          recipe: recipes[index],
+        ),
         scrollDirection: Axis.horizontal,
         separatorBuilder: (context, index) => const SizedBox(width: 18.0),
-        itemCount: suggestedRecipes.length,
+        itemCount: recipes.length,
       ),
     );
-  }
-
-  List<Recipe> filterRecipes(BuildContext context) {
-    final dataset = Provider.of<HomepageDataset>(context, listen: false);
-    final appState = Provider.of<AppState>(context);
-
-    if (appState.canFilterWhatToCook) {
-      return dataset.recipes.suggested
-          .where((recipe) => appState.optionsAreWhatToCook(recipe.categories))
-          .toList();
-    }
-
-    return dataset.recipes.suggested;
   }
 }
