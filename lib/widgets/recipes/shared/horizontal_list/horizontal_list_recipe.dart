@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-import '../../../models/index.dart';
-import '../recipe_image.dart';
-import '../recipe_rating.dart';
+import '../../../../models/index.dart';
+import '../../shared/recipe_image.dart';
+import '../../shared/recipe_rating.dart';
 
-class WhatToCookRecipeWidget extends StatelessWidget {
+class HorizontalListRecipeWidget extends StatelessWidget {
   final Recipe recipe;
 
-  const WhatToCookRecipeWidget({
+  const HorizontalListRecipeWidget({
     required this.recipe,
     Key? key,
   }) : super(key: key);

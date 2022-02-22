@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import '../../../models/index.dart';
-import '../../../services/app_state.dart';
-import 'what_to_cook_recipe.dart';
+import '../../../../models/index.dart';
+import '../../../../services/app_state.dart';
+import 'horizontal_list_recipe.dart';
 
-class WhatToCookRecipesWidget extends StatelessWidget {
+class HorizontalListRecipeContentsWidget extends StatelessWidget {
   final ScrollController? controller;
 
-  const WhatToCookRecipesWidget({
+  const HorizontalListRecipeContentsWidget({
     this.controller,
     Key? key,
   }) : super(key: key);
@@ -25,7 +25,7 @@ class WhatToCookRecipesWidget extends StatelessWidget {
         itemBuilder: (context, index) {
           final recipe = suggestedRecipes[index];
 
-          return WhatToCookRecipeWidget(recipe: recipe);
+          return HorizontalListRecipeWidget(recipe: recipe);
         },
         scrollDirection: Axis.horizontal,
         separatorBuilder: (context, index) => const SizedBox(width: 18.0),
