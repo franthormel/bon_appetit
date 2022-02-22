@@ -6,7 +6,12 @@ import '../../../services/app_state.dart';
 import 'what_to_cook_recipe.dart';
 
 class WhatToCookRecipesWidget extends StatelessWidget {
-  const WhatToCookRecipesWidget({Key? key}) : super(key: key);
+  final ScrollController? controller;
+
+  const WhatToCookRecipesWidget({
+    this.controller,
+    Key? key,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -15,6 +20,7 @@ class WhatToCookRecipesWidget extends StatelessWidget {
     return SizedBox(
       height: 400.0,
       child: ListView.separated(
+        controller: controller,
         primary: false,
         itemBuilder: (context, index) {
           final recipe = suggestedRecipes[index];

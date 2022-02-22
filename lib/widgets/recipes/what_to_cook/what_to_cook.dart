@@ -16,22 +16,36 @@ class WhatToCookWidget extends StatefulWidget {
 }
 
 class _WhatToCookWidgetState extends State<WhatToCookWidget> {
+  final scrollController = ScrollController();
+
+  @override
+  void dispose() {
+    scrollController.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return DesignedContainerWidget(
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
-        children: const [
-          HeaderSectionWidget(
+        children: [
+          const HeaderSectionWidget(
             title: 'What to cook tonight',
             subtitle: 'Fast, fresh and foolproof',
           ),
-          Divider(color: Colors.transparent),
-          WhatToCookOptionsWidget(),
-          Divider(color: Colors.transparent),
-          WhatToCookRecipesWidget(),
+          const Divider(color: Colors.transparent),
+          WhatToCookOptionsWidget(onSelected: jumpToStartPosition),
+          const Divider(color: Colors.transparent),
+          WhatToCookRecipesWidget(controller: scrollController),
         ],
       ),
     );
+  }
+
+  void jumpToStartPosition() {
+    if (scrollController.hasClients) {
+      scrollController.jumpTo(scrollController.position.minScrollExtent);
+    }
   }
 }
