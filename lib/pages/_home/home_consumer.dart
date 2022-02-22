@@ -22,8 +22,9 @@ class HomeConsumerWidget extends StatelessWidget {
   List<Widget> get children {
     return const [
       MainRecipesWidget(),
-      WhatToCookWidget(),
+      SuggestedRecipesWidget(),
       ArticlesWidget(),
+      TrendingRecipesWidget(),
     ];
   }
 }

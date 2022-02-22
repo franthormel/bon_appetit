@@ -1,15 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import '../../../models/index.dart';
-import '../../../services/app_state.dart';
-import '../shared/horizontal_list/horizontal_list.dart';
+import '../../models/index.dart';
+import '../../services/app_state.dart';
+import 'shared/horizontal_list/horizontal_list.dart';
+import 'shared/horizontal_list/horizontal_list_mixin.dart';
 
-// Suggested recipes.
-// Appears below main recipes
-// Second from the top.
-class WhatToCookWidget extends StatelessWidget {
-  const WhatToCookWidget({Key? key}) : super(key: key);
+class SuggestedRecipesWidget extends StatelessWidget with HorizontalListRecipesMixin {
+  const SuggestedRecipesWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +19,7 @@ class WhatToCookWidget extends StatelessWidget {
     );
   }
 
-  // TODO Make a MIXIN for this and Trending recipes
+  @override
   List<Recipe> filteredRecipes(BuildContext context) {
     final dataset = Provider.of<HomepageDataset>(context, listen: false);
     final appState = Provider.of<AppState>(context);
