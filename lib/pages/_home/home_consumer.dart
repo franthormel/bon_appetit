@@ -12,6 +12,7 @@ class HomeConsumerWidget extends StatelessWidget {
       color: BonAppetitColors.white,
       child: ListView.separated(
         primary: true,
+        physics: const BouncingScrollPhysics(),
         itemCount: children.length,
         itemBuilder: (context, index) => children[index],
         separatorBuilder: (context, index) => const SizedBox(height: 14.0),
