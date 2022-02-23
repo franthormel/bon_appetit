@@ -8,7 +8,6 @@ import 'horizontal_list_recipe.dart';
 
 class HorizontalListRecipeContentsWidget extends StatelessWidget
     with HorizontalListMixin {
-  @override
   final RecipeList type;
 
   const HorizontalListRecipeContentsWidget({
@@ -19,15 +18,13 @@ class HorizontalListRecipeContentsWidget extends StatelessWidget
   @override
   Widget build(BuildContext context) {
     final dataset = Provider.of<HomepageDataset>(context, listen: false);
-    final appState = Provider.of<AppState>(context);
-
-    final recipes = filteredRecipes(appState, dataset.recipes);
-    final filterRecipe = filterRecipeOption(appState);
+    final filter = decidedRecipeFilterType(context, type);
+    final recipes = filteredRecipes(filter, dataset.recipes);
 
     return SizedBox(
       height: 400.0,
       child: ListView.separated(
-        controller: filterRecipe.scrollController,
+        controller: filter.scrollController,
         itemBuilder: (context, index) => HorizontalListRecipeWidget(
           recipe: recipes[index],
         ),
@@ -39,8 +36,7 @@ class HorizontalListRecipeContentsWidget extends StatelessWidget
     );
   }
 
-  List<Recipe> filteredRecipes(AppState appState, RecipeDataset dataset) {
-    final filter = filterRecipeOption(appState);
+  List<Recipe> filteredRecipes(RecipeFilter filter, RecipeDataset dataset) {
     final recipes = recipeSource(dataset);
 
     if (filter.shouldFilter) {

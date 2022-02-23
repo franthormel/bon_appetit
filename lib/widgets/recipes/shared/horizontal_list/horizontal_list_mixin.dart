@@ -1,15 +1,16 @@
+import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+
 import '../../../../models/index.dart';
 import '../../../../services/index.dart';
 
 mixin HorizontalListMixin {
-  RecipeList get type;
-
-  FilterRecipeOption filterRecipeOption(AppState appState) {
+  RecipeFilter decidedRecipeFilterType(BuildContext context, RecipeList type) {
     switch (type) {
       case RecipeList.suggested:
-        return appState.filterSuggestedRecipes;
+        return Provider.of<SuggestedRecipesFilter>(context);
       case RecipeList.trending:
-        return appState.filterTrendingRecipes;
+        return Provider.of<TrendingRecipesFilter>(context);
     }
   }
 }

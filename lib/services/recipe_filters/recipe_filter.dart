@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 
-import 'exterior_scroll_controller_mixin.dart';
+import '../exterior_scroll_controller_mixin.dart';
 
-class FilterRecipeOption extends ChangeNotifier
-    with ExteriorScrollControllerMixin {
+class RecipeFilter extends ChangeNotifier with ExteriorScrollControllerMixin {
   String _recipeOption = "All";
 
   void changeRecipeOptionTo(String option) {

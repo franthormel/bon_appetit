@@ -13,8 +13,12 @@ class HomeProvidersWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [
-        ChangeNotifierProvider<AppState>(
-          create: (context) => AppState(),
+        ChangeNotifierProvider<SuggestedRecipesFilter>(
+          create: (context) => SuggestedRecipesFilter(),
+          lazy: false,
+        ),
+        ChangeNotifierProvider<TrendingRecipesFilter>(
+          create: (context) => TrendingRecipesFilter(),
           lazy: false,
         ),
         FutureProvider<HomepageDataset?>(
