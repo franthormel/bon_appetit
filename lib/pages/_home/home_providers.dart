@@ -3,8 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../../models/index.dart';
-import '../../services/app_state.dart';
-import '../../services/mock_data.dart';
+import '../../services/index.dart';
 import 'home_consumer.dart';
 
 class HomeProvidersWidget extends StatelessWidget {

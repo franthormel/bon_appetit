@@ -6,32 +6,17 @@ import '../../../header_section.dart';
 import 'horizontal_list_contents.dart';
 import 'horizontal_list_options.dart';
 
-class HorizontalListRecipesWidget extends StatefulWidget {
+class HorizontalListRecipesWidget extends StatelessWidget {
   final String title;
   final String subtitle;
-  final List<String> options;
-  final List<Recipe> recipes;
+  final RecipeList type;
 
   const HorizontalListRecipesWidget({
     required this.title,
     required this.subtitle,
-    required this.options,
-    required this.recipes,
+    required this.type,
     Key? key,
   }) : super(key: key);
-
-  @override
-  State<HorizontalListRecipesWidget> createState() => _WhatToCookWidgetState();
-}
-
-class _WhatToCookWidgetState extends State<HorizontalListRecipesWidget> {
-  final scrollController = ScrollController();
-
-  @override
-  void dispose() {
-    scrollController.dispose();
-    super.dispose();
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -40,27 +25,15 @@ class _WhatToCookWidgetState extends State<HorizontalListRecipesWidget> {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           HeaderSectionWidget(
-            title: widget.title,
-            subtitle: widget.subtitle,
+            title: title,
+            subtitle: subtitle,
           ),
           const Divider(color: Colors.transparent),
-          HorizontalListOptionsWidget(
-            options: widget.options,
-            onSelected: jumpToStartPosition,
-          ),
+          HorizontalListOptionsWidget(type: type),
           const Divider(color: Colors.transparent),
-          HorizontalListRecipeContentsWidget(
-            controller: scrollController,
-            recipes: widget.recipes,
-          ), // SOURCE NEW
+          HorizontalListRecipeContentsWidget(type: type),
         ],
       ),
     );
-  }
-
-  void jumpToStartPosition() {
-    if (scrollController.hasClients) {
-      scrollController.jumpTo(scrollController.position.minScrollExtent);
-    }
   }
 }

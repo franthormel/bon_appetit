@@ -1,0 +1,4 @@
+enum RecipeList {
+  suggested,
+  trending,
+}
