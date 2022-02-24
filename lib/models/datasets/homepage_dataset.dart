@@ -2,17 +2,20 @@ import 'package:json_annotation/json_annotation.dart';
 
 import 'article_dataset.dart';
 import 'recipe_dataset.dart';
+import 'videos_dataset.dart';
 
 part 'homepage_dataset.g.dart';
 
 @JsonSerializable()
 class HomepageDataset {
-  final ArticleDataset articles;
-  final RecipeDataset recipes;
+  final ArticleDataset article;
+  final RecipeDataset recipe;
+  final VideosDataset video;
 
   HomepageDataset({
-    required this.articles,
-    required this.recipes,
+    required this.article,
+    required this.recipe,
+    required this.video,
   });
 
   factory HomepageDataset.fromJson(Map<String, dynamic> json) =>

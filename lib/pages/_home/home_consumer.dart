@@ -26,6 +26,7 @@ class HomeConsumerWidget extends StatelessWidget {
       SuggestedRecipesWidget(),
       ArticlesWidget(),
       TrendingRecipesWidget(),
+      VideoListWidget(),
     ];
   }
 }

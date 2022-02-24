@@ -17,20 +17,20 @@ class ArticlesWidget extends StatelessWidget {
     return DesignedContainerWidget(
       child: Column(
         children: [
-          MainArticleWidget(article: dataset.articles.main),
+          MainArticleWidget(article: dataset.article.main),
           const SizedBox(height: 64.0),
           const HeaderSectionWidget(
             title: 'What to Read',
             subtitle: 'Stories from around the world of food',
           ),
           const SizedBox(height: 32.0),
-          OtherArticleWidget(article: dataset.articles.others[0]),
+          OtherArticleWidget(article: dataset.article.others[0]),
           const Divider(color: Colors.transparent),
-          OtherArticleWidget(article: dataset.articles.others[1]),
+          OtherArticleWidget(article: dataset.article.others[1]),
           const Divider(color: Colors.transparent),
-          OtherArticleWidget(article: dataset.articles.others[2]),
+          OtherArticleWidget(article: dataset.article.others[2]),
           const Divider(color: Colors.transparent),
-          OtherArticleWidget(article: dataset.articles.others[3]),
+          OtherArticleWidget(article: dataset.article.others[3]),
         ],
       ),
     );
