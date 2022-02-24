@@ -22,7 +22,6 @@ class HorizontalListRecipesWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return DesignedContainerWidget(
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           HeaderSectionWidget(
             title: title,

@@ -5,6 +5,7 @@ import '../../models/index.dart';
 import '../../style/colors.dart';
 import '../designed_container.dart';
 import '../header_section.dart';
+import 'video.dart';
 
 class VideoListWidget extends StatelessWidget {
   const VideoListWidget({Key? key}) : super(key: key);
@@ -18,34 +19,25 @@ class VideoListWidget extends StatelessWidget {
       color: BonAppetitColors.black,
       child: Column(
         children: [
+          const SizedBox(height: 20.0),
           const HeaderSectionWidget(
             title: 'What to Watch',
             subtitle: 'Food shows so good you can almost taste them',
             color: BonAppetitColors.white,
           ),
-          const Divider(color: Colors.transparent),
+          const SizedBox(height: 20.0),
           SizedBox(
             height: 300.0,
             child: ListView.separated(
               itemCount: videos.length,
-              itemBuilder: (context, index) {
-                final video = videos[index];
-
-                return SizedBox(
-                  width: 200,
-                  child: Text(
-                    "${video.title} ${video.series} ${video.uploadDate.toLocal()}",
-                    softWrap: true,
-                    maxLines: 10,
-                    style: const TextStyle(color: BonAppetitColors.white),
-                  ),
-                );
-              },
+              itemBuilder: (context, index) =>
+                  VideoEntryWidget(video: videos[index]),
               primary: false,
               scrollDirection: Axis.horizontal,
               separatorBuilder: (context, index) => const SizedBox(width: 18.0),
             ),
           ),
+          const SizedBox(height: 20.0),
         ],
       ),
     );

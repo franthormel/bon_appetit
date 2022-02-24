@@ -3,10 +3,8 @@ import 'package:flutter/material.dart';
 
 class CachedImageProgressWidget extends StatelessWidget {
   final String imageUrl;
-  final double? height;
 
   const CachedImageProgressWidget({
-    this.height,
     required this.imageUrl,
     Key? key,
   }) : super(key: key);
@@ -15,9 +13,7 @@ class CachedImageProgressWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return CachedNetworkImage(
       imageUrl: imageUrl,
-      fadeInCurve: Curves.easeInCubic,
-      fadeInDuration: const Duration(seconds: 1),
-      height: height,
+      fadeInCurve: Curves.ease,
       progressIndicatorBuilder: (context, url, progress) {
         return Center(
           child: Padding(
