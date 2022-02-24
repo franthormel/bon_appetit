@@ -7,4 +7,4 @@ export 'recipes/enum/recipe_list.dart';
 export 'recipes/recipe.dart';
 export 'recipes/recipe_options.dart';
 export 'recipes/recipe_rating.dart';
-export 'videos/videos.dart';
+export 'videos/video.dart';

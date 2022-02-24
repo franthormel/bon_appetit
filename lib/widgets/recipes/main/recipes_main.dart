@@ -13,7 +13,7 @@ class MainRecipesWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final dataset = Provider.of<HomepageDataset>(context, listen: false);
-    final recipes = dataset.recipe.main;
+    final recipes = dataset.recipes.main;
 
     return DesignedContainerWidget(
       color: BonAppetitColors.floralWhite,

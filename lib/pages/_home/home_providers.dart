@@ -38,9 +38,8 @@ class HomeProvidersWidget extends StatelessWidget {
         ),
       ],
       child: Consumer<HomepageDataset?>(
-        builder: (context, dataset, child) {
-          return dataset == null ? Container() : const HomeConsumerWidget();
-        },
+        builder: (context, dataset, child) =>
+            dataset == null ? Container() : const HomeConsumerWidget(),
       ),
     );
   }

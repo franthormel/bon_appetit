@@ -1,6 +1,6 @@
 import 'package:json_annotation/json_annotation.dart';
 
-import '../videos/videos.dart';
+import '../videos/video.dart';
 
 part 'videos_dataset.g.dart';
 

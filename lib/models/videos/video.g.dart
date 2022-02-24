@@ -1,6 +1,6 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'videos.dart';
+part of 'video.dart';
 
 // **************************************************************************
 // JsonSerializableGenerator
@@ -9,6 +9,7 @@ part of 'videos.dart';
 VideoEntry _$VideoEntryFromJson(Map<String, dynamic> json) => VideoEntry(
       title: json['title'] as String,
       imageUrl: json['imageUrl'] as String,
+      uploadDate: DateTime.parse(json['uploadDate'] as String),
       series: json['series'] as String?,
     );
 
@@ -17,4 +18,5 @@ Map<String, dynamic> _$VideoEntryToJson(VideoEntry instance) =>
       'title': instance.title,
       'series': instance.series,
       'imageUrl': instance.imageUrl,
+      'uploadDate': instance.uploadDate.toIso8601String(),
     };

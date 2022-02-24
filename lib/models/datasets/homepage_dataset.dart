@@ -8,14 +8,14 @@ part 'homepage_dataset.g.dart';
 
 @JsonSerializable()
 class HomepageDataset {
-  final ArticleDataset article;
-  final RecipeDataset recipe;
-  final VideosDataset video;
+  final ArticleDataset articles;
+  final RecipeDataset recipes;
+  final VideosDataset videos;
 
   HomepageDataset({
-    required this.article,
-    required this.recipe,
-    required this.video,
+    required this.articles,
+    required this.recipes,
+    required this.videos,
   });
 
   factory HomepageDataset.fromJson(Map<String, dynamic> json) =>
