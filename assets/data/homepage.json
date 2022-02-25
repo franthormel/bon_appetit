@@ -1116,79 +1116,79 @@
       }
     ]
   },
-  "videos": {
-    "entries": [
-      {
-        "title": "Recreating Carla Hall's Chicken Fried Steak From Taste",
-        "imageUrl": "https://dwgyu36up6iuz.cloudfront.net/heru80fdn/image/upload/c_fill%2Cd_placeholder_image.jpg%2Cfl_progressive%2Cg_center%2Ch_900%2Cq_80%2Cw_1600/v1644947420/bonappetit_reverse-engineering-recreating-carla-halls-chicken-fried-steak-from-taste.jpg",
-        "series": "Reverse Engineering",
-        "uploadDate": "2022-02-16"
-      },
-      {
-        "title": "How a Sugar Artist Crafts a 5-Tier Wedding Cake",
-        "imageUrl": "https://dwgyu36up6iuz.cloudfront.net/heru80fdn/image/upload/c_fill%2Cd_placeholder_image.jpg%2Cfl_progressive%2Cg_center%2Ch_900%2Cq_80%2Cw_1600/v1644607210/bonappetit_handcrafted-how-to-decorate-a-5-tier-wedding-cake.jpg",
-        "series": "Handcrafted",
-        "uploadDate": "2022-02-14"
-      },
-      {
-        "title": "Nina Dobrev & Julianne Hough Taste Nuts With Brad",
-        "imageUrl": "https://dwgyu36up6iuz.cloudfront.net/heru80fdn/image/upload/c_fill%2Cd_placeholder_image.jpg%2Cfl_progressive%2Cg_center%2Ch_900%2Cq_80%2Cw_1600/v1644432734/bonappetit_taste-buds-nina-dobrev-and-julianne-hough-taste-nuts-with-brad.jpg",
-        "series": "Taste Testers",
-        "uploadDate": "2022-02-10"
-      },
-      {
-        "title": "Jessie Makes Drunken Clams & Noodles",
-        "imageUrl": "https://dwgyu36up6iuz.cloudfront.net/heru80fdn/image/upload/c_fill%2Cd_placeholder_image.jpg%2Cfl_progressive%2Cg_center%2Ch_900%2Cq_80%2Cw_1600/v1644269132/bonappetit_from-the-test-kitchen-jessie-makes-drunken-clam-noodles.jpg",
-        "series": "From the Test Kitchen",
-        "uploadDate": "2022-02-08"
-      },
-      {
-        "title": "Pro Chefs Make Chicken Wings 7 Ways",
-        "imageUrl": "https://dwgyu36up6iuz.cloudfront.net/heru80fdn/image/upload/c_fill%2Cd_placeholder_image.jpg%2Cfl_progressive%2Cg_center%2Ch_900%2Cq_80%2Cw_1600/v1643902886/bonappetit_test-kitchen-talks-pro-chefs-make-chicken-wings-7-ways.jpg",
-        "series": "Test Kitchen Talks",
-        "uploadDate": "2022-02-07"
-      },
-      {
-        "title": "Brad Makes Pickled Mussels",
-        "imageUrl": "https://dwgyu36up6iuz.cloudfront.net/heru80fdn/image/upload/c_fill%2Cd_placeholder_image.jpg%2Cfl_progressive%2Cg_center%2Ch_900%2Cq_80%2Cw_1600/v1643750454/bonappetit_it-s-alive-with-brad-brad-makes-pickled-mussels.jpg",
-        "series": "It's Alive",
-        "uploadDate": "2022-02-03"
-      },
-      {
-        "title": "Chris Makes Hot Honey Radicchio Salad",
-        "imageUrl": "https://dwgyu36up6iuz.cloudfront.net/heru80fdn/image/upload/c_fill%2Cd_placeholder_image.jpg%2Cfl_progressive%2Cg_center%2Ch_900%2Cq_80%2Cw_1600/v1643299027/bonappetit_from-the-test-kitchen-chris-makes-hot-honey-radicchio-salad.jpg",
-        "series": "From the Test Kitchen",
-        "uploadDate": "2022-01-27"
-      },
-      {
-        "title": "Brad Makes Fermented Hot Honey",
-        "imageUrl": "https://dwgyu36up6iuz.cloudfront.net/heru80fdn/image/upload/c_fill%2Cd_placeholder_image.jpg%2Cfl_progressive%2Cg_center%2Ch_900%2Cq_80%2Cw_1600/v1643150985/bonappetit_it-s-alive-with-brad-brad-makes-hot-honey-with-fermented-chilies.jpg",
-        "series": "It's Alive",
-        "uploadDate": "2022-01-26"
-      },
-      {
-        "title": "Recreating Aarón Sánchez's Chiles Rellenos From Taste",
-        "imageUrl": "https://dwgyu36up6iuz.cloudfront.net/heru80fdn/image/upload/c_fill%2Cd_placeholder_image.jpg%2Cfl_progressive%2Cg_center%2Ch_900%2Cq_80%2Cw_1600/v1643129865/bonappetit_reverse-engineering-recreating-aaron-sanchezs-chiles-rellenos-from-taste.jpg",
-        "series": "Reverse Engineering",
-        "uploadDate": "2022-01-25"
-      },
-      {
-        "title": "Jeff Goldblum Makes A Birthday Cake With Brad",
-        "imageUrl": "https://dwgyu36up6iuz.cloudfront.net/heru80fdn/image/upload/c_fill%2Cd_placeholder_image.jpg%2Cfl_progressive%2Cg_center%2Ch_900%2Cq_80%2Cw_1600/v1642618876/bonappetit_taste-buds-jeff-goldblum-bakes-a-cake-with-brad.jpg",
-        "series": "Taste Testers",
-        "uploadDate": "2022-01-20"
-      },
-      {
-        "title": "24 Hours at a Michelin-Rated Restaurant, From Ingredients To Dinner Service",
-        "imageUrl": "https://dwgyu36up6iuz.cloudfront.net/heru80fdn/image/upload/c_fill%2Cd_placeholder_image.jpg%2Cfl_progressive%2Cg_center%2Ch_900%2Cq_80%2Cw_1600/v1642535909/bonappetit_on-the-line-greg-baxtrom.jpg",
-        "uploadDate": "2022-01-19"
-      },
-      {
-        "title": "Perfect Shawarma: Takeout vs Pro Chef",
-        "imageUrl": "https://dwgyu36up6iuz.cloudfront.net/heru80fdn/image/upload/c_fill%2Cd_placeholder_image.jpg%2Cfl_progressive%2Cg_center%2Ch_900%2Cq_80%2Cw_1600/v1642190309/bonappetit_taking-on-takeout-who-makes-the-best-shawarma-takeout-vs-pro-chef.jpg",
-        "series": "Taking on Takeout",
-        "uploadDate": "2022-01-18"
-      }
-    ]
-  }
+  "videos": [
+    {
+      "title": "Recreating Carla Hall's Chicken Fried Steak From Taste",
+      "imageUrl": "https://dwgyu36up6iuz.cloudfront.net/heru80fdn/image/upload/c_fill%2Cd_placeholder_image.jpg%2Cfl_progressive%2Cg_center%2Ch_900%2Cq_80%2Cw_1600/v1644947420/bonappetit_reverse-engineering-recreating-carla-halls-chicken-fried-steak-from-taste.jpg",
+      "series": "Reverse Engineering",
+      "uploadDate": "2022-02-16"
+    },
+    {
+      "title": "How a Sugar Artist Crafts a 5-Tier Wedding Cake",
+      "imageUrl": "https://dwgyu36up6iuz.cloudfront.net/heru80fdn/image/upload/c_fill%2Cd_placeholder_image.jpg%2Cfl_progressive%2Cg_center%2Ch_900%2Cq_80%2Cw_1600/v1644607210/bonappetit_handcrafted-how-to-decorate-a-5-tier-wedding-cake.jpg",
+      "series": "Handcrafted",
+      "uploadDate": "2022-02-14"
+    },
+    {
+      "title": "Nina Dobrev & Julianne Hough Taste Nuts With Brad",
+      "imageUrl": "https://dwgyu36up6iuz.cloudfront.net/heru80fdn/image/upload/c_fill%2Cd_placeholder_image.jpg%2Cfl_progressive%2Cg_center%2Ch_900%2Cq_80%2Cw_1600/v1644432734/bonappetit_taste-buds-nina-dobrev-and-julianne-hough-taste-nuts-with-brad.jpg",
+      "series": "Taste Testers",
+      "uploadDate": "2022-02-10"
+    },
+    {
+      "title": "Jessie Makes Drunken Clams & Noodles",
+      "imageUrl": "https://dwgyu36up6iuz.cloudfront.net/heru80fdn/image/upload/c_fill%2Cd_placeholder_image.jpg%2Cfl_progressive%2Cg_center%2Ch_900%2Cq_80%2Cw_1600/v1644269132/bonappetit_from-the-test-kitchen-jessie-makes-drunken-clam-noodles.jpg",
+      "series": "From the Test Kitchen",
+      "uploadDate": "2022-02-08"
+    },
+    {
+      "title": "Pro Chefs Make Chicken Wings 7 Ways",
+      "imageUrl": "https://dwgyu36up6iuz.cloudfront.net/heru80fdn/image/upload/c_fill%2Cd_placeholder_image.jpg%2Cfl_progressive%2Cg_center%2Ch_900%2Cq_80%2Cw_1600/v1643902886/bonappetit_test-kitchen-talks-pro-chefs-make-chicken-wings-7-ways.jpg",
+      "series": "Test Kitchen Talks",
+      "uploadDate": "2022-02-07"
+    },
+    {
+      "title": "Brad Makes Pickled Mussels",
+      "imageUrl": "https://dwgyu36up6iuz.cloudfront.net/heru80fdn/image/upload/c_fill%2Cd_placeholder_image.jpg%2Cfl_progressive%2Cg_center%2Ch_900%2Cq_80%2Cw_1600/v1643750454/bonappetit_it-s-alive-with-brad-brad-makes-pickled-mussels.jpg",
+      "series": "It's Alive",
+      "uploadDate": "2022-02-03"
+    },
+    {
+      "title": "Chris Makes Hot Honey Radicchio Salad",
+      "imageUrl": "https://dwgyu36up6iuz.cloudfront.net/heru80fdn/image/upload/c_fill%2Cd_placeholder_image.jpg%2Cfl_progressive%2Cg_center%2Ch_900%2Cq_80%2Cw_1600/v1643299027/bonappetit_from-the-test-kitchen-chris-makes-hot-honey-radicchio-salad.jpg",
+      "series": "From the Test Kitchen",
+      "uploadDate": "2022-01-27"
+    },
+    {
+      "title": "Brad Makes Fermented Hot Honey",
+      "imageUrl": "https://dwgyu36up6iuz.cloudfront.net/heru80fdn/image/upload/c_fill%2Cd_placeholder_image.jpg%2Cfl_progressive%2Cg_center%2Ch_900%2Cq_80%2Cw_1600/v1643150985/bonappetit_it-s-alive-with-brad-brad-makes-hot-honey-with-fermented-chilies.jpg",
+      "series": "It's Alive",
+      "uploadDate": "2022-01-26"
+    },
+    {
+      "title": "Recreating Aarón Sánchez's Chiles Rellenos From Taste",
+      "imageUrl": "https://dwgyu36up6iuz.cloudfront.net/heru80fdn/image/upload/c_fill%2Cd_placeholder_image.jpg%2Cfl_progressive%2Cg_center%2Ch_900%2Cq_80%2Cw_1600/v1643129865/bonappetit_reverse-engineering-recreating-aaron-sanchezs-chiles-rellenos-from-taste.jpg",
+      "series": "Reverse Engineering",
+      "uploadDate": "2022-01-25"
+    },
+    {
+      "title": "Jeff Goldblum Makes A Birthday Cake With Brad",
+      "imageUrl": "https://dwgyu36up6iuz.cloudfront.net/heru80fdn/image/upload/c_fill%2Cd_placeholder_image.jpg%2Cfl_progressive%2Cg_center%2Ch_900%2Cq_80%2Cw_1600/v1642618876/bonappetit_taste-buds-jeff-goldblum-bakes-a-cake-with-brad.jpg",
+      "series": "Taste Testers",
+      "uploadDate": "2022-01-20"
+    },
+    {
+      "title": "24 Hours at a Michelin-Rated Restaurant, From Ingredients To Dinner Service",
+      "imageUrl": "https://dwgyu36up6iuz.cloudfront.net/heru80fdn/image/upload/c_fill%2Cd_placeholder_image.jpg%2Cfl_progressive%2Cg_center%2Ch_900%2Cq_80%2Cw_1600/v1642535909/bonappetit_on-the-line-greg-baxtrom.jpg",
+      "uploadDate": "2022-01-19"
+    },
+    {
+      "title": "Perfect Shawarma: Takeout vs Pro Chef",
+      "imageUrl": "https://dwgyu36up6iuz.cloudfront.net/heru80fdn/image/upload/c_fill%2Cd_placeholder_image.jpg%2Cfl_progressive%2Cg_center%2Ch_900%2Cq_80%2Cw_1600/v1642190309/bonappetit_taking-on-takeout-who-makes-the-best-shawarma-takeout-vs-pro-chef.jpg",
+      "series": "Taking on Takeout",
+      "uploadDate": "2022-01-18"
+    }
+  ],
+  "products": [],
+  "tips": []
 }

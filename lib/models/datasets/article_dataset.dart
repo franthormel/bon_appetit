@@ -7,9 +7,12 @@ part 'article_dataset.g.dart';
 
 @JsonSerializable()
 class ArticleDataset {
+  /// Displayed above the 'What to Read' header
+  /// and is considered to be today's main article
   final MainArticle main;
 
-  /// Usually there are four (4) articles
+  /// There are four (4) articles that
+  /// accompanies the main article.
   final List<OtherArticle> others;
 
   ArticleDataset({

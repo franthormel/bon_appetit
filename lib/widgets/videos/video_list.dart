@@ -13,7 +13,7 @@ class VideoListWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final dataset = Provider.of<HomepageDataset>(context, listen: false);
-    final videos = dataset.videos.entries;
+    final videos = dataset.videos;
 
     return DesignedContainerWidget(
       color: BonAppetitColors.black,
