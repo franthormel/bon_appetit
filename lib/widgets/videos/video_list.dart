@@ -19,13 +19,13 @@ class VideoListWidget extends StatelessWidget {
       color: BonAppetitColors.black,
       child: Column(
         children: [
-          const SizedBox(height: 20.0),
+          const SizedBox(height: 15.0),
           const HeaderSectionWidget(
             title: 'What to Watch',
             subtitle: 'Food shows so good you can almost taste them',
             color: BonAppetitColors.white,
           ),
-          const SizedBox(height: 20.0),
+          const Divider(color: Colors.transparent),
           SizedBox(
             height: 300.0,
             child: ListView.separated(
@@ -36,6 +36,11 @@ class VideoListWidget extends StatelessWidget {
               scrollDirection: Axis.horizontal,
               separatorBuilder: (context, index) => const SizedBox(width: 18.0),
             ),
+          ),
+          const Divider(color: Colors.transparent),
+          OutlinedButton(
+            onPressed: () {},
+            child: const Text('SEE MORE VIDEOS'),
           ),
           const SizedBox(height: 20.0),
         ],

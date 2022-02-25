@@ -19,6 +19,18 @@ class BonAppetitTheme {
           fontWeight: FontWeight.w500,
         ),
       ),
+      outlinedButtonTheme: OutlinedButtonThemeData(
+        style: OutlinedButton.styleFrom(
+          backgroundColor: BonAppetitColors.black,
+          primary: BonAppetitColors.white,
+          shape: const BeveledRectangleBorder(
+            borderRadius: BorderRadius.zero,
+          ),
+          side: const BorderSide(
+            color: BonAppetitColors.white,
+          ),
+        ),
+      ),
       progressIndicatorTheme: const ProgressIndicatorThemeData(
         circularTrackColor: BonAppetitColors.mediumChampagne,
         color: BonAppetitColors.sizzlingSunrise,
