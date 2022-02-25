@@ -2,22 +2,22 @@ import 'package:json_annotation/json_annotation.dart';
 
 import 'article.dart';
 
-part 'other_article.g.dart';
+part 'categorized_article.g.dart';
 
 @JsonSerializable()
-class OtherArticle extends Article {
+class CategorizedArticle extends Article {
   final String category;
 
-  OtherArticle({
+  CategorizedArticle({
     required this.category,
     required String imageUrl,
     required String title,
     required String subtitle,
   }) : super(imageUrl: imageUrl, title: title, subtitle: subtitle);
 
-  factory OtherArticle.fromJson(Map<String, dynamic> json) =>
-      _$OtherArticleFromJson(json);
+  factory CategorizedArticle.fromJson(Map<String, dynamic> json) =>
+      _$CategorizedArticleFromJson(json);
 
   @override
-  Map<String, dynamic> toJson() => _$OtherArticleToJson(this);
+  Map<String, dynamic> toJson() => _$CategorizedArticleToJson(this);
 }

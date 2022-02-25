@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
-import '../../models/index.dart';
-import '../../style/colors.dart';
-import '../cached_image_progress.dart';
-import '../header_body.dart';
+import '../../../models/index.dart';
+import '../../../style/colors.dart';
+import '../../cached_image_progress.dart';
+import '../../header_body.dart';
 
-class MainArticleWidget extends StatelessWidget {
-  final MainArticle article;
+class MainStoryWidget extends StatelessWidget {
+  final Article article;
 
-  const MainArticleWidget({
+  const MainStoryWidget({
     required this.article,
     Key? key,
   }) : super(key: key);

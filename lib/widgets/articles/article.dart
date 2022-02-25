@@ -4,7 +4,7 @@ import '../../models/index.dart';
 import '../cached_image_progress.dart';
 import '../designed_container.dart';
 import '../header_body.dart';
-import 'article_category.dart';
+import 'stories/story_category.dart';
 
 class ArticleWidget extends StatelessWidget {
   final Article article;
@@ -30,12 +30,12 @@ class ArticleWidget extends StatelessWidget {
   }
 
   List<Widget>? get otherArticleCategory {
-    if (article.runtimeType == OtherArticle) {
-      final otherArticle = article as OtherArticle;
+    if (article.runtimeType == CategorizedArticle) {
+      final otherArticle = article as CategorizedArticle;
 
       return [
         const Divider(color: Colors.transparent),
-        ArticleCategoryWidget(category: otherArticle.category),
+        StoryCategoryWidget(category: otherArticle.category),
       ];
     }
 

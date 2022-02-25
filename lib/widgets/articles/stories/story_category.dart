@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-import '../../style/colors.dart';
+import '../../../style/colors.dart';
 
-class ArticleCategoryWidget extends StatelessWidget {
+class StoryCategoryWidget extends StatelessWidget {
   final String category;
 
-  const ArticleCategoryWidget({
+  const StoryCategoryWidget({
     required this.category,
     Key? key,
   }) : super(key: key);

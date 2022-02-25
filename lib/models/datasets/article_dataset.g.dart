@@ -8,9 +8,9 @@ part of 'article_dataset.dart';
 
 ArticleDataset _$ArticleDatasetFromJson(Map<String, dynamic> json) =>
     ArticleDataset(
-      main: MainArticle.fromJson(json['main'] as Map<String, dynamic>),
+      main: Article.fromJson(json['main'] as Map<String, dynamic>),
       others: (json['others'] as List<dynamic>)
-          .map((e) => OtherArticle.fromJson(e as Map<String, dynamic>))
+          .map((e) => CategorizedArticle.fromJson(e as Map<String, dynamic>))
           .toList(),
     );
 

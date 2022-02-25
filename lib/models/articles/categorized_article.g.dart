@@ -1,19 +1,20 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'other_article.dart';
+part of 'categorized_article.dart';
 
 // **************************************************************************
 // JsonSerializableGenerator
 // **************************************************************************
 
-OtherArticle _$OtherArticleFromJson(Map<String, dynamic> json) => OtherArticle(
+CategorizedArticle _$CategorizedArticleFromJson(Map<String, dynamic> json) =>
+    CategorizedArticle(
       category: json['category'] as String,
       imageUrl: json['imageUrl'] as String,
       title: json['title'] as String,
       subtitle: json['subtitle'] as String,
     );
 
-Map<String, dynamic> _$OtherArticleToJson(OtherArticle instance) =>
+Map<String, dynamic> _$CategorizedArticleToJson(CategorizedArticle instance) =>
     <String, dynamic>{
       'imageUrl': instance.imageUrl,
       'title': instance.title,

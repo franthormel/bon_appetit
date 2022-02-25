@@ -1,7 +1,7 @@
 import 'package:json_annotation/json_annotation.dart';
 
-import '../articles/main_article.dart';
-import '../articles/other_article.dart';
+import '../articles/article.dart';
+import '../articles/categorized_article.dart';
 
 part 'article_dataset.g.dart';
 
@@ -9,11 +9,11 @@ part 'article_dataset.g.dart';
 class ArticleDataset {
   /// Displayed above the 'What to Read' header
   /// and is considered to be today's main article
-  final MainArticle main;
+  final Article main;
 
   /// There are four (4) articles that
   /// accompanies the main article.
-  final List<OtherArticle> others;
+  final List<CategorizedArticle> others;
 
   ArticleDataset({
     required this.main,

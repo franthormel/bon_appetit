@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-import '../../models/index.dart';
-import 'article.dart';
+import '../../../models/index.dart';
+import '../article.dart';
 
-class OtherArticleWidget extends StatelessWidget {
-  final OtherArticle article;
+class OtherStoryWidget extends StatelessWidget {
+  final CategorizedArticle article;
 
-  const OtherArticleWidget({
+  const OtherStoryWidget({
     required this.article,
     Key? key,
   }) : super(key: key);
