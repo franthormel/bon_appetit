@@ -1189,6 +1189,78 @@
       "uploadDate": "2022-01-18"
     }
   ],
-  "products": [],
-  "tips": []
+  "products": [
+    {
+      "imageUrl": "https://assets.bonappetit.com/photos/61e755ce6b6fe523b0365397/1:1/w_2560%2Cc_limit/20220112%2520Best%2520Coffee%2520Maker%2520LEDE.jpg",
+      "title": "The Best Espresso Machines for Beginners, Coffee Nerds, and Everyone in Between",
+      "subtitle": "A good espresso machine is an investment. But how much do you spend at the coffee shop every year?"
+    },
+    {
+      "imageUrl": "https://assets.bonappetit.com/photos/620adb363d88f61b63a582e4/1:1/w_2560%2Cc_limit/20220211%2520HR%2520Le%2520Creuset%2520French%2520Press%2520LEDE.jpg",
+      "title": "My Le Creuset French Press Symbolizes Everything I Love About Adulthood",
+      "subtitle": "The best gift my roommate ever gave me was a sense of home. The second best gift was a Le Creuset French press."
+    },
+    {
+      "imageUrl": "https://assets.bonappetit.com/photos/61a68bba1c01773ccb0acad1/1:1/w_2560%2Cc_limit/EComm_Reviews_Gaggia.jpg",
+      "title": "Does the Gaggia Classic Pro Espresso Machine Live up to the Hype?",
+      "subtitle": "One BA staffer drank an unholy amount of coffee to find out."
+    },
+    {
+      "imageUrl": "https://assets.bonappetit.com/photos/61f43b340e09933a242b0fd5/1:1/w_2560%2Cc_limit/20220112%2520HR%2520Trade%2520Coffee%2520LEDE.jpg",
+      "title": "I Get My Coffee Mailed To Me And It's 100% Worth It",
+      "subtitle": "Each time a bag of beans from Trade Coffee arrives, it’s like a little caffeinated gift."
+    },
+    {
+      "imageUrl": "https://assets.bonappetit.com/photos/61ba08b6f27d37f5a603301a/1:1/w_2560%2Cc_limit/20211207%2520HR%2520Cometeer%2520Coffee.LEDE.jpg",
+      "title": "This Flash-Frozen Coffee Is Revolutionizing My Morning",
+      "subtitle": "For coffee connoisseurs looking for a quick fix, it doesn’t get any better than this."
+    },
+    {
+      "imageUrl": "https://assets.bonappetit.com/photos/5c5b006e6c0b212cac365206/1:1/w_2560%2Cc_limit/coffee-group.jpg",
+      "title": "The Best Ways to Make Coffee, According to Baristas",
+      "subtitle": "Plus, their favorite tools for getting the job done."
+    }
+  ],
+  "tips": [
+    {
+      "imageUrl": "https://assets.bonappetit.com/photos/61f43d0ee4c1e4bf7ae16049/1:1/w_2560%2Cc_limit/20220118%2520ITS%2520Tofu%2520Feta%2520LEDE.jpg",
+      "title": "I Was Skeptical, But Tofu-Feta Is Actually a Good Stand-In For Feta-Feta",
+      "subtitle": "And you can call it tofeta."
+    },
+    {
+      "imageUrl": "https://assets.bonappetit.com/photos/620ab201d2e1174a97415a30/1:1/w_2560%2Cc_limit/20220211%2520Mushroom%2520Stock%2520LEDE.jpg",
+      "title": "Mushroom Stock Does What Meat Stock Could Never",
+      "subtitle": "Simple and streamlined, fast and flavorful, good hot or cold or frozen, and best enjoyed…pantsless?"
+    },
+    {
+      "imageUrl": "https://assets.bonappetit.com/photos/620d384523422b90ab130f63/1:1/w_2560%2Cc_limit/20220208%2520Jam%2520French%2520Toast%2520LEDE.jpg",
+      "title": "This One Addition Makes French Toast Way More Flavorful",
+      "subtitle": "Jam in your French toast > jam on your French toast."
+    },
+    {
+      "imageUrl": "https://assets.bonappetit.com/photos/61f4340abb40748ef6bbe1ef/1:1/w_2560%2Cc_limit/20220118%2520Spices%2520LEDE.jpg",
+      "title": "You Should Add Spices to Your Coffee Grounds",
+      "subtitle": "This simple trick almost made me a morning person."
+    },
+    {
+      "imageUrl": "https://assets.bonappetit.com/photos/620ff735c1311ab68cac62f8/1:1/w_2560%2Cc_limit/20220215%2520Freeze%2520Your%2520Tofu%2520LEDE.jpg",
+      "title": "For Firmer, Chewier, More Absorbent Tofu, Freeze It",
+      "subtitle": "“The freezer changed me.” —Your tofu"
+    },
+    {
+      "imageUrl": "https://assets.bonappetit.com/photos/620d18fb71cfcab79c213708/1:1/w_2560%2Cc_limit/12.03.l21_BonAppetit_Hotpot_C126024-Edit.jpg",
+      "title": "Everything You Need to Know to Make Hot Pot At Home",
+      "subtitle": "The method (and the madness) behind our favorite way communal, choose-your-own-adventure meal."
+    },
+    {
+      "imageUrl": "https://assets.bonappetit.com/photos/61f1ce6f0b14cb497b6baca3/1:1/w_2560%2Cc_limit/BA0322hotpot04_2.jpg",
+      "title": "How to Make the Best Broth, According to an Expert",
+      "subtitle": "Turns out there’s more to great broth than throwing a bunch of scraps into a pot."
+    },
+    {
+      "imageUrl": "https://assets.bonappetit.com/photos/6204147038a4d0b4d56612f9/1:1/w_2560%2Cc_limit/20220208%2520Mustard%2520Croutons%2520LEDE.jpg",
+      "title": "There Are Regular Croutons—And Then There Are Cheesy Croutons",
+      "subtitle": "I would do pro bono PR for these croutons."
+    }
+  ]
 }

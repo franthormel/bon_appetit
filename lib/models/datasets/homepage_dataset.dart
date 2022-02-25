@@ -20,7 +20,7 @@ class HomepageDataset {
   ///  the 'We Just Love These' section
   final List<Article> products;
 
-  /// Six (6) articles are listed under
+  /// Eight (8) articles are listed under
   /// the 'Cooking Tips & Techniques' section
   final List<Article> tips;
 
