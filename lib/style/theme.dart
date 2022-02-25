@@ -49,6 +49,7 @@ class BonAppetitTheme {
       headline4: TextStyle(
         color: BonAppetitColors.black,
         fontWeight: FontWeight.w600,
+        height: 1.2,
       ),
       headline5: TextStyle(
         fontWeight: FontWeight.w600,

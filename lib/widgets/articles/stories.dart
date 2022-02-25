@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import '../../../models/index.dart';
-import '../../designed_container.dart';
-import '../../header_section.dart';
-import 'story_main.dart';
-import 'story_other.dart';
+import '../../models/index.dart';
+import '../designed_container.dart';
+import '../header_section.dart';
+import '_stories/story_main.dart';
+import '_stories/story_other.dart';
 
 class StoriesWidget extends StatelessWidget {
   const StoriesWidget({Key? key}) : super(key: key);
