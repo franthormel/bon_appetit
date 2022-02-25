@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 import '../../../models/index.dart';
-import '../recipe_image.dart';
-import '../recipe_rating.dart';
+import '../shared/recipe_image.dart';
+import '../shared/recipe_rating.dart';
 
 class OtherMainRecipeWidget extends StatelessWidget {
   final Recipe recipe;

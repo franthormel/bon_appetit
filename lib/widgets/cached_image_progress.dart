@@ -13,8 +13,7 @@ class CachedImageProgressWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return CachedNetworkImage(
       imageUrl: imageUrl,
-      fadeInCurve: Curves.easeInCubic,
-      fadeInDuration: const Duration(seconds: 1),
+      fadeInCurve: Curves.ease,
       progressIndicatorBuilder: (context, url, progress) {
         return Center(
           child: Padding(

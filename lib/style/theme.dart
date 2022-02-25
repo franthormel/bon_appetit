@@ -19,23 +19,52 @@ class BonAppetitTheme {
           fontWeight: FontWeight.w500,
         ),
       ),
+      outlinedButtonTheme: OutlinedButtonThemeData(
+        style: OutlinedButton.styleFrom(
+          backgroundColor: BonAppetitColors.black,
+          primary: BonAppetitColors.white,
+          shape: const BeveledRectangleBorder(
+            borderRadius: BorderRadius.zero,
+          ),
+          side: const BorderSide(
+            color: BonAppetitColors.white,
+          ),
+        ),
+      ),
       progressIndicatorTheme: const ProgressIndicatorThemeData(
         circularTrackColor: BonAppetitColors.mediumChampagne,
         color: BonAppetitColors.sizzlingSunrise,
         refreshBackgroundColor: BonAppetitColors.dimGray,
       ),
-      textTheme: const TextTheme(
-        headline4: TextStyle(
-          color: BonAppetitColors.black,
-          fontWeight: FontWeight.w600,
-        ),
-        headline6: TextStyle(
-          color: BonAppetitColors.black,
-          fontWeight: FontWeight.w600,
-        ),
-        bodyText1: TextStyle(
-          color: BonAppetitColors.black,
-        ),
+      textTheme: _textTheme,
+    );
+  }
+
+  static TextTheme get _textTheme {
+    return const TextTheme(
+      caption: TextStyle(
+        color: BonAppetitColors.sizzlingSunrise,
+        fontWeight: FontWeight.w600,
+      ),
+      headline4: TextStyle(
+        color: BonAppetitColors.black,
+        fontWeight: FontWeight.w600,
+        height: 1.2,
+      ),
+      headline5: TextStyle(
+        fontWeight: FontWeight.w600,
+      ),
+      headline6: TextStyle(
+        color: BonAppetitColors.black,
+        fontWeight: FontWeight.w600,
+      ),
+      subtitle1: TextStyle(
+        color: BonAppetitColors.dimGray,
+        fontWeight: FontWeight.w500,
+      ),
+      subtitle2: TextStyle(
+        fontWeight: FontWeight.w600,
+        letterSpacing: 1.0,
       ),
     );
   }

@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-import '../../../models/index.dart';
-import '../recipe_image.dart';
-import '../recipe_rating.dart';
+import '../../../../models/index.dart';
+import '../../shared/recipe_image.dart';
+import '../../shared/recipe_rating.dart';
 
-class WhatToCookRecipeWidget extends StatelessWidget {
+class HorizontalListRecipeWidget extends StatelessWidget {
   final Recipe recipe;
 
-  const WhatToCookRecipeWidget({
+  const HorizontalListRecipeWidget({
     required this.recipe,
     Key? key,
   }) : super(key: key);
@@ -17,6 +17,7 @@ class WhatToCookRecipeWidget extends StatelessWidget {
     return SizedBox(
       width: 200.0,
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           RecipeImageWidget(
             imageUrl: recipe.imageUrl,
@@ -32,7 +33,7 @@ class WhatToCookRecipeWidget extends StatelessWidget {
             ),
           ),
           const Divider(color: Colors.transparent),
-          if (recipe.rating != null)RecipeRatingWidget(rating: recipe.rating!),
+          if (recipe.rating != null) RecipeRatingWidget(rating: recipe.rating!),
         ],
       ),
     );

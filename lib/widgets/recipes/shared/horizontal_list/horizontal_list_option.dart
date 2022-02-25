@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-import '../../../style/colors.dart';
+import '../../../../style/colors.dart';
 
-class WhatToCookOptionWidget extends StatelessWidget {
+class HorizontalListOptionWidget extends StatelessWidget {
   final String label;
   final bool selected;
   final void Function(bool) onSelected;
 
-  const WhatToCookOptionWidget({
+  const HorizontalListOptionWidget({
     required this.label,
     required this.selected,
     required this.onSelected,

@@ -5,10 +5,11 @@ import 'package:flutter/services.dart';
 import '../models/index.dart';
 
 class MockDataService {
-  static Future<RecipeDataset> fetchRecipeDataset() async {
-    final jsonString = await rootBundle.loadString('assets/data/recipes.json');
+  // Used by HomePage widget
+  static Future<HomepageDataset> fetchHomepageDataset() async {
+    final jsonString = await rootBundle.loadString('assets/data/homepage.json');
     final json = jsonDecode(jsonString);
 
-    return RecipeDataset.fromJson(json);
+    return HomepageDataset.fromJson(json);
   }
 }
