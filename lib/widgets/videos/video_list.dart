@@ -3,8 +3,8 @@ import 'package:provider/provider.dart';
 
 import '../../models/index.dart';
 import '../../style/colors.dart';
-import '../designed_container.dart';
-import '../header_section.dart';
+import '../shared/designed_container.dart';
+import '../shared/header_section.dart';
 import 'video.dart';
 
 class VideoListWidget extends StatelessWidget {

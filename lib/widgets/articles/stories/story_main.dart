@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 import '../../../models/index.dart';
 import '../../../style/colors.dart';
-import '../../cached_image_progress.dart';
-import '../../header_body.dart';
+import '../../shared/cached_image_progress.dart';
+import '../../shared/header_body/four.dart';
 
 class MainStoryWidget extends StatelessWidget {
   final Article article;
@@ -21,13 +21,13 @@ class MainStoryWidget extends StatelessWidget {
         Container(
           width: double.infinity,
           padding: const EdgeInsets.only(
-            left: 24.0,
-            right: 24.0,
-            top: 32.0,
-            bottom: 56.0,
+            left: 25.0,
+            right: 25.0,
+            top: 30.0,
+            bottom: 50.0,
           ),
           color: BonAppetitColors.mediumChampagne,
-          child: HeaderBodyWidget(
+          child: HeaderFourBodyWidget(
             title: article.title,
             body: article.subtitle,
           ),

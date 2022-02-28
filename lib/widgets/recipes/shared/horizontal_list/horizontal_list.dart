@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 import '../../../../models/index.dart';
-import '../../../designed_container.dart';
-import '../../../header_section.dart';
+import '../../../shared/designed_container.dart';
+import '../../../shared/header_section.dart';
 import 'horizontal_list_contents.dart';
 import 'horizontal_list_options.dart';
 

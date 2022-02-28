@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 
 import '../../models/index.dart';
-import '../cached_image_progress.dart';
-import '../designed_container.dart';
-import '../header_body.dart';
+import '../shared/cached_image_progress.dart';
+import '../shared/header_body/five.dart';
 import 'stories/story_category.dart';
 
 class ArticleWidget extends StatelessWidget {
@@ -16,17 +15,14 @@ class ArticleWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.only(bottom: 35.0),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          CachedImageProgressWidget(imageUrl: article.imageUrl),
-          ...?otherArticleCategory,
-          const Divider(color: Colors.transparent),
-          HeaderBodyWidget(title: article.title, body: article.subtitle),
-        ],
-      ),
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        CachedImageProgressWidget(imageUrl: article.imageUrl),
+        ...?otherArticleCategory,
+        const Divider(color: Colors.transparent),
+        HeaderFiveBodyWidget(title: article.title, body: article.subtitle),
+      ],
     );
   }
 

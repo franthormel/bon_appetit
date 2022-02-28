@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import '../../../models/index.dart';
-import '../../../style/colors.dart';
-import '../../designed_container.dart';
-import 'recipe_main.dart';
-import 'recipe_other.dart';
+import '../../models/index.dart';
+import '../../style/colors.dart';
+import '../shared/designed_container.dart';
+import 'main/recipe_main.dart';
+import 'main/recipe_other.dart';
 
 class MainRecipesWidget extends StatelessWidget {
   const MainRecipesWidget({Key? key}) : super(key: key);
