@@ -15,11 +15,9 @@ class HomeProvidersWidget extends StatelessWidget {
       providers: [
         ChangeNotifierProvider<SuggestedRecipesFilter>(
           create: (context) => SuggestedRecipesFilter(),
-          lazy: false,
         ),
         ChangeNotifierProvider<TrendingRecipesFilter>(
           create: (context) => TrendingRecipesFilter(),
-          lazy: false,
         ),
         FutureProvider<HomepageDataset?>(
           create: (context) => MockDataService.fetchHomepageDataset(),
