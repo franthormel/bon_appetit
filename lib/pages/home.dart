@@ -4,6 +4,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'home/home_providers.dart';
 
 class HomePage extends StatelessWidget {
+  // TODO When there are multiple pages use PageStorageKey('HomePage')
   const HomePage({Key? key}) : super(key: key);
 
   @override
