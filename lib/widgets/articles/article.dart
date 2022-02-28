@@ -4,7 +4,7 @@ import '../../models/index.dart';
 import '../cached_image_progress.dart';
 import '../designed_container.dart';
 import '../header_body.dart';
-import '_stories/story_category.dart';
+import 'stories/story_category.dart';
 
 class ArticleWidget extends StatelessWidget {
   final Article article;
