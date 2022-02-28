@@ -32,7 +32,7 @@ class VideoEntryWidget extends StatelessWidget {
                   onPressed: () {},
                   child: const Icon(
                     Icons.play_arrow,
-                    size: 45.0,
+                    size: 50.0,
                   ),
                   backgroundColor: BonAppetitColors.black.withOpacity(.75),
                 ),
@@ -47,6 +47,8 @@ class VideoEntryWidget extends StatelessWidget {
             ),
           Text(
             video.title,
+            maxLines: 3,
+            overflow: TextOverflow.ellipsis,
             style: Theme.of(context)
                 .textTheme
                 .headline5

@@ -13,10 +13,10 @@ class StoryCategoryWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.all(8.0),
+      padding: const EdgeInsets.all(10.0),
       child: Text(
         category.toUpperCase(),
-        style: Theme.of(context).textTheme.subtitle2?.apply(
+        style: Theme.of(context).textTheme.caption?.apply(
               color: BonAppetitColors.white,
             ),
       ),

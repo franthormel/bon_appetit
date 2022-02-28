@@ -16,21 +16,22 @@ class ProductsWidget extends StatelessWidget {
     return DesignedContainerWidget(
       child: Column(
         children: [
+          const SizedBox(height: 35.0),
           const HeaderSectionWidget(
             title: 'We Just Love These',
             subtitle: "All the stuff you need—and some you don't",
           ),
-          const Divider(color: Colors.transparent),
+          const SizedBox(height: 35.0),
           ArticleWidget(article: dataset.products[0]),
-          const Divider(color: Colors.transparent),
+          const SizedBox(height: 25.0),
           ArticleWidget(article: dataset.products[1]),
-          const Divider(color: Colors.transparent),
+          const SizedBox(height: 25.0),
           ArticleWidget(article: dataset.products[2]),
-          const Divider(color: Colors.transparent),
+          const SizedBox(height: 25.0),
           ArticleWidget(article: dataset.products[3]),
-          const Divider(color: Colors.transparent),
+          const SizedBox(height: 25.0),
           ArticleWidget(article: dataset.products[4]),
-          const Divider(color: Colors.transparent),
+          const SizedBox(height: 25.0),
           ArticleWidget(article: dataset.products[5]),
         ],
       ),

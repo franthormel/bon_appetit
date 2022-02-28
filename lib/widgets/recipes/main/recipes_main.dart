@@ -20,11 +20,11 @@ class MainRecipesWidget extends StatelessWidget {
       child: Column(
         children: [
           TodayMainRecipeWidget(recipe: recipes[0]),
-          const Divider(color: Colors.transparent),
+          const SizedBox(height: 35.0),
           OtherMainRecipeWidget(recipe: recipes[1]),
-          const Divider(color: Colors.transparent),
+          const SizedBox(height: 35.0),
           OtherMainRecipeWidget(recipe: recipes[2]),
-          const Divider(color: Colors.transparent),
+          const SizedBox(height: 35.0),
           OtherMainRecipeWidget(recipe: recipes[3]),
         ],
       ),

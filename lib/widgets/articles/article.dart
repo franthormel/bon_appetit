@@ -16,7 +16,8 @@ class ArticleWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return DesignedContainerWidget(
+    return Container(
+      padding: const EdgeInsets.only(bottom: 35.0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [

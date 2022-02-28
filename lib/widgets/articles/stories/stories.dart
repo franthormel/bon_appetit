@@ -18,12 +18,12 @@ class StoriesWidget extends StatelessWidget {
       child: Column(
         children: [
           MainStoryWidget(article: dataset.articles.main),
-          const SizedBox(height: 64.0),
+          const SizedBox(height: 65.0),
           const HeaderSectionWidget(
             title: 'What to Read',
             subtitle: 'Stories from around the world of food',
           ),
-          const SizedBox(height: 32.0),
+          const SizedBox(height: 30.0),
           OtherStoryWidget(article: dataset.articles.others[0]),
           const Divider(color: Colors.transparent),
           OtherStoryWidget(article: dataset.articles.others[1]),
