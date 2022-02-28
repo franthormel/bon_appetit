@@ -15,7 +15,7 @@ class HorizontalListOptionsWidget extends StatelessWidget
 
   @override
   Widget build(BuildContext context) {
-    final filter = decidedRecipeFilterType(context, type);
+    final filter = chooseRecipeFilter(context, type);
 
     return Wrap(
       spacing: 8.0,

@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class HeaderBodyWidget extends StatelessWidget {
+class HeaderFiveBodyWidget extends StatelessWidget {
   final String title;
   final String body;
   final Color? color;
 
-  const HeaderBodyWidget({
+  const HeaderFiveBodyWidget({
     required this.title,
     required this.body,
     this.color,
@@ -17,13 +17,16 @@ class HeaderBodyWidget extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(title, style: Theme.of(context).textTheme.headline4),
+        Text(
+          title,
+          style: Theme.of(context).textTheme.headline5,
+        ),
         const Divider(color: Colors.transparent),
-        Text(body,
-            style: Theme.of(context)
-                .textTheme
-                .subtitle1
-                ?.apply(fontSizeDelta: 2.0)),
+        Text(
+          body,
+          style:
+              Theme.of(context).textTheme.subtitle1?.apply(fontSizeDelta: 2.0),
+        ),
       ],
     );
   }

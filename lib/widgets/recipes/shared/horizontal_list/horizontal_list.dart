@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 import '../../../../models/index.dart';
-import '../../../designed_container.dart';
-import '../../../header_section.dart';
+import '../../../shared/designed_container.dart';
+import '../../../shared/header_section.dart';
 import 'horizontal_list_contents.dart';
 import 'horizontal_list_options.dart';
 
@@ -27,9 +27,9 @@ class HorizontalListRecipesWidget extends StatelessWidget {
             title: title,
             subtitle: subtitle,
           ),
-          const Divider(color: Colors.transparent),
+          const SizedBox(height: 25.0),
           HorizontalListOptionsWidget(type: type),
-          const Divider(color: Colors.transparent),
+          const SizedBox(height: 25.0),
           HorizontalListRecipeContentsWidget(type: type),
         ],
       ),

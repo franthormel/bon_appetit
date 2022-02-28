@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../models/index.dart';
 import '../../style/colors.dart';
-import '../cached_image_progress.dart';
+import '../shared/cached_image_progress.dart';
 
 class VideoEntryWidget extends StatelessWidget {
   final VideoEntry video;
@@ -32,7 +32,7 @@ class VideoEntryWidget extends StatelessWidget {
                   onPressed: () {},
                   child: const Icon(
                     Icons.play_arrow,
-                    size: 45.0,
+                    size: 50.0,
                   ),
                   backgroundColor: BonAppetitColors.black.withOpacity(.75),
                 ),
@@ -47,6 +47,8 @@ class VideoEntryWidget extends StatelessWidget {
             ),
           Text(
             video.title,
+            maxLines: 3,
+            overflow: TextOverflow.ellipsis,
             style: Theme.of(context)
                 .textTheme
                 .headline5

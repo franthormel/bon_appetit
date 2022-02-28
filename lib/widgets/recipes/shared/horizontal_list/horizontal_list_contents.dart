@@ -18,7 +18,7 @@ class HorizontalListRecipeContentsWidget extends StatelessWidget
   @override
   Widget build(BuildContext context) {
     final dataset = Provider.of<HomepageDataset>(context, listen: false);
-    final filter = decidedRecipeFilterType(context, type);
+    final filter = chooseRecipeFilter(context, type);
     final recipes = filteredRecipes(filter, dataset.recipes);
 
     return SizedBox(
