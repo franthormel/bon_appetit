@@ -1,4 +1,5 @@
 import 'package:auto_route/auto_route.dart';
+import 'package:bon_appetit/widgets/index.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -12,6 +13,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: const DrawerWidget(),
       appBar: AppBar(
         actions: [
           IconButton(
@@ -26,10 +28,6 @@ class HomePage extends StatelessWidget {
           ),
         ],
         centerTitle: true,
-        leading: IconButton(
-          onPressed: () {},
-          icon: const Icon(Icons.menu),
-        ),
         title: SvgPicture.asset(
           'assets/logo.svg',
           height: 50.0,
