@@ -8,9 +8,7 @@ class BonAppetitTheme {
       brightness: Brightness.light,
       fontFamily: 'Futura PT',
       primaryColor: BonAppetitColors.black,
-      appBarTheme: const AppBarTheme(
-        backgroundColor: BonAppetitColors.black,
-      ),
+      appBarTheme: const AppBarTheme(backgroundColor: BonAppetitColors.black),
       chipTheme: const ChipThemeData(
         backgroundColor: BonAppetitColors.platinum,
         selectedColor: BonAppetitColors.black,
@@ -19,16 +17,13 @@ class BonAppetitTheme {
           fontWeight: FontWeight.w500,
         ),
       ),
+      dividerTheme: const DividerThemeData(color: BonAppetitColors.black),
       outlinedButtonTheme: OutlinedButtonThemeData(
         style: OutlinedButton.styleFrom(
           backgroundColor: BonAppetitColors.black,
           primary: BonAppetitColors.white,
-          shape: const BeveledRectangleBorder(
-            borderRadius: BorderRadius.zero,
-          ),
-          side: const BorderSide(
-            color: BonAppetitColors.white,
-          ),
+          shape: const BeveledRectangleBorder(borderRadius: BorderRadius.zero),
+          side: const BorderSide(color: BonAppetitColors.white),
         ),
       ),
       progressIndicatorTheme: const ProgressIndicatorThemeData(
@@ -52,9 +47,7 @@ class BonAppetitTheme {
         fontWeight: FontWeight.w600,
         height: 1.2,
       ),
-      headline5: TextStyle(
-        fontWeight: FontWeight.w600,
-      ),
+      headline5: TextStyle(fontWeight: FontWeight.w600),
       headline6: TextStyle(
         color: BonAppetitColors.black,
         fontWeight: FontWeight.w600,

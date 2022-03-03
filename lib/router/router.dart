@@ -6,7 +6,6 @@ import '../pages/index.dart';
   replaceInRouteName: 'Page,Route',
   routes: <AutoRoute>[
     AutoRoute(initial: true, page: HomePage),
-    // TODO Fix title too bold
     // TODO Add (better not default) page transition from TopRight
     AutoRoute(page: SearchPage),
   ],
