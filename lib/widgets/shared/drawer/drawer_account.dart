@@ -1,3 +1,5 @@
+import 'package:auto_route/auto_route.dart';
+import 'package:bon_appetit/router/router.gr.dart';
 import 'package:flutter/material.dart';
 
 import 'drawer_account_entry.dart';
@@ -10,7 +12,12 @@ class DrawerAccountWidget extends StatelessWidget {
     return Column(
       children: [
         const ListTile(dense: true, title: Divider()),
-        const DrawerAccountEntryWidget("Search"),
+        DrawerAccountEntryWidget(
+          "Search",
+          onTap: () {
+            AutoRouter.of(context).push(const SearchRoute());
+          },
+        ),
         const DrawerAccountEntryWidget("Sign In"),
         DrawerAccountEntryWidget(
           "SUBSCRIBE",
