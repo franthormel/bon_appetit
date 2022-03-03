@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'drawer_account.dart';
 import 'drawer_footer.dart';
 import 'drawer_router.dart';
 
@@ -11,7 +12,7 @@ class DrawerContentsWidget extends StatelessWidget {
     return Column(
       children: [
         ...routerWidgets,
-        const ListTile(title: Divider()),
+        const DrawerAccountWidget(),
         const DrawerFooterWidget(),
       ],
     );

@@ -52,14 +52,13 @@ class BonAppetitTheme {
         color: BonAppetitColors.black,
         fontWeight: FontWeight.w600,
       ),
+      bodyText1: TextStyle(color: BonAppetitColors.black, fontSize: 16.0),
+      bodyText2: TextStyle(color: BonAppetitColors.black),
       subtitle1: TextStyle(
         color: BonAppetitColors.dimGray,
         fontWeight: FontWeight.w500,
       ),
-      subtitle2: TextStyle(
-        fontWeight: FontWeight.w600,
-        letterSpacing: 1.0,
-      ),
+      subtitle2: TextStyle(fontWeight: FontWeight.w600, letterSpacing: 1.0),
     );
   }
 }

@@ -12,7 +12,6 @@ class DrawerWidget extends StatelessWidget {
     return Drawer(
       child: ListView(
         padding: const EdgeInsets.only(bottom: 20.0),
-        primary: true,
         children: [
           DrawerHeader(
             decoration: const BoxDecoration(color: BonAppetitColors.black),
