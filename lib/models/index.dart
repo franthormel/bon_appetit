@@ -1,7 +1,7 @@
 export 'articles/article.dart';
 export 'articles/categorized_article.dart';
-export 'datasets/homepage_dataset.dart';
-export 'datasets/recipe_dataset.dart';
+export 'datasets/dataset_homepage.dart';
+export 'datasets/models/dataset_recipe.dart';
 export 'recipes/enum/recipe_list.dart';
 export 'recipes/recipe.dart';
 export 'recipes/recipe_options.dart';

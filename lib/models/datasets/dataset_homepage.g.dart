@@ -1,6 +1,6 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'homepage_dataset.dart';
+part of 'dataset_homepage.dart';
 
 // **************************************************************************
 // JsonSerializableGenerator

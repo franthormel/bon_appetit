@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
 import '../../../models/index.dart';
-import '../../shared/header_body/four.dart';
-import '../shared/recipe_image.dart';
-import '../shared/recipe_rating.dart';
+import '../../others/header_body/header_body_four.dart';
+import '../others/recipe_image.dart';
+import '../others/recipe_rating.dart';
 
 class TodayMainRecipeWidget extends StatelessWidget {
   final Recipe recipe;

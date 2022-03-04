@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 import '../../../models/index.dart';
 import '../../../style/colors.dart';
-import '../../shared/cached_image_progress.dart';
-import '../../shared/header_body/four.dart';
+import '../../others/cached_image_progress.dart';
+import '../../others/header_body/header_body_four.dart';
 
 class MainStoryWidget extends StatelessWidget {
   final Article article;

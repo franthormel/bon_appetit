@@ -4,12 +4,11 @@ import 'package:provider/provider.dart';
 
 import '../../router/router.gr.dart';
 import '../../services/index.dart';
-import '../index.dart';
-import '../shared/appbar_title.dart';
+import '../../widgets/index.dart';
 
-class ConsumerWidget extends StatelessWidget {
+class ConsumerPage extends StatelessWidget {
   // TODO When there are multiple pages use PageStorageKey('HomePage')
-  const ConsumerWidget({Key? key}) : super(key: key);
+  const ConsumerPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +22,8 @@ class ConsumerWidget extends StatelessWidget {
           ),
           IconButton(
             onPressed: () {
-              final router = Provider.of<RouterProvider>(context, listen: false);
+              final router =
+                  Provider.of<RouterProvider>(context, listen: false);
               router.change(const SearchRoute());
             },
             icon: const Icon(Icons.search),

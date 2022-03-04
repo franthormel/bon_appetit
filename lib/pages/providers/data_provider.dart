@@ -7,8 +7,8 @@ import '../../pages/index.dart';
 import '../../services/index.dart';
 import 'route_provider.dart';
 
-class DataProviderWidget extends StatelessWidget {
-  const DataProviderWidget({Key? key}) : super(key: key);
+class DataProviderPage extends StatelessWidget {
+  const DataProviderPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +28,7 @@ class DataProviderWidget extends StatelessWidget {
       },
       child: Consumer<HomepageDataset?>(
         builder: (context, dataset, child) =>
-            dataset == null ? const LoadingPage() : const RouteProviderWidget(),
+            dataset == null ? const LoadingPage() : const RouteProviderPage(),
       ),
     );
   }

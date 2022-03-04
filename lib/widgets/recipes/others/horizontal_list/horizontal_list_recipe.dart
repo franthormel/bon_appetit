@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 import '../../../../models/index.dart';
-import '../../shared/recipe_image.dart';
-import '../../shared/recipe_rating.dart';
+import '../../others/recipe_image.dart';
+import '../../others/recipe_rating.dart';
 
 class HorizontalListRecipeWidget extends StatelessWidget {
   final Recipe recipe;

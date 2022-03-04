@@ -2,10 +2,10 @@ import 'package:json_annotation/json_annotation.dart';
 
 import '../articles/article.dart';
 import '../videos/video.dart';
-import 'article_dataset.dart';
-import 'recipe_dataset.dart';
+import 'models/dataset_article.dart';
+import 'models/dataset_recipe.dart';
 
-part 'homepage_dataset.g.dart';
+part 'dataset_homepage.g.dart';
 
 @JsonSerializable()
 class HomepageDataset {

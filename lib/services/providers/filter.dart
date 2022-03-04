@@ -17,6 +17,5 @@ class Filter extends ChangeNotifier with StartScrollControllerMixin {
 
   bool optionIs(String option) => _option == option;
 
-  bool optionIsIn(List<String> categories) =>
-      categories.contains(_option);
+  bool optionIsIn(List<String> categories) => categories.contains(_option);
 }

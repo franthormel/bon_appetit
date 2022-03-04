@@ -1,9 +1,9 @@
 import 'package:json_annotation/json_annotation.dart';
 
-import '../articles/article.dart';
-import '../articles/categorized_article.dart';
+import '../../articles/article.dart';
+import '../../articles/categorized_article.dart';
 
-part 'article_dataset.g.dart';
+part 'dataset_article.g.dart';
 
 @JsonSerializable()
 class ArticleDataset {

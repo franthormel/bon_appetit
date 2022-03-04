@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../models/index.dart';
 import '../../style/colors.dart';
-import '../shared/cached_image_progress.dart';
+import '../others/cached_image_progress.dart';
 
 class VideoEntryWidget extends StatelessWidget {
   final VideoEntry video;

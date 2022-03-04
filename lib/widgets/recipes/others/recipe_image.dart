@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../style/colors.dart';
-import '../../shared/cached_image_progress.dart';
+import '../../others/cached_image_progress.dart';
 
 class RecipeImageWidget extends StatelessWidget {
   final String imageUrl;

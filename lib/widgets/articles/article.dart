@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 import '../../models/index.dart';
-import '../shared/cached_image_progress.dart';
-import '../shared/header_body/five.dart';
+import '../others/cached_image_progress.dart';
+import '../others/header_body/header_body_five.dart';
 import 'stories/story_category.dart';
 
 class ArticleWidget extends StatelessWidget {

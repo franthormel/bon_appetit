@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 import '../../models/index.dart';
-import '../../widgets/shared/designed_container.dart';
-import '../../widgets/shared/header_section.dart';
+import '../../widgets/others/designed_container.dart';
+import '../../widgets/others/header_section.dart';
 import 'article.dart';
 import 'stories/story_main.dart';
 

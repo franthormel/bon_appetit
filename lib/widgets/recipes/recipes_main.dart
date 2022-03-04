@@ -3,7 +3,7 @@ import 'package:provider/provider.dart';
 
 import '../../models/index.dart';
 import '../../style/colors.dart';
-import '../shared/designed_container.dart';
+import '../others/designed_container.dart';
 import 'main/recipe_main.dart';
 import 'main/recipe_other.dart';
 

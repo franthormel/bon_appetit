@@ -1,8 +1,8 @@
 import 'package:json_annotation/json_annotation.dart';
 
-import '../recipes/recipe.dart';
+import '../../recipes/recipe.dart';
 
-part 'recipe_dataset.g.dart';
+part 'dataset_recipe.g.dart';
 
 @JsonSerializable()
 class RecipeDataset {

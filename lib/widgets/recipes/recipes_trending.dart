@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../models/index.dart';
-import 'shared/horizontal_list/horizontal_list.dart';
+import 'others/horizontal_list/horizontal_list.dart';
 
 class TrendingRecipesWidget extends StatelessWidget {
   const TrendingRecipesWidget({Key? key}) : super(key: key);

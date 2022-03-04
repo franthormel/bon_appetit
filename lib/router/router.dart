@@ -1,14 +1,13 @@
 import 'package:auto_route/auto_route.dart';
 
 import '../pages/index.dart';
-import '../widgets/providers/data_provider.dart';
-import 'constants.dart';
+import 'router.constants.dart';
 
 @MaterialAutoRouter(
   routes: <AutoRoute>[
     AutoRoute(
       initial: true,
-      page: DataProviderWidget,
+      page: DataProviderPage,
       name: RouteName.initial,
       path: RoutePath.initial,
       children: <AutoRoute>[
