@@ -10,8 +10,8 @@ class HorizontalListRecipeContentsWidget extends StatelessWidget
     with HorizontalListMixin {
   final RecipeList type;
 
-  const HorizontalListRecipeContentsWidget({
-    required this.type,
+  const HorizontalListRecipeContentsWidget(
+    this.type, {
     Key? key,
   }) : super(key: key);
 
@@ -25,9 +25,8 @@ class HorizontalListRecipeContentsWidget extends StatelessWidget
       height: 400.0,
       child: ListView.separated(
         controller: filter.scrollController,
-        itemBuilder: (context, index) => HorizontalListRecipeWidget(
-          recipe: recipes[index],
-        ),
+        itemBuilder: (context, index) =>
+            HorizontalListRecipeWidget(recipes[index]),
         itemCount: recipes.length,
         primary: false,
         scrollDirection: Axis.horizontal,

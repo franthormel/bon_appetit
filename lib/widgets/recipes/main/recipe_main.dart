@@ -8,8 +8,8 @@ import '../others/recipe_rating.dart';
 class TodayMainRecipeWidget extends StatelessWidget {
   final Recipe recipe;
 
-  const TodayMainRecipeWidget({
-    required this.recipe,
+  const TodayMainRecipeWidget(
+    this.recipe, {
     Key? key,
   }) : super(key: key);
 
@@ -18,11 +18,11 @@ class TodayMainRecipeWidget extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        RecipeImageWidget(imageUrl: recipe.imageUrl, tag: "Today's Recipe"),
+        RecipeImageWidget(recipe.imageUrl, tag: "Today's Recipe"),
         const Divider(color: Colors.transparent),
         HeaderFourBodyWidget(title: recipe.title, body: recipe.description),
         const SizedBox(height: 16.0),
-        if (recipe.rating != null) RecipeRatingWidget(rating: recipe.rating!),
+        if (recipe.rating != null) RecipeRatingWidget(recipe.rating!),
       ],
     );
   }

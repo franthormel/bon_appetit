@@ -22,7 +22,7 @@ class DrawerContentsWidget extends StatelessWidget {
     final widgets = <Widget>[];
 
     for (final route in routes) {
-      widgets.add(DrawerRouterWidget(text: route));
+      widgets.add(DrawerRouterWidget(route));
     }
 
     return widgets;

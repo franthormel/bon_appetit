@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import '../../models/index.dart';
-import 'article_list.dart';
+import '../../../models/index.dart';
+import '../article_list.dart';
 
 class StoriesWidget extends StatelessWidget {
   const StoriesWidget({Key? key}) : super(key: key);

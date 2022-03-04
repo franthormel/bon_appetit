@@ -5,8 +5,8 @@ import '../../../models/index.dart';
 class RecipeRatingWidget extends StatelessWidget {
   final RecipeRating rating;
 
-  const RecipeRatingWidget({
-    required this.rating,
+  const RecipeRatingWidget(
+    this.rating, {
     Key? key,
   }) : super(key: key);
 

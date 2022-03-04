@@ -5,11 +5,11 @@ import '../../../style/colors.dart';
 import '../../others/cached_image_progress.dart';
 import '../../others/header_body/header_body_four.dart';
 
-class MainStoryWidget extends StatelessWidget {
+class StoryWidget extends StatelessWidget {
   final Article article;
 
-  const MainStoryWidget({
-    required this.article,
+  const StoryWidget(
+    this.article, {
     Key? key,
   }) : super(key: key);
 
@@ -17,7 +17,7 @@ class MainStoryWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        CachedImageProgressWidget(imageUrl: article.imageUrl),
+        CachedImageProgressWidget(article.imageUrl),
         Container(
           width: double.infinity,
           padding: const EdgeInsets.only(

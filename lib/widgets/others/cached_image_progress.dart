@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 class CachedImageProgressWidget extends StatelessWidget {
   final String imageUrl;
 
-  const CachedImageProgressWidget({
-    required this.imageUrl,
+  const CachedImageProgressWidget(
+    this.imageUrl, {
     Key? key,
   }) : super(key: key);
 

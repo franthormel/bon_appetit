@@ -23,14 +23,11 @@ class HorizontalListRecipesWidget extends StatelessWidget {
     return DesignedContainerWidget(
       child: Column(
         children: [
-          HeaderSectionWidget(
-            title: title,
-            subtitle: subtitle,
-          ),
+          HeaderSectionWidget(title: title, subtitle: subtitle),
           const SizedBox(height: 25.0),
-          HorizontalListOptionsWidget(type: type),
+          HorizontalListOptionsWidget(type),
           const SizedBox(height: 25.0),
-          HorizontalListRecipeContentsWidget(type: type),
+          HorizontalListRecipeContentsWidget(type),
         ],
       ),
     );

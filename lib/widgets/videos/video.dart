@@ -7,8 +7,8 @@ import '../others/cached_image_progress.dart';
 class VideoEntryWidget extends StatelessWidget {
   final VideoEntry video;
 
-  const VideoEntryWidget({
-    required this.video,
+  const VideoEntryWidget(
+    this.video, {
     Key? key,
   }) : super(key: key);
 
@@ -22,7 +22,7 @@ class VideoEntryWidget extends StatelessWidget {
           Stack(
             alignment: Alignment.bottomLeft,
             children: [
-              CachedImageProgressWidget(imageUrl: video.imageUrl),
+              CachedImageProgressWidget(video.imageUrl),
               Padding(
                 padding: const EdgeInsets.only(
                   left: 10.0,

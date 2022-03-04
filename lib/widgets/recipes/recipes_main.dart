@@ -19,13 +19,13 @@ class MainRecipesWidget extends StatelessWidget {
       color: BonAppetitColors.floralWhite,
       child: Column(
         children: [
-          TodayMainRecipeWidget(recipe: recipes[0]),
+          TodayMainRecipeWidget(recipes[0]),
           const SizedBox(height: 35.0),
-          OtherMainRecipeWidget(recipe: recipes[1]),
+          OtherMainRecipeWidget(recipes[1]),
           const SizedBox(height: 35.0),
-          OtherMainRecipeWidget(recipe: recipes[2]),
+          OtherMainRecipeWidget(recipes[2]),
           const SizedBox(height: 35.0),
-          OtherMainRecipeWidget(recipe: recipes[3]),
+          OtherMainRecipeWidget(recipes[3]),
         ],
       ),
     );

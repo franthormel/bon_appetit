@@ -1,5 +1,5 @@
 export 'articles/products.dart';
-export 'articles/stories.dart';
+export 'articles/stories/stories.dart';
 export 'articles/tips_techniques.dart';
 export 'others/appbar_title.dart';
 export 'others/drawer/drawer.dart';

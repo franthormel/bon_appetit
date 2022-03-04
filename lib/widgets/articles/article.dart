@@ -8,8 +8,8 @@ import 'stories/story_category.dart';
 class ArticleWidget extends StatelessWidget {
   final Article article;
 
-  const ArticleWidget({
-    required this.article,
+  const ArticleWidget(
+    this.article, {
     Key? key,
   }) : super(key: key);
 
@@ -18,7 +18,7 @@ class ArticleWidget extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        CachedImageProgressWidget(imageUrl: article.imageUrl),
+        CachedImageProgressWidget(article.imageUrl),
         ...?otherArticleCategory,
         const Divider(color: Colors.transparent),
         HeaderFiveBodyWidget(title: article.title, body: article.subtitle),
@@ -32,7 +32,7 @@ class ArticleWidget extends StatelessWidget {
 
       return [
         const Divider(color: Colors.transparent),
-        StoryCategoryWidget(category: otherArticle.category),
+        StoryCategoryWidget(otherArticle.category),
       ];
     }
 

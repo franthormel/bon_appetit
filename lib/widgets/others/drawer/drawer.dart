@@ -1,9 +1,10 @@
-import 'package:bon_appetit/services/index.dart';
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:provider/provider.dart';
 
 import '../../../router/router.gr.dart';
+import '../../../services/index.dart';
 import '../../../style/colors.dart';
 import 'drawer_contents.dart';
 
@@ -21,6 +22,8 @@ class DrawerWidget extends StatelessWidget {
               final router =
                   Provider.of<RouterProvider>(context, listen: false);
               router.change(const HomeRoute());
+
+              AutoRouter.of(context).pop();
             },
             child: DrawerHeader(
               decoration: const BoxDecoration(color: BonAppetitColors.black),

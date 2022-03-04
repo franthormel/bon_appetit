@@ -7,8 +7,8 @@ import '../../others/recipe_rating.dart';
 class HorizontalListRecipeWidget extends StatelessWidget {
   final Recipe recipe;
 
-  const HorizontalListRecipeWidget({
-    required this.recipe,
+  const HorizontalListRecipeWidget(
+    this.recipe, {
     Key? key,
   }) : super(key: key);
 
@@ -19,10 +19,7 @@ class HorizontalListRecipeWidget extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          RecipeImageWidget(
-            imageUrl: recipe.imageUrl,
-            tag: recipe.tag,
-          ),
+          RecipeImageWidget(recipe.imageUrl, tag: recipe.tag),
           const Divider(color: Colors.transparent),
           Expanded(
             child: Text(
@@ -33,7 +30,7 @@ class HorizontalListRecipeWidget extends StatelessWidget {
             ),
           ),
           const Divider(color: Colors.transparent),
-          if (recipe.rating != null) RecipeRatingWidget(rating: recipe.rating!),
+          if (recipe.rating != null) RecipeRatingWidget(recipe.rating!),
         ],
       ),
     );

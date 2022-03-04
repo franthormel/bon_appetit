@@ -5,8 +5,8 @@ import '../../../style/colors.dart';
 class StoryCategoryWidget extends StatelessWidget {
   final String category;
 
-  const StoryCategoryWidget({
-    required this.category,
+  const StoryCategoryWidget(
+    this.category, {
     Key? key,
   }) : super(key: key);
 

@@ -7,8 +7,8 @@ class RecipeImageWidget extends StatelessWidget {
   final String imageUrl;
   final String? tag;
 
-  const RecipeImageWidget({
-    required this.imageUrl,
+  const RecipeImageWidget(
+    this.imageUrl, {
     this.tag,
     Key? key,
   }) : super(key: key);
@@ -19,9 +19,7 @@ class RecipeImageWidget extends StatelessWidget {
       children: [
         ClipRRect(
           borderRadius: BorderRadius.circular(24.0),
-          child: CachedImageProgressWidget(
-            imageUrl: imageUrl,
-          ),
+          child: CachedImageProgressWidget(imageUrl),
         ),
         if (tag != null)
           Padding(
