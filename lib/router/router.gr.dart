@@ -34,7 +34,7 @@ class AppRouter extends _i2.RootStackRouter {
   @override
   List<_i2.RouteConfig> get routes => [
         _i2.RouteConfig(HomeRoute.name, path: '/'),
-        _i2.RouteConfig(SearchRoute.name, path: '/search-page')
+        _i2.RouteConfig(SearchRoute.name, path: '/search')
       ];
 }
 
@@ -49,7 +49,7 @@ class HomeRoute extends _i2.PageRouteInfo<void> {
 /// generated route for
 /// [_i1.SearchPage]
 class SearchRoute extends _i2.PageRouteInfo<void> {
-  const SearchRoute() : super(SearchRoute.name, path: '/search-page');
+  const SearchRoute() : super(SearchRoute.name, path: '/search');
 
   static const String name = 'SearchRoute';
 }

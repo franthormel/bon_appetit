@@ -1,13 +1,21 @@
 import 'package:auto_route/auto_route.dart';
 
 import '../pages/index.dart';
+import 'constants.dart';
 
 @MaterialAutoRouter(
-  replaceInRouteName: 'Page,Route',
   routes: <AutoRoute>[
-    AutoRoute(initial: true, page: HomePage),
-    // TODO Add (better not default) page transition from TopRight
-    AutoRoute(page: SearchPage),
+    AutoRoute(
+      initial: true,
+      page: HomePage,
+      name: RouteName.home,
+      path: RoutePath.home,
+    ),
+    AutoRoute(
+      page: SearchPage,
+      name: RouteName.search,
+      path: RoutePath.search,
+    ),
   ],
 )
 class $AppRouter {}
