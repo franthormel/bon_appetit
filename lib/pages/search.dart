@@ -5,13 +5,6 @@ class SearchPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Title'),
-      ),
-      body: const Center(
-        child: Text("TODO Search page"),
-      ),
-    );
+    return const Scaffold(body: Center(child: Text("TODO Search page")));
   }
 }

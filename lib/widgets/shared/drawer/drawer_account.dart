@@ -1,7 +1,8 @@
-import 'package:auto_route/auto_route.dart';
-import 'package:bon_appetit/router/router.gr.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
+import '../../../router/router.gr.dart';
+import '../../../services/providers/route.dart';
 import 'drawer_account_entry.dart';
 
 class DrawerAccountWidget extends StatelessWidget {
@@ -15,7 +16,8 @@ class DrawerAccountWidget extends StatelessWidget {
         DrawerAccountEntryWidget(
           "Search",
           onTap: () {
-            AutoRouter.of(context).push(const SearchRoute());
+            final router = Provider.of<RouterProvider>(context, listen: false);
+            router.change(const SearchRoute());
           },
         ),
         const DrawerAccountEntryWidget("Sign In"),
