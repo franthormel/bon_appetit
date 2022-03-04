@@ -15,10 +15,7 @@ class AppBarTitleWidget extends StatelessWidget {
         final router = Provider.of<RouterProvider>(context, listen: false);
         router.change(const HomeRoute());
       },
-      child: SvgPicture.asset(
-        'assets/logo.svg',
-        height: 50.0,
-      ),
+      child: SvgPicture.asset('assets/logo.svg', height: 50.0),
     );
   }
 }

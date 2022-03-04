@@ -3,11 +3,9 @@ import 'package:flutter/material.dart';
 
 class DrawerRouterWidget extends StatelessWidget {
   final String text;
+  final void Function()? onTap;
 
-  const DrawerRouterWidget(
-    this.text, {
-    Key? key,
-  }) : super(key: key);
+  const DrawerRouterWidget(this.text, {this.onTap, Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -20,6 +18,10 @@ class DrawerRouterWidget extends StatelessWidget {
             ),
       ),
       onTap: () {
+        if (onTap != null) {
+          onTap!();
+        }
+
         AutoRouter.of(context).pop();
       },
     );

@@ -8,10 +8,7 @@ import 'stories/story_category.dart';
 class ArticleWidget extends StatelessWidget {
   final Article article;
 
-  const ArticleWidget(
-    this.article, {
-    Key? key,
-  }) : super(key: key);
+  const ArticleWidget(this.article, {Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

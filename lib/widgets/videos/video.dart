@@ -7,10 +7,7 @@ import '../others/cached_image_progress.dart';
 class VideoEntryWidget extends StatelessWidget {
   final VideoEntry video;
 
-  const VideoEntryWidget(
-    this.video, {
-    Key? key,
-  }) : super(key: key);
+  const VideoEntryWidget(this.video, {Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -24,10 +21,7 @@ class VideoEntryWidget extends StatelessWidget {
             children: [
               CachedImageProgressWidget(video.imageUrl),
               Padding(
-                padding: const EdgeInsets.only(
-                  left: 10.0,
-                  bottom: 10.0,
-                ),
+                padding: const EdgeInsets.only(left: 10.0, bottom: 10.0),
                 child: FloatingActionButton(
                   onPressed: () {},
                   child: const Icon(

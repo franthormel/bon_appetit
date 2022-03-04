@@ -17,10 +17,7 @@ class HeaderFiveBodyWidget extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(
-          title,
-          style: Theme.of(context).textTheme.headline5,
-        ),
+        Text(title, style: Theme.of(context).textTheme.headline5),
         const Divider(color: Colors.transparent),
         Text(
           body,

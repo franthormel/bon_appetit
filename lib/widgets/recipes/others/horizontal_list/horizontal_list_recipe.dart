@@ -7,10 +7,7 @@ import '../../others/recipe_rating.dart';
 class HorizontalListRecipeWidget extends StatelessWidget {
   final Recipe recipe;
 
-  const HorizontalListRecipeWidget(
-    this.recipe, {
-    Key? key,
-  }) : super(key: key);
+  const HorizontalListRecipeWidget(this.recipe, {Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

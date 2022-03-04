@@ -28,6 +28,7 @@ class DrawerContentsWidget extends StatelessWidget {
     return widgets;
   }
 
+  // TODO: Create blank pages for each and convert the return type from List<String> to Map<String, PageRouteInfo>
   List<String> get routes {
     return <String>[
       "Recipes",

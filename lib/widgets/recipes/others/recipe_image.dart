@@ -23,9 +23,7 @@ class RecipeImageWidget extends StatelessWidget {
         ),
         if (tag != null)
           Padding(
-            padding: const EdgeInsets.only(
-              left: 8.0,
-            ),
+            padding: const EdgeInsets.only(left: 8.0),
             child: Chip(
               backgroundColor: BonAppetitColors.sizzlingSunrise,
               label: Text(tag!),

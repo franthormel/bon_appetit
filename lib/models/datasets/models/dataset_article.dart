@@ -15,10 +15,7 @@ class ArticleDataset {
   /// accompanies the main article.
   final List<CategorizedArticle> others;
 
-  ArticleDataset({
-    required this.main,
-    required this.others,
-  });
+  ArticleDataset({required this.main, required this.others});
 
   factory ArticleDataset.fromJson(Map<String, dynamic> json) =>
       _$ArticleDatasetFromJson(json);

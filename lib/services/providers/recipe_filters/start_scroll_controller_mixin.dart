@@ -4,7 +4,7 @@ mixin StartScrollControllerMixin {
   final scrollController = ScrollController();
 
   void scrollToStartOfList() {
-    if (shouldGoToStartPosition) {
+    if (_shouldGoToStartPosition) {
       scrollController.animateTo(
         scrollController.position.minScrollExtent,
         curve: Curves.ease,
@@ -13,11 +13,11 @@ mixin StartScrollControllerMixin {
     }
   }
 
-  bool get shouldGoToStartPosition {
-    final hasChild = scrollController.hasClients;
+  bool get _shouldGoToStartPosition {
+    final hasClients = scrollController.hasClients;
     final notAtStartPosition = scrollController.position.pixels !=
         scrollController.position.minScrollExtent;
 
-    return hasChild && notAtStartPosition;
+    return hasClients && notAtStartPosition;
   }
 }

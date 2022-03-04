@@ -8,10 +8,7 @@ class HorizontalListOptionsWidget extends StatelessWidget
     with HorizontalListMixin {
   final RecipeList type;
 
-  const HorizontalListOptionsWidget(
-    this.type, {
-    Key? key,
-  }) : super(key: key);
+  const HorizontalListOptionsWidget(this.type, {Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

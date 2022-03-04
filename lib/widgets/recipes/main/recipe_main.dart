@@ -8,10 +8,7 @@ import '../others/recipe_rating.dart';
 class TodayMainRecipeWidget extends StatelessWidget {
   final Recipe recipe;
 
-  const TodayMainRecipeWidget(
-    this.recipe, {
-    Key? key,
-  }) : super(key: key);
+  const TodayMainRecipeWidget(this.recipe, {Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
