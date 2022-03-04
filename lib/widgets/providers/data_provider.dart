@@ -13,7 +13,7 @@ class DataProviderWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FutureProvider<HomepageDataset?>(
-      create: (context) => MockDataProvider.fetchHomepageDataset(),
+      create: (context) => MockDataService.fetchHomepageDataset(),
       initialData: null,
       lazy: false,
       catchError: (context, error) {

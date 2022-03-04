@@ -36,12 +36,12 @@ class HorizontalListRecipeContentsWidget extends StatelessWidget
     );
   }
 
-  List<Recipe> filteredRecipes(RecipeFilter filter, RecipeDataset dataset) {
+  List<Recipe> filteredRecipes(Filter filter, RecipeDataset dataset) {
     final recipes = recipeSource(dataset);
 
     if (filter.shouldFilter) {
       return recipes
-          .where((recipe) => filter.recipeOptionIsIn(recipe.categories))
+          .where((recipe) => filter.optionIsIn(recipe.categories))
           .toList();
     }
 

@@ -22,9 +22,9 @@ class HorizontalListOptionsWidget extends StatelessWidget
       children: options.map((option) {
         return HorizontalListOptionWidget(
           label: option,
-          selected: filter.recipeOptionIs(option),
+          selected: filter.optionIs(option),
           onSelected: (_) {
-            filter.changeRecipeOptionTo(option);
+            filter.change(option);
           },
         );
       }).toList(),
