@@ -10,6 +10,8 @@ class Recipe {
   final String imageUrl;
   final String title;
 
+  // TODO Add date property
+
   /// Used for filtering recipes
   final List<String> categories;
 

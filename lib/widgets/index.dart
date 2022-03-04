@@ -1,7 +1,9 @@
 export 'articles/products.dart';
-export 'articles/stories.dart';
+export 'articles/stories/stories.dart';
 export 'articles/tips_techniques.dart';
-export 'recipes/main.dart';
-export 'recipes/suggested.dart';
-export 'recipes/trending.dart';
+export 'others/appbar_title.dart';
+export 'others/drawer/drawer.dart';
+export 'recipes/recipes_main.dart';
+export 'recipes/recipes_suggested.dart';
+export 'recipes/recipes_trending.dart';
 export 'videos/video_list.dart';

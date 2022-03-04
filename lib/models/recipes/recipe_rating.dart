@@ -7,10 +7,7 @@ class RecipeRating {
   final int count;
   final double value;
 
-  const RecipeRating({
-    required this.count,
-    required this.value,
-  });
+  const RecipeRating({required this.count, required this.value});
 
   factory RecipeRating.fromJson(Map<String, dynamic> json) =>
       _$RecipeRatingFromJson(json);

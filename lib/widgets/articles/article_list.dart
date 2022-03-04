@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
 import '../../models/index.dart';
-import '../../widgets/shared/designed_container.dart';
-import '../../widgets/shared/header_section.dart';
+import '../../widgets/others/designed_container.dart';
+import '../../widgets/others/header_section.dart';
 import 'article.dart';
-import 'stories/story_main.dart';
+import 'stories/story.dart';
 
 class ArticleListWidget extends StatelessWidget {
   final List<Article> articles;
@@ -37,7 +37,7 @@ class ArticleListWidget extends StatelessWidget {
   List<Widget>? get articleHeaderEntry {
     if (articleHeader != null) {
       return [
-        MainStoryWidget(article: articleHeader!),
+        StoryWidget(articleHeader!),
         const SizedBox(height: 70.0),
       ];
     }
@@ -51,7 +51,7 @@ class ArticleListWidget extends StatelessWidget {
     for (final article in articles) {
       widgets.addAll([
         const SizedBox(height: 50.0),
-        ArticleWidget(article: article),
+        ArticleWidget(article),
       ]);
     }
 

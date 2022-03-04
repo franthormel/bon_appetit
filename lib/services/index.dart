@@ -1,4 +1,5 @@
-export 'mock_data.dart';
-export 'recipe_filters/recipe_filter.dart';
-export 'recipe_filters/recipe_filter_suggested.dart';
-export 'recipe_filters/recipe_filter_trending.dart';
+export 'data_mock.dart';
+export 'providers/filter.dart';
+export 'providers/recipe_filters/recipe_filter_suggested.dart';
+export 'providers/recipe_filters/recipe_filter_trending.dart';
+export 'providers/route.dart';

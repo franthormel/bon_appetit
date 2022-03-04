@@ -1,24 +1,21 @@
 import 'package:flutter/material.dart';
 
 import '../../models/index.dart';
-import '../shared/cached_image_progress.dart';
-import '../shared/header_body/five.dart';
+import '../others/cached_image_progress.dart';
+import '../others/header_body/header_body_five.dart';
 import 'stories/story_category.dart';
 
 class ArticleWidget extends StatelessWidget {
   final Article article;
 
-  const ArticleWidget({
-    required this.article,
-    Key? key,
-  }) : super(key: key);
+  const ArticleWidget(this.article, {Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        CachedImageProgressWidget(imageUrl: article.imageUrl),
+        CachedImageProgressWidget(article.imageUrl),
         ...?otherArticleCategory,
         const Divider(color: Colors.transparent),
         HeaderFiveBodyWidget(title: article.title, body: article.subtitle),
@@ -32,7 +29,7 @@ class ArticleWidget extends StatelessWidget {
 
       return [
         const Divider(color: Colors.transparent),
-        StoryCategoryWidget(category: otherArticle.category),
+        StoryCategoryWidget(otherArticle.category),
       ];
     }
 

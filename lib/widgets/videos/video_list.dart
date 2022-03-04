@@ -3,8 +3,8 @@ import 'package:provider/provider.dart';
 
 import '../../models/index.dart';
 import '../../style/colors.dart';
-import '../shared/designed_container.dart';
-import '../shared/header_section.dart';
+import '../others/designed_container.dart';
+import '../others/header_section.dart';
 import 'video.dart';
 
 class VideoListWidget extends StatelessWidget {
@@ -30,8 +30,7 @@ class VideoListWidget extends StatelessWidget {
             height: 300.0,
             child: ListView.separated(
               itemCount: videos.length,
-              itemBuilder: (context, index) =>
-                  VideoEntryWidget(video: videos[index]),
+              itemBuilder: (context, index) => VideoEntryWidget(videos[index]),
               primary: false,
               scrollDirection: Axis.horizontal,
               separatorBuilder: (context, index) => const SizedBox(width: 18.0),
