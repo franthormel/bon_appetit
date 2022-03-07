@@ -8,8 +8,8 @@ part of 'recipe_ingredient.dart';
 
 RecipeIngredient _$RecipeIngredientFromJson(Map<String, dynamic> json) =>
     RecipeIngredient(
-      count: (json['count'] as num).toDouble(),
-      ingredient: json['ingredient'] as String,
+      json['ingredient'] as String,
+      count: json['count'] as String?,
     );
 
 Map<String, dynamic> _$RecipeIngredientToJson(RecipeIngredient instance) =>

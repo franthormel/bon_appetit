@@ -4,10 +4,10 @@ part 'recipe_ingredient.g.dart';
 
 @JsonSerializable()
 class RecipeIngredient {
-  final double count;
+  final String? count;
   final String ingredient;
 
-  const RecipeIngredient({required this.count, required this.ingredient});
+  const RecipeIngredient(this.ingredient, {this.count});
 
   factory RecipeIngredient.fromJson(Map<String, dynamic> json) =>
       _$RecipeIngredientFromJson(json);

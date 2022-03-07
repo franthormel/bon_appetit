@@ -26,12 +26,11 @@ class Recipe {
 
   // TODO: New info
   /// Issue publication's month and year if available.
-  final String? dateOfIssue;
+  final String? dateIssue;
   final String author;
 
-  /// When the author created and uploaded this recipe. Should not be interchanged with [dateOfIssue] which is entirely different.
+  /// When the author created and uploaded this recipe. Should not be interchanged with [dateIssue] which is entirely different.
   final DateTime dateUploaded;
-  final List<String> photographers;
 
   /// Number of servings this recipe makes.
   /// Examples:
@@ -53,12 +52,11 @@ class Recipe {
     required this.description,
     required this.imageUrl,
     required this.ingredients,
-    required this.photographers,
     required this.reviews,
     required this.servings,
     required this.steps,
     required this.title,
-    this.dateOfIssue,
+    this.dateIssue,
     this.rating,
     this.tag,
   });
