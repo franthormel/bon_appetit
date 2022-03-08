@@ -1,0 +1,9 @@
+{
+  "name": "NAME",
+  "imageUrl": "imageUrl",
+  "sponsor": {
+    "name": "Amazon",
+    "price":,
+    "url": ""
+  }
+},

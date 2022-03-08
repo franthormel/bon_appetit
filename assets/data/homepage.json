@@ -36,110 +36,180 @@
     "main": [
       {
         "categories": [
-          "Broccoli Rabe",
-          "Vegetable",
-          "Fontina",
-          "Cheese",
-          "Cheddar",
-          "Pasta Shells",
-          "Quick",
-          "Easy",
-          "Weeknight Meals",
-          "One Pot Meals",
-          "Main",
-          "Nut-Free",
           "Dinner",
-          "Pasta",
-          "Rigatoni",
-          "Pasta & Noodles",
-          "Sausage",
-          "Meat"
+          "Main",
+          "Weeknight",
+          "Vegetarian",
+          "Nut-Free",
+          "Chickpea",
+          "Bean",
+          "Vegetable",
+          "Cucumber",
+          "Yogurt",
+          "Other Ingredients",
+          "Cilantro",
+          "Herbs & Spices",
+          "Parsley"
         ],
-        "description": "This weeknight-friendly pasta uses one skillet, one pot, and plenty of cheese.",
-        "imageUrl": "https://assets.bonappetit.com/photos/5a31a6035468684549cf8def/3:4/w_720,c_limit/one-pot-baked-pasta-with-sausage-and-broccoli-rabe.jpg",
-        "title": "Baked Pasta With Sausage and Broccoli Rabe",
-        "dateIssue": null,
-        "author": "Claire Saffitz",
-        "dateUploaded": "2017-12-14",
-        "servings": "8 servings",
+        "description": "This large-format, weeknight-friendly take on falafel starts with canned chickpeas, instead of dried, and calls for baking instead of frying. Packed with herbs and a few heavy-hitting spices, the golden brown savory cake is first crisped in a skillet for optimal craggy edges, then finished in the oven until cooked through. To make it a meal, pair a wedge with a simple salad of cucumber, radishes, and quick-pickled red onion. ",
+        "mainDescription": "No need to fight over the last falafel—this sliceable one is big enough for everyone.",
+        "imageUrl": "https://assets.bonappetit.com/photos/621ce9eb3792627d16d9c392/3:4/w_720,c_limit/20220215%2520WEB%2520RECIPES%25204082.jpg",
+        "title": "Big Baked Falafel Cake With Cucumber Salad",
+        "dateUploaded": "2022-03-04",
+        "servings": "4 servings",
+        "people": {
+          "author": "Kendra Vaculin",
+          "photographers": [
+            "Isa Zapata"
+          ],
+          "foodStylists": [
+            "Susan Ottaviano"
+          ],
+          "propStylists": [
+            "Maeve Sheridan",
+            "Molly Longwell"
+          ]
+        },
+        "utensils": [
+          {
+            "name": "Citrus Juicer",
+            "imageUrl": "https://assets.bonappetit.com/photos/60cb7a8d003da72373591230/1:1/w_640,c_limit/citrus_juicer.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": 7,
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCkqmamAYoDCW25HByXWdrbHSxzZZQ8CDymSYicb4gm7RQoMajkJgsUBChTzVc7uDmnp?cid=621ea1d4f62bdce4b6a057c0"
+            }
+          },
+          {
+            "name": "Cast Iron Skillet",
+            "imageUrl": "https://assets.bonappetit.com/photos/596d20f72b659b48a371c404/1:1/w_640,c_limit/basically-equipment-cast-iron-skillet.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": 30,
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsjRC9aDQ5q4VRyy7rQ9ZsMzH9ydcos5q16PQTBNT2s2UHKx5crSgyqYMArEKpCLs?cid=621ea1d4f62bdce4b6a057c0"
+            }
+          },
+          {
+            "name": "Whisk",
+            "imageUrl": "https://assets.bonappetit.com/photos/60a5250981b25b25c6c8d4af/1:1/w_640,c_limit/product%20whisk.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": 10,
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmseir9LTWDnsngCNz94mmbti599nXxZB4ynBjSEZGqE9X9bm5Y6d22T2VC7E132tJ?cid=621ea1d4f62bdce4b6a057c0"
+            }
+          },
+          {
+            "name": "Microplane Grater",
+            "imageUrl": "https://assets.bonappetit.com/photos/5dcf0969ad1a0300083764ac/1:1/w_640,c_limit/Basically-Molly-GiftGuide-Microplane.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": 16,
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCkqQTrua49zXQVt3D1ssizewnLzoEJRFp7v4TYHBY5BhaqMXH9FwvtFAmJtPukP37yW?cid=621ea1d4f62bdce4b6a057c0"
+            }
+          }
+        ],
         "ingredients": [
           {
-            "count": null,
-            "ingredient": "Kosher salt"
-          },
-          {
-            "count": "12",
-            "ingredient": "ounces Fontina and/or aged cheddar cheese"
-          },
-          {
-            "count": "6",
-            "ingredient": "garlic cloves"
-          },
-          {
-            "count": "2",
-            "ingredient": "large sprigs sage"
-          },
-          {
             "count": "1",
-            "ingredient": "bunch of broccoli rabe"
+            "ingredient": "large red onion"
+          },
+          {
+            "count": "3",
+            "ingredient": "Tbsp. plus 1 tsp. fresh lemon juice"
           },
           {
             "count": "¼",
-            "ingredient": "cup plus 1 tablespoon extra-virgin olive oil"
+            "ingredient": "tsp. sugar"
+          },
+          {
+            "count": "1½",
+            "ingredient": "tsp. Diamond Crystal or 1 tsp. Morton kosher salt, plus more"
+          },
+          {
+            "count": "¾",
+            "ingredient": "cup (packed) cilantro leaves, divided"
+          },
+          {
+            "count": "¾",
+            "ingredient": "cup (packed) parsley  leaves, divided"
+          },
+          {
+            "count": "null",
+            "ingredient": "Tbsp. cornstarch or potato starch"
           },
           {
             "count": "1",
-            "ingredient": "pound sweet or hot Italian sausage"
+            "ingredient": "tsp. ground cumin"
           },
           {
             "count": "½",
-            "ingredient": "teaspoon crushed red pepper flakes"
+            "ingredient": "tsp. baking powder"
+          },
+          {
+            "count": "½",
+            "ingredient": "tsp. ground coriander"
+          },
+          {
+            "count": "¼",
+            "ingredient": "tsp. cayenne"
+          },
+          {
+            "ingredient": "Freshly ground black pepper"
           },
           {
             "count": "2",
-            "ingredient": "cups half-and-half"
+            "ingredient": "garlic cloves, finely grated"
           },
           {
             "count": "1",
-            "ingredient": "pound ridged medium pasta shells, or large tube pasta, such as lumaconi or rigatoni"
+            "ingredient": "large egg, beaten"
+          },
+          {
+            "count": "2",
+            "ingredient": "15.5-oz. cans chickpeas, rinsed"
+          },
+          {
+            "count": "2",
+            "ingredient": "Tbsp. extra-virgin olive oil, plus more for drizzling"
+          },
+          {
+            "count": "1",
+            "ingredient": "cup plain whole-milk yogurt"
+          },
+          {
+            "count": "3",
+            "ingredient": "Persian cucumbers, thinly sliced"
+          },
+          {
+            "count": "2",
+            "ingredient": "radishes, trimmed, thinly sliced"
           }
         ],
         "reviews": [
           {
-            "review": "My daughter made this for us and it was delicious!!",
+            "review": "I have a spouse who hates cilantro. Thoughts on a substitute?",
             "author": "Anonymous",
-            "location": "Arizona",
-            "date": "2021-10-08"
+            "location": "Philadelphia",
+            "date": "2022-03-08"
           },
           {
-            "review": "imagine complaining over the amount of pots you have to use *eye roll* this recipe is easy and delicious no matter how many pots are used ;)",
-            "author": "Lily",
-            "location": "Maine",
-            "date": "2021-08-12"
-          },
-          {
-            "review": "This is an easy and delicious dish. Yes you have to cook the pasta (orecchiette) in a separate pot, but other than that its all one pot. I've made it multiple times. ",
-            "author": "Bill Loy",
-            "location": "La Jolla CA",
-            "date": "2021-07-08"
+            "review": "A nice alternative to falafel proper... which for whatever reason I have a hard time getting right.",
+            "author": "Anonymous",
+            "date": "2022-03-07"
           }
         ],
         "steps": [
-          "Place racks in center and upper third of oven; preheat to 325°. Heat a large pot of water over high. Add several tablespoons of salt and bring to a boil (this is for your pasta).",
-          "Grate 12 oz. Fontina cheese on the large holds of a box grater (you should have about 4½ cups). Smash 6 garlic cloves, peel, and coarsely chop. Pick all sage leaves from stems and set aside about 10. Finely chop remaining leaves (you should have about 1 Tbsp.). Trim tough dried ends from 1 bunch of broccoli rabe, then cut stems into 2\" pieces. Leave leafy ends long.",
-          "Heat a deep, large, ovenproof skillet, preferably cast iron, over medium-high. Add ¼ cup oil and swirl to coat. Remove 1 lb. sausage from casings and add to skillet. Break into small pieces with a wooden spoon. Cook, undisturbed, until sausage is browned, about 4 minutes. Stir a couple of times and continue to cook, undisturbed again, until sausage is fully cooked through, about 3 minutes longer.",
-          "Add garlic, chopped sage, and ½ tsp. red pepper and cook, stirring, until garlic is golden, about 2 minutes.",
-          "Stir in 2 cups half-and-half and simmer until sauce is thickened slightly, about 2 minutes. Reduce heat to low.",
-          "Gradually add about two-thirds of cheese, bit by bit, stirring constantly and letting cheese melt completely before adding more, until sauce is smooth and thick, about 3 minutes; season with salt and remove from heat.",
-          "Meanwhile, cook 1 lb. pasta shells in boiling salted water 2 minutes shy of package instructions (8–10 minutes depending on type). During the last 2 minutes, add all of broccoli rabe to pot with pasta. Drain in a colander and shake several times to remove excess water. Return pasta and broccoli rabe to empty pasta pot.",
-          "Add cheesy sausage mixture from skillet to pot with pasta. Stir until pasta and broccoli rabe are coated in sauce, then transfer everything back to skillet.",
-          "Cover skillet tightly with foil and bake on center rack until pasta is tender and sauce is bubbling, 30–40 minutes. Let rest a few minutes while you heat broiler.",
-          "Remove foil and top with remaining cheese. Toss sage leaves with remaining 1 Tbsp. oil in a small bowl and arrange over pasta. Broil until cheese is browned and bubbling in spots, about 5 minutes (depending on strength of broiler).",
-          "Let pasta cool a minute or two before serving."
+          "Place a rack in middle of oven; preheat to 350°. Cut 1 large red onion into quarters. Thinly slice 1 quarter crosswise and place in a small bowl. Add 3 Tbsp. fresh lemon juice, ¼ tsp. sugar, and a big pinch of kosher salt and stir to combine, breaking up onion. Set aside to pickle.",
+          "Transfer remaining onion quarters to a food processor and add ½ cup (packed) cilantro leaves, ½ cup (packed) parsley leaves, 2 Tbsp. cornstarch or potato starch, 1½ tsp. Diamond Crystal or 1 tsp. Morton kosher salt, 1 tsp. ground cumin, ½ tsp. baking powder, ½ tsp. ground coriander, ¼ tsp. cayenne, a few grinds of black pepper, and 2 garlic cloves, finely grated. Pulse just until onion is chickpea-size (8–10 pulses). Add 1 large egg, beaten, and two 15.5-oz. cans chickpeas, rinsed, and pulse until chickpeas are coarsely chopped (8–10 pulses).",
+          "Heat 2 Tbsp. extra-virgin olive oil in a 10\" ovenproof skillet, preferably cast iron, over medium-high and swirl to coat bottom and sides. Scrape in falafel mixture and pat into an even layer all the way to the edges of skillet. Cook falafel until starting to turn golden around the edges, about 5 minutes.",
+          "Transfer skillet to oven and cook until falafel is set on top and browned around the edges, 18–22 minutes.",
+          "Meanwhile, whisk 1 cup plain whole-milk yogurt, remaining 1 tsp. fresh lemon juice, and a pinch of salt in a medium bowl. If yogurt is thick, thin with water, 1 Tbsp. at a time, to a drizzle-able consistency.",
+          "Coarsely chop remaining ¼ cup (packed) cilantro leaves and ¼ cup (packed) parsley leaves and place in a medium bowl. Add 3 Persian cucumbers, thinly sliced, 2 radishes, trimmed, thinly sliced, and reserved pickled red onion; season with salt and pepper. Drizzle oil and some of pickling liquid over; toss salad to combine.",
+          "Run a butter knife around edges of skillet to loosen falafel if needed, then carefully invert onto a plate. Cut into wedges and divide among plates. Serve with salad mounded on top and yogurt drizzled over. Season with more pepper."
         ],
         "rating": {
-          "count": 55,
-          "value": 4.39
+          "count": 9,
+          "value": 3.6
         }
       },
       {
@@ -167,9 +237,8 @@
           "value": 4.35
         },
         "title": "Breakfast Blondies",
-        "dateIssue": null,
-        "author": "AUTHOR",
-        "dateUploaded": "2022-02-16",
+        "author": "Anna Stockwell",
+        "dateUploaded": "2019-03-12",
         "servings": "SERVINGS",
         "ingredients": [],
         "reviews": [],
