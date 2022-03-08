@@ -1,0 +1,35 @@
+"mainDescription": "",
+"dateUploaded": "2022-03-04",
+"servings": "4 servings",
+"people": {
+    "author": "AUTHOR",
+    "photographers": [],
+    "foodStylists": [],
+    "propStylists": []
+},
+"utensils": [
+    {
+        "name": "NAME",
+        "imageUrl": "IMAGE",
+        "sponsor": {
+            "name": "Amazon",
+            "price": ,
+            "url": "URL"
+        }
+    }
+],
+"ingredients": [
+    {
+        "count": "NULL",
+        "ingredient": "INGREDIENT"
+    }
+],
+"reviews": [
+    {
+        "review": "REVIEW",
+        "author": "Anonymous",
+        "location": "NULL",
+        "date": "2022-03-08"
+    }
+],
+"steps": [],
