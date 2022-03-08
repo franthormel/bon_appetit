@@ -11,9 +11,9 @@
     {
         "name": "NAME",
         "unit": "UNIT",
-        "value": "VALUE",
+        "value": "VALUE"
     }
-]
+],
 "utensils": [
     {
         "name": "NAME",
