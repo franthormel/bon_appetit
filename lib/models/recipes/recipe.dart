@@ -5,6 +5,7 @@ import 'recipe_people.dart';
 import 'recipe_rating.dart';
 import 'recipe_review.dart';
 import 'recipe_utensil.dart';
+import 'recipe_nutrition_serving.dart';
 
 part 'recipe.g.dart';
 
@@ -26,6 +27,7 @@ class Recipe {
   /// Displayed next to main recipe. Should not interchanged with [description] which is different.
   final String? mainDescription;
 
+  final List<RecipeNutritionServing>? nutritionServings;
   final RecipePeople people;
   final RecipeRating? rating;
   final List<RecipeReview> reviews;
@@ -63,6 +65,7 @@ class Recipe {
     required this.title,
     this.dateIssue,
     this.mainDescription,
+    this.nutritionServings,
     this.rating,
     this.tag,
     this.utensils,

@@ -2,34 +2,41 @@
 "dateUploaded": "2022-03-04",
 "servings": "4 servings",
 "people": {
-"author": "AUTHOR",
-"photographers": [],
-"foodStylists": [],
-"propStylists": []
+    "author": "AUTHOR",
+    "photographers": [],
+    "foodStylists": [],
+    "propStylists": []
 },
+"nutritionServings": [
+    {
+        "name": "NAME",
+        "unit": "UNIT",
+        "value": "VALUE",
+    }
+]
 "utensils": [
-{
-"name": "NAME",
-"imageUrl": "IMAGE",
-"sponsor": {
-"name": "Amazon",
-"price": ,
-"url": "URL"
-}
-}
+    {
+        "name": "NAME",
+        "imageUrl": "IMAGE",
+        "sponsor": {
+            "name": "Amazon",
+            "price": ,
+            "url": "URL"
+        }
+    }
 ],
 "ingredients": [
-{
-"count": "NULL",
-"ingredient": "INGREDIENT"
-}
+    {
+        "count": "NULL",
+        "ingredient": "INGREDIENT"
+    }
 ],
 "reviews": [
-{
-"review": "REVIEW",
-"author": "Anonymous",
-"location": "NULL",
-"date": "2022-03-08"
-}
+    {
+        "review": "REVIEW",
+        "author": "Anonymous",
+        "location": "NULL",
+        "date": "2022-03-08"
+    }
 ],
 "steps": [],
