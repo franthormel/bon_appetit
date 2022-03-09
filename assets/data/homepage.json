@@ -2391,7 +2391,7 @@
           "Heat 3 Tbsp. vegetable oil in a large skillet over medium. Add tofu in an even layer and cook, undisturbed, until lightly browned underneath, 6–8 minutes. Stir tofu and cook, tossing occasionally, until golden and crisp all over, about 5 minutes. Add 1 tsp. soy sauce and stir to coat. Using a slotted spoon, transfer tofu to a platter.",
           "Add 2 heads of baby bok choy, halved lengthwise and 3 Tbsp. water to skillet and cook over medium heat, stirring often, just until water is evaporated and bok choy is bright green, about 2 minutes (be careful not to overcook the boy choy; it will continue to cook in the bowls). Season bok choy with kosher salt and transfer to platter.",
           "Cook 12 oz. medium-width rice stick noodles in a large pot of boiling water according to package directions. Drain and run under cold water to prevent sticking.",
-          "To serve, divide rice noodles among bowls. Top with tofu, mushrooms, bok choy, thinly sliced onion, and thinly sliced scallions. Ladle broth into bowls. Arrange bean sprouts, basil leaves, and lime wedges on another platter for topping as desired.",
+          "To serve, divide rice noodles among bowls. Top with tofu, mushrooms, bok choy, thinly sliced onion, and thinly sliced scallions. Ladle broth into bowls. Arrange bean sprouts, basil leaves, and lime wedges on another platter for topping as desired."
         ]
       },
       {
@@ -2540,7 +2540,7 @@
           "Pat dry 2 lb. bone-in beef short ribs. Separate meat from bones and cut into ½\" pieces; set bones aside.",
           "Heat 2 Tbsp. vegetable oil in a large Dutch oven or other heavy pot over medium-high. Cook one 2\" piece ginger, scrubbed, thinly sliced, and 2 garlic cloves, smashed, stirring often, until golden, about 4 minutes. Push ginger and garlic to one side of pot and add short rib meat and reserved bones. Cook, turning occasionally, until meat and bones are lightly browned, 5–7 minutes. Stir in 1 medium onion, thinly sliced, and 1 bunch scallions, trimmed, halved crosswise, and cook until heated through, about 2 minutes.",
           "Add 1 large daikon (about 1 lb.), peeled, cut into ½\" pieces, 2 bay leaves, 1 cup michiu or dry sake, 2 Tbsp. Diamond Crystal or 1 Tbsp. plus ½ tsp. Morton kosher salt, 2 tsp. five-spice powder, 2 tsp. ground white pepper, 1 tsp. MSG, and 8 cups water. Stir to combine and bring to a boil. Reduce heat to a simmer, cover pot, and cook until beef and daikon are tender and flavors have melded, 40–50 minutes. Skim fat from soup; remove and discard bay leaves, scallions, and bones (if desired). Taste and add more salt and/or white pepper if needed.",
-          "Ladle soup into bowls. Top with 1 bunch cilantro, leaves with tender stems picked, coarsely chopped, and drizzle with toasted sesame oil.",
+          "Ladle soup into bowls. Top with 1 bunch cilantro, leaves with tender stems picked, coarsely chopped, and drizzle with toasted sesame oil."
         ]
       },
       {
@@ -2563,52 +2563,167 @@
         "description": "This recipe uses the time-tested trio of garlic, butter, and lemon to coat spaghetti and seafood in a glossy, flavorful sauce. Along with fresh jalapeño, canned roasted green chiles—an oft-overlooked pantry superstar—lend bright vegetal heat.",
         "imageUrl": "https://assets.bonappetit.com/photos/61f81590d1e92c476ce28c89/3:4/w_720,c_limit/20220113-0322-hot-+-fast2342.jpg",
         "title": "Green Chile Shrimp Scampi With Spaghetti",
+        "dateIssue": "March 2022",
         "rating": {
-          "count": 8,
-          "value": 3.3
+          "count": "20",
+          "value": "4.1"
         },
         "tag": "Easy",
         "dateUploaded": "2022-03-04",
         "servings": "4 servings",
         "people": {
-          "author": "AUTHOR",
-          "photographers": [],
-          "foodStylists": [],
-          "propStylists": []
+          "author": "Kendra Vaculin",
+          "photographers": [
+            "Emma Fishman"
+          ],
+          "foodStylists": [
+            "Kendra Vaculin"
+          ]
         },
-        "nutritionServings": [
-          {
-            "name": "NAME",
-            "unit": "UNIT",
-            "value": "VALUE"
-          }
-        ],
         "utensils": [
           {
-            "name": "NAME",
-            "imageUrl": "IMAGE",
+            "name": "Large Pot",
+            "imageUrl": "https://assets.bonappetit.com/photos/596938717654ad3411665279/1:1/w_640,c_limit/basically-equipment-large-pot.jpg",
             "sponsor": {
               "name": "Amazon",
-              "price": ,
-              "url": "URL"
+              "price": "55",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsePu89zrtEVdnnGmhJCnfaR4K6fFrA9iG8F2RkThLkTJFehKHy22j28BNNwCoMP6?cid=61f006cd629920bf61fe6ccf&xid=fr1646799830294fhg"
+            }
+          },
+          {
+            "name": "Colander",
+            "imageUrl": "https://assets.bonappetit.com/photos/597901243942a20318cc3f87/1:1/w_640,c_limit/Basically_Colander.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "11",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmt8bHMXXTtTfRB9qNevWK2mBBuS92MmwfGdUiM95HxhW5woBjfu6HbHZwyiATY7EJ?cid=61f006cddae687395287fe61&xid=fr1646808141338eah"
+            }
+          },
+          {
+            "name": "Large Skillet",
+            "imageUrl": "https://assets.bonappetit.com/photos/596cf2fc7102712b68401b14/1:1/w_640,c_limit/Bascially_Large-Skillet.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "84",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsjL7yvrJaDvPvX1UKuPcgywsyh8YmZNhf6FCNW6eixZ5hgj6PDef1iDyTyVmjPQU?cid=618af3268653ce4d14754d26&xid=fr1646802065122cih"
+            }
+          },
+          {
+            "name": "Citrus Juicer",
+            "imageUrl": "https://assets.bonappetit.com/photos/60cb7a8d003da72373591230/1:1/w_640,c_limit/citrus_juicer.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "7",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCkqmamAYoDCW25HByXWdrbHSxzZZQ8CDymSYicb4gm7RQoMajkJgsUBChTzVc7uDmnp?cid=621ea1d4f62bdce4b6a057c0"
+            }
+          },
+          {
+            "name": "Microplane Grater",
+            "imageUrl": "https://assets.bonappetit.com/photos/5dcf0969ad1a0300083764ac/1:1/w_640,c_limit/Basically-Molly-GiftGuide-Microplane.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "16",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCkqQTrua49zXQVt3D1ssizewnLzoEJRFp7v4TYHBY5BhaqMXH9FwvtFAmJtPukP37yW?cid=621ea1d4f62bdce4b6a057c0"
+            }
+          },
+          {
+            "name": "Heatproof Measuring Cup",
+            "imageUrl": "https://assets.bonappetit.com/photos/598b240b33219f41c020b06b/1:1/w_640,c_limit/Basically_Heatproof-measuring-cup.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "18",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmth7dPurFf5C5VufVHyKQJC9yq1Fnt9WpS3nRLF2mt2iEgo8i2nV3eGx8JtS3j9eY?cid=61f006cd629920bf61fe6ccf&xid=fr1646799830294efe"
+            }
+          },
+          {
+            "name": "Tongs",
+            "imageUrl": "https://assets.bonappetit.com/photos/5a1eddec2479441876ab9959/1:1/w_640,c_limit/Basically_Tongs.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "13",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsePu8Y3B7K5G4cFmneVqqJNvPgsmfJEFejzaPQQWMnt7Y8L64Tuvzjahsb2382jz?cid=61f006cd6e9e896c3f22c747&xid=fr1646804248021fhj"
             }
           }
         ],
         "ingredients": [
           {
-            "count": "NULL",
-            "ingredient": "INGREDIENT"
+            "count": "10",
+            "ingredient": "oz. spaghetti"
+          },
+          {
+            "ingredient": "Kosher salt"
+          },
+          {
+            "count": "1",
+            "ingredient": "lb. shrimp, peeled, deveined, tails left on"
+          },
+          {
+            "count": "4",
+            "ingredient": "Tbsp. extra-virgin olive oil, divided"
+          },
+          {
+            "count": "1",
+            "ingredient": "jalapeño, seeds removed if desired, thinly sliced"
+          },
+          {
+            "count": "4",
+            "ingredient": "garlic cloves, thinly sliced"
+          },
+          {
+            "count": "3",
+            "ingredient": "4-oz. cans diced green chiles"
+          },
+          {
+            "ingredient": "Freshly ground black pepper"
+          },
+          {
+            "count": "2",
+            "ingredient": "tsp. finely grated lemon zest, plus more for serving"
+          },
+          {
+            "count": "⅓",
+            "ingredient": "cup fresh lemon juice"
+          },
+          {
+            "count": "6",
+            "ingredient": "Tbsp. unsalted butter"
+          },
+          {
+            "ingredient": "Chopped parsley (for serving)"
           }
         ],
         "reviews": [
           {
-            "review": "REVIEW",
+            "review": "Its's 2022 who is still printing recipes?? ",
             "author": "Anonymous",
-            "location": "NULL",
+            "date": "2022-03-08"
+          },
+          {
+            "review": "and I learned nothing because there is nothing but arguments about how to print the recipe. what about the icons on the left-hand side of the screen? these comments are ridiculous! did anyone actually make the recipe? what is your actual opinion except for whining about the print function? ",
+            "author": "mmca8",
+            "location": "West Texas",
+            "date": "2022-03-08"
+          },
+          {
+            "review": "I agree with Jason. I have written several times about the inability to print a recipe. And taking a 'screen shot' is not the answer. I too will not renew my subscription for this reason Surely you have a technical staff capable of fixing this problem. Or do you read the comments? Using the print icon on the left, one of the advertisements overlays the first para of the recipe. Shame on you bon appetit. You can do better.",
+            "author": "Anonymous",
+            "location": "Alexandria, VA",
+            "date": "2022-03-08"
+          },
+          {
+            "review": "Hatch Brand Green Chiles is the Go-To.",
+            "author": "Anonymous",
+            "location": "Chicago, IL",
             "date": "2022-03-08"
           }
         ],
-        "steps": []
+        "steps": [
+          "Cook pasta in a large pot of boiling salted water, stirring occasionally, until al dente. Drain, reserving ¼ cup pasta cooking liquid.",
+          "When the pasta is nearly done, pat shrimp dry with paper towels; season with salt. Heat 2 Tbsp. oil in a large skillet over medium. Cook shrimp until pink but still slightly undercooked, about 1 minute per side. Transfer to a plate.",
+          "Add remaining 2 Tbsp. oil to same skillet. Cook jalapeño and garlic, stirring often, until garlic starts to soften and turn golden, about 1 minute. Add green chiles and season with salt and pepper. Cook, stirring occasionally, until liquid has evaporated, about 2 minutes. Add lemon juice and cook, stirring often, until combined and mixture is jammy, about 1 minute.",
+          "Add pasta, shrimp, butter, reserved pasta cooking liquid, and 2 tsp. lemon zest and cook, stirring often, until butter is melted, sauce is combined, and pasta is coated and glossy, about 2 minutes. Remove from heat; taste and season with more salt and pepper.",
+          "To serve, divide pasta among shallow bowls and top with parsley and more lemon zest and pepper."
+        ]
       },
       {
         "categories": [
@@ -2632,52 +2747,117 @@
         "description": "The chicken burgers from Ali Slagle’s cookbook I Dream of Dinner (So You Don’t Have To) have a little secret—they’re cooked in bacon fat, which adds flavor and moisture to the ground meat. And that’s not all: The chicken meatballs are smashed into a thin layer and topped with thinly sliced onion and jalapeño, yielding browned, juicy burgers juxtaposed with the sweetness and heat of the charred vegetables. Layer it all onto a toasty bun with the crispy bacon and as much ketchup as you please, then wonder how only a handful of ingredients brought such big flavor.",
         "imageUrl": "https://assets.bonappetit.com/photos/61f7eb50b7fba5e3be0da65d/3:4/w_720,c_limit/20211207-0222-Smash-Burger-+-Web-Extras9030.jpg",
         "title": "Chicken-Bacon Smash Burgers",
+        "dateIssue": "March 2022",
         "rating": {
-          "count": 7,
-          "value": 3.3
+          "count": "14",
+          "value": "3.8"
         },
         "tag": "Quick",
-        "dateUploaded": "2022-03-04",
-        "servings": "4 servings",
+        "dateUploaded": "2022-02-08",
+        "servings": "Makes 4",
         "people": {
-          "author": "AUTHOR",
-          "photographers": [],
-          "foodStylists": [],
-          "propStylists": []
+          "author": "Ali Sagle",
+          "photographers": [
+            "Isa Zapata"
+          ],
+          "foodStylists": [
+            "Pearl Jones"
+          ],
+          "propStylists": [
+            "Marina Bevilacqua"
+          ]
         },
-        "nutritionServings": [
-          {
-            "name": "NAME",
-            "unit": "UNIT",
-            "value": "VALUE"
-          }
-        ],
         "utensils": [
           {
-            "name": "NAME",
-            "imageUrl": "IMAGE",
+            "name": "Cast Iron Skillet",
+            "imageUrl": "https://assets.bonappetit.com/photos/596d20f72b659b48a371c404/1:1/w_640,c_limit/basically-equipment-cast-iron-skillet.jpg",
             "sponsor": {
               "name": "Amazon",
-              "price": ,
-              "url": "URL"
+              "price": "30",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsjRC9aDQ5q4VRyy7rQ9ZsMzH9ydcos5q16PQTBNT2s2UHKx5crSgyqYMArEKpCLs?cid=61f006cd629920bf61fe6ccc&xid=fr1646808141896jbb"
+            }
+          },
+          {
+            "name": "Heavy Metal Spatula",
+            "imageUrl": "https://assets.bonappetit.com/photos/6201538fad98ece7caee0a5e/1:1/w_640,c_limit/new%20hamburger%20turner%20pb.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "4",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCkubKKjHjGwrmFhSy5Z8X7CHcQMTWiCLQX23jnT3qGPVmKRgC6die7HxyMCCgGVWkdR?cid=61f006cd629920bf61fe6ccc&xid=fr1646808141896gid"
+            }
+          },
+          {
+            "name": "Cutting Board",
+            "imageUrl": "https://assets.bonappetit.com/photos/59693b227102712b68401a8c/1:1/w_640,c_limit/basically-equipment-cutting-board.jpg",
+            "sponsor": {
+              "name": "IKEA",
+              "price": "10",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsePzcUAqT5KYR9jmBi7u2WiPA7b52oYXgb65uX32u5zVAmCqFYg6TfHMVEi8EWm3?cid=61f006cd629920bf61fe6ccc&xid=fr1646808141896fee"
+            }
+          },
+          {
+            "name": "Chef's Knife",
+            "imageUrl": "https://assets.bonappetit.com/photos/5f3d7774b4b3538eb4dc4f93/1:1/w_640,c_limit/Basically-gift-guide-2017-Victorinox-Chef.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "34.53",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsePzcnjSNojcExKfoYuf2Bo8CjcWLivgJjQ7kJW6pSiSPG3DxLjSFevzZwe72zmJ?cid=61f006cd629920bf61fe6ccc&xid=fr1646808141896chb"
             }
           }
         ],
         "ingredients": [
           {
-            "count": "NULL",
-            "ingredient": "INGREDIENT"
+            "count": "1",
+            "ingredient": "lb. ground chicken"
+          },
+          {
+            "count": "2",
+            "ingredient": "tsp. vegetable oil"
+          },
+          {
+            "count": "4",
+            "ingredient": "hamburger buns"
+          },
+          {
+            "count": "8",
+            "ingredient": "bacon slices (not thick-cut), halved crosswise, divided"
+          },
+          {
+            "ingredient": "Kosher salt, freshly ground pepper"
+          },
+          {
+            "count": "1",
+            "ingredient": "small red onion, very thinly sliced, divided"
+          },
+          {
+            "count": "1",
+            "ingredient": "jalapeño, very thinly sliced, divided"
+          },
+          {
+            "ingredient": "Ketchup (for serving)"
           }
         ],
         "reviews": [
           {
-            "review": "REVIEW",
-            "author": "Anonymous",
-            "location": "NULL",
-            "date": "2022-03-08"
+            "review": "I really like the smashing technique with the onions and peppers on top which cook upon flipping, but found the recipe seemingly unfinished with ketchup a weird and minimal pairing. Adding some Mayo and lettuce was a must, and I think tomato would have been a nice addition but I didn’t have any available.",
+            "author": "Erika",
+            "location": "Minneapolis MN USA",
+            "date": "2022-03-06"
+          },
+          {
+            "review": "This was so delicious and super quick. I did step it up by serving it on homemade burger buns with some Bon Appetit slightly sweet quick pickled onions. The mandoline really helped make the onion and jalapeno slices really thin and uniform.",
+            "author": "Julianne",
+            "location": "Renton Washington",
+            "date": "2022-02-20"
           }
         ],
-        "steps": []
+        "steps": [
+          "Working the meat as little as possible, roll chicken into 4 meatballs (4 oz. each); press down slightly to make tops flat.",
+          "Heat oil in a large cast-iron skillet over medium-high. Working in 2 batches, toast hamburger buns, cut sides down, until golden, about 1 minute. Transfer to plates.",
+          "Add half of the bacon to same skillet and cook until browned and crisp, about 2 minutes per side. Place 4 pieces on top of 2 of the bottom bun.",
+          "Season 2 meatballs generously with salt and pepper. Place them far apart in skillet. Using a spatula, smash meatballs down as thin as you can (use another kitchen tool to drive the spatula down toward the skillet to help flatten the meat against it). Top each with about a quarter of the onion and the jalapeño; press into meat. Cook patties, untouched, until browned underneath, about 2 minutes. Flip over and cook until patties are cooked through and onion is golden, about 1 minute. Transfer patties to bottom buns with bacon. Repeat process with remaining bacon, chicken, onion, and jalapeño to make 2 more burgers.",
+          "Close up hamburgers and serve with ketchup alongside."
+        ]
       },
       {
         "categories": [
@@ -2695,50 +2875,183 @@
         "imageUrl": "https://assets.bonappetit.com/photos/61b770d0eebeca16d300df49/3:4/w_720,c_limit/20211208%20Pastitsio%20LEDE.jpg",
         "title": "Pastitsio",
         "rating": {
-          "count": 27,
-          "value": 4.9
+          "count": "31",
+          "value": "4.7"
         },
-        "dateUploaded": "2022-03-04",
-        "servings": "4 servings",
+        "dateUploaded": "2021-12-14",
+        "servings": "8 servings",
         "people": {
-          "author": "AUTHOR",
-          "photographers": [],
-          "foodStylists": [],
-          "propStylists": []
+          "author": "Kendra Vaculin",
+          "photographers": [
+            "Isa Zapata"
+          ],
+          "foodStylists": [
+            "Cyd McDowell"
+          ],
+          "propStylists": [
+            "Paige Hicks"
+          ]
         },
-        "nutritionServings": [
-          {
-            "name": "NAME",
-            "unit": "UNIT",
-            "value": "VALUE"
-          }
-        ],
         "utensils": [
           {
-            "name": "NAME",
-            "imageUrl": "IMAGE",
+            "name": "Dutch Oven",
+            "imageUrl": "https://assets.bonappetit.com/photos/5a7490a05736e36c6bb6a23e/1:1/w_640,c_limit/Basically_Dutch-Oven-Large-with-Lid.jpg",
             "sponsor": {
               "name": "Amazon",
-              "price": ,
-              "url": "URL"
+              "price": "80",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsedj4MPoD5E3qUsenzmqst8DhKsrszGFFtx8gq8yPpUrNemjH3MrZuLSZaec7XHF?cid=61b7a860fcb29fa877f5ed2d&xid=fr1646808141761jcb"
+            }
+          },
+          {
+            "name": "13x9\" Baking Dish",
+            "imageUrl": "https://assets.bonappetit.com/photos/5a0f33646a0d9a7cf8e46e58/1:1/w_640,c_limit/Basically_Baking_dish_13x9.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "20",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCdEvqdsiRP4XxYMWVYTSV9GLv1K3zNrTXn6o8MqWVxhBDLbc5WBkDKUrWjBePBX65DA?cid=61b7a860fcb29fa877f5ed2d&xid=fr1646808141761jfd"
+            }
+          },
+          {
+            "name": "Box Grater",
+            "imageUrl": "https://assets.bonappetit.com/photos/59aed2a835530064b1ea599a/1:1/w_640,c_limit/Bssically_Cheese-Grater.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "13",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbnETjVD6hJEHcwqmXPEcGnmZ7XTW7WP9kjZNriNX76tZjTw4RcAe9nzoL51r5u3Yb2?cid=61b7a860fcb29fa877f5ed2d&xid=fr1646808141761ejc"
+            }
+          },
+          {
+            "name": "Colander",
+            "imageUrl": "https://assets.bonappetit.com/photos/597901243942a20318cc3f87/1:1/w_640,c_limit/Basically_Colander.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "11",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmt8bHMXXTtTfRB9qNevWK2mBBuS92MmwfGdUiM95HxhW5woBjfu6HbHZwyiATY7EJ?cid=61b7a860fcb29fa877f5ed2d&xid=fr1646808141761bec"
+            }
+          },
+          {
+            "name": "Can Opener",
+            "imageUrl": "https://assets.bonappetit.com/photos/59e902936fe2375498131cb2/1:1/w_640,c_limit/Basically_Can-Opener.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "14",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbnGJjhjUwXtYtWwT3iZ9MiPiKxaZ6381QcRBvjxHSXv88ezGKj7jyQKYPMDWTkeur3?cid=61b7a860fcb29fa877f5ed2d&xid=fr1646808141761ifi"
+            }
+          },
+          {
+            "name": "Wooden Spoon",
+            "imageUrl": "https://assets.bonappetit.com/photos/596940436c75df51bc0b91c0/1:1/w_640,c_limit/basically-equipment-wooden-spoon.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "6",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmseir9Q44EJYVvP7yG1yxFWWMTcsBFkXfg99oWSFH4TfoDvsfm6VcPJCGM9i2xv3u?cid=61b7a860fcb29fa877f5ed2d&xid=fr1646808141761ddj"
             }
           }
         ],
         "ingredients": [
           {
-            "count": "NULL",
-            "ingredient": "INGREDIENT"
+            "count": "2",
+            "ingredient": "Tbsp. extra-virgin olive oil"
+          },
+          {
+            "count": "2",
+            "ingredient": "large red onions, finely chopped"
+          },
+          {
+            "count": "4",
+            "ingredient": "garlic cloves, thinly sliced"
+          },
+          {
+            "count": "2",
+            "ingredient": "lb. ground beef"
+          },
+          {
+            "count": "2",
+            "ingredient": "bay leaves"
+          },
+          {
+            "count": "3",
+            "ingredient": "Tbsp. double-concentrated tomato paste"
+          },
+          {
+            "count": "2",
+            "ingredient": "tsp. Diamond Crystal or 1¼ tsp. Morton kosher salt, plus more"
+          },
+          {
+            "count": "¾",
+            "ingredient": "tsp. ground cumin"
+          },
+          {
+            "count": "¾",
+            "ingredient": "tsp. ground cinnamon"
+          },
+          {
+            "count": "¼",
+            "ingredient": "tsp. ground cloves"
+          },
+          {
+            "ingredient": "Freshly ground black pepper"
+          },
+          {
+            "count": "¾",
+            "ingredient": "cup red wine"
+          },
+          {
+            "count": "1",
+            "ingredient": "28-oz. can crushed tomatoes"
+          },
+          {
+            "count": "2",
+            "ingredient": "cups low-sodium beef broth"
+          },
+          {
+            "count": "1",
+            "ingredient": "lb. pastitsio noodles (such as Loi macaroni) or 12 oz. bucatini"
+          },
+          {
+            "ingredient": "Kosher salt"
+          },
+          {
+            "count": "2",
+            "ingredient": "large eggs, room temperature"
+          },
+          {
+            "count": "5",
+            "ingredient": "Tbsp. unsalted butter"
+          },
+          {
+            "count": "5",
+            "ingredient": "Tbsp. all-purpose flour"
+          },
+          {
+            "count": "3",
+            "ingredient": "cups milk, room temperature"
+          },
+          {
+            "count": "7",
+            "ingredient": "oz. kasseri or Romano cheese, finely grated, divided"
+          },
+          {
+            "ingredient": "Freshly ground black pepper"
           }
         ],
         "reviews": [
           {
-            "review": "REVIEW",
-            "author": "Anonymous",
-            "location": "NULL",
-            "date": "2022-03-08"
+            "review": "Cumin? Garlic? Beef broth? Bay leaves?Crushed tomato? Cloves?What part of Greece is this from? Italy? I will try Loi pasta but in Chicago Miskos No2 is readily available. Also if you don’t want a cinnamon bomb, try using sticks and remove when done cooking meat or else the cinnamon keeps on giving . The assembly is traditional but usually half pasta, then meat then rest of pasta then bechamel. Normally I love your recipes but not so much this time",
+            "author": "Peter L",
+            "location": "Chicago,IL",
+            "date": "2022-02-28"
           }
         ],
-        "steps": []
+        "steps": [
+          "Heat 2 Tbsp. extra-virgin olive oil in a large Dutch oven or other heavy pot over medium-high. Cook 2 finely chopped large red onions, 4 thinly sliced garlic cloves, and 2 lb. ground beef, breaking up meat with a wooden spoon and stirring occasionally, until onions are softened and beef is browned, 10–15 minutes.",
+          "Add 2 bay leaves, 3 Tbsp. double-concentrated tomato paste, 2 tsp. Diamond Crystal or 1¼ tsp. Morton kosher salt, ¾ tsp. ground cumin, ¾ tsp. ground cinnamon, and ¼ tsp. ground cloves to pot; season with freshly ground black pepper. Cook, stirring often, until tomato paste and spices are evenly distributed, about 4 minutes. Add ¾ cup red wine, scraping up any browned bits, and cook, stirring occasionally, until almost completely evaporated, about 3 minutes. Add one 28-oz. can crushed tomatoes and 2 cups low-sodium beef broth and stir to combine. Bring to a boil, then reduce heat and simmer, stirring occasionally, until sauce is thick and meaty (most of the liquid should have cooked off), 45–60 minutes. Taste and season with salt. Let cool until almost room temperature, about 30 minutes.",
+          "Preheat oven to 350°. Cook 1 lb. pastitsio noodles or 12 oz. bucatini in a large pot of boiling salted water until very al dente, about 2 minutes less than package directions. Drain and rinse under cold running water to cool. Transfer to a 13x9\" baking dish.",
+          "Working one at a time, separate yolks from 2 room-temperature large eggs over a small bowl to catch egg whites. Place yolks in another small bowl; set aside. Beat egg whites to blend well. Add egg whites to noodles and toss to coat (this will help the noodles form a sliceable layer in the final dish). Arrange noodles in straight lines, all facing the same direction, as best you can.",
+          "Melt 5 Tbsp. unsalted butter in a medium saucepan over medium heat. Add 5 Tbsp. all-purpose flour and whisk until flour is combined and mixture is light and frothy, about 3 minutes. Add 3 cups room-temperature milk in a slow, steady stream, whisking constantly to combine. Cook, whisking constantly, until thick enough to coat a spoon, 6–8 minutes. Remove from heat and whisk in 5 oz. finely grated kasseri or Romano cheese. Taste and season with salt and freshly ground black pepper (be sure to taste after whisking in the cheese; depending on the kind of cheese you use, you may not need to add any salt). Beat reserved egg yolks to blend, then whisk into béchamel.",
+          "Spoon meat sauce over noodles in baking dish, then top with béchamel, smoothing into an even layer. Sprinkle remaining 2 oz. finely grated kasseri or Romano cheese on top. Bake pastitsio until starting to brown around the edges and top is set (it will still be a little jiggly, but will continue to firm up as it cools), 35–40 minutes.",
+          "Heat broiler. Broil until top of pastitsio is browned in spots, about 4 minutes. Let sit at least 30 minutes before slicing."
+        ]
       },
       {
         "categories": [
@@ -2764,52 +3077,135 @@
         "description": "Swordfish is perfect for hot-and-fast applications like this springy skillet from Ali Slagle’s cookbook I Dream of Dinner (So You Don’t Have To) because it cooks quickly without drying out. Swap in another fatty fish—like mahi-mahi or salmon—and whatever crunchy vegetables (like green beans or snap peas) and small white beans (like navy or Great Northern) you have on hand. Serve alongside orzo, Israeli couscous, bulgur, or crusty bread for sopping up the lemony juices.",
         "imageUrl": "https://assets.bonappetit.com/photos/61f7fdebbccddc88319220ed/3:4/w_720,c_limit/Swordfish%20With%20Asparagus%20and%20Beans.jpg",
         "title": "Swordfish With Asparagus and Beans",
+        "dateIssue": "March 2022",
         "rating": {
-          "count": 3,
-          "value": 4.5
+          "count": "8",
+          "value": "4.8"
         },
         "tag": "Quick",
-        "dateUploaded": "2022-03-04",
+        "dateUploaded": "2022-02-08",
         "servings": "4 servings",
         "people": {
-          "author": "AUTHOR",
-          "photographers": [],
-          "foodStylists": [],
-          "propStylists": []
+          "author": "Ali Sagle",
+          "photographers": [
+            "Isa Zapata"
+          ],
+          "foodStylists": [
+            "Pearl Jones"
+          ],
+          "propStylists": [
+            "Marina Bevilacqua"
+          ]
         },
-        "nutritionServings": [
-          {
-            "name": "NAME",
-            "unit": "UNIT",
-            "value": "VALUE"
-          }
-        ],
         "utensils": [
           {
-            "name": "NAME",
-            "imageUrl": "IMAGE",
+            "name": "Large Skillet",
+            "imageUrl": "https://assets.bonappetit.com/photos/596cf2fc7102712b68401b14/1:1/w_640,c_limit/Bascially_Large-Skillet.jpg",
             "sponsor": {
               "name": "Amazon",
-              "price": ,
-              "url": "URL"
+              "price": "84",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsjL7yvrJaDvPvX1UKuPcgywsyh8YmZNhf6FCNW6eixZ5hgj6PDef1iDyTyVmjPQU?cid=61f006cd89ec71e33ee584b3&xid=fr1646811836584gef"
+            }
+          },
+          {
+            "name": "Fish Spatula",
+            "imageUrl": "https://assets.bonappetit.com/photos/596ce7a5b85671732e0d55e5/1:1/w_640,c_limit/Basically_Fish-Spatula.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "14",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsj6DSo1Aif9S8eozHBrvwMEtdgaCSGztxGhZXLtwvngF9ahubv9d9aVktACJ4Mo1?cid=61f006cd89ec71e33ee584b3&xid=fr1646811836584ada"
+            }
+          },
+          {
+            "name": "Microplane Grater",
+            "imageUrl": "https://assets.bonappetit.com/photos/5dcf0969ad1a0300083764ac/1:1/w_640,c_limit/Basically-Molly-GiftGuide-Microplane.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "16",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCkqQTrua49zXQVt3D1ssizewnLzoEJRFp7v4TYHBY5BhaqMXH9FwvtFAmJtPukP37yW?cid=61f006cd89ec71e33ee584b3&xid=fr1646811836584dah"
+            }
+          },
+          {
+            "name": "Citrus Juicer",
+            "imageUrl": "https://assets.bonappetit.com/photos/60cb7a8d003da72373591230/1:1/w_640,c_limit/citrus_juicer.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "7",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCkqmamAYoDCW25HByXWdrbHSxzZZQ8CDymSYicb4gm7RQoMajkJgsUBChTzVc7uDmnp?cid=61f006cd89ec71e33ee584b3&xid=fr1646811836584dci"
+            }
+          },
+          {
+            "name": "Whisk",
+            "imageUrl": "https://assets.bonappetit.com/photos/60a5250981b25b25c6c8d4af/1:1/w_640,c_limit/product%20whisk.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "10",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmseir9LTWDnsngCNz94mmbti599nXxZB4ynBjSEZGqE9X9bm5Y6d22T2VC7E132tJ?cid=61f006cd89ec71e33ee584b3&xid=fr1646811836585fhh"
             }
           }
         ],
         "ingredients": [
           {
-            "count": "NULL",
-            "ingredient": "INGREDIENT"
+            "ingredient": "Zest and juice of 2 lemons"
+          },
+          {
+            "count": "1",
+            "ingredient": "tsp. crushed red pepper flakes"
+          },
+          {
+            "count": "½",
+            "ingredient": "cup plus 4 Tbsp. extra-virgin olive oil, divided"
+          },
+          {
+            "ingredient": "Kosher salt, freshly ground pepper"
+          },
+          {
+            "count": "4",
+            "ingredient": "1”-thick swordfish or mahi-mahi steaks (about 1½ lb. total), patted dry, cut into 1” cubes"
+          },
+          {
+            "count": "1",
+            "ingredient": "lb. asparagus, woody stems trimmed, cut into ½” pieces"
+          },
+          {
+            "count": "1",
+            "ingredient": "garlic clove, thinly sliced"
+          },
+          {
+            "count": "2",
+            "ingredient": "15-oz. cans small white beans, (such as navy or Great Northern), rinsed"
+          },
+          {
+            "count": "½",
+            "ingredient": "cup tender herbs (such as mint, dill, basil, and/or parsley), plus more for serving"
           }
         ],
         "reviews": [
           {
-            "review": "REVIEW",
-            "author": "Anonymous",
-            "location": "NULL",
-            "date": "2022-03-08"
+            "review": "This was delicious! I made it as written except that I had salmon in the house and was too lazy to go to the store for swordfish. I will definitely make it again…and again…",
+            "author": "DELISH!",
+            "location": "Guilford, CT",
+            "date": "2022-02-24"
+          },
+          {
+            "review": "Just made it. Used fresh dill. It was absolutely WONDERFUL. Used swordfish, followed instructions to the \"T.\" Will be making this for guests soon. The lemon is soooo good, makes it fresh and delightful. Note: we felt the serving size was a bit large. It basically calls for each guest to eat 1/2 can of beans, which seems to be a bit much. But who cares? It was so good, we ate it gladly.",
+            "author": "Anne",
+            "location": "Cambria, CA",
+            "date": "2022-02-22"
+          },
+          {
+            "review": "I made this using Whiting because it’s what I could afford. The flavors were great, the vinaigrette was necessary to include something acidic. I thought the dish needed added texture since my asparagus wasn’t as crispy and everything else was mushy, so I topped it with garlic roasted bread crumbs. Would make again!",
+            "author": "Kate",
+            "location": "New York, NY",
+            "date": "2022-02-21"
           }
         ],
-        "steps": []
+        "steps": [
+          "Whisk lemon zest, lemon juice, red pepper flakes, and ½ cup oil in a small bowl to combine; season vinaigrette with salt and pepper.",
+          "Season fish all over with salt and pepper. Heat 2 Tbsp. oil in a large skillet over medium. Add asparagus, garlic, beans, and ¼ cup water; season with salt and pepper. Cook, stirring occasionally, until asparagus is crisp-tender and beans are warmed through, about 4 minutes. Transfer to a medium bowl; stir in 2 Tbsp. vinaigrette. Reserve skillet.",
+          "Heat remaining 2 Tbsp. oil in reserved skillet over medium. Cook fish, stirring occasionally, until golden brown and flesh flakes easily with a fork, 5–7 minutes.",
+          "Add fish and ½ cup herbs to bean mixture and stir once. Drizzle with more vinaigrette and season with more salt and pepper. Just before serving, scatter more herbs on top."
+        ]
       },
       {
         "categories": [
@@ -2833,52 +3229,133 @@
         "description": "This comforting hot pot base gets plenty of umami from mushrooms and alliums, which means there’s no need for meat. Chef Eric Sze of New York City’s 886 and wenwen likes pairing a mild, refreshing broth like this one with a spicier broth in a divided pot because switching between the two “makes your palate dance,” Sze explains. If you want to spice up this broth, however, you can add 4 Tbsp. Pixian chili bean paste and 15 dried chao tian jiao (or dried chiles de árbol) and cook for 2 minutes before adding the onions. Even if you aren’t making hot pot, you can use this broth as a flavorful (and vegan!) base for stews, soups, braises—or just something comforting to sip on.",
         "imageUrl": "https://assets.bonappetit.com/photos/61f8205db7fba5e3be0da661/3:4/w_720,c_limit/Herbal-Mushroom-Broth.jpg",
         "title": "Herbal Mushroom Hot Pot Broth",
+        "dateIssue": "March 2022",
         "rating": {
-          "count": 3,
-          "value": 5.0
+          "count": "5",
+          "value": "5.0"
         },
         "tag": "Vegan",
-        "dateUploaded": "2022-03-04",
-        "servings": "4 servings",
+        "dateUploaded": "2022-02-08",
+        "servings": "Makes about 2½ quarts",
         "people": {
-          "author": "AUTHOR",
-          "photographers": [],
-          "foodStylists": [],
-          "propStylists": []
+          "author": "Eric Sze",
+          "photographers": [
+            "Emma Fishman"
+          ],
+          "foodStylists": [
+            "Pearl Jones"
+          ]
         },
-        "nutritionServings": [
-          {
-            "name": "NAME",
-            "unit": "UNIT",
-            "value": "VALUE"
-          }
-        ],
         "utensils": [
           {
-            "name": "NAME",
-            "imageUrl": "IMAGE",
+            "name": "Dutch Oven",
+            "imageUrl": "https://assets.bonappetit.com/photos/5a7490a05736e36c6bb6a23e/1:1/w_640,c_limit/Basically_Dutch-Oven-Large-with-Lid.jpg",
             "sponsor": {
               "name": "Amazon",
-              "price": ,
-              "url": "URL"
+              "price": "80",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsedj4MPoD5E3qUsenzmqst8DhKsrszGFFtx8gq8yPpUrNemjH3MrZuLSZaec7XHF?cid=5e31acafb37f4c00098901d5&xid=fr1646799829417fjb"
+            }
+          },
+          {
+            "name": "Ladle",
+            "imageUrl": "https://assets.bonappetit.com/photos/620d3eb4c76ccefd90e4f6e5/1:1/w_640,c_limit/oxo-nylon-ladle-black.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "8",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbnFLPK53qB5WRWfy3CnDy95amhUjRRSGs5xCvYrrURDz4ykjToLg3nsxSVSaP3Tnvk?cid=61f006cd629920bf61fe6ccf&xid=fr1646799830294jif"
+            }
+          },
+          {
+            "name": "Mesh Sieve",
+            "imageUrl": "https://assets.bonappetit.com/photos/59721c9a5e52a765a3283012/1:1/w_640,c_limit/basically-fine-mesh-sieve.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "13",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCdPUMvA6bhXSdsJZnmPFia1n3zfcQeqe2RVCvrSNgdX3p9FJ4ZQ6tXia22VLZiTm4Yd?cid=61f006cd629920bf61fe6ccf&xid=fr1646799830294dgj"
+            }
+          },
+          {
+            "name": "Wooden Spoon",
+            "imageUrl": "https://assets.bonappetit.com/photos/596940436c75df51bc0b91c0/1:1/w_640,c_limit/basically-equipment-wooden-spoon.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "6",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmseir9Q44EJYVvP7yG1yxFWWMTcsBFkXfg99oWSFH4TfoDvsfm6VcPJCGM9i2xv3u?cid=61f006cd629920bf61fe6cce&xid=fr1646802062883bec"
             }
           }
         ],
         "ingredients": [
           {
-            "count": "NULL",
-            "ingredient": "INGREDIENT"
-          }
-        ],
-        "reviews": [
+            "count": "4",
+            "ingredient": "Tbsp. vegetable oil"
+          },
           {
-            "review": "REVIEW",
-            "author": "Anonymous",
-            "location": "NULL",
-            "date": "2022-03-08"
+            "count": "1",
+            "ingredient": "lb. assorted mushrooms (such as shiitake, king oyster, and/or portobello), thinly sliced"
+          },
+          {
+            "count": "2",
+            "ingredient": "large onions, cut into 2\" pieces"
+          },
+          {
+            "count": "5",
+            "ingredient": "large shallots, thinly sliced"
+          },
+          {
+            "count": "1",
+            "ingredient": "head of garlic, cloves separated, peeled"
+          },
+          {
+            "count": "2",
+            "ingredient": "bunches scallions, coarsely chopped, plus more cut into 3\" pieces for serving"
+          },
+          {
+            "count": "½",
+            "ingredient": "large head of Napa cabbage, sliced crosswise ½\" thick"
+          },
+          {
+            "count": "2",
+            "ingredient": "large leeks, cut into 2\" pieces"
+          },
+          {
+            "count": "1",
+            "ingredient": "3\" piece ginger, scrubbed, cut into 1\" pieces"
+          },
+          {
+            "count": "½",
+            "ingredient": "cup Shaoxing wine (Chinese rice wine), michiu, or dry sake"
+          },
+          {
+            "count": "1",
+            "ingredient": "oz. dried shiitake mushrooms (about 8 large)"
+          },
+          {
+            "count": "½",
+            "ingredient": "oz. white rock sugar or 1 Tbsp. granulated sugar"
+          },
+          {
+            "count": "3",
+            "ingredient": "pitted dried jujubes (Chinese red dates), plus more for serving"
+          },
+          {
+            "count": "⅛",
+            "ingredient": "oz. dried sliced dang gui (angelica root), plus more for serving"
+          },
+          {
+            "count": "2",
+            "ingredient": "Tbsp. dried goji berries, plus more for serving"
+          },
+          {
+            "count": "1",
+            "ingredient": "Tbsp. Diamond Crystal or 1¾ tsp. Morton kosher salt, plus more"
           }
         ],
-        "steps": []
+        "steps": [
+          "Heat oil in a large Dutch oven or other heavy pot over high. Cook fresh mushrooms, stirring occasionally, until browned, 5–8 minutes. Add onions, shallots, garlic, and chopped scallions. Cook, stirring occasionally, until onions are softened and lightly browned, 12–15 minutes.",
+          "Add cabbage, leeks, ginger, and wine; cook, stirring, until cabbage is softened, 5–8 minutes. Add dried shiitakes, rock sugar, 3 jujubes, ⅛ oz. dang gui, and 2 Tbsp. goji berries. Pour in 10 cups cold water and bring to a boil. Reduce heat to medium-low; cover pot and cook, adjusting heat as needed to maintain a gentle boil, 1 hour.",
+          "Scoop out solids from broth with a fine-mesh sieve, pressing with a spoon to extract as much liquid as possible. Pick out mushrooms and set aside in a small bowl for serving; discard remaining solids.",
+          "Stir 1 Tbsp. Diamond Crystal or 1¾ tsp. Morton kosher salt into broth; taste and season with more salt if needed. Top with more jujubes, dang gui, goji berries, and scallions."
+        ]
       },
       {
         "categories": [
@@ -2902,51 +3379,170 @@
         "imageUrl": "https://assets.bonappetit.com/photos/61f438452386a674750a5f37/3:4/w_720,c_limit/20220118%20Lentil%20Soup%20LEDE.jpg",
         "title": "Red Lentil Soup With Preserved Lemon and Crispy Garlic",
         "rating": {
-          "count": 9,
-          "value": 4.3
+          "count": "16",
+          "value": "4.4"
         },
         "tag": "Easy",
         "dateUploaded": "2022-03-04",
-        "servings": "4 servings",
+        "servings": "4-6 servings",
         "people": {
-          "author": "AUTHOR",
-          "photographers": [],
-          "foodStylists": [],
-          "propStylists": []
+          "author": "Zaynab Issa",
+          "photographers": [
+            "Isa Zapata"
+          ],
+          "foodStylists": [
+            "Kat Boytsova"
+          ],
+          "propStylists": [
+            "Stephanie De Luca"
+          ]
         },
-        "nutritionServings": [
-          {
-            "name": "NAME",
-            "unit": "UNIT",
-            "value": "VALUE"
-          }
-        ],
         "utensils": [
           {
-            "name": "NAME",
-            "imageUrl": "IMAGE",
+            "name": "Lodge 6-Quart Dutch Oven",
+            "imageUrl": "https://assets.bonappetit.com/photos/5f3d7757cef63982207a4019/1:1/w_640,c_limit/Basically-gift-guide-2017-Lodge-Dutch-Oven.jpg",
             "sponsor": {
               "name": "Amazon",
-              "price": ,
-              "url": "URL"
+              "price": "80",
+              "discountedPrice": "115",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCdRdbpvrX1wZjVyyLurK9iEtWaU4M5y7KAqB3Jf2D4aQ23uEQqoo22vpXocWF4crz7T?cid=6205a0dbd546d35ddf12a8f9&xid=fr1646811836611gcd"
+            }
+          },
+          {
+            "name": "Ladle",
+            "imageUrl": "https://assets.bonappetit.com/photos/60a51d17770ddef27b6a6515/1:1/w_640,c_limit/Product-ladel.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "27",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCkqQrmrDZmhwJgPpj6LfEvax98eziNfUpz8TiTSoAgNBhBBzEY2xoWg5AivZCeHF7rp?cid=6205a0dbd546d35ddf12a8f9&xid=fr1646811836611ecf"
+            }
+          },
+          {
+            "name": "Slotted Spoon",
+            "imageUrl": "https://assets.bonappetit.com/photos/60a51d1681b25b25c6c8d4a7/1:1/w_640,c_limit/Product-spoon.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "10",
+              "discountedPrice": "13",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCkqQrmrCrHTDHadsdzfms4nScEWLtrMPNzBpeUtCefhV9aYbetUmbvgMdUoqmuAT962?cid=6205a0dbd546d35ddf12a8f9&xid=fr1646811836611cdi"
+            }
+          },
+          {
+            "name": "Small Saucepan",
+            "imageUrl": "https://assets.bonappetit.com/photos/608f10ef77a4a61b22655323/1:1/w_640,c_limit/All-Clad-Cookware.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "155",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmt8bJVXhDuNP4b1L6Nr7zWf4Lu3XVpsqgdUqjDu4gTHMynNqz4jReQvtewxpLxngc?cid=6205a0dbd546d35ddf12a8f9&xid=fr1646811836611ajj"
             }
           }
         ],
         "ingredients": [
           {
-            "count": "NULL",
-            "ingredient": "INGREDIENT"
+            "count": "2",
+            "ingredient": "Tbsp. extra-virgin olive oil"
+          },
+          {
+            "count": "2",
+            "ingredient": "medium onions, chopped"
+          },
+          {
+            "count": "4",
+            "ingredient": "garlic cloves, finely chopped"
+          },
+          {
+            "count": "1",
+            "ingredient": "2\" piece ginger, scrubbed, finely chopped"
+          },
+          {
+            "count": "2",
+            "ingredient": "tsp. ground cumin"
+          },
+          {
+            "count": "¾",
+            "ingredient": "tsp. ground turmeric"
+          },
+          {
+            "ingredient": "Freshly ground black pepper"
+          },
+          {
+            "count": "½",
+            "ingredient": "preserved lemon, rinsed, seeds removed, finely chopped"
+          },
+          {
+            "count": "3",
+            "ingredient": "Tbsp. double-concentrated tomato paste"
+          },
+          {
+            "count": "8",
+            "ingredient": "cups good-quality low-sodium vegetable or chicken broth"
+          },
+          {
+            "count": "2",
+            "ingredient": "cups red lentils, rinsed"
+          },
+          {
+            "count": "2",
+            "ingredient": "Tbsp. extra-virgin olive oil"
+          },
+          {
+            "count": "4",
+            "ingredient": "garlic cloves, thinly sliced"
+          },
+          {
+            "ingredient": "Kosher salt"
+          },
+          {
+            "count": "1",
+            "ingredient": "tsp. Aleppo-style pepper"
+          },
+          {
+            "count": "1",
+            "ingredient": "cup torn mixed tender herbs (such as basil, dill, cilantro, and/or parsley), plus more"
+          },
+          {
+            "count": "½",
+            "ingredient": "preserved lemon, rinsed, seeds removed, finely chopped (optional)"
           }
         ],
         "reviews": [
           {
-            "review": "REVIEW",
+            "review": "This was delish. Hearty, interesting, versatile. I make daal a lot so this felt similar to me. I made it almost as written, except double the garlic (duh), and made it in my instant pot (15 high pressure then natural release). I felt like the amount of preserved lemon was just right, not overpowering. Finished with chopped cilantro. Would be good with a dollop of Greek yogurt. ",
+            "author": "Kate",
+            "location": "Portland OR",
+            "date": "2022-03-09"
+          },
+          {
+            "review": "Love all your recipes and have subscribed to the magazine for 30 years. This month's Red Lentil Soup and Spicy Shrimp Scampi are some of the best recipes ever. Your website and videos are wonderful tools, but please, please fix the print capability. For environmental reasons alone, the recipes need to be reduced to fit on only the space they need and actually print–stripping out advertisements, pictures, videos, etc. This is done by other food websites so I know it can technically be done. I'm not the only avid supporter of your magazine who has expressed this opinion. Please help with this problem because it detracts from the professional nature of your website and from our being able to purchase the ingredients and prepare the new, flavorful BonAppetit recipes! ",
+            "author": "Jan V.",
+            "location": "Central Pennsylvania",
+            "date": "2022-03-09"
+          },
+          {
+            "review": "I liked this! It was infinitely better after sitting overnight. I do think the preserved lemon flavor got a bit lost in this and would increase it. I didn't find the garlic chips necessary, but really loved the Chilli oil and would double that next time. I only had dill so added some chopped green onion which was great! I'd would also consider mint as an alternative. My biggest gripe was it was a bit too watery and I would probably reduce the stock to 6 cups next time. ",
+            "author": "Alyssa",
+            "location": "Carson City, NV",
+            "date": "2022-03-02"
+          },
+          {
+            "review": "I love good recipes like this one but I am surprised when people publishing recipes don’t know that extra virgin olive oil should not be cooked with. If anyone cares about their health, and I would think that people making these good recipes would be amount those people, it’s well known in food science that extra virgin olive oil makes free radicals which are not good for us when heated. Lighter olive oil is what we should cook with, saving extra virgin olive oil only for dipping and finishing off a dish that’s finished cooking, to add a little flavor. I’ve seen this knowledge repeated by Italian cooks on food shows where they are in Italy, so it’s not just American food science that has published this for quite some time now. Cook with light olive oil for your heath. Save your extra virgin for dressings and dipping. ",
             "author": "Anonymous",
-            "location": "NULL",
-            "date": "2022-03-08"
+            "location": "NJ",
+            "date": "2022-02-28"
+          },
+          {
+            "review": "I was surprised by the level of flavor that this soup had. I'm used to making Turkish red lentil soup (mercimeck corba), but this seemed to really bring a depth of flavor. I didn't have preserved lemon on hand, but diced a quarter of a fresh lemon and salted it, as well as a dried lime instead. Cheese tortillas were a good pairing to make a full meal. ",
+            "author": "Anonymous",
+            "date": "2022-02-19"
           }
         ],
-        "steps": []
+        "steps": [
+          "Heat 2 Tbsp. extra-virgin olive oil in a large Dutch oven or other heavy pot over medium. Cook 2 medium onions, chopped, 4 garlic cloves, finely chopped, and one 2\" piece ginger, scrubbed, finely chopped, stirring occasionally, until onions are softened, 6–8 minutes. Add 2 tsp. ground cumin and ¾ tsp. ground turmeric and stir to coat onions. Season with freshly ground black pepper. Add ½ preserved lemon, rinsed, seeds removed, finely chopped, and 3 Tbsp. double-concentrated tomato paste and cook, stirring often, until tomato paste is darkened in color, about 4 minutes.",
+          "Add 8 cups good-quality low-sodium vegetable or chicken broth and 2 cups red lentils, rinsed, and bring to a boil, skimming foam from surface as needed. Reduce heat to medium-low, partially cover, and simmer, stirring occasionally, until lentils are very tender and soup is almost creamy, 35–45 minutes.",
+          "While the lentils are cooking, heat 2 Tbsp. extra-virgin olive oil in a small saucepan over medium. Cook 4 garlic cloves, thinly sliced, stirring often, until golden and starting to crisp, about 3 minutes; remove pan from heat. Using a slotted spoon, transfer garlic chips to paper towels, leaving oil behind. Lightly season garlic chips with kosher salt. Stir 1 tsp. Aleppo-style pepper into infused oil in pan and set aside.",
+          "Remove soup from heat and stir in 1 cup torn mixed tender herbs (such as basil, dill, cilantro, and/or parsley). If soup is too thick, thin with water. Taste and add up to ½ preserved lemon, rinsed, seeds removed, finely chopped, if desired (you may find the soup lemony enough as it is). Season with more salt if needed.",
+          "Ladle soup into bowls. Top with garlic chips and more herbs and drizzle over reserved pepper oil."
+        ]
       },
       {
         "categories": [
@@ -2968,51 +3564,152 @@
         "imageUrl": "https://assets.bonappetit.com/photos/61b819004a4b16fe192529e0/3:4/w_720,c_limit/20211208%20Vegan%20Cacio%20e%20Pepe%20LEDE.jpg",
         "title": "Vegan Cacio e Pepe",
         "rating": {
-          "count": 31,
-          "value": 4.2
+          "count": "31",
+          "value": "4.2"
         },
         "tag": "Quick",
-        "dateUploaded": "2022-03-04",
-        "servings": "4 servings",
+        "dateUploaded": "2022-01-06",
+        "servings": "6 servings",
         "people": {
-          "author": "AUTHOR",
-          "photographers": [],
-          "foodStylists": [],
-          "propStylists": []
+          "author": "Chrissy Tracey",
+          "photographers": [
+            "Isa Zapata"
+          ],
+          "foodStylists": [
+            "Cyd McDowell"
+          ],
+          "propStylists": [
+            "Paige Hicks"
+          ]
         },
-        "nutritionServings": [
-          {
-            "name": "NAME",
-            "unit": "UNIT",
-            "value": "VALUE"
-          }
-        ],
         "utensils": [
           {
-            "name": "NAME",
-            "imageUrl": "IMAGE",
+            "name": "Large Straight-Sided Skillet",
+            "imageUrl": "https://assets.bonappetit.com/photos/5a71f59996525e37e74c6349/1:1/w_640,c_limit/Basically_Skillet-Large-Straight-Sided_FINAL.jpg",
             "sponsor": {
               "name": "Amazon",
-              "price": ,
-              "url": "URL"
+              "price": "199",
+              "discountedPrice": "290",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCdEz7aHcWV17QBryrFgfPndLMr7q7jcJu8HVVyjvzyQh9fWsy2Z7od3wxSQSXig86V2?cid=61f006cd629920bf61fe6cce&xid=fr1646802062883ach"
+            }
+          },
+          {
+            "name": "Blender",
+            "imageUrl": "https://assets.bonappetit.com/photos/597900e49989ab38ffaec05a/1:1/w_640,c_limit/Basically_Blender.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "40",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmt8bHMU5VRggJx742ruvyEHPx5Qy8J6tskJDJ39iWbNCakicb2Y2Tckzh6tDF9wbw?cid=5e31acafb37f4c00098901d5&xid=fr1646799829417aig"
+            }
+          },
+          {
+            "name": "Large Pot",
+            "imageUrl": "https://assets.bonappetit.com/photos/596938717654ad3411665279/1:1/w_640,c_limit/basically-equipment-large-pot.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "55",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsePu89zrtEVdnnGmhJCnfaR4K6fFrA9iG8F2RkThLkTJFehKHy22j28BNNwCoMP6?cid=61f006cd496418bf040a6aab&xid=fr1646806413711chb"
+            }
+          },
+          {
+            "name": "Whisk",
+            "imageUrl": "https://assets.bonappetit.com/photos/60a5250981b25b25c6c8d4af/1:1/w_640,c_limit/product%20whisk.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "10",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmseir9LTWDnsngCNz94mmbti599nXxZB4ynBjSEZGqE9X9bm5Y6d22T2VC7E132tJ?cid=61f006cd89ec71e33ee584b3&xid=fr1646811836585fhh"
+            }
+          },
+          {
+            "name": "Tongs",
+            "imageUrl": "https://assets.bonappetit.com/photos/5a1eddec2479441876ab9959/1:1/w_640,c_limit/Basically_Tongs.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "13",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsePu8Y3B7K5G4cFmneVqqJNvPgsmfJEFejzaPQQWMnt7Y8L64Tuvzjahsb2382jz?cid=61f006cd6e9e896c3f22c747&xid=fr1646804248021fhj"
             }
           }
         ],
         "ingredients": [
           {
-            "count": "NULL",
-            "ingredient": "INGREDIENT"
+            "count": "1",
+            "ingredient": "cup unsalted raw cashews"
+          },
+          {
+            "count": "4",
+            "ingredient": "Tbsp. extra-virgin olive oil, divided"
+          },
+          {
+            "count": "8",
+            "ingredient": "oz. mixed mushrooms (such as maitake and shiitake), sliced or torn into ½\" pieces"
+          },
+          {
+            "ingredient": "Kosher salt"
+          },
+          {
+            "count": "2",
+            "ingredient": "garlic cloves"
+          },
+          {
+            "count": "2",
+            "ingredient": "Tbsp. white or yellow miso paste"
+          },
+          {
+            "count": "1",
+            "ingredient": "lb. bucatini"
+          },
+          {
+            "count": "½",
+            "ingredient": "tsp. crushed red pepper flakes"
+          },
+          {
+            "count": "⅛",
+            "ingredient": "tsp. onion powder"
+          },
+          {
+            "count": "2",
+            "ingredient": "tsp. freshly cracked black pepper, plus more for serving"
+          },
+          {
+            "count": "2",
+            "ingredient": "Tbsp. fresh lemon juice"
+          },
+          {
+            "ingredient": "Zest of 1 lemon"
+          },
+          {
+            "ingredient": "Vegan parmesan (for serving)"
           }
         ],
         "reviews": [
           {
-            "review": "REVIEW",
+            "review": "Ingredients for Cacio e Pepe: Water Salt Black Pepper Pecorino Romano If you somehow had a miraculous fake Pecorino substitute, fine, call it Vegan Cacio e Pepe, but your recipe is absurd. I nerded out hard on the real dish and this is an insult to Italians everywhere. Sigh. I mean, mushrooms? lemon? Miso???? WT(blank). Do you have any self-respect? Don't get me wrong. I am not upset about the recipe. I am upset about using \"Cacio e Pepe\" anywhere in the title. It is NOT even remotely close to the real dish, which is absurdly simple, as shown in the actual ingredients list at the top of my post. So, fine, vegans and lactose intolerants everywhere may well enjoy this recipe, but stop insulting the actual dish and the culture that it sprang from. Ack! Call it Magic Vegan Pasta if you like. Alright, I'm belaboring this, but seriously! It's absurd.",
             "author": "Anonymous",
-            "location": "NULL",
-            "date": "2022-03-08"
+            "location": "Seattle, WA",
+            "date": "2022-02-18"
+          },
+          {
+            "review": "You asked me to sign in to see a recipe, then would not let me see it. This is bait and switch CRAP. Disgusting and rude.",
+            "author": "Winenerd",
+            "location": "Da U.P.",
+            "date": "2022-02-10"
+          },
+          {
+            "review": "Omg this was delicious! Telling everyone I know. ",
+            "author": "LM",
+            "location": "Arlington, Virginia",
+            "date": "2022-02-03"
           }
         ],
-        "steps": []
+        "steps": [
+          "Place cashews in a large bowl and pour in cold water to cover by 2\"; let soak overnight. Drain cashews; set aside. (If you have a high-speed blender, feel free to skip the soaking step.)",
+          "Heat 2 Tbsp. oil in a large high-sided skillet until shimmering. Cook mushrooms, stirring often, until browned, about 5 minutes; season with salt. Transfer mushrooms to a small bowl and set aside; reserve skillet.",
+          "Place reserved cashews in a blender. Add garlic, miso, and ½ cup fresh water. Blend on high speed until smooth, adding a little more water if needed to get mixture moving.",
+          "Cook bucatini in a large pot of generously salted boiling water until very al dente, about 2 minutes less than package directions (pasta will finish cooking in sauce).",
+          "Meanwhile, heat remaining 2 Tbsp. oil in reserved skillet over medium. Add red pepper flakes, onion powder, and 2 tsp. black pepper. Cook, stirring, until fragrant, about 1 minute. Pour in cashew purée and stir vigorously to combine (it’s okay if the mixture seizes up). Scoop out 1½ cups pasta cooking liquid and add to skillet; whisk until sauce is creamy, adding more pasta cooking liquid as needed to achieve a smooth, silky sauce. Stir in lemon juice; taste and season with more salt if needed.",
+          "Using tongs, transfer pasta directly to sauce in skillet. Add most of reserved mushrooms to skillet. Cook (still over medium), tossing often, until sauce is hot and pasta is al dente, about 2 minutes.",
+          "Top with lemon zest, parmesan, and more black pepper; scatter remaining reserved mushrooms over."
+        ]
       },
       {
         "categories": [
@@ -3030,51 +3727,108 @@
         "description": "Potlikker (or “pot liquor”) is the brothy, nutrient-dense liquid gold traditionally left behind after boiling greens and beans. An ingredient whose use sheds light on the complex racialized history of Southern cooking, potlikker was once valued only by diligent enslaved Africans who saved the nourishing broth for their families after cooking greens. Chef Carla Hall, for whom potlikker was an essential element of her childhood, switches up the order, making potlikker from scratch to use as an ultra-concentrated broth—for Hall, that’s often the first step in imbuing a dish with layers of meaty flavor. Here she makes potlikker with dry-cured country ham. If you can’t find country ham, smoked ham hocks will bring similar intensity.",
         "imageUrl": "https://assets.bonappetit.com/photos/61f93f042afaff301442b22b/3:4/w_720,c_limit/Country-Ham-Potlikker.jpg",
         "title": "Country Ham Potlikker",
+        "dateIssue": "March 2022",
         "rating": {
-          "count": 3,
-          "value": 4.5
+          "count": "6",
+          "value": "3.8"
         },
-        "dateUploaded": "2022-03-04",
-        "servings": "4 servings",
+        "dateUploaded": "2022-02-08",
+        "servings": "Makes about 2½ cups",
         "people": {
-          "author": "AUTHOR",
-          "photographers": [],
-          "foodStylists": [],
-          "propStylists": []
+          "author": "Carla Hall",
+          "photographers": [
+            "Emma Fishman"
+          ],
+          "foodStylists": [
+            "Micah Morton"
+          ],
+          "propStylists": [
+            "Stephanie Yeh"
+          ]
         },
-        "nutritionServings": [
-          {
-            "name": "NAME",
-            "unit": "UNIT",
-            "value": "VALUE"
-          }
-        ],
         "utensils": [
           {
-            "name": "NAME",
-            "imageUrl": "IMAGE",
+            "name": "Large Saucepan",
+            "imageUrl": "https://assets.bonappetit.com/photos/5981eeb3a2d44663099494a1/1:1/w_640,c_limit/Basically_Saucepan-Large.jpg",
             "sponsor": {
               "name": "Amazon",
-              "price": ,
-              "url": "URL"
+              "price": "60",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmtbnX7B1ohH3YnDaLbC1R2dbNkiCeMHr3J7p6G15LsJimPsXd6JMZzNfQjRrpKgL8?cid=61f006cd3135111cef663cca&xid=fr1646813480662ccg"
+            }
+          },
+          {
+            "name": "Mesh Sieve",
+            "imageUrl": "https://assets.bonappetit.com/photos/59721c9a5e52a765a3283012/1:1/w_640,c_limit/basically-fine-mesh-sieve.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "13",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCdPUMvA6bhXSdsJZnmPFia1n3zfcQeqe2RVCvrSNgdX3p9FJ4ZQ6tXia22VLZiTm4Yd?cid=61f006cd3135111cef663cca&xid=fr1646813480662hdg"
+            }
+          },
+          {
+            "name": "Large Basting Spoon",
+            "imageUrl": "https://assets.bonappetit.com/photos/596940a3b85671732e0d556c/1:1/w_640,c_limit/basically-equipment-large-spoon.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "16.37",
+              "url": "https://www.amazon.com/J-B-Prince-U715-Sauce-Spoon/dp/B009OL3UZI?ots=1&tag=bonappsite-20&linkCode=w50&cid=61f006cd3135111cef663cca"
+            }
+          },
+          {
+            "name": "Tongs",
+            "imageUrl": "https://assets.bonappetit.com/photos/5a1eddec2479441876ab9959/1:1/w_640,c_limit/Basically_Tongs.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "13",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsePu8Y3B7K5G4cFmneVqqJNvPgsmfJEFejzaPQQWMnt7Y8L64Tuvzjahsb2382jz?cid=61f006cd6e9e896c3f22c747&xid=fr1646804248021fhj"
+            }
+          },
+          {
+            "name": "Glass Storage Container",
+            "imageUrl": "https://assets.bonappetit.com/photos/60a51e1f8bff211815dc1304/1:1/w_640,c_limit/Product%20pyrex%201.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "16",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCkqQrmrEDYiprti5k1pVkmkZ3DzkJ13j53BjP3D6WGqTjqGEUgfyE6DtVfUrWkDaazX?cid=61f006cd3135111cef663cca&xid=fr1646813480662cej"
             }
           }
         ],
         "ingredients": [
           {
-            "count": "NULL",
-            "ingredient": "INGREDIENT"
+            "count": "1",
+            "ingredient": "1½-oz. piece country ham or one 12-oz. smoked ham hock"
+          },
+          {
+            "count": "2",
+            "ingredient": "garlic cloves, finely chopped"
+          },
+          {
+            "count": "¾",
+            "ingredient": "tsp. crushed red pepper flakes"
+          },
+          {
+            "count": "½",
+            "ingredient": "tsp. Diamond Crystal or ¼ tsp. Morton kosher salt"
           }
         ],
         "reviews": [
           {
-            "review": "REVIEW",
-            "author": "Anonymous",
-            "location": "NULL",
+            "review": "Have never made potlikker but it has inspired me to do so, will use smoked ham hock",
+            "author": "Gillian",
+            "location": "Canada",
             "date": "2022-03-08"
+          },
+          {
+            "review": "Recipes are fine, but a new technique that can be applied elsewhere - now that's useful information!",
+            "author": "Tom H.",
+            "location": "Raleigh, NC",
+            "date": "2022-02-15"
           }
         ],
-        "steps": []
+        "steps": [
+          "Bring ham, garlic, red pepper flakes, salt, and 1 quart water to a boil in a large saucepan. Reduce heat and simmer, skimming foam from surface as needed, 1 hour.",
+          "Strain through a fine-mesh sieve into a medium heatproof bowl. Pick out ham and reserve for another use; discard remaining solids."
+        ]
       }
     ],
     "trending": [
@@ -3100,7 +3854,7 @@
         "dateUploaded": "2022-03-04",
         "servings": "4 servings",
         "people": {
-          "author": "AUTHOR",
+          "author": ,
           "photographers": [],
           "foodStylists": [],
           "propStylists": []
@@ -3164,7 +3918,7 @@
         "dateUploaded": "2022-03-04",
         "servings": "4 servings",
         "people": {
-          "author": "AUTHOR",
+          "author": ,
           "photographers": [],
           "foodStylists": [],
           "propStylists": []
@@ -3228,7 +3982,7 @@
         "dateUploaded": "2022-03-04",
         "servings": "4 servings",
         "people": {
-          "author": "AUTHOR",
+          "author": ,
           "photographers": [],
           "foodStylists": [],
           "propStylists": []
@@ -3288,7 +4042,7 @@
         "dateUploaded": "2022-03-04",
         "servings": "4 servings",
         "people": {
-          "author": "AUTHOR",
+          "author": ,
           "photographers": [],
           "foodStylists": [],
           "propStylists": []
@@ -3348,7 +4102,7 @@
         "dateUploaded": "2022-03-04",
         "servings": "4 servings",
         "people": {
-          "author": "AUTHOR",
+          "author": ,
           "photographers": [],
           "foodStylists": [],
           "propStylists": []
@@ -3410,7 +4164,7 @@
         "dateUploaded": "2022-03-04",
         "servings": "4 servings",
         "people": {
-          "author": "AUTHOR",
+          "author": ,
           "photographers": [],
           "foodStylists": [],
           "propStylists": []
@@ -3474,7 +4228,7 @@
         "dateUploaded": "2022-03-04",
         "servings": "4 servings",
         "people": {
-          "author": "AUTHOR",
+          "author": ,
           "photographers": [],
           "foodStylists": [],
           "propStylists": []
@@ -3542,7 +4296,7 @@
         "dateUploaded": "2022-03-04",
         "servings": "4 servings",
         "people": {
-          "author": "AUTHOR",
+          "author": ,
           "photographers": [],
           "foodStylists": [],
           "propStylists": []
@@ -3601,7 +4355,7 @@
         "dateUploaded": "2022-03-04",
         "servings": "4 servings",
         "people": {
-          "author": "AUTHOR",
+          "author": ,
           "photographers": [],
           "foodStylists": [],
           "propStylists": []
@@ -3670,7 +4424,7 @@
         "dateUploaded": "2022-03-04",
         "servings": "4 servings",
         "people": {
-          "author": "AUTHOR",
+          "author": ,
           "photographers": [],
           "foodStylists": [],
           "propStylists": []
@@ -3742,7 +4496,7 @@
         "dateUploaded": "2022-03-04",
         "servings": "4 servings",
         "people": {
-          "author": "AUTHOR",
+          "author": ,
           "photographers": [],
           "foodStylists": [],
           "propStylists": []
@@ -3805,7 +4559,7 @@
         "dateUploaded": "2022-03-04",
         "servings": "4 servings",
         "people": {
-          "author": "AUTHOR",
+          "author": ,
           "photographers": [],
           "foodStylists": [],
           "propStylists": []
@@ -3872,7 +4626,7 @@
         "dateUploaded": "2022-03-04",
         "servings": "4 servings",
         "people": {
-          "author": "AUTHOR",
+          "author": ,
           "photographers": [],
           "foodStylists": [],
           "propStylists": []
@@ -3943,7 +4697,7 @@
         "dateUploaded": "2022-03-04",
         "servings": "4 servings",
         "people": {
-          "author": "AUTHOR",
+          "author": ,
           "photographers": [],
           "foodStylists": [],
           "propStylists": []
@@ -4015,7 +4769,7 @@
         "dateUploaded": "2022-03-04",
         "servings": "4 servings",
         "people": {
-          "author": "AUTHOR",
+          "author": ,
           "photographers": [],
           "foodStylists": [],
           "propStylists": []
@@ -4077,7 +4831,7 @@
         "dateUploaded": "2022-03-04",
         "servings": "4 servings",
         "people": {
-          "author": "AUTHOR",
+          "author": ,
           "photographers": [],
           "foodStylists": [],
           "propStylists": []
@@ -4142,7 +4896,7 @@
         "dateUploaded": "2022-03-04",
         "servings": "4 servings",
         "people": {
-          "author": "AUTHOR",
+          "author": ,
           "photographers": [],
           "foodStylists": [],
           "propStylists": []
@@ -4214,7 +4968,7 @@
         "dateUploaded": "2022-03-04",
         "servings": "4 servings",
         "people": {
-          "author": "AUTHOR",
+          "author": ,
           "photographers": [],
           "foodStylists": [],
           "propStylists": []
@@ -4273,7 +5027,7 @@
         "dateUploaded": "2022-03-04",
         "servings": "4 servings",
         "people": {
-          "author": "AUTHOR",
+          "author": ,
           "photographers": [],
           "foodStylists": [],
           "propStylists": []
@@ -4336,7 +5090,7 @@
         "dateUploaded": "2022-03-04",
         "servings": "4 servings",
         "people": {
-          "author": "AUTHOR",
+          "author": ,
           "photographers": [],
           "foodStylists": [],
           "propStylists": []

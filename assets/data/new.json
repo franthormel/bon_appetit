@@ -1,0 +1,15 @@
+"dateIssue": "March 2022",
+"timeEntires": [
+    {
+        "name": "Cooking Time",
+        "value": "1 hour"
+    },
+    {
+        "name": "Total Time",
+        "value": "1 hour"
+    }
+],
+"rating": {
+    "count": "118",
+    "value": "4.5"
+},
