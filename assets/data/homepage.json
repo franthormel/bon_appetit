@@ -76,7 +76,7 @@
             "imageUrl": "https://assets.bonappetit.com/photos/60cb7a8d003da72373591230/1:1/w_640,c_limit/citrus_juicer.jpg",
             "sponsor": {
               "name": "Amazon",
-              "price": 7,
+              "price": "7",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCkqmamAYoDCW25HByXWdrbHSxzZZQ8CDymSYicb4gm7RQoMajkJgsUBChTzVc7uDmnp?cid=621ea1d4f62bdce4b6a057c0"
             }
           },
@@ -85,7 +85,7 @@
             "imageUrl": "https://assets.bonappetit.com/photos/596d20f72b659b48a371c404/1:1/w_640,c_limit/basically-equipment-cast-iron-skillet.jpg",
             "sponsor": {
               "name": "Amazon",
-              "price": 30,
+              "price": "30",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsjRC9aDQ5q4VRyy7rQ9ZsMzH9ydcos5q16PQTBNT2s2UHKx5crSgyqYMArEKpCLs?cid=621ea1d4f62bdce4b6a057c0"
             }
           },
@@ -94,7 +94,7 @@
             "imageUrl": "https://assets.bonappetit.com/photos/60a5250981b25b25c6c8d4af/1:1/w_640,c_limit/product%20whisk.jpg",
             "sponsor": {
               "name": "Amazon",
-              "price": 10,
+              "price": "10",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmseir9LTWDnsngCNz94mmbti599nXxZB4ynBjSEZGqE9X9bm5Y6d22T2VC7E132tJ?cid=621ea1d4f62bdce4b6a057c0"
             }
           },
@@ -103,7 +103,7 @@
             "imageUrl": "https://assets.bonappetit.com/photos/5dcf0969ad1a0300083764ac/1:1/w_640,c_limit/Basically-Molly-GiftGuide-Microplane.jpg",
             "sponsor": {
               "name": "Amazon",
-              "price": 16,
+              "price": "16",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCkqQTrua49zXQVt3D1ssizewnLzoEJRFp7v4TYHBY5BhaqMXH9FwvtFAmJtPukP37yW?cid=621ea1d4f62bdce4b6a057c0"
             }
           }
@@ -208,8 +208,8 @@
           "Run a butter knife around edges of skillet to loosen falafel if needed, then carefully invert onto a plate. Cut into wedges and divide among plates. Serve with salad mounded on top and yogurt drizzled over. Season with more pepper."
         ],
         "rating": {
-          "count": 9,
-          "value": 3.6
+          "count": "9",
+          "value": "3.6"
         }
       },
       {
@@ -234,8 +234,8 @@
         "description": "No searing, no chopping, one baking dish. And if you don’t have ginger, garlic, and lemongrass on hand, a combination of any two will be plenty to make this chicken over-the-top delicious in about an hour. You can find curry paste in the Asian aisle at most grocery stores or at an Asian market; we recommend any from Maesri.",
         "imageUrl": "https://assets.bonappetit.com/photos/5d4ddd5feed18100091d2a56/3:4/w_720,c_limit/BA-0919-Coconut-Milk-Chicken-Playbook.jpg",
         "rating": {
-          "count": 71,
-          "value": 4.5
+          "count": "71",
+          "value": "4.5"
         },
         "tag": "Easy",
         "title": "Coconut Milk–Braised Chicken Legs",
@@ -402,8 +402,8 @@
         "description": "No matter the hour (or your age), a grilled cheese sandwich is the pinnacle of crave-worthiness. This rendition doesn’t attempt to reinvent the classic. It just guides you toward making the best-ever version of it. ",
         "imageUrl": "https://assets.bonappetit.com/photos/57acf62a53e63daf11a4dbee/3:4/w_720,c_limit/best-ever-grilled-cheese.jpg",
         "rating": {
-          "count": 450,
-          "value": 3.58
+          "count": "450",
+          "value": "3.58"
         },
         "tag": "Quick",
         "title": "Best-Ever Grilled Cheese",
@@ -533,8 +533,8 @@
         "description": "Rich marbled meats are extra-delicious when served with cool, crunchy, acidic vegetables. It's a fact, and the combo never gets old. Bone-in strip steak or a T-bone are great choices here too. This recipe is from Where Cooking Begins by Carla Lalli Music.",
         "imageUrl": "https://assets.bonappetit.com/photos/5c5ddda30e90ec745cf64082/3:4/w_720,c_limit/Butter-Basted-Rib-Eye-with-Crunchy-Fennel-Salad.jpg",
         "rating": {
-          "count": 8,
-          "value": 4.9
+          "count": "8",
+          "value": "4.9"
         },
         "title": "Butter-Basted Rib Eye with Crunchy Fennel Salad",
         "mainDescription": "Rich marbled meats are extra-delicious when served with cool, crunchy, acidic vegetables.",
@@ -658,50 +658,116 @@
         "imageUrl": "https://assets.bonappetit.com/photos/61f7f4828b85aed2e4c64b3a/3:4/w_720,c_limit/roasted-roots-with-green-salsa.jpg",
         "title": "Roasted Roots With Green Salsa",
         "rating": {
-          "count": 1,
-          "value": 5.0
+          "count": "6",
+          "value": "4.8"
         },
-        "dateUploaded": "2022-03-04",
+        "dateUploaded": "2022-02-08",
         "servings": "4 servings",
         "people": {
-          "author": "AUTHOR",
-          "photographers": [],
-          "foodStylists": [],
-          "propStylists": []
+          "author": "Ali Sagle",
+          "photographers": [
+            "Isa Zapata"
+          ],
+          "foodStylists": [
+            "Pearl Jones"
+          ],
+          "propStylists": [
+            "Marina Bevilacqua"
+          ]
         },
-        "nutritionServings": [
-          {
-            "name": "NAME",
-            "unit": "UNIT",
-            "value": "VALUE"
-          }
-        ],
         "utensils": [
           {
-            "name": "NAME",
-            "imageUrl": "IMAGE",
+            "name": "Rimmed Baking Sheet",
+            "imageUrl": "https://assets.bonappetit.com/photos/596940e46c75df51bc0b91c4/1:1/w_640,c_limit/basically-equipment-rimmed-baking-sheet.jpg",
+            "sponsor": {
+              "name": "Bon Appétit Market",
+              "price": "20",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsedj4Mg35L8ML9goMDFHzK3zDyuhuhMBCTCmtenJ3Ua1BTAsNqeXyskDoCq7vyTC?cid=61f006cd3135111cef663cc9&xid=fr1646799829760agd"
+            }
+          },
+          {
+            "name": "Chef's Knife",
+            "imageUrl": "https://assets.bonappetit.com/photos/5f3d7774b4b3538eb4dc4f93/1:1/w_640,c_limit/Basically-gift-guide-2017-Victorinox-Chef.jpg",
             "sponsor": {
               "name": "Amazon",
-              "price": ,
-              "url": "URL"
+              "price": "34.53",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsePzcnjSNojcExKfoYuf2Bo8CjcWLivgJjQ7kJW6pSiSPG3DxLjSFevzZwe72zmJ?cid=61f006cd3135111cef663cc9&xid=fr1646799829760fia"
+            }
+          },
+          {
+            "name": "Cutting Board",
+            "imageUrl": "https://assets.bonappetit.com/photos/59693b227102712b68401a8c/1:1/w_640,c_limit/basically-equipment-cutting-board.jpg",
+            "sponsor": {
+              "name": "IKEA",
+              "price": "10",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsePzcUAqT5KYR9jmBi7u2WiPA7b52oYXgb65uX32u5zVAmCqFYg6TfHMVEi8EWm3?cid=61f006cd3135111cef663cc9&xid=fr1646799829760gdb"
+            }
+          },
+          {
+            "name": "Citrus Juicerr",
+            "imageUrl": "https://assets.bonappetit.com/photos/60cb7a8d003da72373591230/1:1/w_640,c_limit/citrus_juicer.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "7",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCkqmamAYoDCW25HByXWdrbHSxzZZQ8CDymSYicb4gm7RQoMajkJgsUBChTzVc7uDmnp?cid=61f006cd3135111cef663cc9&xid=fr1646799829760ibh"
             }
           }
         ],
         "ingredients": [
           {
-            "count": "NULL",
-            "ingredient": "INGREDIENT"
+            "count": "3",
+            "ingredient": "medium sweet potatoes (about 2 lb.), scrubbed, cut into ½”-thick wedges"
+          },
+          {
+            "count": "8",
+            "ingredient": "small carrots with tops (about 1 lb.), tops reserved, scrubbed"
+          },
+          {
+            "count": "5",
+            "ingredient": "scallions, roots trimmed"
+          },
+          {
+            "count": "1",
+            "ingredient": "Tbsp. extra-virgin olive oil, plus more for drizzling"
+          },
+          {
+            "ingredient": "Kosher salt, freshly ground pepper"
+          },
+          {
+            "count": "8",
+            "ingredient": "oz. tomatillos (about 5), husks removed, rinsed, coarsely chopped (about 2 cups)"
+          },
+          {
+            "count": "1–2",
+            "ingredient": "green chiles (such as serrano or jalapeño), finely chopped"
+          },
+          {
+            "count": "¼",
+            "ingredient": "cup fresh lime juice"
+          },
+          {
+            "ingredient": "Cotija cheese, ricotta salata (salted dry ricotta), or feta (for serving)"
           }
         ],
         "reviews": [
           {
-            "review": "REVIEW",
-            "author": "Anonymous",
-            "location": "NULL",
-            "date": "2022-03-08"
+            "review": "I made this as written with fresh local scallions, sweet potatoes, and carrots from the farmer’s market. I served it with crumbled feta. It was fresh and delicious. The recipe made more salsa than we needed for the vegetables. I served this as a main course, but it was not entirely satisfying as a main. Next time I will serve it with a protein as a side perhaps.",
+            "author": "Josie L.",
+            "location": "New Orleans, LA",
+            "date": "2022-03-05"
+          },
+          {
+            "review": "I had never made anything with Tomatillos before. The salsa was delicious and pairs so nicely with the sweet caramelized flavors of the roasted toot vegetables! I used goat milk feta cheese crumbles and serrano peppers and it had just the right amount of kick and creamy coolness! ",
+            "author": "susan bentsen",
+            "location": "Seattle, Wa",
+            "date": "2022-02-19"
           }
         ],
-        "steps": []
+        "steps": [
+          "Place a rack in lower third of oven; preheat to 450°. Place sweet potatoes, carrots, and scallions on a baking sheet. Drizzle a little oil over, season with salt and pepper, and toss to coat. Divide vegetables between 2 baking sheets if cramped and spread out into an even layer. Roast until tender and browned, 15–25 minutes.",
+          "Meanwhile, coarsely chop reserved carrot tops (you want about ½ cup) and place in a medium bowl. Add tomatillos, chiles, lime juice, and remaining 1 Tbsp. oil. Season salsa with salt and pepper and stir to combine (it will loosen as it sits).",
+          "Cut charred scallions into small pieces, add to salsa, and stir to combine. Divide sweet potatoes and carrots among plates and top with salsa and lots of cheese."
+        ]
       },
       {
         "categories": [
@@ -726,51 +792,192 @@
         "imageUrl": "https://assets.bonappetit.com/photos/5e346e46f280950008e613c0/3:4/w_720,c_limit/Basically-Broccoli-Cheddar-Soup.jpg",
         "title": "Broccoli Cheddar Soup With Cheesy Croutons",
         "rating": {
-          "count": 112,
-          "value": 4.5
+          "count": "118",
+          "value": "4.5"
         },
         "tag": "Easy",
-        "dateUploaded": "2022-03-04",
+        "dateUploaded": "2022-02-04",
         "servings": "4 servings",
         "people": {
-          "author": "AUTHOR",
-          "photographers": [],
-          "foodStylists": [],
-          "propStylists": []
+          "author": "Sarah Jampel",
+          "photographers": [
+            "Emma Fishman"
+          ],
+          "foodStylists": [
+            "Yekaterina Boytsova"
+          ]
         },
-        "nutritionServings": [
-          {
-            "name": "NAME",
-            "unit": "UNIT",
-            "value": "VALUE"
-          }
-        ],
         "utensils": [
           {
-            "name": "NAME",
-            "imageUrl": "IMAGE",
+            "name": "Measuring Spoons",
+            "imageUrl": "https://assets.bonappetit.com/photos/6176f85dfcfe3c4f641ab096/1:1/w_640,c_limit/Bamboozle_-_Measuring_Spoon_Set_1080x.jpeg",
+            "sponsor": {
+              "name": "Bon Appétit Market",
+              "price": "10",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsjL7zFd1VZg1c8kdtNvsG7twwxaXh11A44tWUpgKtfxNBCGmUwHpZWMJKDnXRaED?cid=5e31acafb37f4c00098901d5&xid=fr1646799829417fja"
+            }
+          },
+          {
+            "name": "Measuring Cups",
+            "imageUrl": "https://assets.bonappetit.com/photos/6176f8adfcfe3c4f641ab098/1:1/w_640,c_limit/Bamboozle_-_Measuring_Cup_Set_1_900x.jpeg",
+            "sponsor": {
+              "name": "Bon Appétit Market",
+              "price": "18",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsj6DSUHAdpskaaiLT1hZJrHAuGmoQ4tZnFzkmLJYkyuyUzuiT7kiaSTQELYdC7fe?cid=5e31acafb37f4c00098901d5&xid=fr1646799829417dgh"
+            }
+          },
+          {
+            "name": "Chef's Knife",
+            "imageUrl": "https://assets.bonappetit.com/photos/5f3d7774b4b3538eb4dc4f93/1:1/w_640,c_limit/Basically-gift-guide-2017-Victorinox-Chef.jpg",
             "sponsor": {
               "name": "Amazon",
-              "price": ,
-              "url": "URL"
+              "price": "34.53",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsePzcnjSNojcExKfoYuf2Bo8CjcWLivgJjQ7kJW6pSiSPG3DxLjSFevzZwe72zmJ?cid=5e31acafb37f4c00098901d5&xid=fr1646799829417eig"
+            }
+          },
+          {
+            "name": "Cutting Board",
+            "imageUrl": "https://assets.bonappetit.com/photos/59693b227102712b68401a8c/1:1/w_640,c_limit/basically-equipment-cutting-board.jpg",
+            "sponsor": {
+              "name": "IKEA",
+              "price": "10",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsePzcUAqT5KYR9jmBi7u2WiPA7b52oYXgb65uX32u5zVAmCqFYg6TfHMVEi8EWm3?cid=5e31acafb37f4c00098901d5&xid=fr1646799829417gae"
+            }
+          },
+          {
+            "name": "Dutch Oven",
+            "imageUrl": "https://assets.bonappetit.com/photos/5a7490a05736e36c6bb6a23e/1:1/w_640,c_limit/Basically_Dutch-Oven-Large-with-Lid.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "80",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsedj4MPoD5E3qUsenzmqst8DhKsrszGFFtx8gq8yPpUrNemjH3MrZuLSZaec7XHF?cid=5e31acafb37f4c00098901d5&xid=fr1646799829417fjb"
+            }
+          },
+          {
+            "name": "Wooden Spoon",
+            "imageUrl": "https://assets.bonappetit.com/photos/596940436c75df51bc0b91c0/1:1/w_640,c_limit/basically-equipment-wooden-spoon.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "6",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmseir9Q44EJYVvP7yG1yxFWWMTcsBFkXfg99oWSFH4TfoDvsfm6VcPJCGM9i2xv3u?cid=5e31acafb37f4c00098901d5&xid=fr1646799829417bdh"
+            }
+          },
+          {
+            "name": "Vegetable Peeler",
+            "imageUrl": "https://assets.bonappetit.com/photos/59c28da2f22f014ca11e0041/1:1/w_640,c_limit/Basically_Vegetable-Peeler.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "10",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmt7v1rcMkDJjYkUEdEFcTqRwbohcczKgUymYLWv3WoVMdv6kgTxLtwkEQGvYE8JTM?cid=5e31acafb37f4c00098901d5&xid=fr1646799829417icd"
+            }
+          },
+          {
+            "name": "Cake Tester",
+            "imageUrl": "https://assets.bonappetit.com/photos/59de40581406f61d93be2020/1:1/w_640,c_limit/Basically_Cake-Tester.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "3",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbnFuawB8JqLtk8atrNLXWis7623K5dvH8BdLzcDzoVbpjXiiwhKp5rW7yuCzsFHupD?cid=5e31acafb37f4c00098901d5&xid=fr1646799829417dfb"
+            }
+          },
+          {
+            "name": "Box Grater",
+            "imageUrl": "https://assets.bonappetit.com/photos/59aed2a835530064b1ea599a/1:1/w_640,c_limit/Bssically_Cheese-Grater.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "13",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbnETjVD6hJEHcwqmXPEcGnmZ7XTW7WP9kjZNriNX76tZjTw4RcAe9nzoL51r5u3Yb2?cid=5e31acafb37f4c00098901d5&xid=fr1646799829417hjh"
+            }
+          },
+          {
+            "name": "Blender",
+            "imageUrl": "https://assets.bonappetit.com/photos/597900e49989ab38ffaec05a/1:1/w_640,c_limit/Basically_Blender.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "40",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmt8bHMU5VRggJx742ruvyEHPx5Qy8J6tskJDJ39iWbNCakicb2Y2Tckzh6tDF9wbw?cid=5e31acafb37f4c00098901d5&xid=fr1646799829417aig"
+            }
+          },
+          {
+            "name": "Rimmed Baking Sheet",
+            "imageUrl": "https://assets.bonappetit.com/photos/596940e46c75df51bc0b91c4/1:1/w_640,c_limit/basically-equipment-rimmed-baking-sheet.jpg",
+            "sponsor": {
+              "name": "Bon Appétit Market",
+              "price": "20",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsedj4Mg35L8ML9goMDFHzK3zDyuhuhMBCTCmtenJ3Ua1BTAsNqeXyskDoCq7vyTC?cid=5e31acafb37f4c00098901d5&xid=fr1646799829417bea"
             }
           }
         ],
         "ingredients": [
           {
-            "count": "NULL",
-            "ingredient": "INGREDIENT"
+            "count": "2",
+            "ingredient": "onions"
+          },
+          {
+            "count": "4",
+            "ingredient": "garlic cloves"
+          },
+          {
+            "count": "3",
+            "ingredient": "Tbsp. unsalted butter"
+          },
+          {
+            "count": "½",
+            "ingredient": "tsp. crushed red pepper flakes, plus more for sprinkling"
+          },
+          {
+            "ingredient": "Kosher salt"
+          },
+          {
+            "ingredient": "Freshly ground black pepper"
+          },
+          {
+            "count": "2",
+            "ingredient": "heads of broccoli"
+          },
+          {
+            "count": "1",
+            "ingredient": "medium russet potato"
+          },
+          {
+            "count": "8",
+            "ingredient": "oz. sharp cheddar cheese"
+          },
+          {
+            "count": "4",
+            "ingredient": "thick slices rustic white bread, optional"
+          },
+          {
+            "count": "½",
+            "ingredient": "cup plain Greek yogurt"
           }
         ],
         "reviews": [
           {
-            "review": "REVIEW",
-            "author": "Anonymous",
-            "location": "NULL",
-            "date": "2022-03-08"
+            "review": "I followed this recipe exactly. Pretty much the only thing I could taste were the onions. This could have possibly been my fault - maybe the onions I had were huge? maybe I should have cooked them longer? I will say that the cheesy croutons were fantastic. I have made them a few times to accompany other dishes. ",
+            "author": "Erica",
+            "location": "Long Island",
+            "date": "2022-03-09"
+          },
+          {
+            "review": "This is a great recipe. I’ve made it twice and modified it the second time. I used half water, half chicken stock. I added in a carrot with the potato and broccoli stalks. I also added a few chunks of American cheese with the cheddar. Delicious! I love the crisp tender broccoli pieces in the finished soup. ",
+            "author": "Meghan",
+            "location": "Wrightsville, PA",
+            "date": "2022-02-18"
           }
         ],
-        "steps": []
+        "steps": [
+          "Halve 2 onions. Peel and coarsely chop. Peel and smash 4 garlic cloves, then coarsely chop. No need to break out your best knife skills because it’s all going to get blended, but try to cut everything into somewhat even pieces so they cook at the same rate.",
+          "Melt 3 Tbsp. unsalted butter in a large Dutch oven or pot over medium-low heat. Add onion, garlic, and ½ tsp. red pepper flakes; season with salt and black pepper. Stir to combine, then cover pot and cook, stirring occasionally, until softened and just starting to take on color, 8–10 minutes.",
+          "Meanwhile, trim bottoms of 2 heads of broccoli, then peel. Separate hefty stalks from florets (the thin, little stalks attached to broccoli tops are fine to leave attached to the crowns). Set aside florets. Coarsely chop stalks into 1\"–2\" pieces. Peel 1 medium russet potato. Coarsely chop into 1\"–2\" pieces.",
+          "Add broccoli stalks and potato pieces to pot and stir to coat in butter. Pour in 5 cups water, add 1 Tbsp. salt, and bring to a boil over high heat. Reduce heat to medium-low and keep at a simmer. Cover pot and cook until broccoli stalks and potatoes are completely tender (test with a cake tester, paring knife, or fork), 20–25 minutes.",
+          "Meanwhile, chop reserved florets into small pieces (you can take the time to separate them into baby florets or just have at them with your chef’s knife). Grate 8 oz. sharp cheddar cheese on the large holes of a box grater. You should have about 2 1/2 cups.",
+          "Add half of florets to pot, cover, and cook until bright green, 3–5 minutes. Transfer to a blender, let cool for 5 minutes, and purée until smooth. Some blender advice: Don't fill your blender more than halfway—work in batches as necessary. To avoid explosions, remove the center lid from the blender and cover with a kitchen towel. Alternatively, use an immersion blender. Your soup won’t be quite as smooth, but it will still be great. Return purée to pot.",
+          "Return to medium heat and add remaining florets. Cover pot and cook until bright green, another 3–5 minutes. Add 2 cups cheddar cheese and stir until smooth. Cover and reduce heat to low; set aside while you make the cheddar croutons.",
+          "Heat broiler. Broil 4 thick slices rustic white bread (if using) on a rimmed baking sheet until lightly browned (watch closely: broilers vary dramatically in power!), 2–3 minutes. Turn bread over (soft side up), then sprinkle with reserved cheddar cheese and a few flecks of red pepper flakes. Continue to broil until cheese is bubbling and browned in spots, 2–3 more minutes.",
+          "Remove soup from heat and stir in ½ cup plain Greek yogurt. Season generously with black pepper; taste for salt.",
+          "Cut cheese toasts (if using) into 1\" (spoon-sized!) pieces. Divide soup among bowls. Top with cheddar croutons or reserved cheese."
+        ]
       },
       {
         "categories": [
@@ -791,47 +998,108 @@
         "imageUrl": "https://assets.bonappetit.com/photos/61f93f042afaff301442b22a/3:4/w_720,c_limit/Fennel%20Potlikker.jpg",
         "title": "Fennel Potlikker",
         "tag": "Vegan",
-        "dateUploaded": "2022-03-04",
-        "servings": "4 servings",
-        "people": {
-          "author": "AUTHOR",
-          "photographers": [],
-          "foodStylists": [],
-          "propStylists": []
+        "dateUploaded": "2022-02-08",
+        "rating": {
+          "count": "12",
+          "value": "3.4"
         },
-        "nutritionServings": [
-          {
-            "name": "NAME",
-            "unit": "UNIT",
-            "value": "VALUE"
-          }
-        ],
+        "servings": "Makes about 3 cups",
+        "people": {
+          "author": "Carla Hall",
+          "photographers": [
+            "Emma Fishman"
+          ],
+          "foodStylists": [
+            "Micah Morton"
+          ],
+          "propStylists": [
+            "Stephanie Yeh"
+          ]
+        },
         "utensils": [
           {
-            "name": "NAME",
-            "imageUrl": "IMAGE",
+            "name": "Large Pot",
+            "imageUrl": "https://assets.bonappetit.com/photos/596938717654ad3411665279/1:1/w_640,c_limit/basically-equipment-large-pot.jpg",
             "sponsor": {
               "name": "Amazon",
-              "price": ,
-              "url": "URL"
+              "price": "55",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsePu89zrtEVdnnGmhJCnfaR4K6fFrA9iG8F2RkThLkTJFehKHy22j28BNNwCoMP6?cid=61f006cd629920bf61fe6ccf&xid=fr1646799830294fhg"
+            }
+          },
+          {
+            "name": "Ladle",
+            "imageUrl": "https://assets.bonappetit.com/photos/620d3eb4c76ccefd90e4f6e5/1:1/w_640,c_limit/oxo-nylon-ladle-black.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "8",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbnFLPK53qB5WRWfy3CnDy95amhUjRRSGs5xCvYrrURDz4ykjToLg3nsxSVSaP3Tnvk?cid=61f006cd629920bf61fe6ccf&xid=fr1646799830294jif"
+            }
+          },
+          {
+            "name": "Mesh Sieve",
+            "imageUrl": "https://assets.bonappetit.com/photos/59721c9a5e52a765a3283012/1:1/w_640,c_limit/basically-fine-mesh-sieve.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "13",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCdPUMvA6bhXSdsJZnmPFia1n3zfcQeqe2RVCvrSNgdX3p9FJ4ZQ6tXia22VLZiTm4Yd?cid=61f006cd629920bf61fe6ccf&xid=fr1646799830294dgj"
+            }
+          },
+          {
+            "name": "Heatproof Measuring Cup",
+            "imageUrl": "https://assets.bonappetit.com/photos/598b240b33219f41c020b06b/1:1/w_640,c_limit/Basically_Heatproof-measuring-cup.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "18",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmth7dPurFf5C5VufVHyKQJC9yq1Fnt9WpS3nRLF2mt2iEgo8i2nV3eGx8JtS3j9eY?cid=61f006cd629920bf61fe6ccf&xid=fr1646799830294efe"
             }
           }
         ],
         "ingredients": [
           {
-            "count": "NULL",
-            "ingredient": "INGREDIENT"
+            "count": "3",
+            "ingredient": "Tbsp. extra-virgin olive oil"
+          },
+          {
+            "count": "1",
+            "ingredient": "large onion, chopped"
+          },
+          {
+            "count": "1",
+            "ingredient": "large fennel bulb, cut into 8 wedges"
+          },
+          {
+            "count": "1",
+            "ingredient": "celery stalk, chopped"
+          },
+          {
+            "count": "1",
+            "ingredient": "tsp. Diamond Crystal or ½ tsp. Morton kosher salt"
+          },
+          {
+            "count": "2",
+            "ingredient": "Tbsp. Pernod"
+          },
+          {
+            "count": "¼",
+            "ingredient": "tsp. crushed red pepper flakes"
           }
         ],
         "reviews": [
           {
-            "review": "REVIEW",
+            "review": "Perfect recipe! Terrible website and app but wonderful recipe. Trying to leave five starts but website won’t let me, for instance….",
             "author": "Anonymous",
-            "location": "NULL",
-            "date": "2022-03-08"
+            "date": "2022-03-05"
+          },
+          {
+            "review": "This is an amazing base recipe with so much flavor! I made both the shrimp and grits and the asparagus barley recipe, and they were excellent. I will use this potlikker often as a building block to add flavor to lots of recipes. Thanks, Carla! And I agree with others that the bad reviews aimed at the website are in poor taste and misleading about the awesomeness of this recipe.",
+            "author": "Shannon",
+            "location": "Madison, VA",
+            "date": "2022-03-02"
           }
         ],
-        "steps": []
+        "steps": [
+          "Heat oil in a large pot over medium. Add onion, fennel, celery, and salt; cook, stirring often, until vegetables are translucent, about 4 minutes. Add Pernod and red pepper flakes; cook, stirring, until Pernod is evaporated, about 1 minute. Pour in 5 cups water and bring to a simmer. Reduce heat to medium-low and cook 45 minutes. Strain through a fine-mesh sieve into a medium heatproof bowl; discard solids."
+        ]
       },
       {
         "categories": [
@@ -857,47 +1125,132 @@
         "imageUrl": "https://assets.bonappetit.com/photos/61f835df91c05315a4e02114/3:4/w_720,c_limit/Halloumi%20and%20egg.jpg",
         "title": "Baked Eggs and Greens in Harissa Tomato Sauce",
         "tag": "Quick",
-        "dateUploaded": "2022-03-04",
+        "dateUploaded": "2022-02-08",
         "servings": "4 servings",
         "people": {
-          "author": "AUTHOR",
-          "photographers": [],
-          "foodStylists": [],
-          "propStylists": []
+          "author": "Kendra Vaculin",
+          "photographers": [
+            "Emma Fishman"
+          ],
+          "foodStylists": [
+            "Kendra Vaculin"
+          ]
         },
-        "nutritionServings": [
-          {
-            "name": "NAME",
-            "unit": "UNIT",
-            "value": "VALUE"
-          }
-        ],
+        "rating": {
+          "count": "8",
+          "value": "5.0"
+        },
         "utensils": [
           {
-            "name": "NAME",
-            "imageUrl": "IMAGE",
+            "name": "Large Straight-Sided Skillet",
+            "imageUrl": "https://assets.bonappetit.com/photos/5a71f59996525e37e74c6349/1:1/w_640,c_limit/Basically_Skillet-Large-Straight-Sided_FINAL.jpg",
             "sponsor": {
               "name": "Amazon",
-              "price": ,
-              "url": "URL"
+              "price": "199",
+              "discountedPrice": "290",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCdEz7aHcWV17QBryrFgfPndLMr7q7jcJu8HVVyjvzyQh9fWsy2Z7od3wxSQSXig86V2?cid=61f006cd629920bf61fe6cce&xid=fr1646802062883ach"
+            }
+          },
+          {
+            "name": "Bamboozle Nesting Bowls",
+            "imageUrl": "https://assets.bonappetit.com/photos/6172e5de753b2bfc8a1123dd/1:1/w_640,c_limit/Bamboozle_-_7-Piece_Nesting_Bowls_1_1_1_1512x.jpeg",
+            "sponsor": {
+              "name": "Bon Appétit Market",
+              "price": "80",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCksXHxx7pG3j1quR4FWnoPotf8i2s5TzdN77ctWDa4tW5cFMmokaactBhj9Xu9Wbhim?cid=61f006cd629920bf61fe6cce&xid=fr1646802062883ahd"
+            }
+          },
+          {
+            "name": "Wooden Spoon",
+            "imageUrl": "https://assets.bonappetit.com/photos/596940436c75df51bc0b91c0/1:1/w_640,c_limit/basically-equipment-wooden-spoon.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "6",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmseir9Q44EJYVvP7yG1yxFWWMTcsBFkXfg99oWSFH4TfoDvsfm6VcPJCGM9i2xv3u?cid=61f006cd629920bf61fe6cce&xid=fr1646802062883bec"
+            }
+          },
+          {
+            "name": "Can Opener",
+            "imageUrl": "https://assets.bonappetit.com/photos/59e902936fe2375498131cb2/1:1/w_640,c_limit/Basically_Can-Opener.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "14",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbnGJjhjUwXtYtWwT3iZ9MiPiKxaZ6381QcRBvjxHSXv88ezGKj7jyQKYPMDWTkeur3?cid=61f006cd629920bf61fe6cce&xid=fr1646802062883jdj"
             }
           }
         ],
         "ingredients": [
           {
-            "count": "NULL",
-            "ingredient": "INGREDIENT"
+            "count": "1",
+            "ingredient": "28-oz. can whole peeled tomatoes"
+          },
+          {
+            "count": "½",
+            "ingredient": "small loaf country-style bread, torn into 2\" pieces (about 3 cups)"
+          },
+          {
+            "count": "5",
+            "ingredient": "Tbsp. extra-virgin olive oil, divided, plus more for serving"
+          },
+          {
+            "ingredient": "Kosher salt, freshly ground pepper"
+          },
+          {
+            "count": "2",
+            "ingredient": "garlic cloves, coarsely chopped"
+          },
+          {
+            "count": "3",
+            "ingredient": "Tbsp. capers"
+          },
+          {
+            "count": "¼",
+            "ingredient": "tsp. crushed red pepper flakes"
+          },
+          {
+            "count": "3",
+            "ingredient": "Tbsp. harissa paste"
+          },
+          {
+            "count": "1",
+            "ingredient": "Tbsp. double-concentrated tomato paste"
+          },
+          {
+            "count": "1",
+            "ingredient": "bunch Tuscan kale, ribs and stems removed, leaves coarsely chopped"
+          },
+          {
+            "count": "4",
+            "ingredient": "large eggs"
+          },
+          {
+            "count": "1",
+            "ingredient": "cup plain whole-milk Greek yogurt"
+          },
+          {
+            "ingredient": "Coarsely chopped parsley (for serving)"
           }
         ],
         "reviews": [
           {
-            "review": "REVIEW",
+            "review": "Excellent and easy. I didn’t have any harissa so I used a little extra tomato paste and more red pepper flakes. Very tasty and perfect degee of hotness.",
             "author": "Anonymous",
-            "location": "NULL",
-            "date": "2022-03-08"
+            "date": "2022-02-21"
+          },
+          {
+            "review": "Wonderful and simple! Loved the addition of bread into this. I used a very stale and hard baguette that softened up beautifully in the spicy and briney sauce. I will definitely be making this for the family again and again.",
+            "author": "Anonymous",
+            "location": "New York, NY",
+            "date": "2022-02-14"
           }
         ],
-        "steps": []
+        "steps": [
+          "Preheat oven to 425°. Place tomatoes in a medium bowl and crush with your hands into small pieces. Set aside.",
+          "Place bread in a large bowl. Drizzle 2 Tbsp. oil over and season with salt and black pepper; toss to coat. Heat 2 Tbsp. oil in a medium ovenproof high-sided skillet over medium-high. Transfer bread to skillet, arranging in an even layer; reserve bowl. Cook bread, undisturbed, until browned and crisp underneath, about 3 minutes. Continue to cook, tossing occasionally, until browned and crisp on all sides, about 3 minutes more. Return to reserved bowl.",
+          "Pour remaining 1 Tbsp. oil into skillet. Add garlic, capers, and red pepper flakes. Cook, stirring often, until starting to soften, about 1 minute. Add harissa paste and tomato paste and cook, stirring constantly, until garlic and capers are coated and pastes are dark red, about 1 minute. Add kale and reserved tomatoes; season with salt and black pepper. Cook, stirring often, until kale is slightly wilted and sauce is slightly thickened, about 3 minutes. Remove from heat.",
+          "Stir toasted bread into sauce, then make 4 wells in mixture. Crack an egg into each well and season with salt and black pepper. Transfer skillet to oven and bake mixture until egg whites are set but yolks are still runny, 5–8 minutes.",
+          "To serve, dollop yogurt on top of baked eggs, drizzle with more oil, and scatter parsley over."
+        ]
       },
       {
         "categories": [
@@ -916,51 +1269,152 @@
         "imageUrl": "https://assets.bonappetit.com/photos/6189af140d1d8bec625178e0/3:4/w_720,c_limit/20211028%20Turkey%20Etcetrazzini.jpg",
         "title": "Turkey Etcetrazzini",
         "rating": {
-          "count": 8,
-          "value": 4.5
+          "count": "8",
+          "value": "4.5"
         },
         "tag": "Easy",
-        "dateUploaded": "2022-03-04",
-        "servings": "4 servings",
+        "dateUploaded": "2021-11-15",
+        "servings": "6 servings",
         "people": {
-          "author": "AUTHOR",
-          "photographers": [],
-          "foodStylists": [],
-          "propStylists": []
+          "author": "Cal Peternell",
+          "photographers": [
+            "Isa Zapata"
+          ],
+          "foodStylists": [
+            "Cyd McDowell"
+          ],
+          "propStylists": [
+            "Paige Hicks"
+          ]
         },
-        "nutritionServings": [
-          {
-            "name": "NAME",
-            "unit": "UNIT",
-            "value": "VALUE"
-          }
-        ],
         "utensils": [
           {
-            "name": "NAME",
-            "imageUrl": "IMAGE",
+            "name": "Heatproof Measuring Cup",
+            "imageUrl": "https://assets.bonappetit.com/photos/598b240b33219f41c020b06b/1:1/w_640,c_limit/Basically_Heatproof-measuring-cup.jpg",
             "sponsor": {
               "name": "Amazon",
-              "price": ,
-              "url": "URL"
+              "price": "18",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmth7dPurFf5C5VufVHyKQJC9yq1Fnt9WpS3nRLF2mt2iEgo8i2nV3eGx8JtS3j9eY?cid=61f006cd629920bf61fe6ccf&xid=fr1646799830294efe"
+            }
+          },
+          {
+            "name": "2-Quart Baking Dish",
+            "imageUrl": "https://assets.bonappetit.com/photos/5981eba44f130a49582c2d05/1:1/w_640,c_limit/Basically_Baking-Dish-Shallow-2qt.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "8.65",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmtbnX6CNDM3AVdeGo4SSJAy7F1njHe1WB4PnHXKU21DbnBYX3ttg3VZhmCvuz6q4p?cid=618af3268653ce4d14754d26&xid=fr1646802065122cda"
+            }
+          },
+          {
+            "name": "Large Skillet",
+            "imageUrl": "https://assets.bonappetit.com/photos/596cf2fc7102712b68401b14/1:1/w_640,c_limit/Bascially_Large-Skillet.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "84",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsjL7yvrJaDvPvX1UKuPcgywsyh8YmZNhf6FCNW6eixZ5hgj6PDef1iDyTyVmjPQU?cid=618af3268653ce4d14754d26&xid=fr1646802065122cih"
+            }
+          },
+          {
+            "name": "Pepper Grinder",
+            "imageUrl": "https://assets.bonappetit.com/photos/596ce8b82b659b48a371c37f/1:1/w_640,c_limit/Basically_Pepper-Grinder.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "16.99",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsj6DSrPmeeHQ2CqijcWtmFL13KNPZe9ZWTCZQiD91nAYAx5foGwtKzUxruQ3UbdA?cid=618af3268653ce4d14754d26&xid=fr1646802065122jfh"
             }
           }
         ],
         "ingredients": [
           {
-            "count": "NULL",
-            "ingredient": "INGREDIENT"
+            "count": "2",
+            "ingredient": "Tbsp. extra-virgin olive oil or vegetable oil"
+          },
+          {
+            "count": "2",
+            "ingredient": "Tbsp. unsalted butter"
+          },
+          {
+            "count": "1",
+            "ingredient": "medium onion, coarsely chopped"
+          },
+          {
+            "count": "1",
+            "ingredient": "lb. mushrooms (any kind), torn or chopped into bite-size pieces"
+          },
+          {
+            "ingredient": "Freshly ground black pepper"
+          },
+          {
+            "count": "1½",
+            "ingredient": "tsp. Diamond Crystal or 1 tsp. Morton kosher salt, plus more"
+          },
+          {
+            "count": "6",
+            "ingredient": "sprigs thyme, leaves picked"
+          },
+          {
+            "count": "1",
+            "ingredient": "bay leaf"
+          },
+          {
+            "count": "½",
+            "ingredient": "cup dry white wine"
+          },
+          {
+            "count": "1½",
+            "ingredient": "cups heavy cream"
+          },
+          {
+            "count": "3",
+            "ingredient": "cups shredded leftover roast turkey meat"
+          },
+          {
+            "count": "1",
+            "ingredient": "lb. short pasta (such as farfalle, fusilli, or orecchiette)"
+          },
+          {
+            "count": "2",
+            "ingredient": "cups leftover Thanksgiving sides (such as roasted brussels sprouts, sautéed green beans, or cooked greens; optional)"
+          },
+          {
+            "count": "2",
+            "ingredient": "oz. finely grated Parmesan (about 1 cup), divided"
           }
         ],
         "reviews": [
           {
-            "review": "REVIEW",
-            "author": "Anonymous",
-            "location": "NULL",
-            "date": "2022-03-08"
+            "review": "I love using my leftover turkey in a hearty, Italian dish such as this! Heavy enough to serve with a red wine, as well. Delicious!",
+            "author": "CJ Lewis",
+            "location": "Troy, ID",
+            "date": "2021-12-29"
+          },
+          {
+            "review": "This recipe was a great way to use leftovers! Lots of compliments on the creative way this incorporated leftover grilled turkey and duck. I added most of a container of fresh spinach, leftover grilled brussel sprouts, leftover roasted garlic and cubes of roasted butternut squash. This recipe is definitely going to be repeated & shared! I did not bake it the full 50-60 min. I probably removed it from the oven at 40 min...very bubbly at this point. Really a crowd pleaser!",
+            "author": "JKBADGER21",
+            "location": "Eagle River, WI",
+            "date": "2021-11-30"
+          },
+          {
+            "review": "Carol Y and I think the same way. I too was wondering why so long in the oven ? I would put it under the broiler until brown and bubbling....that should do the trick. Recipe sounds interesting though.",
+            "author": "Big Joe",
+            "location": "Montreal, Canada",
+            "date": "2021-11-19"
+          },
+          {
+            "review": "If the turkey is leftover and already cooked, why would you need to bake it for 50-60 min?",
+            "author": "Carol Y",
+            "location": "Boise, ID",
+            "date": "2021-11-19"
           }
         ],
-        "steps": []
+        "steps": [
+          "Preheat oven to 375°. Heat oil and butter in a large skillet over medium-high. As soon as butter is melted, add onion, mushrooms, plenty of pepper, and 1½ tsp. Diamond Crystal or 1 tsp. Morton kosher salt. Cook, stirring occasionally, until onion is soft and mushrooms are browned, 10–15 minutes. Stir in thyme and bay leaf, then pour in wine; cook, stirring, until reduced by a third, about 1 minute. Stir in cream and remove skillet from heat. Stir in turkey.",
+          "If your skillet is ovenproof, transfer to oven; if not, transfer turkey mixture to a 2-qt. baking dish. Bake until browned on top and bubbling and turkey is very tender, 50–60 minutes.",
+          "Meanwhile, cook pasta in a large pot of boiling salted water, stirring occasionally, until al dente. Drain, reserving 1 cup of pasta cooking liquid. Return pasta to pot.",
+          "Stir turkey mixture, leftover sides (if using), three quarters of Parmesan, and ¼ cup pasta cooking liquid into pasta to combine. Cook over medium heat, stirring often and adding more pasta cooking liquid as needed, until saucy, about 2 minutes.",
+          "Divide among bowls. Top with remaining Parmesan and more black pepper if desired."
+        ]
       },
       {
         "categories": [
@@ -985,47 +1439,118 @@
         "imageUrl": "https://assets.bonappetit.com/photos/61f93f0a91c05315a4e0211a/3:4/w_720,c_limit/Lemony%20Spring%20Vegetable%20and%20Barley%20Bowl.jpg",
         "title": "Lemony Spring Vegetable and Barley Bowl",
         "tag": "Vegan",
-        "dateUploaded": "2022-03-04",
+        "dateIssue": "March 2022",
+        "rating": {
+          "count": "5",
+          "value": "4.0"
+        },
+        "dateUploaded": "2022-02-08",
         "servings": "4 servings",
         "people": {
-          "author": "AUTHOR",
-          "photographers": [],
-          "foodStylists": [],
-          "propStylists": []
+          "author": "Carla Hall",
+          "photographers": [
+            "Emma Fishman"
+          ],
+          "foodStylists": [
+            "Micah Morton"
+          ],
+          "propStylists": [
+            "Stephanie Yeh"
+          ]
         },
-        "nutritionServings": [
-          {
-            "name": "NAME",
-            "unit": "UNIT",
-            "value": "VALUE"
-          }
-        ],
         "utensils": [
           {
-            "name": "NAME",
-            "imageUrl": "IMAGE",
+            "name": "Medium Pot with Lid",
+            "imageUrl": "https://assets.bonappetit.com/photos/59dfa78d3bcba604e0a9f7b9/1:1/w_640,c_limit/Basically_Medium-pot-with-lid.jpg",
             "sponsor": {
               "name": "Amazon",
-              "price": ,
-              "url": "URL"
+              "price": "155",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbnFuiQJrsRy7VmDGksL98hUCX81bUbz7fMc6EwMwiMvnsmwsNFoN9iD6PHgQ9s5PL1?cid=61f006cd923ea3f67817f0ee&xid=fr1646802069110efh"
+            }
+          },
+          {
+            "name": "Citrus Juicer",
+            "imageUrl": "https://assets.bonappetit.com/photos/60cb7a8d003da72373591230/1:1/w_640,c_limit/citrus_juicer.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "7",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCkqmamAYoDCW25HByXWdrbHSxzZZQ8CDymSYicb4gm7RQoMajkJgsUBChTzVc7uDmnp?cid=621ea1d4f62bdce4b6a057c0"
+            }
+          },
+          {
+            "name": "Wooden Spoon",
+            "imageUrl": "https://assets.bonappetit.com/photos/596940436c75df51bc0b91c0/1:1/w_640,c_limit/basically-equipment-wooden-spoon.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "6",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmseir9Q44EJYVvP7yG1yxFWWMTcsBFkXfg99oWSFH4TfoDvsfm6VcPJCGM9i2xv3u?cid=5e31acafb37f4c00098901d5&xid=fr1646799829417bdh"
+            }
+          },
+          {
+            "name": "Microplane Grater",
+            "imageUrl": "https://assets.bonappetit.com/photos/5dcf0969ad1a0300083764ac/1:1/w_640,c_limit/Basically-Molly-GiftGuide-Microplane.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "16",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCkqQTrua49zXQVt3D1ssizewnLzoEJRFp7v4TYHBY5BhaqMXH9FwvtFAmJtPukP37yW?cid=621ea1d4f62bdce4b6a057c0"
             }
           }
         ],
         "ingredients": [
           {
-            "count": "NULL",
-            "ingredient": "INGREDIENT"
+            "count": "2",
+            "ingredient": "Tbsp. extra-virgin olive oil"
+          },
+          {
+            "count": "1",
+            "ingredient": "lb. asparagus, trimmed, cut into 1\" pieces"
+          },
+          {
+            "count": "1",
+            "ingredient": "cup pearl barley"
+          },
+          {
+            "count": "3",
+            "ingredient": "cups Fennel Potlikker (add water if short)"
+          },
+          {
+            "count": "1",
+            "ingredient": "Tbsp. Diamond Crystal or 1¾ tsp. Morton kosher salt, plus more"
+          },
+          {
+            "count": "1",
+            "ingredient": "cup fresh or frozen green peas"
+          },
+          {
+            "count": "2",
+            "ingredient": "tsp. fresh lemon juice"
+          },
+          {
+            "ingredient": "Freshly ground black pepper"
+          },
+          {
+            "count": "1",
+            "ingredient": "Tbsp. finely grated lemon zest"
+          },
+          {
+            "count": "½",
+            "ingredient": "cup mint leaves"
           }
         ],
         "reviews": [
           {
-            "review": "REVIEW",
-            "author": "Anonymous",
-            "location": "NULL",
-            "date": "2022-03-08"
+            "review": "I loved this recipe! Very fresh and flavorful and healthful, and VEGAN even though not specified as such. I made it exactly as written except that I added some fresh dill since it needed to be used up. I think it would also be very adaptable. I will try using farro next time for some extra fiber. I think zucchini might fit in here when my garden is overflowing with it in the summer, and I bet it would be great as a cold salad with some cucumber and feta added. I will be making this often!",
+            "author": "Shannon",
+            "location": "Madison, VA",
+            "date": "2022-03-02"
           }
         ],
-        "steps": []
+        "steps": [
+          "Heat oil in a medium pot over medium. Cook asparagus, stirring often, until softened and bright green, about 5 minutes. Transfer to a plate; set aside.",
+          "Increase heat to medium-high and add barley to pot. Cook, stirring often, until lightly browned, about 4 minutes. Add potlikker and 1 Tbsp. Diamond Crystal or 1¾ tsp. Morton kosher salt; bring to a boil. Reduce heat, cover pot, and simmer until barley is tender and doubled in size and liquid is absorbed, 25–30 minutes.",
+          "Uncover pot and stir in peas. Cook until peas are tender and bright green, about 4 minutes. Stir in lemon juice and reserved asparagus; season with salt and pepper.",
+          "Divide barley among bowls. Top with lemon zest and mint."
+        ]
       },
       {
         "categories": [

@@ -4,8 +4,8 @@ part 'recipe_rating.g.dart';
 
 @JsonSerializable()
 class RecipeRating {
-  final int count;
-  final double value;
+  final String count;
+  final String value;
 
   const RecipeRating({required this.count, required this.value});
 

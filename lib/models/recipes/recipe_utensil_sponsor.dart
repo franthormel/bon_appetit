@@ -9,7 +9,8 @@ class RecipeUtensilSponsor {
   final String name;
 
   // In U.S. dollars ($)
-  final int price;
+  final String price;
+  final String? discountedPrice;
 
   // Item's link to the seller's site.
   final String url;
@@ -18,6 +19,7 @@ class RecipeUtensilSponsor {
     required this.name,
     required this.price,
     required this.url,
+    this.discountedPrice,
   });
 
   factory RecipeUtensilSponsor.fromJson(Map<String, dynamic> json) =>

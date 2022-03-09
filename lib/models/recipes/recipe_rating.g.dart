@@ -7,8 +7,8 @@ part of 'recipe_rating.dart';
 // **************************************************************************
 
 RecipeRating _$RecipeRatingFromJson(Map<String, dynamic> json) => RecipeRating(
-      count: json['count'] as int,
-      value: (json['value'] as num).toDouble(),
+      count: json['count'] as String,
+      value: json['value'] as String,
     );
 
 Map<String, dynamic> _$RecipeRatingToJson(RecipeRating instance) =>

@@ -10,8 +10,9 @@ RecipeUtensilSponsor _$RecipeUtensilSponsorFromJson(
         Map<String, dynamic> json) =>
     RecipeUtensilSponsor(
       name: json['name'] as String,
-      price: json['price'] as int,
+      price: json['price'] as String,
       url: json['url'] as String,
+      discountedPrice: json['discountedPrice'] as String?,
     );
 
 Map<String, dynamic> _$RecipeUtensilSponsorToJson(
@@ -19,5 +20,6 @@ Map<String, dynamic> _$RecipeUtensilSponsorToJson(
     <String, dynamic>{
       'name': instance.name,
       'price': instance.price,
+      'discountedPrice': instance.discountedPrice,
       'url': instance.url,
     };
