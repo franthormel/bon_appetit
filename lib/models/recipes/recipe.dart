@@ -4,6 +4,7 @@ import 'recipe_ingredient.dart';
 import 'recipe_people.dart';
 import 'recipe_rating.dart';
 import 'recipe_review.dart';
+import 'recipe_time.dart';
 import 'recipe_utensil.dart';
 import 'recipe_nutrition_serving.dart';
 
@@ -49,6 +50,7 @@ class Recipe {
   /// Used as a [Chip] label.
   final String? tag;
 
+  final List<RecipeTime>? timeEntries;
   final String title;
   final List<RecipeUtensil>? utensils;
 
@@ -68,6 +70,7 @@ class Recipe {
     this.nutritionServings,
     this.rating,
     this.tag,
+    this.timeEntries,
     this.utensils,
   });
 
