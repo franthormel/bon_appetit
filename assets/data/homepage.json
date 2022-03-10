@@ -5629,7 +5629,7 @@
           },
           {
             "count": "2",
-            "ingredient": "lb. asparagus, trimmed, cut on a diagonal into 1"–2" pieces"
+            "ingredient": "lb. asparagus, trimmed, cut on a diagonal into 1\"–2\" pieces"
           },
           {
             "count": "8",
@@ -5828,51 +5828,189 @@
         "description": "These buns can be assembled the night before, needing only a final rise before baking. This is part of BA's Best, a collection of our essential recipes.",
         "imageUrl": "https://assets.bonappetit.com/photos/57ad4548f1c801a1038bcb22/3:4/w_720,c_limit/the-ultimate-sticky-buns-529.jpg",
         "title": "The Ultimate Sticky Buns",
+        "dateIssue": "April 2012",
         "rating": {
-          "count": 284,
-          "value": 3.9
+          "count": "284",
+          "value": "3.9"
         },
-        "dateUploaded": "2022-03-04",
-        "servings": "4 servings",
+        "dateUploaded": "2014-04-30",
+        "servings": "Makes 9 Servings",
         "people": {
-          "author": ,
-          "photographers": [],
-          "foodStylists": [],
-          "propStylists": []
+          "author": "Melissa Roberts",
+          "photographers": [
+            "Ditte Isager"
+          ]
         },
         "nutritionServings": [
           {
-            "name": "NAME",
-            "unit": "UNIT",
-            "value": "VALUE"
-          }
-        ],
-        "utensils": [
+            "name": "Calories",
+            "unit": "kcal",
+            "value": "830"
+          },
           {
-            "name": "NAME",
-            "imageUrl": "IMAGE",
-            "sponsor": {
-              "name": "Amazon",
-              "price": ,
-              "url": "URL"
-            }
+            "name": "Fat",
+            "unit": "g",
+            "value": "56"
+          },
+          {
+            "name": "Saturated Fat",
+            "unit": "g",
+            "value": "26"
+          },
+          {
+            "name": "Cholesterol",
+            "unit": "mg",
+            "value": "180"
+          },
+          {
+            "name": "Carbohydrates",
+            "unit": "g",
+            "value": "78"
+          },
+          {
+            "name": "Dietary Fiber",
+            "unit": "g",
+            "value": "3"
+          },
+          {
+            "name": "Total Sugars",
+            "unit": "g",
+            "value": "48"
+          },
+          {
+            "name": "Protein",
+            "unit": "g",
+            "value": "10"
+          },
+          {
+            "name": "Sodium",
+            "unit": "mg",
+            "value": "340"
           }
         ],
         "ingredients": [
           {
-            "count": "NULL",
-            "ingredient": "INGREDIENT"
+            "count": "⅔",
+            "ingredient": "cup whole milk"
+          },
+          {
+            "count": "5",
+            "ingredient": "tablespoons sugar, divided"
+          },
+          {
+            "count": "1¾",
+            "ingredient": "teaspoons active dry yeast (from one ¼-ounce envelope)"
+          },
+          {
+            "count": "2",
+            "ingredient": "large eggs, room temperature"
+          },
+          {
+            "count": "2¾",
+            "ingredient": "cups unbleached all-purpose flour"
+          },
+          {
+            "count": "1",
+            "ingredient": "teaspoon kosher salt"
+          },
+          {
+            "count": "½",
+            "ingredient": "cup (1 stick) unsalted butter, cut into 1-inch pieces, room temperature, plus ½ tablespoon, melted"
+          },
+          {
+            "count": "1¾",
+            "ingredient": "cups chopped pecans (about 8 ounces)"
+          },
+          {
+            "count": "½",
+            "ingredient": "cup (1 stick) unsalted butter"
+          },
+          {
+            "count": "¾",
+            "ingredient": "cup (packed) dark brown sugar"
+          },
+          {
+            "count": "¾",
+            "ingredient": "cup heavy cream"
+          },
+          {
+            "count": "⅓",
+            "ingredient": "cup honey"
+          },
+          {
+            "count": "¼",
+            "ingredient": "teaspoon kosher salt"
+          },
+          {
+            "count": "¼",
+            "ingredient": "teaspoon finely grated orange zest (optional)"
+          },
+          {
+            "count": "½",
+            "ingredient": "cup (1 stick) unsalted butter, room temperature"
+          },
+          {
+            "count": "½",
+            "ingredient": "cup (packed) dark brown sugar"
+          },
+          {
+            "count": "¾",
+            "ingredient": "teaspoon ground cinnamon"
+          },
+          {
+            "count": "½",
+            "ingredient": "teaspoon freshly grated nutmeg"
+          },
+          {
+            "count": "⅛",
+            "ingredient": "teaspoon kosher salt"
+          },
+          {
+            "ingredient": "All-purpose flour (for dusting)"
+          },
+          {
+            "count": "1",
+            "ingredient": "large egg"
+          },
+          {
+            "ingredient": "Coarse sea salt"
           }
         ],
         "reviews": [
           {
-            "review": "REVIEW",
-            "author": "Anonymous",
-            "location": "NULL",
-            "date": "2022-03-08"
+            "review": "I followed this recipe as far as ingredients go,but I only had a 9 inch round cake pan. They started to brown after 30 minutes so i tented it and kept checking for the next 20 minutes. When i put them in the cake pan they were slightly touching because i cut the log into 11 slices. You need to measure these, dont eyeball it. Waiting for them to cool before we can eat them but they look gorgeous ",
+            "author": "Marilyn Ciccotosto",
+            "location": "Montreal Quebec Canada",
+            "date": "2020-12-06"
+          },
+          {
+            "review": "This may be the best thing I've baked EVER! It is also the most complex recipe I've used and it was the hardest thing to trust the recipe and not go off the rails but man did it pay off!! The swirls were perfect and the GLAZE?!? UGH, it was a struggle not to keep tasting it while the dough chilled. ",
+            "location": "Atlanta,GA",
+            "date": "2020-06-21"
+          },
+          {
+            "review": "Fantastic recipe. I was a bit liberal on the nutmeg and orange zest measurements (heaping vs. exact), and it was very much worth it. The buns did bake much faster than 50 min though. Tops were fully brown after around 25 min, so I added foil over top. Pulled the buns out around 40-42 min and internal temp at the very center was over 200. So I'd suggest checking the internal temp more frequently the first time you make these.",
+            "author": "austinsego",
+            "location": "Minneapolis, MN",
+            "date": "2020-04-28"
           }
         ],
-        "steps": []
+        "steps": [
+          "Heat milk in a small saucepan over medium or in a microwave until an instant-read thermometer registers 110°–115°. Transfer milk to a 2-cup measuring cup; stir in 1 Tbsp. sugar. Sprinkle yeast over milk and whisk to blend. Let sit until yeast is foamy, about 5 minutes. Add eggs; whisk until smooth. Combine flour, salt, and remaining 4 Tbsp. sugar in the bowl of a stand mixer fitted with a dough hook. Add milk mixture. With mixer running, add ½ cup room-temperature butter, 1 piece at a time, blending well between additions. Mix on medium speed 1 minute. Knead on medium-high speed until dough is soft and silky, about 5 minutes.",
+          "Brush a medium bowl with about 1 tsp. melted butter; place dough in bowl. Brush top of dough with remaining melted butter; cover with plastic wrap.",
+          "Let dough rise in a warm, draft-free area until doubled in size, 1–1½ hours.",
+          "Chill dough 2 hours.",
+          "Do Ahead: Dough, before first rise, can be made 1 day ahead. Cover with plastic; chill. Let rise in a warm, draft-free area until doubled in size, 2–2½ hours.",
+          "Preheat oven to 350°. Spread nuts on a rimmed baking sheet. Toast until fragrant and slightly darkened, 10–12 minutes. Let cool completely. Set 1¼ cups nuts aside for buns.",
+          "Melt butter in a small heavy saucepan over medium heat. Stir in brown sugar, cream, honey, salt, and orange zest, if using. Bring to a boil, reduce heat to medium, and simmer until glaze is golden brown and glossy, 3–4 minutes. Pour 1 cup glaze into baking pan, tilting to coat bottom and sides. Set aside remaining glaze. Sprinkle ½ cup toasted pecans over bottom of baking pan and let cool.",
+          "Using an electric mixer on medium speed, beat butter, sugar, cinnamon, nutmeg, and kosher salt in a medium bowl until light and fluffy, 2–3 minutes. Set filling aside.",
+          "Roll out dough on a lightly floured work surface into a 12x16\" rectangle about ¼\" thick. Arrange dough on work surface so 1 long side faces you. Spread cinnamon-sugar mixture over dough, leaving a 1\" border on the side farthest from you.",
+          "Sprinkle ¾ cup chopped pecans over cinnamon-sugar mixture. Beginning with the long edge closest to you, roll dough into a log, tightening as you roll and patting in ends if they begin to taper. Pinch together the seam where the long side meets the roll to seal. Arrange log seam side down.",
+          "Using a large knife, cut log crosswise into 9 pieces (lightly flour knife between slices if dough is too sticky). Turn buns cut side up and gently pat top to flatten slightly. If needed, reshape to form round edges by cupping lightly floured hands around each bun and gently pushing and turning them in a circular motion. Transfer buns to prepared pan, spacing evenly apart (buns should not touch each other).",
+          "Loosely cover pan with plastic wrap or a kitchen towel. Let buns rise in a warm, draft-free area until doubled in size, 45 minutes–1 hour, or 1½–2 hours if dough has been chilled overnight.",
+          "Arrange a rack in middle of oven; preheat to 350°. Whisk egg with ½ tsp. water in a small bowl. Brush tops of buns with egg wash. Bake, rotating pan halfway through and tenting with foil if browning too quickly, until buns are golden brown, filling is bubbling, and an instant-read thermometer inserted into center of buns registers 185°, about 50 minutes. Let cool 5 minutes. Spoon remaining glaze over. Sprinkle ½ cup pecans over. Let cool in pan on a wire rack.",
+          "Lightly sprinkle sea salt over. Serve buns warm or at room temperature."
+        ]
       },
       {
         "categories": [
@@ -5900,51 +6038,181 @@
         "imageUrl": "https://assets.bonappetit.com/photos/5b9009799915d52d4edc0f73/3:4/w_720,c_limit/basically-pasta-pomodoro-1.jpg",
         "title": "Basically Spaghetti Pomodoro",
         "rating": {
-          "count": 150,
-          "value": 4.7
+          "count": "152",
+          "value": "4.7"
         },
         "tag": "Easy",
-        "dateUploaded": "2022-03-04",
-        "servings": "4 servings",
+        "dateUploaded": "2018-09-08",
+        "servings": "4-6 Servings",
         "people": {
-          "author": ,
-          "photographers": [],
-          "foodStylists": [],
-          "propStylists": []
+          "author": "Claire Saffitz",
+          "photographers": [
+            "Heidi's Bridge"
+          ]
         },
-        "nutritionServings": [
-          {
-            "name": "NAME",
-            "unit": "UNIT",
-            "value": "VALUE"
-          }
-        ],
         "utensils": [
           {
-            "name": "NAME",
-            "imageUrl": "IMAGE",
+            "name": "Measuring Spoons",
+            "imageUrl": "https://assets.bonappetit.com/photos/6176f85dfcfe3c4f641ab096/1:1/w_640,c_limit/Bamboozle_-_Measuring_Spoon_Set_1080x.jpeg",
+            "sponsor": {
+              "name": "Bon Appétit Market",
+              "price": "10",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsjL7zFd1VZg1c8kdtNvsG7twwxaXh11A44tWUpgKtfxNBCGmUwHpZWMJKDnXRaED?cid=5b8ffd50d097162d3ecd700d&xid=fr1646894185395chg"
+            }
+          },
+          {
+            "name": "Measuring Cups",
+            "imageUrl": "https://assets.bonappetit.com/photos/6176f8adfcfe3c4f641ab098/1:1/w_640,c_limit/Bamboozle_-_Measuring_Cup_Set_1_900x.jpeg",
+            "sponsor": {
+              "name": "Bon Appétit Market",
+              "price": "18",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsj6DSUHAdpskaaiLT1hZJrHAuGmoQ4tZnFzkmLJYkyuyUzuiT7kiaSTQELYdC7fe?cid=5b8ffd50d097162d3ecd700d&xid=fr1646894185395dab"
+            }
+          },
+          {
+            "name": "Large Pot",
+            "imageUrl": "https://assets.bonappetit.com/photos/596938717654ad3411665279/1:1/w_640,c_limit/basically-equipment-large-pot.jpg",
             "sponsor": {
               "name": "Amazon",
-              "price": ,
-              "url": "URL"
+              "price": "55",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsePu89zrtEVdnnGmhJCnfaR4K6fFrA9iG8F2RkThLkTJFehKHy22j28BNNwCoMP6?cid=5b8ffd50d097162d3ecd700d&xid=fr1646894185395dfb"
+            }
+          },
+          {
+            "name": "Colander",
+            "imageUrl": "https://assets.bonappetit.com/photos/597901243942a20318cc3f87/1:1/w_640,c_limit/Basically_Colander.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "11",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmt8bHMXXTtTfRB9qNevWK2mBBuS92MmwfGdUiM95HxhW5woBjfu6HbHZwyiATY7EJ?cid=5b8ffd50d097162d3ecd700d&xid=fr1646894185395gie"
+            }
+          },
+          {
+            "name": "Medium Bowl",
+            "imageUrl": "https://assets.bonappetit.com/photos/596ce9902b659b48a371c381/1:1/w_640,c_limit/basically-equipment-medium-bowl.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "17",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmseirQ2SSvWwhtZ2CmiqDDf3U4qECrLPq7r457m8nCUWgyTHXCYkCJSJEKFwrCj7P?cid=5b8ffd50d097162d3ecd700d&xid=fr1646894185395faf"
+            }
+          },
+          {
+            "name": "Chef's Knife",
+            "imageUrl": "https://assets.bonappetit.com/photos/5f3d7774b4b3538eb4dc4f93/1:1/w_640,c_limit/Basically-gift-guide-2017-Victorinox-Chef.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "34.53",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsePzcnjSNojcExKfoYuf2Bo8CjcWLivgJjQ7kJW6pSiSPG3DxLjSFevzZwe72zmJ?cid=5b8ffd50d097162d3ecd700d&xid=fr1646894185395hic"
+            }
+          },
+          {
+            "name": "Dutch Oven",
+            "imageUrl": "https://assets.bonappetit.com/photos/5a7490a05736e36c6bb6a23e/1:1/w_640,c_limit/Basically_Dutch-Oven-Large-with-Lid.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "80",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsedj4MPoD5E3qUsenzmqst8DhKsrszGFFtx8gq8yPpUrNemjH3MrZuLSZaec7XHF?cid=5b8ffd50d097162d3ecd700d&xid=fr1646894185395eae"
+            }
+          },
+          {
+            "name": "Wooden Spoon",
+            "imageUrl": "https://assets.bonappetit.com/photos/596940436c75df51bc0b91c0/1:1/w_640,c_limit/basically-equipment-wooden-spoon.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "6",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmseir9Q44EJYVvP7yG1yxFWWMTcsBFkXfg99oWSFH4TfoDvsfm6VcPJCGM9i2xv3u?cid=5b8ffd50d097162d3ecd700d&xid=fr1646894185395jce"
+            }
+          },
+          {
+            "name": "Tongs",
+            "imageUrl": "https://assets.bonappetit.com/photos/5a1eddec2479441876ab9959/1:1/w_640,c_limit/Basically_Tongs.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "13",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsePu8Y3B7K5G4cFmneVqqJNvPgsmfJEFejzaPQQWMnt7Y8L64Tuvzjahsb2382jz?cid=5b8ffd50d097162d3ecd700d&xid=fr1646894185395ccg"
+            }
+          },
+          {
+            "name": "Heatproof Measuring Cup",
+            "imageUrl": "https://assets.bonappetit.com/photos/598b240b33219f41c020b06b/1:1/w_640,c_limit/Basically_Heatproof-measuring-cup.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "18",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmth7dPurFf5C5VufVHyKQJC9yq1Fnt9WpS3nRLF2mt2iEgo8i2nV3eGx8JtS3j9eY?cid=5b8ffd50d097162d3ecd700d&xid=fr1646894185395fac"
             }
           }
         ],
         "ingredients": [
           {
-            "count": "NULL",
-            "ingredient": "INGREDIENT"
+            "count": "3",
+            "ingredient": "Tbsp. kosher salt, plus more"
+          },
+          {
+            "count": "1",
+            "ingredient": "28-oz. can whole peeled tomatoes"
+          },
+          {
+            "count": "4",
+            "ingredient": "garlic cloves"
+          },
+          {
+            "count": "3",
+            "ingredient": "Tbsp. extra-virgin olive oil, plus more"
+          },
+          {
+            "ingredient": "Pinch of crushed red pepper flakes, plus more"
+          },
+          {
+            "count": "3",
+            "ingredient": "basil sprigs, plus leaves for serving"
+          },
+          {
+            "count": "1",
+            "ingredient": "lb. spaghetti"
+          },
+          {
+            "count": "4½",
+            "ingredient": "oz. Parmesan, finely grated, divided (about 1 cup)"
+          },
+          {
+            "count": "2",
+            "ingredient": "Tbsp. unsalted butter"
           }
         ],
         "reviews": [
           {
-            "review": "REVIEW",
+            "review": "Delicious, easy, and simple! This one’s a keeper! ",
             "author": "Anonymous",
-            "location": "NULL",
-            "date": "2022-03-08"
+            "location": "Greenville, SC",
+            "date": "2021-12-24"
+          },
+          {
+            "review": "I dice the tomatoes first, I feel that makes a better reduction. My late wife liked mushrooms, so I'd dice them relatively finely and add them to the tomatoes a few minutes in. Nice tip on additional butter, thank you. ",
+            "author": "Leon Jester",
+            "location": "South Central Virginia",
+            "date": "2021-08-13"
+          },
+          {
+            "review": "Simple and elegant. I loved the videos. I learned a lot. I do add a pinch of sugar just to reduce some of the acidic taste from the tomatoes, but that’s what my mom always did, so perhaps it is fine without. I cannot tell you what a difference this is over any jarred sauce; it’s amazing. And no chemicals or salt. The jarred brands, even high end, have too much salt. I also love Marcella Hazan’s easy sauce: she also adds butter but simmers the sauce with 1/2 of an onion (not chopped) I remove the onion before adding the pasta. ",
+            "author": "Janice",
+            "location": "Park City, Utah",
+            "date": "2021-08-12"
           }
         ],
-        "steps": []
+        "steps": [
+          "Fill a large stock pot two-thirds full with water and heat over high to bring to a boil. Once you see the water start to steam, add 3 Tbsp. salt. We know, we know: That looks like a LOT of salt. But salting the pasta water aggressively—it should almost be seawater-salty—is the key to making sure that every noodle is properly seasoned through and through, and is one reason why restaurant pasta tastes better than the stuff you usually make. While you wait for the water, start your sauce.",
+          "Open a 28-oz. can of whole peeled tomatoes and drain contents in a colander set over medium bowl. (Whole peeled tomatoes are the only canned tomatoes worth buying, TBH. The diced ones sometimes have weird chemicals added to them to keep the chunks from breaking down. Gross.) Using clean fingers, poke a hole in the tomatoes and shake to drain liquid and seeds from the insides of each tomato, reserving liquid. Shake colander over bowl to separate the solids from all the juices and encourage liquid to drain; set aside.",
+          "Smash 4 garlic cloves with the flat side of a chef’s knife forcefully, so garlic breaks up into smaller bits; remove skins. If the cloves are really big, you might need to give them an extra smack to make sure they're broken up, but don't bother chopping—the garlic will infuse into the oil you sizzle it in and break down as the sauce simmers.",
+          "Working next to your pasta pot, heat 3 Tbsp. oil in a large Dutch oven over medium. (We like using a Dutch oven or a large, high-sided skillet for cooking sauce and finishing pasta; it's kind of the only thing big enough to toss a whole pound of pasta in without noodles flying everywhere.) Add garlic and cook, stirring often with a wooden spoon, until garlic is golden all over, about 3 minutes.",
+          "Stir in a pinch of red pepper flakes, then add drained tomatoes and increase heat to medium-high. The idea here is to concentrate the flavor of those tomato solids before adding the liquid they came in, which will give your sauce a more complex, rounded flavor. Cook, stirring occasionally, until tomatoes are darkened in color, browned and caramelized in spots, and starting to break down, 6–8 minutes. Don't rush this part! If you aren't getting color, let it go for another few minutes. Mash with the back of the wooden spoon to form a coarse paste.",
+          "Add reserved tomato liquid to pot and stir to combine. Season with a pinch of salt, throw in 3 basil sprigs, and reduce heat so sauce is bubbling at a simmer. Cook, stirring occasionally, until liquid is reduced and sauce is thick like applesauce, 8–10 minutes. If your water isn’t boiling yet, turn off heat under sauce while you wait. If it is, reduce heat to lowest setting and move on.",
+          "Add 1 lb. pasta to pot of water and agitate with tongs to prevent sticking. Cook pasta, tossing occasionally, just until lower end of time range given on the package for al dente. If you're not sure if it'sdone, fish out a piece and take a nibble—it should still be slightly too crunchy to want to eat because it's going to continue cooking in the tomato sauce. Just before pasta is done, use a heatproof measuring cup to scoop out about 1 cup pasta cooking liquid.",
+          "Using tongs, transfer pasta from stock pot into Dutch oven with sauce, allowing water to piggyback on pasta into sauce. (That's right, no draining!) Crank heat under sauce up to medium-high and pour in ½ cup reserved pasta cooking liquid. If you'e never finished cooking pasta in a pan full of sauce, your life is about to be changed—this process is what ensures that every single noodle is completely coated and infused with saucy goodness, and is pretty much the main difference between a dish of \"meh\" pasta and one that blows your mind.",
+          "Cook pasta, tossing constantly, until sauce is clinging to eah noodle and any standing liquid is mostly absorbed, about 1 minute. You still want a saucy consistency, but not watery. If things ever start to look a little dry, just add another splash of that pasta cooking water; if they look too wet, just wait a bit for some more liquid to evaporate.",
+          "Slowly sprinkle in half of the Parmesan cheese (you want the grainy stuff with the texture of shaky cheese, not Micropaned), tossing constantly, until it has melted into the sauce. Add more pasta water, a couple of tablespoons at a time, to loosen sauce if necessary—it should be plenty saucy while you're incorporating the cheese so it emulsifies into the sauce properly. You want the sauce to ooze but still be thick enough to coat the pasta.",
+          "Remove pot from heat and stir in 2 Tbsp. butter until melted. Finishing with a bit of butter is almost always a good idea—it makes the finished dish extra glossy and delicious. (Don't look at us like that—if youthink pasta is diet food, you're kidding yourself.)",
+          "Using tongs, divide pasta among bowls, then top with remaining cheese and basil leaves. Top with red pepper flakes and an extra drizzle of oil, if you feel. And there you have it: saucy, glossy Basically Spaghetti Pomodoro. Give yourself a pat on the back, and kiss the jarred stuff goodbye."
+        ]
       },
       {
         "categories": [
@@ -5960,50 +6228,141 @@
         "imageUrl": "https://assets.bonappetit.com/photos/57ad371b53e63daf11a4dcfc/3:4/w_720,c_limit/banana-bread-1-of-1.jpg",
         "title": "BA’s Best Banana Bread",
         "rating": {
-          "count": 1238,
-          "value": 4.2
+          "count": "1244",
+          "value": "4.2"
         },
-        "dateUploaded": "2022-03-04",
-        "servings": "4 servings",
+        "dateUploaded": "2021-12-03",
+        "servings": "Makes one 8½x4½\" loaf",
         "people": {
-          "author": ,
-          "photographers": [],
-          "foodStylists": [],
-          "propStylists": []
+          "author": "Bon Appétit",
+          "photographers": [
+            "Alex Lau"
+          ]
         },
-        "nutritionServings": [
-          {
-            "name": "NAME",
-            "unit": "UNIT",
-            "value": "VALUE"
-          }
-        ],
         "utensils": [
           {
-            "name": "NAME",
-            "imageUrl": "IMAGE",
+            "name": "Loaf Pan",
+            "imageUrl": "https://assets.bonappetit.com/photos/5a996b66d418f823c6403b75/1:1/w_640,c_limit/Basically_Loaf-Pan.jpg",
             "sponsor": {
               "name": "Amazon",
-              "price": ,
-              "url": "URL"
+              "price": "15",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCdF16Lt2yYQmLj4tvujbEK3w2V3TvkRkkdcKGyPrF9HF5e5WFAhbpmnQi8xsPQmc4tg?cid=57ad370b1b334044149754eb&xid=fr1646898665100ffd"
+            }
+          },
+          {
+            "name": "Electric Mixer",
+            "imageUrl": "https://assets.bonappetit.com/photos/5a996ad30376601d804f4f84/1:1/w_640,c_limit/Basically_Cuisinart-Hand-Mixer.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "40",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCdF16Lt2yJorBqsqn7qq7HiFWcSefKpYTUEkCAhSRdPV5H4L5eA3aTjDQjReQVg7o86?cid=57ad370b1b334044149754eb&xid=fr1646898665100gci"
+            }
+          },
+          {
+            "name": "Parchment Paper",
+            "imageUrl": "https://assets.bonappetit.com/photos/596cea005df40d1371270657/1:1/w_640,c_limit/basically-equipment-parchment.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "3",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmseirQ2boxz5S9u276XakNot4JkPRfUPqAVhEqS4rd8FrP9RcVpPagdT6afzZ1JVB?cid=57ad370b1b334044149754eb&xid=fr1646898665100gfi"
+            }
+          },
+          {
+            "name": "Wire Rack",
+            "imageUrl": "https://assets.bonappetit.com/photos/59693ffc6c75df51bc0b91be/1:1/w_640,c_limit/basically-equipment-wire-rack.jpg",
+            "sponsor": {
+              "name": "BA Market",
+              "price": "23",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmseir9LkYYTZDF1jBVH5yCJTggGMrH6XvUy2VKTLjUynE7SdzebPcT8rRE5eZFiX3?cid=57ad370b1b334044149754eb&xid=fr1646898665100ibi"
+            }
+          },
+          {
+            "name": "Cake Tester",
+            "imageUrl": "https://assets.bonappetit.com/photos/59de40581406f61d93be2020/1:1/w_640,c_limit/Basically_Cake-Tester.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "3",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbnFuawB8JqLtk8atrNLXWis7623K5dvH8BdLzcDzoVbpjXiiwhKp5rW7yuCzsFHupD?cid=57ad370b1b334044149754eb&xid=fr1646898665100fcb"
             }
           }
         ],
         "ingredients": [
           {
-            "count": "NULL",
-            "ingredient": "INGREDIENT"
+            "ingredient": "Nonstick vegetable oil spray"
+          },
+          {
+            "count": "1½",
+            "ingredient": "cups all-purpose flour"
+          },
+          {
+            "count": "1¼",
+            "ingredient": "teaspoons baking soda"
+          },
+          {
+            "count": "¾",
+            "ingredient": "teaspoon kosher salt"
+          },
+          {
+            "count": "1",
+            "ingredient": "cup (packed) dark brown sugar"
+          },
+          {
+            "count": "⅓",
+            "ingredient": "cup mascarpone, plain whole-milk Greek yogurt, or sour cream"
+          },
+          {
+            "count": "¼",
+            "ingredient": "cup (½ stick) unsalted butter, room temperature"
+          },
+          {
+            "count": "2",
+            "ingredient": "large eggs"
+          },
+          {
+            "count": "4",
+            "ingredient": "large very ripe bananas, mashed (about 1½ cups)"
+          },
+          {
+            "count": "½",
+            "ingredient": "cup chopped bittersweet or semisweet chocolate (optional)"
+          },
+          {
+            "count": "½",
+            "ingredient": "cup chopped walnuts (optional)"
           }
         ],
         "reviews": [
           {
-            "review": "REVIEW",
-            "author": "Anonymous",
+            "review": "This is just an ok recipe, will not revisit.",
+            "author": "Mew",
+            "location": "San Francisco",
+            "date": "2022-02-15"
+          },
+          {
+            "review": "Awesome recipe! I didn't add the chocolate but used all of the rest of the the ingredients. Makes a perfect loaf and so very tasty. Not too sweet and very moist. Its a keeper!",
+            "author": "Kay",
+            "location": "Kansas City",
+            "date": "2022-02-08"
+          },
+          {
+            "review": "I made this recipe dozens of times and it’s always perfect. I usually use Greek yogurt instead of mascarpone. Really the best banana bread ever!",
+            "author": "Tess",
+            "location": "Chicago",
+            "date": "2022-01-30"
+          },
+          {
+            "review": "I've made this multiple times for my family and to bring over to friends and it's always a hit. I recently tried using my sourdough discard in place of the greek yogurt/sour cream/mascarpone (in the same amount listed in the recipe). It adds some additional dimension to the flavour and is a great way for me to use up some of my discard.",
+            "author": "Cait",
             "location": "NULL",
-            "date": "2022-03-08"
+            "date": "2022-01-26"
           }
         ],
-        "steps": []
+        "steps": [
+          "Preheat oven to 350°. Lightly coat 8½x4½\" loaf pan with nonstick spray and line with parchment paper, leaving a generous overhang on long sides. Whisk flour, baking soda, and salt in a medium bowl.",
+          "Using an electric mixer on medium-high speed, beat brown sugar, mascarpone, and butter in a large bowl until light and fluffy, about 4 minutes. Add eggs one at a time, beating to blend after each addition and scraping down sides and bottom of bowl as needed.",
+          "Reduce speed to low, add flour mixture, and mix until just combined. Add bananas and mix just until combined. Fold in chocolate and/or walnuts, if using. Scrape batter into prepared pan; smooth top.",
+          "Bake bread until a tester inserted into the center comes out clean, 60–65 minutes. Transfer pan to a wire rack and let bread cool in pan 1 hour. Turn out bread and let cool completely (if you can resist) before slicing."
+        ]
       },
       {
         "categories": [
@@ -6021,52 +6380,153 @@
         "description": "This dessert could grace a pastry shop window, but its elegance masks its ease (just as the shiny chocolate glaze covers up the bouncy-cushiony-chewy middle). The mochiko, or sweet rice flour, is what gives the cake its unique texture, and the earthy matcha and bittersweet chocolate make it not too sweet. In the spirit of the Hawaiian butter mochi that inspired the recipe, it requires minimal equipment and comes together in the time it takes the oven to heat up. Do take the time to sift the matcha, however—it ensures that there aren’t any dry bits in the final cake—and splurge for ceremonial-grade matcha if you want the most vibrant color possible.",
         "imageUrl": "https://assets.bonappetit.com/photos/61fd95b3d1e92c476ce28d15/3:4/w_720,c_limit/Chocolate-Matcha-Butter-Mochi-Cake.jpg",
         "title": "Chocolate-Matcha Butter Mochi Cake",
+        "dateIssue": "March 2022",
         "rating": {
-          "count": 23,
-          "value": 4.6
+          "count": "39",
+          "value": "4.6"
         },
         "tag": "Easy",
-        "dateUploaded": "2022-03-04",
-        "servings": "4 servings",
+        "dateUploaded": "2022-02-08",
+        "servings": "Makes one 8\"- or 9\"-diameter cake",
         "people": {
-          "author": ,
-          "photographers": [],
-          "foodStylists": [],
-          "propStylists": []
+          "author": "Christina Chaey",
+          "photographers": [
+            "Emma Fishman"
+          ],
+          "foodStylists": [
+            "Pearl Jones"
+          ],
+          "propStylists": [
+            "Stephanie Yeh"
+          ]
         },
-        "nutritionServings": [
-          {
-            "name": "NAME",
-            "unit": "UNIT",
-            "value": "VALUE"
-          }
-        ],
         "utensils": [
           {
-            "name": "NAME",
-            "imageUrl": "IMAGE",
+            "name": "Round Cake Pan",
+            "imageUrl": "https://assets.bonappetit.com/photos/59de3f451c4b9034036c6ced/1:1/w_640,c_limit/Basically_Cake-Pan-Round.jpg",
             "sponsor": {
               "name": "Amazon",
-              "price": ,
-              "url": "URL"
+              "price": "12.99",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbnFuawAs4YPKdMzkd4FPck3R2tttNnnt5akfufZ6bC5Lksx9npQGyPYsFatbLrJEkE?cid=61f006cd6e9e896c3f22c748&xid=fr1646898666417jff"
+            }
+          },
+          {
+            "name": "Scale",
+            "imageUrl": "https://assets.bonappetit.com/photos/5dcd79d040e0b300083c0f42/1:1/w_640,c_limit/BAKING-Escali-Scale-10-1560.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCdPTsxaw5sHt2SQtGJgDdXxT8LdgRsCF7HGV5XPBPXaCKXY3Y8TePHXBuWT4tyi8TbW?cid=61f006cd6e9e896c3f22c748&xid=fr1646898666417gbc"
+            }
+          },
+          {
+            "name": "Small Offset Spatula",
+            "imageUrl": "https://assets.bonappetit.com/photos/5dcd79d2fd8bf400082e3c81/1:1/w_640,c_limit/BAKING-Mini-Offset-Spatula-25-1609.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "6",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbnGnibVQB1afPmka1oRsLX2K5DzJtfAQM9S9uKKL1DAxQyng7RPpbtoNJKthnLz1xt?cid=61f006cd6e9e896c3f22c748&xid=fr1646898666417heh"
+            }
+          },
+          {
+            "name": "Whisk",
+            "imageUrl": "https://assets.bonappetit.com/photos/60a5250981b25b25c6c8d4af/1:1/w_640,c_limit/product%20whisk.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "10",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmseir9LTWDnsngCNz94mmbti599nXxZB4ynBjSEZGqE9X9bm5Y6d22T2VC7E132tJ?cid=61f006cd6e9e896c3f22c748&xid=fr1646898666417dbg"
+            }
+          },
+          {
+            "name": "Mesh Sieve",
+            "imageUrl": "https://assets.bonappetit.com/photos/59721c9a5e52a765a3283012/1:1/w_640,c_limit/basically-fine-mesh-sieve.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "13",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCdPUMvA6bhXSdsJZnmPFia1n3zfcQeqe2RVCvrSNgdX3p9FJ4ZQ6tXia22VLZiTm4Yd?cid=61f006cd6e9e896c3f22c748&xid=fr1646898666417geg"
+            }
+          },
+          {
+            "name": "Wire Cooling Rack",
+            "imageUrl": "https://assets.bonappetit.com/photos/617c10f1508be16473d3c763/1:1/w_640,c_limit/Nordic_ware_Large_Baking_Cooling_Grid_1_1296x.png",
+            "sponsor": {
+              "name": "Bon Appétit Market",
+              "price": "17",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCkqmb6Ezj9WPjLNgojcdXCCzqUiH28BRBNE6yAewK1h3oiDVvEckA5QdBbaeLuG35xr?cid=61f006cd6e9e896c3f22c748&xid=fr1646898666417dhj"
+            }
+          },
+          {
+            "name": "Cake Tester",
+            "imageUrl": "https://assets.bonappetit.com/photos/59de40581406f61d93be2020/1:1/w_640,c_limit/Basically_Cake-Tester.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "3",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbnFuawB8JqLtk8atrNLXWis7623K5dvH8BdLzcDzoVbpjXiiwhKp5rW7yuCzsFHupD?cid=61f006cd6e9e896c3f22c748&xid=fr1646898666417cha"
             }
           }
         ],
         "ingredients": [
           {
-            "count": "NULL",
-            "ingredient": "INGREDIENT"
+            "count": "6",
+            "ingredient": "Tbsp. unsalted butter, melted, slightly cooled, plus room-temperature butter for pan"
+          },
+          {
+            "count": "1½",
+            "ingredient": "cups (227 g) mochiko (sweet rice flour; such as Koda Farms or Bob’s Red Mill Sweet White Rice Flour)"
+          },
+          {
+            "count": "1",
+            "ingredient": "tsp. baking powder"
+          },
+          {
+            "count": "½",
+            "ingredient": "tsp. Diamond Crystal or ¼ tsp. Morton kosher salt"
+          },
+          {
+            "count": "2",
+            "ingredient": "Tbsp. matcha, sifted, plus more for serving"
+          },
+          {
+            "count": "2",
+            "ingredient": "large eggs"
+          },
+          {
+            "count": "1",
+            "ingredient": "14-oz. can sweetened condensed milk"
+          },
+          {
+            "count": "1",
+            "ingredient": "tsp. vanilla extract"
+          },
+          {
+            "count": "1⅓",
+            "ingredient": "cups heavy cream, divided"
+          },
+          {
+            "count": "4",
+            "ingredient": "oz. bittersweet chocolate, chopped"
           }
         ],
         "reviews": [
           {
-            "review": "REVIEW",
+            "review": "One of the best cakes I’ve made, and I bake A LOT. It’s so unique and we honestly can’t stop eating it. If you want more sweetness, you can add 1/3 cup of sugar, but it’s so floral and grassy with the cake and the chocolate that it’s really perfect. ",
+            "author": "Jake Bakes",
+            "location": "Saint Paul, MN",
+            "date": "2022-03-06"
+          },
+          {
+            "review": "I was tasked with making a chocolate post-apocalyptic cake for a friend's birthday just as I pulled the latest magazine from my mailbox. This cake, featured on the cover, appeared to be the perfect solution, and it was! I will try it again as many liked it though I thought it was a bit too dry. I will try measuring the mochiko by weight. I used a 10 x 2\" aluminum fluted tart pan and it gave the cake more presence. This was fun to make.",
             "author": "Anonymous",
-            "location": "NULL",
-            "date": "2022-03-08"
+            "location": "New York, NY",
+            "date": "2022-03-01"
           }
         ],
-        "steps": []
+        "steps": [
+          "Place a rack in middle of oven; preheat to 350°. Generously butter an 8\"- or 9\"-diameter cake pan. Whisk mochiko, baking powder, salt, and 2 Tbsp. matcha in a large bowl just to combine. Vigorously whisk eggs and melted butter in a medium bowl until pale and emulsified, about 30 seconds. Add sweetened condensed milk, vanilla, and 1 cup cream and whisk until mixture is smooth. Scrape into dry ingredients and whisk vigorously until smooth and very thick. Scrape batter into prepared pan and smooth surface.",
+          "Bake cake until it starts to pull away from sides of pan, top and edges are golden, and a tester inserted into the center comes out clean, 35–45 minutes (cake in the smaller pan will take longer to bake than one in the larger pan). Transfer pan to a wire rack and let cake cool 5 minutes. Turn cake out onto rack; let cool completely.",
+          "Place chocolate in a small heatproof bowl. Bring remaining ⅓ cup cream to a boil in a small saucepan. Immediately pour over chocolate; let sit 15 seconds. Stir until ganache is smooth.",
+          "Evenly pour ganache over top of cake. Using a small offset spatula or spoon, spread ganache to edges of cake (drips down the sides are encouraged!). Let sit until ganache is set, about 2 hours. (If you are in a hurry, you can chill cake until glaze is set, about 30 minutes.)",
+          "Just before serving, dust top of cake with more matcha with a fine-mesh sieve."
+        ]
       }
     ]
   },
