@@ -16,10 +16,6 @@ Recipe _$RecipeFromJson(Map<String, dynamic> json) => Recipe(
       ingredients: (json['ingredients'] as List<dynamic>)
           .map((e) => RecipeIngredient.fromJson(e as Map<String, dynamic>))
           .toList(),
-      people: RecipePeople.fromJson(json['people'] as Map<String, dynamic>),
-      reviews: (json['reviews'] as List<dynamic>)
-          .map((e) => RecipeReview.fromJson(e as Map<String, dynamic>))
-          .toList(),
       servings: json['servings'] as String,
       steps: (json['steps'] as List<dynamic>).map((e) => e as String).toList(),
       title: json['title'] as String,
@@ -29,9 +25,15 @@ Recipe _$RecipeFromJson(Map<String, dynamic> json) => Recipe(
           ?.map(
               (e) => RecipeNutritionServing.fromJson(e as Map<String, dynamic>))
           .toList(),
+      people: json['people'] == null
+          ? null
+          : RecipePeople.fromJson(json['people'] as Map<String, dynamic>),
       rating: json['rating'] == null
           ? null
           : RecipeRating.fromJson(json['rating'] as Map<String, dynamic>),
+      reviews: (json['reviews'] as List<dynamic>?)
+          ?.map((e) => RecipeReview.fromJson(e as Map<String, dynamic>))
+          .toList(),
       tag: json['tag'] as String?,
       timeEntries: (json['timeEntries'] as List<dynamic>?)
           ?.map((e) => RecipeTime.fromJson(e as Map<String, dynamic>))

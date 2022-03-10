@@ -10,9 +10,9 @@ RecipeUtensilSponsor _$RecipeUtensilSponsorFromJson(
         Map<String, dynamic> json) =>
     RecipeUtensilSponsor(
       name: json['name'] as String,
-      price: json['price'] as String,
       url: json['url'] as String,
       discountedPrice: json['discountedPrice'] as String?,
+      price: json['price'] as String?,
     );
 
 Map<String, dynamic> _$RecipeUtensilSponsorToJson(

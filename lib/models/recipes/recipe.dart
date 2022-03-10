@@ -29,9 +29,9 @@ class Recipe {
   final String? mainDescription;
 
   final List<RecipeNutritionServing>? nutritionServings;
-  final RecipePeople people;
+  final RecipePeople? people;
   final RecipeRating? rating;
-  final List<RecipeReview> reviews;
+  final List<RecipeReview>? reviews;
 
   /// Number of servings this recipe makes.
   /// Examples:
@@ -60,15 +60,15 @@ class Recipe {
     required this.description,
     required this.imageUrl,
     required this.ingredients,
-    required this.people,
-    required this.reviews,
     required this.servings,
     required this.steps,
     required this.title,
     this.dateIssue,
     this.mainDescription,
     this.nutritionServings,
+    this.people,
     this.rating,
+    this.reviews,
     this.tag,
     this.timeEntries,
     this.utensils,

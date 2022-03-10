@@ -3845,51 +3845,53 @@
         "description": "This light, refreshing drink recipe will be your new favorite to serve at brunch or picnics.",
         "imageUrl": "https://assets.bonappetit.com/photos/5aa9650130a186203c128b22/3:4/w_720,c_limit/ginger-spritz.jpg",
         "title": "Ginger Spritz",
+        "dateIssue": "April 2018",
         "rating": {
-          "count": 3,
-          "value": 5.0
+          "count": "3",
+          "value": "5.0"
         },
-        "dateUploaded": "2022-03-04",
-        "servings": "4 servings",
+        "dateUploaded": "2018-03-20",
+        "servings": "Makes 1",
         "people": {
-          "author": ,
-          "photographers": [],
-          "foodStylists": [],
-          "propStylists": []
+          "author": "Kat Boytsova",
+          "photographers": [
+            "Stephen Kent Johnson"
+          ],
+          "foodStylists": [
+            "Rebecca Jurkevich"
+          ],
+          "propStylists": [
+            "Kalen Kaminski"
+          ]
         },
-        "nutritionServings": [
-          {
-            "name": "NAME",
-            "unit": "UNIT",
-            "value": "VALUE"
-          }
-        ],
-        "utensils": [
-          {
-            "name": "NAME",
-            "imageUrl": "IMAGE",
-            "sponsor": {
-              "name": "Amazon",
-              "price": ,
-              "url": "URL"
-            }
-          }
-        ],
         "ingredients": [
           {
-            "count": "NULL",
-            "ingredient": "INGREDIENT"
+            "count": "1",
+            "ingredient": "thin slice peeled ginger"
+          },
+          {
+            "count": "2",
+            "ingredient": "oz. Lillet"
+          },
+          {
+            "count": "3",
+            "ingredient": "oz. cava"
+          },
+          {
+            "ingredient": "Splash of ginger beer"
           }
         ],
         "reviews": [
           {
-            "review": "REVIEW",
-            "author": "Anonymous",
-            "location": "NULL",
-            "date": "2022-03-08"
+            "review": "Perfect light cocktail, we served with appetizers ahead of Thanksgiving!",
+            "author": "Olivia",
+            "location": "Boston, MA",
+            "date": "2022-01-31"
           }
         ],
-        "steps": []
+        "steps": [
+          "Place ginger slice against the inside of a rocks glass, fill with ice, and add Lillet and cava. Top off with ginger beer and stir gently to combine."
+        ]
       },
       {
         "categories": [
@@ -3908,52 +3910,96 @@
         "description": "Get the pan smoking hot so the halibut won’t stick. Let it get a good sear on the first side, which will also help it release.",
         "imageUrl": "https://assets.bonappetit.com/photos/57adc3901b3340441497568f/3:4/w_720,c_limit/butter-basted-halibut-steaks-with-capers.jpg",
         "title": "Butter-Basted Halibut Steaks with Capers",
+        "dateIssue": "January 2014",
         "rating": {
-          "count": 77,
-          "value": 2.9
+          "count": "77",
+          "value": "2.9"
         },
         "tag": "Quick",
-        "dateUploaded": "2022-03-04",
+        "dateUploaded": "2013-12-17",
         "servings": "4 servings",
-        "people": {
-          "author": ,
-          "photographers": [],
-          "foodStylists": [],
-          "propStylists": []
-        },
         "nutritionServings": [
           {
-            "name": "NAME",
-            "unit": "UNIT",
-            "value": "VALUE"
-          }
-        ],
-        "utensils": [
+            "name": "Calories",
+            "unit": "kcal",
+            "value": "400"
+          },
           {
-            "name": "NAME",
-            "imageUrl": "IMAGE",
-            "sponsor": {
-              "name": "Amazon",
-              "price": ,
-              "url": "URL"
-            }
+            "name": "Fat",
+            "unit": "g",
+            "value": "23"
+          },
+          {
+            "name": "Saturated Fat",
+            "unit": "g",
+            "value": "9"
+          },
+          {
+            "name": "Cholesterol",
+            "unit": "mg",
+            "value": "100"
+          },
+          {
+            "name": "Carbohydrates",
+            "unit": "g",
+            "value": "1"
+          },
+          {
+            "name": "Dietary Fiber",
+            "unit": "g",
+            "value": "0"
+          },
+          {
+            "name": "Total Sugars",
+            "unit": "g",
+            "value": "0"
+          },
+          {
+            "name": "Protein",
+            "unit": "g",
+            "value": "45"
+          },
+          {
+            "name": "Sodium",
+            "unit": "mg",
+            "value": "550"
           }
         ],
         "ingredients": [
           {
-            "count": "NULL",
-            "ingredient": "INGREDIENT"
-          }
-        ],
-        "reviews": [
+            "count": "2",
+            "ingredient": "14–16-oz. bone-in halibut steaks (1”–1¼” thick)"
+          },
           {
-            "review": "REVIEW",
-            "author": "Anonymous",
-            "location": "NULL",
-            "date": "2022-03-08"
+            "ingredient": "Kosher salt and coarsely ground black pepper"
+          },
+          {
+            "count": "2",
+            "ingredient": "tablespoons vegetable oil"
+          },
+          {
+            "count": "¼",
+            "ingredient": "cup (½ stick) unsalted butter"
+          },
+          {
+            "count": "4",
+            "ingredient": "sprigs thyme"
+          },
+          {
+            "count": "2",
+            "ingredient": "cloves garlic peeled, crushed"
+          },
+          {
+            "count": "3",
+            "ingredient": "tablespoons drained capers"
           }
         ],
-        "steps": []
+        "steps": [
+          "Arctic char, monkfish, or salmon steaks",
+          "Season halibut with salt and pepper. Heat oil in a large skillet, preferably cast iron, over medium-high heat until beginning to smoke. Cook halibut until golden brown, 6–8 minutes. Turn and cook until other side of fish is golden brown, about 4 minutes longer.",
+          "Add butter, thyme sprigs, and garlic to pan and cook, tilting pan and spooning butter over fish, until halibut is opaque throughout and butter is brown, about 2 minutes. Add capers; toss in butter to warm through.",
+          "Divide halibut among plates and spoon butter sauce over."
+        ]
       },
       {
         "categories": [
@@ -3973,51 +4019,72 @@
         "imageUrl": "https://assets.bonappetit.com/photos/57acca021b334044149751b5/3:4/w_720,c_limit/bas-best-masala-chai.jpg",
         "title": "BA's Best Masala Chai",
         "rating": {
-          "count": 21,
-          "value": 4.6
+          "count": "21",
+          "value": "4.6"
         },
         "tag": "Quick",
-        "dateUploaded": "2022-03-04",
+        "dateUploaded": "2016-02-09",
         "servings": "4 servings",
         "people": {
-          "author": ,
-          "photographers": [],
-          "foodStylists": [],
-          "propStylists": []
+          "author": "Carla Lalli Music",
+          "photographers": [
+            "Alex Lau"
+          ]
         },
-        "nutritionServings": [
-          {
-            "name": "NAME",
-            "unit": "UNIT",
-            "value": "VALUE"
-          }
-        ],
-        "utensils": [
-          {
-            "name": "NAME",
-            "imageUrl": "IMAGE",
-            "sponsor": {
-              "name": "Amazon",
-              "price": ,
-              "url": "URL"
-            }
-          }
-        ],
         "ingredients": [
           {
-            "count": "NULL",
-            "ingredient": "INGREDIENT"
+            "count": "1",
+            "ingredient": "1½-inch piece fresh ginger, unpeeled, coarsely grated"
+          },
+          {
+            "count": "1",
+            "ingredient": "3-inch cinnamon stick, lightly crushed with the flat side of a knife"
+          },
+          {
+            "count": "6",
+            "ingredient": "teaspoons loose strong black tea (such as Assam) or 6 tea bags (such as PG Tips)"
+          },
+          {
+            "count": "14",
+            "ingredient": "green cardamom pods, lightly crushed, or ¾ teaspoon cardamom seeds, lightly crushed"
+          },
+          {
+            "count": "2¾",
+            "ingredient": "cups milk"
+          },
+          {
+            "count": "¼",
+            "ingredient": "cup pure maple syrup"
           }
         ],
         "reviews": [
           {
-            "review": "REVIEW",
+            "review": "Really loved this sweet, gingery chai. I added peppercorns and cloves to the mix and boiled the hecky out of the ginger and spices. Love that the spices heat balances out the maple-syrup sweetness.",
+            "location": "Vancouver, Canada",
+            "date": "2020-10-29"
+          },
+          {
+            "review": "This turned out really well. I like my chai with a heavier taste, so I reduced the water for more than 20 minutes. I also added extra ginger and a black cardamom pod for more depth and smokiness. I used a mix of whole milk and half and half for a thicker texture, too. I find the comment on 7/11/20 to be ignorant and an unfortunate example of how the noble intention to be inclusive can be warped into painful extremism. As a woman of color, I am repulsed by the thought that only people of a certain culture/ethnicity can be the voice for that culture, as if only Vietnamese people are ever allowed to present an \"authentic\" pho recipe - for example. Or that only an Indian staff-person at BA is allowed to present any Indian recipe. The maple syrup used in this recipe is obviously not traditional, but if one tries the substitution, one may find the flavor to be softer and richer than using palm or cane sugar.",
+            "author": "slumberlyn77",
+            "date": "2020-08-03"
+          },
+          {
+            "review": "So you have a (1) woman who is not Indian (2) writing, and therefore claiming authority on, an Indian recipe while (3) using ingredients that are not even culturally accurate — maple syrup — and (4) providing absolutely no acknowledgement or insight into the culture from which this recipe was taken or inspired by! Do better at representing the BIPOC community and elevating the voices of your BIPOC staff.",
             "author": "Anonymous",
-            "location": "NULL",
-            "date": "2022-03-08"
+            "date": "2020-07-12"
+          },
+          {
+            "review": "OMG, the taste!! It is exquisite. The time to make this fancy warm drink is well worth it. I used almond milk and it turned out fabulous! Thank you for all of the amazing recipes BA. Your team rocks!",
+            "author": "Yesmeen",
+            "location": "Edmonton, Canada",
+            "date": "2020-04-30"
           }
         ],
-        "steps": []
+        "steps": [
+          "Bring ginger, cinnamon, and 3½ cups water to a boil in a medium saucepan over medium-high heat. Lower heat and simmer rapidly, stirring occasionally, until liquid is reduced by a third and very fragrant, about 20 minutes.",
+          "Remove pan from heat, stir in tea and cardamom, and let steep 2 minutes.",
+          "Return pan to medium-high heat and stir in milk and maple syrup. Cook, stirring occasionally and keeping a close watch, until mixture begins to foam up and boil, about 5 minutes. Immediately remove from heat and let sit 5 minutes. Strain chai through a fine-mesh sieve into a teapot or pitcher and serve."
+        ]
       },
       {
         "categories": [
@@ -4034,50 +4101,44 @@
         "imageUrl": "https://assets.bonappetit.com/photos/57aded7bf1c801a1038bccb6/3:4/w_720,c_limit/hot-pink-hibiscus-bubble-tea.jpg",
         "title": "Hot-Pink Hibiscus Bubble Tea",
         "rating": {
-          "count": 10,
-          "value": 3.9
+          "count": "10",
+          "value": "3.9"
         },
-        "dateUploaded": "2022-03-04",
-        "servings": "4 servings",
+        "dateUploaded": "2013-10-02",
+        "servings": "2 servings",
         "people": {
-          "author": ,
-          "photographers": [],
-          "foodStylists": [],
-          "propStylists": []
+          "author": "Paula Disbrowe",
+          "photographers": [
+            "Sarah Flotard"
+          ]
         },
-        "nutritionServings": [
-          {
-            "name": "NAME",
-            "unit": "UNIT",
-            "value": "VALUE"
-          }
-        ],
-        "utensils": [
-          {
-            "name": "NAME",
-            "imageUrl": "IMAGE",
-            "sponsor": {
-              "name": "Amazon",
-              "price": ,
-              "url": "URL"
-            }
-          }
-        ],
         "ingredients": [
           {
-            "count": "NULL",
-            "ingredient": "INGREDIENT"
-          }
-        ],
-        "reviews": [
+            "count": "2",
+            "ingredient": "bags hibiscus tea"
+          },
           {
-            "review": "REVIEW",
-            "author": "Anonymous",
-            "location": "NULL",
-            "date": "2022-03-08"
+            "count": "1",
+            "ingredient": "/4 cup large dried boba tapioca pearls"
+          },
+          {
+            "count": "1",
+            "ingredient": "/2 cup sugar"
+          },
+          {
+            "count": "2",
+            "ingredient": "tablespoons tart cherry juice"
+          },
+          {
+            "ingredient": "Almond milk or sweetened condensed milk"
           }
         ],
-        "steps": []
+        "steps": [
+          "Place tea bags in a small bowl and add 1 cup boiling water; let stand 15 minutes. Discard tea bags and chill tea until cold, about 1 hour.",
+          "Bring 2 cups water to a boil in a small saucepan. Add tapioca, reduce heat, and simmer until tender and just beginning to float, about 3 minutes. Remove from heat, cover, and let stand 10 minutes.",
+          "Meanwhile, combine sugar and ½ cup water in a small, heavy saucepan, and cook over medium heat, stirring to dissolve sugar, about 3 minutes; let cool slightly.",
+          "Drain tapioca and divide evenly between glasses. Combine tea, cherry juice, and 2 Tbsp. simple syrup in a shaker filled with ice; add almond milk or sweetened condensed milk to taste, cover, and shake until outside of shaker is frosty. Divide between glasses and serve with a straw."
+        ]
       },
       {
         "categories": [
@@ -4090,54 +4151,213 @@
           "Passion Fruit",
           "Fruit"
         ],
-        "description": "DESCRIPTION",
+        "description": "Like lemon bars on holiday in the tropics, this two-layer confection is flavored with passion fruit juice (that’s right: You don’t need to seek out whole fruit or purée). By starting the curd on the stovetop, you’ll ensure that it sets quickly when transferred to the oven, which will keep its texture soft yet sliceable. The secret ingredient—okay, it’s cream of tartar—provides a sour counterpoint that keeps these from being cloyingly sweet, and the buttery vanilla shortbread offers just enough heft to anchor the curd while still keeping the bars melt-in-your-mouth tender.",
         "imageUrl": "https://assets.bonappetit.com/photos/61f939492dfbea635d633387/3:4/w_720,c_limit/Passion-Fruit-Bars.jpg",
         "title": "Passion Fruit Bars",
         "rating": {
-          "count": 4,
-          "value": 3.5
+          "count": "15",
+          "value": "3.3"
         },
-        "dateUploaded": "2022-03-04",
-        "servings": "4 servings",
+        "dateIssue": "March 2022",
+        "dateUploaded": "2022-02-08",
+        "servings": "Makes 16",
         "people": {
-          "author": ,
-          "photographers": [],
-          "foodStylists": [],
-          "propStylists": []
+          "author": "Mehreen Karim",
+          "photographers": [
+            "Emma Fishman"
+          ],
+          "foodStylists": [
+            "Pearl Jones"
+          ],
+          "propStylists": [
+            "Stephanie Yeh"
+          ]
         },
-        "nutritionServings": [
-          {
-            "name": "NAME",
-            "unit": "UNIT",
-            "value": "VALUE"
-          }
-        ],
         "utensils": [
           {
-            "name": "NAME",
-            "imageUrl": "IMAGE",
+            "name": "8\" Baking Pan",
+            "imageUrl": "https://assets.bonappetit.com/photos/5dd45c8a4b10ae0009dda7f8/1:1/w_640,c_limit/Basically-Square-Baking-Pan.jpg",
             "sponsor": {
               "name": "Amazon",
-              "price": ,
-              "url": "URL"
+              "price": "25",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCdPVENWNLZBUjCJ5aKxMtBwMrSzvaoRftatM49939wHzmWzoyMaDf9Fhgd38nmaEvW4?cid=61f07195dae687395287fe63&xid=fr1646886157890hhc"
+            }
+          },
+          {
+            "name": "Silicone Spatula",
+            "imageUrl": "https://assets.bonappetit.com/photos/5dcd79d06867540009094710/1:1/w_640,c_limit/BAKING-GIR-Spatula-05-1567.jpg",
+            "sponsor": {
+              "name": "BA Market",
+              "price": "13",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCkqLzv5HXAyCKXnyH9niwzb2FrEWhMsZLkzJuy15yjBs8qeHdWWfWNTiQH8RaFxVZJx?cid=61f07195dae687395287fe63&xid=fr1646886157890fja"
+            }
+          },
+          {
+            "name": "Citrus Juicer",
+            "imageUrl": "https://assets.bonappetit.com/photos/60cb7a8d003da72373591230/1:1/w_640,c_limit/citrus_juicer.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "7",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCkqmamAYoDCW25HByXWdrbHSxzZZQ8CDymSYicb4gm7RQoMajkJgsUBChTzVc7uDmnp?cid=61f07195dae687395287fe63&xid=fr1646886157890dge"
+            }
+          },
+          {
+            "name": "Mesh Sieve",
+            "imageUrl": "https://assets.bonappetit.com/photos/59721c9a5e52a765a3283012/1:1/w_640,c_limit/basically-fine-mesh-sieve.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "13",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCdPUMvA6bhXSdsJZnmPFia1n3zfcQeqe2RVCvrSNgdX3p9FJ4ZQ6tXia22VLZiTm4Yd?cid=61f07195dae687395287fe63&xid=fr1646886157890iij"
+            }
+          },
+          {
+            "name": "Scale",
+            "imageUrl": "https://assets.bonappetit.com/photos/5dcd79d040e0b300083c0f42/1:1/w_640,c_limit/BAKING-Escali-Scale-10-1560.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCdPTsxaw5sHt2SQtGJgDdXxT8LdgRsCF7HGV5XPBPXaCKXY3Y8TePHXBuWT4tyi8TbW?cid=61f07195dae687395287fe63&xid=fr1646886157890jic"
+            }
+          },
+          {
+            "name": "Whisk",
+            "imageUrl": "https://assets.bonappetit.com/photos/60a5250981b25b25c6c8d4af/1:1/w_640,c_limit/product%20whisk.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "10",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmseir9LTWDnsngCNz94mmbti599nXxZB4ynBjSEZGqE9X9bm5Y6d22T2VC7E132tJ?cid=61f07195dae687395287fe63&xid=fr1646886157891edi"
+            }
+          },
+          {
+            "name": "Medium Saucepan",
+            "imageUrl": "https://assets.bonappetit.com/photos/59c521525109d2291a96fd0d/1:1/w_640,c_limit/Basically_Saucepan_Medium.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "39",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbnFLPK53cQZnVRhD5YvqmwYSEb2WTLJc7MzCL6Ciby9nLAk27PrAnoAfjG33zHRsis?cid=61f07195dae687395287fe63&xid=fr1646886157891hic"
+            }
+          },
+          {
+            "name": "Wire Cooling Rack",
+            "imageUrl": "https://assets.bonappetit.com/photos/617c10f1508be16473d3c763/1:1/w_640,c_limit/Nordic_ware_Large_Baking_Cooling_Grid_1_1296x.png",
+            "sponsor": {
+              "name": "Bon Appétit Market",
+              "price": "17",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCkqmb6Ezj9WPjLNgojcdXCCzqUiH28BRBNE6yAewK1h3oiDVvEckA5QdBbaeLuG35xr?cid=61f07195dae687395287fe63&xid=fr1646886157891eic"
             }
           }
         ],
         "ingredients": [
           {
-            "count": "NULL",
-            "ingredient": "INGREDIENT"
+            "count": "1",
+            "ingredient": "cup (125 g) all-purpose flour"
+          },
+          {
+            "count": "½",
+            "ingredient": "cup (100 g) granulated sugar"
+          },
+          {
+            "count": "½",
+            "ingredient": "tsp. Diamond Crystal or ¼ tsp. Morton kosher salt"
+          },
+          {
+            "count": "¼",
+            "ingredient": "tsp. baking powder"
+          },
+          {
+            "count": "½",
+            "ingredient": "cup (1 stick) unsalted butter, melted, slightly cooled"
+          },
+          {
+            "count": "1",
+            "ingredient": "tsp. vanilla extract"
+          },
+          {
+            "count": "¼",
+            "ingredient": "cup (31 g) all-purpose flour"
+          },
+          {
+            "count": "¾",
+            "ingredient": "tsp. cream of tartar"
+          },
+          {
+            "count": "1",
+            "ingredient": "tsp. Diamond Crystal or ½ tsp. Morton kosher salt"
+          },
+          {
+            "count": "4",
+            "ingredient": "large eggs"
+          },
+          {
+            "count": "2",
+            "ingredient": "large egg yolks"
+          },
+          {
+            "count": "1¼",
+            "ingredient": "cups passion fruit juice (preferably Ceres or Goya Passion Fruit Cocktail)"
+          },
+          {
+            "count": "2",
+            "ingredient": "Tbsp. fresh lemon juice"
+          },
+          {
+            "count": "1",
+            "ingredient": "cup (200 g) granulated sugar"
+          },
+          {
+            "count": "2",
+            "ingredient": "Tbsp. unsalted butter"
+          },
+          {
+            "ingredient": "Fresh passion fruit or powdered sugar (for serving; optional)"
           }
         ],
         "reviews": [
           {
-            "review": "REVIEW",
+            "review": "Why are these measurements different than what is in the magazine? Don’t bother with this recipe. It’s not worth the effort. Very greasy shortbread and the ratios are off. You can hardly taste the passion fruit anyway.",
             "author": "Anonymous",
-            "location": "NULL",
-            "date": "2022-03-08"
+            "location": "Chicago",
+            "date": "2022-03-07"
+          },
+          {
+            "review": "This is really not a great recipe -- the curd is flavorless and the shortbread is oily :(",
+            "author": "Anonymous",
+            "location": "New York, NY",
+            "date": "2022-03-02"
+          },
+          {
+            "review": "Gritty crust weeping butter - even after it cooled. The passion fruit curd is too sweet. There are better recipes on the internet which require less effort and yield much better results.",
+            "author": "Anonymous",
+            "location": "New York, NY",
+            "date": "2022-02-25"
+          },
+          {
+            "review": "Yummy, but time consuming, and worth it. Buttery crunchy crust, and I used 100% frozen passionfruit (Whole Foods sells in thee frozen fruit section ), as opposed to juice which is sometimes diluted with other juices, losing tartness. I wasn't sure why flour was used in the curd. I've made curd without it and it's perfect. Some small flour lumps remained which is possibly why this recipe calls for putting the curd through a sieve. This part added on much more time/work. If I make these again, I'm skipping the flour and saving the time, and I'm guessing they'll be just as good. Cant wait to serve them to end my dinner party this Sat! Thank you.",
+            "author": "Alli F.",
+            "location": "Lower Merion, PA",
+            "date": "2022-02-25"
+          },
+          {
+            "review": "@Confused Baker: It stays in the 8X8 pan; only the foil on top is 12X12. The oven temp is reduced to 325 from the original 350 (from step 1)",
+            "author": "Anonymous",
+            "date": "2022-02-21"
+          },
+          {
+            "review": "I feel like there are steps missing such as when do you put the shortbread back into the baking dish that's now 12*12 as well as what should the oven temperature be when baking the curd and shortbread together for 12 minutes. Reduce the oven temp to 325 but from what? When removing foil from the pan, is it the 12*12?",
+            "author": "Confused Baker",
+            "location": "Chicago IL",
+            "date": "2022-02-16"
           }
         ],
-        "steps": []
+        "steps": [
+          "Place a rack in middle of oven and preheat to 350°. Line an 8x8\" baking pan, preferably metal, with overlapping sheets of parchment paper, leaving generous overhang on all sides. Whisk flour, granulated sugar, salt, and baking powder in a large bowl to combine. Add butter and vanilla and mix with a rubber spatula until butter is evenly distributed. The dough should stick together in clumps while still remaining crumbly.",
+          "Transfer dough to prepared pan (you may find it easier to form into a ball first instead of working with clumps—entirely up to you) and press into pan in an even layer, working it all the way to the sides and corners.",
+          "Bake shortbread until top and edges are golden brown, 13–17 minutes. Transfer to a wire rack and let cool.",
+          "While the shortbread is cooling, whisk flour, cream of tartar, and salt in a small bowl to combine. Vigorously whisk eggs, egg yolks, passion fruit juice, lemon juice, and granulated sugar in a large saucepan just to combine. Add dry ingredients and whisk to incorporate.",
+          "Set saucepan over medium heat and cook curd, whisking constantly and making sure to get into the corners of the pan, until it begins to release steam and thicken, 9–12 minutes. Immediately remove pan from heat, add butter, and whisk until smooth.",
+          "Pour hot curd through a fine-mesh sieve onto shortbread crust, using a rubber spatula to scrape off any curd that clings to the bottom of sieve. Spread curd into an even layer, working it all the way to the sides and corners. Tent a sheet of foil over baking dish to cover loosely and bake 12 minutes.",
+          "Reduce oven temperature to 325° and remove foil from pan. Continue to bake bar until sides of curd are set but center still jiggles slightly when pan is gently shaken, 8–10 minutes more. Transfer pan to a wire rack and let bar cool, about 1 hour. Cover pan tightly with plastic wrap and chill at least 3 hours before serving.",
+          "Just before serving, slice passion fruit bars into 2\" squares and top with spoonfuls of fresh passion fruit or dust with powdered sugar with a fine-mesh sieve if desired."
+        ]
       },
       {
         "categories": [
@@ -4155,51 +4375,164 @@
         "description": "To make the lemon-iest lemon cake, work smarter not harder. Instead of upping the amount of fresh fruit, seek out a more intense initial product. Preserved lemons, when puréed into paste and incorporated into the simple batter, bring a powerful citrus flavor and subtle brininess that zest and juice alone could never achieve. Olive oil reinforces the fruity savoriness and works with the sour cream to keep this loaf plush and moist for days. (And before you worry, even though preserved lemons are salt-cured, the final product does not taste salty.)",
         "imageUrl": "https://assets.bonappetit.com/photos/61f93936798718bf6ac4efca/3:4/w_720,c_limit/Preserved-Lemon-Tea-Cake.jpg",
         "title": "Preserved-Lemon Tea Cake",
+        "dateIssue": "March 2022",
         "rating": {
-          "count": 4,
-          "value": 4.3
+          "count": "17",
+          "value": "4.3"
         },
-        "dateUploaded": "2022-03-04",
-        "servings": "4 servings",
+        "dateUploaded": "2022-02-08",
+        "servings": "Makes one 8½x4½\" loaf",
         "people": {
-          "author": ,
-          "photographers": [],
-          "foodStylists": [],
-          "propStylists": []
+          "author": "Zaynab Issa",
+          "photographers": [
+            "Emma Fishman"
+          ],
+          "foodStylists": [
+            "Pearl Jones"
+          ],
+          "propStylists": [
+            "Stephanie Yeh"
+          ]
         },
-        "nutritionServings": [
-          {
-            "name": "NAME",
-            "unit": "UNIT",
-            "value": "VALUE"
-          }
-        ],
         "utensils": [
           {
-            "name": "NAME",
-            "imageUrl": "IMAGE",
+            "name": "Food Processor",
+            "imageUrl": "https://assets.bonappetit.com/photos/5a8455e1668fb87d44d16020/1:1/w_640,c_limit/Basically_Food-Processor%20(1).jpg",
             "sponsor": {
               "name": "Amazon",
-              "price": ,
-              "url": "URL"
+              "price": "49",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCdEzbqdSXsVWyh5ZjhbhF8VLDYt6WGsBgxAfNU1sAqBsbNuGNoJMCfWqMPQCUV6Aorn?cid=61f006cd02a5769a5d522ef5&xid=fr1646886157516hed"
+            }
+          },
+          {
+            "name": "Loaf Pan",
+            "imageUrl": "https://assets.bonappetit.com/photos/5a996b66d418f823c6403b75/1:1/w_640,c_limit/Basically_Loaf-Pan.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "15",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCdF16Lt2yYQmLj4tvujbEK3w2V3TvkRkkdcKGyPrF9HF5e5WFAhbpmnQi8xsPQmc4tg?cid=61f006cd02a5769a5d522ef5&xid=fr1646886157516fdh"
+            }
+          },
+          {
+            "name": "Microplane Grater",
+            "imageUrl": "https://assets.bonappetit.com/photos/5dcf0969ad1a0300083764ac/1:1/w_640,c_limit/Basically-Molly-GiftGuide-Microplane.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "16",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCkqQTrua49zXQVt3D1ssizewnLzoEJRFp7v4TYHBY5BhaqMXH9FwvtFAmJtPukP37yW?cid=61f006cd02a5769a5d522ef5&xid=fr1646886157516iej"
+            }
+          },
+          {
+            "name": "Citrus Juicer",
+            "imageUrl": "https://assets.bonappetit.com/photos/60cb7a8d003da72373591230/1:1/w_640,c_limit/citrus_juicer.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "7",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCkqmamAYoDCW25HByXWdrbHSxzZZQ8CDymSYicb4gm7RQoMajkJgsUBChTzVc7uDmnp?cid=61f006cd02a5769a5d522ef5&xid=fr1646886157516djd"
+            }
+          },
+          {
+            "name": "Silicone Spatula",
+            "imageUrl": "https://assets.bonappetit.com/photos/5dcd79d06867540009094710/1:1/w_640,c_limit/BAKING-GIR-Spatula-05-1567.jpg",
+            "sponsor": {
+              "name": "BA Market",
+              "price": "13",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCkqLzv5HXAyCKXnyH9niwzb2FrEWhMsZLkzJuy15yjBs8qeHdWWfWNTiQH8RaFxVZJx?cid=61f006cd02a5769a5d522ef5&xid=fr1646886157516gdf"
+            }
+          },
+          {
+            "name": "Wire Cooling Rack",
+            "imageUrl": "https://assets.bonappetit.com/photos/617c10f1508be16473d3c763/1:1/w_640,c_limit/Nordic_ware_Large_Baking_Cooling_Grid_1_1296x.png",
+            "sponsor": {
+              "name": "Bon Appétit Market",
+              "price": "17",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCkqmb6Ezj9WPjLNgojcdXCCzqUiH28BRBNE6yAewK1h3oiDVvEckA5QdBbaeLuG35xr?cid=61f006cd02a5769a5d522ef5&xid=fr1646886157516jca"
+            }
+          },
+          {
+            "name": "Small Offset Spatula",
+            "imageUrl": "https://assets.bonappetit.com/photos/5dcd79d2fd8bf400082e3c81/1:1/w_640,c_limit/BAKING-Mini-Offset-Spatula-25-1609.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "6",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbnGnibVQB1afPmka1oRsLX2K5DzJtfAQM9S9uKKL1DAxQyng7RPpbtoNJKthnLz1xt?cid=61f006cd02a5769a5d522ef5&xid=fr1646886157516gge"
             }
           }
         ],
         "ingredients": [
           {
-            "count": "NULL",
-            "ingredient": "INGREDIENT"
+            "count": "½",
+            "ingredient": "cup extra-virgin olive oil, plus more for parchment"
+          },
+          {
+            "count": "1",
+            "ingredient": "preserved lemon (about 55 g)"
+          },
+          {
+            "count": "1½",
+            "ingredient": "cups (188 g) all purpose flour"
+          },
+          {
+            "count": "2",
+            "ingredient": "tsp. baking powder"
+          },
+          {
+            "count": "½",
+            "ingredient": "tsp. ground turmeric"
+          },
+          {
+            "count": "3",
+            "ingredient": "large eggs"
+          },
+          {
+            "count": "1",
+            "ingredient": "cup plus 2 Tbsp. (225 g) granulated sugar"
+          },
+          {
+            "count": "½",
+            "ingredient": "cup sour cream"
+          },
+          {
+            "count": "1",
+            "ingredient": "Tbsp. finely grated lemon zest"
+          },
+          {
+            "count": "3",
+            "ingredient": "Tbsp. fresh lemon juice"
+          },
+          {
+            "count": "¾",
+            "ingredient": "cup (83 g) powdered sugar"
+          },
+          {
+            "count": "1",
+            "ingredient": "Tbsp. whole milk"
+          },
+          {
+            "ingredient": "Flaky sea salt"
           }
         ],
         "reviews": [
           {
-            "review": "REVIEW",
-            "author": "Anonymous",
-            "location": "NULL",
-            "date": "2022-03-08"
+            "review": "For the cook seeking preserved lemons, I've found them at well-stocked grocers, as well as World Market, and Amzn. (The jars are pretty small, generally.) I hope that helps. Happy cooking and baking!",
+            "author": "Allison O.",
+            "location": "PNW",
+            "date": "2022-03-05"
+          },
+          {
+            "review": "I want to try this, but I am stumped at the thought of getting my hands on preserved lemons. Should I expect this in my local mega grocery store? Any recommendations for a brand? I've seen Paula Wolfert's recipe for making them, but they involve at least a month's wait. I'd like to make this cake today! TIA.",
+            "author": "Betty Rubble01730",
+            "location": "Bedford, MA",
+            "date": "2022-03-04"
           }
         ],
-        "steps": []
+        "steps": [
+          "Place a rack in middle of oven; preheat to 350°. Line an 8½x4½\" loaf pan, preferably metal, with parchment paper, leaving generous overhang on the long sides, and brush with oil. Cut preserved lemon into quarters; remove any seeds. Transfer to a small food processor and process to form a paste (you can also do this with a mortar and pestle or simply chop and smash with your knife).",
+          "Whisk flour, baking powder, and turmeric in a medium bowl to combine. Beat eggs, granulated sugar, and remaining ½ cup oil in the bowl of a stand mixer fitted with the paddle attachment on medium speed until smooth and incorporated, about 1 minute. Add sour cream and mix to combine. Add preserved-lemon paste, lemon zest, and lemon juice and mix to combine. Reduce speed to low, add dry ingredients, and mix until just combined, about 15 seconds. (Batter can also be mixed together in a large bowl with a whisk.) Scrape batter into prepared pan and smooth top.",
+          "Bake cake until top is golden brown and a tester inserted into the center comes out clean, 50–60 minutes. Transfer pan to a wire rack and let cake cool 15 minutes. Run a knife around sides of pan to loosen and, using parchment paper overhang, lift cake out of pan and onto rack. Peel away parchment paper and discard. Let cake cool completely.",
+          "Meanwhile, whisk powdered sugar and milk in a medium bowl until smooth.",
+          "Transfer cake to a platter or large plate. Using a rubber spatula to help guide glaze, spoon glaze over cake, letting it drip down the sides (you should have a fairly thick coating). Sprinkle sea salt over glaze and let cake sit until glaze is set, about 30 minutes."
+        ]
       },
       {
         "categories": [
@@ -4218,52 +4551,69 @@
         "description": "We will avoid all Sex and the City references here, but the fact remains: This cocktail is classic for a reason.",
         "imageUrl": "https://assets.bonappetit.com/photos/57acbfc8f1c801a1038bc722/3:4/w_720,c_limit/cosmopolitan.jpg",
         "title": "Cosmopolitan",
+        "dateIssue": "March 2016",
+        "timeEntires": [
+          {
+            "name": "Cooking Time",
+            "value": "1 hour"
+          },
+          {
+            "name": "Total Time",
+            "value": "1 hour"
+          }
+        ],
         "rating": {
-          "count": 32,
-          "value": 3.9
+          "count": "34",
+          "value": "3.8"
         },
         "tag": "Quick",
-        "dateUploaded": "2022-03-04",
-        "servings": "4 servings",
+        "dateUploaded": "2022-04-19",
+        "servings": "Makes 1 Servings",
         "people": {
-          "author": ,
-          "photographers": [],
-          "foodStylists": [],
-          "propStylists": []
+          "author": "Chris Morocco",
+          "photographers": [
+            "Ted Cavanaugh"
+          ]
         },
-        "nutritionServings": [
-          {
-            "name": "NAME",
-            "unit": "UNIT",
-            "value": "VALUE"
-          }
-        ],
-        "utensils": [
-          {
-            "name": "NAME",
-            "imageUrl": "IMAGE",
-            "sponsor": {
-              "name": "Amazon",
-              "price": ,
-              "url": "URL"
-            }
-          }
-        ],
         "ingredients": [
           {
-            "count": "NULL",
-            "ingredient": "INGREDIENT"
+            "count": "2",
+            "ingredient": "ounces vodka"
+          },
+          {
+            "count": "1",
+            "ingredient": "ounce cranberry juice cocktail"
+          },
+          {
+            "count": "¾",
+            "ingredient": "ounce fresh lime juice"
+          },
+          {
+            "count": "¾",
+            "ingredient": "ounce triple sec"
+          },
+          {
+            "ingredient": "Orange twist (for serving)"
           }
         ],
         "reviews": [
           {
-            "review": "REVIEW",
+            "review": "Yummy! Love cosmos.",
+            "author": "Speek",
+            "location": "Colorado",
+            "date": "2021-09-21"
+          },
+          {
+            "review": "This is a worthless drink. I rate 2/5 however your system would only allow a bogus 5 star!. Tastes like the 5 cent popcicle of yesteryear.",
             "author": "Anonymous",
-            "location": "NULL",
-            "date": "2022-03-08"
+            "location": "Nebraska",
+            "date": "2021-04-15"
           }
         ],
-        "steps": []
+        "steps": [
+          "Combine vodka, cranberry juice, lime juice, and triple sec in a cocktail shaker. Fill shaker with ice, cover, and shake vigorously until outside of shaker is very cold, about 20 seconds.",
+          "Strain cocktail through a Hawthorne strainer or a slotted spoon into a martini glass. Garnish with orange twist."
+        ]
       },
       {
         "categories": [
@@ -4287,51 +4637,202 @@
         "imageUrl": "https://assets.bonappetit.com/photos/5f48ef0f683772f4cb97e816/3:4/w_720,c_limit/Basically-ZucchiniPasta05.jpg",
         "title": "Creamy Lemon Zucchini Pasta",
         "rating": {
-          "count": 135,
-          "value": 4.6
+          "count": "137",
+          "value": "4.6"
         },
         "tag": "Easy",
-        "dateUploaded": "2022-03-04",
+        "dateUploaded": "2020-08-30",
         "servings": "4 servings",
         "people": {
-          "author": ,
-          "photographers": [],
-          "foodStylists": [],
-          "propStylists": []
+          "author": "Sarah Jampel",
+          "photographers": [
+            "Emma Fishman"
+          ],
+          "foodStylists": [
+            "Rebecca Jurkevich"
+          ]
         },
-        "nutritionServings": [
-          {
-            "name": "NAME",
-            "unit": "UNIT",
-            "value": "VALUE"
-          }
-        ],
         "utensils": [
           {
-            "name": "NAME",
-            "imageUrl": "IMAGE",
+            "name": "Chef's Knife",
+            "imageUrl": "https://assets.bonappetit.com/photos/5f3d7774b4b3538eb4dc4f93/1:1/w_640,c_limit/Basically-gift-guide-2017-Victorinox-Chef.jpg",
             "sponsor": {
               "name": "Amazon",
-              "price": ,
-              "url": "URL"
+              "price": "34.53",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsePzcnjSNojcExKfoYuf2Bo8CjcWLivgJjQ7kJW6pSiSPG3DxLjSFevzZwe72zmJ?cid=5f4830095c43e3c9e13b2f26&xid=fr1646888061887cjc"
+            }
+          },
+          {
+            "name": "Dutch Oven",
+            "imageUrl": "https://assets.bonappetit.com/photos/5a7490a05736e36c6bb6a23e/1:1/w_640,c_limit/Basically_Dutch-Oven-Large-with-Lid.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "80",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsedj4MPoD5E3qUsenzmqst8DhKsrszGFFtx8gq8yPpUrNemjH3MrZuLSZaec7XHF?cid=5f4830095c43e3c9e13b2f26&xid=fr1646888061887hje"
+            }
+          },
+          {
+            "name": "Large Bowl",
+            "imageUrl": "https://assets.bonappetit.com/photos/59690d9a51b3be287d7816e1/1:1/w_640,c_limit/basically-equipment-large-bowl.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "18",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsePsgv4jgKar6XijnCLAi4c4P9h37yHqqUapziue2kgMS4eN3LbNhFLDvh7H1ynH?cid=5f4830095c43e3c9e13b2f26&xid=fr1646888061887gfg"
+            }
+          },
+          {
+            "name": "Measuring Cups",
+            "imageUrl": "https://assets.bonappetit.com/photos/6176f8adfcfe3c4f641ab098/1:1/w_640,c_limit/Bamboozle_-_Measuring_Cup_Set_1_900x.jpeg",
+            "sponsor": {
+              "name": "Bon Appétit Market",
+              "price": "18",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsj6DSUHAdpskaaiLT1hZJrHAuGmoQ4tZnFzkmLJYkyuyUzuiT7kiaSTQELYdC7fe?cid=5f4830095c43e3c9e13b2f26&xid=fr1646888061887ijh"
+            }
+          },
+          {
+            "name": "Large Pot",
+            "imageUrl": "https://assets.bonappetit.com/photos/596938717654ad3411665279/1:1/w_640,c_limit/basically-equipment-large-pot.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "55",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsePu89zrtEVdnnGmhJCnfaR4K6fFrA9iG8F2RkThLkTJFehKHy22j28BNNwCoMP6?cid=5f4830095c43e3c9e13b2f26&xid=fr1646888061887gbe"
+            }
+          },
+          {
+            "name": "Measuring Spoons",
+            "imageUrl": "https://assets.bonappetit.com/photos/6176f85dfcfe3c4f641ab096/1:1/w_640,c_limit/Bamboozle_-_Measuring_Spoon_Set_1080x.jpeg",
+            "sponsor": {
+              "name": "Bon Appétit Market",
+              "price": "10",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsjL7zFd1VZg1c8kdtNvsG7twwxaXh11A44tWUpgKtfxNBCGmUwHpZWMJKDnXRaED?cid=5f4830095c43e3c9e13b2f26&xid=fr1646888061887gbi"
+            }
+          },
+          {
+            "name": "Cutting Board",
+            "imageUrl": "https://assets.bonappetit.com/photos/59693b227102712b68401a8c/1:1/w_640,c_limit/basically-equipment-cutting-board.jpg",
+            "sponsor": {
+              "name": "IKEA",
+              "price": "10",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsePzcUAqT5KYR9jmBi7u2WiPA7b52oYXgb65uX32u5zVAmCqFYg6TfHMVEi8EWm3?cid=5f4830095c43e3c9e13b2f26&xid=fr1646888061887dbi"
+            }
+          },
+          {
+            "name": "Box Grater",
+            "imageUrl": "https://assets.bonappetit.com/photos/59aed2a835530064b1ea599a/1:1/w_640,c_limit/Bssically_Cheese-Grater.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "13",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbnETjVD6hJEHcwqmXPEcGnmZ7XTW7WP9kjZNriNX76tZjTw4RcAe9nzoL51r5u3Yb2?cid=5f4830095c43e3c9e13b2f26&xid=fr1646888061887icb"
+            }
+          },
+          {
+            "name": "Tongs",
+            "imageUrl": "https://assets.bonappetit.com/photos/5a1eddec2479441876ab9959/1:1/w_640,c_limit/Basically_Tongs.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "13",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsePu8Y3B7K5G4cFmneVqqJNvPgsmfJEFejzaPQQWMnt7Y8L64Tuvzjahsb2382jz?cid=5f4830095c43e3c9e13b2f26&xid=fr1646888061887jgd"
+            }
+          },
+          {
+            "name": "Wooden Spoon",
+            "imageUrl": "https://assets.bonappetit.com/photos/596940436c75df51bc0b91c0/1:1/w_640,c_limit/basically-equipment-wooden-spoon.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "6",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmseir9Q44EJYVvP7yG1yxFWWMTcsBFkXfg99oWSFH4TfoDvsfm6VcPJCGM9i2xv3u?cid=5f4830095c43e3c9e13b2f26&xid=fr1646888061887eii"
+            }
+          },
+          {
+            "name": "Glass Measuring Cup",
+            "imageUrl": "https://assets.bonappetit.com/photos/59d7daa6a3542e7d35aabb76/1:1/w_640,c_limit/Basically_Glass-Measuring-2-Cups.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "19.99",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbnFpamrhsGvnzMp9nhN3TGMAyn4AnWsSXHQswg9oAavKfXeBBxeqdh4B94dPf8mTmw?cid=5f4830095c43e3c9e13b2f26&xid=fr1646888061887ahb"
             }
           }
         ],
         "ingredients": [
           {
-            "count": "NULL",
-            "ingredient": "INGREDIENT"
+            "count": "2",
+            "ingredient": "lb. zucchini or summer squash (4–6)"
+          },
+          {
+            "count": "1",
+            "ingredient": "large shallot or ½ small onion"
+          },
+          {
+            "count": "4",
+            "ingredient": "large garlic cloves"
+          },
+          {
+            "count": "3",
+            "ingredient": "Tbsp. extra-virgin olive oil"
+          },
+          {
+            "count": "¼",
+            "ingredient": "tsp. crushed red pepper flakes"
+          },
+          {
+            "count": "2",
+            "ingredient": "tsp. Diamond Crystal or 1¼ tsp. Morton kosher salt"
+          },
+          {
+            "ingredient": "Freshly ground black pepper"
+          },
+          {
+            "count": "12",
+            "ingredient": "oz. spaghetti, linguine, bucatini, or other long pasta"
+          },
+          {
+            "count": "1",
+            "ingredient": "lemon"
+          },
+          {
+            "count": "½",
+            "ingredient": "oz. Parmesan, plus more for serving"
+          },
+          {
+            "count": "½",
+            "ingredient": "cup (lightly packed) basil or mint leaves"
+          },
+          {
+            "count": "½",
+            "ingredient": "cup heavy cream"
           }
         ],
         "reviews": [
           {
-            "review": "REVIEW",
-            "author": "Anonymous",
-            "location": "NULL",
-            "date": "2022-03-08"
+            "review": "Phenomenal dish, after making the original I made a vegan version and it was still amazing (albeit not quite as good) but, shout out to trader Joes for the dairy free parmesan and silk for the dairy free heavy cream.",
+            "author": "TamgentFarmer",
+            "location": "Modesto, CA",
+            "date": "2022-02-22"
+          },
+          {
+            "review": "Hard not to gush about this one. So perfect. Like other reviewers I didn’t add cream but I did start with a little bacon and had this with spaghettini and fresh basil and a splash of peas. It was sooooooo goooood! Bookmarked for future. What a great way to use up zucchini’s!",
+            "author": "Marnie",
+            "location": "Erin, ON",
+            "date": "2022-01-06"
+          },
+          {
+            "review": "I have made this so many times.. I never add the cream.. I like cream, I just don’t think this pasta needs it..The lemon really kicks it up. If I have basil I add a little. If I have pine nuts, I toast them and add them.. a tlittle bit of prosciutto might be good also…one of my favorite simple recipes",
+            "author": "Katy",
+            "location": "Los Cabos",
+            "date": "2022-01-03"
           }
         ],
-        "steps": []
+        "steps": [
+          "Bring a large pot of water to a boil and salt heavily.",
+          "Meanwhile, place a clean kitchen towel in a large bowl (or on a large cutting board). Trim 2 lb. zucchini or summer squash (4–6), then grate on the large holes of a box grater directly into towel. Peel 1 large shallot and grate on the large holes of grater into towel. Peel 4 large garlic cloves and grate on the small holes of grater into towel.",
+          "Gather ends of towel together, then squeeze over bowl (or the sink) with all your might to extract water from the zucchini. Squeeze until it’s hard to get out any more liquid. You should have extracted about ⅔ cup zucchini liquid, just FYI; discard.",
+          "Heat 3 Tbsp. extra-virgin olive oil in a medium Dutch oven or very large skillet over medium-high. Add ¼ tsp. crushed red pepper flakes and cook, stirring, until fragrant, about 30 seconds. Add zucchini mixture (unwrap the balled-up towel over the pot for easiest transfer) and 2 tsp. Diamond Crystal or 1¼ tsp. Morton kosher salt and stir to coat. Season generously with freshly ground black pepper. Cook, stirring occasionally, until zucchini mixture is jammy, thick, and starting to stick to bottom of pot, 15–20 minutes.",
+          "When the zucchini has been cooking 5–10 minutes, add 12 oz. spaghetti, linguine, bucatini, or other long pasta to pot of boiling water and cook until al dente. Scoop out 2 cups pasta cooking liquid and set aside.",
+          "Meanwhile, juice 1 lemon into a small bowl. Grate ½ oz. Parmesan on the small holes of grater (you should have about ¼ cup; you can also use ¼ cup pre-grated Parmesan). Very coarsely tear or chop ½ cup (lightly packed) basil or mint leaves.",
+          "Using tongs, transfer pasta to pot with zucchini—it’s okay if some water clings to it. Reduce heat to medium-low, add ½ cup pasta cooking liquid and ½ cup heavy cream, and stir to combine. Add cheese, pour another ½ cup pasta cooking liquid over top, and cook, stirring vigorously with tongs or a wooden spoon and add more pasta cooking liquid if needed, until a creamy sauce that coats pasta forms, 2–3 minutes.",
+          "Remove pasta from heat and stir in 2 Tbsp. lemon juice. Taste and season with more salt and black pepper and add more lemon juice (you may want to add an additional 1 Tbsp.). Stir in most of the herbs.",
+          "Serve pasta topped with more grated Parmesan and remaining herbs."
+        ]
       },
       {
         "categories": [
@@ -4346,51 +4847,70 @@
         "description": "The flavor inspiration for this recipe was Häagen-Dazs coffee ice cream mixed with burned caramel. Baking the crème caramel in a water bath is key for achieving that barely set, dense, and luscious consistency. And the lemon juice will help prevent your caramel from crystallizing. This recipe is from Where Cooking Begins by Carla Lalli Music.",
         "imageUrl": "https://assets.bonappetit.com/photos/5c5de7c033a51d5ba1cac9a5/3:4/w_720,c_limit/Coffee-Cre%CC%80me-Caramel.jpg",
         "title": "Coffee Crème Caramel",
+        "dateIssue": "March 2019",
         "rating": {
-          "count": 23,
-          "value": 3.8
+          "count": "25",
+          "value": "3.9"
         },
-        "dateUploaded": "2022-03-04",
-        "servings": "4 servings",
+        "dateUploaded": "2021-06-19",
+        "servings": "8 servings",
         "people": {
-          "author": ,
-          "photographers": [],
-          "foodStylists": [],
-          "propStylists": []
+          "author": "Carla Lalli Music",
+          "photographers": [
+            "Gentl",
+            "Hyers"
+          ],
+          "foodStylists": [
+            "Susie Theodorou"
+          ],
+          "propStylists": [
+            "Nina Lalli"
+          ]
         },
-        "nutritionServings": [
-          {
-            "name": "NAME",
-            "unit": "UNIT",
-            "value": "VALUE"
-          }
-        ],
-        "utensils": [
-          {
-            "name": "NAME",
-            "imageUrl": "IMAGE",
-            "sponsor": {
-              "name": "Amazon",
-              "price": ,
-              "url": "URL"
-            }
-          }
-        ],
         "ingredients": [
           {
-            "count": "NULL",
-            "ingredient": "INGREDIENT"
+            "count": "2½",
+            "ingredient": "cups whole milk"
+          },
+          {
+            "count": "¼",
+            "ingredient": "cup coffee beans, coarsely chopped"
+          },
+          {
+            "count": "1",
+            "ingredient": "wide strip of lemon zest"
+          },
+          {
+            "count": "½",
+            "ingredient": "cup plus ⅔ cup sugar"
+          },
+          {
+            "count": "1",
+            "ingredient": "vanilla bean, split lengthwise"
+          },
+          {
+            "count": "1",
+            "ingredient": "tsp. fresh lemon juice"
+          },
+          {
+            "count": "6",
+            "ingredient": "large eggs"
           }
         ],
         "reviews": [
           {
-            "review": "REVIEW",
-            "author": "Anonymous",
-            "location": "NULL",
-            "date": "2022-03-08"
+            "review": "As many people point out, the cooking time is a little over-kill. 50 minutes seems to be the sweet spot. If you have an old oven like me, then you'll also need to increase the cooking temperature (325 F is just waaaay too low) . A big tip to know when it's done: if you see that the top is starting to change color (to a golden brown) take it out immediately! If you see bubbles then you might have over cooked it, it will develop a skin on the bottom that is not pleasant to eat (but the rest of the cake is still okay-just not ideal). I've made this a few times. Another tip while making the caramel, if you add more than 1 tablespoon of lemon juice, then flan will have more of a lemon drop flavor (which isn't bad, but it over-powers the coffee flavor). You could do a lemon-flavored flan with this method without the coffee beans. The flan will always have a dull gray-ish color to it, hence the coffee beans, (which is not typical for flans) but I don't think it takes away from the texture or flavor. It just looks unusual for this dish.",
+            "author": "Big Chungus",
+            "location": "Georgia",
+            "date": "2021-01-21"
           }
         ],
-        "steps": []
+        "steps": [
+          "Combine milk, coffee, lemon zest, and ½ cup sugar in a small saucepan. Scrape in vanilla seeds; add pod. Bring to a gentle simmer over medium heat. Remove from heat, cover, and let sit 30 minutes.",
+          "Preheat oven to 325°. Place a 9\" pie dish or 1½-qt. loaf pan next to the stove. Cook lemon juice, remaining ⅔ cup sugar, and ¼ cup water in a small saucepan over medium-low heat, stirring constantly, until sugar dissolves, about 5 minutes. Do not rush this step; if liquid boils before sugar dissolves, the caramel will never darken. Once syrup turns clear, stop stirring and increase heat to medium. Cook, swirling pan every few minutes, until caramel is deep mahogany and wisps of smoke appear. Immediately pour into pie dish. Quickly tilt pan to coat bottom and a bit of the way up the sides with caramel. Set inside a roasting pan or other ovenproof dish with high sides.",
+          "Whisk eggs in a medium bowl to break them up a bit. Reheat coffee mixture until steaming, then pour into eggs, whisking constantly to combine. Pour through a fine-mesh sieve into caramel-lined dish. Transfer to oven and pour enough boiling water into roasting pan to come halfway up sides of dish. Bake until custard is set but still jiggles a bit at the very center, about 1½ hours. Let cool in water bath 30 minutes. Remove dish, cover with plastic wrap, and chill crème caramel until set, at least 4 hours and up to 2 days.",
+          "To unmold, run a thin-bladed knife around edges of dish, making sure tip of knife stays flush against bottom of dish. Invert a large plate over dish, then quickly flip. Slowly lift off dish; crème caramel should slide out. If not, tap plate against countertop until it does. Serve in slices with caramel spooned over."
+        ]
       },
       {
         "categories": [
@@ -4414,52 +4934,88 @@
         "description": "These cheesy, green-y, and utterly satisfying chickpea pancakes were inspired by Healthyish contributor Aliza Abarbanel’s favorite work-from-home comfort lunch. “I’ve filled these pancakes with just about every leftover in the fridge, from cooked greens to roasted mushrooms to marinated lentils, but melty cheese remains a constant,” she says. Gluten-free and packed with protein, chickpea flour pancakes come in many variations across the world, from Indian besan chilla to French socca to Italian farinata. If you don’t feel like or have time to make pancake batter during your lunch break (though we highly recommend it!) large flour or alt-flour tortillas work wonderfully as a substitute; just fold the cooked greens and cheese inside the tortillas and heat directly in the skillet to melt the cheese.",
         "imageUrl": "https://assets.bonappetit.com/photos/601de206fa147fe6ff9102db/3:4/w_720,c_limit/Lunch-Chickpea-Pancakes-greens-cheese.jpg",
         "title": "Chickpea Pancakes With Greens and Cheese",
+        "dateIssue": "March 2021",
         "rating": {
-          "count": 84,
-          "value": 4.6
+          "count": "85",
+          "value": "4.5"
         },
         "tag": "Quick",
-        "dateUploaded": "2022-03-04",
+        "dateUploaded": "2021-02-09",
         "servings": "4 servings",
         "people": {
-          "author": ,
-          "photographers": [],
-          "foodStylists": [],
-          "propStylists": []
+          "author": "Chris Morocco",
+          "photographers": [
+            "Laura Murray"
+          ],
+          "foodStylists": [
+            "Susie Theodorou"
+          ]
         },
-        "nutritionServings": [
-          {
-            "name": "NAME",
-            "unit": "UNIT",
-            "value": "VALUE"
-          }
-        ],
-        "utensils": [
-          {
-            "name": "NAME",
-            "imageUrl": "IMAGE",
-            "sponsor": {
-              "name": "Amazon",
-              "price": ,
-              "url": "URL"
-            }
-          }
-        ],
         "ingredients": [
           {
-            "count": "NULL",
-            "ingredient": "INGREDIENT"
+            "count": "½",
+            "ingredient": "cup chickpea flour"
+          },
+          {
+            "count": "3",
+            "ingredient": "Tbsp. plus 4 tsp. olive oil, divided"
+          },
+          {
+            "ingredient": "Kosher salt"
+          },
+          {
+            "count": "½",
+            "ingredient": "medium red onion, thinly sliced"
+          },
+          {
+            "count": "4",
+            "ingredient": "garlic cloves, smashed"
+          },
+          {
+            "count": "1",
+            "ingredient": "cup brussels sprouts, thinly sliced"
+          },
+          {
+            "count": "1",
+            "ingredient": "small bunch Tuscan kale or other kale, ribs and stems removed, thinly sliced"
+          },
+          {
+            "count": "2",
+            "ingredient": "tsp. hot sauce, plus more for serving"
+          },
+          {
+            "count": "4",
+            "ingredient": "oz. sharp cheddar, coarsely grated"
+          },
+          {
+            "ingredient": "Plain yogurt (for serving)"
           }
         ],
         "reviews": [
           {
-            "review": "REVIEW",
+            "review": "This recipe is wack. The filling is great! I loved it. But I could not make the chickpea pancake work out. I wish there were more tips on how to make it. I tried a few different things but they just got mushy and tore or burnt. Used corn tortillas at the last minute instead, which was really yummy. ",
+            "author": "Genie",
+            "location": "Chicago, IL",
+            "date": "2022-01-05"
+          },
+          {
+            "review": "Similar to the Cromlet recipe from 2017 - still one of my faves. Equal parts flour of choice & liquid of choice, an egg, seasonings.",
+            "author": "JFoxy",
+            "location": "NY, NY",
+            "date": "2021-12-26"
+          },
+          {
+            "review": "The pancake mix was thick and sticky and would not spread anywhere or drip off anything. I kept adding more water hoping it would become a little more runny but it just stayed thick. ",
             "author": "Anonymous",
-            "location": "NULL",
-            "date": "2022-03-08"
+            "location": "Abroad",
+            "date": "2021-12-20"
           }
         ],
-        "steps": []
+        "steps": [
+          "Preheat oven to 350°. Whisk chickpea flour and ½ cup plus 2 Tbsp. cold water in a small bowl. Whisk in 1 Tbsp. oil and a pinch of salt. Let sit at least 10 minutes and up to 1 hour to allow flour to hydrate.",
+          "Meanwhile, heat 2 Tbsp. oil in a large nonstick skillet over medium-high. Add onion, garlic, and brussels sprouts; cook, tossing occasionally, until softened and lightly browned, about 3 minutes. Add kale and cook, tossing often, until tender, about 3 minutes. Add 2 tsp. hot sauce, season with salt, and toss well. Transfer to a medium bowl; wipe out skillet.",
+          "Swirl 1 tsp. oil in skillet to coat; heat over medium-high. Pour ¼ cup batter into center of skillet and swirl to form a thin 6\"–7\"-diameter pancake. Cook until well browned underneath and crispy around edges, about 2 minutes. Flip pancake and cook just until second side is lightly browned, about 1 minute. Transfer to a rimmed baking sheet. Repeat process with remaining batter and 3 tsp. oil to make 4 total. Divide vegetables between 2 pancakes and top with cheese and remaining 2 pancakes. Bake until cheese is melted, 6–8 minutes. Serve topped with yogurt and more hot sauce."
+        ]
       },
       {
         "categories": [
@@ -4487,51 +5043,51 @@
         "description": "No booze required for this soothing green tea toddy. But if you do want an extra dose of warmth, we like this with smoky mezcal.",
         "imageUrl": "https://assets.bonappetit.com/photos/5dc99dd5fd8bf400082e3c5a/3:4/w_720,c_limit/Soberish-Tea-Totaler-Toddy2.jpg",
         "title": "Tea-Totaler’s Toddy",
+        "dateIssue": "December 2019",
         "rating": {
-          "count": 2,
-          "value": 4.0
+          "count": "2",
+          "value": "4.0"
         },
-        "dateUploaded": "2022-03-04",
-        "servings": "4 servings",
+        "dateUploaded": "2019-11-19",
+        "servings": "10–12 servings",
         "people": {
-          "author": ,
-          "photographers": [],
-          "foodStylists": [],
-          "propStylists": []
+          "author": "Anna Stockwell and Sohla El-Waylly",
+          "photographers": [
+            "Alex Lau"
+          ],
+          "foodStylists": [
+            "Pearl Jones"
+          ],
+          "propStylists": [
+            "Sophie Strangio"
+          ]
         },
-        "nutritionServings": [
-          {
-            "name": "NAME",
-            "unit": "UNIT",
-            "value": "VALUE"
-          }
-        ],
-        "utensils": [
-          {
-            "name": "NAME",
-            "imageUrl": "IMAGE",
-            "sponsor": {
-              "name": "Amazon",
-              "price": ,
-              "url": "URL"
-            }
-          }
-        ],
         "ingredients": [
           {
-            "count": "NULL",
-            "ingredient": "INGREDIENT"
-          }
-        ],
-        "reviews": [
+            "count": "6",
+            "ingredient": "jasmine green tea bags"
+          },
           {
-            "review": "REVIEW",
-            "author": "Anonymous",
-            "location": "NULL",
-            "date": "2022-03-08"
+            "count": "¾",
+            "ingredient": "cup honey"
+          },
+          {
+            "count": "12",
+            "ingredient": "sprigs mint, divided"
+          },
+          {
+            "count": "6",
+            "ingredient": "lemons, divided"
+          },
+          {
+            "count": "12",
+            "ingredient": "oz. mezcal (optional)"
           }
         ],
-        "steps": []
+        "steps": [
+          "Bring 3 quarts water to a boil in a medium pot. Remove from heat and add tea bags, honey, and 6 mint sprigs. Cover and let sit 8 minutes. Using a slotted spoon, remove tea bags and mint, gently pressing with a spoon to extract as much liquid as possible.",
+          "Meanwhile, slice 4 lemons in half and squeeze juice into a small bowl. Slice remaining 2 lemons into rounds; remove seeds. Add lemon juice, lemon slices, and remaining 6 mint sprigs to hot toddy. Ladle into mugs and spike with 1 oz. mezcal if desired."
+        ]
       },
       {
         "categories": [
@@ -4550,51 +5106,118 @@
         "description": "It turns out the Paloma, not the Margarita, is Mexico's most beloved cocktail.",
         "imageUrl": "https://assets.bonappetit.com/photos/57ae3888f1c801a1038bd14b/3:4/w_720,c_limit/paloma.jpg",
         "title": "Paloma",
+        "dateIssue": "January 2013",
         "rating": {
-          "count": 266,
-          "value": 4.1
+          "count": "266",
+          "value": "4.1"
         },
-        "dateUploaded": "2022-03-04",
-        "servings": "4 servings",
+        "dateUploaded": "2012-12-09",
+        "servings": "Makes 1 Servings",
         "people": {
-          "author": ,
-          "photographers": [],
-          "foodStylists": [],
-          "propStylists": []
+          "author": "Bon Appétit Test Kitchen",
+          "photographers": [
+            "Danny Kim"
+          ]
         },
         "nutritionServings": [
           {
-            "name": "NAME",
-            "unit": "UNIT",
-            "value": "VALUE"
-          }
-        ],
-        "utensils": [
+            "name": "Calories",
+            "unit": "kcal",
+            "value": " 190"
+          },
           {
-            "name": "NAME",
-            "imageUrl": "IMAGE",
-            "sponsor": {
-              "name": "Amazon",
-              "price": ,
-              "url": "URL"
-            }
+            "name": "Fat",
+            "unit": "g",
+            "value": " 0"
+          },
+          {
+            "name": "Saturated Fat",
+            "unit": "g",
+            "value": " 0"
+          },
+          {
+            "name": "Cholesterol",
+            "unit": "mg",
+            "value": " 0"
+          },
+          {
+            "name": "Carbohydrates",
+            "unit": "g",
+            "value": " 13"
+          },
+          {
+            "name": "Dietary Fiber",
+            "unit": "g",
+            "value": " 0"
+          },
+          {
+            "name": "Total Sugars",
+            "unit": "g",
+            "value": " 10"
+          },
+          {
+            "name": "Protein",
+            "unit": "g",
+            "value": " 0"
+          },
+          {
+            "name": "Sodium",
+            "unit": "mg",
+            "value": " 240"
           }
         ],
         "ingredients": [
           {
-            "count": "NULL",
-            "ingredient": "INGREDIENT"
+            "ingredient": "Kosher salt"
+          },
+          {
+            "count": "1",
+            "ingredient": "grapefruit wedge"
+          },
+          {
+            "count": "¼",
+            "ingredient": "cup fresh grapefruit juice"
+          },
+          {
+            "count": "1",
+            "ingredient": "tablespoon fresh lime juice"
+          },
+          {
+            "count": "1",
+            "ingredient": "teaspoon sugar"
+          },
+          {
+            "count": "¼",
+            "ingredient": "cup mescal or tequila"
+          },
+          {
+            "count": "¼",
+            "ingredient": "cup club soda"
           }
         ],
         "reviews": [
           {
-            "review": "REVIEW",
+            "review": "The classic Mexican Paloma is much simpler: 2 ounces tequila, (recommended: reposado; and 1 to 3 ounces) 1 bottle Squirt grapefruit soda There’s nothing complicated about the paloma. At its core, it’s just tequila and Squirt [grapefruit soda]. That’s it. And that’s what makes it so great.” It’s rare to find a paloma listed on a bar menu in Mexico. They are simply part of relaxed social gatherings, where you set out tequila bottles on a table along with Squirt (and maybe an alternative of Topo Chico mineral water and a few limes to make a Ranch Water) for self-service. “When I want a paloma, I like that exact bracing taste and the sugar rush to go with the bold taste of tequila. Nothing compares.” There is nothing precious about pouring up a Squirt and tequila. It’s the equivalent of a basic rum and Coke.",
+            "author": "Steve",
+            "location": "Houston, TX",
+            "date": "2021-07-21"
+          },
+          {
+            "review": "I will make it quick. July 5th at 7pm. Wait an hour and food hasn’t come out yet. Not a single time the waiter comes back ask us about our drinks or want more. 🤦🏻‍♂️",
+            "author": "Unhappy Customer",
+            "location": "Milwaukee WI",
+            "date": "2021-07-06"
+          },
+          {
+            "review": "Delicious. I used a teaspoon of simple syrup infused with mint and I used flavored Vodka - hibiscus/grapefruti. no salt around the rim. I do think next time I will chill my glass",
             "author": "Anonymous",
-            "location": "NULL",
-            "date": "2022-03-08"
+            "location": "philly",
+            "date": "2021-05-24"
           }
         ],
-        "steps": []
+        "steps": [
+          "Pour some kosher salt on a plate. Rub half of rim of a highball glass with grapefruit wedge; dip rim of glass in salt. Combine grapefruit juice, lime juice, and sugar in glass; stir until sugar is dissolved. Stir in mescal, add ice, and top off with club soda. Garnish with grapefruit wedge."
+        ]
       },
       {
         "categories": [
@@ -4616,52 +5239,173 @@
         "description": "It’s hard to resist the lure of crispy anything. Here, quick-cooking fillets of fish are slathered in a deeply flavorful combination of miso, butter, and panko, then broiled until the breadcrumbs form a toasty, golden crust. My days as a line cook at Perry St restaurant in New York inspired the technique behind this dish. It was my first job out of culinary school, and in the winter we’d make a similar dish using roast cod topped with a thin sheet of truffle butter reinforced with panko. This is an easier, far more accessible version that’s just as tasty. I use my preferred technique of cooking fish with the skin on (it holds the flesh together as it cooks) yet with no intention of getting it crispy—I just lift the fish away from the skin when it’s time to serve. I find that chasing crispy fish skin is a heartbreaking pursuit, so I don’t even bother. Besides, you won’t miss it with all the texture from the buttery panko business on top. ",
         "imageUrl": "https://assets.bonappetit.com/photos/608acac46863f9a7d9726b13/3:4/w_720,c_limit/Basically-CrispyMisoFish.jpg",
         "title": "Crispy Miso-Butter Fish With Asparagus",
+        "mainDescription": "Level up your weeknight fish routine with a crispy, flavor-packed crust.",
         "rating": {
-          "count": 99,
-          "value": 4.3
+          "count": "100",
+          "value": "4.3"
         },
         "tag": "Easy",
-        "dateUploaded": "2022-03-04",
+        "dateUploaded": "2021-05-09",
         "servings": "4 servings",
         "people": {
-          "author": ,
-          "photographers": [],
-          "foodStylists": [],
-          "propStylists": []
+          "author": "Shilpa Uskokovic",
+          "photographers": [
+            "Isa Zapata"
+          ],
+          "foodStylists": [
+            "Pearl Jones"
+          ]
         },
-        "nutritionServings": [
-          {
-            "name": "NAME",
-            "unit": "UNIT",
-            "value": "VALUE"
-          }
-        ],
         "utensils": [
           {
-            "name": "NAME",
-            "imageUrl": "IMAGE",
+            "name": "Fish Spatula",
+            "imageUrl": "https://assets.bonappetit.com/photos/596ce7a5b85671732e0d55e5/1:1/w_640,c_limit/Basically_Fish-Spatula.jpg",
             "sponsor": {
               "name": "Amazon",
-              "price": ,
-              "url": "URL"
+              "price": "14",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsj6DSo1Aif9S8eozHBrvwMEtdgaCSGztxGhZXLtwvngF9ahubv9d9aVktACJ4Mo1?cid=6092b67113b033296f14a23d&xid=fr1646890785677gff"
+            }
+          },
+          {
+            "name": "8-Inch Chef's Knife",
+            "imageUrl": "https://assets.bonappetit.com/photos/5fa5b88cc162b6f8b8cd0f16/1:1/w_640,c_limit/Basically-Knives-Victorinox.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "47",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCdRaK8JjSep22U8yqhvRwDDMaAQdgs2GSnfMnnifuEdLnwsUZwSTEk18Qoj9VHtgAHx?cid=6092b67113b033296f14a23d&xid=fr1646890785677jhf"
+            }
+          },
+          {
+            "name": "Microplane Grater",
+            "imageUrl": "https://assets.bonappetit.com/photos/5dcf0969ad1a0300083764ac/1:1/w_640,c_limit/Basically-Molly-GiftGuide-Microplane.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "16",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsePtrYbYQUQ8tMEgoYyRJC7QuHfFZ2uEJLB2sy1LeyTRAee6zLKaUhBvLsXrTbM6?cid=6092b67113b033296f14a23d&xid=fr1646890785677jha"
+            }
+          },
+          {
+            "name": "Rimmed Baking Sheet",
+            "imageUrl": "https://assets.bonappetit.com/photos/596940e46c75df51bc0b91c4/1:1/w_640,c_limit/basically-equipment-rimmed-baking-sheet.jpg",
+            "sponsor": {
+              "name": "Bon Appétit Market",
+              "price": "20",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsedj4Mg35L8ML9goMDFHzK3zDyuhuhMBCTCmtenJ3Ua1BTAsNqeXyskDoCq7vyTC?cid=6092b67113b033296f14a23d&xid=fr1646890785677ehj"
+            }
+          },
+          {
+            "name": "Small Bowl",
+            "imageUrl": "https://assets.bonappetit.com/photos/59690da8a0530210d4a24a1f/1:1/w_640,c_limit/basically-equipment-small-bowl.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "13",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsePwjfxaneEu5wD5CfLHQdiGdzJKNa6VyVSRfP43F466RxtmphTdhmcwPFFbsGNc?cid=6092b67113b033296f14a23d&xid=fr1646890785677agh"
+            }
+          },
+          {
+            "name": "Cutting Board",
+            "imageUrl": "https://assets.bonappetit.com/photos/59693b227102712b68401a8c/1:1/w_640,c_limit/basically-equipment-cutting-board.jpg",
+            "sponsor": {
+              "name": "IKEA",
+              "price": "10",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsePzcUAqT5KYR9jmBi7u2WiPA7b52oYXgb65uX32u5zVAmCqFYg6TfHMVEi8EWm3?cid=6092b67113b033296f14a23d&xid=fr1646890785677bbi"
+            }
+          },
+          {
+            "name": "Oxo Stainless Steel Measuring Spoons",
+            "imageUrl": "https://assets.bonappetit.com/photos/608037d806641e4bc6d20faf/1:1/w_640,c_limit/Product-Measuring-spoon.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "11",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCkqQTruahwsk2EdzVmCCmCxMTG6tX2bBTR14FXMZ7XENTmWqvMTgPPCXjvfq3GJp4Ls?cid=6092b67113b033296f14a23d&xid=fr1646890785677hbd"
+            }
+          },
+          {
+            "name": "Measuring Cups",
+            "imageUrl": "https://assets.bonappetit.com/photos/6176f8adfcfe3c4f641ab098/1:1/w_640,c_limit/Bamboozle_-_Measuring_Cup_Set_1_900x.jpeg",
+            "sponsor": {
+              "name": "Bon Appétit Market",
+              "price": "18",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsj6DSUHAdpskaaiLT1hZJrHAuGmoQ4tZnFzkmLJYkyuyUzuiT7kiaSTQELYdC7fe?cid=6092b67113b033296f14a23d&xid=fr1646890785677hjc"
+            }
+          },
+          {
+            "name": "Heavy-Duty Aluminum Foil",
+            "imageUrl": "https://assets.bonappetit.com/photos/598dccafc45f5577baf6289b/1:1/w_640,c_limit/Basically_Aluminum-Foil.jpg",
+            "sponsor": {
+              "name": "Target",
+              "price": "10",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmthMWkPeQxUw3Kg8RQjGp53gkGLCRFPJNry42rv1BYWoFkv13dXckRyqcEFgBFRSg?cid=6092b67113b033296f14a23d&xid=fr1646890785677jia"
             }
           }
         ],
         "ingredients": [
           {
-            "count": "NULL",
-            "ingredient": "INGREDIENT"
+            "count": "1½",
+            "ingredient": "lb. asparagus"
+          },
+          {
+            "count": "2",
+            "ingredient": "tsp. avocado or vegetable oil"
+          },
+          {
+            "ingredient": "Kosher salt"
+          },
+          {
+            "count": "4",
+            "ingredient": "4–6-oz. skin-on arctic char, sea bass, or salmon fillets"
+          },
+          {
+            "count": "5",
+            "ingredient": "Tbsp. unsalted butter, divided"
+          },
+          {
+            "count": "6",
+            "ingredient": "Tbsp. white or yellow miso"
+          },
+          {
+            "count": "1",
+            "ingredient": "Tbsp. plus 1½ tsp. Sriracha"
+          },
+          {
+            "count": "1",
+            "ingredient": "Tbsp. sugar"
+          },
+          {
+            "count": "9",
+            "ingredient": "garlic cloves"
+          },
+          {
+            "count": "1",
+            "ingredient": "3\" piece ginger"
+          },
+          {
+            "count": "⅔",
+            "ingredient": "cup panko"
           }
         ],
         "reviews": [
           {
-            "review": "REVIEW",
+            "review": "I followed the recipe pretty closely, and used light miso (gf) and gf panko. After reading the reviews, I only salted the asparagus lightly, spread a thin layer of the miso butter on the fish, and tossed the asparagus with less butter than pictured. The end result was delicious and different from anything I usually make. I didn’t find the flavour overpowering at all, I think in part because I used light miso, which is milder. I cooked the salmon for a bare 15 minutes and only had to broil for a minute and a half to brown the panko. Salmon was lovely; I think it helped that I got it to room temperature before cooking.",
+            "author": "JaneApp",
+            "date": "2022-02-18"
+          },
+          {
+            "review": "Include printable recipe, please!!!!",
             "author": "Anonymous",
-            "location": "NULL",
-            "date": "2022-03-08"
+            "location": "Alexandria, VA",
+            "date": "2022-02-01"
           }
         ],
-        "steps": []
+        "steps": [
+          "Place a rack in upper third of oven and preheat to 400°. Line a rimmed baking sheet with foil. Line up 1½ lb. asparagus on a cutting board and trim woody ends (about bottom 2\") with a chef’s knife; discard. Slice spears into 1\" lengths and transfer to prepared baking sheet. Drizzle with 2 tsp. avocado or vegetable oil and season with kosher salt. Using your hands, toss well to coat. Push asparagus to one side of baking sheet.",
+          "Pat four 4–6-oz. skin-on arctic char, sea bass, or salmon fillets dry with paper towels. Place, skin side down, on empty half of baking sheet.",
+          "Now, make the miso butter: Place 3 Tbsp. unsalted butter in a small microwave-safe bowl. Microwave on medium power in 20-second intervals until melted. (Alternatively, melt butter in a small skillet over medium.) Add 6 Tbsp. white or yellow miso, 1 Tbsp. plus 1½ tsp. Sriracha, and 1 Tbsp. sugar. Smash and peel 9 garlic cloves. Finely grate on a Microplane into miso butter. Peel one 3\" piece ginger with a spoon; finely grate into butter. Stir to combine.",
+          "Melt remaining 2 Tbsp. unsalted butter in another microwave-safe bowl. Stir in ⅔ cup panko.",
+          "Dollop about two-thirds of miso butter over fish, spreading it into an even layer with spoon. Sprinkle buttered panko over fillets and gently press with your hands to adhere. Roast fish and asparagus until fillets are firm when sides are gently pressed, 15–17 minutes. ",
+          "Heat broiler (to low, if your oven allows). Broil (watching carefully), rotating baking sheet halfway through for even browning, until panko is golden brown, about 3 minutes. Remove baking sheet from oven and immediately drizzle remaining miso butter over asparagus; toss to combine.",
+          "Slide a fish spatula between fish skin and flesh and do your best to gently lift away the fillets (skin won’t be crispy, so it’s best left behind). Serve fish with asparagus."
+        ]
       },
       {
         "categories": [
@@ -4687,52 +5431,154 @@
         "description": "Supermarkets would have you believe it’s always mushroom season. It is—for white buttons, maybe. But the first cool fall days bring feathery maitakes, meaty oysters, and other flavorful varieties worth seeking out at the farmers’ market. Whichever one you pick, all they’ll need is a quick sear in a hot pan before being tossed into a creamy pasta sauce.",
         "imageUrl": "https://assets.bonappetit.com/photos/5d4ddd602c815a00080f9771/3:4/w_720,c_limit/BA-0919-Creamy-Pasta-Crispy-Mushroom-Playbook.jpg",
         "title": "Creamy Pasta with Crispy Mushrooms",
+        "dateIssue": "September 2019",
         "rating": {
-          "count": 277,
-          "value": 4.4
+          "count": "280",
+          "value": "4.4"
         },
         "tag": "Quick",
         "dateUploaded": "2022-03-04",
         "servings": "4 servings",
         "people": {
-          "author": ,
-          "photographers": [],
-          "foodStylists": [],
-          "propStylists": []
+          "author": "Andy Baraghani",
+          "photographers": [
+            "Marcus Nilsson"
+          ],
+          "foodStylists": [
+            "Frances Boswell"
+          ],
+          "propStylists": [
+            "Amy Wilson"
+          ]
         },
-        "nutritionServings": [
-          {
-            "name": "NAME",
-            "unit": "UNIT",
-            "value": "VALUE"
-          }
-        ],
         "utensils": [
           {
-            "name": "NAME",
-            "imageUrl": "IMAGE",
+            "name": "Dutch Oven",
+            "imageUrl": "https://assets.bonappetit.com/photos/5a7490a05736e36c6bb6a23e/1:1/w_640,c_limit/Basically_Dutch-Oven-Large-with-Lid.jpg",
             "sponsor": {
               "name": "Amazon",
-              "price": ,
-              "url": "URL"
+              "price": "80",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsedj4MPoD5E3qUsenzmqst8DhKsrszGFFtx8gq8yPpUrNemjH3MrZuLSZaec7XHF?cid=5e31acafb37f4c00098901d5&xid=fr1646799829417fjb"
+            }
+          },
+          {
+            "name": "Microplane Grater",
+            "imageUrl": "https://assets.bonappetit.com/photos/5dcf0969ad1a0300083764ac/1:1/w_640,c_limit/Basically-Molly-GiftGuide-Microplane.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "16",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCkqQTrua49zXQVt3D1ssizewnLzoEJRFp7v4TYHBY5BhaqMXH9FwvtFAmJtPukP37yW?cid=621ea1d4f62bdce4b6a057c0"
+            }
+          },
+          {
+            "name": "Slotted Spoon",
+            "imageUrl": "https://assets.bonappetit.com/photos/60a51d1681b25b25c6c8d4a7/1:1/w_640,c_limit/Product-spoon.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "10",
+              "discountedPrice": "13",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCkqQrmrCrHTDHadsdzfms4nScEWLtrMPNzBpeUtCefhV9aYbetUmbvgMdUoqmuAT962?cid=6205a0dbd546d35ddf12a8f9&xid=fr1646811836611cdi"
+            }
+          },
+          {
+            "name": "Large Pot",
+            "imageUrl": "https://assets.bonappetit.com/photos/596938717654ad3411665279/1:1/w_640,c_limit/basically-equipment-large-pot.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "55",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsePu89zrtEVdnnGmhJCnfaR4K6fFrA9iG8F2RkThLkTJFehKHy22j28BNNwCoMP6?cid=61f006cd496418bf040a6aab&xid=fr1646806413711chb"
+            }
+          },
+          {
+            "name": "Heatproof Measuring Cup",
+            "imageUrl": "https://assets.bonappetit.com/photos/598b240b33219f41c020b06b/1:1/w_640,c_limit/Basically_Heatproof-measuring-cup.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "18",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmth7dPurFf5C5VufVHyKQJC9yq1Fnt9WpS3nRLF2mt2iEgo8i2nV3eGx8JtS3j9eY?cid=61f006cd629920bf61fe6ccf&xid=fr1646799830294efe"
+            }
+          },
+          {
+            "name": "Tongs",
+            "imageUrl": "https://assets.bonappetit.com/photos/5a1eddec2479441876ab9959/1:1/w_640,c_limit/Basically_Tongs.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "13",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsePu8Y3B7K5G4cFmneVqqJNvPgsmfJEFejzaPQQWMnt7Y8L64Tuvzjahsb2382jz?cid=61f006cd6e9e896c3f22c747&xid=fr1646804248021fhj"
             }
           }
         ],
         "ingredients": [
           {
-            "count": "NULL",
-            "ingredient": "INGREDIENT"
+            "count": "4",
+            "ingredient": "Tbsp. extra-virgin olive oil"
+          },
+          {
+            "count": "1",
+            "ingredient": "lb. mixed mushrooms (such as maitake, oyster, crimini, and/or shiitake), torn into bite-size pieces"
+          },
+          {
+            "ingredient": "Kosher salt"
+          },
+          {
+            "count": "2",
+            "ingredient": "medium shallots, finely chopped"
+          },
+          {
+            "count": "1",
+            "ingredient": "lb. spaghetti or bucatini"
+          },
+          {
+            "count": "½",
+            "ingredient": "cup heavy cream"
+          },
+          {
+            "count": "⅓",
+            "ingredient": "cup finely chopped parsley"
+          },
+          {
+            "ingredient": "Zest and juice of ½ lemon"
+          },
+          {
+            "count": "2",
+            "ingredient": "Tbsp. unsalted butter, cut into pieces"
+          },
+          {
+            "count": "½",
+            "ingredient": "oz. Parmesan, finely grated (about ½ cup), plus more for serving"
+          },
+          {
+            "ingredient": "Freshly ground black pepper"
           }
         ],
         "reviews": [
           {
-            "review": "REVIEW",
+            "review": "Making it for the second time tonight. Using linguine tonight. Last time I used bow ties. It's a great recipe and quite easy. Enjoy!",
+            "author": "Sandie",
+            "location": "Attleboro MA",
+            "date": "2021-11-30"
+          },
+          {
+            "review": "This is delicious. I made it exactly as written, except I used fiorelli in place of the spaghetti/bucatini. It was rich, but not heavy. There’s just enough cream to feel luxurious but not enough to be overwhelming. The lemon added a nice brightness. I was very happy as is, but I feel it could also be changed up easily with simple additions, such as thyme or pancetta. ",
             "author": "Anonymous",
-            "location": "NULL",
-            "date": "2022-03-08"
+            "location": "Halifax, NS",
+            "date": "2022-10-26"
+          },
+          {
+            "review": "How do you save recipes on Bon Appetit? Do I have to go to Epicurious to save?",
+            "author": "Anonymous",
+            "location": "Santa Fe, NM",
+            "date": "2021-10-02"
           }
         ],
-        "steps": []
+        "steps": [
+          "Heat 2 Tbsp. oil in a Dutch oven or other large pot over medium-high. Cook half of mushrooms in a single layer, undisturbed, until edges are brown and starting to crisp, about 3 minutes. Give mushrooms a toss and continue to cook, tossing occasionally, until all sides are brown and crisp, about 5 minutes more. Using a slotted spoon, transfer mushrooms to a plate; season with salt. Repeat with remaining 2 Tbsp. oil and mushrooms and more salt.",
+          "Reduce heat to medium-low and return all of the mushrooms to the pot. Add shallots and cook, stirring often, until shallots are translucent and softened, about 2 minutes.",
+          "Meanwhile, cook pasta in a large pot of boiling salted water, stirring occasionally, until very al dente, about 2 minutes less than package directions.",
+          "Using tongs, transfer pasta to pot with mushrooms and add cream and 1 cup pasta cooking liquid. Increase heat to medium, bring to a simmer, and cook, tossing constantly, until pasta is al dente and liquid is slightly thickened, about 3 minutes.",
+          "Remove pot from heat. Add lemon zest and juice, parsley, butter, ½ oz. Parmesan, and lots of pepper and toss to combine. Taste and season with more salt if needed.",
+          "Divide pasta among bowls and top with more Parmesan."
+        ]
       },
       {
         "categories": [
@@ -4759,52 +5605,86 @@
         "description": "A Sichuan-inspired stir-fry of blistered yet snappy asparagus and crispy pork in an aromatic sauce from Smitten Kitchen’s Deb Perelman. We jump on asparagus the second we see it at the market this time of year, but green beans, snap peas, or any other crisp green spring vegetable would also be great here. Don’t forget a side of chile crisp.",
         "imageUrl": "https://assets.bonappetit.com/photos/5e5e82147cab300008eef67b/3:4/w_720,c_limit/Picky-Eaters-Pork-Asparagus-Stir-Fry-Recipe.jpg",
         "title": "Pork and Asparagus Stir-Fry",
+        "dateIssue": "April 2020",
         "rating": {
-          "count": 73,
-          "value": 4.8
+          "count": "73",
+          "value": "4.8"
         },
         "tag": "Quick",
-        "dateUploaded": "2022-03-04",
+        "dateUploaded": "2020-03-17",
         "servings": "4 servings",
         "people": {
-          "author": ,
-          "photographers": [],
-          "foodStylists": [],
-          "propStylists": []
+          "author": "Deb Perelman",
+          "photographers": [
+            "Laura Murray"
+          ],
+          "foodStylists": [
+            "Rebecca Jurkevich"
+          ]
         },
-        "nutritionServings": [
-          {
-            "name": "NAME",
-            "unit": "UNIT",
-            "value": "VALUE"
-          }
-        ],
-        "utensils": [
-          {
-            "name": "NAME",
-            "imageUrl": "IMAGE",
-            "sponsor": {
-              "name": "Amazon",
-              "price": ,
-              "url": "URL"
-            }
-          }
-        ],
         "ingredients": [
           {
-            "count": "NULL",
-            "ingredient": "INGREDIENT"
+            "count": "3",
+            "ingredient": "tsp. peanut or vegetable oil, divided"
+          },
+          {
+            "count": "2",
+            "ingredient": "lb. asparagus, trimmed, cut on a diagonal into 1"–2" pieces"
+          },
+          {
+            "count": "8",
+            "ingredient": "oz. ground pork"
+          },
+          {
+            "count": "6",
+            "ingredient": "scallions, white and pale green parts only, finely chopped"
+          },
+          {
+            "count": "5",
+            "ingredient": "garlic cloves, finely chopped"
+          },
+          {
+            "count": "1",
+            "ingredient": "2\" piece ginger, peeled, finely chopped"
+          },
+          {
+            "count": "2",
+            "ingredient": "Tbsp. Shaoxing wine (Chinese rice wine) or medium-dry sherry"
+          },
+          {
+            "count": "2",
+            "ingredient": "Tbsp. soy sauce"
+          },
+          {
+            "count": "1",
+            "ingredient": "tsp. toasted sesame oil"
           }
         ],
         "reviews": [
           {
-            "review": "REVIEW",
+            "review": "My whole family loves this recipe. I use broccoli or baby broccoli instead, my kids will eat that sooner than asparagus. We usually do a gojuchang Mayo on the side that adds perfect spice to it. I usually skip the salt and just add a little extra soy sauce to the meat. We double the recipe so we can have leftovers too!! Just do the pork in separate batches. Tonight we did it with spaghetti squash as the base and it added a great texture plus extra veggies! We make this probably once a week, great recipe!",
             "author": "Anonymous",
-            "location": "NULL",
-            "date": "2022-03-08"
+            "location": "Atlanta, Ga",
+            "date": "2022-02-19"
+          },
+          {
+            "review": "This is delicious! It comes together quickly has become part of my weeknight dinner rotation. I use dry sherry instead of the Shaoxing wine. Quite often I forget to purchase scallions and substitute a sliced yellow onion that I blister before the asparagus - I think I like it even better with the onion. I serve with Jasmine rice. ",
+            "author": "EP",
+            "location": "Athens, GA",
+            "date": "2021-04-11"
+          },
+          {
+            "review": "Cut the Salt!!! Too much Salt being specified in these recipes. Not needed. Bad for health.",
+            "author": "Anonymous",
+            "location": "Texas",
+            "date": "2021-03-09"
           }
         ],
-        "steps": []
+        "steps": [
+          "Heat 1 tsp. peanut oil in a large skillet over high. Once pan is hot (oil will be lightly smoking), add half of asparagus and a couple pinches of salt and cook, tossing only once or twice so the pieces have a chance to blister, until crisp-tender and lightly browned, about 4 minutes. Transfer asparagus to a plate. Add 1 tsp. peanut oil to skillet (no need to wipe it out) and repeat process with remaining asparagus.",
+          "Reduce heat to medium-high; add remaining 1 tsp. peanut oil to skillet, then add pork, spreading out into an even layer. Season with a couple pinches of salt and cook, undisturbed, until meat begins to brown underneath, about 2 minutes. Break up meat with a wooden spoon and add scallions, garlic, and ginger. Cook, stirring, until pork is crisp and mixture is very fragrant, about 2 minutes. Add wine and soy sauce and return asparagus to skillet. Cook, turning to coat with pork mixture, until heated through, about 1 minute.",
+          "Transfer stir-fry to a platter or large shallow bowl and drizzle with sesame oil. Serve with rice and chili crisp."
+        ]
       },
       {
         "categories": [
@@ -4821,52 +5701,113 @@
         "description": "The key to an excellent whiskey sour? Getting the balance just right. This whiskey sour recipe has all the right proportions of bright, bracing lemon juice; warming, floral bourbon; and sweet simple syrup to deliver a refreshing cocktail that’s neither too cloying nor too biting. Using freshly squeezed juice is essential—the stuff that comes out of fruit-shaped squeeze bottles doesn’t even compare. If you don't have any lemon on hand, you can swap it out for lime (or a mixture of the two). Serve on the rocks with an orange wheel and a Maraschino cherry arranged neatly on a drink spear (optional but recommended!), and enjoy. Cheers!",
         "imageUrl": "https://assets.bonappetit.com/photos/57acc14e53e63daf11a4d9b6/3:4/w_720,c_limit/whiskey-sour.jpg",
         "title": "Whiskey Sour",
+        "dateIssue": "March 2016",
         "rating": {
-          "count": 186,
-          "value": 4.5
+          "count": "190",
+          "value": "4.5"
         },
         "tag": "Quick",
         "dateUploaded": "2022-03-04",
-        "servings": "4 servings",
+        "servings": "Makes 1 Servings",
         "people": {
-          "author": ,
-          "photographers": [],
-          "foodStylists": [],
-          "propStylists": []
+          "author": "Chris Morocco",
+          "photographers": [
+            "Ted Cavanaugh"
+          ]
         },
-        "nutritionServings": [
-          {
-            "name": "NAME",
-            "unit": "UNIT",
-            "value": "VALUE"
-          }
-        ],
         "utensils": [
           {
-            "name": "NAME",
-            "imageUrl": "IMAGE",
+            "name": "Cocktail Shaker",
+            "imageUrl": "https://assets.bonappetit.com/photos/6088a80423370354fe8f8c8b/1:1/w_640,c_limit/Cocktail-Shaker.jpg",
             "sponsor": {
               "name": "Amazon",
-              "price": ,
-              "url": "URL"
+              "price": "20",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCkqQrmqxsvSMPH11PY771zu31MH51L6w7wBW4jJ6txRzG6f9o2MQrjYk1DXYRqRh7wH?cid=57acc14553e63daf11a4d9b5&xid=fr1646894184249gjb"
+            }
+          },
+          {
+            "name": "Hawthorne Strainer",
+            "imageUrl": "https://assets.bonappetit.com/photos/6088a954cf4acbdbd38e8144/1:1/w_640,c_limit/Product-Strainer.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "7",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCkqQrmqxwJyPGD2heYfKNJaqskhFBSZkmrR4w9MkdByBajPM2BftMkeS18M6rXE2Pxo?cid=57acc14553e63daf11a4d9b5&xid=fr1646894184249fee"
+            }
+          },
+          {
+            "name": "Citrus Juicer",
+            "imageUrl": "https://assets.bonappetit.com/photos/5b1edb9f9731de29fe91213a/1:1/w_640,c_limit/Citrus%20Press.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "13",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCdH4ihYPxF89kKtChN3NHQq3Yjisnxd5XMP7L1AzELrD4HogzX4MmWTi5iby5XQSXq6?cid=57acc14553e63daf11a4d9b5&xid=fr1646894184249bfa"
+            }
+          },
+          {
+            "name": "1.25\" Silicone Ice Cube Tray",
+            "imageUrl": "https://assets.bonappetit.com/photos/6088a80592129bfa2fe59f2b/1:1/w_640,c_limit/Ice-cube-tray.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "15",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCkqQrmqyChE5uYYwmqxXC9SfW5FeTLwLmxFPtVZGQcNydukQGZVBavZUa4eysXRyw1V?cid=57acc14553e63daf11a4d9b5&xid=fr1646894184249ebd"
+            }
+          },
+          {
+            "name": "Cocktail Picks",
+            "imageUrl": "https://assets.bonappetit.com/photos/60a51e1f81b25b25c6c8d4ab/1:1/w_640,c_limit/Product%20stirrers.jpg",
+            "sponsor": {
+              "name": "Amazon",
+              "price": "5",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCkqQrmqyX7MSgrFsKNjV5SZ66BmUzShYZ7rEfNDhe2N8GLzu69s1uH2dXcYfPA3VesJ?cid=57acc14553e63daf11a4d9b5&xid=fr1646894184249aic"
             }
           }
         ],
         "ingredients": [
           {
-            "count": "NULL",
-            "ingredient": "INGREDIENT"
+            "count": "2",
+            "ingredient": "ounces bourbon"
+          },
+          {
+            "count": "¾",
+            "ingredient": "ounce fresh lemon juice"
+          },
+          {
+            "count": "¾",
+            "ingredient": "ounce simple syrup"
+          },
+          {
+            "count": "½",
+            "ingredient": "orange wheel (for serving)"
+          },
+          {
+            "ingredient": "Maraschino cherry (for serving)"
           }
         ],
         "reviews": [
           {
-            "review": "REVIEW",
+            "review": "I like a little less simple syrup--maybe 1/2 oz. And I love a New York sour. Same recipe, but float a tablespoon or two of fruity red wine on the top.",
+            "author": "LauraH",
+            "location": "Seattle, WA",
+            "date": "2021-12-06"
+          },
+          {
+            "review": "Best when usin2 shots",
             "author": "Anonymous",
-            "location": "NULL",
-            "date": "2022-03-08"
+            "location": "Virginia beach,va",
+            "date": "2021-08-13"
+          },
+          {
+            "review": "Perfect, perfect, perfect !!! Love the sweet to tart flavor, with a cherry on top.",
+            "author": "Saffira",
+            "location": "Cleveland, ohio",
+            "date": "2021-08-05"
           }
         ],
-        "steps": []
+        "steps": [
+          "Combine bourbon, lemon juice, and simple syrup in a cocktail shaker.",
+          "Fill shaker with ice, cover, and shake vigorously until outside of shaker is very cold, about 20 seconds.",
+          "Strain cocktail through a Hawthorne strainer or a slotted spoon into an old-fashioned or rocks glass filled with ice. Garnish with orange wheel and cherry."
+        ]
       },
       {
         "categories": [

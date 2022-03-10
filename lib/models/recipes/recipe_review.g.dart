@@ -8,7 +8,7 @@ part of 'recipe_review.dart';
 
 RecipeReview _$RecipeReviewFromJson(Map<String, dynamic> json) => RecipeReview(
       review: json['review'] as String,
-      author: json['author'] as String,
+      author: json['author'] as String?,
       date: DateTime.parse(json['date'] as String),
       location: json['location'] as String?,
     );

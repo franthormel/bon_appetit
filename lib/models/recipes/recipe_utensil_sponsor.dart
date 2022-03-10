@@ -9,7 +9,7 @@ class RecipeUtensilSponsor {
   final String name;
 
   // In U.S. dollars ($)
-  final String price;
+  final String? price;
   final String? discountedPrice;
 
   // Item's link to the seller's site.
@@ -17,9 +17,9 @@ class RecipeUtensilSponsor {
 
   const RecipeUtensilSponsor({
     required this.name,
-    required this.price,
     required this.url,
     this.discountedPrice,
+    this.price,
   });
 
   factory RecipeUtensilSponsor.fromJson(Map<String, dynamic> json) =>
