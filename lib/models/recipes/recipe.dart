@@ -1,12 +1,12 @@
 import 'package:json_annotation/json_annotation.dart';
 
 import 'recipe_ingredient.dart';
+import 'recipe_nutrition_serving.dart';
 import 'recipe_people.dart';
 import 'recipe_rating.dart';
 import 'recipe_review.dart';
 import 'recipe_time.dart';
 import 'recipe_utensil.dart';
-import 'recipe_nutrition_serving.dart';
 
 part 'recipe.g.dart';
 

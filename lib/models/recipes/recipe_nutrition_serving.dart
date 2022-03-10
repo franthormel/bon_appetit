@@ -14,7 +14,7 @@ class RecipeNutritionServing {
   const RecipeNutritionServing({
     required this.name,
     required this.unit,
-    required this.value
+    required this.value,
   });
 
   factory RecipeNutritionServing.fromJson(Map<String, dynamic> json) =>
