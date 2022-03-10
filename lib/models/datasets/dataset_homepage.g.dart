@@ -8,8 +8,9 @@ part of 'dataset_homepage.dart';
 
 HomepageDataset _$HomepageDatasetFromJson(Map<String, dynamic> json) =>
     HomepageDataset(
-      articles:
-          ArticleDataset.fromJson(json['articles'] as Map<String, dynamic>),
+      stories: (json['stories'] as List<dynamic>)
+          .map((e) => CategorizedArticle.fromJson(e as Map<String, dynamic>))
+          .toList(),
       recipes: RecipeDataset.fromJson(json['recipes'] as Map<String, dynamic>),
       videos: (json['videos'] as List<dynamic>)
           .map((e) => VideoEntry.fromJson(e as Map<String, dynamic>))
@@ -24,8 +25,8 @@ HomepageDataset _$HomepageDatasetFromJson(Map<String, dynamic> json) =>
 
 Map<String, dynamic> _$HomepageDatasetToJson(HomepageDataset instance) =>
     <String, dynamic>{
-      'articles': instance.articles,
       'recipes': instance.recipes,
+      'stories': instance.stories,
       'videos': instance.videos,
       'products': instance.products,
       'tips': instance.tips,
