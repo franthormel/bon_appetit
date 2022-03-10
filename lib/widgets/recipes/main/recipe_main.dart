@@ -17,7 +17,8 @@ class TodayMainRecipeWidget extends StatelessWidget {
       children: [
         RecipeImageWidget(recipe.imageUrl, tag: "Today's Recipe"),
         const Divider(color: Colors.transparent),
-        HeaderFourBodyWidget(title: recipe.title, body: recipe.mainDescription!),
+        HeaderFourBodyWidget(
+            title: recipe.title, body: recipe.mainDescription!),
         const SizedBox(height: 16.0),
         if (recipe.rating != null) RecipeRatingWidget(recipe.rating!),
       ],

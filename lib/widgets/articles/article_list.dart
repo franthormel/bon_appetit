@@ -8,16 +8,15 @@ import 'stories/story.dart';
 
 class ArticleListWidget extends StatelessWidget {
   final List<Article> articles;
-  final Article? articleHeader;
-
   final String title;
   final String subtitle;
+  final bool main;
 
   const ArticleListWidget({
     required this.articles,
     required this.title,
     required this.subtitle,
-    this.articleHeader,
+    this.main = false,
     Key? key,
   }) : super(key: key);
 
@@ -26,18 +25,18 @@ class ArticleListWidget extends StatelessWidget {
     return DesignedContainerWidget(
       child: Column(
         children: [
-          ...?articleHeaderEntry,
+          ...?articleHeaderWidget,
           HeaderSectionWidget(title: title, subtitle: subtitle),
-          ...articleEntries,
+          ...articleEntryWidgets,
         ],
       ),
     );
   }
 
-  List<Widget>? get articleHeaderEntry {
-    if (articleHeader != null) {
+  List<Widget>? get articleHeaderWidget {
+    if (main) {
       return [
-        StoryWidget(articleHeader!),
+        StoryWidget(articles[0]),
         const SizedBox(height: 70.0),
       ];
     }
@@ -45,16 +44,19 @@ class ArticleListWidget extends StatelessWidget {
     return null;
   }
 
-  List<Widget> get articleEntries {
+  List<Widget> get articleEntryWidgets {
     final widgets = <Widget>[];
+    final entries = articleEntries;
 
-    for (final article in articles) {
+    for (final entry in entries) {
       widgets.addAll([
         const SizedBox(height: 50.0),
-        ArticleWidget(article),
+        ArticleWidget(entry),
       ]);
     }
 
     return widgets;
   }
+
+  List<Article> get articleEntries => main ? articles.sublist(1) : articles;
 }

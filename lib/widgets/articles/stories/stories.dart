@@ -12,8 +12,8 @@ class StoriesWidget extends StatelessWidget {
     final dataset = Provider.of<HomepageDataset>(context, listen: false);
 
     return ArticleListWidget(
-      articles: dataset.stories.others,
-      articleHeader: dataset.stories.main,
+      articles: dataset.stories,
+      main: true,
       title: 'What to Read',
       subtitle: 'Stories from around the world of food',
     );
