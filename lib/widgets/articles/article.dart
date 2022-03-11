@@ -16,23 +16,11 @@ class ArticleWidget extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         CachedImageProgressWidget(article.imageUrl),
-        ...?otherArticleCategory,
+        const Divider(color: Colors.transparent),
+        StoryCategoryWidget(article.category),
         const Divider(color: Colors.transparent),
         HeaderFiveBodyWidget(title: article.title, body: article.subtitle),
       ],
     );
-  }
-
-  List<Widget>? get otherArticleCategory {
-    if (article.runtimeType == CategorizedArticle) {
-      final otherArticle = article as CategorizedArticle;
-
-      return [
-        const Divider(color: Colors.transparent),
-        StoryCategoryWidget(otherArticle.category),
-      ];
-    }
-
-    return null;
   }
 }

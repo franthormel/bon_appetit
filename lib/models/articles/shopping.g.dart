@@ -1,23 +1,21 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'categorized_article.dart';
+part of 'shopping.dart';
 
 // **************************************************************************
 // JsonSerializableGenerator
 // **************************************************************************
 
-CategorizedArticle _$CategorizedArticleFromJson(Map<String, dynamic> json) =>
-    CategorizedArticle(
-      category: json['category'] as String,
+ShoppingArticle _$ShoppingArticleFromJson(Map<String, dynamic> json) =>
+    ShoppingArticle(
       imageUrl: json['imageUrl'] as String,
       title: json['title'] as String,
       subtitle: json['subtitle'] as String,
     );
 
-Map<String, dynamic> _$CategorizedArticleToJson(CategorizedArticle instance) =>
+Map<String, dynamic> _$ShoppingArticleToJson(ShoppingArticle instance) =>
     <String, dynamic>{
       'imageUrl': instance.imageUrl,
       'title': instance.title,
       'subtitle': instance.subtitle,
-      'category': instance.category,
     };

@@ -19,15 +19,15 @@ Recipe _$RecipeFromJson(Map<String, dynamic> json) => Recipe(
       servings: json['servings'] as String,
       steps: (json['steps'] as List<dynamic>).map((e) => e as String).toList(),
       title: json['title'] as String,
+      credits: json['credits'] == null
+          ? null
+          : ImageCredits.fromJson(json['credits'] as Map<String, dynamic>),
       dateIssue: json['dateIssue'] as String?,
       mainDescription: json['mainDescription'] as String?,
       nutritionServings: (json['nutritionServings'] as List<dynamic>?)
           ?.map(
               (e) => RecipeNutritionServing.fromJson(e as Map<String, dynamic>))
           .toList(),
-      people: json['people'] == null
-          ? null
-          : RecipePeople.fromJson(json['people'] as Map<String, dynamic>),
       rating: json['rating'] == null
           ? null
           : RecipeRating.fromJson(json['rating'] as Map<String, dynamic>),
@@ -52,7 +52,7 @@ Map<String, dynamic> _$RecipeToJson(Recipe instance) => <String, dynamic>{
       'ingredients': instance.ingredients,
       'mainDescription': instance.mainDescription,
       'nutritionServings': instance.nutritionServings,
-      'people': instance.people,
+      'credits': instance.credits,
       'rating': instance.rating,
       'reviews': instance.reviews,
       'servings': instance.servings,

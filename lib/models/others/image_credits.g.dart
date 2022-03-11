@@ -1,12 +1,12 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'recipe_people.dart';
+part of 'image_credits.dart';
 
 // **************************************************************************
 // JsonSerializableGenerator
 // **************************************************************************
 
-RecipePeople _$RecipePeopleFromJson(Map<String, dynamic> json) => RecipePeople(
+ImageCredits _$ImageCreditsFromJson(Map<String, dynamic> json) => ImageCredits(
       author: json['author'] as String,
       photographers: (json['photographers'] as List<dynamic>)
           .map((e) => e as String)
@@ -19,7 +19,7 @@ RecipePeople _$RecipePeopleFromJson(Map<String, dynamic> json) => RecipePeople(
           .toList(),
     );
 
-Map<String, dynamic> _$RecipePeopleToJson(RecipePeople instance) =>
+Map<String, dynamic> _$ImageCreditsToJson(ImageCredits instance) =>
     <String, dynamic>{
       'author': instance.author,
       'photographers': instance.photographers,

@@ -24,7 +24,7 @@
         "title": "Big Baked Falafel Cake With Cucumber Salad",
         "dateUploaded": "2022-03-04",
         "servings": "4 servings",
-        "people": {
+        "credits": {
           "author": "Kendra Vaculin",
           "photographers": [
             "Isa Zapata"
@@ -208,7 +208,7 @@
         "dateUploaded": "2018-12-14",
         "servings": "2 servings",
         "mainDescription": "No searing! No chopping! One baking dish!",
-        "people": {
+        "credits": {
           "author": "Chris Morocco",
           "photographers": [
             "Marcus Nilsson"
@@ -376,7 +376,7 @@
         "mainDescription": "Looking to majorly upgrade the classic grilled cheese? This recipe has you covered with bread slicked with and crisped up by the power of mayonnaise.",
         "dateUploaded": "2022-02-24",
         "servings": "Makes 1 awesome sandwich",
-        "people": {
+        "credits": {
           "author": "Alison Roman",
           "photographers": [
             "Michael Graydon",
@@ -506,7 +506,7 @@
         "mainDescription": "Rich marbled meats are extra-delicious when served with cool, crunchy, acidic vegetables.",
         "dateUploaded": "2019-06-01",
         "servings": "3-4 servings",
-        "people": {
+        "credits": {
           "author": "Carla Lalli Music",
           "photographers": [
             "Gentl",
@@ -629,7 +629,7 @@
         },
         "dateUploaded": "2022-02-08",
         "servings": "4 servings",
-        "people": {
+        "credits": {
           "author": "Ali Sagle",
           "photographers": [
             "Isa Zapata"
@@ -764,7 +764,7 @@
         "tag": "Easy",
         "dateUploaded": "2022-02-04",
         "servings": "4 servings",
-        "people": {
+        "credits": {
           "author": "Sarah Jampel",
           "photographers": [
             "Emma Fishman"
@@ -970,7 +970,7 @@
           "value": "3.4"
         },
         "servings": "Makes about 3 cups",
-        "people": {
+        "credits": {
           "author": "Carla Hall",
           "photographers": [
             "Emma Fishman"
@@ -1093,7 +1093,7 @@
         "tag": "Quick",
         "dateUploaded": "2022-02-08",
         "servings": "4 servings",
-        "people": {
+        "credits": {
           "author": "Kendra Vaculin",
           "photographers": [
             "Emma Fishman"
@@ -1241,7 +1241,7 @@
         "tag": "Easy",
         "dateUploaded": "2021-11-15",
         "servings": "6 servings",
-        "people": {
+        "credits": {
           "author": "Cal Peternell",
           "photographers": [
             "Isa Zapata"
@@ -1412,7 +1412,7 @@
         },
         "dateUploaded": "2022-02-08",
         "servings": "4 servings",
-        "people": {
+        "credits": {
           "author": "Carla Hall",
           "photographers": [
             "Emma Fishman"
@@ -1541,7 +1541,7 @@
         "dateIssue": "March 2022",
         "dateUploaded": "2022-02-08",
         "servings": "4 servings",
-        "people": {
+        "credits": {
           "author": "Kendra Vaculin",
           "photographers": [
             "Emma Fishman"
@@ -1681,7 +1681,7 @@
         "tag": "Easy",
         "dateUploaded": "2022-02-08",
         "servings": "4 servings",
-        "people": {
+        "credits": {
           "author": "Ali Sagle",
           "photographers": [
             "Isa Zapata"
@@ -1849,7 +1849,7 @@
             "value": "1 hour"
           }
         ],
-        "people": {
+        "credits": {
           "author": "Christina Chaey",
           "photographers": [
             "Isa Zapata"
@@ -2017,7 +2017,7 @@
         "title": "Brothy Pasta With Miso-Butter Turnips",
         "dateUploaded": "2022-02-08",
         "servings": "6 servings",
-        "people": {
+        "credits": {
           "author": "Carla Hall",
           "photographers": [
             "Emma Fishman"
@@ -2179,7 +2179,7 @@
         "tag": "Vegan",
         "dateUploaded": "2022-02-15",
         "servings": "4 servings",
-        "people": {
+        "credits": {
           "author": "An Uong",
           "photographers": [
             "Isa Zapata"
@@ -2385,7 +2385,7 @@
         },
         "dateUploaded": "2022-02-17",
         "servings": "4-6 servings",
-        "people": {
+        "credits": {
           "author": "Jessie YuChen",
           "photographers": [
             "Isa Zapata"
@@ -2536,7 +2536,7 @@
         "tag": "Easy",
         "dateUploaded": "2022-03-04",
         "servings": "4 servings",
-        "people": {
+        "credits": {
           "author": "Kendra Vaculin",
           "photographers": [
             "Emma Fishman"
@@ -2720,7 +2720,7 @@
         "tag": "Quick",
         "dateUploaded": "2022-02-08",
         "servings": "Makes 4",
-        "people": {
+        "credits": {
           "author": "Ali Sagle",
           "photographers": [
             "Isa Zapata"
@@ -2845,7 +2845,7 @@
         },
         "dateUploaded": "2021-12-14",
         "servings": "8 servings",
-        "people": {
+        "credits": {
           "author": "Kendra Vaculin",
           "photographers": [
             "Isa Zapata"
@@ -3050,7 +3050,7 @@
         "tag": "Quick",
         "dateUploaded": "2022-02-08",
         "servings": "4 servings",
-        "people": {
+        "credits": {
           "author": "Ali Sagle",
           "photographers": [
             "Isa Zapata"
@@ -3202,7 +3202,7 @@
         "tag": "Vegan",
         "dateUploaded": "2022-02-08",
         "servings": "Makes about 2½ quarts",
-        "people": {
+        "credits": {
           "author": "Eric Sze",
           "photographers": [
             "Emma Fishman"
@@ -3350,7 +3350,7 @@
         "tag": "Easy",
         "dateUploaded": "2022-03-04",
         "servings": "4-6 servings",
-        "people": {
+        "credits": {
           "author": "Zaynab Issa",
           "photographers": [
             "Isa Zapata"
@@ -3535,7 +3535,7 @@
         "tag": "Quick",
         "dateUploaded": "2022-01-06",
         "servings": "6 servings",
-        "people": {
+        "credits": {
           "author": "Chrissy Tracey",
           "photographers": [
             "Isa Zapata"
@@ -3699,7 +3699,7 @@
         },
         "dateUploaded": "2022-02-08",
         "servings": "Makes about 2½ cups",
-        "people": {
+        "credits": {
           "author": "Carla Hall",
           "photographers": [
             "Emma Fishman"
@@ -3819,7 +3819,7 @@
         },
         "dateUploaded": "2018-03-20",
         "servings": "Makes 1",
-        "people": {
+        "credits": {
           "author": "Kat Boytsova",
           "photographers": [
             "Stephen Kent Johnson"
@@ -3992,7 +3992,7 @@
         "tag": "Quick",
         "dateUploaded": "2016-02-09",
         "servings": "4 servings",
-        "people": {
+        "credits": {
           "author": "Carla Lalli Music",
           "photographers": [
             "Alex Lau"
@@ -4073,7 +4073,7 @@
         },
         "dateUploaded": "2013-10-02",
         "servings": "2 servings",
-        "people": {
+        "credits": {
           "author": "Paula Disbrowe",
           "photographers": [
             "Sarah Flotard"
@@ -4128,7 +4128,7 @@
         "dateIssue": "March 2022",
         "dateUploaded": "2022-02-08",
         "servings": "Makes 16",
-        "people": {
+        "credits": {
           "author": "Mehreen Karim",
           "photographers": [
             "Emma Fishman"
@@ -4349,7 +4349,7 @@
         },
         "dateUploaded": "2022-02-08",
         "servings": "Makes one 8½x4½\" loaf",
-        "people": {
+        "credits": {
           "author": "Zaynab Issa",
           "photographers": [
             "Emma Fishman"
@@ -4536,7 +4536,7 @@
         "tag": "Quick",
         "dateUploaded": "2022-04-19",
         "servings": "Makes 1 Servings",
-        "people": {
+        "credits": {
           "author": "Chris Morocco",
           "photographers": [
             "Ted Cavanaugh"
@@ -4610,7 +4610,7 @@
         "tag": "Easy",
         "dateUploaded": "2020-08-30",
         "servings": "4 servings",
-        "people": {
+        "credits": {
           "author": "Sarah Jampel",
           "photographers": [
             "Emma Fishman"
@@ -4821,7 +4821,7 @@
         },
         "dateUploaded": "2021-06-19",
         "servings": "8 servings",
-        "people": {
+        "credits": {
           "author": "Carla Lalli Music",
           "photographers": [
             "Gentl",
@@ -4909,7 +4909,7 @@
         "tag": "Quick",
         "dateUploaded": "2021-02-09",
         "servings": "4 servings",
-        "people": {
+        "credits": {
           "author": "Chris Morocco",
           "photographers": [
             "Laura Murray"
@@ -5017,7 +5017,7 @@
         },
         "dateUploaded": "2019-11-19",
         "servings": "10–12 servings",
-        "people": {
+        "credits": {
           "author": "Anna Stockwell and Sohla El-Waylly",
           "photographers": [
             "Alex Lau"
@@ -5080,7 +5080,7 @@
         },
         "dateUploaded": "2012-12-09",
         "servings": "Makes 1 Servings",
-        "people": {
+        "credits": {
           "author": "Bon Appétit Test Kitchen",
           "photographers": [
             "Danny Kim"
@@ -5214,7 +5214,7 @@
         "tag": "Easy",
         "dateUploaded": "2021-05-09",
         "servings": "4 servings",
-        "people": {
+        "credits": {
           "author": "Shilpa Uskokovic",
           "photographers": [
             "Isa Zapata"
@@ -5406,7 +5406,7 @@
         "tag": "Quick",
         "dateUploaded": "2022-03-04",
         "servings": "4 servings",
-        "people": {
+        "credits": {
           "author": "Andy Baraghani",
           "photographers": [
             "Marcus Nilsson"
@@ -5580,7 +5580,7 @@
         "tag": "Quick",
         "dateUploaded": "2020-03-17",
         "servings": "4 servings",
-        "people": {
+        "credits": {
           "author": "Deb Perelman",
           "photographers": [
             "Laura Murray"
@@ -5676,7 +5676,7 @@
         "tag": "Quick",
         "dateUploaded": "2022-03-04",
         "servings": "Makes 1 Servings",
-        "people": {
+        "credits": {
           "author": "Chris Morocco",
           "photographers": [
             "Ted Cavanaugh"
@@ -5802,7 +5802,7 @@
         },
         "dateUploaded": "2014-04-30",
         "servings": "Makes 9 Servings",
-        "people": {
+        "credits": {
           "author": "Melissa Roberts",
           "photographers": [
             "Ditte Isager"
@@ -6011,7 +6011,7 @@
         "tag": "Easy",
         "dateUploaded": "2018-09-08",
         "servings": "4-6 Servings",
-        "people": {
+        "credits": {
           "author": "Claire Saffitz",
           "photographers": [
             "Heidi's Bridge"
@@ -6200,7 +6200,7 @@
         },
         "dateUploaded": "2021-12-03",
         "servings": "Makes one 8½x4½\" loaf",
-        "people": {
+        "credits": {
           "author": "Bon Appétit",
           "photographers": [
             "Alex Lau"
@@ -6355,7 +6355,7 @@
         "tag": "Easy",
         "dateUploaded": "2022-02-08",
         "servings": "Makes one 8\"- or 9\"-diameter cake",
-        "people": {
+        "credits": {
           "author": "Christina Chaey",
           "photographers": [
             "Emma Fishman"
@@ -6502,31 +6502,66 @@
       "imageUrl": "https://assets.bonappetit.com/photos/62041220fbef7937a3e43de4/1:1/w_720,c_limit/20220208%2520AST%2520Ketchup%2520LEDE.jpg",
       "title": "A Skeptic Tries: Ketchup",
       "subtitle": "Kid-me was grossed out by the sticky red sauce. Adult-me was willing to give it another shot.",
-      "category": "culture"
+      "category": "culture",
+      "dateUploaded": "2022-03-11",
+      "credits": {
+        "author": "AUTHOR",
+        "illustrator": "ILLUSTRATOR",
+        "tags": [],
+        "products": []
+      }
     },
     {
       "imageUrl": "https://assets.bonappetit.com/photos/6206a944463bf23e0de9d929/4:3/w_720,c_limit/Please-Help-Me%2520Understand-How-Big-This-Water%2520Bottle-Actually-Is.jpg",
       "title": "The Size of This Water Bottle Is Proof That the Multiverse Exists",
       "subtitle": "The Pankio sports water bottle contains exactly one half gallon of water and also the multitudes of the ocean.",
-      "category": "culture"
+      "category": "culture",
+      "dateUploaded": "2022-03-11",
+      "credits": {
+        "author": "AUTHOR",
+        "illustrator": "ILLUSTRATOR",
+        "tags": [],
+        "products": []
+      }
     },
     {
       "imageUrl": "https://assets.bonappetit.com/photos/61fd90c28229341216032c3f/4:3/w_720,c_limit/BA_JulianDinnerParty_Final_Flat2.jpg",
       "title": "The Gilded Age's Creator Julian Fellowes Would Party With Its Real-Life Socialites",
       "subtitle": "At his dream dinner party, the director and screenwriter would serve coronation chicken and crepes Suzette.",
-      "category": "people"
+      "category": "people",
+      "dateUploaded": "2022-03-11",
+      "credits": {
+        "author": "AUTHOR",
+        "illustrator": "ILLUSTRATOR",
+        "tags": [],
+        "products": []
+      }
     },
     {
       "imageUrl": "https://assets.bonappetit.com/photos/620699a9b991f2fe78fea669/4:3/w_720,c_limit/chard.jpg",
       "title": "Why Drinking at an Airport Bar Feels So Romantic",
       "subtitle": "The drinks aren’t top shelf, but the airport bar is where my husband and I get to pause and connect with each other.",
-      "category": "culture"
+      "category": "culture",
+      "dateUploaded": "2022-03-11",
+      "credits": {
+        "author": "AUTHOR",
+        "illustrator": "ILLUSTRATOR",
+        "tags": [],
+        "products": []
+      }
     },
     {
       "imageUrl": "https://assets.bonappetit.com/photos/6202ac48cb2ec4b379783093/4:3/w_720,c_limit/SuperbowlFoodtexture%2520(1).jpg",
       "title": "Everywhere You Should Eat in Inglewood, Home to Super Bowl LVI",
       "subtitle": "All the restaurants, cafés, and coffee shops Los Angeles locals love the most.",
-      "category": "restaurants"
+      "category": "restaurants",
+      "dateUploaded": "2022-03-11",
+      "credits": {
+        "author": "AUTHOR",
+        "illustrator": "ILLUSTRATOR",
+        "tags": [],
+        "products": []
+      }
     }
   ],
   "videos": [
@@ -6606,49 +6641,112 @@
     {
       "imageUrl": "https://assets.bonappetit.com/photos/61e755ce6b6fe523b0365397/1:1/w_2560%2Cc_limit/20220112%2520Best%2520Coffee%2520Maker%2520LEDE.jpg",
       "title": "The Best Espresso Machines for Beginners, Coffee Nerds, and Everyone in Between",
-      "subtitle": "A good espresso machine is an investment. But how much do you spend at the coffee shop every year?"
+      "subtitle": "A good espresso machine is an investment. But how much do you spend at the coffee shop every year?",
+      "dateUploaded": "2022-03-11",
+      "credits": {
+        "author": "AUTHOR",
+        "illustrator": "ILLUSTRATOR",
+        "tags": [],
+        "products": []
+      }
     },
     {
       "imageUrl": "https://assets.bonappetit.com/photos/620adb363d88f61b63a582e4/1:1/w_2560%2Cc_limit/20220211%2520HR%2520Le%2520Creuset%2520French%2520Press%2520LEDE.jpg",
       "title": "My Le Creuset French Press Symbolizes Everything I Love About Adulthood",
-      "subtitle": "The best gift my roommate ever gave me was a sense of home. The second best gift was a Le Creuset French press."
+      "subtitle": "The best gift my roommate ever gave me was a sense of home. The second best gift was a Le Creuset French press.",
+      "dateUploaded": "2022-03-11",
+      "credits": {
+        "author": "AUTHOR",
+        "illustrator": "ILLUSTRATOR",
+        "tags": [],
+        "products": []
+      }
     },
     {
       "imageUrl": "https://assets.bonappetit.com/photos/61a68bba1c01773ccb0acad1/1:1/w_2560%2Cc_limit/EComm_Reviews_Gaggia.jpg",
       "title": "Does the Gaggia Classic Pro Espresso Machine Live up to the Hype?",
-      "subtitle": "One BA staffer drank an unholy amount of coffee to find out."
+      "subtitle": "One BA staffer drank an unholy amount of coffee to find out.",
+      "dateUploaded": "2022-03-11",
+      "credits": {
+        "author": "AUTHOR",
+        "illustrator": "ILLUSTRATOR",
+        "tags": [],
+        "products": []
+      }
     },
     {
       "imageUrl": "https://assets.bonappetit.com/photos/61f43b340e09933a242b0fd5/1:1/w_2560%2Cc_limit/20220112%2520HR%2520Trade%2520Coffee%2520LEDE.jpg",
       "title": "I Get My Coffee Mailed To Me And It's 100% Worth It",
-      "subtitle": "Each time a bag of beans from Trade Coffee arrives, it’s like a little caffeinated gift."
+      "subtitle": "Each time a bag of beans from Trade Coffee arrives, it’s like a little caffeinated gift.",
+      "dateUploaded": "2022-03-11",
+      "credits": {
+        "author": "AUTHOR",
+        "illustrator": "ILLUSTRATOR",
+        "tags": [],
+        "products": []
+      }
     },
     {
       "imageUrl": "https://assets.bonappetit.com/photos/61ba08b6f27d37f5a603301a/1:1/w_2560%2Cc_limit/20211207%2520HR%2520Cometeer%2520Coffee.LEDE.jpg",
       "title": "This Flash-Frozen Coffee Is Revolutionizing My Morning",
-      "subtitle": "For coffee connoisseurs looking for a quick fix, it doesn’t get any better than this."
+      "subtitle": "For coffee connoisseurs looking for a quick fix, it doesn’t get any better than this.",
+      "dateUploaded": "2022-03-11",
+      "credits": {
+        "author": "AUTHOR",
+        "illustrator": "ILLUSTRATOR",
+        "tags": [],
+        "products": []
+      }
     },
     {
       "imageUrl": "https://assets.bonappetit.com/photos/5c5b006e6c0b212cac365206/1:1/w_2560%2Cc_limit/coffee-group.jpg",
       "title": "The Best Ways to Make Coffee, According to Baristas",
-      "subtitle": "Plus, their favorite tools for getting the job done."
+      "subtitle": "Plus, their favorite tools for getting the job done.",
+      "dateUploaded": "2022-03-11",
+      "credits": {
+        "author": "AUTHOR",
+        "illustrator": "ILLUSTRATOR",
+        "tags": [],
+        "products": []
+      }
     }
   ],
   "tips": [
     {
       "imageUrl": "https://assets.bonappetit.com/photos/61f43d0ee4c1e4bf7ae16049/1:1/w_2560%2Cc_limit/20220118%2520ITS%2520Tofu%2520Feta%2520LEDE.jpg",
       "title": "I Was Skeptical, But Tofu-Feta Is Actually a Good Stand-In For Feta-Feta",
-      "subtitle": "And you can call it tofeta."
+      "subtitle": "And you can call it to feta.",
+      "dateUploaded": "2022-03-11",
+      "credits": {
+        "author": "AUTHOR",
+        "illustrator": "ILLUSTRATOR",
+        "tags": [],
+        "products": []
+      }
     },
     {
       "imageUrl": "https://assets.bonappetit.com/photos/620ab201d2e1174a97415a30/1:1/w_2560%2Cc_limit/20220211%2520Mushroom%2520Stock%2520LEDE.jpg",
       "title": "Mushroom Stock Does What Meat Stock Could Never",
-      "subtitle": "Simple and streamlined, fast and flavorful, good hot or cold or frozen, and best enjoyed…pantsless?"
+      "subtitle": "Simple and streamlined, fast and flavorful, good hot or cold or frozen, and best enjoyed…pantsless?",
+      "dateUploaded": "2022-03-11",
+      "credits": {
+        "author": "AUTHOR",
+        "illustrator": "ILLUSTRATOR",
+        "tags": [],
+        "products": []
+      }
     },
     {
       "imageUrl": "https://assets.bonappetit.com/photos/620d384523422b90ab130f63/1:1/w_2560%2Cc_limit/20220208%2520Jam%2520French%2520Toast%2520LEDE.jpg",
       "title": "This One Addition Makes French Toast Way More Flavorful",
-      "subtitle": "Jam in your French toast > jam on your French toast."
+      "subtitle": "Jam in your French toast > jam on your French toast.",
+      "dateUploaded": "2022-03-11",
+      "credits": {
+        "author": "AUTHOR",
+        "illustrator": "ILLUSTRATOR",
+        "tags": [],
+        "products": []
+      }
     },
     {
       "imageUrl": "https://assets.bonappetit.com/photos/61f4340abb40748ef6bbe1ef/1:1/w_2560%2Cc_limit/20220118%2520Spices%2520LEDE.jpg",
@@ -6658,22 +6756,50 @@
     {
       "imageUrl": "https://assets.bonappetit.com/photos/620ff735c1311ab68cac62f8/1:1/w_2560%2Cc_limit/20220215%2520Freeze%2520Your%2520Tofu%2520LEDE.jpg",
       "title": "For Firmer, Chewier, More Absorbent Tofu, Freeze It",
-      "subtitle": "“The freezer changed me.” —Your tofu"
+      "subtitle": "“The freezer changed me.” —Your tofu",
+      "dateUploaded": "2022-03-11",
+      "credits": {
+        "author": "AUTHOR",
+        "illustrator": "ILLUSTRATOR",
+        "tags": [],
+        "products": []
+      }
     },
     {
       "imageUrl": "https://assets.bonappetit.com/photos/620d18fb71cfcab79c213708/1:1/w_2560%2Cc_limit/12.03.l21_BonAppetit_Hotpot_C126024-Edit.jpg",
       "title": "Everything You Need to Know to Make Hot Pot At Home",
-      "subtitle": "The method (and the madness) behind our favorite way communal, choose-your-own-adventure meal."
+      "subtitle": "The method (and the madness) behind our favorite way communal, choose-your-own-adventure meal.",
+      "dateUploaded": "2022-03-11",
+      "credits": {
+        "author": "AUTHOR",
+        "illustrator": "ILLUSTRATOR",
+        "tags": [],
+        "products": []
+      }
     },
     {
       "imageUrl": "https://assets.bonappetit.com/photos/61f1ce6f0b14cb497b6baca3/1:1/w_2560%2Cc_limit/BA0322hotpot04_2.jpg",
       "title": "How to Make the Best Broth, According to an Expert",
-      "subtitle": "Turns out there’s more to great broth than throwing a bunch of scraps into a pot."
+      "subtitle": "Turns out there’s more to great broth than throwing a bunch of scraps into a pot.",
+      "dateUploaded": "2022-03-11",
+      "credits": {
+        "author": "AUTHOR",
+        "illustrator": "ILLUSTRATOR",
+        "tags": [],
+        "products": []
+      }
     },
     {
       "imageUrl": "https://assets.bonappetit.com/photos/6204147038a4d0b4d56612f9/1:1/w_2560%2Cc_limit/20220208%2520Mustard%2520Croutons%2520LEDE.jpg",
       "title": "There Are Regular Croutons—And Then There Are Cheesy Croutons",
-      "subtitle": "I would do pro bono PR for these croutons."
+      "subtitle": "I would do pro bono PR for these croutons.",
+      "dateUploaded": "2022-03-11",
+      "credits": {
+        "author": "AUTHOR",
+        "illustrator": "ILLUSTRATOR",
+        "tags": [],
+        "products": []
+      }
     }
   ]
 }

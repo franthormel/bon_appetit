@@ -1,8 +1,8 @@
 import 'package:json_annotation/json_annotation.dart';
 
+import '../others/image_credits.dart';
 import 'recipe_ingredient.dart';
 import 'recipe_nutrition_serving.dart';
-import 'recipe_people.dart';
 import 'recipe_rating.dart';
 import 'recipe_review.dart';
 import 'recipe_time.dart';
@@ -29,7 +29,7 @@ class Recipe {
   final String? mainDescription;
 
   final List<RecipeNutritionServing>? nutritionServings;
-  final RecipePeople? people;
+  final ImageCredits? credits;
   final RecipeRating? rating;
   final List<RecipeReview>? reviews;
 
@@ -63,10 +63,10 @@ class Recipe {
     required this.servings,
     required this.steps,
     required this.title,
+    this.credits,
     this.dateIssue,
     this.mainDescription,
     this.nutritionServings,
-    this.people,
     this.rating,
     this.reviews,
     this.tag,

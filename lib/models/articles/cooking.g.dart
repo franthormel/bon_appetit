@@ -1,21 +1,21 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'article.dart';
+part of 'cooking.dart';
 
 // **************************************************************************
 // JsonSerializableGenerator
 // **************************************************************************
 
-Article _$ArticleFromJson(Map<String, dynamic> json) => Article(
+CookingArticle _$CookingArticleFromJson(Map<String, dynamic> json) =>
+    CookingArticle(
       imageUrl: json['imageUrl'] as String,
       title: json['title'] as String,
       subtitle: json['subtitle'] as String,
-      category: json['category'] as String,
     );
 
-Map<String, dynamic> _$ArticleToJson(Article instance) => <String, dynamic>{
+Map<String, dynamic> _$CookingArticleToJson(CookingArticle instance) =>
+    <String, dynamic>{
       'imageUrl': instance.imageUrl,
       'title': instance.title,
       'subtitle': instance.subtitle,
-      'category': instance.category,
     };

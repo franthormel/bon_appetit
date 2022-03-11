@@ -7,11 +7,13 @@ class Article {
   final String imageUrl;
   final String title;
   final String subtitle;
+  final String category;
 
   Article({
     required this.imageUrl,
     required this.title,
     required this.subtitle,
+    required this.category,
   });
 
   factory Article.fromJson(Map<String, dynamic> json) =>

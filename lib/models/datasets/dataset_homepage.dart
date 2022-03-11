@@ -1,7 +1,8 @@
-import 'package:bon_appetit/models/articles/categorized_article.dart';
 import 'package:json_annotation/json_annotation.dart';
 
 import '../articles/article.dart';
+import '../articles/cooking.dart';
+import '../articles/shopping.dart';
 import '../videos/video.dart';
 import 'models/dataset_recipe.dart';
 
@@ -13,7 +14,7 @@ class HomepageDataset {
 
   /// Five (5) articles are listed under
   /// the 'What to Read' section
-  final List<CategorizedArticle> stories;
+  final List<Article> stories;
 
   /// Twelve (12) videos are listed under
   /// the 'What to Watch' section
@@ -21,11 +22,11 @@ class HomepageDataset {
 
   ///  Six (6) articles are listed under
   ///  the 'We Just Love These' section
-  final List<Article> products;
+  final List<ShoppingArticle> products;
 
   /// Eight (8) articles are listed under
   /// the 'Cooking Tips & Techniques' section
-  final List<Article> tips;
+  final List<CookingArticle> tips;
 
   HomepageDataset({
     required this.stories,

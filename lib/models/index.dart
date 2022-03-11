@@ -1,5 +1,4 @@
 export 'articles/article.dart';
-export 'articles/categorized_article.dart';
 export 'datasets/dataset_homepage.dart';
 export 'datasets/models/dataset_recipe.dart';
 export 'others/drawer_route.dart';
