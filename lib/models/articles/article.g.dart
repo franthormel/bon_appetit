@@ -14,8 +14,8 @@ Article _$ArticleFromJson(Map<String, dynamic> json) => Article(
       dateUploaded: DateTime.parse(json['dateUploaded'] as String),
       credits: ArticleCredits.fromJson(json['credits'] as Map<String, dynamic>),
       tags: (json['tags'] as List<dynamic>).map((e) => e as String).toList(),
-      products: (json['products'] as List<dynamic>)
-          .map((e) => ItemProduct.fromJson(e as Map<String, dynamic>))
+      products: (json['products'] as List<dynamic>?)
+          ?.map((e) => ItemProduct.fromJson(e as Map<String, dynamic>))
           .toList(),
     );
 

@@ -6502,31 +6502,15 @@
       "title": "A Skeptic Tries: Ketchup",
       "subtitle": "Kid-me was grossed out by the sticky red sauce. Adult-me was willing to give it another shot.",
       "category": "culture",
-      "dateUploaded": "2022-03-11",
+      "dateUploaded": "2022-02-15",
       "credits": {
-        "author": "AUTHOR",
-        "illustrator": "ILLUSTRATOR"
+        "author": "Sharrona Pearl",
+        "illustrator": "Brittany Holloway-Brown"
       },
-      "tags": [],
-      "products": [
-        {
-          "name": "NAME",
-          "imageUrl": "IMAGE",
-          "credits": {
-            "author": "AUTHOR",
-            "photographers": [],
-            "foodStylists": [],
-            "propStylists": []
-          },
-          "shops": [
-            {
-              "name": "SHOPNAME",
-              "price": "PRICE",
-              "discountedPrice": "null",
-              "url": "URL"
-            }
-          ]
-        }
+      "tags": [
+        "A Skeptic Tries",
+        "Culture",
+        "Lifestyle"
       ]
     },
     {
@@ -6534,28 +6518,25 @@
       "title": "The Size of This Water Bottle Is Proof That the Multiverse Exists",
       "subtitle": "The Pankio sports water bottle contains exactly one half gallon of water and also the multitudes of the ocean.",
       "category": "culture",
-      "dateUploaded": "2022-03-11",
+      "dateUploaded": "2022-02-14",
       "credits": {
-        "author": "AUTHOR",
-        "illustrator": "ILLUSTRATOR"
+        "author": "MacKenzie Chung Fegan",
+        "illustrator": "Hazel Zavala"
       },
-      "tags": [],
+      "tags": [
+        "Culture",
+        "Shopping",
+        "Lifestyle"
+      ],
       "products": [
         {
-          "name": "NAME",
-          "imageUrl": "IMAGE",
-          "credits": {
-            "author": "AUTHOR",
-            "photographers": [],
-            "foodStylists": [],
-            "propStylists": []
-          },
+          "name": "PANKIO Water Bottle",
+          "imageUrl": "https://assets.bonappetit.com/photos/61003b5c1d8a5066a786b7b7/master/w_1280,c_limit/PD-product-panko-water-bottle.jpg",
           "shops": [
             {
-              "name": "SHOPNAME",
-              "price": "PRICE",
-              "discountedPrice": "null",
-              "url": "URL"
+              "name": "Amazon",
+              "price": "16",
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCksTv9gRh4gVGdSdk28SkbEaP2yR4JTVAkY3T4Ws1msjynEArCmszHrYRG5yjVSNiac?cid=6206f0ad0f648d6f3e9bef6b"
             }
           ]
         }
@@ -6566,31 +6547,15 @@
       "title": "The Gilded Age's Creator Julian Fellowes Would Party With Its Real-Life Socialites",
       "subtitle": "At his dream dinner party, the director and screenwriter would serve coronation chicken and crepes Suzette.",
       "category": "people",
-      "dateUploaded": "2022-03-11",
+      "dateUploaded": "2022-02-14",
       "credits": {
-        "author": "AUTHOR",
-        "illustrator": "ILLUSTRATOR"
+        "author": "Dawn Davis",
+        "illustrator": "Lauren Tamaki"
       },
-      "tags": [],
-      "products": [
-        {
-          "name": "NAME",
-          "imageUrl": "IMAGE",
-          "credits": {
-            "author": "AUTHOR",
-            "photographers": [],
-            "foodStylists": [],
-            "propStylists": []
-          },
-          "shops": [
-            {
-              "name": "SHOPNAME",
-              "price": "PRICE",
-              "discountedPrice": "null",
-              "url": "URL"
-            }
-          ]
-        }
+      "tags": [
+        "Dream Dinner Party",
+        "Pop Culture",
+        "Interviews"
       ]
     },
     {
@@ -6600,29 +6565,13 @@
       "category": "culture",
       "dateUploaded": "2022-03-11",
       "credits": {
-        "author": "AUTHOR",
-        "illustrator": "ILLUSTRATOR"
+        "author": "Caitlin Raux Gunther",
+        "illustrator": "Tamara Shopsin"
       },
-      "tags": [],
-      "products": [
-        {
-          "name": "NAME",
-          "imageUrl": "IMAGE",
-          "credits": {
-            "author": "AUTHOR",
-            "photographers": [],
-            "foodStylists": [],
-            "propStylists": []
-          },
-          "shops": [
-            {
-              "name": "SHOPNAME",
-              "price": "PRICE",
-              "discountedPrice": "null",
-              "url": "URL"
-            }
-          ]
-        }
+      "tags": [
+        "Lifestyle",
+        "Culture",
+        "Underrated"
       ]
     },
     {
@@ -6632,29 +6581,11 @@
       "category": "restaurants",
       "dateUploaded": "2022-03-11",
       "credits": {
-        "author": "AUTHOR",
-        "illustrator": "ILLUSTRATOR"
+        "author": "Elize Diop and Brad Johnson",
+        "illustrator": "Paul Spella"
       },
-      "tags": [],
-      "products": [
-        {
-          "name": "NAME",
-          "imageUrl": "IMAGE",
-          "credits": {
-            "author": "AUTHOR",
-            "photographers": [],
-            "foodStylists": [],
-            "propStylists": []
-          },
-          "shops": [
-            {
-              "name": "SHOPNAME",
-              "price": "PRICE",
-              "discountedPrice": "null",
-              "url": "URL"
-            }
-          ]
-        }
+      "tags": [
+        "Super Bowl"
       ]
     }
   ],
@@ -6746,12 +6677,6 @@
         {
           "name": "NAME",
           "imageUrl": "IMAGE",
-          "credits": {
-            "author": "AUTHOR",
-            "photographers": [],
-            "foodStylists": [],
-            "propStylists": []
-          },
           "shops": [
             {
               "name": "SHOPNAME",
@@ -6777,12 +6702,6 @@
         {
           "name": "NAME",
           "imageUrl": "IMAGE",
-          "credits": {
-            "author": "AUTHOR",
-            "photographers": [],
-            "foodStylists": [],
-            "propStylists": []
-          },
           "shops": [
             {
               "name": "SHOPNAME",
@@ -6808,12 +6727,6 @@
         {
           "name": "NAME",
           "imageUrl": "IMAGE",
-          "credits": {
-            "author": "AUTHOR",
-            "photographers": [],
-            "foodStylists": [],
-            "propStylists": []
-          },
           "shops": [
             {
               "name": "SHOPNAME",
@@ -6839,12 +6752,6 @@
         {
           "name": "NAME",
           "imageUrl": "IMAGE",
-          "credits": {
-            "author": "AUTHOR",
-            "photographers": [],
-            "foodStylists": [],
-            "propStylists": []
-          },
           "shops": [
             {
               "name": "SHOPNAME",
@@ -6870,12 +6777,6 @@
         {
           "name": "NAME",
           "imageUrl": "IMAGE",
-          "credits": {
-            "author": "AUTHOR",
-            "photographers": [],
-            "foodStylists": [],
-            "propStylists": []
-          },
           "shops": [
             {
               "name": "SHOPNAME",
@@ -6901,12 +6802,6 @@
         {
           "name": "NAME",
           "imageUrl": "IMAGE",
-          "credits": {
-            "author": "AUTHOR",
-            "photographers": [],
-            "foodStylists": [],
-            "propStylists": []
-          },
           "shops": [
             {
               "name": "SHOPNAME",
@@ -6934,12 +6829,6 @@
         {
           "name": "NAME",
           "imageUrl": "IMAGE",
-          "credits": {
-            "author": "AUTHOR",
-            "photographers": [],
-            "foodStylists": [],
-            "propStylists": []
-          },
           "shops": [
             {
               "name": "SHOPNAME",
@@ -6965,12 +6854,6 @@
         {
           "name": "NAME",
           "imageUrl": "IMAGE",
-          "credits": {
-            "author": "AUTHOR",
-            "photographers": [],
-            "foodStylists": [],
-            "propStylists": []
-          },
           "shops": [
             {
               "name": "SHOPNAME",
@@ -6996,12 +6879,6 @@
         {
           "name": "NAME",
           "imageUrl": "IMAGE",
-          "credits": {
-            "author": "AUTHOR",
-            "photographers": [],
-            "foodStylists": [],
-            "propStylists": []
-          },
           "shops": [
             {
               "name": "SHOPNAME",
@@ -7027,12 +6904,6 @@
         {
           "name": "NAME",
           "imageUrl": "IMAGE",
-          "credits": {
-            "author": "AUTHOR",
-            "photographers": [],
-            "foodStylists": [],
-            "propStylists": []
-          },
           "shops": [
             {
               "name": "SHOPNAME",
@@ -7058,12 +6929,6 @@
         {
           "name": "NAME",
           "imageUrl": "IMAGE",
-          "credits": {
-            "author": "AUTHOR",
-            "photographers": [],
-            "foodStylists": [],
-            "propStylists": []
-          },
           "shops": [
             {
               "name": "SHOPNAME",
@@ -7089,12 +6954,6 @@
         {
           "name": "NAME",
           "imageUrl": "IMAGE",
-          "credits": {
-            "author": "AUTHOR",
-            "photographers": [],
-            "foodStylists": [],
-            "propStylists": []
-          },
           "shops": [
             {
               "name": "SHOPNAME",
@@ -7120,12 +6979,6 @@
         {
           "name": "NAME",
           "imageUrl": "IMAGE",
-          "credits": {
-            "author": "AUTHOR",
-            "photographers": [],
-            "foodStylists": [],
-            "propStylists": []
-          },
           "shops": [
             {
               "name": "SHOPNAME",
@@ -7151,12 +7004,6 @@
         {
           "name": "NAME",
           "imageUrl": "IMAGE",
-          "credits": {
-            "author": "AUTHOR",
-            "photographers": [],
-            "foodStylists": [],
-            "propStylists": []
-          },
           "shops": [
             {
               "name": "SHOPNAME",

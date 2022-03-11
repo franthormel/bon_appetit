@@ -16,7 +16,7 @@ class Article {
   final DateTime dateUploaded;
   final ArticleCredits credits;
   final List<String> tags;
-  final List<ItemProduct> products;
+  final List<ItemProduct>? products;
 
   Article({
     required this.imageUrl,
