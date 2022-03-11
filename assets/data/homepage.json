@@ -41,7 +41,7 @@
           {
             "name": "Citrus Juicer",
             "imageUrl": "https://assets.bonappetit.com/photos/60cb7a8d003da72373591230/1:1/w_640,c_limit/citrus_juicer.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "7",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCkqmamAYoDCW25HByXWdrbHSxzZZQ8CDymSYicb4gm7RQoMajkJgsUBChTzVc7uDmnp?cid=621ea1d4f62bdce4b6a057c0"
@@ -50,7 +50,7 @@
           {
             "name": "Cast Iron Skillet",
             "imageUrl": "https://assets.bonappetit.com/photos/596d20f72b659b48a371c404/1:1/w_640,c_limit/basically-equipment-cast-iron-skillet.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "30",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsjRC9aDQ5q4VRyy7rQ9ZsMzH9ydcos5q16PQTBNT2s2UHKx5crSgyqYMArEKpCLs?cid=621ea1d4f62bdce4b6a057c0"
@@ -59,7 +59,7 @@
           {
             "name": "Whisk",
             "imageUrl": "https://assets.bonappetit.com/photos/60a5250981b25b25c6c8d4af/1:1/w_640,c_limit/product%20whisk.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "10",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmseir9LTWDnsngCNz94mmbti599nXxZB4ynBjSEZGqE9X9bm5Y6d22T2VC7E132tJ?cid=621ea1d4f62bdce4b6a057c0"
@@ -68,7 +68,7 @@
           {
             "name": "Microplane Grater",
             "imageUrl": "https://assets.bonappetit.com/photos/5dcf0969ad1a0300083764ac/1:1/w_640,c_limit/Basically-Molly-GiftGuide-Microplane.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "16",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCkqQTrua49zXQVt3D1ssizewnLzoEJRFp7v4TYHBY5BhaqMXH9FwvtFAmJtPukP37yW?cid=621ea1d4f62bdce4b6a057c0"
@@ -645,7 +645,7 @@
           {
             "name": "Rimmed Baking Sheet",
             "imageUrl": "https://assets.bonappetit.com/photos/596940e46c75df51bc0b91c4/1:1/w_640,c_limit/basically-equipment-rimmed-baking-sheet.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Bon Appétit Market",
               "price": "20",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsedj4Mg35L8ML9goMDFHzK3zDyuhuhMBCTCmtenJ3Ua1BTAsNqeXyskDoCq7vyTC?cid=61f006cd3135111cef663cc9&xid=fr1646799829760agd"
@@ -654,7 +654,7 @@
           {
             "name": "Chef's Knife",
             "imageUrl": "https://assets.bonappetit.com/photos/5f3d7774b4b3538eb4dc4f93/1:1/w_640,c_limit/Basically-gift-guide-2017-Victorinox-Chef.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "34.53",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsePzcnjSNojcExKfoYuf2Bo8CjcWLivgJjQ7kJW6pSiSPG3DxLjSFevzZwe72zmJ?cid=61f006cd3135111cef663cc9&xid=fr1646799829760fia"
@@ -663,7 +663,7 @@
           {
             "name": "Cutting Board",
             "imageUrl": "https://assets.bonappetit.com/photos/59693b227102712b68401a8c/1:1/w_640,c_limit/basically-equipment-cutting-board.jpg",
-            "sponsor": {
+            "shop": {
               "name": "IKEA",
               "price": "10",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsePzcUAqT5KYR9jmBi7u2WiPA7b52oYXgb65uX32u5zVAmCqFYg6TfHMVEi8EWm3?cid=61f006cd3135111cef663cc9&xid=fr1646799829760gdb"
@@ -672,7 +672,7 @@
           {
             "name": "Citrus Juicerr",
             "imageUrl": "https://assets.bonappetit.com/photos/60cb7a8d003da72373591230/1:1/w_640,c_limit/citrus_juicer.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "7",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCkqmamAYoDCW25HByXWdrbHSxzZZQ8CDymSYicb4gm7RQoMajkJgsUBChTzVc7uDmnp?cid=61f006cd3135111cef663cc9&xid=fr1646799829760ibh"
@@ -777,7 +777,7 @@
           {
             "name": "Measuring Spoons",
             "imageUrl": "https://assets.bonappetit.com/photos/6176f85dfcfe3c4f641ab096/1:1/w_640,c_limit/Bamboozle_-_Measuring_Spoon_Set_1080x.jpeg",
-            "sponsor": {
+            "shop": {
               "name": "Bon Appétit Market",
               "price": "10",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsjL7zFd1VZg1c8kdtNvsG7twwxaXh11A44tWUpgKtfxNBCGmUwHpZWMJKDnXRaED?cid=5e31acafb37f4c00098901d5&xid=fr1646799829417fja"
@@ -786,7 +786,7 @@
           {
             "name": "Measuring Cups",
             "imageUrl": "https://assets.bonappetit.com/photos/6176f8adfcfe3c4f641ab098/1:1/w_640,c_limit/Bamboozle_-_Measuring_Cup_Set_1_900x.jpeg",
-            "sponsor": {
+            "shop": {
               "name": "Bon Appétit Market",
               "price": "18",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsj6DSUHAdpskaaiLT1hZJrHAuGmoQ4tZnFzkmLJYkyuyUzuiT7kiaSTQELYdC7fe?cid=5e31acafb37f4c00098901d5&xid=fr1646799829417dgh"
@@ -795,7 +795,7 @@
           {
             "name": "Chef's Knife",
             "imageUrl": "https://assets.bonappetit.com/photos/5f3d7774b4b3538eb4dc4f93/1:1/w_640,c_limit/Basically-gift-guide-2017-Victorinox-Chef.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "34.53",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsePzcnjSNojcExKfoYuf2Bo8CjcWLivgJjQ7kJW6pSiSPG3DxLjSFevzZwe72zmJ?cid=5e31acafb37f4c00098901d5&xid=fr1646799829417eig"
@@ -804,7 +804,7 @@
           {
             "name": "Cutting Board",
             "imageUrl": "https://assets.bonappetit.com/photos/59693b227102712b68401a8c/1:1/w_640,c_limit/basically-equipment-cutting-board.jpg",
-            "sponsor": {
+            "shop": {
               "name": "IKEA",
               "price": "10",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsePzcUAqT5KYR9jmBi7u2WiPA7b52oYXgb65uX32u5zVAmCqFYg6TfHMVEi8EWm3?cid=5e31acafb37f4c00098901d5&xid=fr1646799829417gae"
@@ -813,7 +813,7 @@
           {
             "name": "Dutch Oven",
             "imageUrl": "https://assets.bonappetit.com/photos/5a7490a05736e36c6bb6a23e/1:1/w_640,c_limit/Basically_Dutch-Oven-Large-with-Lid.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "80",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsedj4MPoD5E3qUsenzmqst8DhKsrszGFFtx8gq8yPpUrNemjH3MrZuLSZaec7XHF?cid=5e31acafb37f4c00098901d5&xid=fr1646799829417fjb"
@@ -822,7 +822,7 @@
           {
             "name": "Wooden Spoon",
             "imageUrl": "https://assets.bonappetit.com/photos/596940436c75df51bc0b91c0/1:1/w_640,c_limit/basically-equipment-wooden-spoon.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "6",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmseir9Q44EJYVvP7yG1yxFWWMTcsBFkXfg99oWSFH4TfoDvsfm6VcPJCGM9i2xv3u?cid=5e31acafb37f4c00098901d5&xid=fr1646799829417bdh"
@@ -831,7 +831,7 @@
           {
             "name": "Vegetable Peeler",
             "imageUrl": "https://assets.bonappetit.com/photos/59c28da2f22f014ca11e0041/1:1/w_640,c_limit/Basically_Vegetable-Peeler.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "10",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmt7v1rcMkDJjYkUEdEFcTqRwbohcczKgUymYLWv3WoVMdv6kgTxLtwkEQGvYE8JTM?cid=5e31acafb37f4c00098901d5&xid=fr1646799829417icd"
@@ -840,7 +840,7 @@
           {
             "name": "Cake Tester",
             "imageUrl": "https://assets.bonappetit.com/photos/59de40581406f61d93be2020/1:1/w_640,c_limit/Basically_Cake-Tester.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "3",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbnFuawB8JqLtk8atrNLXWis7623K5dvH8BdLzcDzoVbpjXiiwhKp5rW7yuCzsFHupD?cid=5e31acafb37f4c00098901d5&xid=fr1646799829417dfb"
@@ -849,7 +849,7 @@
           {
             "name": "Box Grater",
             "imageUrl": "https://assets.bonappetit.com/photos/59aed2a835530064b1ea599a/1:1/w_640,c_limit/Bssically_Cheese-Grater.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "13",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbnETjVD6hJEHcwqmXPEcGnmZ7XTW7WP9kjZNriNX76tZjTw4RcAe9nzoL51r5u3Yb2?cid=5e31acafb37f4c00098901d5&xid=fr1646799829417hjh"
@@ -858,7 +858,7 @@
           {
             "name": "Blender",
             "imageUrl": "https://assets.bonappetit.com/photos/597900e49989ab38ffaec05a/1:1/w_640,c_limit/Basically_Blender.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "40",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmt8bHMU5VRggJx742ruvyEHPx5Qy8J6tskJDJ39iWbNCakicb2Y2Tckzh6tDF9wbw?cid=5e31acafb37f4c00098901d5&xid=fr1646799829417aig"
@@ -867,7 +867,7 @@
           {
             "name": "Rimmed Baking Sheet",
             "imageUrl": "https://assets.bonappetit.com/photos/596940e46c75df51bc0b91c4/1:1/w_640,c_limit/basically-equipment-rimmed-baking-sheet.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Bon Appétit Market",
               "price": "20",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsedj4Mg35L8ML9goMDFHzK3zDyuhuhMBCTCmtenJ3Ua1BTAsNqeXyskDoCq7vyTC?cid=5e31acafb37f4c00098901d5&xid=fr1646799829417bea"
@@ -986,7 +986,7 @@
           {
             "name": "Large Pot",
             "imageUrl": "https://assets.bonappetit.com/photos/596938717654ad3411665279/1:1/w_640,c_limit/basically-equipment-large-pot.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "55",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsePu89zrtEVdnnGmhJCnfaR4K6fFrA9iG8F2RkThLkTJFehKHy22j28BNNwCoMP6?cid=61f006cd629920bf61fe6ccf&xid=fr1646799830294fhg"
@@ -995,7 +995,7 @@
           {
             "name": "Ladle",
             "imageUrl": "https://assets.bonappetit.com/photos/620d3eb4c76ccefd90e4f6e5/1:1/w_640,c_limit/oxo-nylon-ladle-black.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "8",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbnFLPK53qB5WRWfy3CnDy95amhUjRRSGs5xCvYrrURDz4ykjToLg3nsxSVSaP3Tnvk?cid=61f006cd629920bf61fe6ccf&xid=fr1646799830294jif"
@@ -1004,7 +1004,7 @@
           {
             "name": "Mesh Sieve",
             "imageUrl": "https://assets.bonappetit.com/photos/59721c9a5e52a765a3283012/1:1/w_640,c_limit/basically-fine-mesh-sieve.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "13",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCdPUMvA6bhXSdsJZnmPFia1n3zfcQeqe2RVCvrSNgdX3p9FJ4ZQ6tXia22VLZiTm4Yd?cid=61f006cd629920bf61fe6ccf&xid=fr1646799830294dgj"
@@ -1013,7 +1013,7 @@
           {
             "name": "Heatproof Measuring Cup",
             "imageUrl": "https://assets.bonappetit.com/photos/598b240b33219f41c020b06b/1:1/w_640,c_limit/Basically_Heatproof-measuring-cup.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "18",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmth7dPurFf5C5VufVHyKQJC9yq1Fnt9WpS3nRLF2mt2iEgo8i2nV3eGx8JtS3j9eY?cid=61f006cd629920bf61fe6ccf&xid=fr1646799830294efe"
@@ -1110,7 +1110,7 @@
           {
             "name": "Large Straight-Sided Skillet",
             "imageUrl": "https://assets.bonappetit.com/photos/5a71f59996525e37e74c6349/1:1/w_640,c_limit/Basically_Skillet-Large-Straight-Sided_FINAL.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "199",
               "discountedPrice": "290",
@@ -1120,7 +1120,7 @@
           {
             "name": "Bamboozle Nesting Bowls",
             "imageUrl": "https://assets.bonappetit.com/photos/6172e5de753b2bfc8a1123dd/1:1/w_640,c_limit/Bamboozle_-_7-Piece_Nesting_Bowls_1_1_1_1512x.jpeg",
-            "sponsor": {
+            "shop": {
               "name": "Bon Appétit Market",
               "price": "80",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCksXHxx7pG3j1quR4FWnoPotf8i2s5TzdN77ctWDa4tW5cFMmokaactBhj9Xu9Wbhim?cid=61f006cd629920bf61fe6cce&xid=fr1646802062883ahd"
@@ -1129,7 +1129,7 @@
           {
             "name": "Wooden Spoon",
             "imageUrl": "https://assets.bonappetit.com/photos/596940436c75df51bc0b91c0/1:1/w_640,c_limit/basically-equipment-wooden-spoon.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "6",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmseir9Q44EJYVvP7yG1yxFWWMTcsBFkXfg99oWSFH4TfoDvsfm6VcPJCGM9i2xv3u?cid=61f006cd629920bf61fe6cce&xid=fr1646802062883bec"
@@ -1138,7 +1138,7 @@
           {
             "name": "Can Opener",
             "imageUrl": "https://assets.bonappetit.com/photos/59e902936fe2375498131cb2/1:1/w_640,c_limit/Basically_Can-Opener.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "14",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbnGJjhjUwXtYtWwT3iZ9MiPiKxaZ6381QcRBvjxHSXv88ezGKj7jyQKYPMDWTkeur3?cid=61f006cd629920bf61fe6cce&xid=fr1646802062883jdj"
@@ -1257,7 +1257,7 @@
           {
             "name": "Heatproof Measuring Cup",
             "imageUrl": "https://assets.bonappetit.com/photos/598b240b33219f41c020b06b/1:1/w_640,c_limit/Basically_Heatproof-measuring-cup.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "18",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmth7dPurFf5C5VufVHyKQJC9yq1Fnt9WpS3nRLF2mt2iEgo8i2nV3eGx8JtS3j9eY?cid=61f006cd629920bf61fe6ccf&xid=fr1646799830294efe"
@@ -1266,7 +1266,7 @@
           {
             "name": "2-Quart Baking Dish",
             "imageUrl": "https://assets.bonappetit.com/photos/5981eba44f130a49582c2d05/1:1/w_640,c_limit/Basically_Baking-Dish-Shallow-2qt.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "8.65",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmtbnX6CNDM3AVdeGo4SSJAy7F1njHe1WB4PnHXKU21DbnBYX3ttg3VZhmCvuz6q4p?cid=618af3268653ce4d14754d26&xid=fr1646802065122cda"
@@ -1275,7 +1275,7 @@
           {
             "name": "Large Skillet",
             "imageUrl": "https://assets.bonappetit.com/photos/596cf2fc7102712b68401b14/1:1/w_640,c_limit/Bascially_Large-Skillet.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "84",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsjL7yvrJaDvPvX1UKuPcgywsyh8YmZNhf6FCNW6eixZ5hgj6PDef1iDyTyVmjPQU?cid=618af3268653ce4d14754d26&xid=fr1646802065122cih"
@@ -1284,7 +1284,7 @@
           {
             "name": "Pepper Grinder",
             "imageUrl": "https://assets.bonappetit.com/photos/596ce8b82b659b48a371c37f/1:1/w_640,c_limit/Basically_Pepper-Grinder.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "16.99",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsj6DSrPmeeHQ2CqijcWtmFL13KNPZe9ZWTCZQiD91nAYAx5foGwtKzUxruQ3UbdA?cid=618af3268653ce4d14754d26&xid=fr1646802065122jfh"
@@ -1428,7 +1428,7 @@
           {
             "name": "Medium Pot with Lid",
             "imageUrl": "https://assets.bonappetit.com/photos/59dfa78d3bcba604e0a9f7b9/1:1/w_640,c_limit/Basically_Medium-pot-with-lid.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "155",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbnFuiQJrsRy7VmDGksL98hUCX81bUbz7fMc6EwMwiMvnsmwsNFoN9iD6PHgQ9s5PL1?cid=61f006cd923ea3f67817f0ee&xid=fr1646802069110efh"
@@ -1437,7 +1437,7 @@
           {
             "name": "Citrus Juicer",
             "imageUrl": "https://assets.bonappetit.com/photos/60cb7a8d003da72373591230/1:1/w_640,c_limit/citrus_juicer.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "7",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCkqmamAYoDCW25HByXWdrbHSxzZZQ8CDymSYicb4gm7RQoMajkJgsUBChTzVc7uDmnp?cid=621ea1d4f62bdce4b6a057c0"
@@ -1446,7 +1446,7 @@
           {
             "name": "Wooden Spoon",
             "imageUrl": "https://assets.bonappetit.com/photos/596940436c75df51bc0b91c0/1:1/w_640,c_limit/basically-equipment-wooden-spoon.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "6",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmseir9Q44EJYVvP7yG1yxFWWMTcsBFkXfg99oWSFH4TfoDvsfm6VcPJCGM9i2xv3u?cid=5e31acafb37f4c00098901d5&xid=fr1646799829417bdh"
@@ -1455,7 +1455,7 @@
           {
             "name": "Microplane Grater",
             "imageUrl": "https://assets.bonappetit.com/photos/5dcf0969ad1a0300083764ac/1:1/w_640,c_limit/Basically-Molly-GiftGuide-Microplane.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "16",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCkqQTrua49zXQVt3D1ssizewnLzoEJRFp7v4TYHBY5BhaqMXH9FwvtFAmJtPukP37yW?cid=621ea1d4f62bdce4b6a057c0"
@@ -1558,7 +1558,7 @@
           {
             "name": "Cast Iron Skillet",
             "imageUrl": "https://assets.bonappetit.com/photos/596d20f72b659b48a371c404/1:1/w_640,c_limit/basically-equipment-cast-iron-skillet.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "30",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsjRC9aDQ5q4VRyy7rQ9ZsMzH9ydcos5q16PQTBNT2s2UHKx5crSgyqYMArEKpCLs?cid=621ea1d4f62bdce4b6a057c0"
@@ -1567,7 +1567,7 @@
           {
             "name": "Instant-Read Thermometer",
             "imageUrl": "https://assets.bonappetit.com/photos/5ef4ca5dc19732d9dfc130a7/1:1/w_640,c_limit/Basically-Thermometer-1x1.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Thermoworks",
               "price": "35",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmtD3iavB4LB4J2gtmSecJtmnCfXYAFJ3CJqGL9oW2n7zRGHWE8JTrF9dZLmkGrmYC?cid=61f006cd6e9e896c3f22c747&xid=fr1646804248021bha"
@@ -1576,7 +1576,7 @@
           {
             "name": "Box Grater",
             "imageUrl": "https://assets.bonappetit.com/photos/59aed2a835530064b1ea599a/1:1/w_640,c_limit/Bssically_Cheese-Grater.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "13",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbnETjVD6hJEHcwqmXPEcGnmZ7XTW7WP9kjZNriNX76tZjTw4RcAe9nzoL51r5u3Yb2?cid=5e31acafb37f4c00098901d5&xid=fr1646799829417hjh"
@@ -1585,7 +1585,7 @@
           {
             "name": "Citrus Juicer",
             "imageUrl": "https://assets.bonappetit.com/photos/60cb7a8d003da72373591230/1:1/w_640,c_limit/citrus_juicer.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "7",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCkqmamAYoDCW25HByXWdrbHSxzZZQ8CDymSYicb4gm7RQoMajkJgsUBChTzVc7uDmnp?cid=621ea1d4f62bdce4b6a057c0"
@@ -1594,7 +1594,7 @@
           {
             "name": "Tongs",
             "imageUrl": "https://assets.bonappetit.com/photos/5a1eddec2479441876ab9959/1:1/w_640,c_limit/Basically_Tongs.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "13",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsePu8Y3B7K5G4cFmneVqqJNvPgsmfJEFejzaPQQWMnt7Y8L64Tuvzjahsb2382jz?cid=61f006cd6e9e896c3f22c747&xid=fr1646804248021fhj"
@@ -1697,7 +1697,7 @@
           {
             "name": "Dutch Oven",
             "imageUrl": "https://assets.bonappetit.com/photos/5a7490a05736e36c6bb6a23e/1:1/w_640,c_limit/Basically_Dutch-Oven-Large-with-Lid.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "80",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsedj4MPoD5E3qUsenzmqst8DhKsrszGFFtx8gq8yPpUrNemjH3MrZuLSZaec7XHF?cid=5e31acafb37f4c00098901d5&xid=fr1646799829417fjb"
@@ -1706,7 +1706,7 @@
           {
             "name": "Wooden Spoon",
             "imageUrl": "https://assets.bonappetit.com/photos/596940436c75df51bc0b91c0/1:1/w_640,c_limit/basically-equipment-wooden-spoon.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "6",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmseir9Q44EJYVvP7yG1yxFWWMTcsBFkXfg99oWSFH4TfoDvsfm6VcPJCGM9i2xv3u?cid=5e31acafb37f4c00098901d5&xid=fr1646799829417bdh"
@@ -1715,7 +1715,7 @@
           {
             "name": "Heatproof Measuring Cup",
             "imageUrl": "https://assets.bonappetit.com/photos/598b240b33219f41c020b06b/1:1/w_640,c_limit/Basically_Heatproof-measuring-cup.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "18",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmth7dPurFf5C5VufVHyKQJC9yq1Fnt9WpS3nRLF2mt2iEgo8i2nV3eGx8JtS3j9eY?cid=61f006cd629920bf61fe6ccf&xid=fr1646799830294efe"
@@ -1724,7 +1724,7 @@
           {
             "name": "Medium Skillet",
             "imageUrl": "https://assets.bonappetit.com/photos/596940c66c75df51bc0b91c2/1:1/w_640,c_limit/basically-equipment-medium-skillet.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "60",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsePwjfXkF67YrFXc2vozDb4C2rQZLym2nBDj7juRMf6XTHe9a8ah2SyZUw1P7R8Z?cid=61f006cdfbc085a3bdde84e6&xid=fr1646804247852bdc"
@@ -1865,7 +1865,7 @@
           {
             "name": "Citrus Juicer",
             "imageUrl": "https://assets.bonappetit.com/photos/60cb7a8d003da72373591230/1:1/w_640,c_limit/citrus_juicer.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "7",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCkqmamAYoDCW25HByXWdrbHSxzZZQ8CDymSYicb4gm7RQoMajkJgsUBChTzVc7uDmnp?cid=621ea1d4f62bdce4b6a057c0"
@@ -1874,7 +1874,7 @@
           {
             "name": "Immersion Blender",
             "imageUrl": "https://assets.bonappetit.com/photos/5a3aaccb7d4b9b484283f5d9/1:1/w_640,c_limit/Basically_Hand_Blender.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "100",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCdExGz15VSRopfXpDg9U8MY2oYuPJk1b1UQ1r2cU2GD2JGJ6wrTAddvEtWsnE94cSFR?cid=6209c11b9a4ebb643a0dd8ef&xid=fr1646804249583ffe"
@@ -1883,7 +1883,7 @@
           {
             "name": "Blender",
             "imageUrl": "https://assets.bonappetit.com/photos/597900e49989ab38ffaec05a/1:1/w_640,c_limit/Basically_Blender.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "40",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmt8bHMU5VRggJx742ruvyEHPx5Qy8J6tskJDJ39iWbNCakicb2Y2Tckzh6tDF9wbw?cid=5e31acafb37f4c00098901d5&xid=fr1646799829417aig"
@@ -1892,7 +1892,7 @@
           {
             "name": "Dutch Oven",
             "imageUrl": "https://assets.bonappetit.com/photos/5a7490a05736e36c6bb6a23e/1:1/w_640,c_limit/Basically_Dutch-Oven-Large-with-Lid.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "80",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsedj4MPoD5E3qUsenzmqst8DhKsrszGFFtx8gq8yPpUrNemjH3MrZuLSZaec7XHF?cid=5e31acafb37f4c00098901d5&xid=fr1646799829417fjb"
@@ -1901,7 +1901,7 @@
           {
             "name": "Box Grater",
             "imageUrl": "https://assets.bonappetit.com/photos/59aed2a835530064b1ea599a/1:1/w_640,c_limit/Bssically_Cheese-Grater.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "13",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbnETjVD6hJEHcwqmXPEcGnmZ7XTW7WP9kjZNriNX76tZjTw4RcAe9nzoL51r5u3Yb2?cid=5e31acafb37f4c00098901d5&xid=fr1646799829417hjh"
@@ -2038,7 +2038,7 @@
           {
             "name": "Spice Grinder",
             "imageUrl": "https://assets.bonappetit.com/photos/60a51e7cb3991b925ed2651a/1:1/w_640,c_limit/product-grinder.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Kitchen Aid",
               "price": "45",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCkqQrmqxYgTjNxzkHg1G6iH2ELMmaBt6oN54BxwUrdqqpRw7fcvgXiQmx8UCASNothS?cid=61f006cd496418bf040a6aab&xid=fr1646806413711jga"
@@ -2047,7 +2047,7 @@
           {
             "name": "Large Straight-Sided Skillet",
             "imageUrl": "https://assets.bonappetit.com/photos/5a71f59996525e37e74c6349/1:1/w_640,c_limit/Basically_Skillet-Large-Straight-Sided_FINAL.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "discountedPrice": "299",
               "price": "199",
@@ -2057,7 +2057,7 @@
           {
             "name": "Large Pot",
             "imageUrl": "https://assets.bonappetit.com/photos/596938717654ad3411665279/1:1/w_640,c_limit/basically-equipment-large-pot.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "55",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsePu89zrtEVdnnGmhJCnfaR4K6fFrA9iG8F2RkThLkTJFehKHy22j28BNNwCoMP6?cid=61f006cd496418bf040a6aab&xid=fr1646806413711chb"
@@ -2066,7 +2066,7 @@
           {
             "name": "Heatproof Measuring Cup",
             "imageUrl": "https://assets.bonappetit.com/photos/598b240b33219f41c020b06b/1:1/w_640,c_limit/Basically_Heatproof-measuring-cup.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "18",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmth7dPurFf5C5VufVHyKQJC9yq1Fnt9WpS3nRLF2mt2iEgo8i2nV3eGx8JtS3j9eY?cid=61f006cd629920bf61fe6ccf&xid=fr1646799830294efe"
@@ -2075,7 +2075,7 @@
           {
             "name": "Ladle",
             "imageUrl": "https://assets.bonappetit.com/photos/620d3eb4c76ccefd90e4f6e5/1:1/w_640,c_limit/oxo-nylon-ladle-black.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "8",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbnFLPK53qB5WRWfy3CnDy95amhUjRRSGs5xCvYrrURDz4ykjToLg3nsxSVSaP3Tnvk?cid=61f006cd496418bf040a6aab&xid=fr1646806413711jbc"
@@ -2195,7 +2195,7 @@
           {
             "name": "Large Pot",
             "imageUrl": "https://assets.bonappetit.com/photos/596938717654ad3411665279/1:1/w_640,c_limit/basically-equipment-large-pot.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "55",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsePu89zrtEVdnnGmhJCnfaR4K6fFrA9iG8F2RkThLkTJFehKHy22j28BNNwCoMP6?cid=620669bcd2721805fdcfbc11&xid=fr1646806420910efj"
@@ -2204,7 +2204,7 @@
           {
             "name": "Wooden Spoon",
             "imageUrl": "https://assets.bonappetit.com/photos/596940436c75df51bc0b91c0/1:1/w_640,c_limit/basically-equipment-wooden-spoon.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "6",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmseir9Q44EJYVvP7yG1yxFWWMTcsBFkXfg99oWSFH4TfoDvsfm6VcPJCGM9i2xv3u?cid=620669bcd2721805fdcfbc11&xid=fr1646806420911haf"
@@ -2213,7 +2213,7 @@
           {
             "name": "Mesh Sieve",
             "imageUrl": "https://assets.bonappetit.com/photos/59721c9a5e52a765a3283012/1:1/w_640,c_limit/basically-fine-mesh-sieve.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "13",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCdPUMvA6bhXSdsJZnmPFia1n3zfcQeqe2RVCvrSNgdX3p9FJ4ZQ6tXia22VLZiTm4Yd?cid=620669bcd2721805fdcfbc11&xid=fr1646806420911hjd"
@@ -2222,7 +2222,7 @@
           {
             "name": "Kitchen Towels",
             "imageUrl": "https://assets.bonappetit.com/photos/60a51d1a4dc905ce4e8144f1/1:1/w_640,c_limit/Product%20towel.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "22",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCkqQrmrDq9rpRywnPoKX7NUpdcPjFhQfnof45TA1GTZZ2PNJgZp6HdXCDEQXtDoPXGA?cid=620669bcd2721805fdcfbc11&xid=fr1646806420911bfh"
@@ -2231,7 +2231,7 @@
           {
             "name": "Ladle",
             "imageUrl": "https://assets.bonappetit.com/photos/60a51d17770ddef27b6a6515/1:1/w_640,c_limit/Product-ladel.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "27",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCkqQrmrDZmhwJgPpj6LfEvax98eziNfUpz8TiTSoAgNBhBBzEY2xoWg5AivZCeHF7rp?cid=620669bcd2721805fdcfbc11&xid=fr1646806420911afg"
@@ -2401,7 +2401,7 @@
           {
             "name": "Dutch Oven",
             "imageUrl": "https://assets.bonappetit.com/photos/5a7490a05736e36c6bb6a23e/1:1/w_640,c_limit/Basically_Dutch-Oven-Large-with-Lid.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "80",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsedj4MPoD5E3qUsenzmqst8DhKsrszGFFtx8gq8yPpUrNemjH3MrZuLSZaec7XHF?cid=5e31acafb37f4c00098901d5&xid=fr1646799829417fjb"
@@ -2410,7 +2410,7 @@
           {
             "name": "Ladle",
             "imageUrl": "https://assets.bonappetit.com/photos/620d3eb4c76ccefd90e4f6e5/1:1/w_640,c_limit/oxo-nylon-ladle-black.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "8",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbnFLPK53qB5WRWfy3CnDy95amhUjRRSGs5xCvYrrURDz4ykjToLg3nsxSVSaP3Tnvk?cid=61f006cd629920bf61fe6ccf&xid=fr1646799830294jif"
@@ -2419,7 +2419,7 @@
           {
             "name": "Tongs",
             "imageUrl": "https://assets.bonappetit.com/photos/5a1eddec2479441876ab9959/1:1/w_640,c_limit/Basically_Tongs.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "13",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsePu8Y3B7K5G4cFmneVqqJNvPgsmfJEFejzaPQQWMnt7Y8L64Tuvzjahsb2382jz?cid=61f006cd6e9e896c3f22c747&xid=fr1646804248021fhj"
@@ -2549,7 +2549,7 @@
           {
             "name": "Large Pot",
             "imageUrl": "https://assets.bonappetit.com/photos/596938717654ad3411665279/1:1/w_640,c_limit/basically-equipment-large-pot.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "55",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsePu89zrtEVdnnGmhJCnfaR4K6fFrA9iG8F2RkThLkTJFehKHy22j28BNNwCoMP6?cid=61f006cd629920bf61fe6ccf&xid=fr1646799830294fhg"
@@ -2558,7 +2558,7 @@
           {
             "name": "Colander",
             "imageUrl": "https://assets.bonappetit.com/photos/597901243942a20318cc3f87/1:1/w_640,c_limit/Basically_Colander.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "11",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmt8bHMXXTtTfRB9qNevWK2mBBuS92MmwfGdUiM95HxhW5woBjfu6HbHZwyiATY7EJ?cid=61f006cddae687395287fe61&xid=fr1646808141338eah"
@@ -2567,7 +2567,7 @@
           {
             "name": "Large Skillet",
             "imageUrl": "https://assets.bonappetit.com/photos/596cf2fc7102712b68401b14/1:1/w_640,c_limit/Bascially_Large-Skillet.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "84",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsjL7yvrJaDvPvX1UKuPcgywsyh8YmZNhf6FCNW6eixZ5hgj6PDef1iDyTyVmjPQU?cid=618af3268653ce4d14754d26&xid=fr1646802065122cih"
@@ -2576,7 +2576,7 @@
           {
             "name": "Citrus Juicer",
             "imageUrl": "https://assets.bonappetit.com/photos/60cb7a8d003da72373591230/1:1/w_640,c_limit/citrus_juicer.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "7",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCkqmamAYoDCW25HByXWdrbHSxzZZQ8CDymSYicb4gm7RQoMajkJgsUBChTzVc7uDmnp?cid=621ea1d4f62bdce4b6a057c0"
@@ -2585,7 +2585,7 @@
           {
             "name": "Microplane Grater",
             "imageUrl": "https://assets.bonappetit.com/photos/5dcf0969ad1a0300083764ac/1:1/w_640,c_limit/Basically-Molly-GiftGuide-Microplane.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "16",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCkqQTrua49zXQVt3D1ssizewnLzoEJRFp7v4TYHBY5BhaqMXH9FwvtFAmJtPukP37yW?cid=621ea1d4f62bdce4b6a057c0"
@@ -2594,7 +2594,7 @@
           {
             "name": "Heatproof Measuring Cup",
             "imageUrl": "https://assets.bonappetit.com/photos/598b240b33219f41c020b06b/1:1/w_640,c_limit/Basically_Heatproof-measuring-cup.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "18",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmth7dPurFf5C5VufVHyKQJC9yq1Fnt9WpS3nRLF2mt2iEgo8i2nV3eGx8JtS3j9eY?cid=61f006cd629920bf61fe6ccf&xid=fr1646799830294efe"
@@ -2603,7 +2603,7 @@
           {
             "name": "Tongs",
             "imageUrl": "https://assets.bonappetit.com/photos/5a1eddec2479441876ab9959/1:1/w_640,c_limit/Basically_Tongs.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "13",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsePu8Y3B7K5G4cFmneVqqJNvPgsmfJEFejzaPQQWMnt7Y8L64Tuvzjahsb2382jz?cid=61f006cd6e9e896c3f22c747&xid=fr1646804248021fhj"
@@ -2736,7 +2736,7 @@
           {
             "name": "Cast Iron Skillet",
             "imageUrl": "https://assets.bonappetit.com/photos/596d20f72b659b48a371c404/1:1/w_640,c_limit/basically-equipment-cast-iron-skillet.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "30",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsjRC9aDQ5q4VRyy7rQ9ZsMzH9ydcos5q16PQTBNT2s2UHKx5crSgyqYMArEKpCLs?cid=61f006cd629920bf61fe6ccc&xid=fr1646808141896jbb"
@@ -2745,7 +2745,7 @@
           {
             "name": "Heavy Metal Spatula",
             "imageUrl": "https://assets.bonappetit.com/photos/6201538fad98ece7caee0a5e/1:1/w_640,c_limit/new%20hamburger%20turner%20pb.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "4",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCkubKKjHjGwrmFhSy5Z8X7CHcQMTWiCLQX23jnT3qGPVmKRgC6die7HxyMCCgGVWkdR?cid=61f006cd629920bf61fe6ccc&xid=fr1646808141896gid"
@@ -2754,7 +2754,7 @@
           {
             "name": "Cutting Board",
             "imageUrl": "https://assets.bonappetit.com/photos/59693b227102712b68401a8c/1:1/w_640,c_limit/basically-equipment-cutting-board.jpg",
-            "sponsor": {
+            "shop": {
               "name": "IKEA",
               "price": "10",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsePzcUAqT5KYR9jmBi7u2WiPA7b52oYXgb65uX32u5zVAmCqFYg6TfHMVEi8EWm3?cid=61f006cd629920bf61fe6ccc&xid=fr1646808141896fee"
@@ -2763,7 +2763,7 @@
           {
             "name": "Chef's Knife",
             "imageUrl": "https://assets.bonappetit.com/photos/5f3d7774b4b3538eb4dc4f93/1:1/w_640,c_limit/Basically-gift-guide-2017-Victorinox-Chef.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "34.53",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsePzcnjSNojcExKfoYuf2Bo8CjcWLivgJjQ7kJW6pSiSPG3DxLjSFevzZwe72zmJ?cid=61f006cd629920bf61fe6ccc&xid=fr1646808141896chb"
@@ -2861,7 +2861,7 @@
           {
             "name": "Dutch Oven",
             "imageUrl": "https://assets.bonappetit.com/photos/5a7490a05736e36c6bb6a23e/1:1/w_640,c_limit/Basically_Dutch-Oven-Large-with-Lid.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "80",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsedj4MPoD5E3qUsenzmqst8DhKsrszGFFtx8gq8yPpUrNemjH3MrZuLSZaec7XHF?cid=61b7a860fcb29fa877f5ed2d&xid=fr1646808141761jcb"
@@ -2870,7 +2870,7 @@
           {
             "name": "13x9\" Baking Dish",
             "imageUrl": "https://assets.bonappetit.com/photos/5a0f33646a0d9a7cf8e46e58/1:1/w_640,c_limit/Basically_Baking_dish_13x9.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "20",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCdEvqdsiRP4XxYMWVYTSV9GLv1K3zNrTXn6o8MqWVxhBDLbc5WBkDKUrWjBePBX65DA?cid=61b7a860fcb29fa877f5ed2d&xid=fr1646808141761jfd"
@@ -2879,7 +2879,7 @@
           {
             "name": "Box Grater",
             "imageUrl": "https://assets.bonappetit.com/photos/59aed2a835530064b1ea599a/1:1/w_640,c_limit/Bssically_Cheese-Grater.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "13",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbnETjVD6hJEHcwqmXPEcGnmZ7XTW7WP9kjZNriNX76tZjTw4RcAe9nzoL51r5u3Yb2?cid=61b7a860fcb29fa877f5ed2d&xid=fr1646808141761ejc"
@@ -2888,7 +2888,7 @@
           {
             "name": "Colander",
             "imageUrl": "https://assets.bonappetit.com/photos/597901243942a20318cc3f87/1:1/w_640,c_limit/Basically_Colander.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "11",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmt8bHMXXTtTfRB9qNevWK2mBBuS92MmwfGdUiM95HxhW5woBjfu6HbHZwyiATY7EJ?cid=61b7a860fcb29fa877f5ed2d&xid=fr1646808141761bec"
@@ -2897,7 +2897,7 @@
           {
             "name": "Can Opener",
             "imageUrl": "https://assets.bonappetit.com/photos/59e902936fe2375498131cb2/1:1/w_640,c_limit/Basically_Can-Opener.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "14",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbnGJjhjUwXtYtWwT3iZ9MiPiKxaZ6381QcRBvjxHSXv88ezGKj7jyQKYPMDWTkeur3?cid=61b7a860fcb29fa877f5ed2d&xid=fr1646808141761ifi"
@@ -2906,7 +2906,7 @@
           {
             "name": "Wooden Spoon",
             "imageUrl": "https://assets.bonappetit.com/photos/596940436c75df51bc0b91c0/1:1/w_640,c_limit/basically-equipment-wooden-spoon.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "6",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmseir9Q44EJYVvP7yG1yxFWWMTcsBFkXfg99oWSFH4TfoDvsfm6VcPJCGM9i2xv3u?cid=61b7a860fcb29fa877f5ed2d&xid=fr1646808141761ddj"
@@ -3066,7 +3066,7 @@
           {
             "name": "Large Skillet",
             "imageUrl": "https://assets.bonappetit.com/photos/596cf2fc7102712b68401b14/1:1/w_640,c_limit/Bascially_Large-Skillet.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "84",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsjL7yvrJaDvPvX1UKuPcgywsyh8YmZNhf6FCNW6eixZ5hgj6PDef1iDyTyVmjPQU?cid=61f006cd89ec71e33ee584b3&xid=fr1646811836584gef"
@@ -3075,7 +3075,7 @@
           {
             "name": "Fish Spatula",
             "imageUrl": "https://assets.bonappetit.com/photos/596ce7a5b85671732e0d55e5/1:1/w_640,c_limit/Basically_Fish-Spatula.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "14",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsj6DSo1Aif9S8eozHBrvwMEtdgaCSGztxGhZXLtwvngF9ahubv9d9aVktACJ4Mo1?cid=61f006cd89ec71e33ee584b3&xid=fr1646811836584ada"
@@ -3084,7 +3084,7 @@
           {
             "name": "Microplane Grater",
             "imageUrl": "https://assets.bonappetit.com/photos/5dcf0969ad1a0300083764ac/1:1/w_640,c_limit/Basically-Molly-GiftGuide-Microplane.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "16",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCkqQTrua49zXQVt3D1ssizewnLzoEJRFp7v4TYHBY5BhaqMXH9FwvtFAmJtPukP37yW?cid=61f006cd89ec71e33ee584b3&xid=fr1646811836584dah"
@@ -3093,7 +3093,7 @@
           {
             "name": "Citrus Juicer",
             "imageUrl": "https://assets.bonappetit.com/photos/60cb7a8d003da72373591230/1:1/w_640,c_limit/citrus_juicer.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "7",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCkqmamAYoDCW25HByXWdrbHSxzZZQ8CDymSYicb4gm7RQoMajkJgsUBChTzVc7uDmnp?cid=61f006cd89ec71e33ee584b3&xid=fr1646811836584dci"
@@ -3102,7 +3102,7 @@
           {
             "name": "Whisk",
             "imageUrl": "https://assets.bonappetit.com/photos/60a5250981b25b25c6c8d4af/1:1/w_640,c_limit/product%20whisk.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "10",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmseir9LTWDnsngCNz94mmbti599nXxZB4ynBjSEZGqE9X9bm5Y6d22T2VC7E132tJ?cid=61f006cd89ec71e33ee584b3&xid=fr1646811836585fhh"
@@ -3215,7 +3215,7 @@
           {
             "name": "Dutch Oven",
             "imageUrl": "https://assets.bonappetit.com/photos/5a7490a05736e36c6bb6a23e/1:1/w_640,c_limit/Basically_Dutch-Oven-Large-with-Lid.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "80",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsedj4MPoD5E3qUsenzmqst8DhKsrszGFFtx8gq8yPpUrNemjH3MrZuLSZaec7XHF?cid=5e31acafb37f4c00098901d5&xid=fr1646799829417fjb"
@@ -3224,7 +3224,7 @@
           {
             "name": "Ladle",
             "imageUrl": "https://assets.bonappetit.com/photos/620d3eb4c76ccefd90e4f6e5/1:1/w_640,c_limit/oxo-nylon-ladle-black.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "8",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbnFLPK53qB5WRWfy3CnDy95amhUjRRSGs5xCvYrrURDz4ykjToLg3nsxSVSaP3Tnvk?cid=61f006cd629920bf61fe6ccf&xid=fr1646799830294jif"
@@ -3233,7 +3233,7 @@
           {
             "name": "Mesh Sieve",
             "imageUrl": "https://assets.bonappetit.com/photos/59721c9a5e52a765a3283012/1:1/w_640,c_limit/basically-fine-mesh-sieve.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "13",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCdPUMvA6bhXSdsJZnmPFia1n3zfcQeqe2RVCvrSNgdX3p9FJ4ZQ6tXia22VLZiTm4Yd?cid=61f006cd629920bf61fe6ccf&xid=fr1646799830294dgj"
@@ -3242,7 +3242,7 @@
           {
             "name": "Wooden Spoon",
             "imageUrl": "https://assets.bonappetit.com/photos/596940436c75df51bc0b91c0/1:1/w_640,c_limit/basically-equipment-wooden-spoon.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "6",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmseir9Q44EJYVvP7yG1yxFWWMTcsBFkXfg99oWSFH4TfoDvsfm6VcPJCGM9i2xv3u?cid=61f006cd629920bf61fe6cce&xid=fr1646802062883bec"
@@ -3366,7 +3366,7 @@
           {
             "name": "Lodge 6-Quart Dutch Oven",
             "imageUrl": "https://assets.bonappetit.com/photos/5f3d7757cef63982207a4019/1:1/w_640,c_limit/Basically-gift-guide-2017-Lodge-Dutch-Oven.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "80",
               "discountedPrice": "115",
@@ -3376,7 +3376,7 @@
           {
             "name": "Ladle",
             "imageUrl": "https://assets.bonappetit.com/photos/60a51d17770ddef27b6a6515/1:1/w_640,c_limit/Product-ladel.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "27",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCkqQrmrDZmhwJgPpj6LfEvax98eziNfUpz8TiTSoAgNBhBBzEY2xoWg5AivZCeHF7rp?cid=6205a0dbd546d35ddf12a8f9&xid=fr1646811836611ecf"
@@ -3385,7 +3385,7 @@
           {
             "name": "Slotted Spoon",
             "imageUrl": "https://assets.bonappetit.com/photos/60a51d1681b25b25c6c8d4a7/1:1/w_640,c_limit/Product-spoon.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "10",
               "discountedPrice": "13",
@@ -3395,7 +3395,7 @@
           {
             "name": "Small Saucepan",
             "imageUrl": "https://assets.bonappetit.com/photos/608f10ef77a4a61b22655323/1:1/w_640,c_limit/All-Clad-Cookware.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "155",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmt8bJVXhDuNP4b1L6Nr7zWf4Lu3XVpsqgdUqjDu4gTHMynNqz4jReQvtewxpLxngc?cid=6205a0dbd546d35ddf12a8f9&xid=fr1646811836611ajj"
@@ -3551,7 +3551,7 @@
           {
             "name": "Large Straight-Sided Skillet",
             "imageUrl": "https://assets.bonappetit.com/photos/5a71f59996525e37e74c6349/1:1/w_640,c_limit/Basically_Skillet-Large-Straight-Sided_FINAL.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "199",
               "discountedPrice": "290",
@@ -3561,7 +3561,7 @@
           {
             "name": "Blender",
             "imageUrl": "https://assets.bonappetit.com/photos/597900e49989ab38ffaec05a/1:1/w_640,c_limit/Basically_Blender.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "40",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmt8bHMU5VRggJx742ruvyEHPx5Qy8J6tskJDJ39iWbNCakicb2Y2Tckzh6tDF9wbw?cid=5e31acafb37f4c00098901d5&xid=fr1646799829417aig"
@@ -3570,7 +3570,7 @@
           {
             "name": "Large Pot",
             "imageUrl": "https://assets.bonappetit.com/photos/596938717654ad3411665279/1:1/w_640,c_limit/basically-equipment-large-pot.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "55",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsePu89zrtEVdnnGmhJCnfaR4K6fFrA9iG8F2RkThLkTJFehKHy22j28BNNwCoMP6?cid=61f006cd496418bf040a6aab&xid=fr1646806413711chb"
@@ -3579,7 +3579,7 @@
           {
             "name": "Whisk",
             "imageUrl": "https://assets.bonappetit.com/photos/60a5250981b25b25c6c8d4af/1:1/w_640,c_limit/product%20whisk.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "10",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmseir9LTWDnsngCNz94mmbti599nXxZB4ynBjSEZGqE9X9bm5Y6d22T2VC7E132tJ?cid=61f006cd89ec71e33ee584b3&xid=fr1646811836585fhh"
@@ -3588,7 +3588,7 @@
           {
             "name": "Tongs",
             "imageUrl": "https://assets.bonappetit.com/photos/5a1eddec2479441876ab9959/1:1/w_640,c_limit/Basically_Tongs.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "13",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsePu8Y3B7K5G4cFmneVqqJNvPgsmfJEFejzaPQQWMnt7Y8L64Tuvzjahsb2382jz?cid=61f006cd6e9e896c3f22c747&xid=fr1646804248021fhj"
@@ -3715,7 +3715,7 @@
           {
             "name": "Large Saucepan",
             "imageUrl": "https://assets.bonappetit.com/photos/5981eeb3a2d44663099494a1/1:1/w_640,c_limit/Basically_Saucepan-Large.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "60",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmtbnX7B1ohH3YnDaLbC1R2dbNkiCeMHr3J7p6G15LsJimPsXd6JMZzNfQjRrpKgL8?cid=61f006cd3135111cef663cca&xid=fr1646813480662ccg"
@@ -3724,7 +3724,7 @@
           {
             "name": "Mesh Sieve",
             "imageUrl": "https://assets.bonappetit.com/photos/59721c9a5e52a765a3283012/1:1/w_640,c_limit/basically-fine-mesh-sieve.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "13",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCdPUMvA6bhXSdsJZnmPFia1n3zfcQeqe2RVCvrSNgdX3p9FJ4ZQ6tXia22VLZiTm4Yd?cid=61f006cd3135111cef663cca&xid=fr1646813480662hdg"
@@ -3733,7 +3733,7 @@
           {
             "name": "Large Basting Spoon",
             "imageUrl": "https://assets.bonappetit.com/photos/596940a3b85671732e0d556c/1:1/w_640,c_limit/basically-equipment-large-spoon.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "16.37",
               "url": "https://www.amazon.com/J-B-Prince-U715-Sauce-Spoon/dp/B009OL3UZI?ots=1&tag=bonappsite-20&linkCode=w50&cid=61f006cd3135111cef663cca"
@@ -3742,7 +3742,7 @@
           {
             "name": "Tongs",
             "imageUrl": "https://assets.bonappetit.com/photos/5a1eddec2479441876ab9959/1:1/w_640,c_limit/Basically_Tongs.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "13",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsePu8Y3B7K5G4cFmneVqqJNvPgsmfJEFejzaPQQWMnt7Y8L64Tuvzjahsb2382jz?cid=61f006cd6e9e896c3f22c747&xid=fr1646804248021fhj"
@@ -3751,7 +3751,7 @@
           {
             "name": "Glass Storage Container",
             "imageUrl": "https://assets.bonappetit.com/photos/60a51e1f8bff211815dc1304/1:1/w_640,c_limit/Product%20pyrex%201.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "16",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCkqQrmrEDYiprti5k1pVkmkZ3DzkJ13j53BjP3D6WGqTjqGEUgfyE6DtVfUrWkDaazX?cid=61f006cd3135111cef663cca&xid=fr1646813480662cej"
@@ -4144,7 +4144,7 @@
           {
             "name": "8\" Baking Pan",
             "imageUrl": "https://assets.bonappetit.com/photos/5dd45c8a4b10ae0009dda7f8/1:1/w_640,c_limit/Basically-Square-Baking-Pan.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "25",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCdPVENWNLZBUjCJ5aKxMtBwMrSzvaoRftatM49939wHzmWzoyMaDf9Fhgd38nmaEvW4?cid=61f07195dae687395287fe63&xid=fr1646886157890hhc"
@@ -4153,7 +4153,7 @@
           {
             "name": "Silicone Spatula",
             "imageUrl": "https://assets.bonappetit.com/photos/5dcd79d06867540009094710/1:1/w_640,c_limit/BAKING-GIR-Spatula-05-1567.jpg",
-            "sponsor": {
+            "shop": {
               "name": "BA Market",
               "price": "13",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCkqLzv5HXAyCKXnyH9niwzb2FrEWhMsZLkzJuy15yjBs8qeHdWWfWNTiQH8RaFxVZJx?cid=61f07195dae687395287fe63&xid=fr1646886157890fja"
@@ -4162,7 +4162,7 @@
           {
             "name": "Citrus Juicer",
             "imageUrl": "https://assets.bonappetit.com/photos/60cb7a8d003da72373591230/1:1/w_640,c_limit/citrus_juicer.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "7",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCkqmamAYoDCW25HByXWdrbHSxzZZQ8CDymSYicb4gm7RQoMajkJgsUBChTzVc7uDmnp?cid=61f07195dae687395287fe63&xid=fr1646886157890dge"
@@ -4171,7 +4171,7 @@
           {
             "name": "Mesh Sieve",
             "imageUrl": "https://assets.bonappetit.com/photos/59721c9a5e52a765a3283012/1:1/w_640,c_limit/basically-fine-mesh-sieve.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "13",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCdPUMvA6bhXSdsJZnmPFia1n3zfcQeqe2RVCvrSNgdX3p9FJ4ZQ6tXia22VLZiTm4Yd?cid=61f07195dae687395287fe63&xid=fr1646886157890iij"
@@ -4180,7 +4180,7 @@
           {
             "name": "Scale",
             "imageUrl": "https://assets.bonappetit.com/photos/5dcd79d040e0b300083c0f42/1:1/w_640,c_limit/BAKING-Escali-Scale-10-1560.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCdPTsxaw5sHt2SQtGJgDdXxT8LdgRsCF7HGV5XPBPXaCKXY3Y8TePHXBuWT4tyi8TbW?cid=61f07195dae687395287fe63&xid=fr1646886157890jic"
             }
@@ -4188,7 +4188,7 @@
           {
             "name": "Whisk",
             "imageUrl": "https://assets.bonappetit.com/photos/60a5250981b25b25c6c8d4af/1:1/w_640,c_limit/product%20whisk.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "10",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmseir9LTWDnsngCNz94mmbti599nXxZB4ynBjSEZGqE9X9bm5Y6d22T2VC7E132tJ?cid=61f07195dae687395287fe63&xid=fr1646886157891edi"
@@ -4197,7 +4197,7 @@
           {
             "name": "Medium Saucepan",
             "imageUrl": "https://assets.bonappetit.com/photos/59c521525109d2291a96fd0d/1:1/w_640,c_limit/Basically_Saucepan_Medium.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "39",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbnFLPK53cQZnVRhD5YvqmwYSEb2WTLJc7MzCL6Ciby9nLAk27PrAnoAfjG33zHRsis?cid=61f07195dae687395287fe63&xid=fr1646886157891hic"
@@ -4206,7 +4206,7 @@
           {
             "name": "Wire Cooling Rack",
             "imageUrl": "https://assets.bonappetit.com/photos/617c10f1508be16473d3c763/1:1/w_640,c_limit/Nordic_ware_Large_Baking_Cooling_Grid_1_1296x.png",
-            "sponsor": {
+            "shop": {
               "name": "Bon Appétit Market",
               "price": "17",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCkqmb6Ezj9WPjLNgojcdXCCzqUiH28BRBNE6yAewK1h3oiDVvEckA5QdBbaeLuG35xr?cid=61f07195dae687395287fe63&xid=fr1646886157891eic"
@@ -4365,7 +4365,7 @@
           {
             "name": "Food Processor",
             "imageUrl": "https://assets.bonappetit.com/photos/5a8455e1668fb87d44d16020/1:1/w_640,c_limit/Basically_Food-Processor%20(1).jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "49",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCdEzbqdSXsVWyh5ZjhbhF8VLDYt6WGsBgxAfNU1sAqBsbNuGNoJMCfWqMPQCUV6Aorn?cid=61f006cd02a5769a5d522ef5&xid=fr1646886157516hed"
@@ -4374,7 +4374,7 @@
           {
             "name": "Loaf Pan",
             "imageUrl": "https://assets.bonappetit.com/photos/5a996b66d418f823c6403b75/1:1/w_640,c_limit/Basically_Loaf-Pan.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "15",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCdF16Lt2yYQmLj4tvujbEK3w2V3TvkRkkdcKGyPrF9HF5e5WFAhbpmnQi8xsPQmc4tg?cid=61f006cd02a5769a5d522ef5&xid=fr1646886157516fdh"
@@ -4383,7 +4383,7 @@
           {
             "name": "Microplane Grater",
             "imageUrl": "https://assets.bonappetit.com/photos/5dcf0969ad1a0300083764ac/1:1/w_640,c_limit/Basically-Molly-GiftGuide-Microplane.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "16",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCkqQTrua49zXQVt3D1ssizewnLzoEJRFp7v4TYHBY5BhaqMXH9FwvtFAmJtPukP37yW?cid=61f006cd02a5769a5d522ef5&xid=fr1646886157516iej"
@@ -4392,7 +4392,7 @@
           {
             "name": "Citrus Juicer",
             "imageUrl": "https://assets.bonappetit.com/photos/60cb7a8d003da72373591230/1:1/w_640,c_limit/citrus_juicer.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "7",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCkqmamAYoDCW25HByXWdrbHSxzZZQ8CDymSYicb4gm7RQoMajkJgsUBChTzVc7uDmnp?cid=61f006cd02a5769a5d522ef5&xid=fr1646886157516djd"
@@ -4401,7 +4401,7 @@
           {
             "name": "Silicone Spatula",
             "imageUrl": "https://assets.bonappetit.com/photos/5dcd79d06867540009094710/1:1/w_640,c_limit/BAKING-GIR-Spatula-05-1567.jpg",
-            "sponsor": {
+            "shop": {
               "name": "BA Market",
               "price": "13",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCkqLzv5HXAyCKXnyH9niwzb2FrEWhMsZLkzJuy15yjBs8qeHdWWfWNTiQH8RaFxVZJx?cid=61f006cd02a5769a5d522ef5&xid=fr1646886157516gdf"
@@ -4410,7 +4410,7 @@
           {
             "name": "Wire Cooling Rack",
             "imageUrl": "https://assets.bonappetit.com/photos/617c10f1508be16473d3c763/1:1/w_640,c_limit/Nordic_ware_Large_Baking_Cooling_Grid_1_1296x.png",
-            "sponsor": {
+            "shop": {
               "name": "Bon Appétit Market",
               "price": "17",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCkqmb6Ezj9WPjLNgojcdXCCzqUiH28BRBNE6yAewK1h3oiDVvEckA5QdBbaeLuG35xr?cid=61f006cd02a5769a5d522ef5&xid=fr1646886157516jca"
@@ -4419,7 +4419,7 @@
           {
             "name": "Small Offset Spatula",
             "imageUrl": "https://assets.bonappetit.com/photos/5dcd79d2fd8bf400082e3c81/1:1/w_640,c_limit/BAKING-Mini-Offset-Spatula-25-1609.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "6",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbnGnibVQB1afPmka1oRsLX2K5DzJtfAQM9S9uKKL1DAxQyng7RPpbtoNJKthnLz1xt?cid=61f006cd02a5769a5d522ef5&xid=fr1646886157516gge"
@@ -4623,7 +4623,7 @@
           {
             "name": "Chef's Knife",
             "imageUrl": "https://assets.bonappetit.com/photos/5f3d7774b4b3538eb4dc4f93/1:1/w_640,c_limit/Basically-gift-guide-2017-Victorinox-Chef.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "34.53",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsePzcnjSNojcExKfoYuf2Bo8CjcWLivgJjQ7kJW6pSiSPG3DxLjSFevzZwe72zmJ?cid=5f4830095c43e3c9e13b2f26&xid=fr1646888061887cjc"
@@ -4632,7 +4632,7 @@
           {
             "name": "Dutch Oven",
             "imageUrl": "https://assets.bonappetit.com/photos/5a7490a05736e36c6bb6a23e/1:1/w_640,c_limit/Basically_Dutch-Oven-Large-with-Lid.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "80",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsedj4MPoD5E3qUsenzmqst8DhKsrszGFFtx8gq8yPpUrNemjH3MrZuLSZaec7XHF?cid=5f4830095c43e3c9e13b2f26&xid=fr1646888061887hje"
@@ -4641,7 +4641,7 @@
           {
             "name": "Large Bowl",
             "imageUrl": "https://assets.bonappetit.com/photos/59690d9a51b3be287d7816e1/1:1/w_640,c_limit/basically-equipment-large-bowl.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "18",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsePsgv4jgKar6XijnCLAi4c4P9h37yHqqUapziue2kgMS4eN3LbNhFLDvh7H1ynH?cid=5f4830095c43e3c9e13b2f26&xid=fr1646888061887gfg"
@@ -4650,7 +4650,7 @@
           {
             "name": "Measuring Cups",
             "imageUrl": "https://assets.bonappetit.com/photos/6176f8adfcfe3c4f641ab098/1:1/w_640,c_limit/Bamboozle_-_Measuring_Cup_Set_1_900x.jpeg",
-            "sponsor": {
+            "shop": {
               "name": "Bon Appétit Market",
               "price": "18",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsj6DSUHAdpskaaiLT1hZJrHAuGmoQ4tZnFzkmLJYkyuyUzuiT7kiaSTQELYdC7fe?cid=5f4830095c43e3c9e13b2f26&xid=fr1646888061887ijh"
@@ -4659,7 +4659,7 @@
           {
             "name": "Large Pot",
             "imageUrl": "https://assets.bonappetit.com/photos/596938717654ad3411665279/1:1/w_640,c_limit/basically-equipment-large-pot.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "55",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsePu89zrtEVdnnGmhJCnfaR4K6fFrA9iG8F2RkThLkTJFehKHy22j28BNNwCoMP6?cid=5f4830095c43e3c9e13b2f26&xid=fr1646888061887gbe"
@@ -4668,7 +4668,7 @@
           {
             "name": "Measuring Spoons",
             "imageUrl": "https://assets.bonappetit.com/photos/6176f85dfcfe3c4f641ab096/1:1/w_640,c_limit/Bamboozle_-_Measuring_Spoon_Set_1080x.jpeg",
-            "sponsor": {
+            "shop": {
               "name": "Bon Appétit Market",
               "price": "10",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsjL7zFd1VZg1c8kdtNvsG7twwxaXh11A44tWUpgKtfxNBCGmUwHpZWMJKDnXRaED?cid=5f4830095c43e3c9e13b2f26&xid=fr1646888061887gbi"
@@ -4677,7 +4677,7 @@
           {
             "name": "Cutting Board",
             "imageUrl": "https://assets.bonappetit.com/photos/59693b227102712b68401a8c/1:1/w_640,c_limit/basically-equipment-cutting-board.jpg",
-            "sponsor": {
+            "shop": {
               "name": "IKEA",
               "price": "10",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsePzcUAqT5KYR9jmBi7u2WiPA7b52oYXgb65uX32u5zVAmCqFYg6TfHMVEi8EWm3?cid=5f4830095c43e3c9e13b2f26&xid=fr1646888061887dbi"
@@ -4686,7 +4686,7 @@
           {
             "name": "Box Grater",
             "imageUrl": "https://assets.bonappetit.com/photos/59aed2a835530064b1ea599a/1:1/w_640,c_limit/Bssically_Cheese-Grater.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "13",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbnETjVD6hJEHcwqmXPEcGnmZ7XTW7WP9kjZNriNX76tZjTw4RcAe9nzoL51r5u3Yb2?cid=5f4830095c43e3c9e13b2f26&xid=fr1646888061887icb"
@@ -4695,7 +4695,7 @@
           {
             "name": "Tongs",
             "imageUrl": "https://assets.bonappetit.com/photos/5a1eddec2479441876ab9959/1:1/w_640,c_limit/Basically_Tongs.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "13",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsePu8Y3B7K5G4cFmneVqqJNvPgsmfJEFejzaPQQWMnt7Y8L64Tuvzjahsb2382jz?cid=5f4830095c43e3c9e13b2f26&xid=fr1646888061887jgd"
@@ -4704,7 +4704,7 @@
           {
             "name": "Wooden Spoon",
             "imageUrl": "https://assets.bonappetit.com/photos/596940436c75df51bc0b91c0/1:1/w_640,c_limit/basically-equipment-wooden-spoon.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "6",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmseir9Q44EJYVvP7yG1yxFWWMTcsBFkXfg99oWSFH4TfoDvsfm6VcPJCGM9i2xv3u?cid=5f4830095c43e3c9e13b2f26&xid=fr1646888061887eii"
@@ -4713,7 +4713,7 @@
           {
             "name": "Glass Measuring Cup",
             "imageUrl": "https://assets.bonappetit.com/photos/59d7daa6a3542e7d35aabb76/1:1/w_640,c_limit/Basically_Glass-Measuring-2-Cups.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "19.99",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbnFpamrhsGvnzMp9nhN3TGMAyn4AnWsSXHQswg9oAavKfXeBBxeqdh4B94dPf8mTmw?cid=5f4830095c43e3c9e13b2f26&xid=fr1646888061887ahb"
@@ -5227,7 +5227,7 @@
           {
             "name": "Fish Spatula",
             "imageUrl": "https://assets.bonappetit.com/photos/596ce7a5b85671732e0d55e5/1:1/w_640,c_limit/Basically_Fish-Spatula.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "14",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsj6DSo1Aif9S8eozHBrvwMEtdgaCSGztxGhZXLtwvngF9ahubv9d9aVktACJ4Mo1?cid=6092b67113b033296f14a23d&xid=fr1646890785677gff"
@@ -5236,7 +5236,7 @@
           {
             "name": "8-Inch Chef's Knife",
             "imageUrl": "https://assets.bonappetit.com/photos/5fa5b88cc162b6f8b8cd0f16/1:1/w_640,c_limit/Basically-Knives-Victorinox.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "47",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCdRaK8JjSep22U8yqhvRwDDMaAQdgs2GSnfMnnifuEdLnwsUZwSTEk18Qoj9VHtgAHx?cid=6092b67113b033296f14a23d&xid=fr1646890785677jhf"
@@ -5245,7 +5245,7 @@
           {
             "name": "Microplane Grater",
             "imageUrl": "https://assets.bonappetit.com/photos/5dcf0969ad1a0300083764ac/1:1/w_640,c_limit/Basically-Molly-GiftGuide-Microplane.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "16",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsePtrYbYQUQ8tMEgoYyRJC7QuHfFZ2uEJLB2sy1LeyTRAee6zLKaUhBvLsXrTbM6?cid=6092b67113b033296f14a23d&xid=fr1646890785677jha"
@@ -5254,7 +5254,7 @@
           {
             "name": "Rimmed Baking Sheet",
             "imageUrl": "https://assets.bonappetit.com/photos/596940e46c75df51bc0b91c4/1:1/w_640,c_limit/basically-equipment-rimmed-baking-sheet.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Bon Appétit Market",
               "price": "20",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsedj4Mg35L8ML9goMDFHzK3zDyuhuhMBCTCmtenJ3Ua1BTAsNqeXyskDoCq7vyTC?cid=6092b67113b033296f14a23d&xid=fr1646890785677ehj"
@@ -5263,7 +5263,7 @@
           {
             "name": "Small Bowl",
             "imageUrl": "https://assets.bonappetit.com/photos/59690da8a0530210d4a24a1f/1:1/w_640,c_limit/basically-equipment-small-bowl.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "13",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsePwjfxaneEu5wD5CfLHQdiGdzJKNa6VyVSRfP43F466RxtmphTdhmcwPFFbsGNc?cid=6092b67113b033296f14a23d&xid=fr1646890785677agh"
@@ -5272,7 +5272,7 @@
           {
             "name": "Cutting Board",
             "imageUrl": "https://assets.bonappetit.com/photos/59693b227102712b68401a8c/1:1/w_640,c_limit/basically-equipment-cutting-board.jpg",
-            "sponsor": {
+            "shop": {
               "name": "IKEA",
               "price": "10",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsePzcUAqT5KYR9jmBi7u2WiPA7b52oYXgb65uX32u5zVAmCqFYg6TfHMVEi8EWm3?cid=6092b67113b033296f14a23d&xid=fr1646890785677bbi"
@@ -5281,7 +5281,7 @@
           {
             "name": "Oxo Stainless Steel Measuring Spoons",
             "imageUrl": "https://assets.bonappetit.com/photos/608037d806641e4bc6d20faf/1:1/w_640,c_limit/Product-Measuring-spoon.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "11",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCkqQTruahwsk2EdzVmCCmCxMTG6tX2bBTR14FXMZ7XENTmWqvMTgPPCXjvfq3GJp4Ls?cid=6092b67113b033296f14a23d&xid=fr1646890785677hbd"
@@ -5290,7 +5290,7 @@
           {
             "name": "Measuring Cups",
             "imageUrl": "https://assets.bonappetit.com/photos/6176f8adfcfe3c4f641ab098/1:1/w_640,c_limit/Bamboozle_-_Measuring_Cup_Set_1_900x.jpeg",
-            "sponsor": {
+            "shop": {
               "name": "Bon Appétit Market",
               "price": "18",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsj6DSUHAdpskaaiLT1hZJrHAuGmoQ4tZnFzkmLJYkyuyUzuiT7kiaSTQELYdC7fe?cid=6092b67113b033296f14a23d&xid=fr1646890785677hjc"
@@ -5299,7 +5299,7 @@
           {
             "name": "Heavy-Duty Aluminum Foil",
             "imageUrl": "https://assets.bonappetit.com/photos/598dccafc45f5577baf6289b/1:1/w_640,c_limit/Basically_Aluminum-Foil.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Target",
               "price": "10",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmthMWkPeQxUw3Kg8RQjGp53gkGLCRFPJNry42rv1BYWoFkv13dXckRyqcEFgBFRSg?cid=6092b67113b033296f14a23d&xid=fr1646890785677jia"
@@ -5422,7 +5422,7 @@
           {
             "name": "Dutch Oven",
             "imageUrl": "https://assets.bonappetit.com/photos/5a7490a05736e36c6bb6a23e/1:1/w_640,c_limit/Basically_Dutch-Oven-Large-with-Lid.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "80",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsedj4MPoD5E3qUsenzmqst8DhKsrszGFFtx8gq8yPpUrNemjH3MrZuLSZaec7XHF?cid=5e31acafb37f4c00098901d5&xid=fr1646799829417fjb"
@@ -5431,7 +5431,7 @@
           {
             "name": "Microplane Grater",
             "imageUrl": "https://assets.bonappetit.com/photos/5dcf0969ad1a0300083764ac/1:1/w_640,c_limit/Basically-Molly-GiftGuide-Microplane.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "16",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCkqQTrua49zXQVt3D1ssizewnLzoEJRFp7v4TYHBY5BhaqMXH9FwvtFAmJtPukP37yW?cid=621ea1d4f62bdce4b6a057c0"
@@ -5440,7 +5440,7 @@
           {
             "name": "Slotted Spoon",
             "imageUrl": "https://assets.bonappetit.com/photos/60a51d1681b25b25c6c8d4a7/1:1/w_640,c_limit/Product-spoon.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "10",
               "discountedPrice": "13",
@@ -5450,7 +5450,7 @@
           {
             "name": "Large Pot",
             "imageUrl": "https://assets.bonappetit.com/photos/596938717654ad3411665279/1:1/w_640,c_limit/basically-equipment-large-pot.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "55",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsePu89zrtEVdnnGmhJCnfaR4K6fFrA9iG8F2RkThLkTJFehKHy22j28BNNwCoMP6?cid=61f006cd496418bf040a6aab&xid=fr1646806413711chb"
@@ -5459,7 +5459,7 @@
           {
             "name": "Heatproof Measuring Cup",
             "imageUrl": "https://assets.bonappetit.com/photos/598b240b33219f41c020b06b/1:1/w_640,c_limit/Basically_Heatproof-measuring-cup.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "18",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmth7dPurFf5C5VufVHyKQJC9yq1Fnt9WpS3nRLF2mt2iEgo8i2nV3eGx8JtS3j9eY?cid=61f006cd629920bf61fe6ccf&xid=fr1646799830294efe"
@@ -5468,7 +5468,7 @@
           {
             "name": "Tongs",
             "imageUrl": "https://assets.bonappetit.com/photos/5a1eddec2479441876ab9959/1:1/w_640,c_limit/Basically_Tongs.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "13",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsePu8Y3B7K5G4cFmneVqqJNvPgsmfJEFejzaPQQWMnt7Y8L64Tuvzjahsb2382jz?cid=61f006cd6e9e896c3f22c747&xid=fr1646804248021fhj"
@@ -5686,7 +5686,7 @@
           {
             "name": "Cocktail Shaker",
             "imageUrl": "https://assets.bonappetit.com/photos/6088a80423370354fe8f8c8b/1:1/w_640,c_limit/Cocktail-Shaker.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "20",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCkqQrmqxsvSMPH11PY771zu31MH51L6w7wBW4jJ6txRzG6f9o2MQrjYk1DXYRqRh7wH?cid=57acc14553e63daf11a4d9b5&xid=fr1646894184249gjb"
@@ -5695,7 +5695,7 @@
           {
             "name": "Hawthorne Strainer",
             "imageUrl": "https://assets.bonappetit.com/photos/6088a954cf4acbdbd38e8144/1:1/w_640,c_limit/Product-Strainer.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "7",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCkqQrmqxwJyPGD2heYfKNJaqskhFBSZkmrR4w9MkdByBajPM2BftMkeS18M6rXE2Pxo?cid=57acc14553e63daf11a4d9b5&xid=fr1646894184249fee"
@@ -5704,7 +5704,7 @@
           {
             "name": "Citrus Juicer",
             "imageUrl": "https://assets.bonappetit.com/photos/5b1edb9f9731de29fe91213a/1:1/w_640,c_limit/Citrus%20Press.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "13",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCdH4ihYPxF89kKtChN3NHQq3Yjisnxd5XMP7L1AzELrD4HogzX4MmWTi5iby5XQSXq6?cid=57acc14553e63daf11a4d9b5&xid=fr1646894184249bfa"
@@ -5713,7 +5713,7 @@
           {
             "name": "1.25\" Silicone Ice Cube Tray",
             "imageUrl": "https://assets.bonappetit.com/photos/6088a80592129bfa2fe59f2b/1:1/w_640,c_limit/Ice-cube-tray.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "15",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCkqQrmqyChE5uYYwmqxXC9SfW5FeTLwLmxFPtVZGQcNydukQGZVBavZUa4eysXRyw1V?cid=57acc14553e63daf11a4d9b5&xid=fr1646894184249ebd"
@@ -5722,7 +5722,7 @@
           {
             "name": "Cocktail Picks",
             "imageUrl": "https://assets.bonappetit.com/photos/60a51e1f81b25b25c6c8d4ab/1:1/w_640,c_limit/Product%20stirrers.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "5",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCkqQrmqyX7MSgrFsKNjV5SZ66BmUzShYZ7rEfNDhe2N8GLzu69s1uH2dXcYfPA3VesJ?cid=57acc14553e63daf11a4d9b5&xid=fr1646894184249aic"
@@ -6021,7 +6021,7 @@
           {
             "name": "Measuring Spoons",
             "imageUrl": "https://assets.bonappetit.com/photos/6176f85dfcfe3c4f641ab096/1:1/w_640,c_limit/Bamboozle_-_Measuring_Spoon_Set_1080x.jpeg",
-            "sponsor": {
+            "shop": {
               "name": "Bon Appétit Market",
               "price": "10",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsjL7zFd1VZg1c8kdtNvsG7twwxaXh11A44tWUpgKtfxNBCGmUwHpZWMJKDnXRaED?cid=5b8ffd50d097162d3ecd700d&xid=fr1646894185395chg"
@@ -6030,7 +6030,7 @@
           {
             "name": "Measuring Cups",
             "imageUrl": "https://assets.bonappetit.com/photos/6176f8adfcfe3c4f641ab098/1:1/w_640,c_limit/Bamboozle_-_Measuring_Cup_Set_1_900x.jpeg",
-            "sponsor": {
+            "shop": {
               "name": "Bon Appétit Market",
               "price": "18",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsj6DSUHAdpskaaiLT1hZJrHAuGmoQ4tZnFzkmLJYkyuyUzuiT7kiaSTQELYdC7fe?cid=5b8ffd50d097162d3ecd700d&xid=fr1646894185395dab"
@@ -6039,7 +6039,7 @@
           {
             "name": "Large Pot",
             "imageUrl": "https://assets.bonappetit.com/photos/596938717654ad3411665279/1:1/w_640,c_limit/basically-equipment-large-pot.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "55",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsePu89zrtEVdnnGmhJCnfaR4K6fFrA9iG8F2RkThLkTJFehKHy22j28BNNwCoMP6?cid=5b8ffd50d097162d3ecd700d&xid=fr1646894185395dfb"
@@ -6048,7 +6048,7 @@
           {
             "name": "Colander",
             "imageUrl": "https://assets.bonappetit.com/photos/597901243942a20318cc3f87/1:1/w_640,c_limit/Basically_Colander.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "11",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmt8bHMXXTtTfRB9qNevWK2mBBuS92MmwfGdUiM95HxhW5woBjfu6HbHZwyiATY7EJ?cid=5b8ffd50d097162d3ecd700d&xid=fr1646894185395gie"
@@ -6057,7 +6057,7 @@
           {
             "name": "Medium Bowl",
             "imageUrl": "https://assets.bonappetit.com/photos/596ce9902b659b48a371c381/1:1/w_640,c_limit/basically-equipment-medium-bowl.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "17",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmseirQ2SSvWwhtZ2CmiqDDf3U4qECrLPq7r457m8nCUWgyTHXCYkCJSJEKFwrCj7P?cid=5b8ffd50d097162d3ecd700d&xid=fr1646894185395faf"
@@ -6066,7 +6066,7 @@
           {
             "name": "Chef's Knife",
             "imageUrl": "https://assets.bonappetit.com/photos/5f3d7774b4b3538eb4dc4f93/1:1/w_640,c_limit/Basically-gift-guide-2017-Victorinox-Chef.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "34.53",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsePzcnjSNojcExKfoYuf2Bo8CjcWLivgJjQ7kJW6pSiSPG3DxLjSFevzZwe72zmJ?cid=5b8ffd50d097162d3ecd700d&xid=fr1646894185395hic"
@@ -6075,7 +6075,7 @@
           {
             "name": "Dutch Oven",
             "imageUrl": "https://assets.bonappetit.com/photos/5a7490a05736e36c6bb6a23e/1:1/w_640,c_limit/Basically_Dutch-Oven-Large-with-Lid.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "80",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsedj4MPoD5E3qUsenzmqst8DhKsrszGFFtx8gq8yPpUrNemjH3MrZuLSZaec7XHF?cid=5b8ffd50d097162d3ecd700d&xid=fr1646894185395eae"
@@ -6084,7 +6084,7 @@
           {
             "name": "Wooden Spoon",
             "imageUrl": "https://assets.bonappetit.com/photos/596940436c75df51bc0b91c0/1:1/w_640,c_limit/basically-equipment-wooden-spoon.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "6",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmseir9Q44EJYVvP7yG1yxFWWMTcsBFkXfg99oWSFH4TfoDvsfm6VcPJCGM9i2xv3u?cid=5b8ffd50d097162d3ecd700d&xid=fr1646894185395jce"
@@ -6093,7 +6093,7 @@
           {
             "name": "Tongs",
             "imageUrl": "https://assets.bonappetit.com/photos/5a1eddec2479441876ab9959/1:1/w_640,c_limit/Basically_Tongs.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "13",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmsePu8Y3B7K5G4cFmneVqqJNvPgsmfJEFejzaPQQWMnt7Y8L64Tuvzjahsb2382jz?cid=5b8ffd50d097162d3ecd700d&xid=fr1646894185395ccg"
@@ -6102,7 +6102,7 @@
           {
             "name": "Heatproof Measuring Cup",
             "imageUrl": "https://assets.bonappetit.com/photos/598b240b33219f41c020b06b/1:1/w_640,c_limit/Basically_Heatproof-measuring-cup.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "18",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmth7dPurFf5C5VufVHyKQJC9yq1Fnt9WpS3nRLF2mt2iEgo8i2nV3eGx8JtS3j9eY?cid=5b8ffd50d097162d3ecd700d&xid=fr1646894185395fac"
@@ -6210,7 +6210,7 @@
           {
             "name": "Loaf Pan",
             "imageUrl": "https://assets.bonappetit.com/photos/5a996b66d418f823c6403b75/1:1/w_640,c_limit/Basically_Loaf-Pan.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "15",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCdF16Lt2yYQmLj4tvujbEK3w2V3TvkRkkdcKGyPrF9HF5e5WFAhbpmnQi8xsPQmc4tg?cid=57ad370b1b334044149754eb&xid=fr1646898665100ffd"
@@ -6219,7 +6219,7 @@
           {
             "name": "Electric Mixer",
             "imageUrl": "https://assets.bonappetit.com/photos/5a996ad30376601d804f4f84/1:1/w_640,c_limit/Basically_Cuisinart-Hand-Mixer.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "40",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCdF16Lt2yJorBqsqn7qq7HiFWcSefKpYTUEkCAhSRdPV5H4L5eA3aTjDQjReQVg7o86?cid=57ad370b1b334044149754eb&xid=fr1646898665100gci"
@@ -6228,7 +6228,7 @@
           {
             "name": "Parchment Paper",
             "imageUrl": "https://assets.bonappetit.com/photos/596cea005df40d1371270657/1:1/w_640,c_limit/basically-equipment-parchment.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "3",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmseirQ2boxz5S9u276XakNot4JkPRfUPqAVhEqS4rd8FrP9RcVpPagdT6afzZ1JVB?cid=57ad370b1b334044149754eb&xid=fr1646898665100gfi"
@@ -6237,7 +6237,7 @@
           {
             "name": "Wire Rack",
             "imageUrl": "https://assets.bonappetit.com/photos/59693ffc6c75df51bc0b91be/1:1/w_640,c_limit/basically-equipment-wire-rack.jpg",
-            "sponsor": {
+            "shop": {
               "name": "BA Market",
               "price": "23",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmseir9LkYYTZDF1jBVH5yCJTggGMrH6XvUy2VKTLjUynE7SdzebPcT8rRE5eZFiX3?cid=57ad370b1b334044149754eb&xid=fr1646898665100ibi"
@@ -6246,7 +6246,7 @@
           {
             "name": "Cake Tester",
             "imageUrl": "https://assets.bonappetit.com/photos/59de40581406f61d93be2020/1:1/w_640,c_limit/Basically_Cake-Tester.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "3",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbnFuawB8JqLtk8atrNLXWis7623K5dvH8BdLzcDzoVbpjXiiwhKp5rW7yuCzsFHupD?cid=57ad370b1b334044149754eb&xid=fr1646898665100fcb"
@@ -6320,7 +6320,6 @@
           {
             "review": "I've made this multiple times for my family and to bring over to friends and it's always a hit. I recently tried using my sourdough discard in place of the greek yogurt/sour cream/mascarpone (in the same amount listed in the recipe). It adds some additional dimension to the flavour and is a great way for me to use up some of my discard.",
             "author": "Cait",
-            "location": "NULL",
             "date": "2022-01-26"
           }
         ],
@@ -6371,7 +6370,7 @@
           {
             "name": "Round Cake Pan",
             "imageUrl": "https://assets.bonappetit.com/photos/59de3f451c4b9034036c6ced/1:1/w_640,c_limit/Basically_Cake-Pan-Round.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "12.99",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbnFuawAs4YPKdMzkd4FPck3R2tttNnnt5akfufZ6bC5Lksx9npQGyPYsFatbLrJEkE?cid=61f006cd6e9e896c3f22c748&xid=fr1646898666417jff"
@@ -6380,7 +6379,7 @@
           {
             "name": "Scale",
             "imageUrl": "https://assets.bonappetit.com/photos/5dcd79d040e0b300083c0f42/1:1/w_640,c_limit/BAKING-Escali-Scale-10-1560.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCdPTsxaw5sHt2SQtGJgDdXxT8LdgRsCF7HGV5XPBPXaCKXY3Y8TePHXBuWT4tyi8TbW?cid=61f006cd6e9e896c3f22c748&xid=fr1646898666417gbc"
             }
@@ -6388,7 +6387,7 @@
           {
             "name": "Small Offset Spatula",
             "imageUrl": "https://assets.bonappetit.com/photos/5dcd79d2fd8bf400082e3c81/1:1/w_640,c_limit/BAKING-Mini-Offset-Spatula-25-1609.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "6",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbnGnibVQB1afPmka1oRsLX2K5DzJtfAQM9S9uKKL1DAxQyng7RPpbtoNJKthnLz1xt?cid=61f006cd6e9e896c3f22c748&xid=fr1646898666417heh"
@@ -6397,7 +6396,7 @@
           {
             "name": "Whisk",
             "imageUrl": "https://assets.bonappetit.com/photos/60a5250981b25b25c6c8d4af/1:1/w_640,c_limit/product%20whisk.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "10",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbmseir9LTWDnsngCNz94mmbti599nXxZB4ynBjSEZGqE9X9bm5Y6d22T2VC7E132tJ?cid=61f006cd6e9e896c3f22c748&xid=fr1646898666417dbg"
@@ -6406,7 +6405,7 @@
           {
             "name": "Mesh Sieve",
             "imageUrl": "https://assets.bonappetit.com/photos/59721c9a5e52a765a3283012/1:1/w_640,c_limit/basically-fine-mesh-sieve.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "13",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCdPUMvA6bhXSdsJZnmPFia1n3zfcQeqe2RVCvrSNgdX3p9FJ4ZQ6tXia22VLZiTm4Yd?cid=61f006cd6e9e896c3f22c748&xid=fr1646898666417geg"
@@ -6415,7 +6414,7 @@
           {
             "name": "Wire Cooling Rack",
             "imageUrl": "https://assets.bonappetit.com/photos/617c10f1508be16473d3c763/1:1/w_640,c_limit/Nordic_ware_Large_Baking_Cooling_Grid_1_1296x.png",
-            "sponsor": {
+            "shop": {
               "name": "Bon Appétit Market",
               "price": "17",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCkqmb6Ezj9WPjLNgojcdXCCzqUiH28BRBNE6yAewK1h3oiDVvEckA5QdBbaeLuG35xr?cid=61f006cd6e9e896c3f22c748&xid=fr1646898666417dhj"
@@ -6424,7 +6423,7 @@
           {
             "name": "Cake Tester",
             "imageUrl": "https://assets.bonappetit.com/photos/59de40581406f61d93be2020/1:1/w_640,c_limit/Basically_Cake-Tester.jpg",
-            "sponsor": {
+            "shop": {
               "name": "Amazon",
               "price": "3",
               "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCbnFuawB8JqLtk8atrNLXWis7623K5dvH8BdLzcDzoVbpjXiiwhKp5rW7yuCzsFHupD?cid=61f006cd6e9e896c3f22c748&xid=fr1646898666417cha"
@@ -6506,10 +6505,29 @@
       "dateUploaded": "2022-03-11",
       "credits": {
         "author": "AUTHOR",
-        "illustrator": "ILLUSTRATOR",
-        "tags": [],
-        "products": []
-      }
+        "illustrator": "ILLUSTRATOR"
+      },
+      "tags": [],
+      "products": [
+        {
+          "name": "NAME",
+          "imageUrl": "IMAGE",
+          "credits": {
+            "author": "AUTHOR",
+            "photographers": [],
+            "foodStylists": [],
+            "propStylists": []
+          },
+          "shops": [
+            {
+              "name": "SHOPNAME",
+              "price": "PRICE",
+              "discountedPrice": "null",
+              "url": "URL"
+            }
+          ]
+        }
+      ]
     },
     {
       "imageUrl": "https://assets.bonappetit.com/photos/6206a944463bf23e0de9d929/4:3/w_720,c_limit/Please-Help-Me%2520Understand-How-Big-This-Water%2520Bottle-Actually-Is.jpg",
@@ -6519,10 +6537,29 @@
       "dateUploaded": "2022-03-11",
       "credits": {
         "author": "AUTHOR",
-        "illustrator": "ILLUSTRATOR",
-        "tags": [],
-        "products": []
-      }
+        "illustrator": "ILLUSTRATOR"
+      },
+      "tags": [],
+      "products": [
+        {
+          "name": "NAME",
+          "imageUrl": "IMAGE",
+          "credits": {
+            "author": "AUTHOR",
+            "photographers": [],
+            "foodStylists": [],
+            "propStylists": []
+          },
+          "shops": [
+            {
+              "name": "SHOPNAME",
+              "price": "PRICE",
+              "discountedPrice": "null",
+              "url": "URL"
+            }
+          ]
+        }
+      ]
     },
     {
       "imageUrl": "https://assets.bonappetit.com/photos/61fd90c28229341216032c3f/4:3/w_720,c_limit/BA_JulianDinnerParty_Final_Flat2.jpg",
@@ -6532,10 +6569,29 @@
       "dateUploaded": "2022-03-11",
       "credits": {
         "author": "AUTHOR",
-        "illustrator": "ILLUSTRATOR",
-        "tags": [],
-        "products": []
-      }
+        "illustrator": "ILLUSTRATOR"
+      },
+      "tags": [],
+      "products": [
+        {
+          "name": "NAME",
+          "imageUrl": "IMAGE",
+          "credits": {
+            "author": "AUTHOR",
+            "photographers": [],
+            "foodStylists": [],
+            "propStylists": []
+          },
+          "shops": [
+            {
+              "name": "SHOPNAME",
+              "price": "PRICE",
+              "discountedPrice": "null",
+              "url": "URL"
+            }
+          ]
+        }
+      ]
     },
     {
       "imageUrl": "https://assets.bonappetit.com/photos/620699a9b991f2fe78fea669/4:3/w_720,c_limit/chard.jpg",
@@ -6545,10 +6601,29 @@
       "dateUploaded": "2022-03-11",
       "credits": {
         "author": "AUTHOR",
-        "illustrator": "ILLUSTRATOR",
-        "tags": [],
-        "products": []
-      }
+        "illustrator": "ILLUSTRATOR"
+      },
+      "tags": [],
+      "products": [
+        {
+          "name": "NAME",
+          "imageUrl": "IMAGE",
+          "credits": {
+            "author": "AUTHOR",
+            "photographers": [],
+            "foodStylists": [],
+            "propStylists": []
+          },
+          "shops": [
+            {
+              "name": "SHOPNAME",
+              "price": "PRICE",
+              "discountedPrice": "null",
+              "url": "URL"
+            }
+          ]
+        }
+      ]
     },
     {
       "imageUrl": "https://assets.bonappetit.com/photos/6202ac48cb2ec4b379783093/4:3/w_720,c_limit/SuperbowlFoodtexture%2520(1).jpg",
@@ -6558,10 +6633,29 @@
       "dateUploaded": "2022-03-11",
       "credits": {
         "author": "AUTHOR",
-        "illustrator": "ILLUSTRATOR",
-        "tags": [],
-        "products": []
-      }
+        "illustrator": "ILLUSTRATOR"
+      },
+      "tags": [],
+      "products": [
+        {
+          "name": "NAME",
+          "imageUrl": "IMAGE",
+          "credits": {
+            "author": "AUTHOR",
+            "photographers": [],
+            "foodStylists": [],
+            "propStylists": []
+          },
+          "shops": [
+            {
+              "name": "SHOPNAME",
+              "price": "PRICE",
+              "discountedPrice": "null",
+              "url": "URL"
+            }
+          ]
+        }
+      ]
     }
   ],
   "videos": [
@@ -6645,10 +6739,29 @@
       "dateUploaded": "2022-03-11",
       "credits": {
         "author": "AUTHOR",
-        "illustrator": "ILLUSTRATOR",
-        "tags": [],
-        "products": []
-      }
+        "illustrator": "ILLUSTRATOR"
+      },
+      "tags": [],
+      "products": [
+        {
+          "name": "NAME",
+          "imageUrl": "IMAGE",
+          "credits": {
+            "author": "AUTHOR",
+            "photographers": [],
+            "foodStylists": [],
+            "propStylists": []
+          },
+          "shops": [
+            {
+              "name": "SHOPNAME",
+              "price": "PRICE",
+              "discountedPrice": "null",
+              "url": "URL"
+            }
+          ]
+        }
+      ]
     },
     {
       "imageUrl": "https://assets.bonappetit.com/photos/620adb363d88f61b63a582e4/1:1/w_2560%2Cc_limit/20220211%2520HR%2520Le%2520Creuset%2520French%2520Press%2520LEDE.jpg",
@@ -6657,10 +6770,29 @@
       "dateUploaded": "2022-03-11",
       "credits": {
         "author": "AUTHOR",
-        "illustrator": "ILLUSTRATOR",
-        "tags": [],
-        "products": []
-      }
+        "illustrator": "ILLUSTRATOR"
+      },
+      "tags": [],
+      "products": [
+        {
+          "name": "NAME",
+          "imageUrl": "IMAGE",
+          "credits": {
+            "author": "AUTHOR",
+            "photographers": [],
+            "foodStylists": [],
+            "propStylists": []
+          },
+          "shops": [
+            {
+              "name": "SHOPNAME",
+              "price": "PRICE",
+              "discountedPrice": "null",
+              "url": "URL"
+            }
+          ]
+        }
+      ]
     },
     {
       "imageUrl": "https://assets.bonappetit.com/photos/61a68bba1c01773ccb0acad1/1:1/w_2560%2Cc_limit/EComm_Reviews_Gaggia.jpg",
@@ -6669,10 +6801,29 @@
       "dateUploaded": "2022-03-11",
       "credits": {
         "author": "AUTHOR",
-        "illustrator": "ILLUSTRATOR",
-        "tags": [],
-        "products": []
-      }
+        "illustrator": "ILLUSTRATOR"
+      },
+      "tags": [],
+      "products": [
+        {
+          "name": "NAME",
+          "imageUrl": "IMAGE",
+          "credits": {
+            "author": "AUTHOR",
+            "photographers": [],
+            "foodStylists": [],
+            "propStylists": []
+          },
+          "shops": [
+            {
+              "name": "SHOPNAME",
+              "price": "PRICE",
+              "discountedPrice": "null",
+              "url": "URL"
+            }
+          ]
+        }
+      ]
     },
     {
       "imageUrl": "https://assets.bonappetit.com/photos/61f43b340e09933a242b0fd5/1:1/w_2560%2Cc_limit/20220112%2520HR%2520Trade%2520Coffee%2520LEDE.jpg",
@@ -6681,10 +6832,29 @@
       "dateUploaded": "2022-03-11",
       "credits": {
         "author": "AUTHOR",
-        "illustrator": "ILLUSTRATOR",
-        "tags": [],
-        "products": []
-      }
+        "illustrator": "ILLUSTRATOR"
+      },
+      "tags": [],
+      "products": [
+        {
+          "name": "NAME",
+          "imageUrl": "IMAGE",
+          "credits": {
+            "author": "AUTHOR",
+            "photographers": [],
+            "foodStylists": [],
+            "propStylists": []
+          },
+          "shops": [
+            {
+              "name": "SHOPNAME",
+              "price": "PRICE",
+              "discountedPrice": "null",
+              "url": "URL"
+            }
+          ]
+        }
+      ]
     },
     {
       "imageUrl": "https://assets.bonappetit.com/photos/61ba08b6f27d37f5a603301a/1:1/w_2560%2Cc_limit/20211207%2520HR%2520Cometeer%2520Coffee.LEDE.jpg",
@@ -6693,10 +6863,29 @@
       "dateUploaded": "2022-03-11",
       "credits": {
         "author": "AUTHOR",
-        "illustrator": "ILLUSTRATOR",
-        "tags": [],
-        "products": []
-      }
+        "illustrator": "ILLUSTRATOR"
+      },
+      "tags": [],
+      "products": [
+        {
+          "name": "NAME",
+          "imageUrl": "IMAGE",
+          "credits": {
+            "author": "AUTHOR",
+            "photographers": [],
+            "foodStylists": [],
+            "propStylists": []
+          },
+          "shops": [
+            {
+              "name": "SHOPNAME",
+              "price": "PRICE",
+              "discountedPrice": "null",
+              "url": "URL"
+            }
+          ]
+        }
+      ]
     },
     {
       "imageUrl": "https://assets.bonappetit.com/photos/5c5b006e6c0b212cac365206/1:1/w_2560%2Cc_limit/coffee-group.jpg",
@@ -6705,10 +6894,29 @@
       "dateUploaded": "2022-03-11",
       "credits": {
         "author": "AUTHOR",
-        "illustrator": "ILLUSTRATOR",
-        "tags": [],
-        "products": []
-      }
+        "illustrator": "ILLUSTRATOR"
+      },
+      "tags": [],
+      "products": [
+        {
+          "name": "NAME",
+          "imageUrl": "IMAGE",
+          "credits": {
+            "author": "AUTHOR",
+            "photographers": [],
+            "foodStylists": [],
+            "propStylists": []
+          },
+          "shops": [
+            {
+              "name": "SHOPNAME",
+              "price": "PRICE",
+              "discountedPrice": "null",
+              "url": "URL"
+            }
+          ]
+        }
+      ]
     }
   ],
   "tips": [
@@ -6719,10 +6927,29 @@
       "dateUploaded": "2022-03-11",
       "credits": {
         "author": "AUTHOR",
-        "illustrator": "ILLUSTRATOR",
-        "tags": [],
-        "products": []
-      }
+        "illustrator": "ILLUSTRATOR"
+      },
+      "tags": [],
+      "products": [
+        {
+          "name": "NAME",
+          "imageUrl": "IMAGE",
+          "credits": {
+            "author": "AUTHOR",
+            "photographers": [],
+            "foodStylists": [],
+            "propStylists": []
+          },
+          "shops": [
+            {
+              "name": "SHOPNAME",
+              "price": "PRICE",
+              "discountedPrice": "null",
+              "url": "URL"
+            }
+          ]
+        }
+      ]
     },
     {
       "imageUrl": "https://assets.bonappetit.com/photos/620ab201d2e1174a97415a30/1:1/w_2560%2Cc_limit/20220211%2520Mushroom%2520Stock%2520LEDE.jpg",
@@ -6731,10 +6958,29 @@
       "dateUploaded": "2022-03-11",
       "credits": {
         "author": "AUTHOR",
-        "illustrator": "ILLUSTRATOR",
-        "tags": [],
-        "products": []
-      }
+        "illustrator": "ILLUSTRATOR"
+      },
+      "tags": [],
+      "products": [
+        {
+          "name": "NAME",
+          "imageUrl": "IMAGE",
+          "credits": {
+            "author": "AUTHOR",
+            "photographers": [],
+            "foodStylists": [],
+            "propStylists": []
+          },
+          "shops": [
+            {
+              "name": "SHOPNAME",
+              "price": "PRICE",
+              "discountedPrice": "null",
+              "url": "URL"
+            }
+          ]
+        }
+      ]
     },
     {
       "imageUrl": "https://assets.bonappetit.com/photos/620d384523422b90ab130f63/1:1/w_2560%2Cc_limit/20220208%2520Jam%2520French%2520Toast%2520LEDE.jpg",
@@ -6743,15 +6989,60 @@
       "dateUploaded": "2022-03-11",
       "credits": {
         "author": "AUTHOR",
-        "illustrator": "ILLUSTRATOR",
-        "tags": [],
-        "products": []
-      }
+        "illustrator": "ILLUSTRATOR"
+      },
+      "tags": [],
+      "products": [
+        {
+          "name": "NAME",
+          "imageUrl": "IMAGE",
+          "credits": {
+            "author": "AUTHOR",
+            "photographers": [],
+            "foodStylists": [],
+            "propStylists": []
+          },
+          "shops": [
+            {
+              "name": "SHOPNAME",
+              "price": "PRICE",
+              "discountedPrice": "null",
+              "url": "URL"
+            }
+          ]
+        }
+      ]
     },
     {
       "imageUrl": "https://assets.bonappetit.com/photos/61f4340abb40748ef6bbe1ef/1:1/w_2560%2Cc_limit/20220118%2520Spices%2520LEDE.jpg",
       "title": "You Should Add Spices to Your Coffee Grounds",
-      "subtitle": "This simple trick almost made me a morning person."
+      "subtitle": "This simple trick almost made me a morning person.",
+      "dateUploaded": "2022-03-11",
+      "credits": {
+        "author": "AUTHOR",
+        "illustrator": "ILLUSTRATOR"
+      },
+      "tags": [],
+      "products": [
+        {
+          "name": "NAME",
+          "imageUrl": "IMAGE",
+          "credits": {
+            "author": "AUTHOR",
+            "photographers": [],
+            "foodStylists": [],
+            "propStylists": []
+          },
+          "shops": [
+            {
+              "name": "SHOPNAME",
+              "price": "PRICE",
+              "discountedPrice": "null",
+              "url": "URL"
+            }
+          ]
+        }
+      ]
     },
     {
       "imageUrl": "https://assets.bonappetit.com/photos/620ff735c1311ab68cac62f8/1:1/w_2560%2Cc_limit/20220215%2520Freeze%2520Your%2520Tofu%2520LEDE.jpg",
@@ -6760,10 +7051,29 @@
       "dateUploaded": "2022-03-11",
       "credits": {
         "author": "AUTHOR",
-        "illustrator": "ILLUSTRATOR",
-        "tags": [],
-        "products": []
-      }
+        "illustrator": "ILLUSTRATOR"
+      },
+      "tags": [],
+      "products": [
+        {
+          "name": "NAME",
+          "imageUrl": "IMAGE",
+          "credits": {
+            "author": "AUTHOR",
+            "photographers": [],
+            "foodStylists": [],
+            "propStylists": []
+          },
+          "shops": [
+            {
+              "name": "SHOPNAME",
+              "price": "PRICE",
+              "discountedPrice": "null",
+              "url": "URL"
+            }
+          ]
+        }
+      ]
     },
     {
       "imageUrl": "https://assets.bonappetit.com/photos/620d18fb71cfcab79c213708/1:1/w_2560%2Cc_limit/12.03.l21_BonAppetit_Hotpot_C126024-Edit.jpg",
@@ -6772,10 +7082,29 @@
       "dateUploaded": "2022-03-11",
       "credits": {
         "author": "AUTHOR",
-        "illustrator": "ILLUSTRATOR",
-        "tags": [],
-        "products": []
-      }
+        "illustrator": "ILLUSTRATOR"
+      },
+      "tags": [],
+      "products": [
+        {
+          "name": "NAME",
+          "imageUrl": "IMAGE",
+          "credits": {
+            "author": "AUTHOR",
+            "photographers": [],
+            "foodStylists": [],
+            "propStylists": []
+          },
+          "shops": [
+            {
+              "name": "SHOPNAME",
+              "price": "PRICE",
+              "discountedPrice": "null",
+              "url": "URL"
+            }
+          ]
+        }
+      ]
     },
     {
       "imageUrl": "https://assets.bonappetit.com/photos/61f1ce6f0b14cb497b6baca3/1:1/w_2560%2Cc_limit/BA0322hotpot04_2.jpg",
@@ -6784,10 +7113,29 @@
       "dateUploaded": "2022-03-11",
       "credits": {
         "author": "AUTHOR",
-        "illustrator": "ILLUSTRATOR",
-        "tags": [],
-        "products": []
-      }
+        "illustrator": "ILLUSTRATOR"
+      },
+      "tags": [],
+      "products": [
+        {
+          "name": "NAME",
+          "imageUrl": "IMAGE",
+          "credits": {
+            "author": "AUTHOR",
+            "photographers": [],
+            "foodStylists": [],
+            "propStylists": []
+          },
+          "shops": [
+            {
+              "name": "SHOPNAME",
+              "price": "PRICE",
+              "discountedPrice": "null",
+              "url": "URL"
+            }
+          ]
+        }
+      ]
     },
     {
       "imageUrl": "https://assets.bonappetit.com/photos/6204147038a4d0b4d56612f9/1:1/w_2560%2Cc_limit/20220208%2520Mustard%2520Croutons%2520LEDE.jpg",
@@ -6796,10 +7144,29 @@
       "dateUploaded": "2022-03-11",
       "credits": {
         "author": "AUTHOR",
-        "illustrator": "ILLUSTRATOR",
-        "tags": [],
-        "products": []
-      }
+        "illustrator": "ILLUSTRATOR"
+      },
+      "tags": [],
+      "products": [
+        {
+          "name": "NAME",
+          "imageUrl": "IMAGE",
+          "credits": {
+            "author": "AUTHOR",
+            "photographers": [],
+            "foodStylists": [],
+            "propStylists": []
+          },
+          "shops": [
+            {
+              "name": "SHOPNAME",
+              "price": "PRICE",
+              "discountedPrice": "null",
+              "url": "URL"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

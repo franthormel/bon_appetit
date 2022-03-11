@@ -1,6 +1,8 @@
 import 'package:json_annotation/json_annotation.dart';
 
+import '../others/item_product.dart';
 import 'article.dart';
+import 'article_credits.dart';
 
 part 'shopping.g.dart';
 
@@ -10,11 +12,20 @@ class ShoppingArticle extends Article {
     required String imageUrl,
     required String title,
     required String subtitle,
+    required DateTime dateUploaded,
+    required ArticleCredits credits,
+    required List<String> tags,
+    required List<ItemProduct> products,
   }) : super(
-            imageUrl: imageUrl,
-            title: title,
-            subtitle: subtitle,
-            category: "Shopping");
+          imageUrl: imageUrl,
+          title: title,
+          subtitle: subtitle,
+          category: "Shopping",
+          dateUploaded: dateUploaded,
+          credits: credits,
+          tags: tags,
+          products: products,
+        );
 
   factory ShoppingArticle.fromJson(Map<String, dynamic> json) =>
       _$ShoppingArticleFromJson(json);

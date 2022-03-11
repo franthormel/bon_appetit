@@ -1,6 +1,6 @@
 import 'package:json_annotation/json_annotation.dart';
 
-import 'recipe_utensil_sponsor.dart';
+import '../others/item_shop.dart';
 
 part 'recipe_utensil.g.dart';
 
@@ -9,12 +9,12 @@ part 'recipe_utensil.g.dart';
 class RecipeUtensil {
   final String name;
   final String imageUrl;
-  final RecipeUtensilSponsor sponsor;
+  final ItemShop shop;
 
   const RecipeUtensil({
     required this.name,
     required this.imageUrl,
-    required this.sponsor,
+    required this.shop,
   });
 
   factory RecipeUtensil.fromJson(Map<String, dynamic> json) =>

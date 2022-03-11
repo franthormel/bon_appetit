@@ -1,10 +1,10 @@
 import 'package:json_annotation/json_annotation.dart';
 
-part 'recipe_utensil_sponsor.g.dart';
+part 'item_shop.g.dart';
 
 /// Contains the details of a kitchen utensil's affiliation link.
 @JsonSerializable()
-class RecipeUtensilSponsor {
+class ItemShop {
   // Name of the site. e.g. Amazon
   final String name;
 
@@ -15,15 +15,15 @@ class RecipeUtensilSponsor {
   // Item's link to the seller's site.
   final String url;
 
-  const RecipeUtensilSponsor({
+  const ItemShop({
     required this.name,
     required this.url,
     this.discountedPrice,
     this.price,
   });
 
-  factory RecipeUtensilSponsor.fromJson(Map<String, dynamic> json) =>
-      _$RecipeUtensilSponsorFromJson(json);
+  factory ItemShop.fromJson(Map<String, dynamic> json) =>
+      _$ItemShopFromJson(json);
 
-  Map<String, dynamic> toJson() => _$RecipeUtensilSponsorToJson(this);
+  Map<String, dynamic> toJson() => _$ItemShopToJson(this);
 }
