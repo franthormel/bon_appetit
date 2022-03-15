@@ -9,13 +9,13 @@ part of 'item_shop.dart';
 ItemShop _$ItemShopFromJson(Map<String, dynamic> json) => ItemShop(
       name: json['name'] as String,
       url: json['url'] as String,
-      discountedPrice: json['discountedPrice'] as String?,
       price: json['price'] as String?,
+      priceDiscounted: json['priceDiscounted'] as String?,
     );
 
 Map<String, dynamic> _$ItemShopToJson(ItemShop instance) => <String, dynamic>{
       'name': instance.name,
       'price': instance.price,
-      'discountedPrice': instance.discountedPrice,
+      'priceDiscounted': instance.priceDiscounted,
       'url': instance.url,
     };

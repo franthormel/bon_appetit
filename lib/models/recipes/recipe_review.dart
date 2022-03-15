@@ -4,15 +4,15 @@ part 'recipe_review.g.dart';
 
 @JsonSerializable()
 class RecipeReview {
-  final String review;
   final String? author;
-  final String? location;
   final DateTime date;
+  final String? location;
+  final String review;
 
   const RecipeReview({
-    required this.review,
-    required this.author,
     required this.date,
+    required this.review,
+    this.author,
     this.location,
   });
 

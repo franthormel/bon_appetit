@@ -10,7 +10,7 @@ class ItemShop {
 
   // In U.S. dollars ($)
   final String? price;
-  final String? discountedPrice;
+  final String? priceDiscounted;
 
   // Item's link to the seller's site.
   final String url;
@@ -18,8 +18,8 @@ class ItemShop {
   const ItemShop({
     required this.name,
     required this.url,
-    this.discountedPrice,
     this.price,
+    this.priceDiscounted,
   });
 
   factory ItemShop.fromJson(Map<String, dynamic> json) =>

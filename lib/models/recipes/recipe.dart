@@ -19,14 +19,12 @@ class Recipe {
 
   /// When the author created and uploaded this recipe. Should not be interchanged with [dateIssue] which is different.
   final DateTime dateUploaded;
-
   final String description;
   final String imageUrl;
   final List<RecipeIngredient> ingredients;
 
   /// Displayed next to main recipe. Should not interchanged with [description] which is different.
   final String? mainDescription;
-
   final List<RecipeNutritionServing>? nutritionServings;
   final String? author;
   final RecipeRating? rating;
@@ -48,7 +46,6 @@ class Recipe {
   /// - Vegan
   /// Used as a [Chip] label.
   final String? tag;
-
   final List<RecipeTime>? timeEntries;
   final String title;
   final List<RecipeUtensil>? utensils;

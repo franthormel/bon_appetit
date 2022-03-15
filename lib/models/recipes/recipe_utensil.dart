@@ -7,13 +7,13 @@ part 'recipe_utensil.g.dart';
 /// Contains the name of kitchen utensil, a url for its image, and a sponsored shopping item link.
 @JsonSerializable()
 class RecipeUtensil {
-  final String name;
   final String imageUrl;
+  final String name;
   final ItemShop shop;
 
   const RecipeUtensil({
-    required this.name,
     required this.imageUrl,
+    required this.name,
     required this.shop,
   });
 

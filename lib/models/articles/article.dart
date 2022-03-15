@@ -6,16 +6,15 @@ part 'article.g.dart';
 
 @JsonSerializable()
 class Article {
-  final String imageUrl;
-  final String title;
-  final String subtitle;
-  final String category;
-
-  final DateTime dateUploaded;
   final String author;
-  final List<String> tags;
-  final List<ItemProduct>? products;
+  final String category;
   final String content;
+  final DateTime dateUploaded;
+  final String imageUrl;
+  final List<ItemProduct>? products;
+  final String subtitle;
+  final List<String> tags;
+  final String title;
 
   Article({
     required this.author,
@@ -23,10 +22,10 @@ class Article {
     required this.content,
     required this.dateUploaded,
     required this.imageUrl,
-    required this.products,
     required this.subtitle,
     required this.tags,
     required this.title,
+    this.products,
   });
 
   factory Article.fromJson(Map<String, dynamic> json) =>

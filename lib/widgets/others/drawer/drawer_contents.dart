@@ -32,15 +32,15 @@ class DrawerContentsWidget extends StatelessWidget {
   // TODO Remove null and use actual page (use blank pages for now)
   List<DrawerRoute> get routes {
     return <DrawerRoute>[
-      DrawerRoute(text: "Recipes", pageRouteInfo: null),
-      DrawerRoute(text: "Cooking", pageRouteInfo: null),
-      DrawerRoute(text: "Culture", pageRouteInfo: null),
-      DrawerRoute(text: "Shopping", pageRouteInfo: null),
-      DrawerRoute(text: "Restaurants", pageRouteInfo: null),
-      DrawerRoute(text: "BA Market", pageRouteInfo: null),
-      DrawerRoute(text: "Videos", pageRouteInfo: null),
-      DrawerRoute(text: "Podcast", pageRouteInfo: null),
-      DrawerRoute(text: "Merch Shop", pageRouteInfo: null),
+      DrawerRoute("Recipes"),
+      DrawerRoute("Cooking"),
+      DrawerRoute("Culture"),
+      DrawerRoute("Shopping"),
+      DrawerRoute("Restaurants"),
+      DrawerRoute("BA Market"),
+      DrawerRoute("Videos"),
+      DrawerRoute("Podcast"),
+      DrawerRoute("Merch Shop"),
     ];
   }
 }

@@ -2,7 +2,7 @@ export 'articles/article.dart';
 export 'datasets/dataset_homepage.dart';
 export 'datasets/models/dataset_recipe.dart';
 export 'others/drawer_route.dart';
-export 'recipes/enum/recipe_list.dart';
+export 'recipes/recipe_list.dart';
 export 'recipes/recipe.dart';
 export 'recipes/recipe_options.dart';
 export 'recipes/recipe_rating.dart';
