@@ -20,8 +20,8 @@ class DataProviderPage extends StatelessWidget {
         if (kDebugMode) {
           final e = error as Error;
 
-          print(">>> Title $e");
-          print(">>> Stack ${e.stackTrace}");
+          print(">>> TITLE \n$e");
+          print(">>> Stack \n${e.stackTrace}");
         }
 
         return null;

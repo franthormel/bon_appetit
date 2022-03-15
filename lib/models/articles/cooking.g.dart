@@ -12,7 +12,7 @@ CookingArticle _$CookingArticleFromJson(Map<String, dynamic> json) =>
       title: json['title'] as String,
       subtitle: json['subtitle'] as String,
       dateUploaded: DateTime.parse(json['dateUploaded'] as String),
-      credits: ArticleCredits.fromJson(json['credits'] as Map<String, dynamic>),
+      author: json['author'] as String,
       tags: (json['tags'] as List<dynamic>).map((e) => e as String).toList(),
       products: (json['products'] as List<dynamic>)
           .map((e) => ItemProduct.fromJson(e as Map<String, dynamic>))
@@ -26,7 +26,7 @@ Map<String, dynamic> _$CookingArticleToJson(CookingArticle instance) =>
       'title': instance.title,
       'subtitle': instance.subtitle,
       'dateUploaded': instance.dateUploaded.toIso8601String(),
-      'credits': instance.credits,
+      'author': instance.author,
       'tags': instance.tags,
       'products': instance.products,
       'content': instance.content,

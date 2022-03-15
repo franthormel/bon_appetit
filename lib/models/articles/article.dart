@@ -1,7 +1,6 @@
 import 'package:json_annotation/json_annotation.dart';
 
 import '../others/item_product.dart';
-import 'article_credits.dart';
 
 part 'article.g.dart';
 
@@ -12,16 +11,15 @@ class Article {
   final String subtitle;
   final String category;
 
-  // TODO: New details
   final DateTime dateUploaded;
-  final ArticleCredits credits;
+  final String author;
   final List<String> tags;
   final List<ItemProduct>? products;
   final String content;
 
   Article({
+    required this.author,
     required this.category,
-    required this.credits,
     required this.content,
     required this.dateUploaded,
     required this.imageUrl,
