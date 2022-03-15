@@ -16,6 +16,7 @@ class CookingArticle extends Article {
     required ArticleCredits credits,
     required List<String> tags,
     required List<ItemProduct> products,
+    required String content,
   }) : super(
           imageUrl: imageUrl,
           title: title,
@@ -25,6 +26,7 @@ class CookingArticle extends Article {
           credits: credits,
           tags: tags,
           products: products,
+          content: content,
         );
 
   factory CookingArticle.fromJson(Map<String, dynamic> json) =>

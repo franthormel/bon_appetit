@@ -5,9 +5,14 @@ part 'article_credits.g.dart';
 @JsonSerializable()
 class ArticleCredits {
   final String author;
-  final String illustrator;
+  final String? illustrator;
+  final String? photographer;
 
-  const ArticleCredits({required this.author, required this.illustrator});
+  const ArticleCredits({
+    required this.author,
+    this.illustrator,
+    this.photographer,
+  });
 
   factory ArticleCredits.fromJson(Map<String, dynamic> json) =>
       _$ArticleCreditsFromJson(json);

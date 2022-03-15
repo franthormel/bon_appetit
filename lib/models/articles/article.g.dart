@@ -7,16 +7,17 @@ part of 'article.dart';
 // **************************************************************************
 
 Article _$ArticleFromJson(Map<String, dynamic> json) => Article(
-      imageUrl: json['imageUrl'] as String,
-      title: json['title'] as String,
-      subtitle: json['subtitle'] as String,
       category: json['category'] as String,
-      dateUploaded: DateTime.parse(json['dateUploaded'] as String),
       credits: ArticleCredits.fromJson(json['credits'] as Map<String, dynamic>),
-      tags: (json['tags'] as List<dynamic>).map((e) => e as String).toList(),
+      content: json['content'] as String,
+      dateUploaded: DateTime.parse(json['dateUploaded'] as String),
+      imageUrl: json['imageUrl'] as String,
       products: (json['products'] as List<dynamic>?)
           ?.map((e) => ItemProduct.fromJson(e as Map<String, dynamic>))
           .toList(),
+      subtitle: json['subtitle'] as String,
+      tags: (json['tags'] as List<dynamic>).map((e) => e as String).toList(),
+      title: json['title'] as String,
     );
 
 Map<String, dynamic> _$ArticleToJson(Article instance) => <String, dynamic>{
@@ -28,4 +29,5 @@ Map<String, dynamic> _$ArticleToJson(Article instance) => <String, dynamic>{
       'credits': instance.credits,
       'tags': instance.tags,
       'products': instance.products,
+      'content': instance.content,
     };

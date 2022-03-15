@@ -17,16 +17,18 @@ class Article {
   final ArticleCredits credits;
   final List<String> tags;
   final List<ItemProduct>? products;
+  final String content;
 
   Article({
-    required this.imageUrl,
-    required this.title,
-    required this.subtitle,
     required this.category,
-    required this.dateUploaded,
     required this.credits,
-    required this.tags,
+    required this.content,
+    required this.dateUploaded,
+    required this.imageUrl,
     required this.products,
+    required this.subtitle,
+    required this.tags,
+    required this.title,
   });
 
   factory Article.fromJson(Map<String, dynamic> json) =>

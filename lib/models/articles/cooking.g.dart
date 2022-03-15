@@ -17,6 +17,7 @@ CookingArticle _$CookingArticleFromJson(Map<String, dynamic> json) =>
       products: (json['products'] as List<dynamic>)
           .map((e) => ItemProduct.fromJson(e as Map<String, dynamic>))
           .toList(),
+      content: json['content'] as String,
     );
 
 Map<String, dynamic> _$CookingArticleToJson(CookingArticle instance) =>
@@ -28,4 +29,5 @@ Map<String, dynamic> _$CookingArticleToJson(CookingArticle instance) =>
       'credits': instance.credits,
       'tags': instance.tags,
       'products': instance.products,
+      'content': instance.content,
     };
