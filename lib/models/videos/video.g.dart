@@ -7,16 +7,16 @@ part of 'video.dart';
 // **************************************************************************
 
 VideoEntry _$VideoEntryFromJson(Map<String, dynamic> json) => VideoEntry(
-      title: json['title'] as String,
       imageUrl: json['imageUrl'] as String,
+      title: json['title'] as String,
       uploadDate: DateTime.parse(json['uploadDate'] as String),
       series: json['series'] as String?,
     );
 
 Map<String, dynamic> _$VideoEntryToJson(VideoEntry instance) =>
     <String, dynamic>{
-      'title': instance.title,
       'series': instance.series,
       'imageUrl': instance.imageUrl,
+      'title': instance.title,
       'uploadDate': instance.uploadDate.toIso8601String(),
     };

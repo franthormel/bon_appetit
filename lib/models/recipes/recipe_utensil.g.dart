@@ -8,14 +8,14 @@ part of 'recipe_utensil.dart';
 
 RecipeUtensil _$RecipeUtensilFromJson(Map<String, dynamic> json) =>
     RecipeUtensil(
-      name: json['name'] as String,
       imageUrl: json['imageUrl'] as String,
+      name: json['name'] as String,
       shop: ItemShop.fromJson(json['shop'] as Map<String, dynamic>),
     );
 
 Map<String, dynamic> _$RecipeUtensilToJson(RecipeUtensil instance) =>
     <String, dynamic>{
-      'name': instance.name,
       'imageUrl': instance.imageUrl,
+      'name': instance.name,
       'shop': instance.shop,
     };
