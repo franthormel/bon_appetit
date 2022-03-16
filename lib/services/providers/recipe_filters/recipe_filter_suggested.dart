@@ -1,3 +1,3 @@
-import '../filter.dart';
+import '../filter_provider.dart';
 
-class SuggestedRecipesFilter extends Filter {}
+class SuggestedRecipesFilter extends FilterProvider {}

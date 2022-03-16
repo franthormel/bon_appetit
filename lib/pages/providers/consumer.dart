@@ -22,8 +22,7 @@ class ConsumerPage extends StatelessWidget {
           ),
           IconButton(
             onPressed: () {
-              final router =
-                  Provider.of<RouterProvider>(context, listen: false);
+              final router = Provider.of<RouteProvider>(context, listen: false);
               router.change(const SearchRoute());
             },
             icon: const Icon(Icons.search),
@@ -32,7 +31,7 @@ class ConsumerPage extends StatelessWidget {
         centerTitle: true,
         title: const AppBarTitleWidget(),
       ),
-      body: Consumer<RouterProvider>(
+      body: Consumer<RouteProvider>(
         builder: (context, provider, child) => AutoRouter.declarative(
           routes: (context) => [provider.pageRouteInfo],
         ),

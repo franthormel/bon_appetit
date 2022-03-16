@@ -10,7 +10,6 @@ part 'dataset_homepage.g.dart';
 
 @JsonSerializable()
 class HomepageDataset {
-
   ///  Six (6) articles are listed under
   ///  the 'We Just Love These' section
   final List<ShoppingArticle> products;

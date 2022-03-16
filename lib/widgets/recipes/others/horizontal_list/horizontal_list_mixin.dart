@@ -5,12 +5,12 @@ import '../../../../models/index.dart';
 import '../../../../services/index.dart';
 
 mixin HorizontalListMixin {
-  Filter chooseRecipeFilter(BuildContext context, RecipeList type) {
+  FilterProvider chooseRecipeFilter(BuildContext context, RecipeList type) {
     switch (type) {
       case RecipeList.suggested:
-        return Provider.of<SuggestedRecipesFilter>(context);
+        return Provider.of<SuggestedRecipesFilter>(context, listen: false);
       case RecipeList.trending:
-        return Provider.of<TrendingRecipesFilter>(context);
+        return Provider.of<TrendingRecipesFilter>(context, listen: false);
     }
   }
 }

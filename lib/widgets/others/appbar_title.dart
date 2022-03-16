@@ -12,7 +12,7 @@ class AppBarTitleWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        final router = Provider.of<RouterProvider>(context, listen: false);
+        final router = Provider.of<RouteProvider>(context, listen: false);
         router.change(const HomeRoute());
       },
       child: SvgPicture.asset('assets/logo.svg', height: 50.0),

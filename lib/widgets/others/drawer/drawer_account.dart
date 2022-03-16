@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../../../router/router.gr.dart';
-import '../../../services/providers/route.dart';
+import '../../../services/providers/route_provider.dart';
 import 'drawer_account_entry.dart';
 
 class DrawerAccountWidget extends StatelessWidget {
@@ -16,7 +16,7 @@ class DrawerAccountWidget extends StatelessWidget {
         DrawerAccountEntryWidget(
           "Search",
           onTap: () {
-            final router = Provider.of<RouterProvider>(context, listen: false);
+            final router = Provider.of<RouteProvider>(context, listen: false);
             router.change(const SearchRoute());
           },
         ),

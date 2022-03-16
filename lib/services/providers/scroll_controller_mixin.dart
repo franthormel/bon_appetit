@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-mixin StartScrollControllerMixin {
+mixin ScrollControllerMixin {
   final scrollController = ScrollController();
 
   void scrollToStartOfList() {

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import 'recipe_filters/start_scroll_controller_mixin.dart';
+import 'scroll_controller_mixin.dart';
 
-class Filter extends ChangeNotifier with StartScrollControllerMixin {
+class FilterProvider extends ChangeNotifier with ScrollControllerMixin {
   String _option = "All";
 
   void change(String option) {

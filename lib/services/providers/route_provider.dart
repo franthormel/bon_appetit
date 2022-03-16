@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 import '../../router/router.gr.dart';
 
-class RouterProvider extends ChangeNotifier {
+class RouteProvider extends ChangeNotifier {
   PageRouteInfo _pageRouteInfo = const HomeRoute();
 
   void change(PageRouteInfo routeInfo) {

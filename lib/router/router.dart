@@ -21,6 +21,16 @@ import 'router.constants.dart';
           name: RouteName.search,
           path: RoutePath.search,
         ),
+        AutoRoute(
+          page: RecipeDetailsPage,
+          name: RouteName.recipeDetails,
+          path: RoutePath.recipeDetails,
+        ),
+        AutoRoute(
+          page: ArticleDetailsPage,
+          name: RouteName.articleDetails,
+          path: RoutePath.articleDetails,
+        )
       ],
     ),
     RedirectRoute(path: '*', redirectTo: RouteName.initial),

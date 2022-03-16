@@ -17,8 +17,8 @@ class RouteProviderPage extends StatelessWidget {
         ChangeNotifierProvider<TrendingRecipesFilter>(
           create: (context) => TrendingRecipesFilter(),
         ),
-        ChangeNotifierProvider<RouterProvider>(
-          create: (context) => RouterProvider(),
+        ChangeNotifierProvider<RouteProvider>(
+          create: (context) => RouteProvider(),
         ),
       ],
       child: const ConsumerPage(),

@@ -13,6 +13,7 @@
 import 'package:auto_route/auto_route.dart' as _i2;
 import 'package:flutter/material.dart' as _i3;
 
+import '../models/index.dart' as _i4;
 import '../pages/index.dart' as _i1;
 
 class AppRouter extends _i2.RootStackRouter {
@@ -32,6 +33,18 @@ class AppRouter extends _i2.RootStackRouter {
     SearchRoute.name: (routeData) {
       return _i2.MaterialPageX<dynamic>(
           routeData: routeData, child: const _i1.SearchPage());
+    },
+    RecipeDetailsRoute.name: (routeData) {
+      final args = routeData.argsAs<RecipeDetailsRouteArgs>();
+      return _i2.MaterialPageX<dynamic>(
+          routeData: routeData,
+          child: _i1.RecipeDetailsPage(args.recipe, key: args.key));
+    },
+    ArticleDetailsRoute.name: (routeData) {
+      final args = routeData.argsAs<ArticleDetailsRouteArgs>();
+      return _i2.MaterialPageX<dynamic>(
+          routeData: routeData,
+          child: _i1.ArticleDetailsPage(args.article, key: args.key));
     }
   };
 
@@ -41,7 +54,11 @@ class AppRouter extends _i2.RootStackRouter {
           _i2.RouteConfig(HomeRoute.name,
               path: 'home', parent: InitialRoute.name),
           _i2.RouteConfig(SearchRoute.name,
-              path: 'search', parent: InitialRoute.name)
+              path: 'search', parent: InitialRoute.name),
+          _i2.RouteConfig(RecipeDetailsRoute.name,
+              path: 'recipe', parent: InitialRoute.name),
+          _i2.RouteConfig(ArticleDetailsRoute.name,
+              path: 'article', parent: InitialRoute.name)
         ]),
         _i2.RouteConfig('*#redirect',
             path: '*', redirectTo: 'InitialRoute', fullMatch: true)
@@ -71,4 +88,52 @@ class SearchRoute extends _i2.PageRouteInfo<void> {
   const SearchRoute() : super(SearchRoute.name, path: 'search');
 
   static const String name = 'SearchRoute';
+}
+
+/// generated route for
+/// [_i1.RecipeDetailsPage]
+class RecipeDetailsRoute extends _i2.PageRouteInfo<RecipeDetailsRouteArgs> {
+  RecipeDetailsRoute({required _i4.Recipe recipe, _i3.Key? key})
+      : super(RecipeDetailsRoute.name,
+            path: 'recipe',
+            args: RecipeDetailsRouteArgs(recipe: recipe, key: key));
+
+  static const String name = 'RecipeDetailsRoute';
+}
+
+class RecipeDetailsRouteArgs {
+  const RecipeDetailsRouteArgs({required this.recipe, this.key});
+
+  final _i4.Recipe recipe;
+
+  final _i3.Key? key;
+
+  @override
+  String toString() {
+    return 'RecipeDetailsRouteArgs{recipe: $recipe, key: $key}';
+  }
+}
+
+/// generated route for
+/// [_i1.ArticleDetailsPage]
+class ArticleDetailsRoute extends _i2.PageRouteInfo<ArticleDetailsRouteArgs> {
+  ArticleDetailsRoute({required _i4.Article article, _i3.Key? key})
+      : super(ArticleDetailsRoute.name,
+            path: 'article',
+            args: ArticleDetailsRouteArgs(article: article, key: key));
+
+  static const String name = 'ArticleDetailsRoute';
+}
+
+class ArticleDetailsRouteArgs {
+  const ArticleDetailsRouteArgs({required this.article, this.key});
+
+  final _i4.Article article;
+
+  final _i3.Key? key;
+
+  @override
+  String toString() {
+    return 'ArticleDetailsRouteArgs{article: $article, key: $key}';
+  }
 }
