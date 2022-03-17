@@ -1,7 +1,7 @@
 import 'package:auto_route/auto_route.dart';
 
 import '../pages/index.dart';
-import 'router.constants.dart';
+import 'route.constants.dart';
 
 @MaterialAutoRouter(
   routes: <AutoRoute>[
@@ -11,15 +11,17 @@ import 'router.constants.dart';
       name: RouteName.initial,
       path: RoutePath.initial,
       children: <AutoRoute>[
-        AutoRoute(
+        CustomRoute(
           page: HomePage,
           name: RouteName.home,
           path: RoutePath.home,
+          transitionsBuilder: TransitionsBuilders.fadeIn,
         ),
-        AutoRoute(
+        CustomRoute(
           page: SearchPage,
           name: RouteName.search,
           path: RoutePath.search,
+          transitionsBuilder: TransitionsBuilders.fadeIn,
         ),
         AutoRoute(
           page: RecipeDetailsPage,

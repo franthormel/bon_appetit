@@ -27,12 +27,20 @@ class AppRouter extends _i2.RootStackRouter {
           routeData: routeData, child: const _i1.DataProviderPage());
     },
     HomeRoute.name: (routeData) {
-      return _i2.MaterialPageX<dynamic>(
-          routeData: routeData, child: const _i1.HomePage());
+      return _i2.CustomPage<dynamic>(
+          routeData: routeData,
+          child: const _i1.HomePage(),
+          transitionsBuilder: _i2.TransitionsBuilders.fadeIn,
+          opaque: true,
+          barrierDismissible: false);
     },
     SearchRoute.name: (routeData) {
-      return _i2.MaterialPageX<dynamic>(
-          routeData: routeData, child: const _i1.SearchPage());
+      return _i2.CustomPage<dynamic>(
+          routeData: routeData,
+          child: const _i1.SearchPage(),
+          transitionsBuilder: _i2.TransitionsBuilders.fadeIn,
+          opaque: true,
+          barrierDismissible: false);
     },
     RecipeDetailsRoute.name: (routeData) {
       final args = routeData.argsAs<RecipeDetailsRouteArgs>();
