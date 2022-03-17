@@ -37,7 +37,10 @@ class VideoEntryWidget extends StatelessWidget {
           if (video.series != null)
             Text(
               video.series!.toUpperCase(),
-              style: Theme.of(context).textTheme.caption,
+              style: Theme.of(context)
+                  .textTheme
+                  .caption
+                  ?.copyWith(color: BonAppetitColors.sizzlingSunrise),
             ),
           Text(
             video.title,

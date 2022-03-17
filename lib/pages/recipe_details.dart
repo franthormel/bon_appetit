@@ -1,6 +1,8 @@
+import 'package:bon_appetit/widgets/recipes/details/recipe_details_rating.dart';
 import 'package:flutter/material.dart';
 
 import '../models/index.dart';
+import '../style/colors.dart';
 import '../widgets/index.dart';
 
 class RecipeDetailsPage extends StatelessWidget {
@@ -20,10 +22,27 @@ class RecipeDetailsPage extends StatelessWidget {
             )
           ],
         ),
-        body: Center(
-          child: Text(recipe.title),
+        body: DesignedContainerWidget(
+          child: Center(
+            child: ListView.separated(
+              itemBuilder: (context, index) => children[index],
+              itemCount: children.length,
+              separatorBuilder: (context, index) =>
+                  const SizedBox(height: 15.0),
+            ),
+          ),
         ),
       ),
     );
   }
+
+  List<Widget> get children => [
+        RecipeDetailsBannerWidget(recipe.issue),
+        RecipeDetailsTitleWidget(recipe.title),
+        if (recipe.author != null) RecipeDetailsAuthorWidget(recipe.author!),
+        RecipeDetailsDateUploadedWidget(recipe.dateUploaded),
+        const Divider(color: BonAppetitColors.black),
+        if (recipe.rating != null) RecipeDetailsRatingWidget(recipe.rating!),
+        const RecipeDetailsReviewHeaderWidget(),
+      ];
 }

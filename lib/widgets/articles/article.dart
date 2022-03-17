@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 
 import '../../models/index.dart';
 import '../others/cached_image_progress.dart';
+import '../others/category_box.dart';
 import '../others/header_body/header_body_five.dart';
 import 'article_details_router.dart';
-import 'stories/story_category.dart';
 
 class ArticleWidget extends StatelessWidget {
   final Article article;
@@ -20,7 +20,7 @@ class ArticleWidget extends StatelessWidget {
         children: [
           CachedImageProgressWidget(article.imageUrl),
           const Divider(color: Colors.transparent),
-          StoryCategoryWidget(article.category),
+          CategoryBoxWidget(article.category),
           const Divider(color: Colors.transparent),
           HeaderFiveBodyWidget(title: article.title, body: article.subtitle),
         ],

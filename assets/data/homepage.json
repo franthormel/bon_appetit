@@ -346,12 +346,13 @@
         "imageUrl": "https://assets.bonappetit.com/photos/57acf62a53e63daf11a4dbee/3:4/w_720,c_limit/best-ever-grilled-cheese.jpg",
         "rating": {
           "count": "450",
-          "value": "3.58"
+          "value": "3.6"
         },
         "tag": "Quick",
         "title": "Best-Ever Grilled Cheese",
         "mainDescription": "Looking to majorly upgrade the classic grilled cheese? This recipe has you covered with bread slicked with and crisped up by the power of mayonnaise.",
         "dateUploaded": "2022-02-24",
+        "dateIssue": "March 2015",
         "servings": "Makes 1 awesome sandwich",
         "author": "Alison Roman",
         "nutritionServings": [

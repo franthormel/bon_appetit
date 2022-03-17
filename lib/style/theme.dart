@@ -38,7 +38,7 @@ class BonAppetitTheme {
   static TextTheme get _textTheme {
     return const TextTheme(
       caption: TextStyle(
-        color: BonAppetitColors.sizzlingSunrise,
+        color: BonAppetitColors.black,
         fontWeight: FontWeight.w600,
         letterSpacing: 1.1,
       ),
