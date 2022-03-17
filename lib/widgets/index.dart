@@ -3,6 +3,7 @@ export 'articles/stories/stories.dart';
 export 'articles/tips_techniques.dart';
 export 'others/appbar_title.dart';
 export 'others/drawer/drawer.dart';
+export 'others/will_pop.dart';
 export 'recipes/recipes_main.dart';
 export 'recipes/recipes_suggested.dart';
 export 'recipes/recipes_trending.dart';

@@ -6,7 +6,6 @@ import '../../style/colors.dart';
 import '../others/designed_container.dart';
 import 'main/recipe_main.dart';
 import 'main/recipe_other.dart';
-import 'others/recipe_details_router.dart';
 
 class MainRecipesWidget extends StatelessWidget {
   const MainRecipesWidget({Key? key}) : super(key: key);
@@ -20,25 +19,13 @@ class MainRecipesWidget extends StatelessWidget {
       color: BonAppetitColors.floralWhite,
       child: Column(
         children: [
-          RecipeDetailsRouterWidget(
-            child: TodayMainRecipeWidget(recipes[0]),
-            recipe: recipes[0],
-          ),
+          TodayMainRecipeWidget(recipes[0]),
           const SizedBox(height: 35.0),
-          RecipeDetailsRouterWidget(
-            child: OtherMainRecipeWidget(recipes[1]),
-            recipe: recipes[1],
-          ),
+          OtherMainRecipeWidget(recipes[1]),
           const SizedBox(height: 35.0),
-          RecipeDetailsRouterWidget(
-            child: OtherMainRecipeWidget(recipes[2]),
-            recipe: recipes[2],
-          ),
+          OtherMainRecipeWidget(recipes[2]),
           const SizedBox(height: 35.0),
-          RecipeDetailsRouterWidget(
-            child: OtherMainRecipeWidget(recipes[3]),
-            recipe: recipes[3],
-          ),
+          OtherMainRecipeWidget(recipes[3]),
         ],
       ),
     );

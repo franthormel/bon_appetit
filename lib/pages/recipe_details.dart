@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 
 import '../models/index.dart';
-import '../services/index.dart';
+import '../widgets/index.dart';
 
 class RecipeDetailsPage extends StatelessWidget {
   final Recipe recipe;
@@ -11,13 +10,7 @@ class RecipeDetailsPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return WillPopScope(
-      onWillPop: () async {
-        final route = Provider.of<RouteProvider>(context, listen: false);
-        route.pop();
-
-        return true;
-      },
+    return WillPopWidget(
       child: Scaffold(
         appBar: AppBar(
           actions: [
