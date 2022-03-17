@@ -8,9 +8,9 @@ mixin HorizontalListMixin {
   FilterProvider chooseRecipeFilter(BuildContext context, RecipeList type) {
     switch (type) {
       case RecipeList.suggested:
-        return Provider.of<SuggestedRecipesFilter>(context, listen: false);
+        return Provider.of<SuggestedRecipesFilter>(context);
       case RecipeList.trending:
-        return Provider.of<TrendingRecipesFilter>(context, listen: false);
+        return Provider.of<TrendingRecipesFilter>(context);
     }
   }
 }

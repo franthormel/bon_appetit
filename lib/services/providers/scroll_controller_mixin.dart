@@ -7,8 +7,8 @@ mixin ScrollControllerMixin {
     if (_shouldGoToStartPosition) {
       scrollController.animateTo(
         scrollController.position.minScrollExtent,
-        curve: Curves.ease,
-        duration: const Duration(seconds: 1),
+        curve: Curves.easeInCubic,
+        duration: const Duration(milliseconds: 500),
       );
     }
   }

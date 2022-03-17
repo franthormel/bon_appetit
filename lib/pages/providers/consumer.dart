@@ -7,7 +7,7 @@ import '../../services/index.dart';
 import '../../widgets/index.dart';
 
 class ConsumerPage extends StatelessWidget {
-  // TODO When there are multiple pages use PageStorageKey('HomePage')
+  // TODO When using bottom navigation bars and there are multiple pages use PageStorageKey('HomePage')
   const ConsumerPage({Key? key}) : super(key: key);
 
   @override
@@ -22,8 +22,8 @@ class ConsumerPage extends StatelessWidget {
           ),
           IconButton(
             onPressed: () {
-              final router = Provider.of<RouteProvider>(context, listen: false);
-              router.change(const SearchRoute());
+              final route = Provider.of<RouteProvider>(context, listen: false);
+              route.change(const SearchRoute());
             },
             icon: const Icon(Icons.search),
           ),
@@ -33,7 +33,7 @@ class ConsumerPage extends StatelessWidget {
       ),
       body: Consumer<RouteProvider>(
         builder: (context, provider, child) => AutoRouter.declarative(
-          routes: (context) => [provider.pageRouteInfo],
+          routes: (context) => [...provider.pageRouteInfo],
         ),
       ),
     );

@@ -19,8 +19,8 @@ class DrawerWidget extends StatelessWidget {
         children: [
           GestureDetector(
             onTap: () {
-              final router = Provider.of<RouteProvider>(context, listen: false);
-              router.change(const HomeRoute());
+              final route = Provider.of<RouteProvider>(context, listen: false);
+              route.change(const HomeRoute());
 
               AutoRouter.of(context).pop();
             },

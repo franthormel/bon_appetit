@@ -16,8 +16,8 @@ class DrawerAccountWidget extends StatelessWidget {
         DrawerAccountEntryWidget(
           "Search",
           onTap: () {
-            final router = Provider.of<RouteProvider>(context, listen: false);
-            router.change(const SearchRoute());
+            final route = Provider.of<RouteProvider>(context, listen: false);
+            route.change(const SearchRoute());
           },
         ),
         const DrawerAccountEntryWidget("Sign In"),

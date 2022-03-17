@@ -20,8 +20,8 @@ class RecipeDetailsRouterWidget extends StatelessWidget {
     return GestureDetector(
       child: child,
       onTap: () {
-        final router = Provider.of<RouteProvider>(context, listen: false);
-        router.change(RecipeDetailsRoute(recipe: recipe));
+        final route = Provider.of<RouteProvider>(context, listen: false);
+        route.push(RecipeDetailsRoute(recipe: recipe));
       },
     );
   }
