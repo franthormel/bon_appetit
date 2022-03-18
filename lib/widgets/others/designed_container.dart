@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../../style/colors.dart';
-
 class DesignedContainerWidget extends StatelessWidget {
   final Color? color;
   final Widget child;
@@ -15,7 +13,7 @@ class DesignedContainerWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: color ?? BonAppetitColors.white,
+      color: color ?? Colors.transparent,
       padding: const EdgeInsets.only(
         left: 16.0,
         right: 16.0,

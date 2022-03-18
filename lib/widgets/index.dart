@@ -15,3 +15,5 @@ export 'recipes/main.dart';
 export 'recipes/suggested.dart';
 export 'recipes/trending.dart';
 export 'videos/video_list.dart';
+export 'recipes/details/image.dart';
+export 'recipes/details/rating.dart';

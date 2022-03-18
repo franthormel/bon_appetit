@@ -1,4 +1,3 @@
-import 'package:bon_appetit/widgets/recipes/details/rating.dart';
 import 'package:flutter/material.dart';
 
 import '../models/index.dart';
@@ -22,14 +21,18 @@ class RecipeDetailsPage extends StatelessWidget {
             )
           ],
         ),
-        body: DesignedContainerWidget(
-          child: Center(
-            child: ListView.separated(
-              itemBuilder: (context, index) => children[index],
-              itemCount: children.length,
-              separatorBuilder: (context, index) =>
-                  const SizedBox(height: 15.0),
+        body: Center(
+          child: ListView.separated(
+            padding: const EdgeInsets.only(
+              left: 16.0,
+              right: 16.0,
+              bottom: 35.0,
+              top: 21.0,
             ),
+            itemBuilder: (context, index) => children[index],
+            itemCount: children.length,
+            separatorBuilder: (context, index) =>
+            const SizedBox(height: 15.0),
           ),
         ),
       ),
