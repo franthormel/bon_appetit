@@ -39,14 +39,16 @@ class RecipeDetailsPage extends StatelessWidget {
   }
 
   List<Widget> get children => [
-        RecipeDetailsIssueWidget(recipe.issue),
-        RecipeDetailsTitleWidget(recipe.title),
-        if (recipe.author != null) RecipeDetailsAuthorWidget(recipe.author!),
-        RecipeDetailsDateUploadedWidget(recipe.dateUploaded),
+        RecipeDetailsPageIssueWidget(recipe.issue),
+        RecipeDetailsPageTitleWidget(recipe.title),
+        if (recipe.author != null)
+          RecipeDetailsPageAuthorWidget(recipe.author!),
+        RecipeDetailsPageDateUploadedWidget(recipe.dateUploaded),
         const Divider(color: BonAppetitColors.black),
-        if (recipe.rating != null) RecipeDetailsRatingWidget(recipe.rating!),
-        const RecipeDetailsReviewHeaderWidget(),
-        RecipeDetailsImageWidget(
+        if (recipe.rating != null)
+          RecipeDetailsPageRatingWidget(recipe.rating!),
+        const RecipeDetailsPageReviewHeaderWidget(),
+        RecipeDetailsPageImageWidget(
           imageUrl: recipe.imageUrl,
           heroTag: recipe.heroTag,
         ),

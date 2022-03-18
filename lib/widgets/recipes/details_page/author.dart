@@ -1,18 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:intl/intl.dart';
 
-class RecipeDetailsDateUploadedWidget extends StatelessWidget {
-  final DateTime dateUploaded;
+class RecipeDetailsPageAuthorWidget extends StatelessWidget {
+  final String author;
 
-  const RecipeDetailsDateUploadedWidget(
-    this.dateUploaded, {
+  const RecipeDetailsPageAuthorWidget(
+    this.author, {
     Key? key,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Text(
-      DateFormat.yMMMMd().format(dateUploaded),
+      "By $author".toUpperCase(),
       textAlign: TextAlign.center,
       style: Theme.of(context).textTheme.caption,
     );

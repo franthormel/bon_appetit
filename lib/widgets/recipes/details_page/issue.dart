@@ -2,10 +2,13 @@ import 'package:flutter/material.dart';
 
 import '../../others/category_box.dart';
 
-class RecipeDetailsIssueWidget extends StatelessWidget {
+class RecipeDetailsPageIssueWidget extends StatelessWidget {
   final String? issue;
 
-  const RecipeDetailsIssueWidget(this.issue, {Key? key}) : super(key: key);
+  const RecipeDetailsPageIssueWidget(
+    this.issue, {
+    Key? key,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

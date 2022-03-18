@@ -77,5 +77,5 @@ class Recipe {
 
   String? get issue => dateIssue != null ? "${dateIssue!} Issue" : null;
 
-  String get heroTag => ValueKey(title).toString();
+  String get heroTag => ObjectKey(this).toString();
 }

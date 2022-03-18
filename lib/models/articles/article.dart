@@ -34,5 +34,5 @@ class Article {
 
   Map<String, dynamic> toJson() => _$ArticleToJson(this);
 
-  String get heroTag => ValueKey(title).toString();
+  String get heroTag => ObjectKey(this).toString();
 }

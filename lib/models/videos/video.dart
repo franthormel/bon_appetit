@@ -32,5 +32,5 @@ class VideoEntry {
 
   Map<String, dynamic> toJson() => _$VideoEntryToJson(this);
 
-  String get heroTag => ValueKey(title).toString();
+  String get heroTag => ObjectKey(this).toString();
 }
