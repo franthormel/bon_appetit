@@ -19,7 +19,10 @@ class VideoEntryWidget extends StatelessWidget {
           Stack(
             alignment: Alignment.bottomLeft,
             children: [
-              CachedImageWidget(video.imageUrl),
+              CachedImageWidget(
+                imageUrl: video.imageUrl,
+                heroTag: video.heroTag,
+              ),
               Padding(
                 padding: const EdgeInsets.only(left: 10.0, bottom: 10.0),
                 child: FloatingActionButton(

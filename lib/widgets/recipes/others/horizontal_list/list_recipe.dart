@@ -16,7 +16,7 @@ class HorizontalListRecipeWidget extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          RecipeImageWidget(recipe.imageUrl, tag: recipe.tag),
+          RecipeImageWidget(recipe),
           const Divider(color: Colors.transparent),
           Expanded(
             child: Text(

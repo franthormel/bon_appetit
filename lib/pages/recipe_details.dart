@@ -31,8 +31,7 @@ class RecipeDetailsPage extends StatelessWidget {
             ),
             itemBuilder: (context, index) => children[index],
             itemCount: children.length,
-            separatorBuilder: (context, index) =>
-            const SizedBox(height: 15.0),
+            separatorBuilder: (context, index) => const SizedBox(height: 15.0),
           ),
         ),
       ),
@@ -47,5 +46,9 @@ class RecipeDetailsPage extends StatelessWidget {
         const Divider(color: BonAppetitColors.black),
         if (recipe.rating != null) RecipeDetailsRatingWidget(recipe.rating!),
         const RecipeDetailsReviewHeaderWidget(),
+        RecipeDetailsImageWidget(
+          imageUrl: recipe.imageUrl,
+          heroTag: recipe.heroTag,
+        ),
       ];
 }

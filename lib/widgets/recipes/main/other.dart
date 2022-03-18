@@ -17,7 +17,7 @@ class OtherMainRecipeWidget extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Expanded(child: RecipeImageWidget(recipe.imageUrl, tag: recipe.tag)),
+          Expanded(child: RecipeImageWidget(recipe)),
           const SizedBox(width: 16.0),
           Expanded(
             child: Column(

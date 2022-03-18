@@ -1,3 +1,4 @@
+import 'package:flutter/material.dart';
 import 'package:json_annotation/json_annotation.dart';
 
 part 'video.g.dart';
@@ -30,4 +31,6 @@ class VideoEntry {
       _$VideoEntryFromJson(json);
 
   Map<String, dynamic> toJson() => _$VideoEntryToJson(this);
+
+  String get heroTag => ValueKey(title).toString();
 }

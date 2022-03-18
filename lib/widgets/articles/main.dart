@@ -17,7 +17,10 @@ class MainStoryWidget extends StatelessWidget {
       article: article,
       child: Column(
         children: [
-          CachedImageWidget(article.imageUrl),
+          CachedImageWidget(
+            imageUrl: article.imageUrl,
+            heroTag: article.heroTag,
+          ),
           Container(
             width: double.infinity,
             padding: const EdgeInsets.only(

@@ -18,7 +18,10 @@ class ArticleWidget extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          CachedImageWidget(article.imageUrl),
+          CachedImageWidget(
+            imageUrl: article.imageUrl,
+            heroTag: article.heroTag,
+          ),
           const Divider(color: Colors.transparent),
           CategoryBoxWidget(article.category),
           const Divider(color: Colors.transparent),

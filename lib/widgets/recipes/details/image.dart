@@ -1,10 +1,19 @@
 import 'package:flutter/material.dart';
 
+import '../../others/cached_image.dart';
+
 class RecipeDetailsImageWidget extends StatelessWidget {
-  const RecipeDetailsImageWidget({Key? key}) : super(key: key);
+  final String imageUrl;
+  final String heroTag;
+
+  const RecipeDetailsImageWidget({
+    required this.imageUrl,
+    required this.heroTag,
+    Key? key,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return const Text("TODO Place image here");
+    return CachedImageWidget(imageUrl: imageUrl, heroTag: heroTag);
   }
 }

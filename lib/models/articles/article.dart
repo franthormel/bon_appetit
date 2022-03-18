@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:json_annotation/json_annotation.dart';
 
 import '../shared/product.dart';
@@ -32,4 +33,6 @@ class Article {
       _$ArticleFromJson(json);
 
   Map<String, dynamic> toJson() => _$ArticleToJson(this);
+
+  String get heroTag => ValueKey(title).toString();
 }

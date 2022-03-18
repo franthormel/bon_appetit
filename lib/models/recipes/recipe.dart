@@ -1,3 +1,4 @@
+import 'package:flutter/material.dart';
 import 'package:json_annotation/json_annotation.dart';
 
 import 'ingredient.dart';
@@ -75,4 +76,6 @@ class Recipe {
   Map<String, dynamic> toJson() => _$RecipeToJson(this);
 
   String? get issue => dateIssue != null ? "${dateIssue!} Issue" : null;
+
+  String get heroTag => ValueKey(title).toString();
 }

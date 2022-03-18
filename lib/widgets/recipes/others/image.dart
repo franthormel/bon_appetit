@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
 
+import '../../../models/index.dart';
 import '../../../style/colors.dart';
 import '../../others/cached_image.dart';
 
 class RecipeImageWidget extends StatelessWidget {
-  final String imageUrl;
+  final Recipe recipe;
   final String? tag;
 
   const RecipeImageWidget(
-    this.imageUrl, {
+    this.recipe, {
     this.tag,
     Key? key,
   }) : super(key: key);
@@ -19,14 +20,17 @@ class RecipeImageWidget extends StatelessWidget {
       children: [
         ClipRRect(
           borderRadius: BorderRadius.circular(24.0),
-          child: CachedImageWidget(imageUrl),
+          child: CachedImageWidget(
+            imageUrl: recipe.imageUrl,
+            heroTag: recipe.heroTag,
+          ),
         ),
-        if (tag != null)
+        if (tag != null || recipe.tag != null)
           Padding(
             padding: const EdgeInsets.only(left: 8.0),
             child: Chip(
               backgroundColor: BonAppetitColors.sizzlingSunrise,
-              label: Text(tag!),
+              label: Text(tag ?? recipe.tag!),
             ),
           ),
       ],
