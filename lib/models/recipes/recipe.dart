@@ -13,33 +13,33 @@ part 'recipe.g.dart';
 @JsonSerializable()
 class Recipe {
   /// Used for filtering recipes
-  final List<String> categories;
+  final List<String> categories; // TODO: USE
 
   /// Issue publication's month and year if available.
   final String? dateIssue;
 
   /// When the author created and uploaded this recipe. Should not be interchanged with [dateIssue] which is different.
   final DateTime dateUploaded;
-  final String description;
+  final String description; // TODO: USE
   final String imageUrl;
-  final List<RecipeIngredient> ingredients;
+  final List<RecipeIngredient> ingredients; // TODO: USE
 
   /// Displayed next to main recipe. Should not interchanged with [description] which is different.
   final String? mainDescription;
-  final List<RecipeNutritionServing>? nutritionServings;
+  final List<RecipeNutritionServing>? nutritionServings; // TODO: USE
   final String? author;
   final RecipeRating? rating;
-  final List<RecipeReview>? reviews;
+  final List<RecipeReview>? reviews; // TODO: USE
 
   /// Number of servings this recipe makes.
   /// Examples:
   /// - 8 servings
   /// - Makes 16
   /// - 4-6 servings
-  final String servings;
+  final String servings; // TODO: USE
 
   /// Ordinal instructions on how to create this recipe.
-  final List<String> steps;
+  final List<String> steps; // TODO: USE
 
   /// Typically tagged as:
   /// - Quick
@@ -47,9 +47,9 @@ class Recipe {
   /// - Vegan
   /// Used as a [Chip] label.
   final String? tag;
-  final List<RecipeTime>? timeEntries;
+  final List<RecipeTime>? timeEntries; // TODO: USE
   final String title;
-  final List<RecipeUtensil>? utensils;
+  final List<RecipeUtensil>? utensils; // TODO: USE
 
   Recipe({
     required this.categories,
