@@ -1,6 +1,6 @@
 import 'package:json_annotation/json_annotation.dart';
 
-import '../others/item_product.dart';
+import '../shared/product.dart';
 
 part 'article.g.dart';
 
@@ -11,7 +11,7 @@ class Article {
   final String content;
   final DateTime dateUploaded;
   final String imageUrl;
-  final List<ItemProduct>? products;
+  final List<Product>? products;
   final String subtitle;
   final List<String> tags;
   final String title;

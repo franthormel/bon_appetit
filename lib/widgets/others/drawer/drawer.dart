@@ -6,7 +6,7 @@ import 'package:provider/provider.dart';
 import '../../../router/router.gr.dart';
 import '../../../services/index.dart';
 import '../../../style/colors.dart';
-import 'drawer_contents.dart';
+import 'contents.dart';
 
 class DrawerWidget extends StatelessWidget {
   const DrawerWidget({Key? key}) : super(key: key);

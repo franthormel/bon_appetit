@@ -1,9 +1,8 @@
 export 'articles/article.dart';
-export 'datasets/dataset_homepage.dart';
-export 'datasets/models/dataset_recipe.dart';
-export 'others/drawer_route.dart';
+export 'datasets/homepage.dart';
+export 'datasets/recipe.dart';
+export 'recipes/enum.dart';
+export 'recipes/options.dart';
+export 'recipes/rating.dart';
 export 'recipes/recipe.dart';
-export 'recipes/recipe_list.dart';
-export 'recipes/recipe_options.dart';
-export 'recipes/recipe_rating.dart';
 export 'videos/video.dart';

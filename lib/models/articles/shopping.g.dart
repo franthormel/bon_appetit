@@ -13,7 +13,7 @@ ShoppingArticle _$ShoppingArticleFromJson(Map<String, dynamic> json) =>
       dateUploaded: DateTime.parse(json['dateUploaded'] as String),
       imageUrl: json['imageUrl'] as String,
       products: (json['products'] as List<dynamic>?)
-          ?.map((e) => ItemProduct.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => Product.fromJson(e as Map<String, dynamic>))
           .toList(),
       subtitle: json['subtitle'] as String,
       tags: (json['tags'] as List<dynamic>).map((e) => e as String).toList(),

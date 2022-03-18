@@ -16,7 +16,7 @@ Article _$ArticleFromJson(Map<String, dynamic> json) => Article(
       tags: (json['tags'] as List<dynamic>).map((e) => e as String).toList(),
       title: json['title'] as String,
       products: (json['products'] as List<dynamic>?)
-          ?.map((e) => ItemProduct.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => Product.fromJson(e as Map<String, dynamic>))
           .toList(),
     );
 

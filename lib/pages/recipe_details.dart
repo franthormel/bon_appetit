@@ -1,4 +1,4 @@
-import 'package:bon_appetit/widgets/recipes/details/recipe_details_rating.dart';
+import 'package:bon_appetit/widgets/recipes/details/rating.dart';
 import 'package:flutter/material.dart';
 
 import '../models/index.dart';
@@ -37,7 +37,7 @@ class RecipeDetailsPage extends StatelessWidget {
   }
 
   List<Widget> get children => [
-        RecipeDetailsBannerWidget(recipe.issue),
+        RecipeDetailsIssueWidget(recipe.issue),
         RecipeDetailsTitleWidget(recipe.title),
         if (recipe.author != null) RecipeDetailsAuthorWidget(recipe.author!),
         RecipeDetailsDateUploadedWidget(recipe.dateUploaded),

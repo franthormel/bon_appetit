@@ -6,10 +6,10 @@ import '../models/index.dart';
 
 class MockDataService {
   // Used by HomePage widget
-  static Future<HomepageDataset> fetchHomepageDataset() async {
+  static Future<DatasetHomepage> fetchHomepageDataset() async {
     final jsonString = await rootBundle.loadString('assets/data/homepage.json');
     final json = jsonDecode(jsonString);
 
-    return HomepageDataset.fromJson(json);
+    return DatasetHomepage.fromJson(json);
   }
 }

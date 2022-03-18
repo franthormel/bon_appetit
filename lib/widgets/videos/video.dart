@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../models/index.dart';
 import '../../style/colors.dart';
-import '../others/cached_image_progress.dart';
+import '../others/cached_image.dart';
 
 class VideoEntryWidget extends StatelessWidget {
   final VideoEntry video;
@@ -19,7 +19,7 @@ class VideoEntryWidget extends StatelessWidget {
           Stack(
             alignment: Alignment.bottomLeft,
             children: [
-              CachedImageProgressWidget(video.imageUrl),
+              CachedImageWidget(video.imageUrl),
               Padding(
                 padding: const EdgeInsets.only(left: 10.0, bottom: 10.0),
                 child: FloatingActionButton(

@@ -1,7 +1,7 @@
 import 'package:auto_route/auto_route.dart';
 
 import '../pages/index.dart';
-import 'route.constants.dart';
+import 'constants.dart';
 
 @MaterialAutoRouter(
   routes: <AutoRoute>[

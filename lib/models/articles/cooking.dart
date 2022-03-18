@@ -1,6 +1,6 @@
 import 'package:json_annotation/json_annotation.dart';
 
-import '../others/item_product.dart';
+import '../shared/product.dart';
 import 'article.dart';
 
 part 'cooking.g.dart';
@@ -12,7 +12,7 @@ class CookingArticle extends Article {
     required String content,
     required DateTime dateUploaded,
     required String imageUrl,
-    required List<ItemProduct>? products,
+    required List<Product>? products,
     required String subtitle,
     required List<String> tags,
     required String title,
