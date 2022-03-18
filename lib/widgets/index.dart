@@ -9,7 +9,6 @@ export 'others/will_pop.dart';
 export 'recipes/details/author.dart';
 export 'recipes/details/date_uploaded.dart';
 export 'recipes/details/image.dart';
-export 'recipes/details/image.dart';
 export 'recipes/details/issue.dart';
 export 'recipes/details/rating.dart';
 export 'recipes/details/review_header.dart';

@@ -18,7 +18,7 @@ class RecipeDetailsPage extends StatelessWidget {
             IconButton(
               icon: const Icon(Icons.favorite_border),
               onPressed: () {},
-            )
+            ),
           ],
         ),
         body: Center(

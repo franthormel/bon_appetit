@@ -17,7 +17,10 @@ class CachedImageWidget extends StatelessWidget {
       tag: heroTag,
       child: CachedNetworkImage(
         imageUrl: imageUrl,
-        fadeInCurve: Curves.ease,
+        fadeInCurve: Curves.easeInCubic,
+        fadeInDuration: const Duration(milliseconds: 100),
+        fadeOutCurve: Curves.easeOutCubic,
+        fadeOutDuration: const Duration(milliseconds: 100),
         progressIndicatorBuilder: (context, url, progress) {
           return Center(
             child: Padding(
