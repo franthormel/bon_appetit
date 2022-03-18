@@ -3,15 +3,25 @@ import 'package:flutter/material.dart';
 
 import '../../router/router.gr.dart';
 
-class RouterProvider extends ChangeNotifier {
-  PageRouteInfo _pageRouteInfo = const HomeRoute();
+class RouteProvider extends ChangeNotifier {
+  List<PageRouteInfo> _pageRoutes = [const HomeRoute()];
 
-  void change(PageRouteInfo routeInfo) {
-    if (_pageRouteInfo != routeInfo) {
-      _pageRouteInfo = routeInfo;
+  void change(PageRouteInfo pageRouteInfo) {
+    _pageRoutes = [pageRouteInfo];
+    notifyListeners();
+  }
+
+  void push(PageRouteInfo pageRouteInfo) {
+    _pageRoutes.add(pageRouteInfo);
+    notifyListeners();
+  }
+
+  void pop() {
+    if (_pageRoutes.length > 1) {
+      _pageRoutes.removeLast();
       notifyListeners();
     }
   }
 
-  PageRouteInfo get pageRouteInfo => _pageRouteInfo;
+  List<PageRouteInfo> get pageRouteInfo => _pageRoutes;
 }

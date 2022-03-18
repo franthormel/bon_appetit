@@ -11,7 +11,6 @@ class HomePage extends StatelessWidget {
     return Container(
       color: BonAppetitColors.white,
       child: ListView.separated(
-        primary: true,
         physics: const BouncingScrollPhysics(),
         itemCount: children.length,
         itemBuilder: (context, index) => children[index],

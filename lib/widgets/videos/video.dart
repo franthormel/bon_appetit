@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../models/index.dart';
 import '../../style/colors.dart';
-import '../others/cached_image_progress.dart';
+import '../others/cached_image.dart';
 
 class VideoEntryWidget extends StatelessWidget {
   final VideoEntry video;
@@ -19,7 +19,10 @@ class VideoEntryWidget extends StatelessWidget {
           Stack(
             alignment: Alignment.bottomLeft,
             children: [
-              CachedImageProgressWidget(video.imageUrl),
+              CachedImageWidget(
+                imageUrl: video.imageUrl,
+                heroTag: video.heroTag,
+              ),
               Padding(
                 padding: const EdgeInsets.only(left: 10.0, bottom: 10.0),
                 child: FloatingActionButton(
@@ -37,7 +40,10 @@ class VideoEntryWidget extends StatelessWidget {
           if (video.series != null)
             Text(
               video.series!.toUpperCase(),
-              style: Theme.of(context).textTheme.caption,
+              style: Theme.of(context)
+                  .textTheme
+                  .caption
+                  ?.copyWith(color: BonAppetitColors.sizzlingSunrise),
             ),
           Text(
             video.title,

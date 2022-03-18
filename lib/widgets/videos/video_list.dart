@@ -12,8 +12,7 @@ class VideoListWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final dataset = Provider.of<HomepageDataset>(context, listen: false);
-    final videos = dataset.videos;
+    final dataset = Provider.of<DatasetHomepage>(context, listen: false);
 
     return DesignedContainerWidget(
       color: BonAppetitColors.black,
@@ -29,8 +28,9 @@ class VideoListWidget extends StatelessWidget {
           SizedBox(
             height: 300.0,
             child: ListView.separated(
-              itemCount: videos.length,
-              itemBuilder: (context, index) => VideoEntryWidget(videos[index]),
+              itemCount: dataset.videos.length,
+              itemBuilder: (context, index) =>
+                  VideoEntryWidget(dataset.videos[index]),
               primary: false,
               scrollDirection: Axis.horizontal,
               separatorBuilder: (context, index) => const SizedBox(width: 18.0),

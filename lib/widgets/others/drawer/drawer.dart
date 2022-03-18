@@ -6,7 +6,7 @@ import 'package:provider/provider.dart';
 import '../../../router/router.gr.dart';
 import '../../../services/index.dart';
 import '../../../style/colors.dart';
-import 'drawer_contents.dart';
+import 'contents.dart';
 
 class DrawerWidget extends StatelessWidget {
   const DrawerWidget({Key? key}) : super(key: key);
@@ -19,9 +19,8 @@ class DrawerWidget extends StatelessWidget {
         children: [
           GestureDetector(
             onTap: () {
-              final router =
-                  Provider.of<RouterProvider>(context, listen: false);
-              router.change(const HomeRoute());
+              final route = Provider.of<RouteProvider>(context, listen: false);
+              route.change(const HomeRoute());
 
               AutoRouter.of(context).pop();
             },

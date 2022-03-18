@@ -1,18 +1,29 @@
+import 'package:flutter/material.dart';
 import 'package:json_annotation/json_annotation.dart';
 
 part 'video.g.dart';
 
 @JsonSerializable()
 class VideoEntry {
-  final String title;
-  final String? series;
+  final String about;
+  final List<String>? credits;
+  final String? episode;
   final String imageUrl;
+  final String? season;
+  final String? series;
+  final String title;
+  final String transcript;
   final DateTime uploadDate;
 
   VideoEntry({
-    required this.title,
+    required this.about,
     required this.imageUrl,
+    required this.title,
+    required this.transcript,
     required this.uploadDate,
+    this.credits,
+    this.episode,
+    this.season,
     this.series,
   });
 
@@ -20,4 +31,6 @@ class VideoEntry {
       _$VideoEntryFromJson(json);
 
   Map<String, dynamic> toJson() => _$VideoEntryToJson(this);
+
+  String get heroTag => ObjectKey(this).toString();
 }

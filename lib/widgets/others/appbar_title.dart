@@ -5,15 +5,15 @@ import 'package:provider/provider.dart';
 import '../../router/router.gr.dart';
 import '../../services/index.dart';
 
-class AppBarTitleWidget extends StatelessWidget {
-  const AppBarTitleWidget({Key? key}) : super(key: key);
+class AppbarTitleWidget extends StatelessWidget {
+  const AppbarTitleWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        final router = Provider.of<RouterProvider>(context, listen: false);
-        router.change(const HomeRoute());
+        final route = Provider.of<RouteProvider>(context, listen: false);
+        route.change(const HomeRoute());
       },
       child: SvgPicture.asset('assets/logo.svg', height: 50.0),
     );
