@@ -30,7 +30,7 @@ class RecipeDetailsUtensilsWidget extends StatelessWidget {
             future: AssetsLoaderService.loadSponsorTxtFile(),
             initialData: "",
           ),
-          const SizedBox(height: 15.0),
+          const SizedBox(height: 20.0),
           Text(
             "What you'll need",
             style: Theme.of(context).textTheme.headline5,
