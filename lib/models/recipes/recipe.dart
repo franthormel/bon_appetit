@@ -49,7 +49,7 @@ class Recipe {
   final String? tag;
   final List<RecipeTime>? timeEntries;
   final String title;
-  final List<RecipeUtensil>? utensils; // TODO: USE
+  final List<RecipeUtensil>? utensils;
 
   Recipe({
     required this.categories,

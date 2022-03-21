@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../models/index.dart';
 import '../../style/colors.dart';
-import '../others/cached_image.dart';
+import '../others/cached_hero_image.dart';
 import '../others/header_body/four.dart';
 import 'others/details.dart';
 
@@ -17,9 +17,9 @@ class MainStoryWidget extends StatelessWidget {
       article: article,
       child: Column(
         children: [
-          CachedImageWidget(
-            imageUrl: article.imageUrl,
+          CachedHeroImageWidget(
             heroTag: article.heroTag,
+            imageUrl: article.imageUrl,
           ),
           Container(
             width: double.infinity,

@@ -6,4 +6,5 @@ export 'recipes/options.dart';
 export 'recipes/rating.dart';
 export 'recipes/recipe.dart';
 export 'recipes/time.dart';
+export 'recipes/utensil.dart';
 export 'videos/video.dart';

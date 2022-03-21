@@ -14,10 +14,7 @@ class RecipeDetailsDescriptionWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return HorizontalPaddingWidget(
-      child: Text(
-        description,
-        style: BonAppetitThemeRadley.textTheme.bodyText1,
-      ),
+      child: Text(description, style: BonAppetitThemeRadley.body),
     );
   }
 }

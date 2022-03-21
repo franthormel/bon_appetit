@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../models/index.dart';
 import '../../style/colors.dart';
-import '../others/cached_image.dart';
+import '../others/cached_hero_image.dart';
 
 class VideoEntryWidget extends StatelessWidget {
   final VideoEntry video;
@@ -19,9 +19,9 @@ class VideoEntryWidget extends StatelessWidget {
           Stack(
             alignment: Alignment.bottomLeft,
             children: [
-              CachedImageWidget(
-                imageUrl: video.imageUrl,
+              CachedHeroImageWidget(
                 heroTag: video.heroTag,
+                imageUrl: video.imageUrl,
               ),
               Padding(
                 padding: const EdgeInsets.only(left: 10.0, bottom: 10.0),

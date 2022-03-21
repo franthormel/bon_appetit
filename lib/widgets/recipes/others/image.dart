@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../models/index.dart';
 import '../../../style/colors.dart';
-import '../../others/cached_image.dart';
+import '../../others/cached_hero_image.dart';
 
 class RecipeImageWidget extends StatelessWidget {
   final Recipe recipe;
@@ -20,9 +20,9 @@ class RecipeImageWidget extends StatelessWidget {
       children: [
         ClipRRect(
           borderRadius: BorderRadius.circular(24.0),
-          child: CachedImageWidget(
-            imageUrl: recipe.imageUrl,
+          child: CachedHeroImageWidget(
             heroTag: recipe.heroTag,
+            imageUrl: recipe.imageUrl,
           ),
         ),
         if (tag != null || recipe.tag != null)

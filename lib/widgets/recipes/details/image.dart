@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../others/cached_image.dart';
+import '../../others/cached_hero_image.dart';
 
 class RecipeDetailsImageWidget extends StatelessWidget {
   final String imageUrl;
@@ -14,6 +14,6 @@ class RecipeDetailsImageWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return CachedImageWidget(imageUrl: imageUrl, heroTag: heroTag);
+    return CachedHeroImageWidget(heroTag: heroTag, imageUrl: imageUrl);
   }
 }

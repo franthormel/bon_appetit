@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../models/index.dart';
-import '../../others/cached_image.dart';
+import '../../others/cached_hero_image.dart';
 import '../../others/category_box.dart';
 import '../../others/header_body/five.dart';
 import 'details.dart';
@@ -18,9 +18,9 @@ class ArticleWidget extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          CachedImageWidget(
-            imageUrl: article.imageUrl,
+          CachedHeroImageWidget(
             heroTag: article.heroTag,
+            imageUrl: article.imageUrl,
           ),
           const Divider(color: Colors.transparent),
           CategoryBoxWidget(article.category),
