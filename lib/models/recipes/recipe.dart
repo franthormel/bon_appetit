@@ -47,7 +47,7 @@ class Recipe {
   /// - Vegan
   /// Used as a [Chip] label.
   final String? tag;
-  final List<RecipeTime>? timeEntries; // TODO: USE
+  final List<RecipeTime>? timeEntries;
   final String title;
   final List<RecipeUtensil>? utensils; // TODO: USE
 

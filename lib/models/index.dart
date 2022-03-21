@@ -5,4 +5,5 @@ export 'recipes/enum.dart';
 export 'recipes/options.dart';
 export 'recipes/rating.dart';
 export 'recipes/recipe.dart';
+export 'recipes/time.dart';
 export 'videos/video.dart';

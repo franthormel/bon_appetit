@@ -45,7 +45,8 @@ class RecipeDetailsPage extends StatelessWidget {
         imageUrl: recipe.imageUrl,
         heroTag: recipe.heroTag,
       ),
-      RecipeDetailsTimeWidget(),
+      if (recipe.timeEntries != null)
+        RecipeDetailsTimeEntriesWidget(recipe.timeEntries!),
       RecipeDetailsDescriptionWidget(),
       RecipeDetailsUtensilsWidget(),
       RecipeDetailsIngredientsWidget(),

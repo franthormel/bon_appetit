@@ -21,7 +21,7 @@ export 'recipes/details/rating.dart';
 export 'recipes/details/read_reviews.dart';
 export 'recipes/details/servings.dart';
 export 'recipes/details/steps.dart';
-export 'recipes/details/time.dart';
+export 'recipes/details/time_entries.dart';
 export 'recipes/details/title.dart';
 export 'recipes/details/user_reviews.dart';
 export 'recipes/details/utensils.dart';
