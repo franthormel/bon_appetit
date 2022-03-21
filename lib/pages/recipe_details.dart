@@ -38,19 +38,30 @@ class RecipeDetailsPage extends StatelessWidget {
     );
   }
 
-  List<Widget> get children => [
-        RecipeDetailsPageIssueWidget(recipe.issue),
-        RecipeDetailsPageTitleWidget(recipe.title),
-        if (recipe.author != null)
-          RecipeDetailsPageAuthorWidget(recipe.author!),
-        RecipeDetailsPageDateUploadedWidget(recipe.dateUploaded),
-        const Divider(color: BonAppetitColors.black),
-        if (recipe.rating != null)
-          RecipeDetailsPageRatingWidget(recipe.rating!),
-        const RecipeDetailsPageReviewHeaderWidget(),
-        RecipeDetailsPageImageWidget(
-          imageUrl: recipe.imageUrl,
-          heroTag: recipe.heroTag,
-        ),
-      ];
+  List<Widget> get children {
+    return [
+      RecipeDetailsIssueWidget(recipe.issue),
+      RecipeDetailsTitleWidget(recipe.title),
+      if (recipe.author != null) RecipeDetailsAuthorWidget(recipe.author!),
+      RecipeDetailsDateUploadedWidget(recipe.dateUploaded),
+      const Divider(color: BonAppetitColors.black),
+      if (recipe.rating != null) RecipeDetailsRatingWidget(recipe.rating!),
+      const RecipeDetailsReadReviewsWidget(),
+      RecipeDetailsImageWidget(
+        imageUrl: recipe.imageUrl,
+        heroTag: recipe.heroTag,
+      ),
+      RecipeDetailsTimeWidget(),
+      RecipeDetailsDescriptionWidget(),
+      RecipeDetailsUtensilsWidget(),
+      RecipeDetailsIngredientsWidget(),
+      RecipeDetailsServingsWidget(),
+      RecipeDetailsStepsWidget(),
+      RecipeDetailsStepsWidget(),
+      RecipeDetailsNutritionWidget(),
+      const RecipeDetailsRateRecipeWidget(),
+      const RecipeDetailsLeaveReviewWidget(),
+      RecipeDetailsCategoriesWidget(),
+    ];
+  }
 }

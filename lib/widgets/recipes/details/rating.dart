@@ -3,13 +3,10 @@ import 'package:flutter/material.dart';
 import '../../../models/index.dart';
 import '../others/rating_stars.dart';
 
-class RecipeDetailsPageRatingWidget extends StatelessWidget {
+class RecipeDetailsRatingWidget extends StatelessWidget {
   final RecipeRating rating;
 
-  const RecipeDetailsPageRatingWidget(
-    this.rating, {
-    Key? key,
-  }) : super(key: key);
+  const RecipeDetailsRatingWidget(this.rating, {Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

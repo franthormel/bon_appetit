@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 
 import '../../others/cached_image.dart';
 
-class RecipeDetailsPageImageWidget extends StatelessWidget {
+class RecipeDetailsImageWidget extends StatelessWidget {
   final String imageUrl;
   final String heroTag;
 
-  const RecipeDetailsPageImageWidget({
+  const RecipeDetailsImageWidget({
     required this.imageUrl,
     required this.heroTag,
     Key? key,

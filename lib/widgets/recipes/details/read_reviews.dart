@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class RecipeDetailsPageReviewHeaderWidget extends StatelessWidget {
-  const RecipeDetailsPageReviewHeaderWidget({Key? key}) : super(key: key);
+class RecipeDetailsReadReviewsWidget extends StatelessWidget {
+  const RecipeDetailsReadReviewsWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
