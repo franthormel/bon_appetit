@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import '../models/index.dart';
-import '../style/colors.dart';
 import '../widgets/index.dart';
 
 class RecipeDetailsPage extends StatelessWidget {
@@ -23,12 +22,7 @@ class RecipeDetailsPage extends StatelessWidget {
         ),
         body: Center(
           child: ListView.separated(
-            padding: const EdgeInsets.only(
-              left: 16.0,
-              right: 16.0,
-              bottom: 35.0,
-              top: 21.0,
-            ),
+            padding: const EdgeInsets.only(bottom: 35.0, top: 21.0),
             itemBuilder: (context, index) => children[index],
             itemCount: children.length,
             separatorBuilder: (context, index) => const SizedBox(height: 15.0),
@@ -44,7 +38,7 @@ class RecipeDetailsPage extends StatelessWidget {
       RecipeDetailsTitleWidget(recipe.title),
       if (recipe.author != null) RecipeDetailsAuthorWidget(recipe.author!),
       RecipeDetailsDateUploadedWidget(recipe.dateUploaded),
-      const Divider(color: BonAppetitColors.black),
+      const RecipeDetailsDividerWidget(),
       if (recipe.rating != null) RecipeDetailsRatingWidget(recipe.rating!),
       const RecipeDetailsReadReviewsWidget(),
       RecipeDetailsImageWidget(
@@ -56,7 +50,6 @@ class RecipeDetailsPage extends StatelessWidget {
       RecipeDetailsUtensilsWidget(),
       RecipeDetailsIngredientsWidget(),
       RecipeDetailsServingsWidget(),
-      RecipeDetailsStepsWidget(),
       RecipeDetailsStepsWidget(),
       RecipeDetailsNutritionWidget(),
       const RecipeDetailsRateRecipeWidget(),

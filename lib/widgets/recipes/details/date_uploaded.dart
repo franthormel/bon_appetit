@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
+import '../../others/horizontal_padding.dart';
+
 class RecipeDetailsDateUploadedWidget extends StatelessWidget {
   final DateTime dateUploaded;
 
@@ -11,10 +13,12 @@ class RecipeDetailsDateUploadedWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text(
-      DateFormat.yMMMMd().format(dateUploaded),
-      textAlign: TextAlign.center,
-      style: Theme.of(context).textTheme.caption,
+    return HorizontalPaddingWidget(
+      child: Text(
+        DateFormat.yMMMMd().format(dateUploaded),
+        textAlign: TextAlign.center,
+        style: Theme.of(context).textTheme.caption,
+      ),
     );
   }
 }

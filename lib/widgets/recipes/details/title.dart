@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../others/horizontal_padding.dart';
+
 class RecipeDetailsTitleWidget extends StatelessWidget {
   final String title;
 
@@ -7,10 +9,12 @@ class RecipeDetailsTitleWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text(
-      title,
-      textAlign: TextAlign.center,
-      style: Theme.of(context).textTheme.headline4,
+    return HorizontalPaddingWidget(
+      child: Text(
+        title,
+        textAlign: TextAlign.center,
+        style: Theme.of(context).textTheme.headline4,
+      ),
     );
   }
 }

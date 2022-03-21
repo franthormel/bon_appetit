@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../others/horizontal_padding.dart';
+
 class RecipeDetailsAuthorWidget extends StatelessWidget {
   final String author;
 
@@ -7,10 +9,12 @@ class RecipeDetailsAuthorWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text(
-      "By $author".toUpperCase(),
-      textAlign: TextAlign.center,
-      style: Theme.of(context).textTheme.caption,
+    return HorizontalPaddingWidget(
+      child: Text(
+        "By $author".toUpperCase(),
+        textAlign: TextAlign.center,
+        style: Theme.of(context).textTheme.caption,
+      ),
     );
   }
 }
