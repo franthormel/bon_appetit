@@ -40,7 +40,7 @@ class RecipeDetailsPage extends StatelessWidget {
       ),
       if (recipe.timeEntries != null)
         RecipeDetailsTimeEntriesWidget(recipe.timeEntries!),
-      RecipeDetailsDescriptionWidget(),
+      RecipeDetailsDescriptionWidget(recipe.description),
       RecipeDetailsUtensilsWidget(),
       RecipeDetailsIngredientsWidget(),
       RecipeDetailsServingsWidget(),

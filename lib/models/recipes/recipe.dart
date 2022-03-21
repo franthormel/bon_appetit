@@ -20,7 +20,7 @@ class Recipe {
 
   /// When the author created and uploaded this recipe. Should not be interchanged with [dateIssue] which is different.
   final DateTime dateUploaded;
-  final String description; // TODO: USE
+  final String description;
   final String imageUrl;
   final List<RecipeIngredient> ingredients; // TODO: USE
 

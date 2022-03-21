@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'router/router.gr.dart';
-import 'style/theme.dart';
+import 'style/theme_futura.dart';
 
 void main() {
   runApp(MyApp());
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp.router(
       title: 'Bon Appétit',
-      theme: BonAppetitTheme.theme,
+      theme: BonAppetitThemeFutura.theme,
       routerDelegate: _appRouter.delegate(),
       routeInformationParser: _appRouter.defaultRouteParser(),
     );

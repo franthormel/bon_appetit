@@ -1,12 +1,23 @@
 import 'package:flutter/material.dart';
 
+import '../../../style/theme_radley.dart';
 import '../../others/horizontal_padding.dart';
 
 class RecipeDetailsDescriptionWidget extends StatelessWidget {
-  const RecipeDetailsDescriptionWidget({Key? key}) : super(key: key);
+  final String description;
+
+  const RecipeDetailsDescriptionWidget(
+    this.description, {
+    Key? key,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return HorizontalPaddingWidget(child: Text('TODO description'));
+    return HorizontalPaddingWidget(
+      child: Text(
+        description,
+        style: BonAppetitThemeRadley.textTheme.bodyText1,
+      ),
+    );
   }
 }
