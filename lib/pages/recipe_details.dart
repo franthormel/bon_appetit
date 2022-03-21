@@ -12,14 +12,7 @@ class RecipeDetailsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return WillPopWidget(
       child: Scaffold(
-        appBar: AppBar(
-          actions: [
-            IconButton(
-              icon: const Icon(Icons.favorite_border),
-              onPressed: () {},
-            ),
-          ],
-        ),
+        appBar: AppBar(),
         body: Center(
           child: ListView.separated(
             padding: const EdgeInsets.only(bottom: 35.0, top: 21.0),
