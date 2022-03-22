@@ -30,7 +30,7 @@ class Recipe {
   final String? mainDescription;
   final List<RecipeNutritionServing>? nutritionServings;
   final RecipeRating? rating;
-  final List<RecipeReview>? reviews; // TODO: USE
+  final List<RecipeReview>? reviews;
 
   /// Number of servings this recipe makes.
   /// Examples:
