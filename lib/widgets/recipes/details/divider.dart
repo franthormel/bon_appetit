@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../../../style/colors.dart';
 import '../../others/horizontal_padding.dart';
 
 class RecipeDetailsDividerWidget extends StatelessWidget {
@@ -8,8 +7,6 @@ class RecipeDetailsDividerWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const HorizontalPaddingWidget(
-      child: Divider(color: BonAppetitColors.black),
-    );
+    return const HorizontalPaddingWidget(child: Divider());
   }
 }

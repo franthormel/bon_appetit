@@ -43,8 +43,10 @@ class RecipeDetailsPage extends StatelessWidget {
       RecipeDetailsDescriptionWidget(recipe.description),
       if (recipe.utensils != null)
         RecipeDetailsUtensilsWidget(recipe.utensils!),
-      RecipeDetailsIngredientsWidget(),
-      RecipeDetailsServingsWidget(),
+      RecipeDetailsIngredientsWidget(
+        ingredients: recipe.ingredients,
+        servings: recipe.servings,
+      ),
       RecipeDetailsStepsWidget(),
       RecipeDetailsNutritionWidget(),
       const RecipeDetailsRateRecipeWidget(),

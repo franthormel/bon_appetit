@@ -19,7 +19,6 @@ export 'recipes/details/nutrition.dart';
 export 'recipes/details/rate_recipe.dart';
 export 'recipes/details/rating.dart';
 export 'recipes/details/read_reviews.dart';
-export 'recipes/details/servings.dart';
 export 'recipes/details/steps.dart';
 export 'recipes/details/time_entries.dart';
 export 'recipes/details/title.dart';

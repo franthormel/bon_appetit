@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../models/index.dart';
 import '../../others/horizontal_padding.dart';
-import 'time_entry.dart';
+import 'others/time_entry.dart';
 
 class RecipeDetailsTimeEntriesWidget extends StatelessWidget {
   final List<RecipeTime> timeEntries;

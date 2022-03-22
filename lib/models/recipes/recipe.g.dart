@@ -42,6 +42,7 @@ Recipe _$RecipeFromJson(Map<String, dynamic> json) => Recipe(
     );
 
 Map<String, dynamic> _$RecipeToJson(Recipe instance) => <String, dynamic>{
+      'author': instance.author,
       'categories': instance.categories,
       'dateIssue': instance.dateIssue,
       'dateUploaded': instance.dateUploaded.toIso8601String(),
@@ -50,7 +51,6 @@ Map<String, dynamic> _$RecipeToJson(Recipe instance) => <String, dynamic>{
       'ingredients': instance.ingredients,
       'mainDescription': instance.mainDescription,
       'nutritionServings': instance.nutritionServings,
-      'author': instance.author,
       'rating': instance.rating,
       'reviews': instance.reviews,
       'servings': instance.servings,

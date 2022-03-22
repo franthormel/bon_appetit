@@ -12,6 +12,8 @@ part 'recipe.g.dart';
 
 @JsonSerializable()
 class Recipe {
+  final String? author;
+
   /// Used for filtering recipes
   final List<String> categories; // TODO: USE
 
@@ -22,12 +24,11 @@ class Recipe {
   final DateTime dateUploaded;
   final String description;
   final String imageUrl;
-  final List<RecipeIngredient> ingredients; // TODO: USE
+  final List<RecipeIngredient> ingredients;
 
   /// Displayed next to main recipe. Should not interchanged with [description] which is different.
   final String? mainDescription;
   final List<RecipeNutritionServing>? nutritionServings; // TODO: USE
-  final String? author;
   final RecipeRating? rating;
   final List<RecipeReview>? reviews; // TODO: USE
 
@@ -36,7 +37,7 @@ class Recipe {
   /// - 8 servings
   /// - Makes 16
   /// - 4-6 servings
-  final String servings; // TODO: USE
+  final String servings;
 
   /// Ordinal instructions on how to create this recipe.
   final List<String> steps; // TODO: USE
