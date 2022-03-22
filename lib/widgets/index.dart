@@ -10,7 +10,6 @@ export 'recipes/details/author.dart';
 export 'recipes/details/categories.dart';
 export 'recipes/details/date_uploaded.dart';
 export 'recipes/details/description.dart';
-export 'recipes/details/divider.dart';
 export 'recipes/details/image.dart';
 export 'recipes/details/ingredients.dart';
 export 'recipes/details/issue.dart';

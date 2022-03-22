@@ -14,7 +14,10 @@ class RecipeDetailsStepsWidget extends StatelessWidget {
     return HorizontalPaddingWidget(
       child: HeaderDetailsWidget(
         text: "Preparation",
-        child: Column(children: children),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: children,
+        ),
       ),
     );
   }

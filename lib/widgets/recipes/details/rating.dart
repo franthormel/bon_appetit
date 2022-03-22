@@ -12,14 +12,21 @@ class RecipeDetailsRatingWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return HorizontalPaddingWidget(
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.center,
+      child: Column(
         children: [
-          Text(rating.value, style: Theme.of(context).textTheme.headline5),
-          const SizedBox(width: 10.0),
-          RatingStarsWidget(double.tryParse(rating.value)),
-          const SizedBox(width: 10.0),
-          Text("(${rating.count})", style: Theme.of(context).textTheme.caption),
+          const Divider(),
+          const SizedBox(height: 20.0),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text(rating.value, style: Theme.of(context).textTheme.headline5),
+              const SizedBox(width: 10.0),
+              RatingStarsWidget(double.tryParse(rating.value)),
+              const SizedBox(width: 10.0),
+              Text("(${rating.count})",
+                  style: Theme.of(context).textTheme.caption),
+            ],
+          )
         ],
       ),
     );

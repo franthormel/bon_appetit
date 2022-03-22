@@ -31,7 +31,6 @@ class RecipeDetailsPage extends StatelessWidget {
       RecipeDetailsTitleWidget(recipe.title),
       if (recipe.author != null) RecipeDetailsAuthorWidget(recipe.author!),
       RecipeDetailsDateUploadedWidget(recipe.dateUploaded),
-      const RecipeDetailsDividerWidget(),
       if (recipe.rating != null) RecipeDetailsRatingWidget(recipe.rating!),
       const RecipeDetailsReadReviewsWidget(),
       RecipeDetailsImageWidget(

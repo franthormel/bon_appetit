@@ -33,7 +33,7 @@ class RecipeDetailsUtensilsWidget extends StatelessWidget {
           HeaderDetailsWidget(
             text: "What you'll need",
             child: SizedBox(
-              height: 250.0,
+              height: 230.0,
               child: ListView.separated(
                 itemBuilder: (context, index) =>
                     RecipeDetailsUtensilWidget(utensils[index]),
@@ -41,7 +41,7 @@ class RecipeDetailsUtensilsWidget extends StatelessWidget {
                 primary: false,
                 scrollDirection: Axis.horizontal,
                 separatorBuilder: (context, index) =>
-                    const SizedBox(width: 18.0),
+                    const SizedBox(width: 15.0),
               ),
             ),
           )
