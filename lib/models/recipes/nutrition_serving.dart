@@ -21,4 +21,6 @@ class RecipeNutritionServing {
       _$RecipeNutritionServingFromJson(json);
 
   Map<String, dynamic> toJson() => _$RecipeNutritionServingToJson(this);
+
+  String get text => "$name ($unit) $value";
 }

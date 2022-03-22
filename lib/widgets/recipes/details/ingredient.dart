@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../../models/index.dart';
+import '../../../models/index.dart';
 
 class RecipeDetailsIngredientWidget extends StatelessWidget {
   final RecipeIngredient ingredient;

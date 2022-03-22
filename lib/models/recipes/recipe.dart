@@ -28,7 +28,7 @@ class Recipe {
 
   /// Displayed next to main recipe. Should not interchanged with [description] which is different.
   final String? mainDescription;
-  final List<RecipeNutritionServing>? nutritionServings; // TODO: USE
+  final List<RecipeNutritionServing>? nutritionServings;
   final RecipeRating? rating;
   final List<RecipeReview>? reviews; // TODO: USE
 

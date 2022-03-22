@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import '../../../models/index.dart';
 import '../../others/header_details.dart';
 import '../../others/horizontal_padding.dart';
-import 'others/ingredient.dart';
-import 'others/servings.dart';
+import 'ingredient.dart';
+import 'ingredients_servings.dart';
 
 class RecipeDetailsIngredientsWidget extends StatelessWidget {
   final String servings;

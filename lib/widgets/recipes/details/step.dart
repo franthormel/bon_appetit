@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../../style/theme_radley.dart';
+import '../../../style/theme_radley.dart';
 
 class RecipeDetailStepWidget extends StatelessWidget {
   final int number;

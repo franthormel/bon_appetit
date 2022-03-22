@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../../../models/index.dart';
-import '../../../others/cached_image.dart';
+import '../../../models/index.dart';
+import '../../others/cached_image.dart';
 
 class RecipeDetailsUtensilWidget extends StatelessWidget {
   final RecipeUtensil utensil;

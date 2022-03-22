@@ -15,7 +15,7 @@ export 'recipes/details/image.dart';
 export 'recipes/details/ingredients.dart';
 export 'recipes/details/issue.dart';
 export 'recipes/details/leave_review.dart';
-export 'recipes/details/nutrition.dart';
+export 'recipes/details/nutrition_servings.dart';
 export 'recipes/details/rate_recipe.dart';
 export 'recipes/details/rating.dart';
 export 'recipes/details/read_reviews.dart';

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../../style/colors.dart';
+import '../../../style/colors.dart';
 
 class RecipeDetailsServingsWidget extends StatelessWidget {
   final String servings;

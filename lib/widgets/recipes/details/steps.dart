@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../others/header_details.dart';
 import '../../others/horizontal_padding.dart';
-import 'others/step.dart';
+import 'step.dart';
 
 class RecipeDetailsStepsWidget extends StatelessWidget {
   final List<String> steps;

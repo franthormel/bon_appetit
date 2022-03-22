@@ -5,7 +5,7 @@ import '../../../services/assets_loader.dart';
 import '../../../style/theme_radley.dart';
 import '../../others/header_details.dart';
 import '../../others/horizontal_padding.dart';
-import 'others/utensil.dart';
+import 'utensil.dart';
 
 class RecipeDetailsUtensilsWidget extends StatelessWidget {
   final List<RecipeUtensil> utensils;
