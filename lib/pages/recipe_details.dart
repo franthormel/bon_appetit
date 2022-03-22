@@ -47,7 +47,7 @@ class RecipeDetailsPage extends StatelessWidget {
         ingredients: recipe.ingredients,
         servings: recipe.servings,
       ),
-      RecipeDetailsStepsWidget(),
+      RecipeDetailsStepsWidget(recipe.steps),
       RecipeDetailsNutritionWidget(),
       const RecipeDetailsRateRecipeWidget(),
       const RecipeDetailsLeaveReviewWidget(),

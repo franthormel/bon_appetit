@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 import 'colors.dart';
 
 class BonAppetitThemeRadley {
-  static TextStyle? get body => _textTheme.bodyText1;
+  static TextStyle? get bodyText1 => _textTheme.bodyText1;
 
-  static TextStyle? get bodyItalic =>
+  static TextStyle? get bodyText1Italic =>
       _textTheme.bodyText1?.copyWith(fontStyle: FontStyle.italic, height: 1.5);
 
   static TextTheme get _textTheme {

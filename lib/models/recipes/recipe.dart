@@ -40,7 +40,7 @@ class Recipe {
   final String servings;
 
   /// Ordinal instructions on how to create this recipe.
-  final List<String> steps; // TODO: USE
+  final List<String> steps;
 
   /// Typically tagged as:
   /// - Quick

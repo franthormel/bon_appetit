@@ -24,7 +24,7 @@ class RecipeDetailsUtensilsWidget extends StatelessWidget {
           FutureBuilder<String>(
             builder: (context, snapshot) {
               final data = snapshot.hasData ? snapshot.data! : "";
-              return Text(data, style: BonAppetitThemeRadley.bodyItalic);
+              return Text(data, style: BonAppetitThemeRadley.bodyText1Italic);
             },
             future: AssetsLoaderService.loadSponsorTxtFile(),
             initialData: "",
