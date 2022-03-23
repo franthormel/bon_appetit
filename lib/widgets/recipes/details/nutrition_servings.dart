@@ -23,13 +23,8 @@ class RecipeDetailsNutritionServingsWidget extends StatelessWidget {
     );
   }
 
-  List<Widget> get children {
-    final widgets = <Widget>[];
-
-    for (final nutritionServing in nutritionServings) {
-      widgets.add(RecipeDetailsNutritionServingWidget(nutritionServing));
-    }
-
-    return widgets;
-  }
+  List<RecipeDetailsNutritionServingWidget> get children => nutritionServings
+      .map<RecipeDetailsNutritionServingWidget>((nutritionServing) =>
+          RecipeDetailsNutritionServingWidget(nutritionServing))
+      .toList();
 }
