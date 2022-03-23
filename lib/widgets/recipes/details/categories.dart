@@ -17,7 +17,7 @@ class RecipeDetailsCategoriesWidget extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Wrap(spacing: 15.0, runSpacing: 10.0, children: children),
+          Wrap(children: children, spacing: 15.0, runSpacing: 10.0),
           const SizedBox(height: 10.0),
         ],
       ),

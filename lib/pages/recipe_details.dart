@@ -49,7 +49,7 @@ class RecipeDetailsPage extends StatelessWidget {
       RecipeDetailsStepsWidget(recipe.steps),
       if (recipe.nutritionServings != null)
         RecipeDetailsNutritionServingsWidget(recipe.nutritionServings!),
-      const RecipeDetailsRateRecipeWidget(),
+      RecipeDetailsRateRecipeWidget(recipe.title),
       const RecipeDetailsLeaveReviewWidget(),
       if (recipe.reviews != null)
         RecipeDetailsUserReviewsWidget(recipe.reviews!),
