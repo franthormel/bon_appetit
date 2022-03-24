@@ -13,11 +13,8 @@ mixin ScrollControllerMixin {
     }
   }
 
-  bool get _shouldGoToStartPosition {
-    final hasClients = scrollController.hasClients;
-    final notAtStartPosition = scrollController.position.pixels !=
-        scrollController.position.minScrollExtent;
-
-    return hasClients && notAtStartPosition;
-  }
+  bool get _shouldGoToStartPosition =>
+      scrollController.hasClients &&
+      scrollController.position.pixels !=
+          scrollController.position.minScrollExtent;
 }
