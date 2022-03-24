@@ -22,7 +22,8 @@ class RecipeReview {
 
   Map<String, dynamic> toJson() => _$RecipeReviewToJson(this);
 
-  String get reviewerDetails {
+  @override
+  String toString() {
     final authorText = author != null ? "$author · " : "";
     final locationText = location != null ? "$location · " : "";
     final dateText = DateFormat.yMMMMd().format(date);

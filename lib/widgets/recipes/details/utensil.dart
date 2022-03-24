@@ -43,7 +43,7 @@ class RecipeDetailsUtensilWidget extends StatelessWidget {
                       .copyWith(decoration: TextDecoration.lineThrough),
                 ),
               Text(
-                utensil.shop.textPriceAtShop,
+                utensil.shop.toString(),
                 style: Theme.of(context)
                     .textTheme
                     .caption

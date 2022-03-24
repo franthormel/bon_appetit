@@ -18,7 +18,7 @@ class RecipeDetailsUserReviewWidget extends StatelessWidget {
       children: [
         Text(review.review, style: BonAppetitThemeRadley.bodyText1),
         const SizedBox(height: 15.0),
-        Text(review.reviewerDetails.toUpperCase(),
+        Text(review.toString().toUpperCase(),
             style: Theme.of(context)
                 .textTheme
                 .subtitle2

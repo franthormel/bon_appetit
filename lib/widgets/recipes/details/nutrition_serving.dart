@@ -13,7 +13,7 @@ class RecipeDetailsNutritionServingWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Text(
-      nutritionServing.text,
+      nutritionServing.toString(),
       style: Theme.of(context).textTheme.bodyText1,
     );
   }
