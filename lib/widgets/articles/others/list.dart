@@ -34,7 +34,7 @@ class ArticleListWidget extends StatelessWidget {
   }
 
   List<Widget>? get articleHeaderWidget {
-    if (main) {
+    if (main && articles.isNotEmpty) {
       return [
         MainStoryWidget(articles[0]),
         const SizedBox(height: 70.0),
@@ -58,5 +58,13 @@ class ArticleListWidget extends StatelessWidget {
     return widgets;
   }
 
-  List<Article> get articleEntries => main ? articles.sublist(1) : articles;
+  List<Article> get articleEntries {
+    List<Article> entries = articles;
+
+    if (articles.length > 1 && main) {
+      entries = articles.sublist(1);
+    }
+
+    return entries;
+  }
 }
