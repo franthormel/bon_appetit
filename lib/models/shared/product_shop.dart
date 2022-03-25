@@ -26,4 +26,12 @@ class ProductShop {
       _$ProductShopFromJson(json);
 
   Map<String, dynamic> toJson() => _$ProductShopToJson(this);
+
+  @override
+  String toString() {
+    final priceText = price != null ? price! : "SHOP";
+    final shopName = name.toUpperCase();
+
+    return "$priceText AT $shopName";
+  }
 }

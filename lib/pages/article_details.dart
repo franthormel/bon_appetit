@@ -12,14 +12,7 @@ class ArticleDetailsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return WillPopWidget(
       child: Scaffold(
-        appBar: AppBar(
-          actions: [
-            IconButton(
-              icon: const Icon(Icons.favorite_border),
-              onPressed: () {},
-            )
-          ],
-        ),
+        appBar: AppBar(),
         body: Center(
           child: Text(article.title),
         ),

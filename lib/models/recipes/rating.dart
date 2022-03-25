@@ -14,5 +14,6 @@ class RecipeRating {
 
   Map<String, dynamic> toJson() => _$RecipeRatingToJson(this);
 
-  String get text => "$count ($value)";
+  @override
+  String toString() => "$count ($value)";
 }

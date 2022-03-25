@@ -16,7 +16,7 @@ class RecipeRatingWidget extends StatelessWidget {
       children: [
         const Icon(Icons.star, size: 16.0),
         const SizedBox(width: 4.0),
-        Text(rating.text, style: Theme.of(context).textTheme.subtitle1),
+        Text(rating.toString(), style: Theme.of(context).textTheme.subtitle1),
       ],
     );
   }

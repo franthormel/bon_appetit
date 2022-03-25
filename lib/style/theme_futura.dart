@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'colors.dart';
 
-class BonAppetitTheme {
+class BonAppetitThemeFutura {
   static ThemeData get theme {
     return ThemeData(
       brightness: Brightness.light,

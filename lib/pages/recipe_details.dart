@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import '../models/index.dart';
-import '../style/colors.dart';
 import '../widgets/index.dart';
 
 class RecipeDetailsPage extends StatelessWidget {
@@ -13,44 +12,48 @@ class RecipeDetailsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return WillPopWidget(
       child: Scaffold(
-        appBar: AppBar(
-          actions: [
-            IconButton(
-              icon: const Icon(Icons.favorite_border),
-              onPressed: () {},
-            ),
-          ],
-        ),
+        appBar: AppBar(),
         body: Center(
           child: ListView.separated(
-            padding: const EdgeInsets.only(
-              left: 16.0,
-              right: 16.0,
-              bottom: 35.0,
-              top: 21.0,
-            ),
+            padding: const EdgeInsets.only(bottom: 35.0, top: 21.0),
             itemBuilder: (context, index) => children[index],
             itemCount: children.length,
-            separatorBuilder: (context, index) => const SizedBox(height: 15.0),
+            separatorBuilder: (context, index) => const SizedBox(height: 20.0),
           ),
         ),
       ),
     );
   }
 
-  List<Widget> get children => [
-        RecipeDetailsPageIssueWidget(recipe.issue),
-        RecipeDetailsPageTitleWidget(recipe.title),
-        if (recipe.author != null)
-          RecipeDetailsPageAuthorWidget(recipe.author!),
-        RecipeDetailsPageDateUploadedWidget(recipe.dateUploaded),
-        const Divider(color: BonAppetitColors.black),
-        if (recipe.rating != null)
-          RecipeDetailsPageRatingWidget(recipe.rating!),
-        const RecipeDetailsPageReviewHeaderWidget(),
-        RecipeDetailsPageImageWidget(
-          imageUrl: recipe.imageUrl,
-          heroTag: recipe.heroTag,
-        ),
-      ];
+  List<Widget> get children {
+    return [
+      RecipeDetailsIssueWidget(recipe.issue),
+      RecipeDetailsTitleWidget(recipe.title),
+      if (recipe.author != null) RecipeDetailsAuthorWidget(recipe.author!),
+      RecipeDetailsDateUploadedWidget(recipe.dateUploaded),
+      if (recipe.rating != null) RecipeDetailsRatingWidget(recipe.rating!),
+      const RecipeDetailsReadReviewsWidget(),
+      RecipeDetailsImageWidget(
+        imageUrl: recipe.imageUrl,
+        heroTag: recipe.heroTag,
+      ),
+      if (recipe.timeEntries != null)
+        RecipeDetailsTimeEntriesWidget(recipe.timeEntries!),
+      RecipeDetailsDescriptionWidget(recipe.description),
+      if (recipe.utensils != null)
+        RecipeDetailsUtensilsWidget(recipe.utensils!),
+      RecipeDetailsIngredientsWidget(
+        ingredients: recipe.ingredients,
+        servings: recipe.servings,
+      ),
+      RecipeDetailsStepsWidget(recipe.steps),
+      if (recipe.nutritionServings != null)
+        RecipeDetailsNutritionServingsWidget(recipe.nutritionServings!),
+      RecipeDetailsRateRecipeWidget(recipe.title),
+      const RecipeDetailsLeaveReviewWidget(),
+      if (recipe.reviews != null)
+        RecipeDetailsUserReviewsWidget(recipe.reviews!),
+      RecipeDetailsCategoriesWidget(recipe.categories),
+    ];
+  }
 }

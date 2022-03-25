@@ -13,9 +13,9 @@ class FilterProvider extends ChangeNotifier with ScrollControllerMixin {
     }
   }
 
-  bool get shouldFilter => _option != "All";
-
   bool optionIs(String option) => _option == option;
 
   bool optionIsIn(List<String> categories) => categories.contains(_option);
+
+  bool get shouldFilter => _option != "All";
 }
