@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../../../router/route.dart';
 import '../../../router/router.gr.dart';
-import '../../../services/providers/route.dart';
 import 'account_entry.dart';
 
 class DrawerAccountWidget extends StatelessWidget {
