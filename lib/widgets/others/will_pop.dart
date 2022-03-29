@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import '../../router/route.dart';
+import '../../router/index.dart';
 
 class WillPopWidget extends StatelessWidget {
   final Widget child;

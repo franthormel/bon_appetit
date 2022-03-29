@@ -1,6 +1,7 @@
 export 'articles/article.dart';
 export 'datasets/homepage.dart';
 export 'datasets/recipe.dart';
+export 'others/drawer_route.dart';
 export 'recipes/enum.dart';
 export 'recipes/ingredient.dart';
 export 'recipes/nutrition_serving.dart';

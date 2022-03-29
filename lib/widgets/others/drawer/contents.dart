@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../router/drawer_route.dart';
+import '../../../models/index.dart';
 import 'account.dart';
 import 'footer.dart';
 import 'router.dart';

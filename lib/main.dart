@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'router/router.gr.dart';
+import 'router/index.dart';
 import 'style/theme_futura.dart';
 
 void main() {

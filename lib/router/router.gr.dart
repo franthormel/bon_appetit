@@ -22,7 +22,7 @@ class AppRouter extends _i2.RootStackRouter {
 
   @override
   final Map<String, _i2.PageFactory> pagesMap = {
-    InitialRoute.name: (routeData) {
+    DataProviderRoute.name: (routeData) {
       return _i2.MaterialPageX<dynamic>(
           routeData: routeData, child: const _i1.DataProviderPage());
     },
@@ -58,28 +58,28 @@ class AppRouter extends _i2.RootStackRouter {
 
   @override
   List<_i2.RouteConfig> get routes => [
-        _i2.RouteConfig(InitialRoute.name, path: '/', children: [
+        _i2.RouteConfig(DataProviderRoute.name, path: '/', children: [
           _i2.RouteConfig(HomeRoute.name,
-              path: 'home', parent: InitialRoute.name),
+              path: 'home', parent: DataProviderRoute.name),
           _i2.RouteConfig(SearchRoute.name,
-              path: 'search', parent: InitialRoute.name),
+              path: 'search', parent: DataProviderRoute.name),
           _i2.RouteConfig(RecipeDetailsRoute.name,
-              path: 'recipe', parent: InitialRoute.name),
+              path: 'recipe', parent: DataProviderRoute.name),
           _i2.RouteConfig(ArticleDetailsRoute.name,
-              path: 'article', parent: InitialRoute.name)
+              path: 'article', parent: DataProviderRoute.name)
         ]),
         _i2.RouteConfig('*#redirect',
-            path: '*', redirectTo: 'InitialRoute', fullMatch: true)
+            path: '*', redirectTo: 'DataProviderRoute', fullMatch: true)
       ];
 }
 
 /// generated route for
 /// [_i1.DataProviderPage]
-class InitialRoute extends _i2.PageRouteInfo<void> {
-  const InitialRoute({List<_i2.PageRouteInfo>? children})
-      : super(InitialRoute.name, path: '/', initialChildren: children);
+class DataProviderRoute extends _i2.PageRouteInfo<void> {
+  const DataProviderRoute({List<_i2.PageRouteInfo>? children})
+      : super(DataProviderRoute.name, path: '/', initialChildren: children);
 
-  static const String name = 'InitialRoute';
+  static const String name = 'DataProviderRoute';
 }
 
 /// generated route for
