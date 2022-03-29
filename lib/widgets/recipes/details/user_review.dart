@@ -16,7 +16,11 @@ class RecipeDetailsUserReviewWidget extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(review.review, style: BonAppetitThemeRadley.bodyText1),
+        Text(
+          review.review,
+          textAlign: TextAlign.justify,
+          style: BonAppetitThemeRadley.bodyText1,
+        ),
         const SizedBox(height: 15.0),
         Text(review.toString().toUpperCase(),
             style: Theme.of(context)

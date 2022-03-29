@@ -18,7 +18,7 @@ class RecipeDetailsUserReviewsWidget extends StatelessWidget {
     return HorizontalPaddingWidget(
       child: HeaderDetailsWidget(
         text: text,
-        includeDivider: false,
+        hasDivider: false,
         child: Column(children: children),
       ),
     );

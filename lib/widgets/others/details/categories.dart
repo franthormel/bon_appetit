@@ -5,9 +5,11 @@ import 'category.dart';
 
 class DetailsCategoriesWidget extends StatelessWidget {
   final List<String> categories;
+  final bool hasDivider;
 
   const DetailsCategoriesWidget(
     this.categories, {
+    this.hasDivider = false,
     Key? key,
   }) : super(key: key);
 
@@ -17,6 +19,8 @@ class DetailsCategoriesWidget extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+          if (hasDivider)
+            Column(children: const [Divider(), SizedBox(height: 10.0)]),
           Wrap(children: children, spacing: 15.0, runSpacing: 10.0),
           const SizedBox(height: 10.0),
         ],

@@ -27,10 +27,10 @@ class ArticleDetailsPage extends StatelessWidget with DetailsContentsMixin {
         heroTag: article.heroTag,
         imageUrl: article.imageUrl,
       ),
-      // TODO: Display sponsorText from file with a divider on top
-      // TODO: Display content -- Use DetailsBodyTextWidget and delimiter is '/r/n'
+      if (article.products != null) const SponsorNotePaddedWidget(),
+      ArticleDetailsContentsWidget(article.content),
       // TODO: Display products -- Similar to recipe's utensils but different title
-      // TODO: Display tags -- Use DetailsCategoriesWidget but with a divider on top so modify this widget
+      DetailsCategoriesWidget(article.tags, hasDivider: true),
     ];
   }
 }

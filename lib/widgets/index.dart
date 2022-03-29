@@ -1,3 +1,4 @@
+export 'articles/details/contents.dart';
 export 'articles/details/subtitle.dart';
 export 'articles/products.dart';
 export 'articles/stories.dart';
@@ -7,9 +8,10 @@ export 'others/cached_hero_image.dart';
 export 'others/category_box.dart';
 export 'others/designed_container.dart';
 export 'others/details/author_date.dart';
+export 'others/details/body_text_padded.dart';
 export 'others/details/categories.dart';
 export 'others/details/category_issue.dart';
-export 'others/details/description.dart';
+export 'others/details/sponsor_note_padded.dart';
 export 'others/details/title.dart';
 export 'others/details_contents.dart';
 export 'others/drawer.dart';
