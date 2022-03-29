@@ -2,18 +2,21 @@ import 'package:flutter/material.dart';
 
 import '../../others/horizontal_padding.dart';
 
-class RecipeDetailsAuthorWidget extends StatelessWidget {
-  final String author;
+class ArticleDetailsSubtitleWidget extends StatelessWidget {
+  final String subtitle;
 
-  const RecipeDetailsAuthorWidget(this.author, {Key? key}) : super(key: key);
+  const ArticleDetailsSubtitleWidget(
+    this.subtitle, {
+    Key? key,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return HorizontalPaddingWidget(
       child: Text(
-        "By $author".toUpperCase(),
+        subtitle,
         textAlign: TextAlign.center,
-        style: Theme.of(context).textTheme.caption,
+        style: Theme.of(context).textTheme.bodyText1,
       ),
     );
   }

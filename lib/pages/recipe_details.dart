@@ -16,19 +16,18 @@ class RecipeDetailsPage extends StatelessWidget with DetailsContentsMixin {
   @override
   List<Widget> get children {
     return [
-      RecipeDetailsIssueWidget(recipe.issue),
-      RecipeDetailsTitleWidget(recipe.title),
-      if (recipe.author != null) RecipeDetailsAuthorWidget(recipe.author!),
-      RecipeDetailsDateUploadedWidget(recipe.dateUploaded),
+      DetailsCategoryIssueWidget("Recipes", issue: recipe.issue),
+      DetailsTitleWidget(recipe.title),
+      DetailsAuthorDateWidget(
+        author: recipe.author,
+        dateUploaded: recipe.dateUploaded,
+      ),
       if (recipe.rating != null) RecipeDetailsRatingWidget(recipe.rating!),
       const RecipeDetailsReadReviewsWidget(),
-      RecipeDetailsImageWidget(
-        imageUrl: recipe.imageUrl,
-        heroTag: recipe.heroTag,
-      ),
+      CachedHeroImageWidget(heroTag: recipe.heroTag, imageUrl: recipe.imageUrl),
       if (recipe.timeEntries != null)
         RecipeDetailsTimeEntriesWidget(recipe.timeEntries!),
-      RecipeDetailsDescriptionWidget(recipe.description),
+      DetailsBodyTextWidget(recipe.description),
       if (recipe.utensils != null)
         RecipeDetailsUtensilsWidget(recipe.utensils!),
       RecipeDetailsIngredientsWidget(
@@ -42,7 +41,7 @@ class RecipeDetailsPage extends StatelessWidget with DetailsContentsMixin {
       const RecipeDetailsLeaveReviewWidget(),
       if (recipe.reviews != null)
         RecipeDetailsUserReviewsWidget(recipe.reviews!),
-      RecipeDetailsCategoriesWidget(recipe.categories),
+      DetailsCategoriesWidget(recipe.categories),
     ];
   }
 }

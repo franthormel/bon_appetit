@@ -21,6 +21,7 @@ class RecipeDetailsUtensilsWidget extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+          // TODO: Modify for reuse for articles
           FutureBuilder<String>(
             builder: (context, snapshot) {
               final data = snapshot.hasData ? snapshot.data! : "";
@@ -30,6 +31,7 @@ class RecipeDetailsUtensilsWidget extends StatelessWidget {
             initialData: "",
           ),
           const SizedBox(height: 20.0),
+          // TODO: Modify for reuse for articles products if it looks good enough VISUALLY!
           HeaderDetailsWidget(
             text: "What you'll need",
             child: SizedBox(

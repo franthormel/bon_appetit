@@ -1,15 +1,12 @@
 import 'package:flutter/material.dart';
 
 import '../../../style/theme_radley.dart';
-import '../../others/horizontal_padding.dart';
+import '../horizontal_padding.dart';
 
-class RecipeDetailsDescriptionWidget extends StatelessWidget {
+class DetailsBodyTextWidget extends StatelessWidget {
   final String description;
 
-  const RecipeDetailsDescriptionWidget(
-    this.description, {
-    Key? key,
-  }) : super(key: key);
+  const DetailsBodyTextWidget(this.description, {Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

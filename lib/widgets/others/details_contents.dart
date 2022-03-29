@@ -4,6 +4,8 @@ import 'will_pop.dart';
 
 /// Use this mixin when using [DetailsContentsWidget]
 mixin DetailsContentsMixin {
+  /// The contents of this method will serve as the children of
+  /// [DetailsContentsWidget]'s ListView
   List<Widget> get children;
 }
 
