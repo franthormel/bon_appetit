@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../others/details/body_text.dart';
+import 'content.dart';
 import '../../others/horizontal_padding.dart';
 
 class ArticleDetailsContentsWidget extends StatelessWidget {
@@ -21,7 +21,7 @@ class ArticleDetailsContentsWidget extends StatelessWidget {
   Widget widgets(String text) {
     return Column(
       children: [
-        DetailsBodyTextWidget(text),
+        ArticleContentWidget(text),
         if (text != contents.last) const SizedBox(height: 20.0),
       ],
     );
