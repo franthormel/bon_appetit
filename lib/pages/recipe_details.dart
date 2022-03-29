@@ -3,28 +3,17 @@ import 'package:flutter/material.dart';
 import '../models/index.dart';
 import '../widgets/index.dart';
 
-class RecipeDetailsPage extends StatelessWidget {
+class RecipeDetailsPage extends StatelessWidget with DetailsContentsMixin {
   final Recipe recipe;
 
   const RecipeDetailsPage(this.recipe, {Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return WillPopWidget(
-      child: Scaffold(
-        appBar: AppBar(),
-        body: Center(
-          child: ListView.separated(
-            padding: const EdgeInsets.only(bottom: 35.0, top: 21.0),
-            itemBuilder: (context, index) => children[index],
-            itemCount: children.length,
-            separatorBuilder: (context, index) => const SizedBox(height: 20.0),
-          ),
-        ),
-      ),
-    );
+    return DetailsContentsWidget(children: children);
   }
 
+  @override
   List<Widget> get children {
     return [
       RecipeDetailsIssueWidget(recipe.issue),
