@@ -6,7 +6,7 @@ class BonAppetitThemeRadley {
   static TextStyle? get bodyText1 => _textTheme.bodyText1;
 
   static TextStyle? get bodyText1Italic =>
-      _textTheme.bodyText1?.copyWith(fontStyle: FontStyle.italic, height: 1.5);
+      _textTheme.bodyText1?.copyWith(fontStyle: FontStyle.italic);
 
   static TextTheme get _textTheme {
     return const TextTheme(
@@ -17,6 +17,7 @@ class BonAppetitThemeRadley {
         fontStyle: FontStyle.normal,
         fontWeight: FontWeight.w400,
         height: 1.7,
+        letterSpacing: 0.5,
       ),
     );
   }

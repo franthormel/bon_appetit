@@ -12,3 +12,4 @@ export 'recipes/review.dart';
 export 'recipes/time.dart';
 export 'recipes/utensil.dart';
 export 'videos/video.dart';
+export 'others/enum/inline_tag.dart';
