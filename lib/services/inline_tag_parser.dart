@@ -23,7 +23,8 @@ class InlineTagParser {
 
     // Search for the index of the closing tag (e.g. </b> or </header>)
     // from the text starting from the index of the opening tag's length
-    _closingTagIndex = text.indexOf(closingTag, openingTag.length);
+    _closingTagIndex =
+        text.isNotEmpty ? text.indexOf(closingTag, openingTag.length) : -1;
 
     // If the closing tag is in the text, get the substrings and set
     // them to the the late final properties ...
