@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../../../style/theme_radley.dart';
-import '../../../services/index.dart';
 import '../../../models/index.dart';
+import '../../../services/index.dart';
+import '../../../style/theme_radley.dart';
 
 class DetailsBodyTextWidget extends StatelessWidget {
   final String text;

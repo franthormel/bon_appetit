@@ -43,7 +43,8 @@ class InlineTagParser {
     }
   }
 
-  bool get hasInlineTag => _closingTagIndex != -1 && _textHead != null && _textTail != null;
+  bool get hasInlineTag =>
+      _closingTagIndex != -1 && _textHead != null && _textTail != null;
 
   String? get textHead => _textHead;
 

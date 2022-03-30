@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../../others/details/body_text.dart';
-import '../../../services/index.dart';
 import '../../../models/index.dart';
+import '../../../services/index.dart';
+import '../../others/details/body_text.dart';
 
 class ArticleContentWidget extends StatelessWidget {
   final String text;
@@ -32,13 +32,22 @@ class ArticleContentWidget extends StatelessWidget {
   }
 
   InlineTagParser get parser {
-    // Currently we are assuming that the text only contains
-    // one (1) associated tag. So if there is a "b" tag there is
-    // nothing else.
-    //
-    // However if future use cases are added, this part and the
-    // enum [InlineTag] in the models directory will be updated.
-    // TODO FIX BUG HEADER NOT WORKING
-    return parsers[0];
+    // Assume the first parser has an inline tag and content as placeholder.
+    InlineTagParser value = parsers[0];
+
+    for (final p in parsers) {
+      // Currently we are assuming that the text only contains
+      // one (1) associated tag. So if there is a "b" tag there is
+      // nothing else ...
+      if (p.hasInlineTag) {
+        value = p;
+
+        // However if future use cases are added, this break statement
+        // will no longer be applicable.
+        break;
+      }
+    }
+
+    return value;
   }
 }
