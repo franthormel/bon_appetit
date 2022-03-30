@@ -1,6 +1,6 @@
-import 'package:test/test.dart';
-import 'package:bon_appetit/services/inline_tag_parser.dart';
 import 'package:bon_appetit/models/others/enum/inline_tag.dart';
+import 'package:bon_appetit/services/inline_tag_parser.dart';
+import 'package:test/test.dart';
 
 void main() {
   void testInlineTag({required String text, required dynamic matcher}) {
