@@ -11,12 +11,7 @@ class SponsorNoteWidget extends StatelessWidget {
     return FutureBuilder<String>(
       builder: (context, snapshot) {
         final data = snapshot.hasData ? snapshot.data! : "";
-
-        return Text(
-          data,
-          textAlign: TextAlign.justify,
-          style: BonAppetitThemeRadley.bodyText1Italic,
-        );
+        return Text(data, style: BonAppetitThemeRadley.bodyText1Italic);
       },
       future: AssetsLoaderService.loadSponsorTxtFile(),
       initialData: "",

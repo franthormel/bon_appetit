@@ -19,11 +19,7 @@ class RecipeDetailStepWidget extends StatelessWidget {
       children: [
         Text("Step $number", style: Theme.of(context).textTheme.headline6),
         const SizedBox(height: 8.0),
-        Text(
-          step,
-          textAlign: TextAlign.justify,
-          style: BonAppetitThemeRadley.bodyText1,
-        ),
+        Text(step, style: BonAppetitThemeRadley.bodyText1),
       ],
     );
   }

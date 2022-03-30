@@ -22,7 +22,7 @@ class ArticleContentWidget extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           DetailsBodyTextWidget(parser.textHead!, parser: parser),
-          const SizedBox(height: 5.0),
+          const SizedBox(height: 10.0),
           DetailsBodyTextWidget(parser.textTail!),
         ],
       );

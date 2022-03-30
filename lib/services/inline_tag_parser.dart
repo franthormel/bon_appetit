@@ -8,14 +8,14 @@ class InlineTagParser {
   late final String? _textHead;
   late final String? _textTail;
 
-  /// * Input:
+  /// ** Input:
   ///
-  /// [tag] is 'italic'
-  /// [text] is '<italic>Dog</italic> is running.'
+  /// * [tag] is 'italic'
+  /// * [text] is '<italic>Dog</italic> is running.'
   ///
-  /// * Output:
-  /// [textHead] returns 'Dog'
-  /// [textTail] returns ' is running.'
+  /// ** Output:
+  /// * [textHead] returns 'Dog'
+  /// * [textTail] returns ' is running.'
   InlineTagParser(this.text, this.tag) {
     final literalTag = tag.toLiteralValue();
     final openingTag = "<$literalTag>";

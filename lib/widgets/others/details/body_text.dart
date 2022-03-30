@@ -16,9 +16,7 @@ class DetailsBodyTextWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final style = textStyleFromParser(context);
-
-    return Text(text, textAlign: TextAlign.justify, style: style);
+    return Text(text, style: textStyleFromParser(context));
   }
 
   TextStyle? textStyleFromParser(BuildContext context) {
@@ -29,7 +27,10 @@ class DetailsBodyTextWidget extends StatelessWidget {
         case InlineTag.b:
           return value?.copyWith(fontWeight: FontWeight.bold);
         case InlineTag.header:
-          return Theme.of(context).textTheme.headline5;
+          return Theme.of(context)
+              .textTheme
+              .headline5
+              ?.apply(fontSizeDelta: 4.0);
       }
     }
 

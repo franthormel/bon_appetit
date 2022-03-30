@@ -27,7 +27,7 @@ class DetailsContentsWidget extends StatelessWidget {
             padding: const EdgeInsets.only(bottom: 35.0, top: 21.0),
             itemBuilder: (context, index) => children[index],
             itemCount: children.length,
-            separatorBuilder: (context, index) => const SizedBox(height: 20.0),
+            separatorBuilder: (context, index) => const SizedBox(height: 25.0),
           ),
         ),
       ),

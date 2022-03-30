@@ -22,7 +22,7 @@ class ArticleDetailsContentsWidget extends StatelessWidget {
     return Column(
       children: [
         ArticleContentWidget(text),
-        if (text != contents.last) const SizedBox(height: 20.0),
+        if (text != contents.last) const SizedBox(height: 25.0),
       ],
     );
   }
