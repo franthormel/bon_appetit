@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'content.dart';
 import '../../others/horizontal_padding.dart';
+import 'content.dart';
 
 class ArticleDetailsContentsWidget extends StatelessWidget {
   final String content;

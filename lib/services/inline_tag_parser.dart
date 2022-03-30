@@ -2,33 +2,44 @@ class InlineTagParser {
   final String text;
   final String tag;
 
-  InlineTagParser(this.text, this.tag);
+  late final int _closingTagIndex;
+  late final String? _textHead;
+  late final String? _textTail;
 
-  String get start {
-    final indexEnd = _indexEnd;
-    String value = "";
+  /// * Input:
+  ///
+  /// [tag] is 'italic'
+  /// [text] is '<italic>Dog</italic> is running.'
+  ///
+  /// * Output:
+  /// [textHead] returns 'Dog'
+  /// [textTail] returns ' is running.'
+  InlineTagParser(this.text, this.tag) {
+    final openingTag = "<$tag>";
+    final closingTag = "</$tag>";
 
-    if (indexEnd != -1) {
-      value = text.substring(_start.length, indexEnd);
+    // Search for the index of the closing tag (e.g. </b> or </header>)
+    // from the text starting from the index of the opening tag's length
+    _closingTagIndex = text.indexOf(closingTag, openingTag.length);
+
+    // If the closing tag is in the text, get the substrings and set
+    // them to the the late final properties, otherwise set them to null.
+    if (_closingTagIndex != -1) {
+      // Get the head substring between the opening tag and closing tag
+      _textHead = text.substring(openingTag.length, _closingTagIndex);
+
+      // Get the tail substring that is after the closing tag until the end.
+      _textTail = text.substring(
+        _closingTagIndex + closingTag.length,
+        text.length,
+      );
+    } else {
+      _textHead = null;
+      _textTail = null;
     }
-
-    return value;
   }
 
-  String get end {
-    final indexEnd = _indexEnd;
-    String value = "";
+  String? get textHead => _textHead;
 
-    if (indexEnd != -1) {
-      value = text.substring(indexEnd + _end.length, text.length);
-    }
-
-    return value;
-  }
-
-  String get _start => "<$tag>";
-
-  String get _end => "</$tag>";
-
-  int get _indexEnd => text.indexOf(_end, _start.length);
+  String? get textTail => _textTail;
 }
