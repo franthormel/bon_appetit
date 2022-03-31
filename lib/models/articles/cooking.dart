@@ -1,6 +1,6 @@
 import 'package:json_annotation/json_annotation.dart';
 
-import '../shared/product.dart';
+import '../others/product.dart';
 import 'article.dart';
 
 part 'cooking.g.dart';

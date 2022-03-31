@@ -1,6 +1,6 @@
 import 'package:json_annotation/json_annotation.dart';
 
-import '../shared/product_shop.dart';
+import '../others/product_shop.dart';
 
 part 'utensil.g.dart';
 

@@ -29,7 +29,8 @@ class ArticleDetailsPage extends StatelessWidget with DetailsContentsMixin {
       ),
       if (article.products != null) const SponsorNotePaddedWidget(),
       ArticleDetailsContentsWidget(article.content),
-      // TODO: Display products -- Similar to recipe's utensils but different title
+      if (article.products != null)
+        ArticleDetailsProductsWidget(article.products!),
       DetailsCategoriesWidget(article.tags, hasDivider: true),
     ];
   }

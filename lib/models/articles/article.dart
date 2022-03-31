@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:json_annotation/json_annotation.dart';
 
-import '../shared/product.dart';
+import '../others/product.dart';
 
 part 'article.g.dart';
 

@@ -1,4 +1,5 @@
 export 'articles/details/contents.dart';
+export 'articles/details/products.dart';
 export 'articles/details/subtitle.dart';
 export 'articles/products.dart';
 export 'articles/stories.dart';
