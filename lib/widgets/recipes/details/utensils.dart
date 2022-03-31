@@ -22,7 +22,7 @@ class RecipeDetailsUtensilsWidget extends StatelessWidget {
         children: [
           const SponsorNoteWidget(),
           const SizedBox(height: 20.0),
-          // TODO: Modify for reuse for articles products if it looks good enough VISUALLY!
+          // TODO Rework the same
           HeaderDetailsWidget(
             text: "What you'll need",
             child: SizedBox(
