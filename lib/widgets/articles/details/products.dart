@@ -18,7 +18,6 @@ class ArticleDetailsProductsWidget extends StatelessWidget {
     return HorizontalPaddingWidget(
       child: DetailsProductCatalogueWidget(
         header: "Catalogue",
-        height: 200.0,
         itemBuilder: (context, index) =>
             ArticleDetailsProductWidget(products[index]),
         itemCount: products.length,

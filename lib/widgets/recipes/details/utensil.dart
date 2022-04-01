@@ -42,10 +42,8 @@ class RecipeDetailsUtensilWidget extends StatelessWidget {
                   ),
                 Text(
                   utensil.shop.toString(),
-                  style: Theme.of(context)
-                      .textTheme
-                      .caption
-                      ?.copyWith(fontWeight: FontWeight.w500, letterSpacing: 0.2),
+                  style: Theme.of(context).textTheme.caption?.copyWith(
+                      fontWeight: FontWeight.w500, letterSpacing: 0.2),
                   textAlign: TextAlign.center,
                 ),
               ],

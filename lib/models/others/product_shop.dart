@@ -29,9 +29,9 @@ class ProductShop {
 
   @override
   String toString() {
-    final priceText = price != null ? price! : "SHOP";
+    final priceText = price != null ? "\$${price!}" : "SHOP";
     final shopName = name.toUpperCase();
 
-    return "\$$priceText AT $shopName";
+    return "$priceText AT $shopName";
   }
 }
