@@ -11,7 +11,7 @@ class RecipeDetailsLeaveReviewWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return HorizontalPaddingWidget(
       child: HeaderDetailsWidget(
-        text: "Leave a Review",
+        header: "Leave a Review",
         hasDivider: false,
         child: Padding(
           padding: const EdgeInsets.symmetric(vertical: 10.0),
