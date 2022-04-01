@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import '../../../models/index.dart';
 import '../../others/details/sponsor_note.dart';
 import '../../others/details/product_catalogue.dart';
-import '../../others/header_details.dart';
 import '../../others/horizontal_padding.dart';
 import 'utensil.dart';
 
@@ -24,7 +23,7 @@ class RecipeDetailsUtensilsWidget extends StatelessWidget {
           const SponsorNoteWidget(),
           const SizedBox(height: 20.0),
           DetailsProductCatalogueWidget(
-            header: "Catalogue",
+            header: "What you'll need",
             itemBuilder: (context, index) =>
                 RecipeDetailsUtensilWidget(utensils[index]),
             itemCount: utensils.length,

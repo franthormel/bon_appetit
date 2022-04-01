@@ -32,6 +32,6 @@ class ProductShop {
     final priceText = price != null ? price! : "SHOP";
     final shopName = name.toUpperCase();
 
-    return "$priceText AT $shopName";
+    return "\$$priceText AT $shopName";
   }
 }

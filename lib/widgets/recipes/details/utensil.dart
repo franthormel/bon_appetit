@@ -33,14 +33,11 @@ class RecipeDetailsUtensilWidget extends StatelessWidget {
               if (utensil.shop.priceDiscounted != null)
                 Text(
                   "\$${utensil.shop.priceDiscounted!}",
-                  style: Theme.of(context)
-                      .textTheme
-                      .caption
-                      ?.copyWith(
+                  style: Theme.of(context).textTheme.caption?.copyWith(
+                        decoration: TextDecoration.lineThrough,
                         fontWeight: FontWeight.w500,
                         letterSpacing: 0.2,
-                      )
-                      .copyWith(decoration: TextDecoration.lineThrough),
+                      ),
                 ),
               Text(
                 utensil.shop.toString(),

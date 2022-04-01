@@ -28,7 +28,7 @@ class RecipeDetailsPage extends StatelessWidget with DetailsContentsMixin {
       if (recipe.timeEntries != null)
         RecipeDetailsTimeEntriesWidget(recipe.timeEntries!),
       DetailsBodyTextPaddedWidget(recipe.description),
-      if (recipe.utensils != null)
+      if (recipe.utensils != null && recipe.utensils!.isNotEmpty)
         RecipeDetailsUtensilsWidget(recipe.utensils!),
       RecipeDetailsIngredientsWidget(
         ingredients: recipe.ingredients,
