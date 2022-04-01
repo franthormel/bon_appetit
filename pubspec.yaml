@@ -29,7 +29,6 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  animations: ^2.0.2
   auto_route: ^3.2.2
   cached_network_image: ^3.2.0
 
