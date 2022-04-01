@@ -21,6 +21,7 @@ class CachedImageWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CachedNetworkImage(
+      // TODO: Improve errorWidget
       errorWidget: (context, url, error) => AspectRatio(
         aspectRatio: aspectRatioValue,
         child: Container(),
