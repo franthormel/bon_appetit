@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 
 import '../../../models/index.dart';
+import '../../../router/index.dart';
 import '../../others/cached_hero_image.dart';
 import '../../others/category_box.dart';
 import '../../others/header_body/five.dart';
-import 'details.dart';
+import '../../others/inkwell_route_pusher.dart';
 
 class ArticleWidget extends StatelessWidget {
   final Article article;
@@ -13,8 +14,8 @@ class ArticleWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ArticleDetailsWidget(
-      article: article,
+    return InkwellRoutePusher(
+      route: ArticleDetailsRoute(article: article),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [

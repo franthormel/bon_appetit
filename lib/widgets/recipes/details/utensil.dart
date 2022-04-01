@@ -11,7 +11,7 @@ class RecipeDetailsUtensilWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: 140.0,
+      width: 130.0,
       child: Column(
         children: [
           CachedImageWidget(utensil.imageUrl),
