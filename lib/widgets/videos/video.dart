@@ -12,7 +12,8 @@ class VideoEntryWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: 290.0,
+      width: 300.0,
+      height: 150,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -22,6 +23,7 @@ class VideoEntryWidget extends StatelessWidget {
               CachedHeroImageWidget(
                 heroTag: video.heroTag,
                 imageUrl: video.imageUrl,
+                aspectRatio: const ImageAspectRatio(x: 2, y: 1),
               ),
               Padding(
                 padding: const EdgeInsets.only(left: 10.0, bottom: 10.0),
