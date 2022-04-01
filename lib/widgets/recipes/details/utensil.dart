@@ -11,13 +11,13 @@ class RecipeDetailsUtensilWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: 130.0,
+      width: 140.0,
       child: Column(
         children: [
           CachedImageWidget(utensil.imageUrl),
           const SizedBox(height: 10.0),
-          SizedBox(
-            height: 40.0,
+          Expanded(
+            flex: 2,
             child: Text(
               utensil.name,
               style: Theme.of(context)
@@ -27,27 +27,29 @@ class RecipeDetailsUtensilWidget extends StatelessWidget {
               textAlign: TextAlign.center,
             ),
           ),
-          const SizedBox(height: 10.0),
-          Wrap(
-            children: [
-              if (utensil.shop.priceDiscounted != null)
+          Expanded(
+            flex: 1,
+            child: Wrap(
+              children: [
+                if (utensil.shop.priceDiscounted != null)
+                  Text(
+                    "\$${utensil.shop.priceDiscounted!}",
+                    style: Theme.of(context).textTheme.caption?.copyWith(
+                          decoration: TextDecoration.lineThrough,
+                          fontWeight: FontWeight.w500,
+                          letterSpacing: 0.2,
+                        ),
+                  ),
                 Text(
-                  "\$${utensil.shop.priceDiscounted!}",
-                  style: Theme.of(context).textTheme.caption?.copyWith(
-                        decoration: TextDecoration.lineThrough,
-                        fontWeight: FontWeight.w500,
-                        letterSpacing: 0.2,
-                      ),
+                  utensil.shop.toString(),
+                  style: Theme.of(context)
+                      .textTheme
+                      .caption
+                      ?.copyWith(fontWeight: FontWeight.w500, letterSpacing: 0.2),
+                  textAlign: TextAlign.center,
                 ),
-              Text(
-                utensil.shop.toString(),
-                style: Theme.of(context)
-                    .textTheme
-                    .caption
-                    ?.copyWith(fontWeight: FontWeight.w500, letterSpacing: 0.2),
-                textAlign: TextAlign.center,
-              ),
-            ],
+              ],
+            ),
           )
         ],
       ),

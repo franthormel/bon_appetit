@@ -6,11 +6,13 @@ class DetailsProductCatalogueWidget extends StatelessWidget {
   final String header;
   final Widget Function(BuildContext, int) itemBuilder;
   final int itemCount;
+  final double height;
 
   const DetailsProductCatalogueWidget({
     required this.header,
     required this.itemCount,
     required this.itemBuilder,
+    this.height = 230.0,
     Key? key,
   }) : super(key: key);
 
@@ -19,7 +21,7 @@ class DetailsProductCatalogueWidget extends StatelessWidget {
     return HeaderDetailsWidget(
       header: header,
       child: SizedBox(
-        height: 230.0,
+        height: height,
         child: ListView.separated(
           itemBuilder: itemBuilder,
           itemCount: itemCount,
