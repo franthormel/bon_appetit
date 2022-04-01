@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 
 import '../../../style/colors.dart';
 
-class RecipeDetailsCategoryWidget extends StatelessWidget {
+class DetailsCategoryWidget extends StatelessWidget {
   final String category;
   final bool isGray;
 
-  const RecipeDetailsCategoryWidget(
+  const DetailsCategoryWidget(
     this.category, {
     this.isGray = false,
     Key? key,

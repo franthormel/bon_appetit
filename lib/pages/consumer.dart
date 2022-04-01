@@ -2,8 +2,7 @@ import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import '../router/router.gr.dart';
-import '../services/index.dart';
+import '../router/index.dart';
 import '../widgets/index.dart';
 
 class ConsumerPage extends StatelessWidget {

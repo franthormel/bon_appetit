@@ -16,8 +16,8 @@ class RecipeDetailsUtensilWidget extends StatelessWidget {
         children: [
           CachedImageWidget(utensil.imageUrl),
           const SizedBox(height: 10.0),
-          SizedBox(
-            height: 40.0,
+          Expanded(
+            flex: 2,
             child: Text(
               utensil.name,
               style: Theme.of(context)
@@ -27,30 +27,27 @@ class RecipeDetailsUtensilWidget extends StatelessWidget {
               textAlign: TextAlign.center,
             ),
           ),
-          const SizedBox(height: 10.0),
-          Wrap(
-            children: [
-              if (utensil.shop.priceDiscounted != null)
+          Expanded(
+            flex: 1,
+            child: Wrap(
+              children: [
+                if (utensil.shop.priceDiscounted != null)
+                  Text(
+                    "\$${utensil.shop.priceDiscounted!}",
+                    style: Theme.of(context).textTheme.caption?.copyWith(
+                          decoration: TextDecoration.lineThrough,
+                          fontWeight: FontWeight.w500,
+                          letterSpacing: 0.2,
+                        ),
+                  ),
                 Text(
-                  "\$${utensil.shop.priceDiscounted!}",
-                  style: Theme.of(context)
-                      .textTheme
-                      .caption
-                      ?.copyWith(
-                        fontWeight: FontWeight.w500,
-                        letterSpacing: 0.2,
-                      )
-                      .copyWith(decoration: TextDecoration.lineThrough),
+                  utensil.shop.toString(),
+                  style: Theme.of(context).textTheme.caption?.copyWith(
+                      fontWeight: FontWeight.w500, letterSpacing: 0.2),
+                  textAlign: TextAlign.center,
                 ),
-              Text(
-                utensil.shop.toString(),
-                style: Theme.of(context)
-                    .textTheme
-                    .caption
-                    ?.copyWith(fontWeight: FontWeight.w500, letterSpacing: 0.2),
-                textAlign: TextAlign.center,
-              ),
-            ],
+              ],
+            ),
           )
         ],
       ),

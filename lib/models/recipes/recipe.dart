@@ -15,7 +15,7 @@ class Recipe {
   final String? author;
 
   /// Used for filtering recipes
-  final List<String> categories; // TODO: USE
+  final List<String> categories;
 
   /// Issue publication's month and year if available.
   final String? dateIssue;

@@ -14,10 +14,7 @@ class SvgIconButtonWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Material(
-      child: InkWell(
-        child: SvgPicture.asset(asset),
-        onTap: onTap,
-      ),
+      child: InkWell(child: SvgPicture.asset(asset), onTap: onTap),
     );
   }
 }

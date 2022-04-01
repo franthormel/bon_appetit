@@ -23,22 +23,23 @@ class _RecipeDetailsRateRecipeStarsWidgetState
   }
 
   List<IconButton> get stars {
-    final numbers = List.generate(5, (index) => index);
+    final iconButtons = <IconButton>[];
 
-    return numbers.map<IconButton>((index) {
-      final value = index + 1;
+    for (final number in [1, 2, 3, 4, 5]) {
+      final value = number + 1;
+      final color =
+          rating >= value ? BonAppetitColors.black : BonAppetitColors.platinum;
 
-      return IconButton(
+      iconButtons.add(IconButton(
         onPressed: () {
           setState(() {
             rating = value;
           });
         },
-        icon: Icon(Icons.star, color: color(value), size: 35.0),
-      );
-    }).toList();
-  }
+        icon: Icon(Icons.star, color: color, size: 35.0),
+      ));
+    }
 
-  Color color(int value) =>
-      rating >= value ? BonAppetitColors.black : BonAppetitColors.platinum;
+    return iconButtons;
+  }
 }

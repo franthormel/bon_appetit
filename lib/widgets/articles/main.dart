@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 
 import '../../models/index.dart';
+import '../../router/index.dart';
 import '../../style/colors.dart';
 import '../others/cached_hero_image.dart';
 import '../others/header_body/four.dart';
-import 'others/details.dart';
+import '../others/page_route_pusher.dart';
 
 class MainStoryWidget extends StatelessWidget {
   final Article article;
@@ -13,8 +14,8 @@ class MainStoryWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ArticleDetailsWidget(
-      article: article,
+    return PageRoutePusherWidget(
+      route: ArticleDetailsRoute(article: article),
       child: Column(
         children: [
           CachedHeroImageWidget(

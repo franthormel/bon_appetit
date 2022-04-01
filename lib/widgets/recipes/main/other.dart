@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 import '../../../models/index.dart';
-import '../others/details.dart';
+import '../../../router/index.dart';
+import '../../others/page_route_pusher.dart';
 import '../others/image.dart';
 import '../others/rating.dart';
 
@@ -12,8 +13,8 @@ class OtherMainRecipeWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return RecipeDetailsWidget(
-      recipe: recipe,
+    return PageRoutePusherWidget(
+      route: RecipeDetailsRoute(recipe: recipe),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [

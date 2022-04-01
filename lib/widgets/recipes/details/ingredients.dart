@@ -20,7 +20,7 @@ class RecipeDetailsIngredientsWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return HorizontalPaddingWidget(
       child: HeaderDetailsWidget(
-        text: "Ingredients",
+        header: "Ingredients",
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [RecipeDetailsServingsWidget(servings), ...children],

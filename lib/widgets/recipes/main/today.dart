@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 
 import '../../../models/index.dart';
+import '../../../router/index.dart';
 import '../../others/header_body/four.dart';
-import '../others/details.dart';
+import '../../others/page_route_pusher.dart';
 import '../others/image.dart';
 import '../others/rating.dart';
 
@@ -13,8 +14,8 @@ class TodayMainRecipeWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return RecipeDetailsWidget(
-      recipe: recipe,
+    return PageRoutePusherWidget(
+      route: RecipeDetailsRoute(recipe: recipe),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [

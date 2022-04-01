@@ -7,7 +7,7 @@ class RoutePath {
 }
 
 class RouteName {
-  static const initial = 'InitialRoute';
+  static const initial = 'DataProviderRoute';
   static const home = "HomeRoute";
   static const search = "SearchRoute";
   static const recipeDetails = "RecipeDetailsRoute";

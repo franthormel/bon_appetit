@@ -6421,9 +6421,9 @@
           "imageUrl": "https://assets.bonappetit.com/photos/6217ad485af9403f8cfcec7e/master/w_1280,c_limit/7160740_0122_01i_s.jpeg",
           "shops": [
             {
-              "name": "SHOPNAME",
+              "name": "Sur La Table",
               "price": "3999",
-              "url": "Sur La Table"
+              "url": "https://cna.st/p/2hc5hQAHzoCJK2BmmbYU8ExZD6VffRqrZEGXCa3GCkuboxT2wKevpxasCWbZw61twRrxBE2Ucfhxpae9BTBEjxz4yoM23kurphtK52F23Ko?cid=6217a6fb76105e2ea1d3648f"
             }
           ]
         }
@@ -6716,7 +6716,7 @@
     {
       "imageUrl": "https://assets.bonappetit.com/photos/61f43d0ee4c1e4bf7ae16049/1:1/w_2560%2Cc_limit/20220118%2520ITS%2520Tofu%2520Feta%2520LEDE.jpg",
       "title": "I Was Skeptical, But Tofu-Feta Is Actually a Good Stand-In For Feta-Feta",
-      "subtitle": "And you can call it to feta.",
+      "subtitle": "And you can call it tofeta.",
       "dateUploaded": "2022-02-24",
       "author": "Irina Groushevaia",
       "tags": [

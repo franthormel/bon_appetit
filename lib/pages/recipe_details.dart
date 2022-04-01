@@ -3,44 +3,32 @@ import 'package:flutter/material.dart';
 import '../models/index.dart';
 import '../widgets/index.dart';
 
-class RecipeDetailsPage extends StatelessWidget {
+class RecipeDetailsPage extends StatelessWidget with DetailsContentsMixin {
   final Recipe recipe;
 
   const RecipeDetailsPage(this.recipe, {Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return WillPopWidget(
-      child: Scaffold(
-        appBar: AppBar(),
-        body: Center(
-          child: ListView.separated(
-            padding: const EdgeInsets.only(bottom: 35.0, top: 21.0),
-            itemBuilder: (context, index) => children[index],
-            itemCount: children.length,
-            separatorBuilder: (context, index) => const SizedBox(height: 20.0),
-          ),
-        ),
-      ),
-    );
+    return DetailsContentsWidget(children: children);
   }
 
+  @override
   List<Widget> get children {
     return [
-      RecipeDetailsIssueWidget(recipe.issue),
-      RecipeDetailsTitleWidget(recipe.title),
-      if (recipe.author != null) RecipeDetailsAuthorWidget(recipe.author!),
-      RecipeDetailsDateUploadedWidget(recipe.dateUploaded),
+      DetailsCategoryIssueWidget("Recipes", issue: recipe.issue),
+      DetailsTitleWidget(recipe.title),
+      DetailsAuthorDateWidget(
+        author: recipe.author,
+        dateUploaded: recipe.dateUploaded,
+      ),
       if (recipe.rating != null) RecipeDetailsRatingWidget(recipe.rating!),
       const RecipeDetailsReadReviewsWidget(),
-      RecipeDetailsImageWidget(
-        imageUrl: recipe.imageUrl,
-        heroTag: recipe.heroTag,
-      ),
+      CachedHeroImageWidget(heroTag: recipe.heroTag, imageUrl: recipe.imageUrl),
       if (recipe.timeEntries != null)
         RecipeDetailsTimeEntriesWidget(recipe.timeEntries!),
-      RecipeDetailsDescriptionWidget(recipe.description),
-      if (recipe.utensils != null)
+      DetailsBodyTextPaddedWidget(recipe.description),
+      if (recipe.utensils != null && recipe.utensils!.isNotEmpty)
         RecipeDetailsUtensilsWidget(recipe.utensils!),
       RecipeDetailsIngredientsWidget(
         ingredients: recipe.ingredients,
@@ -53,7 +41,7 @@ class RecipeDetailsPage extends StatelessWidget {
       const RecipeDetailsLeaveReviewWidget(),
       if (recipe.reviews != null)
         RecipeDetailsUserReviewsWidget(recipe.reviews!),
-      RecipeDetailsCategoriesWidget(recipe.categories),
+      DetailsCategoriesWidget(recipe.categories),
     ];
   }
 }

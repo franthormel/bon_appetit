@@ -1,4 +1,4 @@
-import 'package:bon_appetit/models/shared/product_shop.dart';
+import 'package:bon_appetit/models/others/product_shop.dart';
 import 'package:test/test.dart';
 
 void main() {
