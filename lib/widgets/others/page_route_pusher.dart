@@ -4,11 +4,11 @@ import 'package:provider/provider.dart';
 
 import '../../router/index.dart';
 
-class InkwellRoutePusher extends StatelessWidget {
+class PageRoutePusherWidget extends StatelessWidget {
   final Widget child;
   final PageRouteInfo route;
 
-  const InkwellRoutePusher({
+  const PageRoutePusherWidget({
     required this.child,
     required this.route,
     Key? key,
@@ -16,7 +16,6 @@ class InkwellRoutePusher extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: Use Inkwell
     return GestureDetector(
       child: child,
       onTap: () {

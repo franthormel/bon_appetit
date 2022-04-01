@@ -4,7 +4,7 @@ import 'package:provider/provider.dart';
 import '../../../../models/index.dart';
 import '../../../../router/index.dart';
 import '../../../../services/index.dart';
-import '../../../others/inkwell_route_pusher.dart';
+import '../../../others/page_route_pusher.dart';
 import 'list_recipe.dart';
 import 'mixin.dart';
 
@@ -30,7 +30,7 @@ class HorizontalListRecipeContentsWidget extends StatelessWidget
         itemBuilder: (context, index) {
           final recipe = recipes[index];
 
-          return InkwellRoutePusher(
+          return PageRoutePusherWidget(
             route: RecipeDetailsRoute(recipe: recipe),
             child: HorizontalListRecipeWidget(recipe),
           );
