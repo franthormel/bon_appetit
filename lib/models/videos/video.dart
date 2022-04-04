@@ -5,15 +5,15 @@ part 'video.g.dart';
 
 @JsonSerializable()
 class VideoEntry {
-  final String about;
-  final List<String>? credits;
-  final String? episode;
-  final String imageUrl;
-  final String? season;
-  final String? series;
+  final String about; // TODO:
+  final List<String>? credits; // TODO:
+  final String? episode; // TODO:
+  final String imageUrl; // TODO:
+  final String? season; // TODO:
+  final String? series; // TODO:
   final String title;
-  final String transcript;
-  final DateTime uploadDate;
+  final String transcript; // TODO:
+  final DateTime uploadDate; // TODO:
 
   VideoEntry({
     required this.about,

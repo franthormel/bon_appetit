@@ -32,7 +32,12 @@ import 'constants.dart';
           page: ArticleDetailsPage,
           name: RouteName.articleDetails,
           path: RoutePath.articleDetails,
-        )
+        ),
+        AutoRoute(
+          page: VideoDetailsPage,
+          name: RouteName.videoDetails,
+          path: RoutePath.videoDetails,
+        ),
       ],
     ),
     RedirectRoute(path: '*', redirectTo: RouteName.initial),

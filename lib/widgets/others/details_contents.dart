@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 
-import '../../router/index.dart';
 import 'will_pop.dart';
 
 /// Use this mixin when using [DetailsContentsWidget]
@@ -24,19 +22,12 @@ class DetailsContentsWidget extends StatelessWidget {
     return WillPopWidget(
       child: Scaffold(
         appBar: AppBar(),
-        body: GestureDetector(
-          onDoubleTap: () {
-            final route = Provider.of<RouteProvider>(context, listen: false);
-            route.pop();
-          },
-          child: Center(
-            child: ListView.separated(
-              padding: const EdgeInsets.only(bottom: 35.0, top: 21.0),
-              itemBuilder: (context, index) => children[index],
-              itemCount: children.length,
-              separatorBuilder: (context, index) =>
-                  const SizedBox(height: 25.0),
-            ),
+        body: Center(
+          child: ListView.separated(
+            padding: const EdgeInsets.symmetric(vertical: 21.0),
+            itemBuilder: (context, index) => children[index],
+            itemCount: children.length,
+            separatorBuilder: (context, index) => const SizedBox(height: 25.0),
           ),
         ),
       ),
