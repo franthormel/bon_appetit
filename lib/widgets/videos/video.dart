@@ -24,6 +24,7 @@ class VideoEntryWidget extends StatelessWidget {
                 heroTag: video.heroTag,
                 imageUrl: video.imageUrl,
                 aspectRatio: const ImageAspectRatio(x: 2, y: 1),
+                isDark: true,
               ),
               Padding(
                 padding: const EdgeInsets.only(left: 10.0, bottom: 10.0),

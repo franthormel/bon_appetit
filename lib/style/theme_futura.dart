@@ -29,6 +29,7 @@ class BonAppetitThemeFutura {
       progressIndicatorTheme: const ProgressIndicatorThemeData(
         circularTrackColor: BonAppetitColors.mediumChampagne,
         color: BonAppetitColors.sizzlingSunrise,
+        linearTrackColor: BonAppetitColors.mediumChampagne,
         refreshBackgroundColor: BonAppetitColors.dimGray,
       ),
       textTheme: _textTheme,
