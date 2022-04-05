@@ -44,7 +44,7 @@ class BonAppetitThemeFutura {
       caption: TextStyle(
         color: BonAppetitColors.black,
         fontWeight: FontWeight.w600,
-        letterSpacing: 1.1,
+        letterSpacing: 1.5,
       ),
       headline4: TextStyle(
         color: BonAppetitColors.black,

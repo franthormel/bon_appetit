@@ -24,8 +24,13 @@ class VideoDetailsPage extends StatelessWidget with DetailsContentsMixin {
         imageUrl: video.imageUrl,
         title: video.title,
       ),
+      if (video.episode != null && video.season != null && video.series != null)
+        VideoEntryInfoWidget(
+          episode: video.episode!,
+          season: video.season!,
+          series: video.series!,
+        ),
       DetailsTitleWidget(video.title, textAlign: TextAlign.left),
-      const VideoEntryInfoWidget(),
       const VideoDetailsAboutCreditsWidget(),
       const VideoDetailsReleasedDateWidget(),
       const VideoDetailsTranscriptWidget(),

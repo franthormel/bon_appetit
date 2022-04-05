@@ -3,13 +3,23 @@ import 'package:flutter/material.dart';
 import '../../others/horizontal_padding.dart';
 
 class VideoEntryInfoWidget extends StatelessWidget {
-  const VideoEntryInfoWidget({Key? key}) : super(key: key);
+  final String series;
+  final String season;
+  final String episode;
+
+  const VideoEntryInfoWidget({
+    required this.episode,
+    required this.season,
+    required this.series,
+    Key? key,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return const HorizontalPaddingWidget(
+    return HorizontalPaddingWidget(
       child: Text(
-        "TODO: Display [series], [season], [episode]  IF ANY (best make it as getter)",
+        "$series | SEASON $season | EPISODE $episode".toUpperCase(),
+        style: Theme.of(context).textTheme.caption,
       ),
     );
   }
