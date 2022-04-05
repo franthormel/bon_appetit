@@ -17,7 +17,8 @@ class VideoDetailsAboutCreditsWidget extends StatelessWidget {
     // TODO: Display [about], [credits] if any, as a tabbed view
     // TODO: FIX last error (Horizontal viewport was given unbounded height.)
     return const HorizontalPaddingWidget(
-      child: Text("Display [about], [credits] if any, as a tabbed view"),
+      child:
+          Text("// TODO: Display [about], [credits] if any, as a tabbed view"),
     );
   }
 }

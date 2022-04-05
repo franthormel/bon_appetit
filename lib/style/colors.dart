@@ -5,6 +5,7 @@ class BonAppetitColors {
   static const mediumChampagne = Color(0xFFFEE6A3);
 
   static const floralWhite = Color(0xFFFAF9F0);
+  static const gainsboro = Color(0xFFDADADA);
   static const platinum = Color(0xFFE5E5E5);
   static const dimGray = Color(0xFF666666);
 

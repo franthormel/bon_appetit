@@ -36,7 +36,7 @@ class VideoDetailsPage extends StatelessWidget with DetailsContentsMixin {
         credits: video.credits,
       ),
       VideoDetailsReleasedDateWidget(uploadDate: video.uploadDate),
-      const VideoDetailsTranscriptWidget(),
+      VideoDetailsTranscriptWidget(transcript: video.transcript),
     ];
   }
 }

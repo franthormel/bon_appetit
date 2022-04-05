@@ -12,7 +12,7 @@ class VideoEntry {
   final String? season;
   final String? series;
   final String title;
-  final String transcript; // TODO:
+  final String transcript;
   final DateTime uploadDate;
 
   VideoEntry({
