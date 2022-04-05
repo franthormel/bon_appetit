@@ -1,14 +1,26 @@
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 
 import '../../others/horizontal_padding.dart';
 
 class VideoDetailsReleasedDateWidget extends StatelessWidget {
-  const VideoDetailsReleasedDateWidget({Key? key}) : super(key: key);
+  final DateTime uploadDate;
+
+  const VideoDetailsReleasedDateWidget({
+    required this.uploadDate,
+    Key? key,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return const HorizontalPaddingWidget(
-      child: Text("TODO: Display released on [uploadDate]"),
+    return HorizontalPaddingWidget(
+      child: Text(
+        "Released on ${DateFormat.yMd().format(uploadDate)}",
+        style: Theme.of(context)
+            .textTheme
+            .caption
+            ?.copyWith(fontWeight: FontWeight.w500, letterSpacing: 0.0),
+      ),
     );
   }
 }
