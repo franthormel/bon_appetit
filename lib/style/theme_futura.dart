@@ -18,6 +18,9 @@ class BonAppetitThemeFutura {
         ),
       ),
       dividerTheme: const DividerThemeData(color: BonAppetitColors.black),
+      floatingActionButtonTheme: const FloatingActionButtonThemeData(
+        backgroundColor: BonAppetitColors.black,
+      ),
       outlinedButtonTheme: OutlinedButtonThemeData(
         style: OutlinedButton.styleFrom(
           backgroundColor: BonAppetitColors.black,

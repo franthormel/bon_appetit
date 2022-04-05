@@ -11,9 +11,11 @@ mixin DetailsContentsMixin {
 
 class DetailsContentsWidget extends StatelessWidget {
   final List<Widget> children;
+  final EdgeInsets? padding;
 
   const DetailsContentsWidget({
     required this.children,
+    this.padding,
     Key? key,
   }) : super(key: key);
 
@@ -24,7 +26,7 @@ class DetailsContentsWidget extends StatelessWidget {
         appBar: AppBar(),
         body: Center(
           child: ListView.separated(
-            padding: const EdgeInsets.symmetric(vertical: 21.0),
+            padding: padding ?? const EdgeInsets.symmetric(vertical: 21.0),
             itemBuilder: (context, index) => children[index],
             itemCount: children.length,
             separatorBuilder: (context, index) => const SizedBox(height: 25.0),

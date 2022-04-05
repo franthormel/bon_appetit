@@ -32,13 +32,13 @@ class VideoEntryWidget extends StatelessWidget {
                 ),
                 Padding(
                   padding: const EdgeInsets.only(left: 10.0, bottom: 10.0),
-                  child: FloatingActionButton(
+                  child: FloatingActionButton.small(
                     onPressed: () {},
-                    child: const Icon(
-                      Icons.play_arrow,
-                      size: 50.0,
-                    ),
-                    backgroundColor: BonAppetitColors.black.withOpacity(.75),
+                    child: const Icon(Icons.play_arrow),
+                    backgroundColor: Theme.of(context)
+                        .floatingActionButtonTheme
+                        .backgroundColor
+                        ?.withOpacity(0.75),
                   ),
                 ),
               ],
