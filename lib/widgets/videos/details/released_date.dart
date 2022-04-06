@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
-
 class VideoDetailsReleasedDateWidget extends StatelessWidget {
   final DateTime uploadDate;
 
