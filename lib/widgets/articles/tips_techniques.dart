@@ -12,7 +12,7 @@ class TipsTechniquesWidget extends StatelessWidget {
     final dataset = Provider.of<DatasetHomepage>(context, listen: false);
 
     return ArticleListWidget(
-      articles: dataset.tips,
+      articles: dataset.cooking,
       title: 'Cooking Tips & Techniques',
       subtitle: "Level up your kitchen skills",
     );

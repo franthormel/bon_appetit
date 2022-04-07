@@ -23,7 +23,7 @@ class DatasetHomepage {
 
   /// Eight (8) articles are listed under
   /// the 'Cooking Tips & Techniques' section
-  final List<CookingArticle> tips;
+  final List<CookingArticle> cooking;
 
   /// Twelve (12) videos are listed under
   /// the 'What to Watch' section
@@ -33,7 +33,7 @@ class DatasetHomepage {
     required this.products,
     required this.recipes,
     required this.stories,
-    required this.tips,
+    required this.cooking,
     required this.videos,
   });
 

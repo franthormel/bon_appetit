@@ -15,7 +15,7 @@ DatasetHomepage _$DatasetHomepageFromJson(Map<String, dynamic> json) =>
       stories: (json['stories'] as List<dynamic>)
           .map((e) => Article.fromJson(e as Map<String, dynamic>))
           .toList(),
-      tips: (json['tips'] as List<dynamic>)
+      cooking: (json['cooking'] as List<dynamic>)
           .map((e) => CookingArticle.fromJson(e as Map<String, dynamic>))
           .toList(),
       videos: (json['videos'] as List<dynamic>)
@@ -28,6 +28,6 @@ Map<String, dynamic> _$DatasetHomepageToJson(DatasetHomepage instance) =>
       'products': instance.products,
       'recipes': instance.recipes,
       'stories': instance.stories,
-      'tips': instance.tips,
+      'cooking': instance.cooking,
       'videos': instance.videos,
     };
