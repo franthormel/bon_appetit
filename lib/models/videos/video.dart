@@ -5,10 +5,10 @@ part 'video.g.dart';
 
 @JsonSerializable()
 class Video {
-  // TODO: ADd ID
   final String about;
   final List<String>? credits;
   final String? episode;
+  final String id;
   final String imageUrl;
   final String? season;
   final String? series;
@@ -18,6 +18,7 @@ class Video {
 
   Video({
     required this.about,
+    required this.id,
     required this.imageUrl,
     required this.title,
     required this.transcript,

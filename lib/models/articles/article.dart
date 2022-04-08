@@ -7,11 +7,11 @@ part 'article.g.dart';
 
 @JsonSerializable()
 class Article {
-  // TODO: ADd ID
   final String author;
   final String category;
   final String content;
   final DateTime dateUploaded;
+  final String id;
   final String imageUrl;
   final List<Product>? products;
   final String subtitle;
@@ -23,6 +23,7 @@ class Article {
     required this.category,
     required this.content,
     required this.dateUploaded,
+    required this.id,
     required this.imageUrl,
     required this.subtitle,
     required this.tags,

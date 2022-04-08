@@ -7,6 +7,7 @@ void main() {
     group('heroTag', () {
       test('should return a String from its ObjectKey value', () {
         final video = Video(
+          id: "1",
           about: "about",
           imageUrl: "imageUrl",
           title: "title",

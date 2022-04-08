@@ -11,6 +11,7 @@ ShoppingArticle _$ShoppingArticleFromJson(Map<String, dynamic> json) =>
       author: json['author'] as String,
       content: json['content'] as String,
       dateUploaded: DateTime.parse(json['dateUploaded'] as String),
+      id: json['id'] as String,
       imageUrl: json['imageUrl'] as String,
       products: (json['products'] as List<dynamic>?)
           ?.map((e) => Product.fromJson(e as Map<String, dynamic>))
@@ -25,6 +26,7 @@ Map<String, dynamic> _$ShoppingArticleToJson(ShoppingArticle instance) =>
       'author': instance.author,
       'content': instance.content,
       'dateUploaded': instance.dateUploaded.toIso8601String(),
+      'id': instance.id,
       'imageUrl': instance.imageUrl,
       'products': instance.products,
       'subtitle': instance.subtitle,
