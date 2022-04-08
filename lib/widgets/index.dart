@@ -1,9 +1,9 @@
 export 'articles/details/contents.dart';
 export 'articles/details/products.dart';
 export 'articles/details/subtitle.dart';
-export 'articles/products.dart';
+export 'articles/shopping_articles.dart';
 export 'articles/stories.dart';
-export 'articles/tips_techniques.dart';
+export 'articles/cooking_articles.dart';
 export 'others/appbar_title.dart';
 export 'others/cached_hero_image.dart';
 export 'others/category_box.dart';

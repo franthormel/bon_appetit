@@ -11,10 +11,10 @@ DatasetHomepageManager _$DatasetHomepageManagerFromJson(
     DatasetHomepageManager(
       cooking:
           (json['cooking'] as List<dynamic>).map((e) => e as String).toList(),
-      products:
-          (json['products'] as List<dynamic>).map((e) => e as String).toList(),
       recipes: DatasetRecipeManager.fromJson(
           json['recipes'] as Map<String, dynamic>),
+      shopping:
+          (json['shopping'] as List<dynamic>).map((e) => e as String).toList(),
       stories:
           (json['stories'] as List<dynamic>).map((e) => e as String).toList(),
       videos:
@@ -24,7 +24,7 @@ DatasetHomepageManager _$DatasetHomepageManagerFromJson(
 Map<String, dynamic> _$DatasetHomepageManagerToJson(
         DatasetHomepageManager instance) =>
     <String, dynamic>{
-      'products': instance.products,
+      'shopping': instance.shopping,
       'recipes': instance.recipes,
       'stories': instance.stories,
       'cooking': instance.cooking,

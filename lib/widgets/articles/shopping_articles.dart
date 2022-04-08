@@ -4,17 +4,17 @@ import 'package:provider/provider.dart';
 import '../../models/index.dart';
 import 'others/list.dart';
 
-class TipsTechniquesWidget extends StatelessWidget {
-  const TipsTechniquesWidget({Key? key}) : super(key: key);
+class ShoppingArticlesWidget extends StatelessWidget {
+  const ShoppingArticlesWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     final dataset = Provider.of<DatasetHomepage>(context, listen: false);
 
     return ArticleListWidget(
-      articles: dataset.cooking,
-      title: 'Cooking Tips & Techniques',
-      subtitle: "Level up your kitchen skills",
+      articles: dataset.shopping,
+      title: 'We Just Love These',
+      subtitle: "All the stuff you need—and some you don't",
     );
   }
 }

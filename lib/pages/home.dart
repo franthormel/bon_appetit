@@ -26,8 +26,8 @@ class HomePage extends StatelessWidget {
       StoriesWidget(),
       TrendingRecipesWidget(),
       VideoListWidget(),
-      ProductsWidget(),
-      TipsTechniquesWidget(),
+      ShoppingArticlesWidget(),
+      CookingArticlesWidget(),
     ];
   }
 }
