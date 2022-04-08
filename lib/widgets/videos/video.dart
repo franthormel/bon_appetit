@@ -7,7 +7,7 @@ import '../others/cached_hero_image.dart';
 import '../others/page_route_pusher.dart';
 
 class VideoEntryWidget extends StatelessWidget {
-  final VideoEntry video;
+  final Video video;
 
   const VideoEntryWidget(this.video, {Key? key}) : super(key: key);
 

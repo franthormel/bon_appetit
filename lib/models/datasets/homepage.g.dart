@@ -19,7 +19,7 @@ DatasetHomepage _$DatasetHomepageFromJson(Map<String, dynamic> json) =>
           .map((e) => CookingArticle.fromJson(e as Map<String, dynamic>))
           .toList(),
       videos: (json['videos'] as List<dynamic>)
-          .map((e) => VideoEntry.fromJson(e as Map<String, dynamic>))
+          .map((e) => Video.fromJson(e as Map<String, dynamic>))
           .toList(),
     );
 

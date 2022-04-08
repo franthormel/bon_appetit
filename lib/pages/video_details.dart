@@ -4,7 +4,7 @@ import '../models/index.dart';
 import '../widgets/index.dart';
 
 class VideoDetailsPage extends StatelessWidget with DetailsContentsMixin {
-  final VideoEntry video;
+  final Video video;
 
   const VideoDetailsPage(this.video, {Key? key}) : super(key: key);
 

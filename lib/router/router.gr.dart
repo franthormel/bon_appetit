@@ -157,7 +157,7 @@ class ArticleDetailsRouteArgs {
 /// generated route for
 /// [_i1.VideoDetailsPage]
 class VideoDetailsRoute extends _i2.PageRouteInfo<VideoDetailsRouteArgs> {
-  VideoDetailsRoute({required _i4.VideoEntry video, _i3.Key? key})
+  VideoDetailsRoute({required _i4.Video video, _i3.Key? key})
       : super(VideoDetailsRoute.name,
             path: 'video', args: VideoDetailsRouteArgs(video: video, key: key));
 
@@ -167,7 +167,7 @@ class VideoDetailsRoute extends _i2.PageRouteInfo<VideoDetailsRouteArgs> {
 class VideoDetailsRouteArgs {
   const VideoDetailsRouteArgs({required this.video, this.key});
 
-  final _i4.VideoEntry video;
+  final _i4.Video video;
 
   final _i3.Key? key;
 

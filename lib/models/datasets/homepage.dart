@@ -27,7 +27,7 @@ class DatasetHomepage {
 
   /// Twelve (12) videos are listed under
   /// the 'What to Watch' section
-  final List<VideoEntry> videos;
+  final List<Video> videos;
 
   DatasetHomepage({
     required this.products,
