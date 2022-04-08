@@ -24,9 +24,9 @@ DatasetHomepageManager _$DatasetHomepageManagerFromJson(
 Map<String, dynamic> _$DatasetHomepageManagerToJson(
         DatasetHomepageManager instance) =>
     <String, dynamic>{
-      'recipes': instance.recipes,
-      'cooking': instance.cooking,
       'products': instance.products,
+      'recipes': instance.recipes,
       'stories': instance.stories,
+      'cooking': instance.cooking,
       'videos': instance.videos,
     };

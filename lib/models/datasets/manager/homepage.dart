@@ -7,11 +7,14 @@ part 'homepage.g.dart';
 @JsonSerializable()
 // Ordering of data MATTERS for this class.
 class DatasetHomepageManager {
+  final List<String> products;
+
   final DatasetRecipeManager recipes;
 
-  final List<String> cooking;
-  final List<String> products;
   final List<String> stories;
+
+  final List<String> cooking;
+
   final List<String> videos;
 
   DatasetHomepageManager({

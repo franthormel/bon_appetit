@@ -30,10 +30,10 @@ class DatasetHomepage {
   final List<Video> videos;
 
   DatasetHomepage({
+    required this.cooking,
     required this.products,
     required this.recipes,
     required this.stories,
-    required this.cooking,
     required this.videos,
   });
 
