@@ -8,13 +8,9 @@ part 'homepage.g.dart';
 // Ordering of data MATTERS for this class.
 class DatasetHomepageManager {
   final List<String> shopping;
-
   final DatasetRecipeManager recipes;
-
   final List<String> stories;
-
   final List<String> cooking;
-
   final List<String> videos;
 
   DatasetHomepageManager({
