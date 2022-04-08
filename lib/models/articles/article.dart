@@ -7,6 +7,7 @@ part 'article.g.dart';
 
 @JsonSerializable()
 class Article {
+  // TODO: ADd ID
   final String author;
   final String category;
   final String content;

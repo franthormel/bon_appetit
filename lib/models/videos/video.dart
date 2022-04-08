@@ -5,6 +5,7 @@ part 'video.g.dart';
 
 @JsonSerializable()
 class Video {
+  // TODO: ADd ID
   final String about;
   final List<String>? credits;
   final String? episode;

@@ -1,12 +1,17 @@
 import 'package:json_annotation/json_annotation.dart';
 
+import '../articles/article.dart';
+import '../recipes/recipe.dart';
+import '../videos/video.dart';
+
 part 'source.g.dart';
 
 @JsonSerializable()
+// Ordering of data does NOT matter for this class.
 class DatasetSource {
-  final List<String> articles;
-  final List<String> recipes;
-  final List<String> videos;
+  final List<Article> articles;
+  final List<Recipe> recipes;
+  final List<Video> videos;
 
   DatasetSource({
     required this.articles,

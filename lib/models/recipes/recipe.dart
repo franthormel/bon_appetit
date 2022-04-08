@@ -12,6 +12,7 @@ part 'recipe.g.dart';
 
 @JsonSerializable()
 class Recipe {
+  // TODO: ADd ID
   final String? author;
 
   /// Used for filtering recipes
