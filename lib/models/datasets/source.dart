@@ -4,10 +4,8 @@ part 'source.g.dart';
 
 @JsonSerializable()
 class DatasetSource {
-  final List<String> recipes;
-
   final List<String> articles;
-
+  final List<String> recipes;
   final List<String> videos;
 
   DatasetSource({
