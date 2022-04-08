@@ -7,6 +7,7 @@ void main() {
     group('heroTag', () {
       test('should return a String from its ObjectKey value', () {
         final article = Article(
+          id: "1",
           author: "author",
           category: "category",
           content: "content",

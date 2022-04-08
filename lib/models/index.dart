@@ -1,6 +1,8 @@
 export 'articles/article.dart';
 export 'datasets/homepage.dart';
+export 'datasets/manager/homepage.dart';
 export 'datasets/recipe.dart';
+export 'datasets/source.dart';
 export 'others/drawer_route.dart';
 export 'others/enum/inline_tag.dart';
 export 'others/image_aspect_ratio.dart';

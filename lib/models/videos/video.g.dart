@@ -6,8 +6,9 @@ part of 'video.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-VideoEntry _$VideoEntryFromJson(Map<String, dynamic> json) => VideoEntry(
+Video _$VideoFromJson(Map<String, dynamic> json) => Video(
       about: json['about'] as String,
+      id: json['id'] as String,
       imageUrl: json['imageUrl'] as String,
       title: json['title'] as String,
       transcript: json['transcript'] as String,
@@ -19,11 +20,11 @@ VideoEntry _$VideoEntryFromJson(Map<String, dynamic> json) => VideoEntry(
       series: json['series'] as String?,
     );
 
-Map<String, dynamic> _$VideoEntryToJson(VideoEntry instance) =>
-    <String, dynamic>{
+Map<String, dynamic> _$VideoToJson(Video instance) => <String, dynamic>{
       'about': instance.about,
       'credits': instance.credits,
       'episode': instance.episode,
+      'id': instance.id,
       'imageUrl': instance.imageUrl,
       'season': instance.season,
       'series': instance.series,

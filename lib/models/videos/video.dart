@@ -4,10 +4,11 @@ import 'package:json_annotation/json_annotation.dart';
 part 'video.g.dart';
 
 @JsonSerializable()
-class VideoEntry {
+class Video {
   final String about;
   final List<String>? credits;
   final String? episode;
+  final String id;
   final String imageUrl;
   final String? season;
   final String? series;
@@ -15,8 +16,9 @@ class VideoEntry {
   final String transcript;
   final DateTime uploadDate;
 
-  VideoEntry({
+  Video({
     required this.about,
+    required this.id,
     required this.imageUrl,
     required this.title,
     required this.transcript,
@@ -27,10 +29,9 @@ class VideoEntry {
     this.series,
   });
 
-  factory VideoEntry.fromJson(Map<String, dynamic> json) =>
-      _$VideoEntryFromJson(json);
+  factory Video.fromJson(Map<String, dynamic> json) => _$VideoFromJson(json);
 
-  Map<String, dynamic> toJson() => _$VideoEntryToJson(this);
+  Map<String, dynamic> toJson() => _$VideoToJson(this);
 
   String get heroTag => ObjectKey(this).toString();
 }

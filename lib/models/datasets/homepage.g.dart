@@ -8,26 +8,26 @@ part of 'homepage.dart';
 
 DatasetHomepage _$DatasetHomepageFromJson(Map<String, dynamic> json) =>
     DatasetHomepage(
-      products: (json['products'] as List<dynamic>)
-          .map((e) => ShoppingArticle.fromJson(e as Map<String, dynamic>))
+      cooking: (json['cooking'] as List<dynamic>)
+          .map((e) => Article.fromJson(e as Map<String, dynamic>))
           .toList(),
       recipes: DatasetRecipe.fromJson(json['recipes'] as Map<String, dynamic>),
+      shopping: (json['shopping'] as List<dynamic>)
+          .map((e) => Article.fromJson(e as Map<String, dynamic>))
+          .toList(),
       stories: (json['stories'] as List<dynamic>)
           .map((e) => Article.fromJson(e as Map<String, dynamic>))
           .toList(),
-      tips: (json['tips'] as List<dynamic>)
-          .map((e) => CookingArticle.fromJson(e as Map<String, dynamic>))
-          .toList(),
       videos: (json['videos'] as List<dynamic>)
-          .map((e) => VideoEntry.fromJson(e as Map<String, dynamic>))
+          .map((e) => Video.fromJson(e as Map<String, dynamic>))
           .toList(),
     );
 
 Map<String, dynamic> _$DatasetHomepageToJson(DatasetHomepage instance) =>
     <String, dynamic>{
-      'products': instance.products,
+      'shopping': instance.shopping,
       'recipes': instance.recipes,
       'stories': instance.stories,
-      'tips': instance.tips,
+      'cooking': instance.cooking,
       'videos': instance.videos,
     };

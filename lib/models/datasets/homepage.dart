@@ -1,8 +1,6 @@
 import 'package:json_annotation/json_annotation.dart';
 
 import '../articles/article.dart';
-import '../articles/cooking.dart';
-import '../articles/shopping.dart';
 import '../videos/video.dart';
 import 'recipe.dart';
 
@@ -12,7 +10,7 @@ part 'homepage.g.dart';
 class DatasetHomepage {
   ///  Six (6) articles are listed under
   ///  the 'We Just Love These' section
-  final List<ShoppingArticle> products;
+  final List<Article> shopping;
 
   /// Contains today's, trending, and suggested recipes.
   final DatasetRecipe recipes;
@@ -23,17 +21,17 @@ class DatasetHomepage {
 
   /// Eight (8) articles are listed under
   /// the 'Cooking Tips & Techniques' section
-  final List<CookingArticle> tips;
+  final List<Article> cooking;
 
   /// Twelve (12) videos are listed under
   /// the 'What to Watch' section
-  final List<VideoEntry> videos;
+  final List<Video> videos;
 
   DatasetHomepage({
-    required this.products,
+    required this.cooking,
     required this.recipes,
+    required this.shopping,
     required this.stories,
-    required this.tips,
     required this.videos,
   });
 

@@ -23,6 +23,7 @@ class Recipe {
   /// When the author created and uploaded this recipe. Should not be interchanged with [dateIssue] which is different.
   final DateTime dateUploaded;
   final String description;
+  final String id;
   final String imageUrl;
   final List<RecipeIngredient> ingredients;
 
@@ -56,6 +57,7 @@ class Recipe {
     required this.categories,
     required this.dateUploaded,
     required this.description,
+    required this.id,
     required this.imageUrl,
     required this.ingredients,
     required this.servings,

@@ -12,7 +12,7 @@ void main() {
         const productShop = ProductShop(
           name: "STORE",
           url: "url",
-          price: "\$10.00",
+          price: "10.00",
         );
 
         expect(productShop.toString(), "\$10.00 AT STORE");
@@ -21,8 +21,8 @@ void main() {
         const productShop = ProductShop(
           name: "STORE",
           url: "url",
-          price: "\$20.00",
-          priceDiscounted: "\$35.00",
+          price: "20.00",
+          priceDiscounted: "35.00",
         );
 
         expect(productShop.toString(), "\$20.00 AT STORE");

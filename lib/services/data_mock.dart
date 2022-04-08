@@ -4,10 +4,17 @@ import '../models/index.dart';
 import 'assets_loader.dart';
 
 class MockDataService {
-  static Future<DatasetHomepage> fetchHomepageDataset() async {
-    final jsonString = await AssetsLoaderService.loadHomepageJsonFile();
-    final json = jsonDecode(jsonString);
+  static Future<DatasetHomepageManager> fetchHomepageDataset() async {
+    final source = await AssetsLoaderService.loadHomepageJsonFile();
+    final json = jsonDecode(source);
 
-    return DatasetHomepage.fromJson(json);
+    return DatasetHomepageManager.fromJson(json);
+  }
+
+  static Future<DatasetSource> fetchSource() async {
+    final source = await AssetsLoaderService.loadSourceJsonFile();
+    final json = jsonDecode(source);
+
+    return DatasetSource.fromJson(json);
   }
 }

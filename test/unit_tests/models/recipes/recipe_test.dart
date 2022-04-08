@@ -7,6 +7,7 @@ void main() {
     group("issue", () {
       test("should return null when dateIssue property is null", () {
         final recipe = Recipe(
+          id: "1",
           categories: [],
           dateUploaded: DateTime.now(),
           description: "description",
@@ -21,6 +22,7 @@ void main() {
       });
       test("should return expected value when dateIssue is set", () {
         final recipe = Recipe(
+          id: "1",
           categories: [],
           dateIssue: "January 2022",
           dateUploaded: DateTime.now(),
@@ -39,6 +41,7 @@ void main() {
     group("heroTag", () {
       test("should return a String from its ObjectKey value", () {
         final recipe = Recipe(
+          id: "1",
           categories: [],
           dateUploaded: DateTime.now(),
           description: "description",

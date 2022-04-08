@@ -18,6 +18,9 @@ class BonAppetitThemeFutura {
         ),
       ),
       dividerTheme: const DividerThemeData(color: BonAppetitColors.black),
+      floatingActionButtonTheme: const FloatingActionButtonThemeData(
+        backgroundColor: BonAppetitColors.black,
+      ),
       outlinedButtonTheme: OutlinedButtonThemeData(
         style: OutlinedButton.styleFrom(
           backgroundColor: BonAppetitColors.black,
@@ -29,6 +32,7 @@ class BonAppetitThemeFutura {
       progressIndicatorTheme: const ProgressIndicatorThemeData(
         circularTrackColor: BonAppetitColors.mediumChampagne,
         color: BonAppetitColors.sizzlingSunrise,
+        linearTrackColor: BonAppetitColors.mediumChampagne,
         refreshBackgroundColor: BonAppetitColors.dimGray,
       ),
       textTheme: _textTheme,
@@ -40,7 +44,7 @@ class BonAppetitThemeFutura {
       caption: TextStyle(
         color: BonAppetitColors.black,
         fontWeight: FontWeight.w600,
-        letterSpacing: 1.1,
+        letterSpacing: 1.5,
       ),
       headline4: TextStyle(
         color: BonAppetitColors.black,

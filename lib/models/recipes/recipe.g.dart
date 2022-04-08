@@ -12,6 +12,7 @@ Recipe _$RecipeFromJson(Map<String, dynamic> json) => Recipe(
           .toList(),
       dateUploaded: DateTime.parse(json['dateUploaded'] as String),
       description: json['description'] as String,
+      id: json['id'] as String,
       imageUrl: json['imageUrl'] as String,
       ingredients: (json['ingredients'] as List<dynamic>)
           .map((e) => RecipeIngredient.fromJson(e as Map<String, dynamic>))
@@ -47,6 +48,7 @@ Map<String, dynamic> _$RecipeToJson(Recipe instance) => <String, dynamic>{
       'dateIssue': instance.dateIssue,
       'dateUploaded': instance.dateUploaded.toIso8601String(),
       'description': instance.description,
+      'id': instance.id,
       'imageUrl': instance.imageUrl,
       'ingredients': instance.ingredients,
       'mainDescription': instance.mainDescription,

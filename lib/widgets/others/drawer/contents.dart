@@ -12,21 +12,13 @@ class DrawerContentsWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        ...routerWidgets,
+        ...routes
+            .map<Widget>((route) => DrawerRouterWidget(route.text))
+            .toList(),
         const DrawerAccountWidget(),
         const DrawerFooterWidget(),
       ],
     );
-  }
-
-  List<Widget> get routerWidgets {
-    final widgets = <Widget>[];
-
-    for (final route in routes) {
-      widgets.add(DrawerRouterWidget(route.text));
-    }
-
-    return widgets;
   }
 
   // TODO Remove null and use actual page (use blank pages for now)
@@ -37,10 +29,7 @@ class DrawerContentsWidget extends StatelessWidget {
       DrawerRoute("Culture"),
       DrawerRoute("Shopping"),
       DrawerRoute("Restaurants"),
-      DrawerRoute("BA Market"),
       DrawerRoute("Videos"),
-      DrawerRoute("Podcast"),
-      DrawerRoute("Merch Shop"),
     ];
   }
 }

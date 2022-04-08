@@ -4,6 +4,7 @@ class RoutePath {
   static const search = "search";
   static const recipeDetails = "recipe";
   static const articleDetails = "article";
+  static const videoDetails = "video";
 }
 
 class RouteName {
@@ -12,4 +13,5 @@ class RouteName {
   static const search = "SearchRoute";
   static const recipeDetails = "RecipeDetailsRoute";
   static const articleDetails = "ArticleDetailsRoute";
+  static const videoDetails = "VideoDetailsRoute";
 }
