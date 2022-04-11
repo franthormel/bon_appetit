@@ -59,6 +59,14 @@ class AppRouter extends _i2.RootStackRouter {
       return _i2.MaterialPageX<dynamic>(
           routeData: routeData,
           child: _i1.VideoDetailsPage(args.video, key: args.key));
+    },
+    DrawerRecipesRoute.name: (routeData) {
+      return _i2.CustomPage<dynamic>(
+          routeData: routeData,
+          child: const _i1.DrawerRecipesPage(),
+          transitionsBuilder: _i2.TransitionsBuilders.fadeIn,
+          opaque: true,
+          barrierDismissible: false);
     }
   };
 
@@ -74,7 +82,9 @@ class AppRouter extends _i2.RootStackRouter {
           _i2.RouteConfig(ArticleDetailsRoute.name,
               path: 'article', parent: DataProviderRoute.name),
           _i2.RouteConfig(VideoDetailsRoute.name,
-              path: 'video', parent: DataProviderRoute.name)
+              path: 'video', parent: DataProviderRoute.name),
+          _i2.RouteConfig(DrawerRecipesRoute.name,
+              path: 'recipes', parent: DataProviderRoute.name)
         ]),
         _i2.RouteConfig('*#redirect',
             path: '*', redirectTo: 'DataProviderRoute', fullMatch: true)
@@ -175,4 +185,12 @@ class VideoDetailsRouteArgs {
   String toString() {
     return 'VideoDetailsRouteArgs{video: $video, key: $key}';
   }
+}
+
+/// generated route for
+/// [_i1.DrawerRecipesPage]
+class DrawerRecipesRoute extends _i2.PageRouteInfo<void> {
+  const DrawerRecipesRoute() : super(DrawerRecipesRoute.name, path: 'recipes');
+
+  static const String name = 'DrawerRecipesRoute';
 }

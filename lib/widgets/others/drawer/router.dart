@@ -1,25 +1,29 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+
+import '../../../models/index.dart';
+import '../../../router/index.dart';
 
 class DrawerRouterWidget extends StatelessWidget {
-  final String text;
-  final void Function()? onTap;
+  final DrawerRoute route;
 
-  const DrawerRouterWidget(this.text, {this.onTap, Key? key}) : super(key: key);
+  const DrawerRouterWidget(this.route, {Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return ListTile(
       title: Text(
-        text.toUpperCase(),
+        route.text.toUpperCase(),
         style: Theme.of(context).textTheme.bodyText1?.copyWith(
               fontWeight: FontWeight.w700,
               letterSpacing: 2.6,
             ),
       ),
       onTap: () {
-        if (onTap != null) {
-          onTap!();
+        if (route.pageRouteInfo != null) {
+          final router = Provider.of<RouteProvider>(context, listen: false);
+          router.push(route.pageRouteInfo!);
         }
 
         AutoRouter.of(context).pop();

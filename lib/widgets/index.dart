@@ -37,3 +37,4 @@ export 'videos/details/info.dart';
 export 'videos/details/released_date.dart';
 export 'videos/details/transcript.dart';
 export 'videos/video_list.dart';
+export 'drawer/header.dart';

@@ -38,9 +38,17 @@ import 'constants.dart';
           name: RouteName.videoDetails,
           path: RoutePath.videoDetails,
         ),
+        CustomRoute(
+          page: DrawerRecipesPage,
+          name: RouteName.drawerRecipes,
+          path: RoutePath.drawerRecipes,
+          transitionsBuilder: TransitionsBuilders.fadeIn,
+        ),
       ],
     ),
     RedirectRoute(path: '*', redirectTo: RouteName.initial),
   ],
 )
 class $AppRouter {}
+
+

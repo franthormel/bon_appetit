@@ -1,3 +1,4 @@
+import 'package:bon_appetit/router/index.dart';
 import 'package:flutter/material.dart';
 
 import '../../../models/index.dart';
@@ -12,9 +13,7 @@ class DrawerContentsWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        ...routes
-            .map<Widget>((route) => DrawerRouterWidget(route.text))
-            .toList(),
+        ...routes.map<Widget>((route) => DrawerRouterWidget(route)).toList(),
         const DrawerAccountWidget(),
         const DrawerFooterWidget(),
       ],
@@ -24,7 +23,7 @@ class DrawerContentsWidget extends StatelessWidget {
   // TODO Remove null and use actual page (use blank pages for now)
   List<DrawerRoute> get routes {
     return <DrawerRoute>[
-      DrawerRoute("Recipes"),
+      DrawerRoute("Recipes", pageRouteInfo: const DrawerRecipesRoute()),
       DrawerRoute("Cooking"),
       DrawerRoute("Culture"),
       DrawerRoute("Shopping"),

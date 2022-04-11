@@ -1,4 +1,5 @@
 export 'article_details.dart';
+export 'drawer_recipes.dart';
 export 'home.dart';
 export 'loading.dart';
 export 'providers/data.dart';
