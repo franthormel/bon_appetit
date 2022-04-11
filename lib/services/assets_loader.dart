@@ -10,6 +10,9 @@ class AssetsLoaderService {
   static Future<String> loadHomepageJsonFile() =>
       _loadString("assets/data/homepage.json");
 
+  static Future<String> loadDrawerJsonFile() =>
+      _loadString("assets/data/drawer.json");
+
   static Future<String> _loadString(String filename) async {
     String result = "Could not load $filename";
 

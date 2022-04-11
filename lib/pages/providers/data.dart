@@ -31,18 +31,18 @@ class DataProviderPage extends StatelessWidget {
           initialData: null,
           lazy: false,
         ),
-        FutureProvider<DatasetHomepageManager?>(
+        FutureProvider<DatasetHomepage?>(
           catchError: catchError,
           create: (context) => MockDataService.fetchHomepageDataset(),
           initialData: null,
           lazy: false,
         ),
       ],
-      // TODO: Need FutureProvider for Drawer data
-      // TODO: Use Consumer3 and consume DatasetSource, DatasetHomepageManager, DatasetDrawerManager to derive DatasetHomepage and DatasetDrawer
-      child: Consumer<DatasetHomepage?>(
-        builder: (context, dataset, child) =>
-            dataset == null ? const LoadingPage() : const ConsumerPage(),
+      child: Consumer2<DatasetSource?, DatasetHomepage?>(
+        builder: (context, source, homepage, child) =>
+            source == null || homepage == null
+                ? const LoadingPage()
+                : const ConsumerPage(),
       ),
     );
   }
