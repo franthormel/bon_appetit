@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../style/colors.dart';
+import '../../../widgets/index.dart';
 import 'content.dart';
 
 class VideoDetailsTranscriptWidget extends StatelessWidget {
@@ -28,7 +29,8 @@ class VideoDetailsTranscriptWidget extends StatelessWidget {
           itemCount: lines.length,
           itemBuilder: (context, index) => Text(lines[index]),
           primary: false,
-          separatorBuilder: (context, index) => const SizedBox(height: 5.0),
+          separatorBuilder: (context, index) =>
+              const SeparatorWidget(value: 5.0),
           shrinkWrap: true,
         ),
       ),

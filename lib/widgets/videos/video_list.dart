@@ -5,6 +5,7 @@ import '../../models/index.dart';
 import '../../style/colors.dart';
 import '../others/designed_container.dart';
 import '../others/header_section.dart';
+import '../others/separator.dart';
 import 'video.dart';
 
 class VideoListWidget extends StatelessWidget {
@@ -33,7 +34,10 @@ class VideoListWidget extends StatelessWidget {
                   VideoEntryWidget(dataset.videos[index]),
               primary: false,
               scrollDirection: Axis.horizontal,
-              separatorBuilder: (context, index) => const SizedBox(width: 18.0),
+              separatorBuilder: (context, index) => const SeparatorWidget(
+                value: 18.0,
+                direction: Axis.horizontal,
+              ),
             ),
           ),
           const Divider(color: Colors.transparent),

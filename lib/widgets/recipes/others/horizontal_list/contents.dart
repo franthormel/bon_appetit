@@ -5,6 +5,7 @@ import '../../../../models/index.dart';
 import '../../../../router/index.dart';
 import '../../../../services/index.dart';
 import '../../../others/page_route_pusher.dart';
+import '../../../others/separator.dart';
 import 'list_recipe.dart';
 import 'mixin.dart';
 
@@ -38,7 +39,8 @@ class HorizontalListRecipeContentsWidget extends StatelessWidget
         itemCount: recipes.length,
         primary: false,
         scrollDirection: Axis.horizontal,
-        separatorBuilder: (context, index) => const SizedBox(width: 18.0),
+        separatorBuilder: (context, index) =>
+            const SeparatorWidget(direction: Axis.horizontal),
       ),
     );
   }

@@ -2,11 +2,11 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import '../../models/index.dart';
-import '../../router/index.dart';
-import '../../services/index.dart';
-import '../consumer.dart';
-import '../loading.dart';
+import '../models/index.dart';
+import '../router/index.dart';
+import '../services/index.dart';
+import 'consumer.dart';
+import 'loading.dart';
 
 class DataProviderPage extends StatelessWidget {
   const DataProviderPage({Key? key}) : super(key: key);

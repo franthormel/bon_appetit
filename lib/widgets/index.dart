@@ -17,6 +17,7 @@ export 'others/details/sponsor_note_padded.dart';
 export 'others/details/title.dart';
 export 'others/details_contents.dart';
 export 'others/drawer.dart';
+export 'others/separator.dart';
 export 'recipes/details/ingredients.dart';
 export 'recipes/details/leave_review.dart';
 export 'recipes/details/nutrition_servings.dart';
