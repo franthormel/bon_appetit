@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../models/index.dart';
 import '../../others/horizontal_padding.dart';
-import '../others/rating_stars.dart';
+import '../../others/rating_stars.dart';
 
 class RecipeDetailsRatingWidget extends StatelessWidget {
   final RecipeRating rating;

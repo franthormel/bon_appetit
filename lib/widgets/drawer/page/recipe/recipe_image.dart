@@ -14,6 +14,7 @@ class DrawerPageRecipeImageWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // TODO: Fit to 16/9 Try Clip and/or ClipRect
     return CachedHeroImageWidget(heroTag: heroTag, imageUrl: imageUrl);
   }
 }

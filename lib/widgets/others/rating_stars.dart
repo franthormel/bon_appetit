@@ -9,7 +9,7 @@ class RatingStarsWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return value != null
         ? Row(children: _generateStars(value!.floor()))
-        : Container();
+        : const Text("No rating!");
   }
 
   List<Widget> _generateStars(int count) {
