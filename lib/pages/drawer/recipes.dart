@@ -9,23 +9,12 @@ class DrawerRecipesPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: PASS
     final recipes = Provider.of<DatasetSource>(context, listen: false).recipes;
 
-    return CustomScrollView(
-      slivers: [
-        const SliverToBoxAdapter(child: DrawerHeaderWidget("Recipes")),
-        // TODO: PASS
-        SliverList(
-          delegate: SliverChildBuilderDelegate(
-            (context, index) {
-              // TODO: PASS
-              return DrawerPageRecipeWidget(recipes[index]);
-            },
-            childCount: recipes.length,
-          ),
-        ),
-      ],
+    return DrawerPageWidget(
+      builder: (context, index) => DrawerPageRecipeWidget(recipes[index]),
+      count: recipes.length,
+      title: "Recipes",
     );
   }
 }

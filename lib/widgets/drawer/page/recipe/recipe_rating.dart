@@ -12,6 +12,7 @@ class DrawerPageRecipeRatingWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // Place separator widget
     return const Text("Rating");
   }
 }

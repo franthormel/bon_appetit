@@ -4,7 +4,9 @@ export 'articles/details/products.dart';
 export 'articles/details/subtitle.dart';
 export 'articles/shopping_articles.dart';
 export 'articles/stories.dart';
-export 'drawer/page/header.dart';
+export 'drawer/drawer.dart';
+export 'drawer/page/header.dart'; // TODO: REMOVE SOON
+export 'drawer/page/page.dart';
 export 'drawer/page/recipe/recipe.dart';
 export 'others/appbar_title.dart';
 export 'others/cached_hero_image.dart';
@@ -17,7 +19,6 @@ export 'others/details/category_issue.dart';
 export 'others/details/sponsor_note_padded.dart';
 export 'others/details/title.dart';
 export 'others/details_contents.dart';
-export 'drawer/drawer.dart';
 export 'others/separator.dart';
 export 'recipes/details/ingredients.dart';
 export 'recipes/details/leave_review.dart';

@@ -1,15 +1,19 @@
 import 'package:flutter/material.dart';
 
+import '../../../others/cached_hero_image.dart';
+
 class DrawerPageRecipeImageWidget extends StatelessWidget {
+  final String heroTag;
   final String imageUrl;
 
-  const DrawerPageRecipeImageWidget(
-    this.imageUrl, {
+  const DrawerPageRecipeImageWidget({
+    required this.heroTag,
+    required this.imageUrl,
     Key? key,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return const Text("Image");
+    return CachedHeroImageWidget(heroTag: heroTag, imageUrl: imageUrl);
   }
 }
