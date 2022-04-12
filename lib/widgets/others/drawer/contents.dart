@@ -20,15 +20,14 @@ class DrawerContentsWidget extends StatelessWidget {
     );
   }
 
-  // TODO Remove null and use actual page (use blank pages for now)
   List<DrawerRoute> get routes {
     return <DrawerRoute>[
       DrawerRoute("Recipes", pageRouteInfo: const DrawerRecipesRoute()),
-      DrawerRoute("Cooking"),
-      DrawerRoute("Culture"),
-      DrawerRoute("Shopping"),
-      DrawerRoute("Restaurants"),
-      DrawerRoute("Videos"),
+      DrawerRoute("Cooking", pageRouteInfo: const DrawerCookingRoute()),
+      DrawerRoute("Culture", pageRouteInfo: const DrawerCultureRoute()),
+      DrawerRoute("Shopping", pageRouteInfo: const DrawerShoppingRoute()),
+      DrawerRoute("Restaurants", pageRouteInfo: const DrawerRestaurantsRoute()),
+      DrawerRoute("Videos", pageRouteInfo: const DrawerVideosRoute()),
     ];
   }
 }

@@ -25,13 +25,13 @@ import 'constants.dart';
         ),
         AutoRoute(
           page: RecipeDetailsPage,
-          name: RouteName.recipeDetails,
-          path: RoutePath.recipeDetails,
+          name: RouteName.detailsRecipe,
+          path: RoutePath.detailsRecipe,
         ),
         AutoRoute(
           page: ArticleDetailsPage,
-          name: RouteName.articleDetails,
-          path: RoutePath.articleDetails,
+          name: RouteName.detailsArticle,
+          path: RoutePath.detailsArticle,
         ),
         AutoRoute(
           page: VideoDetailsPage,
@@ -39,9 +39,39 @@ import 'constants.dart';
           path: RoutePath.videoDetails,
         ),
         CustomRoute(
+          page: DrawerCookingPage,
+          name: RouteName.drawerCooking,
+          path: RoutePath.drawerCooking,
+          transitionsBuilder: TransitionsBuilders.fadeIn,
+        ),
+        CustomRoute(
+          page: DrawerCulturePage,
+          name: RouteName.drawerCulture,
+          path: RoutePath.drawerCulture,
+          transitionsBuilder: TransitionsBuilders.fadeIn,
+        ),
+        CustomRoute(
           page: DrawerRecipesPage,
           name: RouteName.drawerRecipes,
           path: RoutePath.drawerRecipes,
+          transitionsBuilder: TransitionsBuilders.fadeIn,
+        ),
+        CustomRoute(
+          page: DrawerRestaurantsPage,
+          name: RouteName.drawerRestaurants,
+          path: RoutePath.drawerRestaurants,
+          transitionsBuilder: TransitionsBuilders.fadeIn,
+        ),
+        CustomRoute(
+          page: DrawerShoppingPage,
+          name: RouteName.drawerShopping,
+          path: RoutePath.drawerShopping,
+          transitionsBuilder: TransitionsBuilders.fadeIn,
+        ),
+        CustomRoute(
+          page: DrawerVideosPage,
+          name: RouteName.drawerVideos,
+          path: RoutePath.drawerVideos,
           transitionsBuilder: TransitionsBuilders.fadeIn,
         ),
       ],
@@ -50,5 +80,3 @@ import 'constants.dart';
   ],
 )
 class $AppRouter {}
-
-

@@ -1,5 +1,10 @@
 export 'article_details.dart';
-export 'drawer_recipes.dart';
+export 'drawer/cooking.dart';
+export 'drawer/culture.dart';
+export 'drawer/recipes.dart';
+export 'drawer/restaurants.dart';
+export 'drawer/shopping.dart';
+export 'drawer/videos.dart';
 export 'home.dart';
 export 'loading.dart';
 export 'providers/data.dart';

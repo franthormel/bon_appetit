@@ -11,8 +11,6 @@ class MockDataService {
     return DatasetHomepage.fromJson(json);
   }
 
-  // TODO: Get data from drawer.json
-
   static Future<DatasetSource> fetchSource() async {
     final source = await AssetsLoaderService.loadSourceJsonFile();
     final json = jsonDecode(source);

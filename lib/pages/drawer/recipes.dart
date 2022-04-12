@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../widgets/index.dart';
+import '../../widgets/index.dart';
 
 class DrawerRecipesPage extends StatelessWidget {
   const DrawerRecipesPage({Key? key}) : super(key: key);
