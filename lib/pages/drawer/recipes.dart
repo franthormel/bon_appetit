@@ -9,20 +9,23 @@ class DrawerRecipesPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // TODO: PASS
     final recipes = Provider.of<DatasetSource>(context, listen: false).recipes;
 
-    // TODO: Add header to ListView (try SliverAppBar instead of ListView?)
-    return ListView.separated(
-      itemBuilder: (context, index) {
-        if (index == 0) {
-          index--;
-          return const DrawerHeaderWidget("Recipes");
-        }
-
-        return ListTile(title: Text(recipes[index].title));
-      },
-      itemCount: recipes.length + 1,
-      separatorBuilder: (context, index) => const SeparatorWidget(),
+    return CustomScrollView(
+      slivers: [
+        const SliverToBoxAdapter(child: DrawerHeaderWidget("Recipes")),
+        // TODO: PASS
+        SliverList(
+          delegate: SliverChildBuilderDelegate(
+            (context, index) {
+              // TODO: PASS
+              return DrawerPageRecipeWidget(recipes[index]);
+            },
+            childCount: recipes.length,
+          ),
+        ),
+      ],
     );
   }
 }

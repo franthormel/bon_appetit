@@ -2,8 +2,8 @@ import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import '../../../models/index.dart';
-import '../../../router/index.dart';
+import '../../models/index.dart';
+import '../../router/index.dart';
 
 class DrawerRouterWidget extends StatelessWidget {
   final DrawerRoute route;

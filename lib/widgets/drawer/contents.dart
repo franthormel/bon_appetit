@@ -1,7 +1,7 @@
-import 'package:bon_appetit/router/index.dart';
 import 'package:flutter/material.dart';
 
-import '../../../models/index.dart';
+import '../../models/index.dart';
+import '../../router/index.dart';
 import 'account.dart';
 import 'footer.dart';
 import 'router.dart';
