@@ -14,7 +14,13 @@ class DrawerPageRecipeImageWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: Fit to 16/9 Try Clip and/or ClipRect
-    return CachedHeroImageWidget(heroTag: heroTag, imageUrl: imageUrl);
+    // TODO: Apply this to all other images with aspect ratios in their url
+    return ClipRect(
+      child: Align(
+        alignment: Alignment.center,
+        heightFactor: 9 / 16,
+        child: CachedHeroImageWidget(heroTag: heroTag, imageUrl: imageUrl),
+      ),
+    );
   }
 }
