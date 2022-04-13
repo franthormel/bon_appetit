@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 
 import '../../../style/index.dart';
 
-class DrawerHeaderWidget extends StatelessWidget {
+class DrawerPageHeaderWidget extends StatelessWidget {
   final String header;
   final String? subHeader;
 
-  const DrawerHeaderWidget(
+  const DrawerPageHeaderWidget(
     this.header, {
     this.subHeader,
     Key? key,

@@ -27,7 +27,7 @@ class RecipeDetailsPage extends StatelessWidget with DetailsContentsMixin {
       CachedHeroImageWidget(heroTag: recipe.heroTag, imageUrl: recipe.imageUrl),
       if (recipe.timeEntries != null)
         RecipeDetailsTimeEntriesWidget(recipe.timeEntries!),
-      DetailsBodyTextPaddedWidget(recipe.description),
+      DetailsPaddedBodyTextWidget(recipe.description),
       if (recipe.utensils != null && recipe.utensils!.isNotEmpty)
         RecipeDetailsUtensilsWidget(recipe.utensils!),
       RecipeDetailsIngredientsWidget(

@@ -9,7 +9,7 @@ class DrawerVideosPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView(
       children: const [
-        DrawerHeaderWidget("Videos"),
+        DrawerPageHeaderWidget("Videos"),
       ],
     );
   }

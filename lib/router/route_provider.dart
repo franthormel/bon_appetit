@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'router.gr.dart';
 
 class RouteProvider extends ChangeNotifier {
+  // TODO: TEST static const _home = HomeRoute();
+
   List<PageRouteInfo> _pageRoutes = [const HomeRoute()];
 
   void change(PageRouteInfo pageRouteInfo) {

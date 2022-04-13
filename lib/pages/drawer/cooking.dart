@@ -9,7 +9,8 @@ class DrawerCookingPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView(
       children: const [
-        DrawerHeaderWidget("Cooking", subHeader: "Tips, tricks and techniques"),
+        DrawerPageHeaderWidget("Cooking",
+            subHeader: "Tips, tricks and techniques"),
       ],
     );
   }

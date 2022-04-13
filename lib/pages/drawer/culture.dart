@@ -9,7 +9,7 @@ class DrawerCulturePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView(
       children: const [
-        DrawerHeaderWidget(
+        DrawerPageHeaderWidget(
           "Culture",
           subHeader: "Stories from around the world of food",
         ),

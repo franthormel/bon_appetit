@@ -21,7 +21,7 @@ class DrawerPageWidget extends StatelessWidget {
     return CustomScrollView(
       slivers: [
         SliverToBoxAdapter(
-          child: DrawerHeaderWidget(title, subHeader: subHeader),
+          child: DrawerPageHeaderWidget(title, subHeader: subHeader),
         ),
         SliverList(
           delegate: SliverChildBuilderDelegate(builder, childCount: count),

@@ -9,7 +9,7 @@ class DrawerShoppingPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView(
       children: const [
-        DrawerHeaderWidget("Shopping", subHeader: "We just love these"),
+        DrawerPageHeaderWidget("Shopping", subHeader: "We just love these"),
       ],
     );
   }
