@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../style/colors.dart';
+import '../../../style/index.dart';
 
 class DrawerHeaderWidget extends StatelessWidget {
   final String header;

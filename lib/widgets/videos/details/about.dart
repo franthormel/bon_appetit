@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../style/theme_radley.dart';
+import '../../../style/index.dart';
 import 'content.dart';
 import 'released_date.dart';
 

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../../models/index.dart';
-import '../../style/colors.dart';
+import '../../style/index.dart';
 import '../others/designed_container.dart';
 import '../others/header_section.dart';
 import '../others/separator.dart';

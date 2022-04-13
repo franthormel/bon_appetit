@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../../services/assets_loader.dart';
-import '../../../style/theme_radley.dart';
+import '../../../services/index.dart';
+import '../../../style/index.dart';
 
 class SponsorNoteWidget extends StatelessWidget {
   const SponsorNoteWidget({Key? key}) : super(key: key);

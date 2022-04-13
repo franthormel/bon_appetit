@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../models/index.dart';
 import '../../../services/index.dart';
-import '../../../style/theme_radley.dart';
+import '../../../style/index.dart';
 
 class DetailsBodyTextWidget extends StatelessWidget {
   final String text;

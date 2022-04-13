@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../style/colors.dart';
+import '../style/index.dart';
 import '../widgets/index.dart';
 
 class HomePage extends StatelessWidget {

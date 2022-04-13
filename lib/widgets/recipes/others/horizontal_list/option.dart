@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../../style/colors.dart';
+import '../../../../style/index.dart';
 
 class HorizontalListOptionWidget extends StatelessWidget {
   final String label;

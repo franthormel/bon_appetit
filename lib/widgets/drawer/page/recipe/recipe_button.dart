@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../../style/colors.dart';
+import '../../../../style/index.dart';
 import 'recipe_button_text.dart';
 
 class DrawerPageRecipeButtonWidget extends StatelessWidget {

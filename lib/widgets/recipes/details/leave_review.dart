@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../style/colors.dart';
+import '../../../style/index.dart';
 import '../../others/header_details.dart';
 import '../../others/horizontal_padding.dart';
 
