@@ -1,4 +1,3 @@
-import 'package:bon_appetit/widgets/index.dart';
 import 'package:flutter/material.dart';
 
 import 'will_pop.dart';
@@ -30,7 +29,7 @@ class DetailsContentsWidget extends StatelessWidget {
             padding: padding ?? const EdgeInsets.symmetric(vertical: 21.0),
             itemBuilder: (context, index) => children[index],
             itemCount: children.length,
-            separatorBuilder: (context, index) => const SeparatorWidget(),
+            separatorBuilder: (context, index) => const SizedBox(height: 25.0),
           ),
         ),
       ),

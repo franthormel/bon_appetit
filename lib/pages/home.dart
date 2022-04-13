@@ -14,8 +14,7 @@ class HomePage extends StatelessWidget {
         physics: const BouncingScrollPhysics(),
         itemCount: children.length,
         itemBuilder: (context, index) => children[index],
-        separatorBuilder: (context, index) =>
-            const SeparatorWidget(value: 15.0),
+        separatorBuilder: (context, index) => const SizedBox(height: 15.0),
       ),
     );
   }

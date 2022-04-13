@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import '../../../../models/index.dart';
 import '../../../others/horizontal_padding.dart';
 import '../../../others/rating_stars.dart';
-import '../../../others/separator.dart';
 
 class DrawerPageRecipeRatingWidget extends StatelessWidget {
   final RecipeRating rating;
@@ -22,12 +21,12 @@ class DrawerPageRecipeRatingWidget extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(ratingCountText),
-              const SeparatorWidget(value: 10.0, direction: Axis.horizontal),
+              const SizedBox(width: 10.0),
               RatingStarsWidget(double.tryParse(rating.value)),
             ],
           ),
         ),
-        const SeparatorWidget(value: 40.0),
+        const SizedBox(height: 40.0),
       ],
     );
   }

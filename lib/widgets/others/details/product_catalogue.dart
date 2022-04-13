@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import '../header_details.dart';
-import '../separator.dart';
 
 class DetailsProductCatalogueWidget extends StatelessWidget {
   final String header;
@@ -26,8 +25,7 @@ class DetailsProductCatalogueWidget extends StatelessWidget {
           itemCount: itemCount,
           primary: false,
           scrollDirection: Axis.horizontal,
-          separatorBuilder: (context, index) =>
-              const SeparatorWidget(direction: Axis.horizontal),
+          separatorBuilder: (context, index) => const SizedBox(width: 25.0),
         ),
       ),
     );

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import '../../../others/horizontal_padding.dart';
-import '../../../others/separator.dart';
 
 class DrawerPageRecipeDescriptionWidget extends StatelessWidget {
   final String description;
@@ -15,7 +14,7 @@ class DrawerPageRecipeDescriptionWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        const SeparatorWidget(value: 15.0),
+        const SizedBox(height: 15.0),
         HorizontalPaddingWidget(
           child: Text(
             description,
