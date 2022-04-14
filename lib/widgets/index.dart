@@ -5,6 +5,8 @@ export 'articles/details/subtitle.dart';
 export 'articles/shopping_articles.dart';
 export 'articles/stories.dart';
 export 'drawer/drawer.dart';
+export 'drawer/page/article/article.dart';
+export 'drawer/page/article/culture.dart';
 export 'drawer/page/header.dart'; // TODO: REMOVE SOON
 export 'drawer/page/page.dart';
 export 'drawer/page/recipe/recipe.dart';

@@ -11,7 +11,7 @@ class DrawerCookingPage extends StatelessWidget with DrawerArticlePageMixin {
     final articles = fetchByCategory(context, category: "cooking");
 
     return DrawerPageWidget(
-      builder: (context, index) => Container(),
+      builder: (context, index) => DrawerPageArticleWidget(articles[index]),
       count: articles.length,
       title: "Cooking",
       subHeader: "Tips, tricks and techniques",
