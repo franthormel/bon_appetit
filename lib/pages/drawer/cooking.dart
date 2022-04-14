@@ -1,17 +1,20 @@
 import 'package:flutter/material.dart';
 
 import '../../widgets/index.dart';
+import 'article_mixin.dart';
 
-class DrawerCookingPage extends StatelessWidget {
+class DrawerCookingPage extends StatelessWidget with DrawerArticlePageMixin {
   const DrawerCookingPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return ListView(
-      children: const [
-        DrawerPageHeaderWidget("Cooking",
-            subHeader: "Tips, tricks and techniques"),
-      ],
+    final articles = fetchByCategory(context, category: "cooking");
+
+    return DrawerPageWidget(
+      builder: (context, index) => Container(),
+      count: articles.length,
+      title: "Cooking",
+      subHeader: "Tips, tricks and techniques",
     );
   }
 }
