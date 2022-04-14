@@ -11,8 +11,7 @@ class DrawerCulturePage extends StatelessWidget with DrawerArticlePageMixin {
     final articles = fetchByCategory(context, category: "culture");
 
     return DrawerPageWidget(
-      builder: (context, index) =>
-          DrawerPageArticleCultureWidget(articles[index]),
+      builder: (context, index) => DrawerPageCultureWidget(articles[index]),
       count: articles.length,
       title: "Culture",
       subHeader: "Stories from around the world of food",
