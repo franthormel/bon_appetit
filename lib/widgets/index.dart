@@ -7,9 +7,9 @@ export 'articles/stories.dart';
 export 'drawer/drawer.dart';
 export 'drawer/page/articles/article.dart';
 export 'drawer/page/articles/culture.dart';
-export 'drawer/page/header.dart'; // TODO: REMOVE SOON
 export 'drawer/page/page.dart';
 export 'drawer/page/recipe/recipe.dart';
+export 'drawer/page/videos/video.dart';
 export 'others/appbar_title.dart';
 export 'others/cached_hero_image.dart';
 export 'others/category_box.dart';

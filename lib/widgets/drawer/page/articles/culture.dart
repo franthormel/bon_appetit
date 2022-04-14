@@ -4,6 +4,7 @@ import '../../../../models/index.dart';
 import '../../../../router/index.dart';
 import '../../../others/cached_hero_image.dart';
 import '../../../others/page_route_pusher.dart';
+import '../padding.dart';
 import 'culture_box.dart';
 
 class DrawerPageCultureWidget extends StatelessWidget {
@@ -13,8 +14,7 @@ class DrawerPageCultureWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(15.0),
+    return DrawerPagePaddingWidget(
       child: PageRoutePusherWidget(
         route: ArticleDetailsRoute(article: article),
         child: Column(

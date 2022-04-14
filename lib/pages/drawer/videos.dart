@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
+import '../../models/index.dart';
 import '../../widgets/index.dart';
 
 class DrawerVideosPage extends StatelessWidget {
@@ -7,10 +9,12 @@ class DrawerVideosPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView(
-      children: const [
-        DrawerPageHeaderWidget("Videos"),
-      ],
+    final videos = Provider.of<DatasetSource>(context, listen: false).videos;
+
+    return DrawerPageWidget(
+      builder: (context, index) => DrawerPageVideoWidget(videos[index]),
+      count: videos.length,
+      title: "Videos",
     );
   }
 }
