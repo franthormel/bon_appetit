@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'router/index.dart';
-import 'style/theme_futura.dart';
+import 'style/index.dart';
 
 void main() {
   runApp(MyApp());

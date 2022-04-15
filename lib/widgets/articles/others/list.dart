@@ -48,10 +48,10 @@ class ArticleListWidget extends StatelessWidget {
     final widgets = <Widget>[];
     final entries = articleEntries;
 
-    for (final entry in entries) {
+    for (final article in entries) {
       widgets.addAll([
         const SizedBox(height: 50.0),
-        ArticleWidget(entry),
+        ArticleWidget(article),
       ]);
     }
 

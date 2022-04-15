@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../../models/index.dart';
-import '../../style/colors.dart';
+import '../../router/index.dart';
+import '../../style/index.dart';
 import '../others/designed_container.dart';
 import '../others/header_section.dart';
 import 'video.dart';
@@ -38,7 +39,10 @@ class VideoListWidget extends StatelessWidget {
           ),
           const Divider(color: Colors.transparent),
           OutlinedButton(
-            onPressed: () {},
+            onPressed: () {
+              final router = Provider.of<RouteProvider>(context, listen: false);
+              router.change(const DrawerVideosRoute());
+            },
             child: const Text('SEE MORE VIDEOS'),
           ),
         ],

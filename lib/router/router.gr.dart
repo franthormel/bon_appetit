@@ -27,20 +27,12 @@ class AppRouter extends _i2.RootStackRouter {
           routeData: routeData, child: const _i1.DataProviderPage());
     },
     HomeRoute.name: (routeData) {
-      return _i2.CustomPage<dynamic>(
-          routeData: routeData,
-          child: const _i1.HomePage(),
-          transitionsBuilder: _i2.TransitionsBuilders.fadeIn,
-          opaque: true,
-          barrierDismissible: false);
+      return _i2.MaterialPageX<dynamic>(
+          routeData: routeData, child: const _i1.HomePage());
     },
     SearchRoute.name: (routeData) {
-      return _i2.CustomPage<dynamic>(
-          routeData: routeData,
-          child: const _i1.SearchPage(),
-          transitionsBuilder: _i2.TransitionsBuilders.fadeIn,
-          opaque: true,
-          barrierDismissible: false);
+      return _i2.MaterialPageX<dynamic>(
+          routeData: routeData, child: const _i1.SearchPage());
     },
     RecipeDetailsRoute.name: (routeData) {
       final args = routeData.argsAs<RecipeDetailsRouteArgs>();
@@ -59,6 +51,30 @@ class AppRouter extends _i2.RootStackRouter {
       return _i2.MaterialPageX<dynamic>(
           routeData: routeData,
           child: _i1.VideoDetailsPage(args.video, key: args.key));
+    },
+    DrawerCookingRoute.name: (routeData) {
+      return _i2.MaterialPageX<dynamic>(
+          routeData: routeData, child: const _i1.DrawerCookingPage());
+    },
+    DrawerCultureRoute.name: (routeData) {
+      return _i2.MaterialPageX<dynamic>(
+          routeData: routeData, child: const _i1.DrawerCulturePage());
+    },
+    DrawerRecipesRoute.name: (routeData) {
+      return _i2.MaterialPageX<dynamic>(
+          routeData: routeData, child: const _i1.DrawerRecipesPage());
+    },
+    DrawerRestaurantsRoute.name: (routeData) {
+      return _i2.MaterialPageX<dynamic>(
+          routeData: routeData, child: const _i1.DrawerRestaurantsPage());
+    },
+    DrawerShoppingRoute.name: (routeData) {
+      return _i2.MaterialPageX<dynamic>(
+          routeData: routeData, child: const _i1.DrawerShoppingPage());
+    },
+    DrawerVideosRoute.name: (routeData) {
+      return _i2.MaterialPageX<dynamic>(
+          routeData: routeData, child: const _i1.DrawerVideosPage());
     }
   };
 
@@ -74,7 +90,19 @@ class AppRouter extends _i2.RootStackRouter {
           _i2.RouteConfig(ArticleDetailsRoute.name,
               path: 'article', parent: DataProviderRoute.name),
           _i2.RouteConfig(VideoDetailsRoute.name,
-              path: 'video', parent: DataProviderRoute.name)
+              path: 'video', parent: DataProviderRoute.name),
+          _i2.RouteConfig(DrawerCookingRoute.name,
+              path: 'cooking', parent: DataProviderRoute.name),
+          _i2.RouteConfig(DrawerCultureRoute.name,
+              path: 'culture', parent: DataProviderRoute.name),
+          _i2.RouteConfig(DrawerRecipesRoute.name,
+              path: 'recipes', parent: DataProviderRoute.name),
+          _i2.RouteConfig(DrawerRestaurantsRoute.name,
+              path: 'restaurants', parent: DataProviderRoute.name),
+          _i2.RouteConfig(DrawerShoppingRoute.name,
+              path: 'shopping', parent: DataProviderRoute.name),
+          _i2.RouteConfig(DrawerVideosRoute.name,
+              path: 'videos', parent: DataProviderRoute.name)
         ]),
         _i2.RouteConfig('*#redirect',
             path: '*', redirectTo: 'DataProviderRoute', fullMatch: true)
@@ -175,4 +203,54 @@ class VideoDetailsRouteArgs {
   String toString() {
     return 'VideoDetailsRouteArgs{video: $video, key: $key}';
   }
+}
+
+/// generated route for
+/// [_i1.DrawerCookingPage]
+class DrawerCookingRoute extends _i2.PageRouteInfo<void> {
+  const DrawerCookingRoute() : super(DrawerCookingRoute.name, path: 'cooking');
+
+  static const String name = 'DrawerCookingRoute';
+}
+
+/// generated route for
+/// [_i1.DrawerCulturePage]
+class DrawerCultureRoute extends _i2.PageRouteInfo<void> {
+  const DrawerCultureRoute() : super(DrawerCultureRoute.name, path: 'culture');
+
+  static const String name = 'DrawerCultureRoute';
+}
+
+/// generated route for
+/// [_i1.DrawerRecipesPage]
+class DrawerRecipesRoute extends _i2.PageRouteInfo<void> {
+  const DrawerRecipesRoute() : super(DrawerRecipesRoute.name, path: 'recipes');
+
+  static const String name = 'DrawerRecipesRoute';
+}
+
+/// generated route for
+/// [_i1.DrawerRestaurantsPage]
+class DrawerRestaurantsRoute extends _i2.PageRouteInfo<void> {
+  const DrawerRestaurantsRoute()
+      : super(DrawerRestaurantsRoute.name, path: 'restaurants');
+
+  static const String name = 'DrawerRestaurantsRoute';
+}
+
+/// generated route for
+/// [_i1.DrawerShoppingPage]
+class DrawerShoppingRoute extends _i2.PageRouteInfo<void> {
+  const DrawerShoppingRoute()
+      : super(DrawerShoppingRoute.name, path: 'shopping');
+
+  static const String name = 'DrawerShoppingRoute';
+}
+
+/// generated route for
+/// [_i1.DrawerVideosPage]
+class DrawerVideosRoute extends _i2.PageRouteInfo<void> {
+  const DrawerVideosRoute() : super(DrawerVideosRoute.name, path: 'videos');
+
+  static const String name = 'DrawerVideosRoute';
 }

@@ -4,8 +4,8 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:provider/provider.dart';
 
 import '../../router/index.dart';
-import '../../style/colors.dart';
-import 'drawer/contents.dart';
+import '../../style/index.dart';
+import 'contents.dart';
 
 class DrawerWidget extends StatelessWidget {
   const DrawerWidget({Key? key}) : super(key: key);

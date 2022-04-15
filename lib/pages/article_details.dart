@@ -27,7 +27,7 @@ class ArticleDetailsPage extends StatelessWidget with DetailsContentsMixin {
         heroTag: article.heroTag,
         imageUrl: article.imageUrl,
       ),
-      if (article.products != null) const SponsorNotePaddedWidget(),
+      if (article.products != null) const PaddedSponsorTextWidget(),
       if (article.products != null && article.products!.isNotEmpty)
         ArticleDetailsProductsWidget(article.products!),
       ArticleDetailsContentsWidget(article.content),

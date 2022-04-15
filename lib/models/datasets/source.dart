@@ -6,6 +6,8 @@ import '../videos/video.dart';
 
 part 'source.g.dart';
 
+// Used by SearchPage and all drawer pages
+
 @JsonSerializable()
 // Ordering of data does NOT matter for this class.
 class DatasetSource {

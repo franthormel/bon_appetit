@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../svg_icon_button.dart';
+import '../others/svg_icon_button.dart';
 
 class DrawerFooterWidget extends StatelessWidget {
   const DrawerFooterWidget({Key? key}) : super(key: key);

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../models/index.dart';
 import '../../others/details/product_catalogue.dart';
-import '../../others/details/sponsor_note.dart';
+import '../../others/details/sponsor_text.dart';
 import '../../others/horizontal_padding.dart';
 import 'utensil.dart';
 
@@ -20,7 +20,7 @@ class RecipeDetailsUtensilsWidget extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const SponsorNoteWidget(),
+          const SponsorTextWidget(),
           const SizedBox(height: 20.0),
           DetailsProductCatalogueWidget(
             header: "What you'll need",

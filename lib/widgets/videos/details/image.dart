@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../style/colors.dart';
+import '../../../style/index.dart';
 import '../../others/cached_hero_image.dart';
 
 class VideoDetailsImageWidget extends StatelessWidget {

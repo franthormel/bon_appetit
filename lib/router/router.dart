@@ -11,32 +11,60 @@ import 'constants.dart';
       name: RouteName.initial,
       path: RoutePath.initial,
       children: <AutoRoute>[
-        CustomRoute(
+        AutoRoute(
           page: HomePage,
           name: RouteName.home,
           path: RoutePath.home,
-          transitionsBuilder: TransitionsBuilders.fadeIn,
         ),
-        CustomRoute(
+        AutoRoute(
           page: SearchPage,
           name: RouteName.search,
           path: RoutePath.search,
-          transitionsBuilder: TransitionsBuilders.fadeIn,
         ),
         AutoRoute(
           page: RecipeDetailsPage,
-          name: RouteName.recipeDetails,
-          path: RoutePath.recipeDetails,
+          name: RouteName.detailsRecipe,
+          path: RoutePath.detailsRecipe,
         ),
         AutoRoute(
           page: ArticleDetailsPage,
-          name: RouteName.articleDetails,
-          path: RoutePath.articleDetails,
+          name: RouteName.detailsArticle,
+          path: RoutePath.detailsArticle,
         ),
         AutoRoute(
           page: VideoDetailsPage,
           name: RouteName.videoDetails,
           path: RoutePath.videoDetails,
+        ),
+        AutoRoute(
+          page: DrawerCookingPage,
+          name: RouteName.drawerCooking,
+          path: RoutePath.drawerCooking,
+        ),
+        AutoRoute(
+          page: DrawerCulturePage,
+          name: RouteName.drawerCulture,
+          path: RoutePath.drawerCulture,
+        ),
+        AutoRoute(
+          page: DrawerRecipesPage,
+          name: RouteName.drawerRecipes,
+          path: RoutePath.drawerRecipes,
+        ),
+        AutoRoute(
+          page: DrawerRestaurantsPage,
+          name: RouteName.drawerRestaurants,
+          path: RoutePath.drawerRestaurants,
+        ),
+        AutoRoute(
+          page: DrawerShoppingPage,
+          name: RouteName.drawerShopping,
+          path: RoutePath.drawerShopping,
+        ),
+        AutoRoute(
+          page: DrawerVideosPage,
+          name: RouteName.drawerVideos,
+          path: RoutePath.drawerVideos,
         ),
       ],
     ),

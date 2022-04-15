@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-import '../../../services/assets_loader.dart';
-import '../../../style/theme_radley.dart';
+import '../../../services/index.dart';
+import '../../../style/index.dart';
 
-class SponsorNoteWidget extends StatelessWidget {
-  const SponsorNoteWidget({Key? key}) : super(key: key);
+class SponsorTextWidget extends StatelessWidget {
+  const SponsorTextWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

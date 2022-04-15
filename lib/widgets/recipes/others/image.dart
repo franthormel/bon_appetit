@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../models/index.dart';
-import '../../../style/colors.dart';
+import '../../../style/index.dart';
 import '../../others/cached_hero_image.dart';
 
 class RecipeImageWidget extends StatelessWidget {

@@ -6,6 +6,8 @@ import 'recipe.dart';
 
 part 'homepage.g.dart';
 
+// NOTE: Used by HomePage
+
 @JsonSerializable()
 class DatasetHomepage {
   ///  Six (6) articles are listed under

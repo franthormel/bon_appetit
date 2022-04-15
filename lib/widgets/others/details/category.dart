@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../style/colors.dart';
+import '../../../style/index.dart';
 
 class DetailsCategoryWidget extends StatelessWidget {
   final String category;

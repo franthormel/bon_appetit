@@ -8,6 +8,7 @@ class ImageAspectRatio {
   final int x;
   final int y;
 
+  /// [x] represents the width ratio while [y] represents the height ratio
   const ImageAspectRatio({required this.x, required this.y});
 
   String get text => "$x:$y";

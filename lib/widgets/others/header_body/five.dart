@@ -3,12 +3,15 @@ import 'package:flutter/material.dart';
 class HeaderBodyFiveWidget extends StatelessWidget {
   final String title;
   final String body;
-  final Color? color;
+
+  final Color? dividerColor;
+  final double? dividerEndIndent;
 
   const HeaderBodyFiveWidget({
     required this.title,
     required this.body,
-    this.color,
+    this.dividerColor,
+    this.dividerEndIndent,
     Key? key,
   }) : super(key: key);
 
@@ -18,7 +21,10 @@ class HeaderBodyFiveWidget extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(title, style: Theme.of(context).textTheme.headline5),
-        const Divider(color: Colors.transparent),
+        Divider(
+          color: dividerColor ?? Colors.transparent,
+          endIndent: dividerEndIndent,
+        ),
         Text(
           body,
           style:

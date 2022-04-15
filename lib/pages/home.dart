@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../style/colors.dart';
+import '../style/index.dart';
 import '../widgets/index.dart';
 
 class HomePage extends StatelessWidget {
@@ -14,7 +14,7 @@ class HomePage extends StatelessWidget {
         physics: const BouncingScrollPhysics(),
         itemCount: children.length,
         itemBuilder: (context, index) => children[index],
-        separatorBuilder: (context, index) => const SizedBox(height: 14.0),
+        separatorBuilder: (context, index) => const SizedBox(height: 15.0),
       ),
     );
   }

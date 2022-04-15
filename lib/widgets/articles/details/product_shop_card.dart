@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../models/index.dart';
-import '../../../style/colors.dart';
+import '../../../style/index.dart';
 
 class DetailsProductShopCardWidget extends StatelessWidget {
   final ProductShop shop;

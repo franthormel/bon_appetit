@@ -38,7 +38,7 @@ class HorizontalListRecipeContentsWidget extends StatelessWidget
         itemCount: recipes.length,
         primary: false,
         scrollDirection: Axis.horizontal,
-        separatorBuilder: (context, index) => const SizedBox(width: 18.0),
+        separatorBuilder: (context, index) => const SizedBox(width: 25.0),
       ),
     );
   }
