@@ -11,17 +11,15 @@ import 'constants.dart';
       name: RouteName.initial,
       path: RoutePath.initial,
       children: <AutoRoute>[
-        CustomRoute(
+        AutoRoute(
           page: HomePage,
           name: RouteName.home,
           path: RoutePath.home,
-          transitionsBuilder: TransitionsBuilders.fadeIn,
         ),
-        CustomRoute(
+        AutoRoute(
           page: SearchPage,
           name: RouteName.search,
           path: RoutePath.search,
-          transitionsBuilder: TransitionsBuilders.fadeIn,
         ),
         AutoRoute(
           page: RecipeDetailsPage,
@@ -38,41 +36,35 @@ import 'constants.dart';
           name: RouteName.videoDetails,
           path: RoutePath.videoDetails,
         ),
-        CustomRoute(
+        AutoRoute(
           page: DrawerCookingPage,
           name: RouteName.drawerCooking,
           path: RoutePath.drawerCooking,
-          transitionsBuilder: TransitionsBuilders.fadeIn,
         ),
-        CustomRoute(
+        AutoRoute(
           page: DrawerCulturePage,
           name: RouteName.drawerCulture,
           path: RoutePath.drawerCulture,
-          transitionsBuilder: TransitionsBuilders.fadeIn,
         ),
-        CustomRoute(
+        AutoRoute(
           page: DrawerRecipesPage,
           name: RouteName.drawerRecipes,
           path: RoutePath.drawerRecipes,
-          transitionsBuilder: TransitionsBuilders.fadeIn,
         ),
-        CustomRoute(
+        AutoRoute(
           page: DrawerRestaurantsPage,
           name: RouteName.drawerRestaurants,
           path: RoutePath.drawerRestaurants,
-          transitionsBuilder: TransitionsBuilders.fadeIn,
         ),
-        CustomRoute(
+        AutoRoute(
           page: DrawerShoppingPage,
           name: RouteName.drawerShopping,
           path: RoutePath.drawerShopping,
-          transitionsBuilder: TransitionsBuilders.fadeIn,
         ),
-        CustomRoute(
+        AutoRoute(
           page: DrawerVideosPage,
           name: RouteName.drawerVideos,
           path: RoutePath.drawerVideos,
-          transitionsBuilder: TransitionsBuilders.fadeIn,
         ),
       ],
     ),

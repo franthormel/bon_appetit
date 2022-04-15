@@ -27,20 +27,12 @@ class AppRouter extends _i2.RootStackRouter {
           routeData: routeData, child: const _i1.DataProviderPage());
     },
     HomeRoute.name: (routeData) {
-      return _i2.CustomPage<dynamic>(
-          routeData: routeData,
-          child: const _i1.HomePage(),
-          transitionsBuilder: _i2.TransitionsBuilders.fadeIn,
-          opaque: true,
-          barrierDismissible: false);
+      return _i2.MaterialPageX<dynamic>(
+          routeData: routeData, child: const _i1.HomePage());
     },
     SearchRoute.name: (routeData) {
-      return _i2.CustomPage<dynamic>(
-          routeData: routeData,
-          child: const _i1.SearchPage(),
-          transitionsBuilder: _i2.TransitionsBuilders.fadeIn,
-          opaque: true,
-          barrierDismissible: false);
+      return _i2.MaterialPageX<dynamic>(
+          routeData: routeData, child: const _i1.SearchPage());
     },
     RecipeDetailsRoute.name: (routeData) {
       final args = routeData.argsAs<RecipeDetailsRouteArgs>();
@@ -61,52 +53,28 @@ class AppRouter extends _i2.RootStackRouter {
           child: _i1.VideoDetailsPage(args.video, key: args.key));
     },
     DrawerCookingRoute.name: (routeData) {
-      return _i2.CustomPage<dynamic>(
-          routeData: routeData,
-          child: const _i1.DrawerCookingPage(),
-          transitionsBuilder: _i2.TransitionsBuilders.fadeIn,
-          opaque: true,
-          barrierDismissible: false);
+      return _i2.MaterialPageX<dynamic>(
+          routeData: routeData, child: const _i1.DrawerCookingPage());
     },
     DrawerCultureRoute.name: (routeData) {
-      return _i2.CustomPage<dynamic>(
-          routeData: routeData,
-          child: const _i1.DrawerCulturePage(),
-          transitionsBuilder: _i2.TransitionsBuilders.fadeIn,
-          opaque: true,
-          barrierDismissible: false);
+      return _i2.MaterialPageX<dynamic>(
+          routeData: routeData, child: const _i1.DrawerCulturePage());
     },
     DrawerRecipesRoute.name: (routeData) {
-      return _i2.CustomPage<dynamic>(
-          routeData: routeData,
-          child: const _i1.DrawerRecipesPage(),
-          transitionsBuilder: _i2.TransitionsBuilders.fadeIn,
-          opaque: true,
-          barrierDismissible: false);
+      return _i2.MaterialPageX<dynamic>(
+          routeData: routeData, child: const _i1.DrawerRecipesPage());
     },
     DrawerRestaurantsRoute.name: (routeData) {
-      return _i2.CustomPage<dynamic>(
-          routeData: routeData,
-          child: const _i1.DrawerRestaurantsPage(),
-          transitionsBuilder: _i2.TransitionsBuilders.fadeIn,
-          opaque: true,
-          barrierDismissible: false);
+      return _i2.MaterialPageX<dynamic>(
+          routeData: routeData, child: const _i1.DrawerRestaurantsPage());
     },
     DrawerShoppingRoute.name: (routeData) {
-      return _i2.CustomPage<dynamic>(
-          routeData: routeData,
-          child: const _i1.DrawerShoppingPage(),
-          transitionsBuilder: _i2.TransitionsBuilders.fadeIn,
-          opaque: true,
-          barrierDismissible: false);
+      return _i2.MaterialPageX<dynamic>(
+          routeData: routeData, child: const _i1.DrawerShoppingPage());
     },
     DrawerVideosRoute.name: (routeData) {
-      return _i2.CustomPage<dynamic>(
-          routeData: routeData,
-          child: const _i1.DrawerVideosPage(),
-          transitionsBuilder: _i2.TransitionsBuilders.fadeIn,
-          opaque: true,
-          barrierDismissible: false);
+      return _i2.MaterialPageX<dynamic>(
+          routeData: routeData, child: const _i1.DrawerVideosPage());
     }
   };
 
