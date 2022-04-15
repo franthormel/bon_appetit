@@ -14,7 +14,6 @@ class DrawerPageRecipeImageWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: Apply this to all other images with aspect ratios in their url
     return ClipRect(
       child: Align(
         alignment: Alignment.center,
