@@ -8,6 +8,8 @@ class SearchPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final numbers = List.generate(40, (<int>(int i) => i));
+
     return Scaffold(
       appBar: AppBar(
         title: const Text("Search"),
@@ -19,12 +21,31 @@ class SearchPage extends StatelessWidget {
       ),
       body: Container(
         color: BonAppetitColors.cultured,
-        padding: const EdgeInsets.only(top: 16.0, left: 16.0, right: 16.0),
         child: Column(
-          children: const [
-            SearchPageTextFieldWidget(),
-            SearchPageCountWidget(),
-            SearchPageListWidget(),
+          children: [
+            Container(
+              color: BonAppetitColors.white,
+              padding: const EdgeInsets.all(16.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: const [
+                  TextField(),
+                  SizedBox(height: 8.0),
+                  Text("10,000 matching results"),
+                ],
+              ),
+            ),
+            Expanded(
+              child: Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: ListView.separated(
+                  itemBuilder: (context, index) => Text("${numbers[index]}"),
+                  itemCount: numbers.length,
+                  separatorBuilder: (context, index) =>
+                      const SizedBox(height: 15.0),
+                ),
+              ),
+            )
           ],
         ),
       ),
