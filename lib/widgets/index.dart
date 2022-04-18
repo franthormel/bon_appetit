@@ -34,6 +34,7 @@ export 'recipes/main.dart';
 export 'recipes/suggested.dart';
 export 'recipes/trending.dart';
 export 'search/filters.dart';
+export 'search/results_controls.dart';
 export 'search/results_count.dart';
 export 'search/results_list.dart';
 export 'search/show_by_type.dart';

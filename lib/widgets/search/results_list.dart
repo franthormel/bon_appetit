@@ -5,6 +5,12 @@ class SearchPageResultsListWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Expanded(
+      child: ListView(
+        children: List.generate(40, <int>(i) => i)
+            .map<Widget>((i) => Text("$i"))
+            .toList(),
+      ),
+    );
   }
 }
