@@ -16,4 +16,5 @@ export 'recipes/recipe.dart';
 export 'recipes/review.dart';
 export 'recipes/time.dart';
 export 'recipes/utensil.dart';
+export 'search/enums.dart';
 export 'videos/video.dart';

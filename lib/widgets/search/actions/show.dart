@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 
-class SearchPageShowByTypeWidget extends StatelessWidget {
-  const SearchPageShowByTypeWidget({Key? key}) : super(key: key);
+class SearchPageActionShowWidget extends StatelessWidget {
+  const SearchPageActionShowWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    // TODO: Show options as dropdown menu
     return IconButton(
       tooltip: "Show results by type",
       icon: const Icon(Icons.filter_list_alt),
