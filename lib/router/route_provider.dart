@@ -7,8 +7,10 @@ class RouteProvider extends ChangeNotifier {
   List<PageRouteInfo> _pageRoutes = [const HomeRoute()];
 
   void change(PageRouteInfo pageRouteInfo) {
-    _pageRoutes = [pageRouteInfo];
-    notifyListeners();
+    if (!_pageRoutes.contains(pageRouteInfo)) {
+      _pageRoutes = [pageRouteInfo];
+      notifyListeners();
+    }
   }
 
   void pop() {

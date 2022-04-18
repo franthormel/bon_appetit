@@ -5,6 +5,10 @@ class SearchPageShowByTypeWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Text("Show by");
+    return IconButton(
+      tooltip: "Show results by type",
+      icon: const Icon(Icons.filter_list_alt),
+      onPressed: () {},
+    );
   }
 }
