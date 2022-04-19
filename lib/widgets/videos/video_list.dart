@@ -30,11 +30,10 @@ class VideoListWidget extends StatelessWidget {
             height: 300.0,
             child: ListView.separated(
               itemCount: dataset.videos.length,
-              itemBuilder: (context, index) =>
-                  VideoEntryWidget(dataset.videos[index]),
+              itemBuilder: (context, i) => VideoEntryWidget(dataset.videos[i]),
               primary: false,
               scrollDirection: Axis.horizontal,
-              separatorBuilder: (context, index) => const SizedBox(width: 18.0),
+              separatorBuilder: (context, i) => const SizedBox(width: 18.0),
             ),
           ),
           const Divider(color: Colors.transparent),

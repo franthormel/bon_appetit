@@ -27,8 +27,8 @@ class HorizontalListRecipeContentsWidget extends StatelessWidget
       height: 400.0,
       child: ListView.separated(
         controller: filter.scrollController,
-        itemBuilder: (context, index) {
-          final recipe = recipes[index];
+        itemBuilder: (context, i) {
+          final recipe = recipes[i];
 
           return PageRoutePusherWidget(
             route: RecipeDetailsRoute(recipe: recipe),
@@ -38,7 +38,7 @@ class HorizontalListRecipeContentsWidget extends StatelessWidget
         itemCount: recipes.length,
         primary: false,
         scrollDirection: Axis.horizontal,
-        separatorBuilder: (context, index) => const SizedBox(width: 25.0),
+        separatorBuilder: (context, i) => const SizedBox(width: 25.0),
       ),
     );
   }

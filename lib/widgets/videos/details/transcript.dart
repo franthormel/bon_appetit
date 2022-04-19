@@ -26,9 +26,9 @@ class VideoDetailsTranscriptWidget extends StatelessWidget {
         ),
         child: ListView.separated(
           itemCount: lines.length,
-          itemBuilder: (context, index) => Text(lines[index]),
+          itemBuilder: (context, i) => Text(lines[i]),
           primary: false,
-          separatorBuilder: (context, index) => const SizedBox(height: 5.0),
+          separatorBuilder: (context, i) => const SizedBox(height: 5.0),
           shrinkWrap: true,
         ),
       ),

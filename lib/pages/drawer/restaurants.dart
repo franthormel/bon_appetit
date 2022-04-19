@@ -12,7 +12,7 @@ class DrawerRestaurantsPage extends StatelessWidget
     final articles = fetchByCategory(context, category: "restaurants");
 
     return DrawerPageWidget(
-      builder: (context, index) => DrawerPageArticleWidget(articles[index]),
+      builder: (context, i) => DrawerPageArticleWidget(articles[i]),
       count: articles.length,
       title: "Restaurants",
     );

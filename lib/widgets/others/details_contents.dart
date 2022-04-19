@@ -27,9 +27,9 @@ class DetailsContentsWidget extends StatelessWidget {
         body: Center(
           child: ListView.separated(
             padding: padding ?? const EdgeInsets.symmetric(vertical: 21.0),
-            itemBuilder: (context, index) => children[index],
+            itemBuilder: (context, i) => children[i],
             itemCount: children.length,
-            separatorBuilder: (context, index) => const SizedBox(height: 25.0),
+            separatorBuilder: (context, i) => const SizedBox(height: 25.0),
           ),
         ),
       ),

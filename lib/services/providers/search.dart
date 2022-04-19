@@ -48,6 +48,13 @@ class SearchProvider extends ChangeNotifier {
 
   String get searchSortBy => _searchSortBy.toLiteralValue();
 
-// TODO: Search results
+  List<SearchResult> fetchResults(DatasetSource source) {
+    final results = <SearchResult>[];
 
+    // TODO: Search results
+    // TODO: Create holder variable
+    // TODO: Get number of results from provider
+
+    return results;
+  }
 }

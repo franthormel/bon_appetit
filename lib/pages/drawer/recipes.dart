@@ -12,7 +12,7 @@ class DrawerRecipesPage extends StatelessWidget {
     final recipes = Provider.of<DatasetSource>(context, listen: false).recipes;
 
     return DrawerPageWidget(
-      builder: (context, index) => DrawerPageRecipeWidget(recipes[index]),
+      builder: (context, i) => DrawerPageRecipeWidget(recipes[i]),
       count: recipes.length,
       title: "Recipes",
     );

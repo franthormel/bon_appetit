@@ -1,11 +1,12 @@
-import 'enums.dart';
 import '../recipes/rating.dart';
+import 'enums.dart';
 
 class SearchResult {
   final String category;
   final String description;
   final String imageUrl;
   final SearchCategory searchCategory;
+  final String title;
 
   // TODO: ADd the actual recipe, article or video data here? (dynamic type just cast it)
   /// If [searchCategory] is set to [SearchCategory.recipes] this should have a value.
@@ -16,6 +17,7 @@ class SearchResult {
     required this.description,
     required this.imageUrl,
     required this.searchCategory,
+    required this.title,
     this.rating,
   });
 }

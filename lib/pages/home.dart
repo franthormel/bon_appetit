@@ -13,8 +13,8 @@ class HomePage extends StatelessWidget {
       child: ListView.separated(
         physics: const BouncingScrollPhysics(),
         itemCount: children.length,
-        itemBuilder: (context, index) => children[index],
-        separatorBuilder: (context, index) => const SizedBox(height: 15.0),
+        itemBuilder: (context, i) => children[i],
+        separatorBuilder: (context, i) => const SizedBox(height: 15.0),
       ),
     );
   }

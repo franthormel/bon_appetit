@@ -24,8 +24,8 @@ class RecipeDetailsUtensilsWidget extends StatelessWidget {
           const SizedBox(height: 20.0),
           DetailsProductCatalogueWidget(
             header: "What you'll need",
-            itemBuilder: (context, index) =>
-                RecipeDetailsUtensilWidget(utensils[index]),
+            itemBuilder: (context, i) =>
+                RecipeDetailsUtensilWidget(utensils[i]),
             itemCount: utensils.length,
           ),
         ],

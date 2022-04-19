@@ -12,7 +12,7 @@ class DrawerVideosPage extends StatelessWidget {
     final videos = Provider.of<DatasetSource>(context, listen: false).videos;
 
     return DrawerPageWidget(
-      builder: (context, index) => DrawerPageVideoWidget(videos[index]),
+      builder: (context, i) => DrawerPageVideoWidget(videos[i]),
       count: videos.length,
       title: "Videos",
     );

@@ -29,7 +29,7 @@ class _SearchPageTextFieldWidgetState extends State<SearchPageTextFieldWidget> {
 
   @override
   Widget build(BuildContext context) {
-    final searchProvider = Provider.of<SearchProvider>(context, listen: false);
+    final search = Provider.of<SearchProvider>(context, listen: false);
 
     // TODO: Change active color to black (focusBorder)
     return Container(
@@ -39,6 +39,7 @@ class _SearchPageTextFieldWidgetState extends State<SearchPageTextFieldWidget> {
         controller: controller,
         decoration: InputDecoration(
           border: const OutlineInputBorder(),
+          focusColor: BonAppetitColors.black,
           helperStyle: Theme.of(context)
               .textTheme
               .caption
@@ -56,7 +57,7 @@ class _SearchPageTextFieldWidgetState extends State<SearchPageTextFieldWidget> {
                   color: BonAppetitColors.black,
                   icon: const Icon(Icons.clear),
                   onPressed: () {
-                    searchProvider.clearText();
+                    search.clearText();
                     controller.clear();
                   },
                 )
@@ -64,7 +65,7 @@ class _SearchPageTextFieldWidgetState extends State<SearchPageTextFieldWidget> {
         ),
         onChanged: (text) {
           setState(() {
-            searchProvider.changeText(text);
+            search.changeText(text);
           });
         },
       ),
