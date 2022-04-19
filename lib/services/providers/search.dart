@@ -49,4 +49,5 @@ class SearchProvider extends ChangeNotifier {
   String get searchSortBy => _searchSortBy.toLiteralValue();
 
 // TODO: Search results
+
 }

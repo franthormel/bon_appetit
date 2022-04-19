@@ -37,6 +37,7 @@ export 'search/actions/filter.dart';
 export 'search/actions/show.dart';
 export 'search/actions/sort.dart';
 export 'search/text_field.dart';
+export 'search/list.dart';
 export 'videos/details/about.dart';
 export 'videos/details/credits.dart';
 export 'videos/details/image.dart';

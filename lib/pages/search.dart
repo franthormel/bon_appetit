@@ -31,15 +31,9 @@ class SearchPage extends StatelessWidget {
         body: Container(
           color: BonAppetitColors.cultured,
           child: Column(
-            children: [
-              const SearchPageTextFieldWidget(),
-              // TODO: Separate widget to another file
-              Expanded(
-                child: Padding(
-                  padding: const EdgeInsets.all(16.0),
-                  child: Container(),
-                ),
-              ),
+            children: const [
+              SearchPageTextFieldWidget(),
+              SearchPageListWidget(),
             ],
           ),
         ),
