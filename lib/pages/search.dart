@@ -12,14 +12,7 @@ class SearchPage extends StatelessWidget {
     return ChangeNotifierProvider(
       create: (context) => SearchProvider(),
       child: Scaffold(
-        appBar: AppBar(
-          actions: const [
-            SearchPageActionShowWidget(),
-            SearchPageActionFilterWidget(),
-            SearchPageActionSortWidget(),
-          ],
-          title: const Text("Search"),
-        ),
+        appBar: AppBar(title: const Text("Search")),
         body: const SearchPageContentWidget(),
       ),
     );

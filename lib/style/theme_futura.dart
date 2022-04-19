@@ -35,6 +35,14 @@ class BonAppetitThemeFutura {
         linearTrackColor: BonAppetitColors.mediumChampagne,
         refreshBackgroundColor: BonAppetitColors.dimGray,
       ),
+      textButtonTheme: TextButtonThemeData(
+        style: ButtonStyle(
+          foregroundColor:
+              MaterialStateProperty.all<Color>(BonAppetitColors.black),
+          backgroundColor:
+              MaterialStateProperty.all<Color>(BonAppetitColors.gainsboro),
+        ),
+      ),
       textTheme: _textTheme,
     );
   }

@@ -7,10 +7,13 @@ class SearchPageActionFilterWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     // TODO: Show as fullscreen bottom sheet with close icon button at upper right
     // https://fidev.io/full-screen-dialog/
-    return IconButton(
-      tooltip: "Filter results",
-      icon: const Icon(Icons.tune),
-      onPressed: () {},
+    return Padding(
+      padding: const EdgeInsets.only(right: 8.0),
+      child: TextButton.icon(
+        label: Text("FILTERS", style: Theme.of(context).textTheme.caption),
+        icon: const Icon(Icons.tune),
+        onPressed: () {},
+      ),
     );
   }
 }

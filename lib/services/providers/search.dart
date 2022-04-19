@@ -62,8 +62,8 @@ class SearchProvider extends ChangeNotifier {
   List<SearchResult> fetchResults(DatasetSource source) {
 
     // TODO: Search results
-    // TODO: Create holder variable
-    // TODO: Get number of results from provider
+    // 1. Type of result
+    // 2. Search text
 
     return _searchResults;
   }

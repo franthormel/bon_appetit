@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 
 import '../../../services/index.dart';
 import '../../../style/index.dart';
+import 'actions/filter.dart';
 
 class SearchPageTextFieldWidget extends StatefulWidget {
   const SearchPageTextFieldWidget({Key? key}) : super(key: key);
@@ -52,16 +53,7 @@ class _SearchPageTextFieldWidgetState extends State<SearchPageTextFieldWidget> {
             icon: const Icon(Icons.search),
             onPressed: () {},
           ),
-          suffixIcon: controller.text.isNotEmpty
-              ? IconButton(
-                  color: BonAppetitColors.black,
-                  icon: const Icon(Icons.clear),
-                  onPressed: () {
-                    search.clearText();
-                    controller.clear();
-                  },
-                )
-              : null,
+          suffixIcon: const SearchPageActionFilterWidget(),
         ),
         onChanged: (text) {
           setState(() {
