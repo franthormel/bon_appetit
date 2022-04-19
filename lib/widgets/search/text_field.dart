@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 
 import '../../../services/index.dart';
 import '../../../style/index.dart';
+import '../../../models/index.dart';
 
 class SearchPageTextFieldWidget extends StatefulWidget {
   const SearchPageTextFieldWidget({Key? key}) : super(key: key);
@@ -29,7 +30,9 @@ class _SearchPageTextFieldWidgetState extends State<SearchPageTextFieldWidget> {
 
   @override
   Widget build(BuildContext context) {
-    final provider = Provider.of<SearchProvider>(context);
+    final searchProvider = Provider.of<SearchProvider>(context, listen: false);
+    final sourceProvider = Provider.of<DatasetSource>(context, listen: false);
+
     // TODO: Change active color to black (focusBorder)
     return Container(
       color: BonAppetitColors.white,
@@ -55,14 +58,16 @@ class _SearchPageTextFieldWidgetState extends State<SearchPageTextFieldWidget> {
                   color: BonAppetitColors.black,
                   icon: const Icon(Icons.clear),
                   onPressed: () {
-                    provider.clearText();
+                    searchProvider.clearText();
                     controller.clear();
                   },
                 )
               : null,
         ),
         onChanged: (text) {
-          provider.changeText(text);
+          setState(() {
+            searchProvider.changeText(text);
+          });
         },
       ),
     );
