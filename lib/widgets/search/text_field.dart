@@ -31,7 +31,6 @@ class _SearchPageTextFieldWidgetState extends State<SearchPageTextFieldWidget> {
   Widget build(BuildContext context) {
     final search = Provider.of<SearchProvider>(context, listen: false);
 
-    // TODO: Change active color to black (focusBorder)
     return Container(
       color: BonAppetitColors.white,
       padding: const EdgeInsets.all(16.0),
@@ -39,13 +38,14 @@ class _SearchPageTextFieldWidgetState extends State<SearchPageTextFieldWidget> {
         controller: controller,
         decoration: InputDecoration(
           border: const OutlineInputBorder(),
-          focusColor: BonAppetitColors.black,
+          focusedBorder: const OutlineInputBorder(
+            borderSide: BorderSide(color: Colors.black, width: 1.5),
+          ),
           helperStyle: Theme.of(context)
               .textTheme
               .caption
               ?.copyWith(fontWeight: FontWeight.w400, letterSpacing: 0.4),
-          helperText: "10,000 matching results",
-          // TODO: Get number of results from provider
+          helperText: search.resultsLengthText,
           hintText: "Find a Recipe",
           prefixIcon: IconButton(
             color: BonAppetitColors.black,

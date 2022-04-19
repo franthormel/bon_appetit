@@ -12,6 +12,9 @@ class SearchProvider extends ChangeNotifier {
   // Order used when filtering results
   SearchSortBy _searchSortBy = SearchSortBy.relevance;
 
+  // Search results cache
+  final _searchResults = <SearchResult>[];
+
   void changeShowType(SearchCategory value) {
     _searchCategory = value;
     notifyListeners();
@@ -48,13 +51,21 @@ class SearchProvider extends ChangeNotifier {
 
   String get searchSortBy => _searchSortBy.toLiteralValue();
 
+  String get resultsLengthText {
+    if(_searchResults.isEmpty){
+      return "No matching results";
+    }
+
+    return "${_searchResults.length} matching results";
+  }
+
   List<SearchResult> fetchResults(DatasetSource source) {
-    final results = <SearchResult>[];
 
     // TODO: Search results
     // TODO: Create holder variable
     // TODO: Get number of results from provider
 
-    return results;
+    return _searchResults;
   }
+
 }

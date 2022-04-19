@@ -18,6 +18,7 @@ class SearchPage extends StatelessWidget {
             SearchPageActionFilterWidget(),
             SearchPageActionSortWidget(),
           ],
+          title: const Text("Search"),
         ),
         body: const SearchPageContentWidget(),
       ),
