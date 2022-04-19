@@ -7,13 +7,13 @@ class SearchProvider extends ChangeNotifier {
   String _text = "";
 
   // Type used when filter results
-  SearchShow _searchShow = SearchShow.recipes;
+  SearchCategory _searchCategory = SearchCategory.recipes;
 
   // Order used when filtering results
   SearchSortBy _searchSortBy = SearchSortBy.relevance;
 
-  void changeShowType(SearchShow value) {
-    _searchShow = value;
+  void changeShowType(SearchCategory value) {
+    _searchCategory = value;
     notifyListeners();
   }
 
@@ -33,7 +33,7 @@ class SearchProvider extends ChangeNotifier {
   }
 
   void resetShowType() {
-    _searchShow = SearchShow.recipes;
+    _searchCategory = SearchCategory.recipes;
     notifyListeners();
   }
 
@@ -44,7 +44,7 @@ class SearchProvider extends ChangeNotifier {
 
   String get text => _text;
 
-  String get searchShow => _searchShow.toLiteralValue();
+  String get searchShow => _searchCategory.toLiteralValue();
 
   String get searchSortBy => _searchSortBy.toLiteralValue();
 

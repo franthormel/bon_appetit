@@ -1,4 +1,4 @@
-enum SearchShow {
+enum SearchCategory {
   allContent,
   recipes,
   articles,
@@ -12,9 +12,9 @@ enum SearchSortBy {
   mostReviewed,
 }
 
-extension SearchShowTypeStringer on SearchShow {
+extension SearchCategoryStringer on SearchCategory {
   String toLiteralValue() {
-    if (this == SearchShow.allContent) {
+    if (this == SearchCategory.allContent) {
       return "All Content";
     }
 
@@ -22,7 +22,7 @@ extension SearchShowTypeStringer on SearchShow {
   }
 }
 
-extension SearchSortByTypeStringer on SearchSortBy {
+extension SearchSortByStringer on SearchSortBy {
   String toLiteralValue() {
     if (this == SearchSortBy.highestRated) {
       return "Highest Rated";
