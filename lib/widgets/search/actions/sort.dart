@@ -21,11 +21,12 @@ class SearchPageActionSortWidget extends StatelessWidget {
         ),
         itemBuilder: (context) => SearchSortBy.values
             .map<PopupMenuEntry<SearchSortBy>>((e) =>
-                PopupMenuItem<SearchSortBy>(
-                    value: e, child: Text(e.toLiteralValue())))
+            PopupMenuItem<SearchSortBy>(
+                value: e, child: Text(e.toLiteralValue())))
             .toList(),
         onSelected: provider.changeSortByType,
       ),
     );
+
   }
 }

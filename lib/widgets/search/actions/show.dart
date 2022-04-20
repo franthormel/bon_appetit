@@ -1,18 +1,30 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+
+import '../../../models/index.dart';
+import '../../../services/index.dart';
+import 'others/control_menu_icon.dart';
 
 class SearchPageActionShowWidget extends StatelessWidget {
   const SearchPageActionShowWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    // TODO: Show options as dropdown menu
-    // TODO: Change to drop down with text
+    final provider = Provider.of<SearchProvider>(context);
+
     return Padding(
-      padding: const EdgeInsets.only(left: 8.0),
-      child: IconButton(
-        tooltip: "Show results by type",
-        icon: const Icon(Icons.filter_list_alt),
-        onPressed: () {},
+      padding: const EdgeInsets.only(left: 16.0),
+      child: PopupMenuButton<SearchCategory>(
+        child: SearchPageActionControlMenuIconWidget(
+          value: provider.searchShow,
+          title: "SHOW",
+        ),
+        itemBuilder: (context) => SearchCategory.values
+            .map<PopupMenuEntry<SearchCategory>>((e) =>
+            PopupMenuItem<SearchCategory>(
+                value: e, child: Text(e.toLiteralValue())))
+            .toList(),
+        onSelected: provider.changeShowType,
       ),
     );
   }

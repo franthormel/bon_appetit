@@ -12,6 +12,7 @@ class SearchPageControlsWidget extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
+        const SizedBox(height: 16.0),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: const [
@@ -19,6 +20,7 @@ class SearchPageControlsWidget extends StatelessWidget {
             SearchPageActionSortWidget(),
           ],
         ),
+        const SizedBox(height: 16.0),
         const SearchPageResultsCountWidget(),
       ],
     );
