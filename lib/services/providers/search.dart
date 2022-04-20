@@ -1,3 +1,5 @@
+import 'dart:collection';
+
 import 'package:flutter/material.dart';
 
 import '../../models/index.dart';
@@ -19,49 +21,38 @@ class SearchProvider extends ChangeNotifier {
 
   SearchProvider(this._source);
 
-  // TODO: Trigger a refresh filter when value is changed
   void changeShowType(SearchCategory value) {
     _searchCategory = value;
-    notifyListeners();
+    refreshSearchResults();
   }
 
-// TODO: Trigger a refresh filter when value is changed
   void changeSortByType(SearchSortBy value) {
     _searchSortBy = value;
-    notifyListeners();
+    refreshSearchResults();
   }
 
 // TODO: Trigger a refresh filter when value is changed
   void changeText(String value) {
     _text = value;
     notifyListeners();
-    print(value);
   }
 
   void refreshSearchResults() {
     final results = _filterResults();
     _replaceCacheWithResults(results);
     notifyListeners();
-    print("Refreshed");
   }
 
-  List<SearchResult> get searchResults {
-    print(_searchResults.length);
-    return _searchResults;
-  }
+  UnmodifiableListView<SearchResult> get searchResults =>
+      UnmodifiableListView(_searchResults);
 
-  // TODO: Make this into a number
-  String get resultsLengthText {
-    if (_searchResults.isEmpty) {
-      return "No matching results";
-    }
-
-    return "${_searchResults.length} matching results";
-  }
+  int get resultsLength => _searchResults.length;
 
   SearchCategory get searchShow => _searchCategory;
 
   SearchSortBy get searchSortBy => _searchSortBy;
+
+  String get searchText => _text;
 
   /// Returns the filtered dataset based on [searchCategory]'s value.
   List<SearchResult> _filterResults() {
@@ -132,10 +123,12 @@ class SearchProvider extends ChangeNotifier {
     return [];
   }
 
-  /// Replaces [_searchResults] with the [results] param if [results] is not empty.
+  /// Replaces [_searchResults] with the [results] param.
   void _replaceCacheWithResults(List<SearchResult> results) {
+    _searchResults.clear();
+
     if (results.isNotEmpty) {
-      _searchResults.replaceRange(0, _searchResults.length, results);
+      _searchResults.addAll(results);
     }
   }
 }
