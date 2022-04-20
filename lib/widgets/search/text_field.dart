@@ -5,31 +5,12 @@ import '../../../services/index.dart';
 import '../../../style/index.dart';
 import 'actions/filter.dart';
 
-class SearchPageTextFieldWidget extends StatefulWidget {
+class SearchPageTextFieldWidget extends StatelessWidget {
   const SearchPageTextFieldWidget({Key? key}) : super(key: key);
 
   @override
-  State<SearchPageTextFieldWidget> createState() =>
-      _SearchPageTextFieldWidgetState();
-}
-
-class _SearchPageTextFieldWidgetState extends State<SearchPageTextFieldWidget> {
-  late final TextEditingController _controller;
-
-  @override
-  void initState() {
-    super.initState();
-    _controller = TextEditingController();
-  }
-
-  @override
-  void dispose() {
-    super.dispose();
-    _controller.dispose();
-  }
-
-  @override
   Widget build(BuildContext context) {
+    final _controller = TextEditingController();
     final provider = Provider.of<SearchProvider>(context, listen: false);
 
     return Container(
@@ -46,21 +27,15 @@ class _SearchPageTextFieldWidgetState extends State<SearchPageTextFieldWidget> {
           prefixIcon: IconButton(
             color: BonAppetitColors.black,
             icon: const Icon(Icons.search),
-            onPressed: () {
-              provider.refreshSearchResults();
-            },
+            onPressed: provider.refreshSearchResults,
           ),
           suffixIcon: const SearchPageActionFilterWidget(),
         ),
+        textInputAction: TextInputAction.search,
         onSubmitted: (text) {
           provider.refreshSearchResults();
         },
-        onChanged: (text) {
-          // TODO: Do we really need to call setState?
-          setState(() {
-            provider.changeText(text);
-          });
-        },
+        onChanged: provider.changeText,
       ),
 
       // TODO: Add wrapped filters here as squared chips

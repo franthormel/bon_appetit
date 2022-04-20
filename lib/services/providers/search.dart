@@ -35,17 +35,18 @@ class SearchProvider extends ChangeNotifier {
   void changeText(String value) {
     _text = value;
     notifyListeners();
+    print(value);
   }
 
   void refreshSearchResults() {
     final results = _filterResults();
-
     _replaceCacheWithResults(results);
+    notifyListeners();
+    print("Refreshed");
   }
 
   List<SearchResult> get searchResults {
     print(_searchResults.length);
-
     return _searchResults;
   }
 
