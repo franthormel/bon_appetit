@@ -2,55 +2,50 @@ import 'package:flutter/material.dart';
 
 import '../../models/index.dart';
 
-// TODO: Provide DatasetSource during creation (on constructor)
 class SearchProvider extends ChangeNotifier {
-  // Primarily derived from TextEditingController
+  final DatasetSource _source;
+
+  // Derived and controlled by a TextEditingController
   String _text = "";
 
-  // Type used when filter results
+  // Category used when showing results
   SearchCategory _searchCategory = SearchCategory.recipes;
 
-  // Order used when filtering results
+  // Order used when sorting results
   SearchSortBy _searchSortBy = SearchSortBy.relevance;
 
-  // Search results cache
+  // Cache for search results
   final _searchResults = <SearchResult>[];
 
+  SearchProvider(this._source);
+
+  // TODO: Trigger a refresh filter when value is changed
   void changeShowType(SearchCategory value) {
     _searchCategory = value;
     notifyListeners();
   }
 
+// TODO: Trigger a refresh filter when value is changed
   void changeSortByType(SearchSortBy value) {
     _searchSortBy = value;
     notifyListeners();
   }
 
+// TODO: Trigger a refresh filter when value is changed
   void changeText(String value) {
     _text = value;
     notifyListeners();
   }
 
-  void clearText() {
-    _text = "";
+  List<SearchResult> fetchResults() {
+    final results = _filterResults();
+
+    _replaceCacheWithResults(results);
+
     notifyListeners();
+
+    return _searchResults;
   }
-
-  void resetShowType() {
-    _searchCategory = SearchCategory.recipes;
-    notifyListeners();
-  }
-
-  void resetSortByType() {
-    _searchSortBy = SearchSortBy.relevance;
-    notifyListeners();
-  }
-
-  String get text => _text;
-
-  String get searchShow => _searchCategory.toLiteralValue();
-
-  String get searchSortBy => _searchSortBy.toLiteralValue();
 
   // TODO: Make this into a number
   String get resultsLengthText {
@@ -61,56 +56,69 @@ class SearchProvider extends ChangeNotifier {
     return "${_searchResults.length} matching results";
   }
 
-  // TODO: Search results
-  List<SearchResult> fetchResults(DatasetSource source) {
-    if (_searchCategory == SearchCategory.recipes) {
-      _replaceResults(_filterRecipes(source));
-    } else if (_searchCategory == SearchCategory.articles) {
-      _replaceResults(_filterArticles(source));
-    } else if (_searchCategory == SearchCategory.videos) {
-      _replaceResults(_filterVideos(source));
+  String get searchShow => _searchCategory.toLiteralValue();
+
+  String get searchSortBy => _searchSortBy.toLiteralValue();
+
+  /// Returns the filtered dataset based on [searchCategory]'s value.
+  List<SearchResult> _filterResults() {
+    List<SearchResult> results = [];
+
+    switch (_searchCategory) {
+      case SearchCategory.recipes:
+        results = _filterSourceRecipes();
+        break;
+      case SearchCategory.articles:
+        results = _filterSourceArticles();
+        break;
+      case SearchCategory.videos:
+        results = _filterSourceVideos();
+        break;
+      case SearchCategory.allContent:
+        // NOTE: Precedence here matters. I placed recipes first because it is the most
+        // important thing to the user, then the articles, finally with the videos.
+        results = [
+          ..._filterSourceRecipes(),
+          ..._filterSourceArticles(),
+          ..._filterSourceVideos(),
+        ];
+        break;
     }
 
-    print("Text: $_text");
-    print(_searchResults.length);
-
-    return _searchResults;
+    return results;
   }
 
-  void _replaceResults(List<SearchResult>? results) {
-    if (results != null && results.isNotEmpty) {
-      _searchResults.replaceRange(0, _searchResults.length, results);
-    }
-  }
-
-  List<SearchResult>? _filterRecipes(DatasetSource source) {
+  /// Returns the article(s) [SearchResult] from the dataset source with title(s) contains the [_text] value.
+  List<SearchResult> _filterSourceArticles() {
     return _mapResults(
-      source.recipes.where((e) {
-        return e.title.toLowerCase().contains(_text.toLowerCase());
-      }),
-      SearchCategory.recipes.toLiteralValue(),
-    );
-  }
-
-  List<SearchResult>? _filterArticles(DatasetSource source) {
-    return _mapResults(
-      source.articles.where((e) {
+      _source.articles.where((e) {
         return e.title.toLowerCase().contains(_text.toLowerCase());
       }),
       SearchCategory.articles.toLiteralValue(),
     );
   }
 
-  List<SearchResult>? _filterVideos(DatasetSource source) {
+  /// Returns the recipe(s) [SearchResult] from the dataset source with title(s) contains the [_text] value.
+  List<SearchResult> _filterSourceRecipes() {
     return _mapResults(
-      source.videos.where((e) {
+      _source.recipes.where((e) {
+        return e.title.toLowerCase().contains(_text.toLowerCase());
+      }),
+      SearchCategory.recipes.toString(),
+    );
+  }
+
+  /// Returns the video(s) [SearchResult] from the dataset source with title(s) contains the [_text] value.
+  List<SearchResult> _filterSourceVideos() {
+    return _mapResults(
+      _source.videos.where((e) {
         return e.title.toLowerCase().contains(_text.toLowerCase());
       }),
       SearchCategory.videos.toLiteralValue(),
     );
   }
 
-  List<SearchResult>? _mapResults(Iterable values, String category) {
+  List<SearchResult> _mapResults(Iterable values, String category) {
     if (values.isNotEmpty) {
       return values
           .map<SearchResult>(
@@ -118,6 +126,13 @@ class SearchProvider extends ChangeNotifier {
           .toList();
     }
 
-    return null;
+    return [];
+  }
+
+  /// Replaces [_searchResults] with the [results] param if [results] is not empty.
+  void _replaceCacheWithResults(List<SearchResult> results) {
+    if (results.isNotEmpty) {
+      _searchResults.replaceRange(0, _searchResults.length, results);
+    }
   }
 }

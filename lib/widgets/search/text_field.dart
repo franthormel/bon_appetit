@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import '../../../models/index.dart';
 import '../../../services/index.dart';
 import '../../../style/index.dart';
 import 'actions/filter.dart';
@@ -9,11 +8,11 @@ import 'actions/filter.dart';
 class SearchPageTextFieldWidget extends StatelessWidget {
   const SearchPageTextFieldWidget({Key? key}) : super(key: key);
 
+  // TODO: FIx
   @override
   Widget build(BuildContext context) {
     final controller = TextEditingController();
     final provider = Provider.of<SearchProvider>(context);
-    final source = Provider.of<DatasetSource>(context, listen: false);
 
     return Container(
       color: BonAppetitColors.white,
@@ -29,14 +28,12 @@ class SearchPageTextFieldWidget extends StatelessWidget {
           prefixIcon: IconButton(
             color: BonAppetitColors.black,
             icon: const Icon(Icons.search),
-            onPressed: () {
-              provider.fetchResults(source);
-            },
+            onPressed: provider.fetchResults,
           ),
           suffixIcon: const SearchPageActionFilterWidget(),
         ),
         onSubmitted: (text) {
-          provider.fetchResults(source);
+          provider.fetchResults();
         },
         onChanged: (text) {
           provider.changeText(text);

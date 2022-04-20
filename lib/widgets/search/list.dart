@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import '../../../models/index.dart';
 import '../../../services/index.dart';
 
 class SearchPageListWidget extends StatelessWidget {
@@ -10,8 +9,7 @@ class SearchPageListWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final search = Provider.of<SearchProvider>(context, listen: false);
-    final source = Provider.of<DatasetSource>(context, listen: false);
-    final results = search.fetchResults(source);
+    final results = search.fetchResults();
 
     return Expanded(
       child: Padding(
