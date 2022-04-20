@@ -59,9 +59,9 @@ class SearchProvider extends ChangeNotifier {
     return "${_searchResults.length} matching results";
   }
 
-  String get searchShow => _searchCategory.toLiteralValue();
+  SearchCategory get searchShow => _searchCategory;
 
-  String get searchSortBy => _searchSortBy.toLiteralValue();
+  SearchSortBy get searchSortBy => _searchSortBy;
 
   /// Returns the filtered dataset based on [searchCategory]'s value.
   List<SearchResult> _filterResults() {

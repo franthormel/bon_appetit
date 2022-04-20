@@ -12,13 +12,11 @@ class SearchPageActionSortWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     final provider = Provider.of<SearchProvider>(context);
 
-
-    // TODO: Style menu
     return Padding(
       padding: const EdgeInsets.only(right: 8.0),
       child: PopupMenuButton<SearchSortBy>(
         child: SearchPageActionControlMenuIconWidget(
-          value: provider.searchSortBy,
+          value: provider.searchSortBy.toLiteralValue(),
           title: "SORT BY",
         ),
         itemBuilder: (context) => SearchSortBy.values

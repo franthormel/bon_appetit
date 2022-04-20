@@ -12,18 +12,17 @@ class SearchPageActionShowWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     final provider = Provider.of<SearchProvider>(context);
 
-    // TODO: Style menu
     return Padding(
       padding: const EdgeInsets.only(left: 16.0),
       child: PopupMenuButton<SearchCategory>(
         child: SearchPageActionControlMenuIconWidget(
-          value: provider.searchShow,
+          value: provider.searchShow.toLiteralValue(),
           title: "SHOW",
         ),
         itemBuilder: (context) => SearchCategory.values
             .map<PopupMenuEntry<SearchCategory>>((e) =>
-            PopupMenuItem<SearchCategory>(
-                value: e, child: Text(e.toLiteralValue())))
+                PopupMenuItem<SearchCategory>(
+                    value: e, child: Text(e.toLiteralValue())))
             .toList(),
         onSelected: provider.changeShowType,
       ),
