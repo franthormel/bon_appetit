@@ -17,7 +17,8 @@ class SearchPageListWidget extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.all(16.0),
         child: ListView.separated(
-          itemBuilder: (context, i) => ListTile( // TODO: Change widget
+          itemBuilder: (context, i) => ListTile(
+            // TODO: Change widget
             title: Text(results[i].title),
             onTap: () {},
           ),

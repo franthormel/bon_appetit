@@ -7,10 +7,13 @@ class SearchPageActionShowWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     // TODO: Show options as dropdown menu
     // TODO: Change to drop down with text
-    return IconButton(
-      tooltip: "Show results by type",
-      icon: const Icon(Icons.filter_list_alt),
-      onPressed: () {},
+    return Padding(
+      padding: const EdgeInsets.only(left: 8.0),
+      child: IconButton(
+        tooltip: "Show results by type",
+        icon: const Icon(Icons.filter_list_alt),
+        onPressed: () {},
+      ),
     );
   }
 }

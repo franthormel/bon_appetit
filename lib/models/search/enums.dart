@@ -1,37 +1,49 @@
-enum SearchCategory {
-  allContent,
-  recipes,
-  articles,
-  videos,
-}
+enum SearchCategory { allContent, recipes, articles, videos }
 
-enum SearchSortBy {
-  relevance,
-  newest,
-  highestRated,
-  mostReviewed,
-}
+enum SearchSortBy { relevance, newest, highestRated, mostReviewed }
 
 extension SearchCategoryStringer on SearchCategory {
   String toLiteralValue() {
-    if (this == SearchCategory.allContent) {
-      return "All Content";
+    String value = "None";
+
+    switch (this) {
+      case SearchCategory.allContent:
+        value = "All Content";
+        break;
+      case SearchCategory.recipes:
+        value = "Recipes";
+        break;
+      case SearchCategory.articles:
+        value = "Articles";
+        break;
+      case SearchCategory.videos:
+        value = "Videos";
+        break;
     }
 
-    return toString().split('.').last;
+    return value;
   }
 }
 
 extension SearchSortByStringer on SearchSortBy {
   String toLiteralValue() {
-    if (this == SearchSortBy.highestRated) {
-      return "Highest Rated";
+    String value = "None";
+
+    switch (this) {
+      case SearchSortBy.relevance:
+        value = "Relevance";
+        break;
+      case SearchSortBy.newest:
+        value = "Newest";
+        break;
+      case SearchSortBy.highestRated:
+        value = "Highest Rated";
+        break;
+      case SearchSortBy.mostReviewed:
+        value = "Most Reviewed";
+        break;
     }
 
-    if (this == SearchSortBy.mostReviewed) {
-      return "Most Reviewed";
-    }
-
-    return toString().split('.').last;
+    return value;
   }
 }

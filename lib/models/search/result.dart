@@ -8,7 +8,7 @@ class SearchResult {
   final SearchCategory searchCategory;
   final String title;
 
-  // TODO: ADd the actual recipe, article or video data here? (dynamic type just cast it)
+  // TODO: Add the actual recipe, article or video data here? (dynamic type just cast it)
   /// If [searchCategory] is set to [SearchCategory.recipes] this should have a value.
   final RecipeRating? rating;
 

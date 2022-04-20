@@ -42,11 +42,6 @@ class _SearchPageTextFieldWidgetState extends State<SearchPageTextFieldWidget> {
           focusedBorder: const OutlineInputBorder(
             borderSide: BorderSide(color: Colors.black, width: 1.5),
           ),
-          helperStyle: Theme.of(context)
-              .textTheme
-              .caption
-              ?.copyWith(fontWeight: FontWeight.w400, letterSpacing: 0.4),
-          helperText: search.resultsLengthText,
           hintText: "Find a Recipe",
           prefixIcon: IconButton(
             color: BonAppetitColors.black,

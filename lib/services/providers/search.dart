@@ -51,8 +51,9 @@ class SearchProvider extends ChangeNotifier {
 
   String get searchSortBy => _searchSortBy.toLiteralValue();
 
+  // TODO: Make this into a number
   String get resultsLengthText {
-    if(_searchResults.isEmpty){
+    if (_searchResults.isEmpty) {
       return "No matching results";
     }
 
@@ -60,12 +61,10 @@ class SearchProvider extends ChangeNotifier {
   }
 
   List<SearchResult> fetchResults(DatasetSource source) {
-
     // TODO: Search results
     // 1. Type of result
     // 2. Search text
 
     return _searchResults;
   }
-
 }
