@@ -5,8 +5,7 @@ class SearchPageActionFilterWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: Show as fullscreen bottom sheet with close icon button at upper right
-    // https://fidev.io/full-screen-dialog/
+    // TODO: Show as fullscreen bottom sheet with close icon button at upper right https://fidev.io/full-screen-dialog/
     return Padding(
       padding: const EdgeInsets.only(right: 8.0),
       child: TextButton.icon(

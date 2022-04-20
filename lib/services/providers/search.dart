@@ -37,12 +37,14 @@ class SearchProvider extends ChangeNotifier {
     notifyListeners();
   }
 
-  List<SearchResult> fetchResults() {
+  void refreshSearchResults() {
     final results = _filterResults();
 
     _replaceCacheWithResults(results);
+  }
 
-    notifyListeners();
+  List<SearchResult> get searchResults {
+    print(_searchResults.length);
 
     return _searchResults;
   }

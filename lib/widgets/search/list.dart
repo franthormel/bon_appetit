@@ -8,8 +8,7 @@ class SearchPageListWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final search = Provider.of<SearchProvider>(context, listen: false);
-    final results = search.fetchResults();
+    final provider = Provider.of<SearchProvider>(context, listen: false);
 
     return Expanded(
       child: Padding(
@@ -20,7 +19,7 @@ class SearchPageListWidget extends StatelessWidget {
             title: const Text("hi"),
             onTap: () {},
           ),
-          itemCount: results.length,
+          itemCount: provider.searchResults.length,
           separatorBuilder: (context, i) => const SizedBox(height: 15.0),
         ),
       ),

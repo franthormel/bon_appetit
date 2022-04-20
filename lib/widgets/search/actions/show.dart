@@ -12,6 +12,7 @@ class SearchPageActionShowWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     final provider = Provider.of<SearchProvider>(context);
 
+    // TODO: Style menu
     return Padding(
       padding: const EdgeInsets.only(left: 16.0),
       child: PopupMenuButton<SearchCategory>(
