@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../models/index.dart';
 
+// TODO: Provide DatasetSource during creation (on constructor)
 class SearchProvider extends ChangeNotifier {
   // Primarily derived from TextEditingController
   String _text = "";
@@ -60,11 +61,63 @@ class SearchProvider extends ChangeNotifier {
     return "${_searchResults.length} matching results";
   }
 
+  // TODO: Search results
   List<SearchResult> fetchResults(DatasetSource source) {
-    // TODO: Search results
-    // 1. Type of result
-    // 2. Search text
+    if (_searchCategory == SearchCategory.recipes) {
+      _replaceResults(_filterRecipes(source));
+    } else if (_searchCategory == SearchCategory.articles) {
+      _replaceResults(_filterArticles(source));
+    } else if (_searchCategory == SearchCategory.videos) {
+      _replaceResults(_filterVideos(source));
+    }
+
+    print("Text: $_text");
+    print(_searchResults.length);
 
     return _searchResults;
+  }
+
+  void _replaceResults(List<SearchResult>? results) {
+    if (results != null && results.isNotEmpty) {
+      _searchResults.replaceRange(0, _searchResults.length, results);
+    }
+  }
+
+  List<SearchResult>? _filterRecipes(DatasetSource source) {
+    return _mapResults(
+      source.recipes.where((e) {
+        return e.title.toLowerCase().contains(_text.toLowerCase());
+      }),
+      SearchCategory.recipes.toLiteralValue(),
+    );
+  }
+
+  List<SearchResult>? _filterArticles(DatasetSource source) {
+    return _mapResults(
+      source.articles.where((e) {
+        return e.title.toLowerCase().contains(_text.toLowerCase());
+      }),
+      SearchCategory.articles.toLiteralValue(),
+    );
+  }
+
+  List<SearchResult>? _filterVideos(DatasetSource source) {
+    return _mapResults(
+      source.videos.where((e) {
+        return e.title.toLowerCase().contains(_text.toLowerCase());
+      }),
+      SearchCategory.videos.toLiteralValue(),
+    );
+  }
+
+  List<SearchResult>? _mapResults(Iterable values, String category) {
+    if (values.isNotEmpty) {
+      return values
+          .map<SearchResult>(
+              (value) => SearchResult(category: category, data: value))
+          .toList();
+    }
+
+    return null;
   }
 }

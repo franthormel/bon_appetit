@@ -1,23 +1,10 @@
-import '../recipes/rating.dart';
-import 'enums.dart';
-
 class SearchResult {
+  /// Must be derived from [SearchCategory.toLiteralValue()].
   final String category;
-  final String description;
-  final String imageUrl;
-  final SearchCategory searchCategory;
-  final String title;
 
-  // TODO: Add the actual recipe, article or video data here? (dynamic type just cast it)
-  /// If [searchCategory] is set to [SearchCategory.recipes] this should have a value.
-  final RecipeRating? rating;
+  /// This property holds the actual [Recipe], [Article], or [Video] value.
+  /// All you need is to typecast it. Use the [searchCategory] property to check its type.
+  final dynamic data;
 
-  const SearchResult({
-    required this.category,
-    required this.description,
-    required this.imageUrl,
-    required this.searchCategory,
-    required this.title,
-    this.rating,
-  });
+  const SearchResult({required this.category, required this.data});
 }

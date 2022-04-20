@@ -19,7 +19,7 @@ class SearchPageListWidget extends StatelessWidget {
         child: ListView.separated(
           itemBuilder: (context, i) => ListTile(
             // TODO: Change widget
-            title: Text(results[i].title),
+            title: const Text("hi"),
             onTap: () {},
           ),
           itemCount: results.length,

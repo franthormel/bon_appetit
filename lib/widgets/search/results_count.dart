@@ -8,7 +8,7 @@ class SearchPageResultsCountWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final provider = Provider.of<SearchProvider>(context, listen: false);
+    final provider = Provider.of<SearchProvider>(context);
 
     // TODO: Use RichText to make the message more descriptive
     return Padding(

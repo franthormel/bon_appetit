@@ -1,36 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../../../models/index.dart';
 import '../../../services/index.dart';
 import '../../../style/index.dart';
 import 'actions/filter.dart';
 
-class SearchPageTextFieldWidget extends StatefulWidget {
+class SearchPageTextFieldWidget extends StatelessWidget {
   const SearchPageTextFieldWidget({Key? key}) : super(key: key);
 
   @override
-  State<SearchPageTextFieldWidget> createState() =>
-      _SearchPageTextFieldWidgetState();
-}
-
-class _SearchPageTextFieldWidgetState extends State<SearchPageTextFieldWidget> {
-  late final TextEditingController controller;
-
-  @override
-  void initState() {
-    super.initState();
-    controller = TextEditingController();
-  }
-
-  @override
-  void dispose() {
-    controller.dispose();
-    super.dispose();
-  }
-
-  @override
   Widget build(BuildContext context) {
-    final search = Provider.of<SearchProvider>(context, listen: false);
+    final controller = TextEditingController();
+    final provider = Provider.of<SearchProvider>(context);
+    final source = Provider.of<DatasetSource>(context, listen: false);
 
     return Container(
       color: BonAppetitColors.white,
@@ -46,16 +29,21 @@ class _SearchPageTextFieldWidgetState extends State<SearchPageTextFieldWidget> {
           prefixIcon: IconButton(
             color: BonAppetitColors.black,
             icon: const Icon(Icons.search),
-            onPressed: () {},
+            onPressed: () {
+              provider.fetchResults(source);
+            },
           ),
           suffixIcon: const SearchPageActionFilterWidget(),
         ),
+        onSubmitted: (text) {
+          provider.fetchResults(source);
+        },
         onChanged: (text) {
-          setState(() {
-            search.changeText(text);
-          });
+          provider.changeText(text);
         },
       ),
+
+      // TODO: Add wrapped filters here as squared chips
     );
   }
 }
