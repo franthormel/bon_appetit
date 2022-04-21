@@ -55,5 +55,11 @@ void main() {
         expect(recipe.heroTag, ObjectKey(recipe).toString());
       });
     });
+
+    group("sorting", () {
+      group("compareDateUploadedTo() should sort by most recent dates to oldest", () {});
+      group("compareRatingCountTo() should sort by most ratings to lowest", () {});
+      group("compareRatingValueTo() should sort by highest ratings to lowest", () {});
+    });
   });
 }
