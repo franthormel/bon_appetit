@@ -162,7 +162,7 @@ void main() {
             r07_07,
           ];
 
-          input.sort((a,b) => a.compareDateUploadedTo(b));
+          input.sort((a, b) => a.compareDateUploadedTo(b));
 
           expect(output, input);
         });
@@ -178,7 +178,7 @@ void main() {
             r01_01_10c_15v,
           ];
 
-          input.sort((a,b) => a.compareDateUploadedTo(b));
+          input.sort((a, b) => a.compareDateUploadedTo(b));
 
           expect(output, input);
         });
@@ -194,7 +194,7 @@ void main() {
             r05_05_50c_49v,
           ];
 
-          input.sort((a,b) => a.compareDateUploadedTo(b));
+          input.sort((a, b) => a.compareDateUploadedTo(b));
 
           expect(output, input);
         });
@@ -210,7 +210,7 @@ void main() {
             r03_03_30c_50v,
           ];
 
-          input.sort((a,b) => a.compareDateUploadedTo(b));
+          input.sort((a, b) => a.compareDateUploadedTo(b));
 
           expect(output, input);
         });
@@ -226,7 +226,7 @@ void main() {
             r03_03_30c_50v,
           ];
 
-          input.sort((a,b) => a.compareDateUploadedTo(b));
+          input.sort((a, b) => a.compareDateUploadedTo(b));
 
           expect(output, input);
         });
@@ -242,7 +242,7 @@ void main() {
             r05_05_50c_49v,
           ];
 
-          input.sort((a,b) => a.compareDateUploadedTo(b));
+          input.sort((a, b) => a.compareDateUploadedTo(b));
 
           expect(output, input);
         });
@@ -258,7 +258,7 @@ void main() {
             r05_05_50c_49v,
           ];
 
-          input.sort((a,b) => a.compareDateUploadedTo(b));
+          input.sort((a, b) => a.compareDateUploadedTo(b));
 
           expect(output, input);
         });
@@ -274,13 +274,12 @@ void main() {
             r04_04_40c_25v,
           ];
 
-          input.sort((a,b) => a.compareDateUploadedTo(b));
+          input.sort((a, b) => a.compareDateUploadedTo(b));
 
           expect(output, input);
         });
       });
 
-      // TODO
       group("should sort from the most ratings to the least", () {
         final output = <Recipe>[
           r05_05_50c_49v,
@@ -291,7 +290,7 @@ void main() {
           r06_06,
           r07_07,
         ];
-        final alOutput = <Recipe>[
+        final altOutput = <Recipe>[
           r05_05_50c_49v,
           r04_04_40c_25v,
           r03_03_30c_50v,
@@ -300,6 +299,262 @@ void main() {
           r07_07,
           r06_06,
         ];
+
+        test("already sorted", () {
+          final input = <Recipe>[
+            r05_05_50c_49v,
+            r04_04_40c_25v,
+            r03_03_30c_50v,
+            r02_02_20c_28v,
+            r01_01_10c_15v,
+            r06_06,
+            r07_07,
+          ];
+
+          input.sort((a, b) => a.compareRatingCountTo(b));
+
+          expect(output, input);
+        });
+
+        test("already sorted alternative", () {
+          final input = <Recipe>[
+            r05_05_50c_49v,
+            r04_04_40c_25v,
+            r03_03_30c_50v,
+            r02_02_20c_28v,
+            r01_01_10c_15v,
+            r07_07,
+            r06_06,
+          ];
+
+          input.sort((a, b) => a.compareRatingCountTo(b));
+
+          expect(altOutput, input);
+        });
+
+        test("unsorted #1", () {
+          final input = <Recipe>[
+            r06_06,
+            r01_01_10c_15v,
+            r07_07,
+            r03_03_30c_50v,
+            r05_05_50c_49v,
+            r04_04_40c_25v,
+            r02_02_20c_28v,
+          ];
+
+          input.sort((a, b) => a.compareRatingCountTo(b));
+
+          expect(output, input);
+        });
+
+        test("unsorted #2", () {
+          final input = <Recipe>[
+            r06_06,
+            r05_05_50c_49v,
+            r04_04_40c_25v,
+            r03_03_30c_50v,
+            r02_02_20c_28v,
+            r01_01_10c_15v,
+            r07_07,
+          ];
+
+          input.sort((a, b) => a.compareRatingCountTo(b));
+
+          expect(output, input);
+        });
+
+        test("unsorted #3", () {
+          final input = <Recipe>[
+            r06_06,
+            r04_04_40c_25v,
+            r05_05_50c_49v,
+            r02_02_20c_28v,
+            r01_01_10c_15v,
+            r03_03_30c_50v,
+            r07_07,
+          ];
+
+          input.sort((a, b) => a.compareRatingCountTo(b));
+
+          expect(output, input);
+        });
+
+        test("unsorted #4", () {
+          final input = <Recipe>[
+            r06_06,
+            r07_07,
+            r01_01_10c_15v,
+            r04_04_40c_25v,
+            r03_03_30c_50v,
+            r05_05_50c_49v,
+            r02_02_20c_28v,
+          ];
+
+          input.sort((a, b) => a.compareRatingCountTo(b));
+
+          expect(output, input);
+        });
+
+        test("unsorted #5", () {
+          final input = <Recipe>[
+            r06_06,
+            r03_03_30c_50v,
+            r01_01_10c_15v,
+            r05_05_50c_49v,
+            r04_04_40c_25v,
+            r02_02_20c_28v,
+            r07_07,
+          ];
+
+          input.sort((a, b) => a.compareRatingCountTo(b));
+
+          expect(output, input);
+        });
+
+        test("unsorted #6", () {
+          final input = <Recipe>[
+            r05_05_50c_49v,
+            r02_02_20c_28v,
+            r01_01_10c_15v,
+            r04_04_40c_25v,
+            r06_06,
+            r03_03_30c_50v,
+            r07_07,
+          ];
+
+          input.sort((a, b) => a.compareRatingCountTo(b));
+
+          expect(output, input);
+        });
+
+        test("unsorted #7", () {
+          final input = <Recipe>[
+            r05_05_50c_49v,
+            r06_06,
+            r03_03_30c_50v,
+            r01_01_10c_15v,
+            r07_07,
+            r02_02_20c_28v,
+            r04_04_40c_25v,
+          ];
+
+          input.sort((a, b) => a.compareRatingCountTo(b));
+
+          expect(output, input);
+        });
+
+        test("unsorted alternative #1", () {
+          final input = <Recipe>[
+            r07_07,
+            r04_04_40c_25v,
+            r03_03_30c_50v,
+            r06_06,
+            r02_02_20c_28v,
+            r05_05_50c_49v,
+            r01_01_10c_15v,
+          ];
+
+          input.sort((a, b) => a.compareRatingCountTo(b));
+
+          expect(altOutput, input);
+        });
+
+        test("unsorted alternative #2", () {
+          final input = <Recipe>[
+            r02_02_20c_28v,
+            r07_07,
+            r06_06,
+            r04_04_40c_25v,
+            r03_03_30c_50v,
+            r05_05_50c_49v,
+            r01_01_10c_15v,
+          ];
+
+          input.sort((a, b) => a.compareRatingCountTo(b));
+
+          expect(altOutput, input);
+        });
+
+        test("unsorted alternative #3", () {
+          final input = <Recipe>[
+            r02_02_20c_28v,
+            r04_04_40c_25v,
+            r03_03_30c_50v,
+            r07_07,
+            r05_05_50c_49v,
+            r01_01_10c_15v,
+            r06_06,
+          ];
+
+          input.sort((a, b) => a.compareRatingCountTo(b));
+
+          expect(altOutput, input);
+        });
+
+        test("unsorted alternative #4", () {
+          final input = <Recipe>[
+            r07_07,
+            r04_04_40c_25v,
+            r05_05_50c_49v,
+            r01_01_10c_15v,
+            r03_03_30c_50v,
+            r06_06,
+            r02_02_20c_28v,
+          ];
+
+          input.sort((a, b) => a.compareRatingCountTo(b));
+
+          expect(altOutput, input);
+        });
+
+        test("unsorted alternative #5", () {
+          final input = <Recipe>[
+            r02_02_20c_28v,
+            r05_05_50c_49v,
+            r07_07,
+            r04_04_40c_25v,
+            r03_03_30c_50v,
+            r01_01_10c_15v,
+            r06_06,
+          ];
+
+          input.sort((a, b) => a.compareRatingCountTo(b));
+
+          expect(altOutput, input);
+        });
+
+        test("unsorted alternative #6", () {
+          final input = <Recipe>[
+            r05_05_50c_49v,
+            r01_01_10c_15v,
+            r02_02_20c_28v,
+            r03_03_30c_50v,
+            r07_07,
+            r04_04_40c_25v,
+            r06_06,
+          ];
+
+          input.sort((a, b) => a.compareRatingCountTo(b));
+
+          expect(altOutput, input);
+        });
+
+        test("unsorted alternative #7", () {
+          final input = <Recipe>[
+            r04_04_40c_25v,
+            r01_01_10c_15v,
+            r03_03_30c_50v,
+            r07_07,
+            r06_06,
+            r02_02_20c_28v,
+            r05_05_50c_49v,
+          ];
+
+          input.sort((a, b) => a.compareRatingCountTo(b));
+
+          expect(altOutput, input);
+        });
       });
 
       // TODO

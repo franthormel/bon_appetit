@@ -92,9 +92,9 @@ class Recipe {
     if (a == null && b == null) {
       return 0;
     } else if (a == null) {
-      return -1;
-    } else if (b == null) {
       return 1;
+    } else if (b == null) {
+      return -1;
     } else {
       final aValue = int.tryParse(a);
       final bValue = int.tryParse(b);
@@ -102,11 +102,11 @@ class Recipe {
       if (aValue == null && bValue == null) {
         return 0;
       } else if (aValue == null) {
-        return -1;
-      } else if (bValue == null) {
         return 1;
+      } else if (bValue == null) {
+        return -1;
       } else {
-        return aValue - bValue;
+        return bValue - aValue;
       }
     }
   }
