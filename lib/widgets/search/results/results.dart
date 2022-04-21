@@ -14,12 +14,14 @@ class SearchPageResultsWidget extends StatelessWidget {
 
     return Padding(
       padding: const EdgeInsets.only(left: 16.0),
-      child: provider.searchText.isEmpty
-          ? SearchPageResultsTextNoneWidget(count: provider.resultsLength)
-          : SearchPageResultsTextWidget(
-              count: provider.resultsLength,
-              text: provider.searchText,
-            ),
+      child: provider.hasSearched
+          ? provider.searchText.isEmpty
+              ? SearchPageResultsTextNoneWidget(count: provider.resultsLength)
+              : SearchPageResultsTextWidget(
+                  count: provider.resultsLength,
+                  text: provider.searchText,
+                )
+          : Container(),
     );
   }
 }

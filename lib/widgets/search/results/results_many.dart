@@ -15,8 +15,8 @@ class SearchPageResultsManyWidget extends StatelessWidget {
     return RichText(
       text: TextSpan(
         style: Theme.of(context).textTheme.bodyText2,
-        text: "$count matching results for ",
         children: [
+          TextSpan(text: "$count matching results for "),
           TextSpan(
             text: "\"$text\"",
             style: Theme.of(context)

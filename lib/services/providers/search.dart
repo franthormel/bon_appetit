@@ -41,6 +41,8 @@ class SearchProvider extends ChangeNotifier {
     notifyListeners();
   }
 
+  bool get hasSearched => _text.isNotEmpty || _searchResults.isNotEmpty;
+
   UnmodifiableListView<SearchResult> get searchResults =>
       UnmodifiableListView(_searchResults);
 

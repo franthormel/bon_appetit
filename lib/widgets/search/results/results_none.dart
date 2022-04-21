@@ -12,6 +12,21 @@ class SearchPageResultsNoneWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Text("None");
+    return RichText(
+      text: TextSpan(
+        style: Theme.of(context).textTheme.bodyText2,
+        children: [
+          const TextSpan(text: "Uh oh. We didn't find the search term "),
+          TextSpan(
+            text: "\"$text\"",
+            style: Theme.of(context)
+                .textTheme
+                .bodyText2
+                ?.apply(fontStyle: FontStyle.italic),
+          ),
+          const TextSpan(text: " that you were looking for."),
+        ],
+      ),
+    );
   }
 }
