@@ -31,10 +31,8 @@ class SearchProvider extends ChangeNotifier {
     refreshSearchResults();
   }
 
-// TODO: Trigger a refresh filter when value is changed
   void changeText(String value) {
     _text = value;
-    notifyListeners();
   }
 
   void refreshSearchResults() {
@@ -82,6 +80,7 @@ class SearchProvider extends ChangeNotifier {
     return results;
   }
 
+  // TODO: Apply sort by value
   /// Returns the article(s) [SearchResult] from the dataset source with title(s) contains the [_text] value.
   List<SearchResult> _filterSourceArticles() {
     return _mapResults(
@@ -92,6 +91,7 @@ class SearchProvider extends ChangeNotifier {
     );
   }
 
+  // TODO: Apply sort by value
   /// Returns the recipe(s) [SearchResult] from the dataset source with title(s) contains the [_text] value.
   List<SearchResult> _filterSourceRecipes() {
     return _mapResults(
@@ -102,6 +102,7 @@ class SearchProvider extends ChangeNotifier {
     );
   }
 
+  // TODO: Apply sort by value
   /// Returns the video(s) [SearchResult] from the dataset source with title(s) contains the [_text] value.
   List<SearchResult> _filterSourceVideos() {
     return _mapResults(
