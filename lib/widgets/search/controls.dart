@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'actions/show.dart';
 import 'actions/sort.dart';
-import 'results_count.dart';
+import 'results/results.dart';
 
 class SearchPageControlsWidget extends StatelessWidget {
   const SearchPageControlsWidget({Key? key}) : super(key: key);
@@ -21,7 +21,7 @@ class SearchPageControlsWidget extends StatelessWidget {
           ],
         ),
         const SizedBox(height: 16.0),
-        const SearchPageResultsCountWidget(),
+        const SearchPageResultsWidget(),
       ],
     );
   }
