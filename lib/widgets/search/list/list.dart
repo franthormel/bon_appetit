@@ -13,13 +13,11 @@ class SearchPageListWidget extends StatelessWidget {
     final results = provider.searchResults;
 
     return Expanded(
-      child: Padding(
-        padding: const EdgeInsets.all(16.0),
-        child: ListView.separated(
-          itemBuilder: (context, i) => SearchPageListWrapperWidget(results[i]),
-          itemCount: results.length,
-          separatorBuilder: (context, i) => const SizedBox(height: 15.0),
-        ),
+      child: ListView.separated(
+        padding: const EdgeInsets.all(8.0),
+        itemBuilder: (context, i) => SearchPageListWrapperWidget(results[i]),
+        itemCount: results.length,
+        separatorBuilder: (context, i) => const SizedBox(height: 8.0),
       ),
     );
   }

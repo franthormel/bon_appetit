@@ -22,6 +22,7 @@ class SearchPageControlsWidget extends StatelessWidget {
         ),
         const SizedBox(height: 16.0),
         const SearchPageResultsWidget(),
+        const SizedBox(height: 16.0),
       ],
     );
   }
