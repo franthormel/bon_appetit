@@ -7,6 +7,7 @@ part 'video.g.dart';
 class Video {
   final String about;
   final List<String>? credits;
+  final DateTime dateUploaded;
   final String? episode;
   final String id;
   final String imageUrl;
@@ -14,15 +15,14 @@ class Video {
   final String? series;
   final String title;
   final String transcript;
-  final DateTime uploadDate;
 
   Video({
     required this.about,
     required this.id,
+    required this.dateUploaded,
     required this.imageUrl,
     required this.title,
     required this.transcript,
-    required this.uploadDate,
     this.credits,
     this.episode,
     this.season,

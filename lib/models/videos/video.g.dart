@@ -9,10 +9,10 @@ part of 'video.dart';
 Video _$VideoFromJson(Map<String, dynamic> json) => Video(
       about: json['about'] as String,
       id: json['id'] as String,
+      dateUploaded: DateTime.parse(json['dateUploaded'] as String),
       imageUrl: json['imageUrl'] as String,
       title: json['title'] as String,
       transcript: json['transcript'] as String,
-      uploadDate: DateTime.parse(json['uploadDate'] as String),
       credits:
           (json['credits'] as List<dynamic>?)?.map((e) => e as String).toList(),
       episode: json['episode'] as String?,
@@ -23,6 +23,7 @@ Video _$VideoFromJson(Map<String, dynamic> json) => Video(
 Map<String, dynamic> _$VideoToJson(Video instance) => <String, dynamic>{
       'about': instance.about,
       'credits': instance.credits,
+      'dateUploaded': instance.dateUploaded.toIso8601String(),
       'episode': instance.episode,
       'id': instance.id,
       'imageUrl': instance.imageUrl,
@@ -30,5 +31,4 @@ Map<String, dynamic> _$VideoToJson(Video instance) => <String, dynamic>{
       'series': instance.series,
       'title': instance.title,
       'transcript': instance.transcript,
-      'uploadDate': instance.uploadDate.toIso8601String(),
     };

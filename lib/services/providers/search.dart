@@ -37,7 +37,10 @@ class SearchProvider extends ChangeNotifier {
 
   void refreshSearchResults() {
     final results = _filterResults();
-    _replaceCacheWithResults(results);
+    final sortedResults = _sortResults(results);
+
+    _replaceCacheWithResults(sortedResults);
+
     notifyListeners();
   }
 
@@ -133,5 +136,10 @@ class SearchProvider extends ChangeNotifier {
     if (results.isNotEmpty) {
       _searchResults.addAll(results);
     }
+  }
+
+  List<SearchResult> _sortResults(List<SearchResult> results) {
+    // Sort by newest is applicable for
+    return results;
   }
 }

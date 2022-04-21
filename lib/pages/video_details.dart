@@ -31,7 +31,7 @@ class VideoDetailsPage extends StatelessWidget with DetailsContentsMixin {
           series: video.series!,
         ),
       DetailsTitleWidget(video.title, textAlign: TextAlign.left),
-      VideoDetailsAboutWidget(about: video.about, uploadDate: video.uploadDate),
+      VideoDetailsAboutWidget(about: video.about, uploadDate: video.dateUploaded),
       VideoDetailsTranscriptWidget(transcript: video.transcript),
       if (video.credits != null && video.credits!.isNotEmpty)
         VideoDetailsCreditsWidget(credits: video.credits!),
