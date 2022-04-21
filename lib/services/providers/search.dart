@@ -86,10 +86,10 @@ class SearchProvider extends ChangeNotifier {
   /// Returns the article(s) [SearchResult] from the dataset source with title(s) contains the [_text] value.
   List<SearchResult> _filterSourceArticles() {
     return _mapResults(
-      _source.articles.where((e) {
-        return e.title.toLowerCase().contains(_text.toLowerCase());
-      }),
-      SearchCategory.articles.toLiteralValue(),
+      _source.articles.where(
+        (e) => e.title.toLowerCase().contains(_text.toLowerCase()),
+      ),
+      SearchCategory.articles,
     );
   }
 
@@ -97,10 +97,10 @@ class SearchProvider extends ChangeNotifier {
   /// Returns the recipe(s) [SearchResult] from the dataset source with title(s) contains the [_text] value.
   List<SearchResult> _filterSourceRecipes() {
     return _mapResults(
-      _source.recipes.where((e) {
-        return e.title.toLowerCase().contains(_text.toLowerCase());
-      }),
-      SearchCategory.recipes.toString(),
+      _source.recipes.where(
+        (e) => e.title.toLowerCase().contains(_text.toLowerCase()),
+      ),
+      SearchCategory.recipes,
     );
   }
 
@@ -108,14 +108,14 @@ class SearchProvider extends ChangeNotifier {
   /// Returns the video(s) [SearchResult] from the dataset source with title(s) contains the [_text] value.
   List<SearchResult> _filterSourceVideos() {
     return _mapResults(
-      _source.videos.where((e) {
-        return e.title.toLowerCase().contains(_text.toLowerCase());
-      }),
-      SearchCategory.videos.toLiteralValue(),
+      _source.videos.where(
+        (e) => e.title.toLowerCase().contains(_text.toLowerCase()),
+      ),
+      SearchCategory.videos,
     );
   }
 
-  List<SearchResult> _mapResults(Iterable values, String category) {
+  List<SearchResult> _mapResults(Iterable values, SearchCategory category) {
     if (values.isNotEmpty) {
       return values
           .map<SearchResult>(
