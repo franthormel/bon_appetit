@@ -12,6 +12,20 @@ class SearchPageResultsManyWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Text("Many");
+    return RichText(
+      text: TextSpan(
+        style: Theme.of(context).textTheme.bodyText2,
+        text: "$count matching results for ",
+        children: [
+          TextSpan(
+            text: "\"$text\"",
+            style: Theme.of(context)
+                .textTheme
+                .bodyText2
+                ?.apply(fontStyle: FontStyle.italic),
+          ),
+        ],
+      ),
+    );
   }
 }

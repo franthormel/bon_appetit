@@ -10,6 +10,9 @@ class SearchPageResultsTextNoneWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text("$count matching results");
+    return Text(
+      "$count matching results",
+      style: Theme.of(context).textTheme.bodyText2,
+    );
   }
 }
