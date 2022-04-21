@@ -37,10 +37,7 @@ class SearchProvider extends ChangeNotifier {
 
   void refreshSearchResults() {
     final results = _filterResults();
-    final sortedResults = _sortResults(results);
-
-    _replaceCacheWithResults(sortedResults);
-
+    _replaceCacheWithResults(results);
     notifyListeners();
   }
 
@@ -96,15 +93,14 @@ class SearchProvider extends ChangeNotifier {
     );
   }
 
-  // TODO: Apply sort by value
   /// Returns the recipe(s) [SearchResult] from the dataset source with title(s) contains the [_text] value.
   List<SearchResult> _filterSourceRecipes() {
-    return _mapResults(
-      _source.recipes.where(
-        (e) => e.title.toLowerCase().contains(_text.toLowerCase()),
-      ),
-      SearchCategory.recipes,
-    );
+    final recipes = _source.recipes
+        .where((e) => e.title.toLowerCase().contains(_text.toLowerCase()))
+        .toList();
+    final sortedRecipes = _sortRecipes(recipes);
+
+    return _mapResults(sortedRecipes, SearchCategory.recipes);
   }
 
   // TODO: Apply sort by value
@@ -138,8 +134,22 @@ class SearchProvider extends ChangeNotifier {
     }
   }
 
-  List<SearchResult> _sortResults(List<SearchResult> results) {
-    // Sort by newest is applicable for
-    return results;
+  List<Recipe> _sortRecipes(List<Recipe> recipes) {
+    // Sort by newest by comparing upload dates
+    if (_searchSortBy == SearchSortBy.newest) {
+      recipes.sort((a, b) => a.compareDateUploadedTo(b));
+    }
+
+    // Sort by highestRated by comparing rating values
+    if (_searchSortBy == SearchSortBy.highestRated) {
+      recipes.sort((a, b) => a.compareRatingValueTo(b));
+    }
+
+    // Sort by mostReviewed by comparing rating counts
+    if (_searchSortBy == SearchSortBy.mostReviewed) {
+      recipes.sort((a, b) => a.compareRatingCountTo(b));
+    }
+
+    return recipes;
   }
 }
