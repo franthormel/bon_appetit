@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-class SearchPageResultsNoTextWidget extends StatelessWidget {
+class SearchPageResultsTextNoneWidget extends StatelessWidget {
   final int count;
 
-  const SearchPageResultsNoTextWidget({
+  const SearchPageResultsTextNoneWidget({
     required this.count,
     Key? key,
   }) : super(key: key);

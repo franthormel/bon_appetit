@@ -50,9 +50,7 @@ class SearchProvider extends ChangeNotifier {
 
   SearchSortBy get searchSortBy => _searchSortBy;
 
-  bool get searchTextIsEmpty => _text.isEmpty;
-
-  bool get searchTextIsNotEmpty => _text.isNotEmpty;
+  String get searchText => _text;
 
   /// Returns the filtered dataset based on [searchCategory]'s value.
   List<SearchResult> _filterResults() {

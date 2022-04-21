@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../../../../services/index.dart';
-import 'no_text.dart';
-import 'have_text.dart';
+import 'text.dart';
+import 'text_none.dart';
 
 class SearchPageResultsWidget extends StatelessWidget {
   const SearchPageResultsWidget({Key? key}) : super(key: key);
@@ -14,9 +14,12 @@ class SearchPageResultsWidget extends StatelessWidget {
 
     return Padding(
       padding: const EdgeInsets.only(left: 16.0),
-      child: provider.searchTextIsEmpty
-          ? SearchPageResultsNoTextWidget(count: provider.resultsLength)
-          : SearchPageResultsHaveTextWidget(),
+      child: provider.searchText.isEmpty
+          ? SearchPageResultsTextNoneWidget(count: provider.resultsLength)
+          : SearchPageResultsTextWidget(
+              count: provider.resultsLength,
+              text: provider.searchText,
+            ),
     );
   }
 }
