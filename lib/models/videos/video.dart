@@ -38,5 +38,5 @@ class Video {
 
   // TODO: Place in a mixin with Article and Recipe
   int compareDateUploadedTo(Video other) =>
-      dateUploaded.compareTo(other.dateUploaded);
+      other.dateUploaded.compareTo(dateUploaded);
 }

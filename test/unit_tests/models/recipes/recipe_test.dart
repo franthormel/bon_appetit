@@ -142,24 +142,24 @@ void main() {
 
       group("should sort by the most recent dates to the oldest", () {
         final output = <Recipe>[
-          r01_01_10c_15v,
-          r02_02_20c_28v,
-          r03_03_30c_50v,
-          r04_04_40c_25v,
-          r05_05_50c_49v,
-          r06_06,
           r07_07,
+          r06_06,
+          r05_05_50c_49v,
+          r04_04_40c_25v,
+          r03_03_30c_50v,
+          r02_02_20c_28v,
+          r01_01_10c_15v,
         ];
 
         test("already sorted", () {
           final input = <Recipe>[
-            r01_01_10c_15v,
-            r02_02_20c_28v,
-            r03_03_30c_50v,
-            r04_04_40c_25v,
-            r05_05_50c_49v,
-            r06_06,
             r07_07,
+            r06_06,
+            r05_05_50c_49v,
+            r04_04_40c_25v,
+            r03_03_30c_50v,
+            r02_02_20c_28v,
+            r01_01_10c_15v,
           ];
 
           input.sort((a, b) => a.compareDateUploadedTo(b));

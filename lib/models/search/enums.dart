@@ -1,6 +1,5 @@
 enum SearchCategory { allContent, recipes, articles, videos }
 
-// TODO: Newest --- Articles, Videos
 enum SearchSortBy { relevance, newest, highestRated, mostReviewed }
 
 extension SearchCategoryStringer on SearchCategory {

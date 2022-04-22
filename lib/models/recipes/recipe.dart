@@ -85,7 +85,7 @@ class Recipe {
 
   // TODO: Place in a mixin with Article and Video
   int compareDateUploadedTo(Recipe other) =>
-      dateUploaded.compareTo(other.dateUploaded);
+      other.dateUploaded.compareTo(dateUploaded);
 
   // TODO: Improve (maybe use a static service)
   int compareRatingCountTo(Recipe other) {
