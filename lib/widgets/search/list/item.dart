@@ -17,11 +17,6 @@ class SearchPageListItemWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // TODO: Update
-    return Card(
-      child: ListTile(
-        title: Text(title),
-        onTap: () {},
-      ),
-    );
+    return Card(child: ListTile(title: Text(title), onTap: () {}));
   }
 }

@@ -16,7 +16,9 @@ class SearchPageResultsWidget extends StatelessWidget {
       padding: const EdgeInsets.only(left: 16.0),
       child: provider.hasSearched
           ? provider.searchText.isEmpty
-              ? SearchPageResultsTextNoneWidget(count: provider.searchResultsLength)
+              ? SearchPageResultsTextNoneWidget(
+                  count: provider.searchResultsLength,
+                )
               : SearchPageResultsTextWidget(
                   count: provider.searchResultsLength,
                   text: provider.searchText,

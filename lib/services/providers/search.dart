@@ -119,7 +119,7 @@ class SearchProvider extends ChangeNotifier {
 
   List<Article> _sortArticles(List<Article> articles) {
     if (_searchSort == SearchSort.newest) {
-      articles.sort((a, b) => a.compareDateTo(b.dateUploaded));
+      articles.sort((a, b) => b.dateUploaded.compareTo(a.dateUploaded));
     }
 
     return articles;
@@ -128,7 +128,7 @@ class SearchProvider extends ChangeNotifier {
   List<Recipe> _sortRecipes(List<Recipe> recipes) {
     // Sort by newest by comparing upload dates
     if (_searchSort == SearchSort.newest) {
-      recipes.sort((a, b) => a.compareDateTo(b.dateUploaded));
+      recipes.sort((a, b) => b.dateUploaded.compareTo(a.dateUploaded));
     }
 
     // Sort by highestRated by comparing rating values
@@ -146,7 +146,7 @@ class SearchProvider extends ChangeNotifier {
 
   List<Video> _sortVideos(List<Video> videos) {
     if (_searchSort == SearchSort.newest) {
-      videos.sort((a, b) => a.compareDateTo(b.dateUploaded));
+      videos.sort((a, b) => b.dateUploaded.compareTo(a.dateUploaded));
     }
 
     return videos;

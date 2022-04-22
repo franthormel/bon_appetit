@@ -1,6 +1,5 @@
 import 'package:json_annotation/json_annotation.dart';
 
-import '../../services/index.dart';
 import '../others/base_model_mixin.dart';
 import '../others/product.dart';
 
@@ -36,8 +35,4 @@ class Article with BaseModelsMixin {
       _$ArticleFromJson(json);
 
   Map<String, dynamic> toJson() => _$ArticleToJson(this);
-
-  @override
-  int compareDateTo(DateTime other) =>
-      DateComparatorService.compare(dateUploaded, other);
 }

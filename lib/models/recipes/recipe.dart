@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:json_annotation/json_annotation.dart';
 
-import '../../services/index.dart';
 import '../others/base_model_mixin.dart';
 import 'ingredient.dart';
 import 'nutrition_serving.dart';
@@ -82,15 +81,12 @@ class Recipe with BaseModelsMixin {
 
   String? get issue => dateIssue != null ? "${dateIssue!} Issue" : null;
 
-  @override
-  int compareDateTo(DateTime other) =>
-      DateComparatorService.compare(dateUploaded, other);
-
   // TODO: Improve (maybe use a static service)
   int compareRatingCountTo(Recipe other) {
     final a = rating?.count;
     final b = other.rating?.count;
 
+    // Compare nullable strings
     if (a == null && b == null) {
       return 0;
     } else if (a == null) {
@@ -101,6 +97,7 @@ class Recipe with BaseModelsMixin {
       final aValue = int.tryParse(a);
       final bValue = int.tryParse(b);
 
+      // Compare nullable ints
       if (aValue == null && bValue == null) {
         return 0;
       } else if (aValue == null) {
@@ -118,6 +115,7 @@ class Recipe with BaseModelsMixin {
     final a = rating?.value;
     final b = other.rating?.value;
 
+    // Compare nullable strings
     if (a == null && b == null) {
       return 0;
     } else if (a == null) {
@@ -128,6 +126,7 @@ class Recipe with BaseModelsMixin {
       final aValue = double.tryParse(a);
       final bValue = double.tryParse(b);
 
+      // Compare nullable doubles
       if (aValue == null && bValue == null) {
         return 0;
       } else if (aValue == null) {
