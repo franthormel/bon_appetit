@@ -80,8 +80,10 @@ class Recipe {
 
   String? get issue => dateIssue != null ? "${dateIssue!} Issue" : null;
 
+  // TODO: Place in a mixin with Article and Video
   String get heroTag => ObjectKey(this).toString();
 
+  // TODO: Place in a mixin with Article and Video
   int compareDateUploadedTo(Recipe other) =>
       dateUploaded.compareTo(other.dateUploaded);
 

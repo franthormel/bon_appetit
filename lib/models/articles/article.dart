@@ -36,5 +36,10 @@ class Article {
 
   Map<String, dynamic> toJson() => _$ArticleToJson(this);
 
+  // TODO: Place in a mixin with Recipe and Video
   String get heroTag => ObjectKey(this).toString();
+
+  // TODO: Place in a mixin with Recipe and Video
+  int compareDateUploadedTo(Article other) =>
+      dateUploaded.compareTo(other.dateUploaded);
 }

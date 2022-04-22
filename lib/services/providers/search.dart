@@ -17,6 +17,7 @@ class SearchProvider extends ChangeNotifier {
   SearchSortBy _searchSortBy = SearchSortBy.relevance;
 
   // Cache for search results
+  // // TODO: Remove final
   final _searchResults = <SearchResult>[];
 
   SearchProvider(this._source);
@@ -37,7 +38,8 @@ class SearchProvider extends ChangeNotifier {
 
   void refreshSearchResults() {
     final results = _filterResults();
-    _replaceCacheWithResults(results);
+    _replaceCacheWithResults(
+        results); // TODO: Don't call here call on _filterResults();
     notifyListeners();
   }
 
@@ -54,7 +56,6 @@ class SearchProvider extends ChangeNotifier {
 
   String get searchText => _text;
 
-  /// Returns the filtered dataset based on [searchCategory]'s value.
   List<SearchResult> _filterResults() {
     List<SearchResult> results = [];
 
@@ -82,18 +83,15 @@ class SearchProvider extends ChangeNotifier {
     return results;
   }
 
-  // TODO: Apply sort by value
-  /// Returns the article(s) [SearchResult] from the dataset source with title(s) contains the [_text] value.
   List<SearchResult> _filterSourceArticles() {
-    return _mapResults(
-      _source.articles.where(
-        (e) => e.title.toLowerCase().contains(_text.toLowerCase()),
-      ),
-      SearchCategory.articles,
-    );
+    final articles = _source.articles
+        .where((e) => e.title.toLowerCase().contains(_text.toLowerCase()))
+        .toList();
+    final sortedArticles = _sortArticles(articles);
+
+    return _mapResults(sortedArticles, SearchCategory.articles);
   }
 
-  /// Returns the recipe(s) [SearchResult] from the dataset source with title(s) contains the [_text] value.
   List<SearchResult> _filterSourceRecipes() {
     final recipes = _source.recipes
         .where((e) => e.title.toLowerCase().contains(_text.toLowerCase()))
@@ -103,15 +101,13 @@ class SearchProvider extends ChangeNotifier {
     return _mapResults(sortedRecipes, SearchCategory.recipes);
   }
 
-  // TODO: Apply sort by value
-  /// Returns the video(s) [SearchResult] from the dataset source with title(s) contains the [_text] value.
   List<SearchResult> _filterSourceVideos() {
-    return _mapResults(
-      _source.videos.where(
-        (e) => e.title.toLowerCase().contains(_text.toLowerCase()),
-      ),
-      SearchCategory.videos,
-    );
+    final videos = _source.videos
+        .where((e) => e.title.toLowerCase().contains(_text.toLowerCase()))
+        .toList();
+    final sortedVideos = _sortVideos(videos);
+
+    return _mapResults(sortedVideos, SearchCategory.videos);
   }
 
   List<SearchResult> _mapResults(Iterable values, SearchCategory category) {
@@ -125,7 +121,7 @@ class SearchProvider extends ChangeNotifier {
     return [];
   }
 
-  /// Replaces [_searchResults] with the [results] param.
+  // TODO: Place in _filterResults()
   void _replaceCacheWithResults(List<SearchResult> results) {
     _searchResults.clear();
 
@@ -141,15 +137,31 @@ class SearchProvider extends ChangeNotifier {
     }
 
     // Sort by highestRated by comparing rating values
-    if (_searchSortBy == SearchSortBy.highestRated) {
+    else if (_searchSortBy == SearchSortBy.highestRated) {
       recipes.sort((a, b) => a.compareRatingValueTo(b));
     }
 
     // Sort by mostReviewed by comparing rating counts
-    if (_searchSortBy == SearchSortBy.mostReviewed) {
+    else if (_searchSortBy == SearchSortBy.mostReviewed) {
       recipes.sort((a, b) => a.compareRatingCountTo(b));
     }
 
     return recipes;
+  }
+
+  List<Article> _sortArticles(List<Article> articles) {
+    if (_searchSortBy == SearchSortBy.newest) {
+      articles.sort((a, b) => a.compareDateUploadedTo(b));
+    }
+
+    return articles;
+  }
+
+  List<Video> _sortVideos(List<Video> videos) {
+    if (_searchSortBy == SearchSortBy.newest) {
+      videos.sort((a, b) => a.compareDateUploadedTo(b));
+    }
+
+    return videos;
   }
 }
