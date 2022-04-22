@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:json_annotation/json_annotation.dart';
 
+import '../../services/index.dart';
 import '../others/base_model_mixin.dart';
 import 'ingredient.dart';
 import 'nutrition_serving.dart';
@@ -81,69 +82,19 @@ class Recipe with BaseModelsMixin {
 
   String? get issue => dateIssue != null ? "${dateIssue!} Issue" : null;
 
-  // TODO: Improve (maybe use a static service)
+  // TODO: Remove this and call service directly from where it's being used AND update test file too
   int compareRatingCountTo(Recipe other) {
     final a = rating?.count;
     final b = other.rating?.count;
 
-    // Compare nullable strings
-    if (a == null && b == null) {
-      return 0;
-    } else if (a == null) {
-      return 1;
-    } else if (b == null) {
-      return -1;
-    } else {
-      final aValue = int.tryParse(a);
-      final bValue = int.tryParse(b);
-
-      // Compare nullable ints
-      if (aValue == null && bValue == null) {
-        return 0;
-      } else if (aValue == null) {
-        return 1;
-      } else if (bValue == null) {
-        return -1;
-      } else {
-        return bValue - aValue;
-      }
-    }
+    return ComparatorService.compareIntsFromNullableStrings(a, b);
   }
 
-  // TODO: Improve (maybe use a static service)
+  // TODO: Remove this and call service directly from where it's being used AND update test file too
   int compareRatingValueTo(Recipe other) {
     final a = rating?.value;
     final b = other.rating?.value;
 
-    // Compare nullable strings
-    if (a == null && b == null) {
-      return 0;
-    } else if (a == null) {
-      return 1;
-    } else if (b == null) {
-      return -1;
-    } else {
-      final aValue = double.tryParse(a);
-      final bValue = double.tryParse(b);
-
-      // Compare nullable doubles
-      if (aValue == null && bValue == null) {
-        return 0;
-      } else if (aValue == null) {
-        return 1;
-      } else if (bValue == null) {
-        return -1;
-      } else {
-        final diff = bValue - aValue;
-
-        if (diff > 0) {
-          return 1;
-        } else if (diff < 0) {
-          return -1;
-        } else {
-          return 0;
-        }
-      }
-    }
+    return ComparatorService.compareDoublesFromNullableStrings(a, b);
   }
 }
