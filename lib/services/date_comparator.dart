@@ -4,5 +4,5 @@ class DateComparatorService {
   /// * -1 if [a] is before [b] (or [b] is after [a])
   /// * 0 if [a] and [b] are of the same dates
   /// * 1 if [a] is after [b] (or [b] is before [a])
-  static int compareDates(DateTime a, DateTime b) => b.compareTo(a);
+  static int compare(DateTime a, DateTime b) => b.compareTo(a);
 }

@@ -162,7 +162,7 @@ void main() {
             r01_01_10c_15v,
           ];
 
-          input.sort((a, b) => a.compareDateUploadedTo(b.dateUploaded));
+          input.sort((a, b) => a.compareDateTo(b.dateUploaded));
 
           expect(output, input);
         });
@@ -178,7 +178,7 @@ void main() {
             r01_01_10c_15v,
           ];
 
-          input.sort((a, b) => a.compareDateUploadedTo(b.dateUploaded));
+          input.sort((a, b) => a.compareDateTo(b.dateUploaded));
 
           expect(output, input);
         });
@@ -194,7 +194,7 @@ void main() {
             r05_05_50c_49v,
           ];
 
-          input.sort((a, b) => a.compareDateUploadedTo(b.dateUploaded));
+          input.sort((a, b) => a.compareDateTo(b.dateUploaded));
 
           expect(output, input);
         });
@@ -210,7 +210,7 @@ void main() {
             r03_03_30c_50v,
           ];
 
-          input.sort((a, b) => a.compareDateUploadedTo(b.dateUploaded));
+          input.sort((a, b) => a.compareDateTo(b.dateUploaded));
 
           expect(output, input);
         });
@@ -226,7 +226,7 @@ void main() {
             r03_03_30c_50v,
           ];
 
-          input.sort((a, b) => a.compareDateUploadedTo(b.dateUploaded));
+          input.sort((a, b) => a.compareDateTo(b.dateUploaded));
 
           expect(output, input);
         });
@@ -242,7 +242,7 @@ void main() {
             r05_05_50c_49v,
           ];
 
-          input.sort((a, b) => a.compareDateUploadedTo(b.dateUploaded));
+          input.sort((a, b) => a.compareDateTo(b.dateUploaded));
 
           expect(output, input);
         });
@@ -258,7 +258,7 @@ void main() {
             r05_05_50c_49v,
           ];
 
-          input.sort((a, b) => a.compareDateUploadedTo(b.dateUploaded));
+          input.sort((a, b) => a.compareDateTo(b.dateUploaded));
 
           expect(output, input);
         });
@@ -274,7 +274,7 @@ void main() {
             r04_04_40c_25v,
           ];
 
-          input.sort((a, b) => a.compareDateUploadedTo(b.dateUploaded));
+          input.sort((a, b) => a.compareDateTo(b.dateUploaded));
 
           expect(output, input);
         });

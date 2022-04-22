@@ -36,6 +36,6 @@ class Video with BaseModelsMixin {
   Map<String, dynamic> toJson() => _$VideoToJson(this);
 
   @override
-  int compareDateUploadedTo(DateTime other) =>
-      DateComparatorService.compareDates(dateUploaded, other);
+  int compareDateTo(DateTime other) =>
+      DateComparatorService.compare(dateUploaded, other);
 }

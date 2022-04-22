@@ -1,6 +1,6 @@
 enum SearchCategory { allContent, recipes, articles, videos }
 
-enum SearchSortBy { relevance, newest, highestRated, mostReviewed }
+enum SearchSort { relevance, newest, highestRated, mostReviewed }
 
 extension SearchCategoryStringer on SearchCategory {
   String toLiteralValue() {
@@ -25,21 +25,21 @@ extension SearchCategoryStringer on SearchCategory {
   }
 }
 
-extension SearchSortByStringer on SearchSortBy {
+extension SearchSortStringer on SearchSort {
   String toLiteralValue() {
     String value = "None";
 
     switch (this) {
-      case SearchSortBy.relevance:
+      case SearchSort.relevance:
         value = "Relevance";
         break;
-      case SearchSortBy.newest:
+      case SearchSort.newest:
         value = "Newest";
         break;
-      case SearchSortBy.highestRated:
+      case SearchSort.highestRated:
         value = "Highest Rated";
         break;
-      case SearchSortBy.mostReviewed:
+      case SearchSort.mostReviewed:
         value = "Most Reviewed";
         break;
     }

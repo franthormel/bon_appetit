@@ -7,103 +7,99 @@ import '../../models/index.dart';
 class SearchProvider extends ChangeNotifier {
   final DatasetSource _source;
 
-  // Derived and controlled by a TextEditingController
-  String _text = "";
-
   // Category used when showing results
   SearchCategory _searchCategory = SearchCategory.recipes;
 
-  // Order used when sorting results
-  SearchSortBy _searchSortBy = SearchSortBy.relevance;
-
   // Cache for search results
-  // TODO: Remove final
-  final _searchResults = <SearchResult>[];
+  List<SearchResult> _searchResults = <SearchResult>[];
+
+  // Order used when sorting results
+  SearchSort _searchSort = SearchSort.relevance;
+
+  // Derived and controlled from a TextEditingController
+  String _searchText = "";
 
   SearchProvider(this._source);
 
-  void changeShowType(SearchCategory value) {
-    _searchCategory = value;
-    refreshSearchResults();
+  void changeSearchCategory(SearchCategory value) {
+    if (value != _searchCategory) {
+      _searchCategory = value;
+      searchForResults();
+    }
   }
 
-  void changeSortByType(SearchSortBy value) {
-    _searchSortBy = value;
-    refreshSearchResults();
+  void changeSearchSort(SearchSort value) {
+    if (value != _searchSort) {
+      _searchSort = value;
+      searchForResults();
+    }
   }
 
-  void changeText(String value) {
-    _text = value;
+  void changeSearchText(String text) {
+    _searchText = text;
   }
 
-  void refreshSearchResults() {
-    final results = _filterResults();
-    _replaceCacheWithResults(
-        results); // TODO: Don't call here call on _filterResults();
-    notifyListeners();
-  }
-
-  bool get hasSearched => _text.isNotEmpty || _searchResults.isNotEmpty;
-
-  UnmodifiableListView<SearchResult> get searchResults =>
-      UnmodifiableListView(_searchResults);
-
-  int get resultsLength => _searchResults.length;
-
-  SearchCategory get searchShow => _searchCategory;
-
-  SearchSortBy get searchSortBy => _searchSortBy;
-
-  String get searchText => _text;
-
-  List<SearchResult> _filterResults() {
+  void searchForResults() {
     List<SearchResult> results = [];
 
     switch (_searchCategory) {
       case SearchCategory.recipes:
-        results = _filterSourceRecipes();
+        results = _filterRecipes();
         break;
       case SearchCategory.articles:
-        results = _filterSourceArticles();
+        results = _filterArticles();
         break;
       case SearchCategory.videos:
-        results = _filterSourceVideos();
+        results = _filterVideos();
         break;
       case SearchCategory.allContent:
         // NOTE: Precedence here matters. I placed recipes first because it is the most
         // important thing to the user, then the articles, finally with the videos.
         results = [
-          ..._filterSourceRecipes(),
-          ..._filterSourceArticles(),
-          ..._filterSourceVideos(),
+          ..._filterRecipes(),
+          ..._filterArticles(),
+          ..._filterVideos(),
         ];
-        break;
     }
 
-    return results;
+    _searchResults = results;
+    notifyListeners();
   }
 
-  List<SearchResult> _filterSourceArticles() {
+  bool get hasSearched => _searchText.isNotEmpty || _searchResults.isNotEmpty;
+
+  UnmodifiableListView<SearchResult> get searchResults =>
+      UnmodifiableListView(_searchResults);
+
+  int get searchResultsLength => _searchResults.length;
+
+  SearchCategory get searchShow => _searchCategory;
+
+  SearchSort get searchSort => _searchSort;
+
+  String get searchText => _searchText;
+
+  List<SearchResult> _filterArticles() {
     final articles = _source.articles
-        .where((e) => e.title.toLowerCase().contains(_text.toLowerCase()))
+        .where((e) => e.title.toLowerCase().contains(_searchText.toLowerCase()))
         .toList();
     final sortedArticles = _sortArticles(articles);
 
     return _mapResults(sortedArticles, SearchCategory.articles);
   }
 
-  List<SearchResult> _filterSourceRecipes() {
+  List<SearchResult> _filterRecipes() {
     final recipes = _source.recipes
-        .where((e) => e.title.toLowerCase().contains(_text.toLowerCase()))
+        .where((e) => e.title.toLowerCase().contains(_searchText.toLowerCase()))
         .toList();
     final sortedRecipes = _sortRecipes(recipes);
 
     return _mapResults(sortedRecipes, SearchCategory.recipes);
   }
 
-  List<SearchResult> _filterSourceVideos() {
+  List<SearchResult> _filterVideos() {
     final videos = _source.videos
-        .where((e) => e.title.toLowerCase().contains(_text.toLowerCase()))
+        .where((e) => e.title.toLowerCase().contains(_searchText.toLowerCase()))
         .toList();
     final sortedVideos = _sortVideos(videos);
 
@@ -121,45 +117,36 @@ class SearchProvider extends ChangeNotifier {
     return [];
   }
 
-  // TODO: Place in _filterResults()
-  void _replaceCacheWithResults(List<SearchResult> results) {
-    _searchResults.clear();
-
-    if (results.isNotEmpty) {
-      _searchResults.addAll(results);
+  List<Article> _sortArticles(List<Article> articles) {
+    if (_searchSort == SearchSort.newest) {
+      articles.sort((a, b) => a.compareDateTo(b.dateUploaded));
     }
+
+    return articles;
   }
 
   List<Recipe> _sortRecipes(List<Recipe> recipes) {
     // Sort by newest by comparing upload dates
-    if (_searchSortBy == SearchSortBy.newest) {
-      recipes.sort((a, b) => a.compareDateUploadedTo(b.dateUploaded));
+    if (_searchSort == SearchSort.newest) {
+      recipes.sort((a, b) => a.compareDateTo(b.dateUploaded));
     }
 
     // Sort by highestRated by comparing rating values
-    else if (_searchSortBy == SearchSortBy.highestRated) {
+    else if (_searchSort == SearchSort.highestRated) {
       recipes.sort((a, b) => a.compareRatingValueTo(b));
     }
 
     // Sort by mostReviewed by comparing rating counts
-    else if (_searchSortBy == SearchSortBy.mostReviewed) {
+    else if (_searchSort == SearchSort.mostReviewed) {
       recipes.sort((a, b) => a.compareRatingCountTo(b));
     }
 
     return recipes;
   }
 
-  List<Article> _sortArticles(List<Article> articles) {
-    if (_searchSortBy == SearchSortBy.newest) {
-      articles.sort((a, b) => a.compareDateUploadedTo(b.dateUploaded));
-    }
-
-    return articles;
-  }
-
   List<Video> _sortVideos(List<Video> videos) {
-    if (_searchSortBy == SearchSortBy.newest) {
-      videos.sort((a, b) => a.compareDateUploadedTo(b.dateUploaded));
+    if (_searchSort == SearchSort.newest) {
+      videos.sort((a, b) => a.compareDateTo(b.dateUploaded));
     }
 
     return videos;

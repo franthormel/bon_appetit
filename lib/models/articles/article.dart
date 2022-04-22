@@ -38,6 +38,6 @@ class Article with BaseModelsMixin {
   Map<String, dynamic> toJson() => _$ArticleToJson(this);
 
   @override
-  int compareDateUploadedTo(DateTime other) =>
-      DateComparatorService.compareDates(dateUploaded, other);
+  int compareDateTo(DateTime other) =>
+      DateComparatorService.compare(dateUploaded, other);
 }

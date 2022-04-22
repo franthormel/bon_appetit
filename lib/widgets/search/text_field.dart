@@ -27,15 +27,15 @@ class SearchPageTextFieldWidget extends StatelessWidget {
           prefixIcon: IconButton(
             color: BonAppetitColors.black,
             icon: const Icon(Icons.search),
-            onPressed: provider.refreshSearchResults,
+            onPressed: provider.searchForResults,
           ),
           suffixIcon: const SearchPageActionFilterWidget(),
         ),
         textInputAction: TextInputAction.search,
         onSubmitted: (text) {
-          provider.refreshSearchResults();
+          provider.searchForResults();
         },
-        onChanged: provider.changeText,
+        onChanged: provider.changeSearchText,
       ),
 
       // TODO: Add wrapped filters here as squared chips

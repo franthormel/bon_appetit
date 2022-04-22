@@ -83,8 +83,8 @@ class Recipe with BaseModelsMixin {
   String? get issue => dateIssue != null ? "${dateIssue!} Issue" : null;
 
   @override
-  int compareDateUploadedTo(DateTime other) =>
-      DateComparatorService.compareDates(dateUploaded, other);
+  int compareDateTo(DateTime other) =>
+      DateComparatorService.compare(dateUploaded, other);
 
   // TODO: Improve (maybe use a static service)
   int compareRatingCountTo(Recipe other) {
