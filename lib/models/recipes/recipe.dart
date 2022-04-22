@@ -81,20 +81,4 @@ class Recipe with BaseModelsMixin {
   Map<String, dynamic> toJson() => _$RecipeToJson(this);
 
   String? get issue => dateIssue != null ? "${dateIssue!} Issue" : null;
-
-  // TODO: Remove this and call service directly from where it's being used AND update test file too
-  int compareRatingCountTo(Recipe other) {
-    final a = rating?.count;
-    final b = other.rating?.count;
-
-    return ComparatorService.compareIntsFromNullableStrings(a, b);
-  }
-
-  // TODO: Remove this and call service directly from where it's being used AND update test file too
-  int compareRatingValueTo(Recipe other) {
-    final a = rating?.value;
-    final b = other.rating?.value;
-
-    return ComparatorService.compareDoublesFromNullableStrings(a, b);
-  }
 }

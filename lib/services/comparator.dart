@@ -1,32 +1,7 @@
-/// Utility class for comparing nullable [int], [double], and [String].
+/// Utility class for comparing nullable [int] and [double].
 class ComparatorService {
   // TODO: 1. Test
   // TODO: 2. Improve
-
-  static int compareIntsFromNullableStrings(String? a, String? b) {
-    // Compare nullable strings
-    if (a == null && b == null) {
-      return 0;
-    } else if (a == null) {
-      return 1;
-    } else if (b == null) {
-      return -1;
-    } else {
-      final aValue = int.tryParse(a);
-      final bValue = int.tryParse(b);
-
-      // Compare nullable ints
-      if (aValue == null && bValue == null) {
-        return 0;
-      } else if (aValue == null) {
-        return 1;
-      } else if (bValue == null) {
-        return -1;
-      } else {
-        return bValue - aValue;
-      }
-    }
-  }
 
   static int compareDoublesFromNullableStrings(String? a, String? b) {
     // Compare nullable strings
@@ -57,6 +32,31 @@ class ComparatorService {
         } else {
           return 0;
         }
+      }
+    }
+  }
+
+  static int compareIntsFromNullableStrings(String? a, String? b) {
+    // Compare nullable strings
+    if (a == null && b == null) {
+      return 0;
+    } else if (a == null) {
+      return 1;
+    } else if (b == null) {
+      return -1;
+    } else {
+      final aValue = int.tryParse(a);
+      final bValue = int.tryParse(b);
+
+      // Compare nullable ints
+      if (aValue == null && bValue == null) {
+        return 0;
+      } else if (aValue == null) {
+        return 1;
+      } else if (bValue == null) {
+        return -1;
+      } else {
+        return bValue - aValue;
       }
     }
   }

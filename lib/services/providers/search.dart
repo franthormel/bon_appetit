@@ -3,6 +3,7 @@ import 'dart:collection';
 import 'package:flutter/material.dart';
 
 import '../../models/index.dart';
+import '../comparator.dart';
 
 class SearchProvider extends ChangeNotifier {
   final DatasetSource _source;
@@ -133,12 +134,22 @@ class SearchProvider extends ChangeNotifier {
 
     // Sort by highestRated by comparing rating values
     else if (_searchSort == SearchSort.highestRated) {
-      recipes.sort((a, b) => a.compareRatingValueTo(b));
+      recipes.sort((a, b) {
+        return ComparatorService.compareDoublesFromNullableStrings(
+          a.rating?.value,
+          b.rating?.value,
+        );
+      });
     }
 
     // Sort by mostReviewed by comparing rating counts
     else if (_searchSort == SearchSort.mostReviewed) {
-      recipes.sort((a, b) => a.compareRatingCountTo(b));
+      recipes.sort((a, b) {
+        return ComparatorService.compareIntsFromNullableStrings(
+          a.rating?.count,
+          b.rating?.count,
+        );
+      });
     }
 
     return recipes;
