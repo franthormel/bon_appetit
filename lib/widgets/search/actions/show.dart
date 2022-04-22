@@ -24,7 +24,7 @@ class SearchPageActionShowWidget extends StatelessWidget {
                 PopupMenuItem<SearchCategory>(
                     value: e, child: Text(e.toLiteralValue())))
             .toList(),
-        onSelected: provider.changeShowType,
+        onSelected: provider.changeSearchCategory,
       ),
     );
   }
