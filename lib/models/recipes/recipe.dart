@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:json_annotation/json_annotation.dart';
 
+import '../../services/index.dart';
+import '../others/base_model_mixin.dart';
 import 'ingredient.dart';
 import 'nutrition_serving.dart';
 import 'rating.dart';
@@ -11,7 +13,7 @@ import 'utensil.dart';
 part 'recipe.g.dart';
 
 @JsonSerializable()
-class Recipe {
+class Recipe with BaseModelsMixin {
   final String? author;
 
   /// Used for filtering recipes
@@ -80,12 +82,9 @@ class Recipe {
 
   String? get issue => dateIssue != null ? "${dateIssue!} Issue" : null;
 
-  // TODO: Place in a mixin with Article and Video
-  String get heroTag => ObjectKey(this).toString();
-
-  // TODO: Place in a mixin with Article and Video
-  int compareDateUploadedTo(Recipe other) =>
-      other.dateUploaded.compareTo(dateUploaded);
+  @override
+  int compareDateUploadedTo(DateTime other) =>
+      DateComparatorService.compareDates(dateUploaded, other);
 
   // TODO: Improve (maybe use a static service)
   int compareRatingCountTo(Recipe other) {

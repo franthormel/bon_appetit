@@ -17,7 +17,7 @@ class SearchProvider extends ChangeNotifier {
   SearchSortBy _searchSortBy = SearchSortBy.relevance;
 
   // Cache for search results
-  // // TODO: Remove final
+  // TODO: Remove final
   final _searchResults = <SearchResult>[];
 
   SearchProvider(this._source);
@@ -133,7 +133,7 @@ class SearchProvider extends ChangeNotifier {
   List<Recipe> _sortRecipes(List<Recipe> recipes) {
     // Sort by newest by comparing upload dates
     if (_searchSortBy == SearchSortBy.newest) {
-      recipes.sort((a, b) => a.compareDateUploadedTo(b));
+      recipes.sort((a, b) => a.compareDateUploadedTo(b.dateUploaded));
     }
 
     // Sort by highestRated by comparing rating values
@@ -151,7 +151,7 @@ class SearchProvider extends ChangeNotifier {
 
   List<Article> _sortArticles(List<Article> articles) {
     if (_searchSortBy == SearchSortBy.newest) {
-      articles.sort((a, b) => a.compareDateUploadedTo(b));
+      articles.sort((a, b) => a.compareDateUploadedTo(b.dateUploaded));
     }
 
     return articles;
@@ -159,7 +159,7 @@ class SearchProvider extends ChangeNotifier {
 
   List<Video> _sortVideos(List<Video> videos) {
     if (_searchSortBy == SearchSortBy.newest) {
-      videos.sort((a, b) => a.compareDateUploadedTo(b));
+      videos.sort((a, b) => a.compareDateUploadedTo(b.dateUploaded));
     }
 
     return videos;

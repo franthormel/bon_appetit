@@ -1,10 +1,12 @@
-import 'package:flutter/material.dart';
 import 'package:json_annotation/json_annotation.dart';
+
+import '../../services/index.dart';
+import '../others/base_model_mixin.dart';
 
 part 'video.g.dart';
 
 @JsonSerializable()
-class Video {
+class Video with BaseModelsMixin {
   final String about;
   final List<String>? credits;
   final DateTime dateUploaded;
@@ -33,10 +35,7 @@ class Video {
 
   Map<String, dynamic> toJson() => _$VideoToJson(this);
 
-  // TODO: Place in a mixin with Article and Recipe
-  String get heroTag => ObjectKey(this).toString();
-
-  // TODO: Place in a mixin with Article and Recipe
-  int compareDateUploadedTo(Video other) =>
-      other.dateUploaded.compareTo(dateUploaded);
+  @override
+  int compareDateUploadedTo(DateTime other) =>
+      DateComparatorService.compareDates(dateUploaded, other);
 }
