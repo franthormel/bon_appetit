@@ -1,4 +1,4 @@
-import 'package:bon_appetit/models/recipes/recipe.dart';
+import 'package:bon_appetit/models/index.dart';
 import 'package:flutter/material.dart';
 import 'package:test/test.dart';
 

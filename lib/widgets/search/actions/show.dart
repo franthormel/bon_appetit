@@ -16,15 +16,15 @@ class SearchPageActionShowWidget extends StatelessWidget {
       padding: const EdgeInsets.only(left: 16.0),
       child: PopupMenuButton<SearchCategory>(
         child: SearchPageActionControlMenuIconWidget(
-          value: provider.searchShow,
+          value: provider.searchShow.toLiteralValue(),
           title: "SHOW",
         ),
         itemBuilder: (context) => SearchCategory.values
             .map<PopupMenuEntry<SearchCategory>>((e) =>
-            PopupMenuItem<SearchCategory>(
-                value: e, child: Text(e.toLiteralValue())))
+                PopupMenuItem<SearchCategory>(
+                    value: e, child: Text(e.toLiteralValue())))
             .toList(),
-        onSelected: provider.changeShowType,
+        onSelected: provider.changeSearchCategory,
       ),
     );
   }

@@ -1,12 +1,12 @@
-import 'package:flutter/material.dart';
 import 'package:json_annotation/json_annotation.dart';
 
+import '../others/base_model_mixin.dart';
 import '../others/product.dart';
 
 part 'article.g.dart';
 
 @JsonSerializable()
-class Article {
+class Article with BaseModelsMixin {
   final String author;
   final String category;
   final String content;
@@ -35,6 +35,4 @@ class Article {
       _$ArticleFromJson(json);
 
   Map<String, dynamic> toJson() => _$ArticleToJson(this);
-
-  String get heroTag => ObjectKey(this).toString();
 }

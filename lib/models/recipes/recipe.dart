@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:json_annotation/json_annotation.dart';
 
+import '../../services/index.dart';
+import '../others/base_model_mixin.dart';
 import 'ingredient.dart';
 import 'nutrition_serving.dart';
 import 'rating.dart';
@@ -11,7 +13,7 @@ import 'utensil.dart';
 part 'recipe.g.dart';
 
 @JsonSerializable()
-class Recipe {
+class Recipe with BaseModelsMixin {
   final String? author;
 
   /// Used for filtering recipes
@@ -79,6 +81,4 @@ class Recipe {
   Map<String, dynamic> toJson() => _$RecipeToJson(this);
 
   String? get issue => dateIssue != null ? "${dateIssue!} Issue" : null;
-
-  String get heroTag => ObjectKey(this).toString();
 }

@@ -1,12 +1,14 @@
-import 'package:flutter/material.dart';
 import 'package:json_annotation/json_annotation.dart';
+
+import '../others/base_model_mixin.dart';
 
 part 'video.g.dart';
 
 @JsonSerializable()
-class Video {
+class Video with BaseModelsMixin {
   final String about;
   final List<String>? credits;
+  final DateTime dateUploaded;
   final String? episode;
   final String id;
   final String imageUrl;
@@ -14,15 +16,14 @@ class Video {
   final String? series;
   final String title;
   final String transcript;
-  final DateTime uploadDate;
 
   Video({
     required this.about,
     required this.id,
+    required this.dateUploaded,
     required this.imageUrl,
     required this.title,
     required this.transcript,
-    required this.uploadDate,
     this.credits,
     this.episode,
     this.season,
@@ -32,6 +33,4 @@ class Video {
   factory Video.fromJson(Map<String, dynamic> json) => _$VideoFromJson(json);
 
   Map<String, dynamic> toJson() => _$VideoToJson(this);
-
-  String get heroTag => ObjectKey(this).toString();
 }

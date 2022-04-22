@@ -12,7 +12,7 @@ void main() {
           imageUrl: "imageUrl",
           title: "title",
           transcript: "transcript",
-          uploadDate: DateTime.now(),
+          dateUploaded: DateTime.now(),
         );
 
         expect(video.heroTag, ObjectKey(video).toString());

@@ -5,38 +5,19 @@ import '../../../services/index.dart';
 import '../../../style/index.dart';
 import 'actions/filter.dart';
 
-class SearchPageTextFieldWidget extends StatefulWidget {
+class SearchPageTextFieldWidget extends StatelessWidget {
   const SearchPageTextFieldWidget({Key? key}) : super(key: key);
 
   @override
-  State<SearchPageTextFieldWidget> createState() =>
-      _SearchPageTextFieldWidgetState();
-}
-
-class _SearchPageTextFieldWidgetState extends State<SearchPageTextFieldWidget> {
-  late final TextEditingController controller;
-
-  @override
-  void initState() {
-    super.initState();
-    controller = TextEditingController();
-  }
-
-  @override
-  void dispose() {
-    controller.dispose();
-    super.dispose();
-  }
-
-  @override
   Widget build(BuildContext context) {
-    final search = Provider.of<SearchProvider>(context, listen: false);
+    final _controller = TextEditingController();
+    final provider = Provider.of<SearchProvider>(context, listen: false);
 
     return Container(
       color: BonAppetitColors.white,
       padding: const EdgeInsets.all(16.0),
       child: TextField(
-        controller: controller,
+        controller: _controller,
         decoration: InputDecoration(
           border: const OutlineInputBorder(),
           focusedBorder: const OutlineInputBorder(
@@ -46,16 +27,18 @@ class _SearchPageTextFieldWidgetState extends State<SearchPageTextFieldWidget> {
           prefixIcon: IconButton(
             color: BonAppetitColors.black,
             icon: const Icon(Icons.search),
-            onPressed: () {},
+            onPressed: provider.searchForResults,
           ),
           suffixIcon: const SearchPageActionFilterWidget(),
         ),
-        onChanged: (text) {
-          setState(() {
-            search.changeText(text);
-          });
+        textInputAction: TextInputAction.search,
+        onSubmitted: (text) {
+          provider.searchForResults();
         },
+        onChanged: provider.changeSearchText,
       ),
+
+      // TODO: Add wrapped filters here as squared chips
     );
   }
 }

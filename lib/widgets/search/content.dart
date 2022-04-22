@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../style/index.dart';
 import 'controls.dart';
-import 'list.dart';
+import 'list/list.dart';
 import 'text_field.dart';
 
 class SearchPageContentWidget extends StatelessWidget {
