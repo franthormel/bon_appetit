@@ -9,6 +9,14 @@ class ComparatorServiceTester {
       });
     });
   }
+
+  static void testCompareIntStrings(Map<String?, String?> map, Matcher m) {
+    map.forEach((a, b) {
+      test("a=$a b=$b", () {
+        expect(ComparatorService.compareIntStrings(a, b), m);
+      });
+    });
+  }
 }
 
 void main() {
@@ -29,16 +37,15 @@ void main() {
 
         group("if a is not null and b is null", () {
           const map = <String?, String?>{
-            "5.0": "",
-            "3.9": "3.",
-            "1.1": "1.0",
+            "5.0": null,
+            "3.9": "null",
           };
 
           ComparatorServiceTester.testCompareDoubleStrings(map, m);
         });
       });
 
-      group("should return 0", () {
+      group("should return zero", () {
         const m = isZero;
 
         group("if a and b are null", () {
@@ -94,10 +101,82 @@ void main() {
     });
 
     group("compareIntStrings()", () {
-      // TODO: Test compareIntsFromNullableStrings()
-      group("should return -1", () {});
-      group("should return 0", () {});
-      group("should return 1", () {});
+      group("should return negative", () {
+        const m = isNegative;
+
+        group("if a is greater than b", () {
+          const map = <String?, String?>{
+            "5": "",
+            "3": "2",
+            "10": "1",
+          };
+
+          ComparatorServiceTester.testCompareIntStrings(map, m);
+        });
+
+        group("if a is not null and b is null", () {
+          const map = <String?, String?>{
+            "5": "null",
+            "1": null,
+          };
+
+          ComparatorServiceTester.testCompareIntStrings(map, m);
+        });
+      });
+
+      group("should return zero", () {
+        const m = isZero;
+
+        group("if a and b are null", () {
+          ComparatorServiceTester.testCompareIntStrings({null: null}, m);
+        });
+
+        group("if a and b are not ints", () {
+          const map = <String?, String?>{
+            "asdnull": "nuller",
+            "ryh": "nUll",
+            "*&*@": "KKJ(",
+            "": "",
+            "nVll": "axr",
+          };
+
+          ComparatorServiceTester.testCompareIntStrings(map, m);
+        });
+
+        group("if a and b are equal", () {
+          const map = <String?, String?>{
+            "3": "3",
+            "-25": "-25",
+            "0": "0",
+          };
+
+          ComparatorServiceTester.testCompareIntStrings(map, m);
+        });
+      });
+
+      group("should return positive", () {
+        const m = isPositive;
+
+        group("if a is lesser than b", () {
+          const map = <String?, String?>{
+            "": "1",
+            "32": "33",
+            "-1": "0",
+            "0": "5",
+          };
+
+          ComparatorServiceTester.testCompareIntStrings(map, m);
+        });
+
+        group("if a is null and b is not null", () {
+          const map = <String?, String?>{
+            null: "2",
+            "null": "5",
+          };
+
+          ComparatorServiceTester.testCompareIntStrings(map, m);
+        });
+      });
     });
   });
 
