@@ -26,7 +26,6 @@ class SearchPageListItemWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: Use hasOverlayPlayButton property and overlay on image
     return Material(
       color: BonAppetitColors.white,
       elevation: 1.0,
@@ -42,9 +41,17 @@ class SearchPageListItemWidget extends StatelessWidget {
             children: [
               Expanded(
                 flex: 1,
-                child: CachedHeroImageWidget(
-                  heroTag: heroTag,
-                  imageUrl: imageUrl,
+                child: Stack(
+                  alignment: Alignment.center,
+                  children: [
+                    CachedHeroImageWidget(heroTag: heroTag, imageUrl: imageUrl),
+                    FloatingActionButton.small(
+                      onPressed: () {},
+                      child: const Icon(Icons.play_arrow),
+                      backgroundColor: BonAppetitColors.white,
+                      foregroundColor: BonAppetitColors.black,
+                    ),
+                  ],
                 ),
               ),
               const SizedBox(width: 5.0),
