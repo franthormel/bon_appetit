@@ -21,6 +21,7 @@ class VideoEntryWidget extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            // TODO: Make reusable for search item hasOverlayPlayButton
             Stack(
               alignment: Alignment.bottomLeft,
               children: [

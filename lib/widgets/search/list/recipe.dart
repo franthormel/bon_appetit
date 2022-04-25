@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../models/index.dart';
+import '../../../router/index.dart';
 import 'item.dart';
 
 class SearchPageListRecipeWidget extends StatelessWidget {
@@ -13,6 +14,8 @@ class SearchPageListRecipeWidget extends StatelessWidget {
     return SearchPageListItemWidget(
       category: "RECIPES",
       imageUrl: recipe.imageUrl,
+      heroTag: recipe.heroTag,
+      route: RecipeDetailsRoute(recipe: recipe),
       title: recipe.title,
     );
   }

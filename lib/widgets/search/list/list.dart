@@ -17,7 +17,7 @@ class SearchPageListWidget extends StatelessWidget {
         padding: const EdgeInsets.all(8.0),
         itemBuilder: (context, i) => SearchPageListWrapperWidget(results[i]),
         itemCount: results.length,
-        separatorBuilder: (context, i) => const SizedBox(height: 8.0),
+        separatorBuilder: (context, i) => const SizedBox(height: 10.0),
       ),
     );
   }
