@@ -20,7 +20,7 @@ class ComparatorServiceTester {
 }
 
 void main() {
-  group("Comparator", () {
+  group("ComparatorService", () {
     group("compareDoubleStrings()", () {
       group("should return negative", () {
         const m = isNegative;
@@ -180,13 +180,214 @@ void main() {
     });
   });
 
-  group("Sorting collections with nullable map", () {
+  group("Sorting collections with nullable values", () {
     group("Nullable doubles should be sorted in descending order", () {
-      // TODO: Test compareDoublesFromNullableStrings() with a collection
-    });
+      const sortedA = <String?>[
+        "1084.7",
+        "1054.5",
+        "991.6",
+        "920.0",
+        "853.0",
+        "499.9",
+        "470.0",
+        "386.0",
+        "377.6",
+        "341.4",
+        "240.8",
+        "159.6",
+        "",
+        null,
+        null,
+      ];
+      List<String?> unsortedA = <String?>[
+        "991.6",
+        "470.0",
+        null,
+        "159.6",
+        "",
+        "1054.5",
+        "341.4",
+        "1084.7",
+        "240.8",
+        "920.0",
+        null,
+        "853.0",
+        "499.9",
+        "386.0",
+        "377.6",
+      ];
+      const sortedB = <String?>[
+        "68.5",
+        "22.2",
+        "14.3",
+        "-9.3",
+        "-23.2",
+        "-54.2",
+        "-78.3",
+        "-80.7",
+        null,
+        null,
+      ];
+      List<String?> unsortedB = <String?>[
+        "-9.3",
+        null,
+        "-78.3",
+        "-23.2",
+        "-80.7",
+        "68.5",
+        "14.3",
+        "-54.2",
+        "22.2",
+        null,
+      ];
+      const sortedC = <String?>[
+        "110.9",
+        "109.7",
+        "104.2",
+        "82.8",
+        "57.1",
+        "31.1",
+        "13.5",
+        "-32.2",
+        "-48.8",
+        "-55.8",
+        "",
+        "",
+        null,
+        null,
+      ];
+      List<String?> unsortedC = <String?>[
+        "",
+        "82.8",
+        "110.9",
+        "-48.8",
+        "-32.2",
+        null,
+        null,
+        "104.2",
+        "13.5",
+        "-55.8",
+        "57.1",
+        "31.1",
+        "109.7",
+        "",
+      ];
+      const outputs = <List<String?>>[sortedA, sortedB, sortedC];
+      List<List<String?>> inputs = [unsortedA, unsortedB, unsortedC];
 
+      for (int i = 0; i < inputs.length; i++) {
+        test("#${i + 1}", () {
+          final input = inputs[i];
+
+          input.sort(ComparatorService.compareDoubleStrings);
+
+          expect(input, outputs[i]);
+        });
+      }
+    });
     group("Nullable integers should be sorted in descending order", () {
-      // TODO: Test compareIntsFromNullableStrings() with a collection
+      const sortedA = <String?>[
+        "1084",
+        "1054",
+        "991",
+        "920",
+        "853",
+        "499",
+        "470",
+        "386",
+        "377",
+        "341",
+        "240",
+        "159",
+        "",
+        null,
+        null,
+      ];
+      List<String?> unsortedA = <String?>[
+        "991",
+        "470",
+        null,
+        "159",
+        "",
+        "1054",
+        "341",
+        "1084",
+        "240",
+        "920",
+        null,
+        "853",
+        "499",
+        "386",
+        "377",
+      ];
+      const sortedB = <String?>[
+        "68",
+        "22",
+        "14",
+        "-9",
+        "-23",
+        "-54",
+        "-78",
+        "-80",
+        null,
+        null,
+      ];
+      List<String?> unsortedB = <String?>[
+        "-9",
+        null,
+        "-78",
+        "-23",
+        "-80",
+        "68",
+        "14",
+        "-54",
+        "22",
+        null,
+      ];
+      const sortedC = <String?>[
+        "110",
+        "109",
+        "104",
+        "82",
+        "57",
+        "31",
+        "13",
+        "-32",
+        "-48",
+        "-55",
+        "",
+        "",
+        null,
+        null,
+      ];
+      List<String?> unsortedC = <String?>[
+        "",
+        "82",
+        "110",
+        "-48",
+        "-32",
+        null,
+        null,
+        "104",
+        "13",
+        "-55",
+        "57",
+        "31",
+        "109",
+        "",
+      ];
+      const outputs = <List<String?>>[sortedA, sortedB, sortedC];
+      List<List<String?>> inputs = [unsortedA, unsortedB, unsortedC];
+
+      for (int i = 0; i < inputs.length; i++) {
+        test("#${i + 1}", () {
+          final input = inputs[i];
+
+          input.sort(ComparatorService.compareIntStrings);
+
+          expect(input, outputs[i]);
+        });
+      }
     });
   });
 }

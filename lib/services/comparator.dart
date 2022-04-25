@@ -1,7 +1,6 @@
 /// Utility class for comparing nullable [int] and [double].
 class ComparatorService {
-  // TODO: 1. Test
-  // TODO: 2. Improve
+  // TODO: Improve
 
   static int compareDoubleStrings(String? a, String? b) {
     // Compare nullable strings
