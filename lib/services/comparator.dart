@@ -3,7 +3,7 @@ class ComparatorService {
   // TODO: 1. Test
   // TODO: 2. Improve
 
-  static int compareDoublesFromNullableStrings(String? a, String? b) {
+  static int compareDoubleStrings(String? a, String? b) {
     // Compare nullable strings
     if (a == null && b == null) {
       return 0;
@@ -36,7 +36,7 @@ class ComparatorService {
     }
   }
 
-  static int compareIntsFromNullableStrings(String? a, String? b) {
+  static int compareIntStrings(String? a, String? b) {
     // Compare nullable strings
     if (a == null && b == null) {
       return 0;

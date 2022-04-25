@@ -135,7 +135,7 @@ class SearchProvider extends ChangeNotifier {
     // Sort by highestRated by comparing rating values
     else if (_searchSort == SearchSort.highestRated) {
       recipes.sort((a, b) {
-        return ComparatorService.compareDoublesFromNullableStrings(
+        return ComparatorService.compareDoubleStrings(
           a.rating?.value,
           b.rating?.value,
         );
@@ -145,7 +145,7 @@ class SearchProvider extends ChangeNotifier {
     // Sort by mostReviewed by comparing rating counts
     else if (_searchSort == SearchSort.mostReviewed) {
       recipes.sort((a, b) {
-        return ComparatorService.compareIntsFromNullableStrings(
+        return ComparatorService.compareIntStrings(
           a.rating?.count,
           b.rating?.count,
         );
