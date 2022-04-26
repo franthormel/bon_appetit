@@ -38,7 +38,7 @@ class SearchPageTextFieldWidget extends StatelessWidget {
         onChanged: provider.changeSearchText,
       ),
 
-      // TODO: Add wrapped filters here as squared chips
+      // TODO: Add recipe filters here as squared chips inside Wrap
     );
   }
 }

@@ -16,7 +16,7 @@ class Recipe with BaseModelsMixin {
   final String? author;
 
   /// Used for filtering recipes
-  final List<String> categories;
+  final List<String> categories; // TODO: Filter this
 
   /// Issue publication's month and year if available.
   final String? dateIssue;
@@ -26,7 +26,7 @@ class Recipe with BaseModelsMixin {
   final String description;
   final String id;
   final String imageUrl;
-  final List<RecipeIngredient> ingredients;
+  final List<RecipeIngredient> ingredients; // TODO: Filter this
 
   /// Displayed next to main recipe. Should not interchanged with [description] which is different.
   final String? mainDescription;
