@@ -39,21 +39,7 @@ class SearchPageListItemWidget extends StatelessWidget {
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Expanded(
-                flex: 1,
-                child: Stack(
-                  alignment: Alignment.center,
-                  children: [
-                    CachedHeroImageWidget(heroTag: heroTag, imageUrl: imageUrl),
-                    FloatingActionButton.small(
-                      onPressed: () {},
-                      child: const Icon(Icons.play_arrow),
-                      backgroundColor: BonAppetitColors.white,
-                      foregroundColor: BonAppetitColors.black,
-                    ),
-                  ],
-                ),
-              ),
+              Expanded(flex: 1, child: imageWidget),
               const SizedBox(width: 5.0),
               Expanded(
                 flex: 2,
@@ -85,5 +71,26 @@ class SearchPageListItemWidget extends StatelessWidget {
         ),
       ),
     );
+  }
+
+  Widget get imageWidget {
+    final image = CachedHeroImageWidget(heroTag: heroTag, imageUrl: imageUrl);
+
+    if (hasOverlayPlayButton) {
+      return Stack(
+        alignment: Alignment.center,
+        children: [
+          image,
+          FloatingActionButton.small(
+            onPressed: () {},
+            child: const Icon(Icons.play_arrow),
+            backgroundColor: BonAppetitColors.white,
+            foregroundColor: BonAppetitColors.black,
+          ),
+        ],
+      );
+    }
+
+    return image;
   }
 }
