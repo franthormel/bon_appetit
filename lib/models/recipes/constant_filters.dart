@@ -21,7 +21,7 @@ class RecipeFilters {
   ];
 
   static const List<String> dietaryConcerns = [
-    "Gluten-free",
+    "Gluten-Free",
     "Healthyish",
     "Vegan",
     "Vegetarian",

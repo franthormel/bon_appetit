@@ -16,6 +16,7 @@ class SearchPageActionFilterWidget extends StatelessWidget {
           showModalBottomSheet(
             context: context,
             builder: (context) => const SearchPageActionFilterDialogWidget(),
+            isScrollControlled: true,
           );
         },
       ),
