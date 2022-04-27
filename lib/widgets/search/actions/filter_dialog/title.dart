@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'item.dart';
+import '../../../../style/index.dart';
 import 'text.dart';
 
 class SearchPageActionFilterDialogTitleWidget extends StatelessWidget {
@@ -8,19 +8,22 @@ class SearchPageActionFilterDialogTitleWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return FilterDialogItemWidget(
-      header: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          const FilterDialogTextWidget("REFINE RESULTS"),
-          IconButton(
-            icon: const Icon(Icons.close),
-            onPressed: () {
-              Navigator.of(context).pop();
-            },
-          ),
-        ],
-      ),
+    return Column(
+      children: [
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            const FilterDialogTextWidget("REFINE RESULTS"),
+            IconButton(
+              icon: const Icon(Icons.close),
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+            ),
+          ],
+        ),
+        const Divider(color: BonAppetitColors.platinum),
+      ],
     );
   }
 }

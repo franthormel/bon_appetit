@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import '../../../../models/index.dart';
 import 'checkboxes.dart';
 import 'item.dart';
-import 'text.dart';
 
 class FilterPopularWidget extends StatelessWidget {
   const FilterPopularWidget({Key? key}) : super(key: key);
@@ -11,8 +10,8 @@ class FilterPopularWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const FilterDialogItemWidget(
-      header: FilterDialogTextWidget("POPULAR"),
       middle: FilterDialogCheckboxesWidget(RecipeFilters.popular),
+      text: "POPULAR",
     );
   }
 }
