@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 
+import 'dietary_concerns.dart';
+import 'ingredient.dart';
+import 'meal_course.dart';
+import 'popular.dart';
 import 'title.dart';
 
 class SearchPageActionFilterDialogWidget extends StatelessWidget {
@@ -8,12 +12,22 @@ class SearchPageActionFilterDialogWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: ListView(
+      body: ListView.separated(
         padding: const EdgeInsets.all(16.0),
-        children: const [
-          SearchPageActionFilterDialogTitleWidget(),
-        ],
+        itemBuilder: (context, i) => children[i],
+        itemCount: children.length,
+        separatorBuilder: (context, i) => const SizedBox(height: 10.0),
       ),
     );
+  }
+
+  List<Widget> get children {
+    return const [
+      SearchPageActionFilterDialogTitleWidget(),
+      FilterPopularWidget(),
+      FilterMealCourseWidget(),
+      FilterDietaryConcernsWidget(),
+      FilterIngredientWidget(),
+    ];
   }
 }

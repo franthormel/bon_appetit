@@ -2,15 +2,15 @@ import 'package:flutter/material.dart';
 
 import '../../../../style/index.dart';
 
-class SearchPageActionFilterDialogItemWidget extends StatelessWidget {
-  final String text;
+class FilterDialogItemWidget extends StatelessWidget {
+  final Widget header;
 
-  /// This widget will be placed between the title [Text] widget and the gray [Divider] at the end.
-  final Widget? child;
+  /// This widget will be placed between the [header] widget and the gray [Divider] at the end.
+  final Widget? middle;
 
-  const SearchPageActionFilterDialogItemWidget(
-    this.text, {
-    this.child,
+  const FilterDialogItemWidget({
+    required this.header,
+    this.middle,
     Key? key,
   }) : super(key: key);
 
@@ -19,16 +19,10 @@ class SearchPageActionFilterDialogItemWidget extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(
-          text.toUpperCase(),
-          style: Theme.of(context)
-              .textTheme
-              .bodyText2
-              ?.copyWith(fontWeight: FontWeight.w600),
-        ),
+        header,
         const SizedBox(height: 10.0),
-        if (child != null)
-          Column(children: [child!, const SizedBox(height: 10.0)]),
+        if (middle != null)
+          Column(children: [middle!, const SizedBox(height: 10.0)]),
         const Divider(color: BonAppetitColors.platinum),
       ],
     );
