@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'filter_dialog/filter_dialog.dart';
+
 class SearchPageActionFilterWidget extends StatelessWidget {
   const SearchPageActionFilterWidget({Key? key}) : super(key: key);
 
@@ -11,7 +13,13 @@ class SearchPageActionFilterWidget extends StatelessWidget {
       child: TextButton.icon(
         label: Text("FILTERS", style: Theme.of(context).textTheme.caption),
         icon: const Icon(Icons.tune),
-        onPressed: () {},
+        onPressed: () {
+          showDialog(
+            context: context,
+            builder: (context) =>
+                const SearchPageActionFilterDialogWidget(), // TODO: Use declarative routing
+          );
+        },
       ),
     );
   }
