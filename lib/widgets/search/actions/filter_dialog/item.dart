@@ -20,9 +20,7 @@ class FilterDialogItemWidget extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         header,
-        const SizedBox(height: 10.0),
-        if (middle != null)
-          Column(children: [middle!, const SizedBox(height: 10.0)]),
+        if (middle != null) middle!,
         const Divider(color: BonAppetitColors.platinum),
       ],
     );

@@ -10,6 +10,26 @@ class FilterDialogCheckboxesWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Text("TODO: Show GridView 2 x n with checkboxes");
+    return GridView.builder(
+      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+        childAspectRatio: 5,
+        crossAxisCount: 2,
+      ),
+      itemBuilder: (context, i) {
+        final filter = filters[i];
+
+        // TODO: Create new widget
+        return Row(
+          children: [
+            Checkbox(value: false, onChanged: (value) {}),
+            Text(filter),
+          ],
+        );
+      },
+      itemCount: filters.length,
+      physics: const NeverScrollableScrollPhysics(),
+      primary: false,
+      shrinkWrap: true,
+    );
   }
 }

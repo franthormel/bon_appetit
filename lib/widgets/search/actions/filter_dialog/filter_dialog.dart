@@ -16,6 +16,7 @@ class SearchPageActionFilterDialogWidget extends StatelessWidget {
     return Scaffold(
       body: ListView.separated(
         padding: const EdgeInsets.all(16.0),
+        primary: true,
         itemBuilder: (context, i) => children[i],
         itemCount: children.length,
         separatorBuilder: (context, i) => const SizedBox(height: 10.0),
