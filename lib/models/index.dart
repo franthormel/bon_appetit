@@ -7,6 +7,7 @@ export 'others/enum/inline_tag.dart';
 export 'others/image_aspect_ratio.dart';
 export 'others/product.dart';
 export 'others/product_shop.dart';
+export 'recipes/constant_filters.dart';
 export 'recipes/enum.dart';
 export 'recipes/ingredient.dart';
 export 'recipes/nutrition_serving.dart';
