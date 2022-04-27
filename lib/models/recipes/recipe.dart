@@ -26,7 +26,7 @@ class Recipe with BaseModelsMixin {
   final String description;
   final String id;
   final String imageUrl;
-  final List<RecipeIngredient> ingredients; // TODO: Filter this
+  final List<RecipeIngredient> ingredients;
 
   /// Displayed next to main recipe. Should not interchanged with [description] which is different.
   final String? mainDescription;

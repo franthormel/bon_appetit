@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 
 class FilterDialogCheckboxesWidget extends StatelessWidget {
-  // TODO: Add List<String> filters property here
+  final List<String> filters;
 
-  const FilterDialogCheckboxesWidget({Key? key}) : super(key: key);
+  const FilterDialogCheckboxesWidget(
+    this.filters, {
+    Key? key,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

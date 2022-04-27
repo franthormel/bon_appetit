@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../../models/index.dart';
 import 'checkboxes.dart';
 import 'item.dart';
 import 'text.dart';
@@ -11,7 +12,7 @@ class FilterMealCourseWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return const FilterDialogItemWidget(
       header: FilterDialogTextWidget("MEAL & COURSE"),
-      middle: FilterDialogCheckboxesWidget(),
+      middle: FilterDialogCheckboxesWidget(RecipeFilters.mealsCourse),
     );
   }
 }

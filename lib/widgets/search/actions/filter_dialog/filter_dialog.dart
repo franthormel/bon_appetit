@@ -11,6 +11,8 @@ class SearchPageActionFilterDialogWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // TODO: try to place a stacked container at the bottom containing two buttons (apply and cancel) and the number of results
+
     return Scaffold(
       body: ListView.separated(
         padding: const EdgeInsets.all(16.0),
