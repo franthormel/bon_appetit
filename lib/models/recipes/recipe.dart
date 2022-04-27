@@ -16,7 +16,8 @@ class Recipe with BaseModelsMixin {
   final String? author;
 
   /// Used for filtering recipes
-  final List<String> categories; // TODO: Filter this
+  final List<String>
+      categories; // TODO:  >>> Implement search result recipe filter from this property
 
   /// Issue publication's month and year if available.
   final String? dateIssue;

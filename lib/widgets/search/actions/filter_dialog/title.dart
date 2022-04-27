@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../style/index.dart';
-import 'text.dart';
+import 'header.dart';
 
 class SearchPageActionFilterDialogTitleWidget extends StatelessWidget {
   const SearchPageActionFilterDialogTitleWidget({Key? key}) : super(key: key);
@@ -13,7 +13,7 @@ class SearchPageActionFilterDialogTitleWidget extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            const FilterDialogTextWidget("REFINE RESULTS"),
+            const FilterDialogHeaderWidget("REFINE RESULTS"),
             IconButton(
               icon: const Icon(Icons.close),
               onPressed: () {

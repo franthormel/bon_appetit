@@ -10,7 +10,7 @@ class FilterIngredientWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const FilterDialogItemWidget(
-      middle: FilterDialogCheckboxesWidget(RecipeFilters.ingredients),
+      child: FilterDialogCheckboxesWidget(RecipeFilters.ingredients),
       text: "INGREDIENT",
     );
   }

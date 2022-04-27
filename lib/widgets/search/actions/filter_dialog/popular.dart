@@ -10,7 +10,7 @@ class FilterPopularWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const FilterDialogItemWidget(
-      middle: FilterDialogCheckboxesWidget(RecipeFilters.popular),
+      child: FilterDialogCheckboxesWidget(RecipeFilters.popular),
       text: "POPULAR",
     );
   }

@@ -10,7 +10,7 @@ class FilterDietaryConcernsWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const FilterDialogItemWidget(
-      middle: FilterDialogCheckboxesWidget(RecipeFilters.dietaryConcerns),
+      child: FilterDialogCheckboxesWidget(RecipeFilters.dietaryConcerns),
       text: "DIETARY CONCERNS",
     );
   }

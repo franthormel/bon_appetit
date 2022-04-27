@@ -1,17 +1,15 @@
 import 'package:flutter/material.dart';
 
 import '../../../../style/index.dart';
-import 'text.dart';
+import 'header.dart';
 
 class FilterDialogItemWidget extends StatelessWidget {
+  final Widget child;
   final String text;
 
-  /// This widget will be placed between the [header] widget and the gray [Divider] at the end.
-  final Widget? middle;
-
   const FilterDialogItemWidget({
+    required this.child,
     required this.text,
-    this.middle,
     Key? key,
   }) : super(key: key);
 
@@ -20,9 +18,10 @@ class FilterDialogItemWidget extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        FilterDialogTextWidget(text),
+        FilterDialogHeaderWidget(text),
         const SizedBox(height: 10.0),
-        if (middle != null) middle!, // TODO: Add white space here too without using Column
+        child,
+        const SizedBox(height: 10.0),
         const Divider(color: BonAppetitColors.platinum),
       ],
     );

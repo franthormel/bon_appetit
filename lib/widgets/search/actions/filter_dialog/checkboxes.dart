@@ -18,7 +18,7 @@ class FilterDialogCheckboxesWidget extends StatelessWidget {
       itemBuilder: (context, i) {
         final filter = filters[i];
 
-        // TODO: Create new widget
+        // TODO: >>>>>>>>> Create new widget and connect to SearchProvider <<<<<<<<<<<<<
         return Row(
           children: [
             Checkbox(value: false, onChanged: (value) {}),

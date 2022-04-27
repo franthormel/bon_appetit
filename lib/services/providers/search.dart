@@ -8,7 +8,7 @@ import '../comparator.dart';
 class SearchProvider extends ChangeNotifier {
   final DatasetSource _source;
 
-  // TODO: Create things for recipe filters (categories and ingredients)
+  // TODO: >>> Implement search result recipe filter
 
   // Category used when showing results
   SearchCategory _searchCategory = SearchCategory.recipes;
