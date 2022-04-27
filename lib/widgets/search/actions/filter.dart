@@ -7,17 +7,15 @@ class SearchPageActionFilterWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: Show as fullscreen bottom sheet with close icon button at upper right https://fidev.io/full-screen-dialog/
     return Padding(
       padding: const EdgeInsets.only(right: 8.0),
       child: TextButton.icon(
         label: Text("FILTERS", style: Theme.of(context).textTheme.caption),
         icon: const Icon(Icons.tune),
         onPressed: () {
-          showDialog(
+          showModalBottomSheet(
             context: context,
-            builder: (context) =>
-                const SearchPageActionFilterDialogWidget(), // TODO: Use declarative routing
+            builder: (context) => const SearchPageActionFilterDialogWidget(),
           );
         },
       ),

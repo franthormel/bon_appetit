@@ -5,10 +5,12 @@ class SearchPageActionFilterDialogWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: Style
-    return Scaffold(
-      appBar: AppBar(title: const Text("Filters")),
-      body: Container(),
+    // TODO: 2 Check if need to be fullscreen
+    // TODO: 1 Style
+    return const Scaffold(
+      body: Center(
+        child: Text("Hi"),
+      ),
     );
   }
 }
