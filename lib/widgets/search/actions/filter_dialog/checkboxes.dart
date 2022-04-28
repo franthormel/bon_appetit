@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'checkbox.dart';
+
 class FilterDialogCheckboxesWidget extends StatelessWidget {
   final List<String> filters;
 
@@ -15,17 +17,7 @@ class FilterDialogCheckboxesWidget extends StatelessWidget {
         childAspectRatio: 5,
         crossAxisCount: 2,
       ),
-      itemBuilder: (context, i) {
-        final filter = filters[i];
-
-        // TODO: >>>>>>>>> Create new widget and connect to SearchProvider <<<<<<<<<<<<<
-        return Row(
-          children: [
-            Checkbox(value: false, onChanged: (value) {}),
-            Text(filter),
-          ],
-        );
-      },
+      itemBuilder: (context, i) => FilterDialogCheckboxWidget(filters[i]),
       itemCount: filters.length,
       physics: const NeverScrollableScrollPhysics(),
       primary: false,
