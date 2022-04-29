@@ -8,10 +8,11 @@ import '../comparator.dart';
 class SearchProvider extends ChangeNotifier {
   final DatasetSource _source;
 
-  List<String> _recipeCategoryFilters = <String>[];
-
   // Category used when showing results
   SearchCategory _searchCategory = SearchCategory.recipes;
+
+  // Categories used when filtering recipes
+  List<String> _searchFilters = <String>[];
 
   // Cache for search results
   List<SearchResult> _searchResults = <SearchResult>[];
@@ -25,20 +26,20 @@ class SearchProvider extends ChangeNotifier {
   SearchProvider(this._source);
 
   // RECIPE FILTERS
-  void recipeCategoryFilterAdd(String value) {
-    if (!_recipeCategoryFilters.contains(value)) {
-      _recipeCategoryFilters.add(value);
+  void addSearchFilter(String value) {
+    if (!_searchFilters.contains(value)) {
+      _searchFilters.add(value);
       notifyListeners();
     }
   }
 
-  bool recipeCategoryFiltersContains(String value) {
-    return _recipeCategoryFilters.contains(value);
+  bool searchFilterHas(String value) {
+    return _searchFilters.contains(value);
   }
 
-  void recipeCategoryFiltersRemove(String value) {
-    if (_recipeCategoryFilters.contains(value)) {
-      _recipeCategoryFilters.remove(value);
+  void removeSearchFilter(String value) {
+    if (_searchFilters.contains(value)) {
+      _searchFilters.remove(value);
       notifyListeners();
     }
   }
