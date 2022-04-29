@@ -8,7 +8,7 @@ class SearchFiltersOptionsIngredientWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const SearchPageFiltersDialogItemWidget(
+    return const SearchPageFiltersOptionsItemWidget(
       options: RecipeFilters.ingredients,
       text: "INGREDIENT",
       divider: false,

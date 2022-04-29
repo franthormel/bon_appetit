@@ -4,12 +4,12 @@ import '../../../../style/index.dart';
 import '../header.dart';
 import 'checkboxes/checkboxes.dart';
 
-class SearchPageFiltersDialogItemWidget extends StatelessWidget {
+class SearchPageFiltersOptionsItemWidget extends StatelessWidget {
   final bool divider;
   final List<String> options;
   final String text;
 
-  const SearchPageFiltersDialogItemWidget({
+  const SearchPageFiltersOptionsItemWidget({
     required this.options,
     required this.text,
     this.divider = true,

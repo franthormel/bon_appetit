@@ -8,7 +8,7 @@ class SearchFiltersOptionsDietaryConcernWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const SearchPageFiltersDialogItemWidget(
+    return const SearchPageFiltersOptionsItemWidget(
       options: RecipeFilters.dietaryConcerns,
       text: "DIETARY CONCERNS",
     );

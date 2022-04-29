@@ -16,26 +16,31 @@ class SearchPageTextFieldWidget extends StatelessWidget {
     return Container(
       color: BonAppetitColors.white,
       padding: const EdgeInsets.all(16.0),
-      child: TextField(
-        controller: _controller,
-        decoration: InputDecoration(
-          border: const OutlineInputBorder(),
-          focusedBorder: const OutlineInputBorder(
-            borderSide: BorderSide(color: Colors.black, width: 1.5),
+      child: Stack(
+        alignment: Alignment.centerRight,
+        children: [
+          TextField(
+            controller: _controller,
+            decoration: InputDecoration(
+              border: const OutlineInputBorder(),
+              focusedBorder: const OutlineInputBorder(
+                borderSide: BorderSide(color: Colors.black, width: 1.5),
+              ),
+              hintText: "Find a Recipe",
+              prefixIcon: IconButton(
+                color: BonAppetitColors.black,
+                icon: const Icon(Icons.search),
+                onPressed: provider.searchForResults,
+              ),
+            ),
+            textInputAction: TextInputAction.search,
+            onSubmitted: (text) {
+              provider.searchForResults();
+            },
+            onChanged: provider.changeSearchText,
           ),
-          hintText: "Find a Recipe",
-          prefixIcon: IconButton(
-            color: BonAppetitColors.black,
-            icon: const Icon(Icons.search),
-            onPressed: provider.searchForResults,
-          ),
-          suffixIcon: const SearchFiltersButtonWidget(),
-        ),
-        textInputAction: TextInputAction.search,
-        onSubmitted: (text) {
-          provider.searchForResults();
-        },
-        onChanged: provider.changeSearchText,
+          const SearchFiltersButtonWidget()
+        ],
       ),
 
       // TODO: Add recipe filters here as squared chips inside Wrap

@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+
+import '../../../../../services/index.dart';
 
 class SearchFiltersOptionsCheckboxWidget extends StatelessWidget {
   final String text;
@@ -10,11 +13,12 @@ class SearchFiltersOptionsCheckboxWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: Connect to SearchProvider
+    final provider = Provider.of<SearchProvider>(context, listen: false);
+
     return Row(
       children: [
         Checkbox(
-          value: false,
+          value: provider.searchFilterHas(text),
           onChanged: (checked) {
             print(checked);
           },

@@ -8,7 +8,7 @@ class SearchFiltersOptionsMealCourseWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const SearchPageFiltersDialogItemWidget(
+    return const SearchPageFiltersOptionsItemWidget(
       options: RecipeFilters.mealsCourse,
       text: "MEAL & COURSE",
     );
