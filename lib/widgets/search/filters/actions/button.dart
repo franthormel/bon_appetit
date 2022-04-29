@@ -1,19 +1,21 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 import 'text.dart';
+import '../../../../router/index.dart';
 
 class SearchFiltersActionButtonWidget extends StatelessWidget {
   final Color backgroundColor;
   final Color? borderColor;
-  final void Function()? onPressed;
+  final void Function() callback;
   final String text;
   final Color? textColor;
 
   const SearchFiltersActionButtonWidget({
     required this.backgroundColor,
+    required this.callback,
     required this.text,
     this.borderColor,
-    this.onPressed,
     this.textColor,
     Key? key,
   }) : super(key: key);
@@ -24,7 +26,10 @@ class SearchFiltersActionButtonWidget extends StatelessWidget {
       width: 130,
       child: TextButton(
         child: SearchFiltersActionTextWidget(text, color: textColor),
-        onPressed: onPressed,
+        onPressed: () {
+          callback();
+          Provider.of<RouteProvider>(context, listen: false).pop();
+        },
         style: ButtonStyle(
           backgroundColor: MaterialStateProperty.all<Color>(backgroundColor),
           shape: MaterialStateProperty.all<OutlinedBorder>(

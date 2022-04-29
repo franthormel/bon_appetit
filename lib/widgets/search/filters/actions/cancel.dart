@@ -10,9 +10,8 @@ class SearchFiltersActionCancelWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return SearchFiltersActionButtonWidget(
       text: "CANCEL",
-      onPressed: () {
+      callback: () {
         // TODO: Delete all selected values from checkboxes on SearchProvider
-        Navigator.pop(context);
       },
       backgroundColor: BonAppetitColors.white,
       borderColor: BonAppetitColors.black,

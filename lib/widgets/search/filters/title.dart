@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 import '../../../style/index.dart';
+import '../../../router/index.dart';
 import 'header.dart';
 
 class SearchFiltersTitleWidget extends StatelessWidget {
@@ -17,7 +19,7 @@ class SearchFiltersTitleWidget extends StatelessWidget {
             IconButton(
               icon: const Icon(Icons.close),
               onPressed: () {
-                Navigator.of(context).pop();
+                Provider.of<RouteProvider>(context, listen: false).pop();
               },
             ),
           ],

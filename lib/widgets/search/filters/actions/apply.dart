@@ -10,9 +10,8 @@ class SearchFiltersActionApplyWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return SearchFiltersActionButtonWidget(
       text: "APPLY",
-      onPressed: () {
+      callback: () {
         // TODO: Implement on SearchProvider
-        Navigator.pop(context);
       },
       backgroundColor: BonAppetitColors.black,
       textColor: BonAppetitColors.white,
