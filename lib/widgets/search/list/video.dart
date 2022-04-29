@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../models/index.dart';
+import '../../../router/index.dart';
 import 'item.dart';
 
 class SearchPageListVideoWidget extends StatelessWidget {
@@ -13,6 +14,9 @@ class SearchPageListVideoWidget extends StatelessWidget {
     return SearchPageListItemWidget(
       category: "VIDEO",
       imageUrl: video.imageUrl,
+      hasOverlayPlayButton: true,
+      heroTag: video.heroTag,
+      route: VideoDetailsRoute(video: video),
       title: video.title,
     );
   }

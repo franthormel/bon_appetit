@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:json_annotation/json_annotation.dart';
 
-import '../../services/index.dart';
 import '../others/base_model_mixin.dart';
 import 'ingredient.dart';
 import 'nutrition_serving.dart';

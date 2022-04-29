@@ -2,7 +2,9 @@ import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../models/index.dart';
 import '../router/index.dart';
+import '../services/index.dart';
 import '../widgets/index.dart';
 
 class ConsumerPage extends StatelessWidget {
@@ -26,9 +28,12 @@ class ConsumerPage extends StatelessWidget {
         centerTitle: true,
         title: const AppbarTitleWidget(),
       ),
-      body: Consumer<RouteProvider>(
-        builder: (context, provider, child) => AutoRouter.declarative(
-          routes: (context) => [...provider.pageRouteInfo],
+      body: Consumer2<RouteProvider, DatasetSource>(
+        builder: (context, router, source, child) => ChangeNotifierProvider(
+          create: (context) => SearchProvider(source),
+          child: AutoRouter.declarative(
+            routes: (context) => [...router.pageRouteInfo],
+          ),
         ),
       ),
     );

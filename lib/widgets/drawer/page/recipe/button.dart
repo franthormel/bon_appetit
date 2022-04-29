@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../style/index.dart';
-import 'recipe_button_text.dart';
+import 'button_text.dart';
 
 class DrawerPageRecipeButtonWidget extends StatelessWidget {
   const DrawerPageRecipeButtonWidget({Key? key}) : super(key: key);

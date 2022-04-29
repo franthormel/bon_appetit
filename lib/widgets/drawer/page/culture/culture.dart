@@ -5,7 +5,7 @@ import '../../../../router/index.dart';
 import '../../../others/cached_hero_image.dart';
 import '../../../others/page_route_pusher.dart';
 import '../padding.dart';
-import 'culture_box.dart';
+import 'box.dart';
 
 class DrawerPageCultureWidget extends StatelessWidget {
   final Article article;

@@ -12,6 +12,7 @@
 
 import 'package:auto_route/auto_route.dart' as _i2;
 import 'package:flutter/material.dart' as _i3;
+import 'package:flutter/widgets.dart' as _i5;
 
 import '../models/index.dart' as _i4;
 import '../pages/index.dart' as _i1;
@@ -75,6 +76,10 @@ class AppRouter extends _i2.RootStackRouter {
     DrawerVideosRoute.name: (routeData) {
       return _i2.MaterialPageX<dynamic>(
           routeData: routeData, child: const _i1.DrawerVideosPage());
+    },
+    SearchRecipeFiltersRoute.name: (routeData) {
+      return _i2.MaterialPageX<dynamic>(
+          routeData: routeData, child: const _i1.SearchRecipeFiltersPage());
     }
   };
 
@@ -102,7 +107,9 @@ class AppRouter extends _i2.RootStackRouter {
           _i2.RouteConfig(DrawerShoppingRoute.name,
               path: 'shopping', parent: DataProviderRoute.name),
           _i2.RouteConfig(DrawerVideosRoute.name,
-              path: 'videos', parent: DataProviderRoute.name)
+              path: 'videos', parent: DataProviderRoute.name),
+          _i2.RouteConfig(SearchRecipeFiltersRoute.name,
+              path: 'search-recipe-filters', parent: DataProviderRoute.name)
         ]),
         _i2.RouteConfig('*#redirect',
             path: '*', redirectTo: 'DataProviderRoute', fullMatch: true)
@@ -137,7 +144,7 @@ class SearchRoute extends _i2.PageRouteInfo<void> {
 /// generated route for
 /// [_i1.RecipeDetailsPage]
 class RecipeDetailsRoute extends _i2.PageRouteInfo<RecipeDetailsRouteArgs> {
-  RecipeDetailsRoute({required _i4.Recipe recipe, _i3.Key? key})
+  RecipeDetailsRoute({required _i4.Recipe recipe, _i5.Key? key})
       : super(RecipeDetailsRoute.name,
             path: 'recipe',
             args: RecipeDetailsRouteArgs(recipe: recipe, key: key));
@@ -150,7 +157,7 @@ class RecipeDetailsRouteArgs {
 
   final _i4.Recipe recipe;
 
-  final _i3.Key? key;
+  final _i5.Key? key;
 
   @override
   String toString() {
@@ -161,7 +168,7 @@ class RecipeDetailsRouteArgs {
 /// generated route for
 /// [_i1.ArticleDetailsPage]
 class ArticleDetailsRoute extends _i2.PageRouteInfo<ArticleDetailsRouteArgs> {
-  ArticleDetailsRoute({required _i4.Article article, _i3.Key? key})
+  ArticleDetailsRoute({required _i4.Article article, _i5.Key? key})
       : super(ArticleDetailsRoute.name,
             path: 'article',
             args: ArticleDetailsRouteArgs(article: article, key: key));
@@ -174,7 +181,7 @@ class ArticleDetailsRouteArgs {
 
   final _i4.Article article;
 
-  final _i3.Key? key;
+  final _i5.Key? key;
 
   @override
   String toString() {
@@ -185,7 +192,7 @@ class ArticleDetailsRouteArgs {
 /// generated route for
 /// [_i1.VideoDetailsPage]
 class VideoDetailsRoute extends _i2.PageRouteInfo<VideoDetailsRouteArgs> {
-  VideoDetailsRoute({required _i4.Video video, _i3.Key? key})
+  VideoDetailsRoute({required _i4.Video video, _i5.Key? key})
       : super(VideoDetailsRoute.name,
             path: 'video', args: VideoDetailsRouteArgs(video: video, key: key));
 
@@ -197,7 +204,7 @@ class VideoDetailsRouteArgs {
 
   final _i4.Video video;
 
-  final _i3.Key? key;
+  final _i5.Key? key;
 
   @override
   String toString() {
@@ -253,4 +260,13 @@ class DrawerVideosRoute extends _i2.PageRouteInfo<void> {
   const DrawerVideosRoute() : super(DrawerVideosRoute.name, path: 'videos');
 
   static const String name = 'DrawerVideosRoute';
+}
+
+/// generated route for
+/// [_i1.SearchRecipeFiltersPage]
+class SearchRecipeFiltersRoute extends _i2.PageRouteInfo<void> {
+  const SearchRecipeFiltersRoute()
+      : super(SearchRecipeFiltersRoute.name, path: 'search-recipe-filters');
+
+  static const String name = 'SearchRecipeFiltersRoute';
 }

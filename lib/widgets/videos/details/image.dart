@@ -24,25 +24,20 @@ class VideoDetailsImageWidget extends StatelessWidget {
         Opacity(
           opacity: 0.70,
           child: FloatingActionButton.small(
+            backgroundColor: BonAppetitColors.white,
             onPressed: () {},
-            child: Container(
-              width: double.infinity,
-              height: double.infinity,
-              decoration: const BoxDecoration(
-                shape: BoxShape.circle,
-                color: BonAppetitColors.white,
-              ),
-              child: Padding(
-                padding: const EdgeInsets.all(2.0),
-                child: Container(
-                  child: const Icon(Icons.play_arrow),
-                  decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    color: Theme.of(context)
-                        .floatingActionButtonTheme
-                        .backgroundColor,
-                  ),
+            child: Padding(
+              padding: const EdgeInsets.all(2.0),
+              child: Container(
+                child: const Icon(Icons.play_arrow),
+                decoration: BoxDecoration(
+                  color: Theme.of(context)
+                      .floatingActionButtonTheme
+                      .backgroundColor,
+                  shape: BoxShape.circle,
                 ),
+                height: double.infinity,
+                width: double.infinity,
               ),
             ),
           ),

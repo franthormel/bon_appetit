@@ -1,4 +1,4 @@
-import 'package:bon_appetit/models/others/enum/inline_tag.dart';
+import 'package:bon_appetit/models/others/inline_tag.dart';
 import 'package:bon_appetit/services/inline_tag_parser.dart';
 import 'package:test/test.dart';
 

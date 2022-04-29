@@ -12,10 +12,8 @@ class WillPopWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return WillPopScope(
       onWillPop: () async {
-        final route = Provider.of<RouteProvider>(context, listen: false);
-        route.pop();
-
-        return true;
+        Provider.of<RouteProvider>(context, listen: false).pop();
+        return Future<bool>.value(true);
       },
       child: child,
     );

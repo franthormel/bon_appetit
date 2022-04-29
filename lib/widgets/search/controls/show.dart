@@ -3,10 +3,10 @@ import 'package:provider/provider.dart';
 
 import '../../../models/index.dart';
 import '../../../services/index.dart';
-import 'others/control_menu_icon.dart';
+import 'control.dart';
 
-class SearchPageActionShowWidget extends StatelessWidget {
-  const SearchPageActionShowWidget({Key? key}) : super(key: key);
+class SearchPageControlShowWidget extends StatelessWidget {
+  const SearchPageControlShowWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +15,7 @@ class SearchPageActionShowWidget extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(left: 16.0),
       child: PopupMenuButton<SearchCategory>(
-        child: SearchPageActionControlMenuIconWidget(
+        child: SearchPageControlWidget(
           value: provider.searchShow.toLiteralValue(),
           title: "SHOW",
         ),

@@ -31,12 +31,17 @@ class DrawerPageHeaderWidget extends StatelessWidget {
                 ?.copyWith(fontWeight: FontWeight.w700),
           ),
           if (subHeader != null)
-            Text(
-              subHeader!,
-              style: Theme.of(context)
-                  .textTheme
-                  .headline6
-                  ?.copyWith(fontWeight: FontWeight.w400),
+            Column(
+              children: [
+                const SizedBox(height: 10.0),
+                Text(
+                  subHeader!,
+                  style: Theme.of(context)
+                      .textTheme
+                      .headline6
+                      ?.copyWith(fontWeight: FontWeight.w400),
+                ),
+              ],
             ),
         ],
       ),
