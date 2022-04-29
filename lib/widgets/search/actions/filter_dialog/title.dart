@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import '../../../../style/index.dart';
 import 'header.dart';
 
-class SearchPageActionFilterDialogTitleWidget extends StatelessWidget {
-  const SearchPageActionFilterDialogTitleWidget({Key? key}) : super(key: key);
+class FilterDialogTitleWidget extends StatelessWidget {
+  const FilterDialogTitleWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

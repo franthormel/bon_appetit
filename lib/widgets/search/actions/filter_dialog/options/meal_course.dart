@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-import '../../../../models/index.dart';
-import 'checkboxes.dart';
-import 'item.dart';
+import '../../../../../models/index.dart';
+import '../checkboxes.dart';
+import '../item.dart';
 
-class FilterMealCourseWidget extends StatelessWidget {
-  const FilterMealCourseWidget({Key? key}) : super(key: key);
+class FilterOptionsMealCourseWidget extends StatelessWidget {
+  const FilterOptionsMealCourseWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

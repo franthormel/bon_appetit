@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-import '../../../../models/index.dart';
-import 'checkboxes.dart';
-import 'item.dart';
+import '../../../../../models/index.dart';
+import '../checkboxes.dart';
+import '../item.dart';
 
-class FilterPopularWidget extends StatelessWidget {
-  const FilterPopularWidget({Key? key}) : super(key: key);
+class FilterOptionsPopularWidget extends StatelessWidget {
+  const FilterOptionsPopularWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-import '../../../../models/index.dart';
-import 'checkboxes.dart';
-import 'item.dart';
+import '../../../../../models/index.dart';
+import '../checkboxes.dart';
+import '../item.dart';
 
-class FilterIngredientWidget extends StatelessWidget {
-  const FilterIngredientWidget({Key? key}) : super(key: key);
+class FilterOptionsIngredientWidget extends StatelessWidget {
+  const FilterOptionsIngredientWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
