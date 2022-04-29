@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-class SearchPageActionControlMenuIconWidget extends StatelessWidget {
+class SearchPageActionControlMenuWidget extends StatelessWidget {
   final String title;
   final String value;
 
-  const SearchPageActionControlMenuIconWidget({
+  const SearchPageActionControlMenuWidget({
     required this.title,
     required this.value,
     Key? key,

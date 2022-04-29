@@ -3,7 +3,7 @@ import 'package:provider/provider.dart';
 
 import '../../../models/index.dart';
 import '../../../services/index.dart';
-import 'others/control_menu_icon.dart';
+import 'others/control_menu.dart';
 
 class SearchPageActionSortWidget extends StatelessWidget {
   const SearchPageActionSortWidget({Key? key}) : super(key: key);
@@ -15,7 +15,7 @@ class SearchPageActionSortWidget extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(right: 8.0),
       child: PopupMenuButton<SearchSort>(
-        child: SearchPageActionControlMenuIconWidget(
+        child: SearchPageActionControlMenuWidget(
           value: provider.searchSort.toLiteralValue(),
           title: "SORT BY",
         ),

@@ -22,7 +22,7 @@ class DrawerRouterWidget extends StatelessWidget {
       ),
       onTap: () {
         final router = Provider.of<RouteProvider>(context, listen: false);
-        router.push(route.pageRouteInfo);
+        router.change(route.pageRouteInfo);
 
         AutoRouter.of(context).pop();
       },
