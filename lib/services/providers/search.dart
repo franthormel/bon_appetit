@@ -8,7 +8,7 @@ import '../comparator.dart';
 class SearchProvider extends ChangeNotifier {
   final DatasetSource _source;
 
-  // TODO: >>> Implement search result recipe filter
+  List<String> _recipeCategoryFilters = <String>[];
 
   // Category used when showing results
   SearchCategory _searchCategory = SearchCategory.recipes;
@@ -24,6 +24,26 @@ class SearchProvider extends ChangeNotifier {
 
   SearchProvider(this._source);
 
+  // RECIPE FILTERS
+  void recipeCategoryFilterAdd(String value) {
+    if (!_recipeCategoryFilters.contains(value)) {
+      _recipeCategoryFilters.add(value);
+      notifyListeners();
+    }
+  }
+
+  bool recipeCategoryFiltersContains(String value) {
+    return _recipeCategoryFilters.contains(value);
+  }
+
+  void recipeCategoryFiltersRemove(String value) {
+    if (_recipeCategoryFilters.contains(value)) {
+      _recipeCategoryFilters.remove(value);
+      notifyListeners();
+    }
+  }
+
+  // GENERAL SEARCH
   void changeSearchCategory(SearchCategory value) {
     if (value != _searchCategory) {
       _searchCategory = value;
@@ -69,10 +89,13 @@ class SearchProvider extends ChangeNotifier {
     notifyListeners();
   }
 
-  bool get hasSearched => _searchText.isNotEmpty || _searchResults.isNotEmpty;
+  bool get hasSearched {
+    return _searchText.isNotEmpty || _searchResults.isNotEmpty;
+  }
 
-  UnmodifiableListView<SearchResult> get searchResults =>
-      UnmodifiableListView(_searchResults);
+  UnmodifiableListView<SearchResult> get searchResults {
+    return UnmodifiableListView(_searchResults);
+  }
 
   int get searchResultsLength => _searchResults.length;
 

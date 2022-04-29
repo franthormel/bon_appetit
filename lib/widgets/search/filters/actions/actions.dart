@@ -4,8 +4,8 @@ import '../../../../../style/index.dart';
 import 'apply.dart';
 import 'cancel.dart';
 
-class FiltersDialogActionsWidget extends StatelessWidget {
-  const FiltersDialogActionsWidget({Key? key}) : super(key: key);
+class SearchFiltersActionsWidget extends StatelessWidget {
+  const SearchFiltersActionsWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -31,9 +31,9 @@ class FiltersDialogActionsWidget extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: const [
-              FiltersDialogActionApplyWidget(),
+              SearchFiltersActionApplyWidget(),
               SizedBox(width: 10.0),
-              FiltersDialogActionCancelWidget(),
+              SearchFiltersActionCancelWidget(),
             ],
           ),
         ],

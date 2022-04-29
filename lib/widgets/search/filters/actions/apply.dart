@@ -3,12 +3,12 @@ import 'package:flutter/material.dart';
 import '../../../../../style/index.dart';
 import 'button.dart';
 
-class FiltersDialogActionApplyWidget extends StatelessWidget {
-  const FiltersDialogActionApplyWidget({Key? key}) : super(key: key);
+class SearchFiltersActionApplyWidget extends StatelessWidget {
+  const SearchFiltersActionApplyWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return FiltersDialogActionButtonWidget(
+    return SearchFiltersActionButtonWidget(
       text: "APPLY",
       onPressed: () {
         // TODO: Implement on SearchProvider

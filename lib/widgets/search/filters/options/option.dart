@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 import '../../../../style/index.dart';
+import '../header.dart';
 import 'checkboxes/checkboxes.dart';
-import 'header.dart';
 
 class SearchPageFiltersDialogItemWidget extends StatelessWidget {
   final bool divider;
@@ -21,9 +21,9 @@ class SearchPageFiltersDialogItemWidget extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        SearchPageFiltersDialogHeaderWidget(text),
+        SearchFiltersHeaderWidget(text),
         const SizedBox(height: 10.0),
-        FiltersDialogCheckboxesWidget(options),
+        SearchFiltersOptionsCheckboxesWidget(options),
         const SizedBox(height: 10.0),
         if (divider) const Divider(color: BonAppetitColors.platinum),
       ],

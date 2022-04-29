@@ -66,6 +66,11 @@ import 'constants.dart';
           name: RouteName.drawerVideos,
           path: RoutePath.drawerVideos,
         ),
+        AutoRoute(
+          page: SearchRecipeFiltersPage,
+          name: RouteName.searchRecipeFilters,
+          path: RoutePath.searchRecipeFilters,
+        ),
       ],
     ),
     RedirectRoute(path: '*', redirectTo: RouteName.initial),

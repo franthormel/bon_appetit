@@ -11,6 +11,7 @@ class RoutePath {
   static const drawerRestaurants = "restaurants";
   static const drawerShopping = "shopping";
   static const drawerVideos = "videos";
+  static const searchRecipeFilters = "search-recipe-filters";
 }
 
 class RouteName {
@@ -26,4 +27,5 @@ class RouteName {
   static const drawerRestaurants = "DrawerRestaurantsRoute";
   static const drawerShopping = "DrawerShoppingRoute";
   static const drawerVideos = "DrawerVideosRoute";
+  static const searchRecipeFilters = "SearchRecipeFiltersRoute";
 }

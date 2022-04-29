@@ -3,12 +3,12 @@ import 'package:flutter/material.dart';
 import '../../../../../style/index.dart';
 import 'button.dart';
 
-class FiltersDialogActionCancelWidget extends StatelessWidget {
-  const FiltersDialogActionCancelWidget({Key? key}) : super(key: key);
+class SearchFiltersActionCancelWidget extends StatelessWidget {
+  const SearchFiltersActionCancelWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return FiltersDialogActionButtonWidget(
+    return SearchFiltersActionButtonWidget(
       text: "CANCEL",
       onPressed: () {
         // TODO: Delete all selected values from checkboxes on SearchProvider

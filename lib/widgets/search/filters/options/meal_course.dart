@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
 import '../../../../../models/index.dart';
-import '../item.dart';
+import 'option.dart';
 
-class DialogOptionsMealCourseWidget extends StatelessWidget {
-  const DialogOptionsMealCourseWidget({Key? key}) : super(key: key);
+class SearchFiltersOptionsMealCourseWidget extends StatelessWidget {
+  const SearchFiltersOptionsMealCourseWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

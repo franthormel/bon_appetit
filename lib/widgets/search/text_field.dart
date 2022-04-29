@@ -3,7 +3,7 @@ import 'package:provider/provider.dart';
 
 import '../../../services/index.dart';
 import '../../../style/index.dart';
-import 'filters/filters.dart';
+import 'filters/button.dart';
 
 class SearchPageTextFieldWidget extends StatelessWidget {
   const SearchPageTextFieldWidget({Key? key}) : super(key: key);
@@ -29,7 +29,7 @@ class SearchPageTextFieldWidget extends StatelessWidget {
             icon: const Icon(Icons.search),
             onPressed: provider.searchForResults,
           ),
-          suffixIcon: const SearchPageFiltersButtonWidget(),
+          suffixIcon: const SearchFiltersButtonWidget(),
         ),
         textInputAction: TextInputAction.search,
         onSubmitted: (text) {

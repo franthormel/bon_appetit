@@ -9,5 +9,6 @@ export 'drawer/videos.dart';
 export 'home.dart';
 export 'loading.dart';
 export 'recipe_details.dart';
-export 'search.dart';
+export 'search/recipe_filters.dart';
+export 'search/search.dart';
 export 'video_details.dart';

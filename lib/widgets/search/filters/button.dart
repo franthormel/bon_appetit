@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
-import 'dialog/dialog.dart';
+import '../../../router/index.dart';
 
-class SearchPageFiltersButtonWidget extends StatelessWidget {
-  const SearchPageFiltersButtonWidget({Key? key}) : super(key: key);
+class SearchFiltersButtonWidget extends StatelessWidget {
+  const SearchFiltersButtonWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -13,11 +14,8 @@ class SearchPageFiltersButtonWidget extends StatelessWidget {
         label: Text("FILTERS", style: Theme.of(context).textTheme.caption),
         icon: const Icon(Icons.tune),
         onPressed: () {
-          showModalBottomSheet(
-            context: context,
-            builder: (context) => const SearchPageFiltersDialogWidget(),
-            isScrollControlled: true,
-          );
+          final router = Provider.of<RouteProvider>(context, listen: false);
+          router.push(const SearchRecipeFiltersRoute());
         },
       ),
     );
