@@ -1,5 +1,7 @@
-export 'article_details.dart';
 export 'data.dart';
+export 'details/article.dart';
+export 'details/recipe.dart';
+export 'details/video.dart';
 export 'drawer/cooking.dart';
 export 'drawer/culture.dart';
 export 'drawer/recipes.dart';
@@ -8,7 +10,5 @@ export 'drawer/shopping.dart';
 export 'drawer/videos.dart';
 export 'home.dart';
 export 'loading.dart';
-export 'recipe_details.dart';
 export 'search/recipe_filters.dart';
 export 'search/search.dart';
-export 'video_details.dart';

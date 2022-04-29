@@ -8,8 +8,8 @@ class SearchRecipeFiltersPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      body: SearchFiltersListWidget(),
-      bottomNavigationBar: SearchFiltersActionsWidget(),
+      body: SearchPageFiltersListWidget(),
+      bottomNavigationBar: SearchPageFiltersActionsWidget(),
     );
   }
 }

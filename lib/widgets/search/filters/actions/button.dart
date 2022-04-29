@@ -4,14 +4,14 @@ import 'package:provider/provider.dart';
 import '../../../../router/index.dart';
 import 'text.dart';
 
-class SearchFiltersActionButtonWidget extends StatelessWidget {
+class SearchPageFiltersActionButtonWidget extends StatelessWidget {
   final Color backgroundColor;
   final Color? borderColor;
   final void Function() onPressed;
   final String text;
   final Color? textColor;
 
-  const SearchFiltersActionButtonWidget({
+  const SearchPageFiltersActionButtonWidget({
     required this.backgroundColor,
     required this.onPressed,
     required this.text,
@@ -25,7 +25,7 @@ class SearchFiltersActionButtonWidget extends StatelessWidget {
     return SizedBox(
       width: 130,
       child: TextButton(
-        child: SearchFiltersActionTextWidget(text, color: textColor),
+        child: SearchPageFiltersActionTextWidget(text, color: textColor),
         onPressed: () {
           onPressed();
           Provider.of<RouteProvider>(context, listen: false).pop();

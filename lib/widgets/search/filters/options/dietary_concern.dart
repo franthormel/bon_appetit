@@ -3,8 +3,9 @@ import 'package:flutter/material.dart';
 import '../../../../../models/index.dart';
 import 'option.dart';
 
-class SearchFiltersOptionsDietaryConcernWidget extends StatelessWidget {
-  const SearchFiltersOptionsDietaryConcernWidget({Key? key}) : super(key: key);
+class SearchPageFiltersOptionsDietaryConcernWidget extends StatelessWidget {
+  const SearchPageFiltersOptionsDietaryConcernWidget({Key? key})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {

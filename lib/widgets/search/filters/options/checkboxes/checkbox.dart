@@ -3,10 +3,10 @@ import 'package:provider/provider.dart';
 
 import '../../../../../services/index.dart';
 
-class SearchFiltersOptionsCheckboxWidget extends StatelessWidget {
+class SearchPageFiltersOptionsCheckboxWidget extends StatelessWidget {
   final String text;
 
-  const SearchFiltersOptionsCheckboxWidget(
+  const SearchPageFiltersOptionsCheckboxWidget(
     this.text, {
     Key? key,
   }) : super(key: key);

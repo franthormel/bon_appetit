@@ -5,12 +5,12 @@ import '../../../../../services/index.dart';
 import '../../../../../style/index.dart';
 import 'button.dart';
 
-class SearchFiltersActionCancelWidget extends StatelessWidget {
-  const SearchFiltersActionCancelWidget({Key? key}) : super(key: key);
+class SearchPageFiltersActionCancelWidget extends StatelessWidget {
+  const SearchPageFiltersActionCancelWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return SearchFiltersActionButtonWidget(
+    return SearchPageFiltersActionButtonWidget(
       text: "CANCEL",
       onPressed: () {
         Provider.of<SearchProvider>(context, listen: false)

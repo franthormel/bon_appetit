@@ -7,7 +7,7 @@ import '../../../others/cached_hero_image.dart';
 import '../../../others/header_body/five.dart';
 import '../../../others/page_route_pusher.dart';
 import '../padding.dart';
-import 'article_category.dart';
+import 'category.dart';
 
 class DrawerPageArticleWidget extends StatelessWidget {
   final Article article;

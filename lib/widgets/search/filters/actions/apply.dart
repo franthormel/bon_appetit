@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import '../../../../../style/index.dart';
 import '../../../../../services/index.dart';
+import '../../../../../style/index.dart';
 import 'button.dart';
 
-class SearchFiltersActionApplyWidget extends StatelessWidget {
-  const SearchFiltersActionApplyWidget({Key? key}) : super(key: key);
+class SearchPageFiltersActionApplyWidget extends StatelessWidget {
+  const SearchPageFiltersActionApplyWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return SearchFiltersActionButtonWidget(
+    return SearchPageFiltersActionButtonWidget(
       text: "APPLY",
       onPressed: () {
         Provider.of<SearchProvider>(context, listen: false).searchForResults();

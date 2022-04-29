@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 
 import 'checkbox.dart';
 
-class SearchFiltersOptionsCheckboxesWidget extends StatelessWidget {
+class SearchPageFiltersOptionsCheckboxesWidget extends StatelessWidget {
   final List<String> filterOptions;
 
-  const SearchFiltersOptionsCheckboxesWidget(
+  const SearchPageFiltersOptionsCheckboxesWidget(
     this.filterOptions, {
     Key? key,
   }) : super(key: key);
@@ -18,7 +18,7 @@ class SearchFiltersOptionsCheckboxesWidget extends StatelessWidget {
         crossAxisCount: 2,
       ),
       itemBuilder: (context, i) =>
-          SearchFiltersOptionsCheckboxWidget(filterOptions[i]),
+          SearchPageFiltersOptionsCheckboxWidget(filterOptions[i]),
       itemCount: filterOptions.length,
       physics: const NeverScrollableScrollPhysics(),
       primary: false,

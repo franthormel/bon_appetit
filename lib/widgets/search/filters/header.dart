@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 
-class SearchFiltersHeaderWidget extends StatelessWidget {
+class SearchPageFiltersHeaderWidget extends StatelessWidget {
   final String text;
 
-  const SearchFiltersHeaderWidget(this.text, {Key? key}) : super(key: key);
+  const SearchPageFiltersHeaderWidget(
+    this.text, {
+    Key? key,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

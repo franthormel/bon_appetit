@@ -5,8 +5,8 @@ import '../../../router/index.dart';
 import '../../../style/index.dart';
 import 'header.dart';
 
-class SearchFiltersTitleWidget extends StatelessWidget {
-  const SearchFiltersTitleWidget({Key? key}) : super(key: key);
+class SearchPageFiltersTitleWidget extends StatelessWidget {
+  const SearchPageFiltersTitleWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +15,7 @@ class SearchFiltersTitleWidget extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            const SearchFiltersHeaderWidget("REFINE RESULTS"),
+            const SearchPageFiltersHeaderWidget("REFINE RESULTS"),
             IconButton(
               icon: const Icon(Icons.close),
               onPressed: () {

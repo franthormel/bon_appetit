@@ -2,7 +2,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'product_shop.g.dart';
 
-/// Contains the details of a kitchen utensil's affiliation link.
+/// Contains the details of a sponsored item's affiliation link.
 @JsonSerializable()
 class ProductShop {
   // Name of the site. e.g. Amazon

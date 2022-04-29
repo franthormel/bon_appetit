@@ -6,8 +6,8 @@ import 'options/meal_course.dart';
 import 'options/popular.dart';
 import 'title.dart';
 
-class SearchFiltersListWidget extends StatelessWidget {
-  const SearchFiltersListWidget({Key? key}) : super(key: key);
+class SearchPageFiltersListWidget extends StatelessWidget {
+  const SearchPageFiltersListWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -22,11 +22,11 @@ class SearchFiltersListWidget extends StatelessWidget {
 
   List<Widget> get children {
     return const [
-      SearchFiltersTitleWidget(),
-      SearchFiltersOptionsPopularWidget(),
-      SearchFiltersOptionsMealCourseWidget(),
-      SearchFiltersOptionsDietaryConcernWidget(),
-      SearchFiltersOptionsIngredientWidget(),
+      SearchPageFiltersTitleWidget(),
+      SearchPageFiltersOptionsPopularWidget(),
+      SearchPageFiltersOptionsMealCourseWidget(),
+      SearchPageFiltersOptionsDietaryConcernWidget(),
+      SearchPageFiltersOptionsIngredientWidget(),
     ];
   }
 }

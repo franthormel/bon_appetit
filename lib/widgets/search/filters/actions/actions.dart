@@ -4,8 +4,8 @@ import '../../../../../style/index.dart';
 import 'apply.dart';
 import 'cancel.dart';
 
-class SearchFiltersActionsWidget extends StatelessWidget {
-  const SearchFiltersActionsWidget({Key? key}) : super(key: key);
+class SearchPageFiltersActionsWidget extends StatelessWidget {
+  const SearchPageFiltersActionsWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -31,9 +31,9 @@ class SearchFiltersActionsWidget extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: const [
-              SearchFiltersActionApplyWidget(),
+              SearchPageFiltersActionApplyWidget(),
               SizedBox(width: 10.0),
-              SearchFiltersActionCancelWidget(),
+              SearchPageFiltersActionCancelWidget(),
             ],
           ),
         ],

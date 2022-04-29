@@ -6,10 +6,7 @@ import '../videos/video.dart';
 
 part 'source.g.dart';
 
-// Used by the search and drawer page.
-
 @JsonSerializable()
-// Ordering of data does NOT matter for this class.
 class DatasetSource {
   final List<Article> articles;
   final List<Recipe> recipes;

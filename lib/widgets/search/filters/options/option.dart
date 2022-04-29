@@ -21,9 +21,9 @@ class SearchPageFiltersOptionsItemWidget extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        SearchFiltersHeaderWidget(text),
+        SearchPageFiltersHeaderWidget(text),
         const SizedBox(height: 10.0),
-        SearchFiltersOptionsCheckboxesWidget(options),
+        SearchPageFiltersOptionsCheckboxesWidget(options),
         const SizedBox(height: 10.0),
         if (divider) const Divider(color: BonAppetitColors.platinum),
       ],

@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 import '../../style/index.dart';
 import 'controls/controls.dart';
+import 'header.dart';
 import 'list/list.dart';
-import 'text_field.dart';
 
 class SearchPageContentWidget extends StatelessWidget {
   const SearchPageContentWidget({Key? key}) : super(key: key);
@@ -14,7 +14,7 @@ class SearchPageContentWidget extends StatelessWidget {
       color: BonAppetitColors.cultured,
       child: Column(
         children: const [
-          SearchPageTextFieldWidget(),
+          SearchPageHeaderWidget(),
           SearchPageControlsWidget(),
           SearchPageListWidget(),
         ],

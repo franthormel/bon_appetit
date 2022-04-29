@@ -3,8 +3,8 @@ import 'package:provider/provider.dart';
 
 import '../../../router/index.dart';
 
-class SearchFiltersButtonWidget extends StatelessWidget {
-  const SearchFiltersButtonWidget({Key? key}) : super(key: key);
+class SearchPageFiltersButtonWidget extends StatelessWidget {
+  const SearchPageFiltersButtonWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
