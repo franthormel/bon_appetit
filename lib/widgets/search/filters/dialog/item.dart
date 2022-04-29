@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
 
 import '../../../../style/index.dart';
+import 'checkboxes/checkboxes.dart';
 import 'header.dart';
 
-class SearchPageFilterDialogItemWidget extends StatelessWidget {
-  final Widget child; // TODO: Refactor usage
-  final String text;
+class SearchPageFiltersDialogItemWidget extends StatelessWidget {
   final bool divider;
+  final List<String> options;
+  final String text;
 
-  const SearchPageFilterDialogItemWidget({
-    required this.child,
+  const SearchPageFiltersDialogItemWidget({
+    required this.options,
     required this.text,
     this.divider = true,
     Key? key,
@@ -20,9 +21,9 @@ class SearchPageFilterDialogItemWidget extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        SearchPageFilterDialogHeaderWidget(text),
+        SearchPageFiltersDialogHeaderWidget(text),
         const SizedBox(height: 10.0),
-        child,
+        FiltersDialogCheckboxesWidget(options),
         const SizedBox(height: 10.0),
         if (divider) const Divider(color: BonAppetitColors.platinum),
       ],

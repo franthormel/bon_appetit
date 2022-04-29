@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-class SearchPageFilterDialogHeaderWidget extends StatelessWidget {
+class SearchPageFiltersDialogHeaderWidget extends StatelessWidget {
   final String text;
 
-  const SearchPageFilterDialogHeaderWidget(
+  const SearchPageFiltersDialogHeaderWidget(
     this.text, {
     Key? key,
   }) : super(key: key);

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import '../../../../../models/index.dart';
-import '../checkboxes.dart';
 import '../item.dart';
 
 class DialogOptionsIngredientWidget extends StatelessWidget {
@@ -9,8 +8,8 @@ class DialogOptionsIngredientWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const SearchPageFilterDialogItemWidget(
-      child: SearchPageFilterDialogCheckboxesWidget(RecipeFilters.ingredients),
+    return const SearchPageFiltersDialogItemWidget(
+      options: RecipeFilters.ingredients,
       text: "INGREDIENT",
       divider: false,
     );

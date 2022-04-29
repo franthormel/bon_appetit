@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-class FilterDialogActionTextWidget extends StatelessWidget {
+class FiltersDialogActionTextWidget extends StatelessWidget {
   final String text;
   final Color? color;
 
-  const FilterDialogActionTextWidget(
+  const FiltersDialogActionTextWidget(
     this.text, {
     this.color,
     Key? key,

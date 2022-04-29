@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 import 'dialog/dialog.dart';
 
-class SearchPageActionFilterWidget extends StatelessWidget {
-  const SearchPageActionFilterWidget({Key? key}) : super(key: key);
+class SearchPageFiltersButtonWidget extends StatelessWidget {
+  const SearchPageFiltersButtonWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +15,7 @@ class SearchPageActionFilterWidget extends StatelessWidget {
         onPressed: () {
           showModalBottomSheet(
             context: context,
-            builder: (context) => const SearchPageFilterDialogWidget(),
+            builder: (context) => const SearchPageFiltersDialogWidget(),
             isScrollControlled: true,
           );
         },

@@ -1,7 +1,7 @@
-import 'package:bon_appetit/router/index.dart';
 import 'package:flutter/material.dart';
 
 import '../../models/index.dart';
+import '../../router/index.dart';
 import '../../style/index.dart';
 import '../others/cached_hero_image.dart';
 import '../others/page_route_pusher.dart';

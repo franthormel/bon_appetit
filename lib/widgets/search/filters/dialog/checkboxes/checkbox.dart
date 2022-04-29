@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-class SearchPageFilterDialogCheckboxWidget extends StatelessWidget {
+class FiltersDialogCheckboxWidget extends StatelessWidget {
   final String text;
 
-  const SearchPageFilterDialogCheckboxWidget(
+  const FiltersDialogCheckboxWidget(
     this.text, {
     Key? key,
   }) : super(key: key);

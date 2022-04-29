@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 
 import 'text.dart';
 
-class FilterDialogActionButtonWidget extends StatelessWidget {
+class FiltersDialogActionButtonWidget extends StatelessWidget {
   final Color backgroundColor;
   final Color? borderColor;
   final void Function()? onPressed;
   final String text;
   final Color? textColor;
 
-  const FilterDialogActionButtonWidget({
+  const FiltersDialogActionButtonWidget({
     required this.backgroundColor,
     required this.text,
     this.borderColor,
@@ -23,7 +23,7 @@ class FilterDialogActionButtonWidget extends StatelessWidget {
     return SizedBox(
       width: 130,
       child: TextButton(
-        child: FilterDialogActionTextWidget(text, color: textColor),
+        child: FiltersDialogActionTextWidget(text, color: textColor),
         onPressed: onPressed,
         style: ButtonStyle(
           backgroundColor: MaterialStateProperty.all<Color>(backgroundColor),
