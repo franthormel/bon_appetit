@@ -12,6 +12,7 @@ class FilterOptionsIngredientWidget extends StatelessWidget {
     return const FilterDialogItemWidget(
       child: FilterDialogCheckboxesWidget(RecipeFilters.ingredients),
       text: "INGREDIENT",
+      divider: false,
     );
   }
 }

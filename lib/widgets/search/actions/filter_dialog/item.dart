@@ -4,12 +4,14 @@ import '../../../../style/index.dart';
 import 'header.dart';
 
 class FilterDialogItemWidget extends StatelessWidget {
-  final Widget child;
+  final Widget child; // TODO: Refactor
   final String text;
+  final bool divider;
 
   const FilterDialogItemWidget({
     required this.child,
     required this.text,
+    this.divider = true,
     Key? key,
   }) : super(key: key);
 
@@ -22,7 +24,7 @@ class FilterDialogItemWidget extends StatelessWidget {
         const SizedBox(height: 10.0),
         child,
         const SizedBox(height: 10.0),
-        const Divider(color: BonAppetitColors.platinum),
+        if (divider) const Divider(color: BonAppetitColors.platinum),
       ],
     );
   }

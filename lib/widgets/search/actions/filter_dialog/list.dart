@@ -12,10 +12,7 @@ class FilterDialogListWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView.separated(
-      padding: const EdgeInsets.symmetric(
-        horizontal: 16.0,
-        vertical: 10.0,
-      ),
+      padding: const EdgeInsets.only(left: 16.0, right: 16.0, top: 10.0),
       primary: true,
       itemBuilder: (context, i) => children[i],
       itemCount: children.length,

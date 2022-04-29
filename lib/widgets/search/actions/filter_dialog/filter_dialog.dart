@@ -8,11 +8,9 @@ class SearchPageActionFilterDialogWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Stack(
-        alignment: Alignment.bottomCenter,
-        children: const [FilterDialogListWidget(), FilterDialogActionsWidget()],
-      ),
+    return const Scaffold(
+      body: FilterDialogListWidget(),
+      bottomNavigationBar: FilterDialogActionsWidget(),
     );
   }
 }
