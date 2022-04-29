@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import 'text.dart';
 import '../../../../router/index.dart';
+import 'text.dart';
 
 class SearchFiltersActionButtonWidget extends StatelessWidget {
   final Color backgroundColor;

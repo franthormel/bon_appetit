@@ -15,16 +15,6 @@ class DataProviderPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [
-        ChangeNotifierProvider<SuggestedRecipesFilter>(
-          create: (context) => SuggestedRecipesFilter(),
-        ),
-        ChangeNotifierProvider<TrendingRecipesFilter>(
-          create: (context) => TrendingRecipesFilter(),
-        ),
-        ChangeNotifierProvider<RouteProvider>(
-          create: (context) => RouteProvider(),
-          lazy: false,
-        ),
         FutureProvider<DatasetSource?>(
           catchError: catchError,
           create: (context) => MockDataService.fetchSource(),
@@ -36,6 +26,15 @@ class DataProviderPage extends StatelessWidget {
           create: (context) => MockDataService.fetchHomepageDataset(),
           initialData: null,
           lazy: false,
+        ),
+        ChangeNotifierProvider<RouteProvider>(
+          create: (context) => RouteProvider(),
+        ),
+        ChangeNotifierProvider<SuggestedRecipesFilter>(
+          create: (context) => SuggestedRecipesFilter(),
+        ),
+        ChangeNotifierProvider<TrendingRecipesFilter>(
+          create: (context) => TrendingRecipesFilter(),
         ),
       ],
       child: Consumer2<DatasetSource?, DatasetHomepage?>(

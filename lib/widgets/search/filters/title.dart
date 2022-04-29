@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import '../../../style/index.dart';
 import '../../../router/index.dart';
+import '../../../style/index.dart';
 import 'header.dart';
 
 class SearchFiltersTitleWidget extends StatelessWidget {
