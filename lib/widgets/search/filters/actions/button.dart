@@ -7,13 +7,13 @@ import 'text.dart';
 class SearchFiltersActionButtonWidget extends StatelessWidget {
   final Color backgroundColor;
   final Color? borderColor;
-  final void Function() callback;
+  final void Function() onPressed;
   final String text;
   final Color? textColor;
 
   const SearchFiltersActionButtonWidget({
     required this.backgroundColor,
-    required this.callback,
+    required this.onPressed,
     required this.text,
     this.borderColor,
     this.textColor,
@@ -27,7 +27,7 @@ class SearchFiltersActionButtonWidget extends StatelessWidget {
       child: TextButton(
         child: SearchFiltersActionTextWidget(text, color: textColor),
         onPressed: () {
-          callback();
+          onPressed();
           Provider.of<RouteProvider>(context, listen: false).pop();
         },
         style: ButtonStyle(

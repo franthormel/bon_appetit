@@ -10,8 +10,8 @@ class SearchPageTextFieldWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final _controller = TextEditingController();
     final provider = Provider.of<SearchProvider>(context, listen: false);
+    final controller = TextEditingController(text: provider.searchText);
 
     return Container(
       color: BonAppetitColors.white,
@@ -20,7 +20,7 @@ class SearchPageTextFieldWidget extends StatelessWidget {
         alignment: Alignment.centerRight,
         children: [
           TextField(
-            controller: _controller,
+            controller: controller,
             decoration: InputDecoration(
               border: const OutlineInputBorder(),
               focusedBorder: const OutlineInputBorder(

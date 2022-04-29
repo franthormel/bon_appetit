@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
+import '../../../../../services/index.dart';
 import '../../../../../style/index.dart';
 import 'button.dart';
 
@@ -10,8 +12,9 @@ class SearchFiltersActionCancelWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return SearchFiltersActionButtonWidget(
       text: "CANCEL",
-      callback: () {
-        // TODO: Delete all selected values from checkboxes on SearchProvider
+      onPressed: () {
+        Provider.of<SearchProvider>(context, listen: false)
+            .clearSearchFilters();
       },
       backgroundColor: BonAppetitColors.white,
       borderColor: BonAppetitColors.black,

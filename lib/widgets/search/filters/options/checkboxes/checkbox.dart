@@ -13,14 +13,18 @@ class SearchFiltersOptionsCheckboxWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final provider = Provider.of<SearchProvider>(context, listen: false);
+    final provider = Provider.of<SearchProvider>(context);
 
     return Row(
       children: [
         Checkbox(
           value: provider.searchFilterHas(text),
           onChanged: (checked) {
-            print(checked);
+            if (checked != null && checked) {
+              provider.addSearchFilter(text);
+            } else {
+              provider.removeSearchFilter(text);
+            }
           },
         ),
         Text(text),

@@ -33,6 +33,13 @@ class SearchProvider extends ChangeNotifier {
     }
   }
 
+  void clearSearchFilters() {
+    if (_searchFilters.isNotEmpty) {
+      _searchFilters.clear();
+      notifyListeners();
+    }
+  }
+
   bool searchFilterHas(String value) {
     return _searchFilters.contains(value);
   }
@@ -116,12 +123,31 @@ class SearchProvider extends ChangeNotifier {
   }
 
   List<SearchResult> _filterRecipes() {
-    final recipes = _source.recipes
-        .where((e) => e.title.toLowerCase().contains(_searchText.toLowerCase()))
-        .toList();
+    final recipes = _source.recipes.where(_filterRecipeConditions).toList();
     final sortedRecipes = _sortRecipes(recipes);
 
     return _mapResults(sortedRecipes, SearchCategory.recipes);
+  }
+
+  bool _filterRecipeConditions(Recipe r) {
+    final hasText = r.title.toLowerCase().contains(_searchText.toLowerCase());
+
+    // If there are any search filters, check if
+    // the recipe's categories are in it.
+    if (_searchFilters.isNotEmpty) {
+      bool hasCategory = false;
+
+      for (final filter in _searchFilters) {
+        if (r.categories.contains(filter)) {
+          hasCategory = true;
+          break;
+        }
+      }
+
+      return hasCategory && hasText;
+    }
+
+    return hasText;
   }
 
   List<SearchResult> _filterVideos() {
