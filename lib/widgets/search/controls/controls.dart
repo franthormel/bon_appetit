@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import 'actions/show.dart';
-import 'actions/sort.dart';
-import 'results/results.dart';
+import '../results/results.dart';
+import 'show.dart';
+import 'sort.dart';
 
 class SearchPageControlsWidget extends StatelessWidget {
   const SearchPageControlsWidget({Key? key}) : super(key: key);
@@ -16,8 +16,8 @@ class SearchPageControlsWidget extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: const [
-            SearchPageActionShowWidget(),
-            SearchPageActionSortWidget(),
+            SearchPageControlShowWidget(),
+            SearchPageControlsSortWidget(),
           ],
         ),
         const SizedBox(height: 16.0),

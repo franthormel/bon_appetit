@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import '../../../../style/index.dart';
 import 'header.dart';
 
-class FilterDialogTitleWidget extends StatelessWidget {
-  const FilterDialogTitleWidget({Key? key}) : super(key: key);
+class SearchPageFilterDialogTitleWidget extends StatelessWidget {
+  const SearchPageFilterDialogTitleWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +13,7 @@ class FilterDialogTitleWidget extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            const FilterDialogHeaderWidget("REFINE RESULTS"),
+            const SearchPageFilterDialogHeaderWidget("REFINE RESULTS"),
             IconButton(
               icon: const Icon(Icons.close),
               onPressed: () {

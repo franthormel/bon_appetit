@@ -3,7 +3,7 @@ import 'package:provider/provider.dart';
 
 import '../../../services/index.dart';
 import '../../../style/index.dart';
-import 'actions/filter.dart';
+import 'filter/filter.dart';
 
 class SearchPageTextFieldWidget extends StatelessWidget {
   const SearchPageTextFieldWidget({Key? key}) : super(key: key);

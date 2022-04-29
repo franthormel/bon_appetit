@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../style/index.dart';
-import 'controls.dart';
+import 'controls/controls.dart';
 import 'list/list.dart';
 import 'text_field.dart';
 

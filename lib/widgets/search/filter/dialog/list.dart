@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-import 'options/dietary_concerns.dart';
+import 'options/dietary_concern.dart';
 import 'options/ingredient.dart';
 import 'options/meal_course.dart';
 import 'options/popular.dart';
 import 'title.dart';
 
-class FilterDialogListWidget extends StatelessWidget {
-  const FilterDialogListWidget({Key? key}) : super(key: key);
+class SearchPageFilterDialogListWidget extends StatelessWidget {
+  const SearchPageFilterDialogListWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -22,11 +22,11 @@ class FilterDialogListWidget extends StatelessWidget {
 
   List<Widget> get children {
     return const [
-      FilterDialogTitleWidget(),
-      FilterOptionsPopularWidget(),
-      FilterOptionsMealCourseWidget(),
-      FilterOptionsDietaryConcernWidget(),
-      FilterOptionsIngredientWidget(),
+      SearchPageFilterDialogTitleWidget(),
+      DialogOptionsPopularWidget(),
+      DialogOptionsMealCourseWidget(),
+      DialogOptionsDietaryConcernWidget(),
+      DialogOptionsIngredientWidget(),
     ];
   }
 }
