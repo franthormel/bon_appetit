@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'actions.dart';
+import 'actions/actions.dart';
 import 'list.dart';
 
 class SearchPageActionFilterDialogWidget extends StatelessWidget {
