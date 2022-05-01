@@ -48,11 +48,16 @@ class SearchProvider extends ChangeNotifier {
     return _filters.contains(value);
   }
 
-  void removeFilter(String value) {
+  void removeFilter(String value, [bool search = false]) {
     if (_filters.contains(value)) {
       _filters.remove(value);
-      _filtersTempCount--;
-      notifyListeners();
+
+      if (search) {
+        searchForResults();
+      } else {
+        _filtersTempCount--;
+        notifyListeners();
+      }
     }
   }
 
@@ -152,6 +157,8 @@ class SearchProvider extends ChangeNotifier {
     return _mapResults(sortedRecipes, SearchCategory.recipes);
   }
 
+  // TODO: Check if it actually filters recipes properly'
+  // Note that a recipe's categories must satisfy all filters' values.
   bool _filterRecipeConditions(Recipe r) {
     final hasText = r.title.toLowerCase().contains(_text.toLowerCase());
 

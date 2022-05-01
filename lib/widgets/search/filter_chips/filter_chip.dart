@@ -22,7 +22,7 @@ class SearchPageFilterChipWidget extends StatelessWidget {
         style: const TextStyle(color: BonAppetitColors.white, fontSize: 12.0),
       ),
       onDeleted: () {
-        provider.removeFilter(text);
+        provider.removeFilter(text, true);
       },
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(0.0),
