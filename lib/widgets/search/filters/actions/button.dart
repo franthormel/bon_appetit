@@ -34,7 +34,7 @@ class SearchPageFiltersActionButtonWidget extends StatelessWidget {
           backgroundColor: MaterialStateProperty.all<Color>(backgroundColor),
           shape: MaterialStateProperty.all<OutlinedBorder>(
             RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(0),
+              borderRadius: BorderRadius.circular(0.0),
               side: _borderSide,
             ),
           ),

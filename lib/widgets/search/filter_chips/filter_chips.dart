@@ -26,8 +26,4 @@ class SearchPageFilterChipsWidget extends StatelessWidget {
       spacing: 5.0,
     ) : Container();
   }
-
-  List<Widget> _filterChipWidgets(List<String> filters) => filters
-      .map<Widget>((e) => SearchPageFilterChipWidget(e))
-      .toList();
 }
