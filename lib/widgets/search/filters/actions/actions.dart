@@ -1,14 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
+import '../../../../../services/index.dart';
 import '../../../../../style/index.dart';
-import 'apply.dart';
-import 'cancel.dart';
+import 'buttons.dart';
 
 class SearchPageFiltersActionsWidget extends StatelessWidget {
   const SearchPageFiltersActionsWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    final provider = Provider.of<SearchProvider>(context);
+
     return Container(
       decoration: const BoxDecoration(
         color: BonAppetitColors.white,
@@ -25,17 +28,9 @@ class SearchPageFiltersActionsWidget extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisSize: MainAxisSize.min,
         children: [
-          // TODO: Get actual number from SearchProvider
-          const Text("100 matching results"),
+          Text("${provider.resultsLength} matching results"),
           const SizedBox(height: 10.0),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: const [
-              SearchPageFiltersActionApplyWidget(),
-              SizedBox(width: 10.0),
-              SearchPageFiltersActionCancelWidget(),
-            ],
-          ),
+          const SearchPageFiltersButtonsWidget(),
         ],
       ),
     );

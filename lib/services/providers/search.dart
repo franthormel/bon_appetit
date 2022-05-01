@@ -9,71 +9,91 @@ class SearchProvider extends ChangeNotifier {
   final DatasetSource _source;
 
   // Category used when showing results
-  SearchCategory _searchCategory = SearchCategory.recipes;
+  SearchCategory _category = SearchCategory.recipes;
 
   // Categories used when filtering recipes
-  List<String> _searchFilters = <String>[];
+  final _filters = <String>[];
+
+  // Counts the number of checkboxes ticked while the search  filters page is active.
+  int _filtersTempCount = 0;
 
   // Cache for search results
-  List<SearchResult> _searchResults = <SearchResult>[];
+  List<SearchResult> _results = <SearchResult>[];
 
   // Order used when sorting results
-  SearchSort _searchSort = SearchSort.relevance;
+  SearchSort _sort = SearchSort.relevance;
 
-  // Derived and controlled from a TextEditingController
-  String _searchText = "";
+  // Controlled by a TextEditingController
+  String _text = "";
 
   SearchProvider(this._source);
 
   // RECIPE FILTERS
-  void addSearchFilter(String value) {
-    if (!_searchFilters.contains(value)) {
-      _searchFilters.add(value);
+  void addFilter(String value) {
+    if (!_filters.contains(value)) {
+      _filters.add(value);
+      _filtersTempCount++;
       notifyListeners();
     }
   }
 
-  void clearSearchFilters() {
-    if (_searchFilters.isNotEmpty) {
-      _searchFilters.clear();
+  void clearFilters() {
+    if (_filters.isNotEmpty) {
+      _filters.clear();
+      searchForResults();
+    }
+  }
+
+  bool filterHas(String value) {
+    return _filters.contains(value);
+  }
+
+  void removeFilter(String value) {
+    if (_filters.contains(value)) {
+      _filters.remove(value);
+      _filtersTempCount--;
       notifyListeners();
     }
   }
 
-  bool searchFilterHas(String value) {
-    return _searchFilters.contains(value);
-  }
-
-  void removeSearchFilter(String value) {
-    if (_searchFilters.contains(value)) {
-      _searchFilters.remove(value);
+  void resetTemporaryFilters() {
+    if (_filtersTempCount > 0 && _filters.isNotEmpty) {
+      if (_filters.length == _filtersTempCount) {
+        _filters.clear();
+      } else {
+        _filters.removeRange(
+          _filters.length - _filtersTempCount,
+          _filters.length,
+        );
+      }
+      _filtersTempCount = 0;
       notifyListeners();
     }
   }
 
   // GENERAL SEARCH
-  void changeSearchCategory(SearchCategory value) {
-    if (value != _searchCategory) {
-      _searchCategory = value;
+  void changeCategory(SearchCategory value) {
+    if (value != _category) {
+      _category = value;
       searchForResults();
     }
   }
 
-  void changeSearchSort(SearchSort value) {
-    if (value != _searchSort) {
-      _searchSort = value;
+  void changeSort(SearchSort value) {
+    if (value != _sort) {
+      _sort = value;
       searchForResults();
     }
   }
 
-  void changeSearchText(String text) {
-    _searchText = text;
+  void changeText(String value) {
+    _text = value;
   }
 
   void searchForResults() {
     List<SearchResult> results = [];
 
-    switch (_searchCategory) {
+    switch (_category) {
       case SearchCategory.recipes:
         results = _filterRecipes();
         break;
@@ -93,29 +113,32 @@ class SearchProvider extends ChangeNotifier {
         ];
     }
 
-    _searchResults = results;
+    _results = results;
+    _filtersTempCount = 0;
     notifyListeners();
   }
 
-  bool get hasSearched {
-    return _searchText.isNotEmpty || _searchResults.isNotEmpty;
-  }
+  bool get hasSearched => _text.isNotEmpty || _results.isNotEmpty;
 
-  UnmodifiableListView<SearchResult> get searchResults {
-    return UnmodifiableListView(_searchResults);
-  }
+  SearchCategory get category => _category;
 
-  int get searchResultsLength => _searchResults.length;
+  UnmodifiableListView<String> get filters => UnmodifiableListView(_filters);
 
-  SearchCategory get searchShow => _searchCategory;
+  UnmodifiableListView<SearchResult> get results =>
+      UnmodifiableListView(_results);
 
-  SearchSort get searchSort => _searchSort;
+  int get resultsLength => _results.length;
 
-  String get searchText => _searchText;
+  bool get showFilterChips =>
+      _category == SearchCategory.recipes && _filters.isNotEmpty;
+
+  SearchSort get sort => _sort;
+
+  String get text => _text;
 
   List<SearchResult> _filterArticles() {
     final articles = _source.articles
-        .where((e) => e.title.toLowerCase().contains(_searchText.toLowerCase()))
+        .where((e) => e.title.toLowerCase().contains(_text.toLowerCase()))
         .toList();
     final sortedArticles = _sortArticles(articles);
 
@@ -130,21 +153,23 @@ class SearchProvider extends ChangeNotifier {
   }
 
   bool _filterRecipeConditions(Recipe r) {
-    final hasText = r.title.toLowerCase().contains(_searchText.toLowerCase());
+    final hasText = r.title.toLowerCase().contains(_text.toLowerCase());
 
-    // If there are any search filters, check if
+    // If there are any filters, check if
     // the recipe's categories are in it.
-    if (_searchFilters.isNotEmpty) {
-      bool hasCategory = false;
+    if (_filters.isNotEmpty) {
+      bool isCategorized = false;
 
-      for (final filter in _searchFilters) {
+      for (final filter in _filters) {
         if (r.categories.contains(filter)) {
-          hasCategory = true;
+          isCategorized = true;
+        } else {
+          isCategorized = false;
           break;
         }
       }
 
-      return hasCategory && hasText;
+      return isCategorized && hasText;
     }
 
     return hasText;
@@ -152,7 +177,7 @@ class SearchProvider extends ChangeNotifier {
 
   List<SearchResult> _filterVideos() {
     final videos = _source.videos
-        .where((e) => e.title.toLowerCase().contains(_searchText.toLowerCase()))
+        .where((e) => e.title.toLowerCase().contains(_text.toLowerCase()))
         .toList();
     final sortedVideos = _sortVideos(videos);
 
@@ -171,7 +196,7 @@ class SearchProvider extends ChangeNotifier {
   }
 
   List<Article> _sortArticles(List<Article> articles) {
-    if (_searchSort == SearchSort.newest) {
+    if (_sort == SearchSort.newest) {
       articles.sort((a, b) => b.dateUploaded.compareTo(a.dateUploaded));
     }
 
@@ -180,12 +205,12 @@ class SearchProvider extends ChangeNotifier {
 
   List<Recipe> _sortRecipes(List<Recipe> recipes) {
     // Sort by newest by comparing upload dates
-    if (_searchSort == SearchSort.newest) {
+    if (_sort == SearchSort.newest) {
       recipes.sort((a, b) => b.dateUploaded.compareTo(a.dateUploaded));
     }
 
     // Sort by highestRated by comparing rating values
-    else if (_searchSort == SearchSort.highestRated) {
+    else if (_sort == SearchSort.highestRated) {
       recipes.sort((a, b) {
         return ComparatorService.compareDoubleStrings(
           a.rating?.value,
@@ -195,7 +220,7 @@ class SearchProvider extends ChangeNotifier {
     }
 
     // Sort by mostReviewed by comparing rating counts
-    else if (_searchSort == SearchSort.mostReviewed) {
+    else if (_sort == SearchSort.mostReviewed) {
       recipes.sort((a, b) {
         return ComparatorService.compareIntStrings(
           a.rating?.count,
@@ -208,7 +233,7 @@ class SearchProvider extends ChangeNotifier {
   }
 
   List<Video> _sortVideos(List<Video> videos) {
-    if (_searchSort == SearchSort.newest) {
+    if (_sort == SearchSort.newest) {
       videos.sort((a, b) => b.dateUploaded.compareTo(a.dateUploaded));
     }
 

@@ -18,12 +18,12 @@ class SearchPageFiltersOptionsCheckboxWidget extends StatelessWidget {
     return Row(
       children: [
         Checkbox(
-          value: provider.searchFilterHas(text),
+          value: provider.filterHas(text),
           onChanged: (checked) {
             if (checked != null && checked) {
-              provider.addSearchFilter(text);
+              provider.addFilter(text);
             } else {
-              provider.removeSearchFilter(text);
+              provider.removeFilter(text);
             }
           },
         ),

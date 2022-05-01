@@ -10,7 +10,7 @@ class SearchPageTextFieldWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final provider = Provider.of<SearchProvider>(context, listen: false);
-    final controller = TextEditingController(text: provider.searchText);
+    final controller = TextEditingController(text: provider.text);
 
     return TextField(
       controller: controller,
@@ -30,7 +30,7 @@ class SearchPageTextFieldWidget extends StatelessWidget {
       onSubmitted: (text) {
         provider.searchForResults();
       },
-      onChanged: provider.changeSearchText,
+      onChanged: provider.changeText,
     );
   }
 }
