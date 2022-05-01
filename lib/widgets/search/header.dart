@@ -10,7 +10,6 @@ class SearchPageHeaderWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
     return Container(
       color: BonAppetitColors.white,
       padding: const EdgeInsets.only(
@@ -32,7 +31,6 @@ class SearchPageHeaderWidget extends StatelessWidget {
           const SearchPageFilterChipsWidget(),
         ],
       ),
-
     );
   }
 }
