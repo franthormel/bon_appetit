@@ -16,12 +16,14 @@ class VideoDetailsAboutWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final widgets = _textWidgets;
+
     return VideoDetailsContentWidget(
       title: "About",
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          ...textWidgets,
+          if (widgets.isNotEmpty) ...widgets,
           VideoDetailsReleasedDateWidget(uploadDate: uploadDate),
         ],
       ),
@@ -31,15 +33,18 @@ class VideoDetailsAboutWidget extends StatelessWidget {
   /// Returns the widget according to the number of lines in the [about] property.
   ///
   /// For each line, it returns a [Text] and followed by a [SizedBox] widget.
-  List<Widget> get textWidgets {
+  List<Widget> get _textWidgets {
     final widgets = <Widget>[];
-    final lines = about.split("\r\n");
 
-    for (final line in lines) {
-      widgets.addAll([
-        textWidget(line),
-        const SizedBox(height: 10.0),
-      ]);
+    if (about.isNotEmpty) {
+      final lines = about.split("\r\n");
+
+      for (final line in lines) {
+        widgets.addAll([
+          textWidget(line),
+          const SizedBox(height: 10.0),
+        ]);
+      }
     }
 
     return widgets;
