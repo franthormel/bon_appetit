@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "971857908357",
+    "project_id": "flutter-bon-appetit",
+    "storage_bucket": "flutter-bon-appetit.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:971857908357:android:815da727342a4fd8644fec",
+        "android_client_info": {
+          "package_name": "com.franca.demo.bon.appetit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "971857908357-qrjkeotvtd7u7ropo4jn55vflsur5078.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNDNZp9skXPduXQThXw-AlJypd9kg1II8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "971857908357-qrjkeotvtd7u7ropo4jn55vflsur5078.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
