@@ -157,13 +157,10 @@ class SearchProvider extends ChangeNotifier {
     return _mapResults(sortedRecipes, SearchCategory.recipes);
   }
 
-  // TODO: Check if it actually filters recipes properly'
-  // Note that a recipe's categories must satisfy all filters' values.
   bool _filterRecipeConditions(Recipe r) {
     final hasText = r.title.toLowerCase().contains(_text.toLowerCase());
 
-    // If there are any filters, check if
-    // the recipe's categories are in it.
+    // Check the recipe's categories are a part of the filters.
     if (_filters.isNotEmpty) {
       bool isCategorized = false;
 

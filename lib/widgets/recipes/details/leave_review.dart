@@ -16,7 +16,6 @@ class RecipeDetailsLeaveReviewWidget extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.symmetric(vertical: 10.0),
           child: Container(
-            // TODO Once there is a login feature implement an actual text-box input with the same design as this one
             decoration: BoxDecoration(
               border: Border.all(color: BonAppetitColors.platinum),
             ),
