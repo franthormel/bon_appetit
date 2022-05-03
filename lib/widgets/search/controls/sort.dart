@@ -16,14 +16,14 @@ class SearchPageControlsSortWidget extends StatelessWidget {
       padding: const EdgeInsets.only(right: 8.0),
       child: PopupMenuButton<SearchSort>(
         child: SearchPageControlWidget(
-          value: provider.searchSort.toLiteralValue(),
+          value: provider.sort.toLiteralValue(),
           title: "SORT BY",
         ),
         itemBuilder: (context) => SearchSort.values
             .map<PopupMenuEntry<SearchSort>>((e) => PopupMenuItem<SearchSort>(
                 value: e, child: Text(e.toLiteralValue())))
             .toList(),
-        onSelected: provider.changeSearchSort,
+        onSelected: provider.changeSort,
       ),
     );
   }

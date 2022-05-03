@@ -10,7 +10,7 @@ class SearchPageListWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final provider = Provider.of<SearchProvider>(context);
-    final results = provider.searchResults;
+    final results = provider.results;
 
     return Expanded(
       child: ListView.separated(

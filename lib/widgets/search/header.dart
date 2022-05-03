@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../style/index.dart';
+import 'filter_chips/filter_chips.dart';
 import 'filters/button.dart';
 import 'text_field.dart';
 
@@ -11,16 +12,25 @@ class SearchPageHeaderWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       color: BonAppetitColors.white,
-      padding: const EdgeInsets.all(16.0),
-      child: Stack(
-        alignment: Alignment.centerRight,
-        children: const [
-          SearchPageTextFieldWidget(),
-          SearchPageFiltersButtonWidget(),
+      padding: const EdgeInsets.only(
+        left: 16.0,
+        right: 16.0,
+        top: 16.0,
+        bottom: 8.0,
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Stack(
+            alignment: Alignment.centerRight,
+            children: const [
+              SearchPageTextFieldWidget(),
+              SearchPageFiltersButtonWidget(),
+            ],
+          ),
+          const SearchPageFilterChipsWidget(),
         ],
       ),
-
-      // TODO: Show search recipe filters here as squared chips inside Wrap
     );
   }
 }

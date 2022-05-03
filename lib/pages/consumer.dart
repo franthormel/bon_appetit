@@ -8,7 +8,6 @@ import '../services/index.dart';
 import '../widgets/index.dart';
 
 class ConsumerPage extends StatelessWidget {
-  // TODO When using bottom navigation bars and there are multiple pages use PageStorageKey('HomePage')
   const ConsumerPage({Key? key}) : super(key: key);
 
   @override
