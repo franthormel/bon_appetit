@@ -42,3 +42,4 @@ export 'videos/details/image.dart';
 export 'videos/details/info.dart';
 export 'videos/details/transcript.dart';
 export 'videos/video_list.dart';
+export 'auth/header.dart';

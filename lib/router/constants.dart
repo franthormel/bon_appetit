@@ -12,6 +12,7 @@ class RoutePath {
   static const drawerShopping = "shopping";
   static const drawerVideos = "videos";
   static const searchRecipeFilters = "search-recipe-filters";
+  static const authSignIn = "sign-in";
 }
 
 class RouteName {
@@ -28,4 +29,5 @@ class RouteName {
   static const drawerShopping = "DrawerShoppingRoute";
   static const drawerVideos = "DrawerVideosRoute";
   static const searchRecipeFilters = "SearchRecipeFiltersRoute";
+  static const authSignIn = "AuthSignInRoute";
 }

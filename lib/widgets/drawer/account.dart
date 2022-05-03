@@ -9,17 +9,23 @@ class DrawerAccountWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final router = Provider.of<RouteProvider>(context, listen: false);
+
     return Column(
       children: [
         const ListTile(dense: true, title: Divider()),
         DrawerAccountEntryWidget(
           "Search",
           onTap: () {
-            final route = Provider.of<RouteProvider>(context, listen: false);
-            route.change(const SearchRoute());
+            router.change(const SearchRoute());
           },
         ),
-        const DrawerAccountEntryWidget("Sign In"),
+        DrawerAccountEntryWidget(
+          "Sign In",
+          onTap: () {
+            router.change(const AuthSignInRoute());
+          },
+        ),
         DrawerAccountEntryWidget(
           "SUBSCRIBE",
           textStyle: Theme.of(context)

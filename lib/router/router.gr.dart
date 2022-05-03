@@ -10,116 +10,124 @@
 //
 // ignore_for_file: type=lint
 
-import 'package:auto_route/auto_route.dart' as _i2;
-import 'package:flutter/material.dart' as _i3;
-import 'package:flutter/widgets.dart' as _i5;
+import 'package:auto_route/auto_route.dart' as _i3;
+import 'package:flutter/material.dart' as _i4;
 
-import '../models/index.dart' as _i4;
+import '../models/index.dart' as _i5;
+import '../pages/auth/sign_in.dart' as _i2;
 import '../pages/index.dart' as _i1;
 
-class AppRouter extends _i2.RootStackRouter {
-  AppRouter([_i3.GlobalKey<_i3.NavigatorState>? navigatorKey])
+class AppRouter extends _i3.RootStackRouter {
+  AppRouter([_i4.GlobalKey<_i4.NavigatorState>? navigatorKey])
       : super(navigatorKey);
 
   @override
-  final Map<String, _i2.PageFactory> pagesMap = {
+  final Map<String, _i3.PageFactory> pagesMap = {
     DataProviderRoute.name: (routeData) {
-      return _i2.MaterialPageX<dynamic>(
+      return _i3.MaterialPageX<dynamic>(
           routeData: routeData, child: const _i1.DataProviderPage());
     },
     HomeRoute.name: (routeData) {
-      return _i2.MaterialPageX<dynamic>(
+      return _i3.MaterialPageX<dynamic>(
           routeData: routeData, child: const _i1.HomePage());
     },
     SearchRoute.name: (routeData) {
-      return _i2.MaterialPageX<dynamic>(
+      return _i3.MaterialPageX<dynamic>(
           routeData: routeData, child: const _i1.SearchPage());
     },
     RecipeDetailsRoute.name: (routeData) {
       final args = routeData.argsAs<RecipeDetailsRouteArgs>();
-      return _i2.MaterialPageX<dynamic>(
+      return _i3.MaterialPageX<dynamic>(
           routeData: routeData,
           child: _i1.RecipeDetailsPage(args.recipe, key: args.key));
     },
     ArticleDetailsRoute.name: (routeData) {
       final args = routeData.argsAs<ArticleDetailsRouteArgs>();
-      return _i2.MaterialPageX<dynamic>(
+      return _i3.MaterialPageX<dynamic>(
           routeData: routeData,
           child: _i1.ArticleDetailsPage(args.article, key: args.key));
     },
     VideoDetailsRoute.name: (routeData) {
       final args = routeData.argsAs<VideoDetailsRouteArgs>();
-      return _i2.MaterialPageX<dynamic>(
+      return _i3.MaterialPageX<dynamic>(
           routeData: routeData,
           child: _i1.VideoDetailsPage(args.video, key: args.key));
     },
     DrawerCookingRoute.name: (routeData) {
-      return _i2.MaterialPageX<dynamic>(
+      return _i3.MaterialPageX<dynamic>(
           routeData: routeData, child: const _i1.DrawerCookingPage());
     },
     DrawerCultureRoute.name: (routeData) {
-      return _i2.MaterialPageX<dynamic>(
+      return _i3.MaterialPageX<dynamic>(
           routeData: routeData, child: const _i1.DrawerCulturePage());
     },
     DrawerRecipesRoute.name: (routeData) {
-      return _i2.MaterialPageX<dynamic>(
+      return _i3.MaterialPageX<dynamic>(
           routeData: routeData, child: const _i1.DrawerRecipesPage());
     },
     DrawerRestaurantsRoute.name: (routeData) {
-      return _i2.MaterialPageX<dynamic>(
+      return _i3.MaterialPageX<dynamic>(
           routeData: routeData, child: const _i1.DrawerRestaurantsPage());
     },
     DrawerShoppingRoute.name: (routeData) {
-      return _i2.MaterialPageX<dynamic>(
+      return _i3.MaterialPageX<dynamic>(
           routeData: routeData, child: const _i1.DrawerShoppingPage());
     },
     DrawerVideosRoute.name: (routeData) {
-      return _i2.MaterialPageX<dynamic>(
+      return _i3.MaterialPageX<dynamic>(
           routeData: routeData, child: const _i1.DrawerVideosPage());
     },
     SearchRecipeFiltersRoute.name: (routeData) {
-      return _i2.MaterialPageX<dynamic>(
+      return _i3.MaterialPageX<dynamic>(
           routeData: routeData, child: const _i1.SearchRecipeFiltersPage());
+    },
+    AuthSignInRoute.name: (routeData) {
+      return _i3.MaterialPageX<dynamic>(
+          routeData: routeData, child: const _i2.AuthSignInPage());
     }
   };
 
   @override
-  List<_i2.RouteConfig> get routes => [
-        _i2.RouteConfig(DataProviderRoute.name, path: '/', children: [
-          _i2.RouteConfig(HomeRoute.name,
+  List<_i3.RouteConfig> get routes => [
+        _i3.RouteConfig(DataProviderRoute.name, path: '/', children: [
+          _i3.RouteConfig(HomeRoute.name,
               path: 'home', parent: DataProviderRoute.name),
-          _i2.RouteConfig(SearchRoute.name,
+          _i3.RouteConfig(SearchRoute.name,
               path: 'search', parent: DataProviderRoute.name),
-          _i2.RouteConfig(RecipeDetailsRoute.name,
+          _i3.RouteConfig(RecipeDetailsRoute.name,
               path: 'recipe', parent: DataProviderRoute.name),
-          _i2.RouteConfig(ArticleDetailsRoute.name,
+          _i3.RouteConfig(ArticleDetailsRoute.name,
               path: 'article', parent: DataProviderRoute.name),
-          _i2.RouteConfig(VideoDetailsRoute.name,
+          _i3.RouteConfig(VideoDetailsRoute.name,
               path: 'video', parent: DataProviderRoute.name),
-          _i2.RouteConfig(DrawerCookingRoute.name,
+          _i3.RouteConfig(DrawerCookingRoute.name,
               path: 'cooking', parent: DataProviderRoute.name),
-          _i2.RouteConfig(DrawerCultureRoute.name,
+          _i3.RouteConfig(DrawerCultureRoute.name,
               path: 'culture', parent: DataProviderRoute.name),
-          _i2.RouteConfig(DrawerRecipesRoute.name,
+          _i3.RouteConfig(DrawerRecipesRoute.name,
               path: 'recipes', parent: DataProviderRoute.name),
-          _i2.RouteConfig(DrawerRestaurantsRoute.name,
+          _i3.RouteConfig(DrawerRestaurantsRoute.name,
               path: 'restaurants', parent: DataProviderRoute.name),
-          _i2.RouteConfig(DrawerShoppingRoute.name,
+          _i3.RouteConfig(DrawerShoppingRoute.name,
               path: 'shopping', parent: DataProviderRoute.name),
-          _i2.RouteConfig(DrawerVideosRoute.name,
+          _i3.RouteConfig(DrawerVideosRoute.name,
               path: 'videos', parent: DataProviderRoute.name),
-          _i2.RouteConfig(SearchRecipeFiltersRoute.name,
-              path: 'search-recipe-filters', parent: DataProviderRoute.name)
+          _i3.RouteConfig(SearchRecipeFiltersRoute.name,
+              path: 'search-recipe-filters', parent: DataProviderRoute.name),
+          _i3.RouteConfig(SearchRecipeFiltersRoute.name,
+              path: 'search-recipe-filters', parent: DataProviderRoute.name),
+          _i3.RouteConfig(AuthSignInRoute.name,
+              path: 'sign-in', parent: DataProviderRoute.name)
         ]),
-        _i2.RouteConfig('*#redirect',
+        _i3.RouteConfig('*#redirect',
             path: '*', redirectTo: 'DataProviderRoute', fullMatch: true)
       ];
 }
 
 /// generated route for
 /// [_i1.DataProviderPage]
-class DataProviderRoute extends _i2.PageRouteInfo<void> {
-  const DataProviderRoute({List<_i2.PageRouteInfo>? children})
+class DataProviderRoute extends _i3.PageRouteInfo<void> {
+  const DataProviderRoute({List<_i3.PageRouteInfo>? children})
       : super(DataProviderRoute.name, path: '/', initialChildren: children);
 
   static const String name = 'DataProviderRoute';
@@ -127,7 +135,7 @@ class DataProviderRoute extends _i2.PageRouteInfo<void> {
 
 /// generated route for
 /// [_i1.HomePage]
-class HomeRoute extends _i2.PageRouteInfo<void> {
+class HomeRoute extends _i3.PageRouteInfo<void> {
   const HomeRoute() : super(HomeRoute.name, path: 'home');
 
   static const String name = 'HomeRoute';
@@ -135,7 +143,7 @@ class HomeRoute extends _i2.PageRouteInfo<void> {
 
 /// generated route for
 /// [_i1.SearchPage]
-class SearchRoute extends _i2.PageRouteInfo<void> {
+class SearchRoute extends _i3.PageRouteInfo<void> {
   const SearchRoute() : super(SearchRoute.name, path: 'search');
 
   static const String name = 'SearchRoute';
@@ -143,8 +151,8 @@ class SearchRoute extends _i2.PageRouteInfo<void> {
 
 /// generated route for
 /// [_i1.RecipeDetailsPage]
-class RecipeDetailsRoute extends _i2.PageRouteInfo<RecipeDetailsRouteArgs> {
-  RecipeDetailsRoute({required _i4.Recipe recipe, _i5.Key? key})
+class RecipeDetailsRoute extends _i3.PageRouteInfo<RecipeDetailsRouteArgs> {
+  RecipeDetailsRoute({required _i5.Recipe recipe, _i4.Key? key})
       : super(RecipeDetailsRoute.name,
             path: 'recipe',
             args: RecipeDetailsRouteArgs(recipe: recipe, key: key));
@@ -155,9 +163,9 @@ class RecipeDetailsRoute extends _i2.PageRouteInfo<RecipeDetailsRouteArgs> {
 class RecipeDetailsRouteArgs {
   const RecipeDetailsRouteArgs({required this.recipe, this.key});
 
-  final _i4.Recipe recipe;
+  final _i5.Recipe recipe;
 
-  final _i5.Key? key;
+  final _i4.Key? key;
 
   @override
   String toString() {
@@ -167,8 +175,8 @@ class RecipeDetailsRouteArgs {
 
 /// generated route for
 /// [_i1.ArticleDetailsPage]
-class ArticleDetailsRoute extends _i2.PageRouteInfo<ArticleDetailsRouteArgs> {
-  ArticleDetailsRoute({required _i4.Article article, _i5.Key? key})
+class ArticleDetailsRoute extends _i3.PageRouteInfo<ArticleDetailsRouteArgs> {
+  ArticleDetailsRoute({required _i5.Article article, _i4.Key? key})
       : super(ArticleDetailsRoute.name,
             path: 'article',
             args: ArticleDetailsRouteArgs(article: article, key: key));
@@ -179,9 +187,9 @@ class ArticleDetailsRoute extends _i2.PageRouteInfo<ArticleDetailsRouteArgs> {
 class ArticleDetailsRouteArgs {
   const ArticleDetailsRouteArgs({required this.article, this.key});
 
-  final _i4.Article article;
+  final _i5.Article article;
 
-  final _i5.Key? key;
+  final _i4.Key? key;
 
   @override
   String toString() {
@@ -191,8 +199,8 @@ class ArticleDetailsRouteArgs {
 
 /// generated route for
 /// [_i1.VideoDetailsPage]
-class VideoDetailsRoute extends _i2.PageRouteInfo<VideoDetailsRouteArgs> {
-  VideoDetailsRoute({required _i4.Video video, _i5.Key? key})
+class VideoDetailsRoute extends _i3.PageRouteInfo<VideoDetailsRouteArgs> {
+  VideoDetailsRoute({required _i5.Video video, _i4.Key? key})
       : super(VideoDetailsRoute.name,
             path: 'video', args: VideoDetailsRouteArgs(video: video, key: key));
 
@@ -202,9 +210,9 @@ class VideoDetailsRoute extends _i2.PageRouteInfo<VideoDetailsRouteArgs> {
 class VideoDetailsRouteArgs {
   const VideoDetailsRouteArgs({required this.video, this.key});
 
-  final _i4.Video video;
+  final _i5.Video video;
 
-  final _i5.Key? key;
+  final _i4.Key? key;
 
   @override
   String toString() {
@@ -214,7 +222,7 @@ class VideoDetailsRouteArgs {
 
 /// generated route for
 /// [_i1.DrawerCookingPage]
-class DrawerCookingRoute extends _i2.PageRouteInfo<void> {
+class DrawerCookingRoute extends _i3.PageRouteInfo<void> {
   const DrawerCookingRoute() : super(DrawerCookingRoute.name, path: 'cooking');
 
   static const String name = 'DrawerCookingRoute';
@@ -222,7 +230,7 @@ class DrawerCookingRoute extends _i2.PageRouteInfo<void> {
 
 /// generated route for
 /// [_i1.DrawerCulturePage]
-class DrawerCultureRoute extends _i2.PageRouteInfo<void> {
+class DrawerCultureRoute extends _i3.PageRouteInfo<void> {
   const DrawerCultureRoute() : super(DrawerCultureRoute.name, path: 'culture');
 
   static const String name = 'DrawerCultureRoute';
@@ -230,7 +238,7 @@ class DrawerCultureRoute extends _i2.PageRouteInfo<void> {
 
 /// generated route for
 /// [_i1.DrawerRecipesPage]
-class DrawerRecipesRoute extends _i2.PageRouteInfo<void> {
+class DrawerRecipesRoute extends _i3.PageRouteInfo<void> {
   const DrawerRecipesRoute() : super(DrawerRecipesRoute.name, path: 'recipes');
 
   static const String name = 'DrawerRecipesRoute';
@@ -238,7 +246,7 @@ class DrawerRecipesRoute extends _i2.PageRouteInfo<void> {
 
 /// generated route for
 /// [_i1.DrawerRestaurantsPage]
-class DrawerRestaurantsRoute extends _i2.PageRouteInfo<void> {
+class DrawerRestaurantsRoute extends _i3.PageRouteInfo<void> {
   const DrawerRestaurantsRoute()
       : super(DrawerRestaurantsRoute.name, path: 'restaurants');
 
@@ -247,7 +255,7 @@ class DrawerRestaurantsRoute extends _i2.PageRouteInfo<void> {
 
 /// generated route for
 /// [_i1.DrawerShoppingPage]
-class DrawerShoppingRoute extends _i2.PageRouteInfo<void> {
+class DrawerShoppingRoute extends _i3.PageRouteInfo<void> {
   const DrawerShoppingRoute()
       : super(DrawerShoppingRoute.name, path: 'shopping');
 
@@ -256,7 +264,7 @@ class DrawerShoppingRoute extends _i2.PageRouteInfo<void> {
 
 /// generated route for
 /// [_i1.DrawerVideosPage]
-class DrawerVideosRoute extends _i2.PageRouteInfo<void> {
+class DrawerVideosRoute extends _i3.PageRouteInfo<void> {
   const DrawerVideosRoute() : super(DrawerVideosRoute.name, path: 'videos');
 
   static const String name = 'DrawerVideosRoute';
@@ -264,9 +272,17 @@ class DrawerVideosRoute extends _i2.PageRouteInfo<void> {
 
 /// generated route for
 /// [_i1.SearchRecipeFiltersPage]
-class SearchRecipeFiltersRoute extends _i2.PageRouteInfo<void> {
+class SearchRecipeFiltersRoute extends _i3.PageRouteInfo<void> {
   const SearchRecipeFiltersRoute()
       : super(SearchRecipeFiltersRoute.name, path: 'search-recipe-filters');
 
   static const String name = 'SearchRecipeFiltersRoute';
+}
+
+/// generated route for
+/// [_i2.AuthSignInPage]
+class AuthSignInRoute extends _i3.PageRouteInfo<void> {
+  const AuthSignInRoute() : super(AuthSignInRoute.name, path: 'sign-in');
+
+  static const String name = 'AuthSignInRoute';
 }
