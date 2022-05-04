@@ -1,32 +1,40 @@
 import 'package:flutter/material.dart';
 
-import 'text.dart';
+import '../../style/index.dart';
 
-class SearchPageFiltersActionButtonWidget extends StatelessWidget {
-  final Color backgroundColor;
+class BlackTextButtonWidget extends StatelessWidget {
+  /// Default is [BonAppetitColors.black]
+  final Color? backgroundColor;
   final Color? borderColor;
+
+  /// Default is [BonAppetitColors.white]
+  final Color? foregroundColor;
   final void Function() onPressed;
   final String text;
-  final Color? textColor;
+  final double? width;
 
-  const SearchPageFiltersActionButtonWidget({
-    required this.backgroundColor,
+  const BlackTextButtonWidget({
     required this.onPressed,
     required this.text,
+    this.backgroundColor,
     this.borderColor,
-    this.textColor,
+    this.foregroundColor,
+    this.width,
     Key? key,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: 130,
+      width: width ?? double.infinity,
       child: TextButton(
-        child: SearchPageFiltersActionTextWidget(text, color: textColor),
+        child: Text(text),
         onPressed: onPressed,
         style: ButtonStyle(
-          backgroundColor: MaterialStateProperty.all<Color>(backgroundColor),
+          backgroundColor: MaterialStateProperty.all<Color>(
+              backgroundColor ?? BonAppetitColors.black),
+          foregroundColor: MaterialStateProperty.all<Color>(
+              foregroundColor ?? BonAppetitColors.white),
           shape: MaterialStateProperty.all<OutlinedBorder>(
             RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(0.0),

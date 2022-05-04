@@ -61,7 +61,7 @@ class SearchProvider extends ChangeNotifier {
     }
   }
 
-  void resetTemporaryFilters() {
+  void resetTempFilters() {
     if (_filtersTempCount > 0 && _filters.isNotEmpty) {
       if (_filters.length == _filtersTempCount) {
         _filters.clear();
