@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../../../../../router/index.dart';
 import '../../../../../services/index.dart';
 import '../../../../../style/index.dart';
 import 'button.dart';
@@ -14,6 +15,7 @@ class SearchPageFiltersActionApplyWidget extends StatelessWidget {
       text: "APPLY",
       onPressed: () {
         Provider.of<SearchProvider>(context, listen: false).searchForResults();
+        Provider.of<RouteProvider>(context, listen: false).pop();
       },
       backgroundColor: BonAppetitColors.black,
       textColor: BonAppetitColors.white,

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'label.dart';
+import 'button.dart';
 
 class AuthSignInWidget extends StatelessWidget {
   const AuthSignInWidget({Key? key}) : super(key: key);
@@ -12,9 +13,9 @@ class AuthSignInWidget extends StatelessWidget {
       children: [
         const AuthLabelWidget(text: "Email"),
         const TextField(),
-        TextButton(
-          child: const Text("NEXT"),
-          onPressed: () {},
+        AuthButtonWidget(
+          text: "NEXT",
+          onPressed: (){},
         ),
       ],
     );
