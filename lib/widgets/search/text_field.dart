@@ -15,9 +15,13 @@ class SearchPageTextFieldWidget extends StatelessWidget {
     return TextField(
       controller: controller,
       decoration: InputDecoration(
-        border: const OutlineInputBorder(),
+        border: const OutlineInputBorder(
+          borderRadius: BorderRadius.zero,
+          borderSide: BorderSide(color: BonAppetitColors.black),
+        ),
         focusedBorder: const OutlineInputBorder(
-          borderSide: BorderSide(color: Colors.black, width: 1.5),
+          borderRadius: BorderRadius.zero,
+          borderSide: BorderSide(color: BonAppetitColors.black, width: 1.5),
         ),
         hintText: "Find a Recipe",
         prefixIcon: IconButton(

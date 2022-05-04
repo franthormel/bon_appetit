@@ -14,6 +14,7 @@ class ConsumerPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       drawer: const DrawerWidget(),
+      resizeToAvoidBottomInset: false,
       appBar: AppBar(
         actions: [
           IconButton(
