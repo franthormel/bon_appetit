@@ -14,7 +14,7 @@ import 'package:auto_route/auto_route.dart' as _i3;
 import 'package:flutter/material.dart' as _i4;
 
 import '../models/index.dart' as _i5;
-import '../pages/auth/sign_in.dart' as _i2;
+import '../pages/auth/email.dart' as _i2;
 import '../pages/index.dart' as _i1;
 
 class AppRouter extends _i3.RootStackRouter {
@@ -81,9 +81,9 @@ class AppRouter extends _i3.RootStackRouter {
       return _i3.MaterialPageX<dynamic>(
           routeData: routeData, child: const _i1.SearchRecipeFiltersPage());
     },
-    AuthSignInRoute.name: (routeData) {
+    AuthEmailRoute.name: (routeData) {
       return _i3.MaterialPageX<dynamic>(
-          routeData: routeData, child: const _i2.AuthSignInPage());
+          routeData: routeData, child: const _i2.AuthSignInEmailPage());
     }
   };
 
@@ -116,8 +116,8 @@ class AppRouter extends _i3.RootStackRouter {
               path: 'search-recipe-filters', parent: DataProviderRoute.name),
           _i3.RouteConfig(SearchRecipeFiltersRoute.name,
               path: 'search-recipe-filters', parent: DataProviderRoute.name),
-          _i3.RouteConfig(AuthSignInRoute.name,
-              path: 'sign-in', parent: DataProviderRoute.name)
+          _i3.RouteConfig(AuthEmailRoute.name,
+              path: 'email', parent: DataProviderRoute.name)
         ]),
         _i3.RouteConfig('*#redirect',
             path: '*', redirectTo: 'DataProviderRoute', fullMatch: true)
@@ -280,9 +280,9 @@ class SearchRecipeFiltersRoute extends _i3.PageRouteInfo<void> {
 }
 
 /// generated route for
-/// [_i2.AuthSignInPage]
-class AuthSignInRoute extends _i3.PageRouteInfo<void> {
-  const AuthSignInRoute() : super(AuthSignInRoute.name, path: 'sign-in');
+/// [_i2.AuthSignInEmailPage]
+class AuthEmailRoute extends _i3.PageRouteInfo<void> {
+  const AuthEmailRoute() : super(AuthEmailRoute.name, path: 'email');
 
-  static const String name = 'AuthSignInRoute';
+  static const String name = 'AuthEmailRoute';
 }

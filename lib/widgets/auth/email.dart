@@ -4,8 +4,8 @@ import '../../style/index.dart';
 import '../others/black_text_button.dart';
 import 'label.dart';
 
-class AuthSignInWidget extends StatelessWidget {
-  const AuthSignInWidget({Key? key}) : super(key: key);
+class AuthEmailWidget extends StatelessWidget {
+  const AuthEmailWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -29,6 +29,7 @@ class AuthSignInWidget extends StatelessWidget {
               borderRadius: BorderRadius.zero,
               borderSide: BorderSide(color: BonAppetitColors.black),
             ),
+            errorText: "Invalid email",
             labelText: "Your email address",
           ),
           style: Theme.of(context).textTheme.bodyText2,

@@ -14,17 +14,17 @@ class DrawerAccountAuthWidget extends StatelessWidget {
       initialData: null,
       stream: FirebaseAuth.instance.userChanges(),
       builder: (context, snapshot) {
-        if (snapshot.data == null) {
-          return const DrawerAccountAuthOutWidget();
-        } else if (snapshot.data != null) {
-          return const DrawerAccountAuthInWidget();
-        } else if (snapshot.hasError) {
+        if (snapshot.hasError) {
           if (kDebugMode) {
             print(">>> Auth Error: ${snapshot.error}");
           }
         }
 
-        return Container();
+        if (snapshot.data == null) {
+          return const DrawerAccountAuthOutWidget();
+        } else  {
+          return const DrawerAccountAuthInWidget();
+        }
       },
     );
   }

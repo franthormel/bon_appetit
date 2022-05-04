@@ -43,4 +43,4 @@ export 'videos/details/info.dart';
 export 'videos/details/transcript.dart';
 export 'videos/video_list.dart';
 export 'auth/main.dart';
-export 'auth/sign_in.dart';
+export 'auth/email.dart';

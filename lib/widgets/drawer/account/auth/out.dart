@@ -13,7 +13,7 @@ class DrawerAccountAuthOutWidget extends StatelessWidget {
       "Sign in",
       onTap: () {
         Provider.of<RouteProvider>(context, listen: false)
-            .change(const AuthSignInRoute());
+            .change(const AuthEmailRoute());
       },
     );
   }

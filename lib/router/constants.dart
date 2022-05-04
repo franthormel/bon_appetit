@@ -12,7 +12,11 @@ class RoutePath {
   static const drawerShopping = "shopping";
   static const drawerVideos = "videos";
   static const searchRecipeFilters = "search-recipe-filters";
-  static const authSignIn = "sign-in";
+  static const auth = "auth/";
+  static const authSignInEmail = "email";
+  static const authSignInPassword = "password";
+  static const authSignInRegister = "register";
+  static const authSignInSelect = "select-account";
 }
 
 class RouteName {
@@ -29,5 +33,6 @@ class RouteName {
   static const drawerShopping = "DrawerShoppingRoute";
   static const drawerVideos = "DrawerVideosRoute";
   static const searchRecipeFilters = "SearchRecipeFiltersRoute";
-  static const authSignIn = "AuthSignInRoute";
+  static const auth = "AuthRoute";
+  static const authSignInEmail = "AuthEmailRoute";
 }

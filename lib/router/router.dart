@@ -1,5 +1,5 @@
 import 'package:auto_route/auto_route.dart';
-import 'package:bon_appetit/pages/auth/sign_in.dart';
+import 'package:bon_appetit/pages/auth/email.dart';
 
 import '../pages/index.dart';
 import 'constants.dart';
@@ -78,9 +78,9 @@ import 'constants.dart';
           path: RoutePath.searchRecipeFilters,
         ),
         AutoRoute(
-          page: AuthSignInPage,
-          name: RouteName.authSignIn,
-          path: RoutePath.authSignIn,
+          page: AuthSignInEmailPage,
+          name: RouteName.authSignInEmail,
+          path: RoutePath.authSignInEmail,
         ),
       ],
     ),
