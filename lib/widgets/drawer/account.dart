@@ -13,27 +13,13 @@ class DrawerAccountWidget extends StatelessWidget {
 
     return Column(
       children: [
-        const ListTile(dense: true, title: Divider()),
         DrawerAccountEntryWidget(
-          "Search",
-          onTap: () {
-            router.change(const SearchRoute());
-          },
-        ),
-        DrawerAccountEntryWidget(
-          "Sign In",
+          "Sign in",
           onTap: () {
             router.change(const AuthSignInRoute());
           },
         ),
-        DrawerAccountEntryWidget(
-          "SUBSCRIBE",
-          textStyle: Theme.of(context)
-              .textTheme
-              .bodyText2
-              ?.copyWith(fontWeight: FontWeight.w500, letterSpacing: 0.9),
-        ),
-        const ListTile(dense: true, title: Divider()),
+        const DrawerAccountEntryWidget("Newsletter"),
       ],
     );
   }

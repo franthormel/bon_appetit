@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../models/index.dart';
 import '../../router/index.dart';
 import 'account.dart';
-import 'footer.dart';
 import 'router.dart';
 
 class DrawerContentsWidget extends StatelessWidget {
@@ -12,22 +10,15 @@ class DrawerContentsWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      children: [
-        ...routes.map<Widget>((route) => DrawerRouterWidget(route)).toList(),
-        const DrawerAccountWidget(),
-        const DrawerFooterWidget(),
+      children: const [
+        DrawerRouterWidget("Recipes", DrawerRecipesRoute()),
+        DrawerRouterWidget("Cooking", DrawerCookingRoute()),
+        DrawerRouterWidget("Culture", DrawerCultureRoute()),
+        DrawerRouterWidget("Shopping", DrawerShoppingRoute()),
+        DrawerRouterWidget("Restaurants", DrawerRestaurantsRoute()),
+        DrawerRouterWidget("Videos", DrawerVideosRoute()),
+        DrawerAccountWidget(),
       ],
     );
-  }
-
-  List<DrawerRoute> get routes {
-    return <DrawerRoute>[
-      DrawerRoute("Recipes", pageRouteInfo: const DrawerRecipesRoute()),
-      DrawerRoute("Cooking", pageRouteInfo: const DrawerCookingRoute()),
-      DrawerRoute("Culture", pageRouteInfo: const DrawerCultureRoute()),
-      DrawerRoute("Shopping", pageRouteInfo: const DrawerShoppingRoute()),
-      DrawerRoute("Restaurants", pageRouteInfo: const DrawerRestaurantsRoute()),
-      DrawerRoute("Videos", pageRouteInfo: const DrawerVideosRoute()),
-    ];
   }
 }
