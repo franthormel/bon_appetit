@@ -40,7 +40,7 @@ class BlackTextButtonWidget extends StatelessWidget {
               foregroundColor ?? BonAppetitColors.white),
           shape: MaterialStateProperty.all<OutlinedBorder>(
             RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(0.0),
+              borderRadius: BorderRadius.zero,
               side: _borderSide,
             ),
           ),

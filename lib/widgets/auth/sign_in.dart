@@ -12,7 +12,14 @@ class AuthSignInWidget extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         const AuthLabelWidget(text: "Email"),
-        const TextField(),
+        const SizedBox(height: 16.0),
+        const TextField(
+          decoration: InputDecoration(
+            labelText: "Your email address",
+            border: OutlineInputBorder(borderRadius: BorderRadius.zero),
+          ),
+        ),
+        const SizedBox(height: 16.0),
         BlackTextButtonWidget(
           text: "NEXT",
           onPressed: () {},

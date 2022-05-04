@@ -25,7 +25,7 @@ class SearchPageFilterChipWidget extends StatelessWidget {
         provider.removeFilter(text, true);
       },
       shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(0.0),
+        borderRadius: BorderRadius.zero,
         side: BorderSide.none,
       ),
     );
