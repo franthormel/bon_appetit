@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'label.dart';
+
 class AuthSignInWidget extends StatelessWidget {
   const AuthSignInWidget({Key? key}) : super(key: key);
 
@@ -8,11 +10,11 @@ class AuthSignInWidget extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const Text("Email"),
+        const AuthLabelWidget(text: "Email"),
         const TextField(),
         TextButton(
           child: const Text("NEXT"),
-          onPressed: (){},
+          onPressed: () {},
         ),
       ],
     );
