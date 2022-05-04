@@ -1,16 +1,13 @@
 import 'package:flutter/material.dart';
 
 import '../../style/index.dart';
-import 'container.dart';
 
 class AuthHeaderWidget extends StatelessWidget {
   final String? email;
   final String header;
   final String subHeader;
-  final Widget child;
 
   const AuthHeaderWidget({
-    required this.child,
     required this.header,
     required this.subHeader,
     this.email,
@@ -20,7 +17,7 @@ class AuthHeaderWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 24.0),
+      padding: const EdgeInsets.symmetric(vertical: 40.0),
       child: Column(
         children: [
           Text(
@@ -28,6 +25,7 @@ class AuthHeaderWidget extends StatelessWidget {
             style: Theme.of(context).textTheme.headline4,
             textAlign: TextAlign.center,
           ),
+          const SizedBox(height: 16.0),
           Text(
             subHeader,
             style: BonAppetitThemeRadley.bodyText1?.copyWith(
@@ -41,7 +39,6 @@ class AuthHeaderWidget extends StatelessWidget {
               style: BonAppetitThemeRadley.bodyText1,
               textAlign: TextAlign.center,
             ),
-          AuthContainerWidget(child: child),
         ],
       ),
     );

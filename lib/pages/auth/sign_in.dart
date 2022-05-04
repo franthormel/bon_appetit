@@ -7,20 +7,10 @@ class AuthSignInPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return AuthHeaderWidget(
+    return const AuthMainWidget(
       header: "Sign in to your account",
       subHeader: "Enter your email address to continue.",
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          const Text("Email"),
-          const TextField(),
-          TextButton(
-            child: const Text("NEXT"),
-            onPressed: (){},
-          ),
-        ],
-      ),
+      child: AuthSignInWidget(),
     );
   }
 }
