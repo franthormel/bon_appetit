@@ -9,6 +9,7 @@ import 'style/index.dart';
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
+  // TODO: Remove this during release
   await FirebaseAuth.instance.useAuthEmulator("localhost", 9099);
   runApp(MyApp());
 }
