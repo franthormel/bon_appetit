@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'label.dart';
 import '../others/black_text_button.dart';
+import 'label.dart';
 
 class AuthSignInWidget extends StatelessWidget {
   const AuthSignInWidget({Key? key}) : super(key: key);
@@ -15,7 +15,9 @@ class AuthSignInWidget extends StatelessWidget {
         const TextField(),
         BlackTextButtonWidget(
           text: "NEXT",
-          onPressed: (){},
+          onPressed: () {},
+          height: 50.0,
+          width: double.infinity,
         ),
       ],
     );

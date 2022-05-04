@@ -9,6 +9,7 @@ class BlackTextButtonWidget extends StatelessWidget {
 
   /// Default is [BonAppetitColors.white]
   final Color? foregroundColor;
+  final double? height;
   final void Function() onPressed;
   final String text;
   final double? width;
@@ -19,6 +20,7 @@ class BlackTextButtonWidget extends StatelessWidget {
     this.backgroundColor,
     this.borderColor,
     this.foregroundColor,
+    this.height,
     this.width,
     Key? key,
   }) : super(key: key);
@@ -26,7 +28,8 @@ class BlackTextButtonWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: width ?? double.infinity,
+      height: height,
+      width: width,
       child: TextButton(
         child: Text(text),
         onPressed: onPressed,

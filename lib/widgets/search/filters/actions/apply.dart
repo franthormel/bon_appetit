@@ -17,6 +17,7 @@ class SearchPageFiltersActionApplyWidget extends StatelessWidget {
         Provider.of<RouteProvider>(context, listen: false).pop();
       },
       width: 130.0,
+      height: 38.0,
     );
   }
 }
