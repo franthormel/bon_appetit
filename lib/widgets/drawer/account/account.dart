@@ -10,6 +10,7 @@ class DrawerAccountWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: const [
+        // TODO: Don't show this widget if platform is unsupported (ref main.dart)
         DrawerAccountAuthWidget(),
         DrawerAccountEntryWidget("Newsletter"),
       ],

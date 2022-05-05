@@ -1,5 +1,4 @@
 import 'package:bon_appetit/services/auth.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 import '../../style/index.dart';
@@ -28,23 +27,15 @@ class _AuthEmailWidgetState extends State<AuthEmailWidget> {
           controller: textController,
           cursorColor: BonAppetitColors.black,
           decoration: InputDecoration(
-            border: const OutlineInputBorder(
-              borderRadius: BorderRadius.zero,
-              borderSide: BorderSide(color: BonAppetitColors.black),
-            ),
-            floatingLabelBehavior: FloatingLabelBehavior.never,
-            focusedBorder: const OutlineInputBorder(
-              borderRadius: BorderRadius.zero,
-              borderSide: BorderSide(color: BonAppetitColors.black),
-            ),
             errorText: errorText,
+            floatingLabelBehavior: FloatingLabelBehavior.never,
             labelText: "Your email address",
           ),
-          style: Theme.of(context).textTheme.bodyText2,
-          textInputAction: TextInputAction.done,
           onSubmitted: (email) {
             checkEmail(email);
           },
+          style: Theme.of(context).textTheme.bodyText2,
+          textInputAction: TextInputAction.done,
         ),
         const SizedBox(height: 16.0),
         BlackTextButtonWidget(
@@ -60,26 +51,17 @@ class _AuthEmailWidgetState extends State<AuthEmailWidget> {
   }
 
   Future<void> checkEmail(String email) async {
-    String? value;
-
     try {
-      final exists = await FirebaseAuthService.checkIfEmailExists(email);
+      final emailExists = await FirebaseAuthService.checkIfEmailExists(email);
 
-      // TODO: If email exists, proceed to next page
-    } on FirebaseAuthException catch (e) {
-      // TODO: Create service for handling Firebase exception codes
-      if (e.code == 'invalid-email') {
-        value = "Invalid email";
+      if (emailExists) {
+        // TODO: Show login page
       } else {
-        value = e.message;
+        // TODO: Show register page
       }
     } catch (e) {
-      value = e.toString();
-    }
-
-    if (errorText != value) {
       setState(() {
-        errorText = value;
+        errorText = "Invalid email";
       });
     }
   }

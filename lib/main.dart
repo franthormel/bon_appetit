@@ -1,17 +1,30 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 import 'firebase_options.dart';
 import 'router/index.dart';
 import 'style/index.dart';
 
+bool get _platformIsSupported {
+  final unsupportedPlatforms = [TargetPlatform.windows, TargetPlatform.macOS];
+  return !kIsWeb && !unsupportedPlatforms.contains(defaultTargetPlatform);
+}
+
+Future<void> _initializeFirebase() async {
+  if (_platformIsSupported) {
+    await Firebase.initializeApp(
+      options: DefaultFirebaseOptions.currentPlatform,
+    );
+    // TODO: Remove this during release
+    await FirebaseAuth.instance.useAuthEmulator("localhost", 9099);
+  }
+}
+
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  // TODO: Place safeguards for unsupported platforms (Windows, Web)
-  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
-  // TODO: Remove this during release
-  await FirebaseAuth.instance.useAuthEmulator("localhost", 9099);
+  await _initializeFirebase();
   runApp(MyApp());
 }
 

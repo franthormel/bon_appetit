@@ -14,15 +14,8 @@ class SearchPageTextFieldWidget extends StatelessWidget {
 
     return TextField(
       controller: controller,
+      cursorColor: BonAppetitColors.black,
       decoration: InputDecoration(
-        border: const OutlineInputBorder(
-          borderRadius: BorderRadius.zero,
-          borderSide: BorderSide(color: BonAppetitColors.black),
-        ),
-        focusedBorder: const OutlineInputBorder(
-          borderRadius: BorderRadius.zero,
-          borderSide: BorderSide(color: BonAppetitColors.black, width: 1.5),
-        ),
         hintText: "Find a Recipe",
         prefixIcon: IconButton(
           color: BonAppetitColors.black,
@@ -31,10 +24,10 @@ class SearchPageTextFieldWidget extends StatelessWidget {
         ),
       ),
       textInputAction: TextInputAction.search,
+      onChanged: provider.changeText,
       onSubmitted: (text) {
         provider.searchForResults();
       },
-      onChanged: provider.changeText,
     );
   }
 }

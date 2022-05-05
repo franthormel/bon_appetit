@@ -1,5 +1,8 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
+import '../../../../router/index.dart';
 import '../entry.dart';
 
 class DrawerAccountAuthInWidget extends StatelessWidget {
@@ -8,11 +11,20 @@ class DrawerAccountAuthInWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      children: const [
-        // TODO: Create new page for this one
-        DrawerAccountEntryWidget("My Account"),
-        // TODO: Implement "Sign Out"
-        DrawerAccountEntryWidget("Sign Out"),
+      children: [
+        DrawerAccountEntryWidget(
+          "My Account",
+          onTap: () {
+            Provider.of<RouteProvider>(context, listen: false)
+                .change(const AuthRoute(children: [AuthAccountRoute()]));
+          },
+        ),
+        DrawerAccountEntryWidget(
+          "Sign Out",
+          onTap: () {
+            FirebaseAuth.instance.signOut();
+          },
+        ),
       ],
     );
   }

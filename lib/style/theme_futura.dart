@@ -22,9 +22,17 @@ class BonAppetitThemeFutura {
         backgroundColor: BonAppetitColors.black,
       ),
       inputDecorationTheme: const InputDecorationTheme(
+        border: OutlineInputBorder(
+          borderRadius: BorderRadius.zero,
+          borderSide: BorderSide(color: BonAppetitColors.black),
+        ),
         errorStyle: TextStyle(
           color: BonAppetitColors.rossoCorsa,
           fontWeight: FontWeight.w400,
+        ),
+        focusedBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.zero,
+          borderSide: BorderSide(color: BonAppetitColors.black),
         ),
       ),
       outlinedButtonTheme: OutlinedButtonThemeData(
