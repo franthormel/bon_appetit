@@ -23,7 +23,7 @@ class DetailsContentsWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return WillPopWidget(
       child: Scaffold(
-        appBar: AppBar(title: const Text("Recipe")),
+        appBar: AppBar(),
         body: Center(
           child: ListView.separated(
             padding: padding ?? const EdgeInsets.symmetric(vertical: 21.0),

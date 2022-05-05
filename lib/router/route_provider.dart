@@ -13,7 +13,7 @@ class RouteProvider extends ChangeNotifier {
 
   void pop() {
     if (_pageRoutes.length > 1) {
-      _pageRoutes.removeLast();
+      print(_pageRoutes.removeLast());
       notifyListeners();
     }
   }

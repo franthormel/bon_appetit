@@ -1,5 +1,7 @@
+import 'package:bon_appetit/widgets/others/will_pop.dart';
 import 'package:flutter/material.dart';
 
+import '../../../widgets/index.dart';
 import 'header.dart';
 
 class DrawerPageWidget extends StatelessWidget {
@@ -18,15 +20,21 @@ class DrawerPageWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return CustomScrollView(
-      slivers: [
-        SliverToBoxAdapter(
-          child: DrawerPageHeaderWidget(title, subHeader: subHeader),
+    return WillPopWidget(
+      child: Scaffold(
+        appBar: AppBar(title: Text(title)),
+        body: CustomScrollView(
+          slivers: [
+            // TODO: Check https://pub.dev/packages/visibility_detector
+            SliverToBoxAdapter(
+              child: DrawerPageHeaderWidget(title, subHeader: subHeader),
+            ),
+            SliverList(
+              delegate: SliverChildBuilderDelegate(builder, childCount: count),
+            ),
+          ],
         ),
-        SliverList(
-          delegate: SliverChildBuilderDelegate(builder, childCount: count),
-        ),
-      ],
+      ),
     );
   }
 }
