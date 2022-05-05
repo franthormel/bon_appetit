@@ -25,5 +25,5 @@ class RouteProvider extends ChangeNotifier {
     notifyListeners();
   }
 
-  List<PageRouteInfo> get pageRouteInfo => _pageRoutes;
+  List<PageRouteInfo> get pageRoutes => _pageRoutes;
 }

@@ -32,7 +32,7 @@ class ConsumerPage extends StatelessWidget {
         builder: (context, router, source, child) => ChangeNotifierProvider(
           create: (context) => SearchProvider(source),
           child: AutoRouter.declarative(
-            routes: (context) => [...router.pageRouteInfo],
+            routes: (context) => [...router.pageRoutes],
           ),
         ),
       ),
