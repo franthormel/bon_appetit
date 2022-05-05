@@ -19,10 +19,8 @@ class RouteProvider extends ChangeNotifier {
   }
 
   void push(PageRouteInfo route) {
-    if (_pageRoutes.last != route) {
-      _pageRoutes.add(route);
-      notifyListeners();
-    }
+    _pageRoutes.add(route);
+    notifyListeners();
   }
 
   List<PageRouteInfo> get pageRoutes => _pageRoutes;
