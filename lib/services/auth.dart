@@ -1,8 +1,9 @@
 import 'package:firebase_auth/firebase_auth.dart';
 
 class FirebaseAuthService {
-  // TODO: Implement email authentication
-  bool checkIfEmailExists(String email) {
-    return true;
+  /// Returns true if the email is available for sign-in. Throws a [FirebaseAuthException] if the email is invalid.
+  static Future<bool> checkIfEmailExists(String email) async {
+    final methods = await FirebaseAuth.instance.fetchSignInMethodsForEmail(email);
+    return methods.isNotEmpty;
   }
 }

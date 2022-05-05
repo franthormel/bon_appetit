@@ -8,6 +8,7 @@ import 'style/index.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  // TODO: Place safeguards for unsupported platforms (Windows, Web)
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
   // TODO: Remove this during release
   await FirebaseAuth.instance.useAuthEmulator("localhost", 9099);

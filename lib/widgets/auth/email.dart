@@ -1,3 +1,5 @@
+import 'package:bon_appetit/services/auth.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 import '../../style/index.dart';
@@ -29,27 +31,39 @@ class AuthEmailWidget extends StatelessWidget {
               borderRadius: BorderRadius.zero,
               borderSide: BorderSide(color: BonAppetitColors.black),
             ),
-            errorText: "Invalid email",
+            errorText: null, // TODO: Apply
             labelText: "Your email address",
           ),
           style: Theme.of(context).textTheme.bodyText2,
           textInputAction: TextInputAction.next,
           onSubmitted: (email) {
-            // TODO: Authenticate email
-            print(email);
+            checkEmail(email);
           },
         ),
         const SizedBox(height: 16.0),
         BlackTextButtonWidget(
           text: "NEXT",
           onPressed: () {
-            // TODO: Authenticate email
-            print(textController.text);
+            checkEmail(textController.text);
           },
           height: 50.0,
           width: double.infinity,
         ),
       ],
     );
+  }
+
+  Future<void> checkEmail(String email) async {
+    try {
+      final exists = await FirebaseAuthService.checkIfEmailExists(email);
+
+      // TODO: If email exists, proceed to next page
+      print("Exists: $email : $exists");
+    } on FirebaseAuthException catch (e) {
+      // TODO: Show on TextField decoration's errorText property
+      print("FirebaseError: ${e.code} |=| ${e.message}");
+    } catch (e) {
+      print("Error: $e");
+    }
   }
 }
