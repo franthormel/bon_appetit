@@ -26,6 +26,7 @@ class ScaffoldedWillPopWidget extends StatelessWidget {
         appBar: appBar,
         body: body,
         bottomNavigationBar: bottomNavigationBar,
+        resizeToAvoidBottomInset: false,
       ),
     );
   }

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'will_pop.dart';
+import 'scaffolded_will_pop.dart';
 
 /// Use this mixin when using [DetailsContentsWidget]
 mixin DetailsContentsMixin {

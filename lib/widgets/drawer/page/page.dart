@@ -1,4 +1,4 @@
-import 'package:bon_appetit/widgets/others/will_pop.dart';
+import 'package:bon_appetit/widgets/others/scaffolded_will_pop.dart';
 import 'package:flutter/material.dart';
 
 import 'header.dart';
@@ -23,7 +23,6 @@ class DrawerPageWidget extends StatelessWidget {
       appBar: AppBar(),
       body: CustomScrollView(
         slivers: [
-          // TODO: Check https://pub.dev/packages/visibility_detector
           SliverToBoxAdapter(
             child: DrawerPageHeaderWidget(title, subHeader: subHeader),
           ),

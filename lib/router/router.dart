@@ -81,6 +81,7 @@ import 'constants.dart';
           name: RouteName.auth,
           path: RoutePath.auth,
           children: <AutoRoute>[
+            // TODO: Place a guard when accesing the account page
             AutoRoute(
               page: AuthAccountPage,
               name: RouteName.authAccount,

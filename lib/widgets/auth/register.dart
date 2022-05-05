@@ -5,6 +5,7 @@ class AuthRegisterWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // TODO: Implement register widgets
     return Container();
   }
 }
