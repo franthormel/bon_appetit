@@ -19,13 +19,16 @@ class AuthMainWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return WillPopWidget(
-      child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 24),
-        child: Column(
-          children: [
-            AuthHeaderWidget(header: header, subHeader: subHeader),
-            AuthContainerWidget(child: child),
-          ],
+      child: Scaffold(
+        appBar: AppBar(),
+        body: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 24),
+          child: Column(
+            children: [
+              AuthHeaderWidget(header: header, subHeader: subHeader),
+              AuthContainerWidget(child: child),
+            ],
+          ),
         ),
       ),
     );

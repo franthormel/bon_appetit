@@ -21,7 +21,7 @@ class DrawerRouterWidget extends StatelessWidget {
             ?.copyWith(fontWeight: FontWeight.w700, letterSpacing: 2.6),
       ),
       onTap: () {
-        Provider.of<RouteProvider>(context, listen: false).change(route);
+        Provider.of<RouteProvider>(context, listen: false).push(route);
         AutoRouter.of(context).pop();
       },
     );

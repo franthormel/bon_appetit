@@ -40,7 +40,7 @@ class VideoListWidget extends StatelessWidget {
           OutlinedButton(
             onPressed: () {
               final router = Provider.of<RouteProvider>(context, listen: false);
-              router.change(const DrawerVideosRoute());
+              router.push(const DrawerVideosRoute());
             },
             child: const Text('SEE MORE VIDEOS'),
           ),
