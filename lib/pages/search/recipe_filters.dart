@@ -8,11 +8,9 @@ class SearchRecipeFiltersPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const WillPopWidget(
-      child: Scaffold(
-        body: SearchPageFiltersListWidget(),
-        bottomNavigationBar: SearchPageFiltersActionsWidget(),
-      ),
+    return const ScaffoldedWillPopWidget(
+      body: SearchPageFiltersListWidget(),
+      bottomNavigationBar: SearchPageFiltersActionsWidget(),
     );
   }
 }

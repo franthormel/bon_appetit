@@ -3,10 +3,17 @@ import 'package:provider/provider.dart';
 
 import '../../router/index.dart';
 
-class WillPopWidget extends StatelessWidget {
-  final Widget child;
+class ScaffoldedWillPopWidget extends StatelessWidget {
+  final PreferredSizeWidget? appBar;
+  final Widget body;
+  final Widget? bottomNavigationBar;
 
-  const WillPopWidget({required this.child, Key? key}) : super(key: key);
+  const ScaffoldedWillPopWidget({
+    required this.body,
+    this.appBar,
+    this.bottomNavigationBar,
+    Key? key,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +22,11 @@ class WillPopWidget extends StatelessWidget {
         Provider.of<RouteProvider>(context, listen: false).pop();
         return Future<bool>.value(true);
       },
-      child: child,
+      child: Scaffold(
+        appBar: appBar,
+        body: body,
+        bottomNavigationBar: bottomNavigationBar,
+      ),
     );
   }
 }

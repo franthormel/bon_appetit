@@ -21,17 +21,13 @@ class DetailsContentsWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return WillPopWidget(
-      child: Scaffold(
-        appBar: AppBar(),
-        body: Center(
-          child: ListView.separated(
-            padding: padding ?? const EdgeInsets.symmetric(vertical: 21.0),
-            itemBuilder: (context, i) => children[i],
-            itemCount: children.length,
-            separatorBuilder: (context, i) => const SizedBox(height: 25.0),
-          ),
-        ),
+    return ScaffoldedWillPopWidget(
+      appBar: AppBar(),
+      body: ListView.separated(
+        padding: padding ?? const EdgeInsets.symmetric(vertical: 21.0),
+        itemBuilder: (context, i) => children[i],
+        itemCount: children.length,
+        separatorBuilder: (context, i) => const SizedBox(height: 25.0),
       ),
     );
   }
