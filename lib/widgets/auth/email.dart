@@ -6,13 +6,19 @@ import '../../style/index.dart';
 import '../others/black_text_button.dart';
 import 'label.dart';
 
-class AuthEmailWidget extends StatelessWidget {
+class AuthEmailWidget extends StatefulWidget {
   const AuthEmailWidget({Key? key}) : super(key: key);
 
   @override
-  Widget build(BuildContext context) {
-    final textController = TextEditingController();
+  State<AuthEmailWidget> createState() => _AuthEmailWidgetState();
+}
 
+class _AuthEmailWidgetState extends State<AuthEmailWidget> {
+  String? errorText;
+  final textController = TextEditingController();
+
+  @override
+  Widget build(BuildContext context) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -21,21 +27,21 @@ class AuthEmailWidget extends StatelessWidget {
         TextField(
           controller: textController,
           cursorColor: BonAppetitColors.black,
-          decoration: const InputDecoration(
-            border: OutlineInputBorder(
+          decoration: InputDecoration(
+            border: const OutlineInputBorder(
               borderRadius: BorderRadius.zero,
               borderSide: BorderSide(color: BonAppetitColors.black),
             ),
             floatingLabelBehavior: FloatingLabelBehavior.never,
-            focusedBorder: OutlineInputBorder(
+            focusedBorder: const OutlineInputBorder(
               borderRadius: BorderRadius.zero,
               borderSide: BorderSide(color: BonAppetitColors.black),
             ),
-            errorText: null, // TODO: Apply
+            errorText: errorText,
             labelText: "Your email address",
           ),
           style: Theme.of(context).textTheme.bodyText2,
-          textInputAction: TextInputAction.next,
+          textInputAction: TextInputAction.done,
           onSubmitted: (email) {
             checkEmail(email);
           },
@@ -54,16 +60,27 @@ class AuthEmailWidget extends StatelessWidget {
   }
 
   Future<void> checkEmail(String email) async {
+    String? value;
+
     try {
       final exists = await FirebaseAuthService.checkIfEmailExists(email);
 
       // TODO: If email exists, proceed to next page
-      print("Exists: $email : $exists");
     } on FirebaseAuthException catch (e) {
-      // TODO: Show on TextField decoration's errorText property
-      print("FirebaseError: ${e.code} |=| ${e.message}");
+      // TODO: Create service for handling Firebase exception codes
+      if (e.code == 'invalid-email') {
+        value = "Invalid email";
+      } else {
+        value = e.message;
+      }
     } catch (e) {
-      print("Error: $e");
+      value = e.toString();
+    }
+
+    if (errorText != value) {
+      setState(() {
+        errorText = value;
+      });
     }
   }
 }

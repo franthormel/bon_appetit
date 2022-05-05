@@ -21,6 +21,12 @@ class BonAppetitThemeFutura {
       floatingActionButtonTheme: const FloatingActionButtonThemeData(
         backgroundColor: BonAppetitColors.black,
       ),
+      inputDecorationTheme: const InputDecorationTheme(
+        errorStyle: TextStyle(
+          color: BonAppetitColors.rossoCorsa,
+          fontWeight: FontWeight.w400,
+        ),
+      ),
       outlinedButtonTheme: OutlinedButtonThemeData(
         style: OutlinedButton.styleFrom(
           backgroundColor: BonAppetitColors.black,
@@ -41,11 +47,6 @@ class BonAppetitThemeFutura {
 
   static TextTheme get _textTheme {
     return const TextTheme(
-      caption: TextStyle(
-        color: BonAppetitColors.black,
-        fontWeight: FontWeight.w600,
-        letterSpacing: 1.5,
-      ),
       headline4: TextStyle(
         color: BonAppetitColors.black,
         fontWeight: FontWeight.w600,
@@ -63,6 +64,11 @@ class BonAppetitThemeFutura {
         fontWeight: FontWeight.w500,
       ),
       subtitle2: TextStyle(fontWeight: FontWeight.w600, letterSpacing: 1.0),
+      caption: TextStyle(
+        color: BonAppetitColors.black,
+        fontWeight: FontWeight.w600,
+        letterSpacing: 1.5,
+      ),
     );
   }
 }
