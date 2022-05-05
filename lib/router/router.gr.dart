@@ -84,13 +84,21 @@ class AppRouter extends _i2.RootStackRouter {
       return _i2.MaterialPageX<dynamic>(
           routeData: routeData, child: const _i1.AuthPage());
     },
+    AuthAccountRoute.name: (routeData) {
+      return _i2.MaterialPageX<dynamic>(
+          routeData: routeData, child: const _i1.AuthAccountPage());
+    },
     AuthEmailRoute.name: (routeData) {
       return _i2.MaterialPageX<dynamic>(
           routeData: routeData, child: const _i1.AuthEmailPage());
     },
-    AuthAccountRoute.name: (routeData) {
+    AuthLoginRoute.name: (routeData) {
       return _i2.MaterialPageX<dynamic>(
-          routeData: routeData, child: const _i1.AuthAccountPage());
+          routeData: routeData, child: const _i1.AuthLoginPage());
+    },
+    AuthRegisterRoute.name: (routeData) {
+      return _i2.MaterialPageX<dynamic>(
+          routeData: routeData, child: const _i1.AuthRegisterPage());
     }
   };
 
@@ -127,10 +135,14 @@ class AppRouter extends _i2.RootStackRouter {
               path: 'auth/',
               parent: DataProviderRoute.name,
               children: [
-                _i2.RouteConfig(AuthEmailRoute.name,
-                    path: 'email', parent: AuthRoute.name),
                 _i2.RouteConfig(AuthAccountRoute.name,
                     path: 'account', parent: AuthRoute.name),
+                _i2.RouteConfig(AuthEmailRoute.name,
+                    path: 'email', parent: AuthRoute.name),
+                _i2.RouteConfig(AuthLoginRoute.name,
+                    path: 'password', parent: AuthRoute.name),
+                _i2.RouteConfig(AuthRegisterRoute.name,
+                    path: 'register', parent: AuthRoute.name),
                 _i2.RouteConfig('*#redirect',
                     path: '*',
                     parent: AuthRoute.name,
@@ -308,6 +320,14 @@ class AuthRoute extends _i2.PageRouteInfo<void> {
 }
 
 /// generated route for
+/// [_i1.AuthAccountPage]
+class AuthAccountRoute extends _i2.PageRouteInfo<void> {
+  const AuthAccountRoute() : super(AuthAccountRoute.name, path: 'account');
+
+  static const String name = 'AuthAccountRoute';
+}
+
+/// generated route for
 /// [_i1.AuthEmailPage]
 class AuthEmailRoute extends _i2.PageRouteInfo<void> {
   const AuthEmailRoute() : super(AuthEmailRoute.name, path: 'email');
@@ -316,9 +336,17 @@ class AuthEmailRoute extends _i2.PageRouteInfo<void> {
 }
 
 /// generated route for
-/// [_i1.AuthAccountPage]
-class AuthAccountRoute extends _i2.PageRouteInfo<void> {
-  const AuthAccountRoute() : super(AuthAccountRoute.name, path: 'account');
+/// [_i1.AuthLoginPage]
+class AuthLoginRoute extends _i2.PageRouteInfo<void> {
+  const AuthLoginRoute() : super(AuthLoginRoute.name, path: 'password');
 
-  static const String name = 'AuthAccountRoute';
+  static const String name = 'AuthLoginRoute';
+}
+
+/// generated route for
+/// [_i1.AuthRegisterPage]
+class AuthRegisterRoute extends _i2.PageRouteInfo<void> {
+  const AuthRegisterRoute() : super(AuthRegisterRoute.name, path: 'register');
+
+  static const String name = 'AuthRegisterRoute';
 }

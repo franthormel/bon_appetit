@@ -1,6 +1,8 @@
 export 'auth/account.dart';
 export 'auth/auth.dart';
 export 'auth/email.dart';
+export 'auth/login.dart';
+export 'auth/register.dart';
 export 'data.dart';
 export 'details/article.dart';
 export 'details/recipe.dart';

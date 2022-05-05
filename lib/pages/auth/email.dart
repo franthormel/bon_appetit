@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../widgets/index.dart';
 
-/// This page serves as a checkpoint for the email if it already exists or not.
+/// This page serves as a checkpoint for the email if it can be used for sign-in or not.
 class AuthEmailPage extends StatelessWidget {
   const AuthEmailPage({Key? key}) : super(key: key);
 

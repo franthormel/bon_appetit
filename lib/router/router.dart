@@ -82,14 +82,24 @@ import 'constants.dart';
           path: RoutePath.auth,
           children: <AutoRoute>[
             AutoRoute(
+              page: AuthAccountPage,
+              name: RouteName.authAccount,
+              path: RoutePath.authAccount,
+            ),
+            AutoRoute(
               page: AuthEmailPage,
               name: RouteName.authEmail,
               path: RoutePath.authEmail,
             ),
             AutoRoute(
-              page: AuthAccountPage,
-              name: RouteName.authAccount,
-              path: RoutePath.authAccount,
+              page: AuthLoginPage,
+              name: RouteName.authLogin,
+              path: RoutePath.authLogin,
+            ),
+            AutoRoute(
+              page: AuthRegisterPage,
+              name: RouteName.authRegister,
+              path: RoutePath.authRegister,
             ),
             RedirectRoute(path: '*', redirectTo: RouteName.auth),
           ],

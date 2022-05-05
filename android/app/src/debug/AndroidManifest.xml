@@ -4,6 +4,7 @@
          to allow setting breakpoints, to provide hot reload, etc.
     -->
     <uses-permission android:name="android.permission.INTERNET" />
+    <!-- TODO Remove android:usesCleartextTraffic="true" during release-->
     <application android:usesCleartextTraffic="true">
     </application>
 </manifest>

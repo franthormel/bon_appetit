@@ -15,9 +15,9 @@ class RoutePath {
   static const auth = "auth/";
   static const authAccount = "account";
   static const authEmail = "email";
-  static const authPassword = "password";
+  static const authLogin = "password";
   static const authRegister = "register";
-  static const authSelect = "select-account";
+  static const authSelectAccount = "select-account";
 }
 
 class RouteName {
@@ -37,4 +37,7 @@ class RouteName {
   static const auth = "AuthRoute";
   static const authAccount = "AuthAccountRoute";
   static const authEmail = "AuthEmailRoute";
+  static const authLogin = "AuthLoginRoute";
+  static const authRegister = "AuthRegisterRoute";
+  static const authSelectAccount = "AuthSelectAccountRoute";
 }

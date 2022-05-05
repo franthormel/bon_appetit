@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
-import 'header.dart';
+import '../others/will_pop.dart';
 import 'container.dart';
+import 'header.dart';
 
 class AuthMainWidget extends StatelessWidget {
   final Widget child;
@@ -17,13 +18,15 @@ class AuthMainWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 24),
-      child: Column(
-        children: [
-          AuthHeaderWidget(header: header, subHeader: subHeader),
-          AuthContainerWidget(child: child),
-        ],
+    return WillPopWidget(
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 24),
+        child: Column(
+          children: [
+            AuthHeaderWidget(header: header, subHeader: subHeader),
+            AuthContainerWidget(child: child),
+          ],
+        ),
       ),
     );
   }

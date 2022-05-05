@@ -2,6 +2,7 @@
     package="com.franca.demo.bon.appetit">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <!-- TODO Remove android:usesCleartextTraffic="true" during release-->
     <application
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher"
