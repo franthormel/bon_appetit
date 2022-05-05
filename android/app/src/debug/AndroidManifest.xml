@@ -5,6 +5,5 @@
     -->
     <uses-permission android:name="android.permission.INTERNET" />
     <!-- TODO Remove android:usesCleartextTraffic="true" during release-->
-    <application android:usesCleartextTraffic="true">
-    </application>
+    <application android:usesCleartextTraffic="true"></application>
 </manifest>

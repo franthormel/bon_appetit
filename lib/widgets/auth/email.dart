@@ -88,6 +88,6 @@ class _AuthEmailWidgetState extends State<AuthEmailWidget> {
       page = const AuthLoginRoute();
     }
 
-    router.push(AuthRoute(children: [page]));
+    router.push(page);
   }
 }

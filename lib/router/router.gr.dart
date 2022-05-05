@@ -80,10 +80,6 @@ class AppRouter extends _i2.RootStackRouter {
       return _i2.MaterialPageX<dynamic>(
           routeData: routeData, child: const _i1.SearchRecipeFiltersPage());
     },
-    AuthRoute.name: (routeData) {
-      return _i2.MaterialPageX<dynamic>(
-          routeData: routeData, child: const _i1.AuthPage());
-    },
     AuthAccountRoute.name: (routeData) {
       return _i2.MaterialPageX<dynamic>(
           routeData: routeData, child: const _i1.AuthAccountPage());
@@ -131,24 +127,14 @@ class AppRouter extends _i2.RootStackRouter {
               path: 'search-recipe-filters', parent: DataProviderRoute.name),
           _i2.RouteConfig(SearchRecipeFiltersRoute.name,
               path: 'search-recipe-filters', parent: DataProviderRoute.name),
-          _i2.RouteConfig(AuthRoute.name,
-              path: 'auth/',
-              parent: DataProviderRoute.name,
-              children: [
-                _i2.RouteConfig(AuthAccountRoute.name,
-                    path: 'account', parent: AuthRoute.name),
-                _i2.RouteConfig(AuthEmailRoute.name,
-                    path: 'email', parent: AuthRoute.name),
-                _i2.RouteConfig(AuthLoginRoute.name,
-                    path: 'password', parent: AuthRoute.name),
-                _i2.RouteConfig(AuthRegisterRoute.name,
-                    path: 'register', parent: AuthRoute.name),
-                _i2.RouteConfig('*#redirect',
-                    path: '*',
-                    parent: AuthRoute.name,
-                    redirectTo: 'AuthRoute',
-                    fullMatch: true)
-              ])
+          _i2.RouteConfig(AuthAccountRoute.name,
+              path: 'account', parent: DataProviderRoute.name),
+          _i2.RouteConfig(AuthEmailRoute.name,
+              path: 'email', parent: DataProviderRoute.name),
+          _i2.RouteConfig(AuthLoginRoute.name,
+              path: 'password', parent: DataProviderRoute.name),
+          _i2.RouteConfig(AuthRegisterRoute.name,
+              path: 'register', parent: DataProviderRoute.name)
         ]),
         _i2.RouteConfig('*#redirect',
             path: '*', redirectTo: 'DataProviderRoute', fullMatch: true)
@@ -308,15 +294,6 @@ class SearchRecipeFiltersRoute extends _i2.PageRouteInfo<void> {
       : super(SearchRecipeFiltersRoute.name, path: 'search-recipe-filters');
 
   static const String name = 'SearchRecipeFiltersRoute';
-}
-
-/// generated route for
-/// [_i1.AuthPage]
-class AuthRoute extends _i2.PageRouteInfo<void> {
-  const AuthRoute({List<_i2.PageRouteInfo>? children})
-      : super(AuthRoute.name, path: 'auth/', initialChildren: children);
-
-  static const String name = 'AuthRoute';
 }
 
 /// generated route for

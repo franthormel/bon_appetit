@@ -16,7 +16,7 @@ class DrawerAccountAuthInWidget extends StatelessWidget {
           "My Account",
           onTap: () {
             Provider.of<RouteProvider>(context, listen: false)
-                .push(const AuthRoute(children: [AuthAccountRoute()]));
+                .push(const AuthAccountRoute());
           },
         ),
         DrawerAccountEntryWidget(

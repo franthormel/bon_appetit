@@ -75,35 +75,26 @@ import 'constants.dart';
           page: SearchRecipeFiltersPage,
           name: RouteName.searchRecipeFilters,
           path: RoutePath.searchRecipeFilters,
+        ), // TODO: Place a guard when accessing the account page
+        AutoRoute(
+          page: AuthAccountPage,
+          name: RouteName.authAccount,
+          path: RoutePath.authAccount,
         ),
         AutoRoute(
-          page: AuthPage,
-          name: RouteName.auth,
-          path: RoutePath.auth,
-          children: <AutoRoute>[
-            // TODO: Place a guard when accesing the account page
-            AutoRoute(
-              page: AuthAccountPage,
-              name: RouteName.authAccount,
-              path: RoutePath.authAccount,
-            ),
-            AutoRoute(
-              page: AuthEmailPage,
-              name: RouteName.authEmail,
-              path: RoutePath.authEmail,
-            ),
-            AutoRoute(
-              page: AuthLoginPage,
-              name: RouteName.authLogin,
-              path: RoutePath.authLogin,
-            ),
-            AutoRoute(
-              page: AuthRegisterPage,
-              name: RouteName.authRegister,
-              path: RoutePath.authRegister,
-            ),
-            RedirectRoute(path: '*', redirectTo: RouteName.auth),
-          ],
+          page: AuthEmailPage,
+          name: RouteName.authEmail,
+          path: RoutePath.authEmail,
+        ),
+        AutoRoute(
+          page: AuthLoginPage,
+          name: RouteName.authLogin,
+          path: RoutePath.authLogin,
+        ),
+        AutoRoute(
+          page: AuthRegisterPage,
+          name: RouteName.authRegister,
+          path: RoutePath.authRegister,
         ),
       ],
     ),

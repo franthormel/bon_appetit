@@ -12,7 +12,7 @@ class RoutePath {
   static const drawerShopping = "shopping";
   static const drawerVideos = "videos";
   static const searchRecipeFilters = "search-recipe-filters";
-  static const auth = "auth/";
+  static const auth = "auth";
   static const authAccount = "account";
   static const authEmail = "email";
   static const authLogin = "password";

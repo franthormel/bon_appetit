@@ -1,5 +1,4 @@
 export 'auth/account.dart';
-export 'auth/auth.dart';
 export 'auth/email.dart';
 export 'auth/login.dart';
 export 'auth/register.dart';
