@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 import '../../../style/index.dart';
 
@@ -7,14 +8,26 @@ class AuthGoogleProviderButtonWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: BonAppetitColors.black,
-      height: 50.0,
-      width: double.infinity,
-      child: const Center(
-        child: Text(
-          "SIGN IN WITH GOOGLE",
-          style: TextStyle(color: BonAppetitColors.white),
+    return ElevatedButton.icon(
+      style: ButtonStyle(
+        shape: MaterialStateProperty.all<OutlinedBorder>(
+          RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(0.0),
+          ),
+        ),
+      ),
+      onPressed: () {},
+      icon: Container(
+        color: BonAppetitColors.white,
+        child: SvgPicture.asset('assets/google.svg'),
+      ),
+      label: const SizedBox(
+        width: double.infinity,
+        child: Center(
+          child: Text(
+            "SIGN IN WITH GOOGLE",
+            style: TextStyle(color: BonAppetitColors.white),
+          ),
         ),
       ),
     );

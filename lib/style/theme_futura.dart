@@ -18,6 +18,12 @@ class BonAppetitThemeFutura {
         ),
       ),
       dividerTheme: const DividerThemeData(color: BonAppetitColors.black),
+      elevatedButtonTheme: ElevatedButtonThemeData(
+        style: ElevatedButton.styleFrom(
+          primary: BonAppetitColors.black,
+          elevation: 0.0,
+        ),
+      ),
       floatingActionButtonTheme: const FloatingActionButtonThemeData(
         backgroundColor: BonAppetitColors.black,
       ),
@@ -35,11 +41,12 @@ class BonAppetitThemeFutura {
           borderSide: BorderSide(color: BonAppetitColors.black),
         ),
       ),
+      // TODO: Apply on new widget but retain shape (remove backgroundColor, primary, side)
       outlinedButtonTheme: OutlinedButtonThemeData(
         style: OutlinedButton.styleFrom(
           backgroundColor: BonAppetitColors.black,
           primary: BonAppetitColors.white,
-          shape: const BeveledRectangleBorder(borderRadius: BorderRadius.zero),
+          shape: const RoundedRectangleBorder(borderRadius: BorderRadius.zero),
           side: const BorderSide(color: BonAppetitColors.white),
         ),
       ),
@@ -48,6 +55,9 @@ class BonAppetitThemeFutura {
         color: BonAppetitColors.sizzlingSunrise,
         linearTrackColor: BonAppetitColors.mediumChampagne,
         refreshBackgroundColor: BonAppetitColors.dimGray,
+      ),
+      textButtonTheme: TextButtonThemeData(
+        style: TextButton.styleFrom(primary: BonAppetitColors.black),
       ),
       textTheme: _textTheme,
     );

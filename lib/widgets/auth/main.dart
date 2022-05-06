@@ -20,14 +20,12 @@ class AuthMainWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return ScaffoldedWillPopWidget(
       appBar: AppBar(),
-      body: Padding(
+      body: ListView(
         padding: const EdgeInsets.symmetric(horizontal: 24),
-        child: Column(
-          children: [
-            AuthHeaderWidget(header: header, subHeader: subHeader),
-            AuthContainerWidget(child: child),
-          ],
-        ),
+        children: [
+          AuthHeaderWidget(header: header, subHeader: subHeader),
+          AuthContainerWidget(child: child),
+        ],
       ),
     );
   }

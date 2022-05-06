@@ -3,21 +3,19 @@ import 'package:provider/provider.dart';
 
 import '../../../../../router/index.dart';
 import '../../../../../services/index.dart';
-import '../../../others/outlined_text_button.dart';
 
 class SearchPageFiltersActionApplyWidget extends StatelessWidget {
   const SearchPageFiltersActionApplyWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return OutlinedTextButtonWidget(
-      text: "APPLY",
+    // TODO: Size and border radius
+    return ElevatedButton(
+      child: const Text("APPLY"),
       onPressed: () {
         Provider.of<SearchProvider>(context, listen: false).searchForResults();
         Provider.of<RouteProvider>(context, listen: false).pop();
       },
-      width: 130.0,
-      height: 38.0,
     );
   }
 }

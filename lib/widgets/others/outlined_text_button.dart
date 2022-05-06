@@ -34,16 +34,9 @@ class OutlinedTextButtonWidget extends StatelessWidget {
         child: Text(text),
         onPressed: onPressed,
         style: ButtonStyle(
-          backgroundColor: MaterialStateProperty.all<Color>(
-              backgroundColor ?? BonAppetitColors.black),
-          foregroundColor: MaterialStateProperty.all<Color>(
-              foregroundColor ?? BonAppetitColors.white),
-          shape: MaterialStateProperty.all<OutlinedBorder>(
-            RoundedRectangleBorder(
-              borderRadius: BorderRadius.zero,
-              side: _borderSide,
-            ),
-          ),
+          backgroundColor: MaterialStateProperty.all<Color?>(backgroundColor),
+          foregroundColor: MaterialStateProperty.all<Color?>(foregroundColor),
+          side: MaterialStateProperty.all<BorderSide>(_borderSide),
         ),
       ),
     );

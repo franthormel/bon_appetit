@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../others/outlined_text_button.dart';
-
 class AuthButtonWidget extends StatelessWidget {
   final String text;
   final void Function() onPressed;
@@ -14,11 +12,17 @@ class AuthButtonWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return OutlinedTextButtonWidget(
-      text: text,
+    // TODO: Style
+    return ElevatedButton(
+      child: Text(text),
       onPressed: onPressed,
-      height: 50.0,
-      width: double.infinity,
+      style: ButtonStyle(
+        shape: MaterialStateProperty.all<OutlinedBorder>(
+          RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(0.0),
+          ),
+        ),
+      ),
     );
   }
 }
