@@ -5,7 +5,7 @@ import 'package:provider/provider.dart';
 import '../../router/index.dart';
 import '../../services/index.dart';
 import '../../style/index.dart';
-import 'button.dart';
+import 'button/button.dart';
 import 'label.dart';
 
 class AuthEmailWidget extends StatefulWidget {

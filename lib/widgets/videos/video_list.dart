@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../../models/index.dart';
-import '../../router/index.dart';
 import '../../style/index.dart';
 import '../others/designed_container.dart';
 import '../others/header_section.dart';
+import 'button.dart';
 import 'video.dart';
 
 class VideoListWidget extends StatelessWidget {
@@ -37,14 +37,7 @@ class VideoListWidget extends StatelessWidget {
             ),
           ),
           const Divider(color: Colors.transparent),
-          // TODO: Make new widget
-          OutlinedButton(
-            onPressed: () {
-              final router = Provider.of<RouteProvider>(context, listen: false);
-              router.push(const DrawerVideosRoute());
-            },
-            child: const Text('SEE MORE VIDEOS'),
-          ),
+          const VideoButtonWidget(),
         ],
       ),
     );

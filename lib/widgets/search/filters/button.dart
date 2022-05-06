@@ -13,13 +13,11 @@ class SearchPageFiltersButtonWidget extends StatelessWidget {
       padding: const EdgeInsets.only(right: 8.0),
       child: ElevatedButton.icon(
         label: Text("FILTERS", style: Theme.of(context).textTheme.caption),
-        icon: const Icon(Icons.tune),
-        style: ButtonStyle(
-          backgroundColor: MaterialStateProperty.all<Color>(
-            BonAppetitColors.gainsboro,
-          ),
-          foregroundColor: MaterialStateProperty.all<Color>(
-            BonAppetitColors.black,
+        icon: const Icon(Icons.tune, color: BonAppetitColors.black),
+        style: ElevatedButton.styleFrom(
+          primary: BonAppetitColors.gainsboro,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(4.0),
           ),
         ),
         onPressed: () {

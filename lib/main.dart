@@ -17,8 +17,10 @@ Future<void> _initializeFirebase() async {
     await Firebase.initializeApp(
       options: DefaultFirebaseOptions.currentPlatform,
     );
-    // TODO: Remove this during release
-    await FirebaseAuth.instance.useAuthEmulator("localhost", 9099);
+    // NOTE: Firebase Local Emulator will be used in debugging.
+    if (kDebugMode) {
+      await FirebaseAuth.instance.useAuthEmulator("localhost", 9099);
+    }
   }
 }
 

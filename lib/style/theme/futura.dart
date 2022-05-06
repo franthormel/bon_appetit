@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'colors.dart';
+import '../colors.dart';
 
 class BonAppetitThemeFutura {
   static ThemeData get theme {
@@ -22,6 +22,7 @@ class BonAppetitThemeFutura {
         style: ElevatedButton.styleFrom(
           primary: BonAppetitColors.black,
           elevation: 0.0,
+          shape: const RoundedRectangleBorder(borderRadius: BorderRadius.zero),
         ),
       ),
       floatingActionButtonTheme: const FloatingActionButtonThemeData(
@@ -41,14 +42,14 @@ class BonAppetitThemeFutura {
           borderSide: BorderSide(color: BonAppetitColors.black),
         ),
       ),
-      // TODO: Apply on new widget but retain shape (remove backgroundColor, primary, side)
       outlinedButtonTheme: OutlinedButtonThemeData(
         style: OutlinedButton.styleFrom(
-          backgroundColor: BonAppetitColors.black,
-          primary: BonAppetitColors.white,
-          shape: const RoundedRectangleBorder(borderRadius: BorderRadius.zero),
-          side: const BorderSide(color: BonAppetitColors.white),
-        ),
+            backgroundColor: BonAppetitColors.white,
+            elevation: 0.0,
+            primary: BonAppetitColors.black,
+            shape:
+                const RoundedRectangleBorder(borderRadius: BorderRadius.zero),
+            side: const BorderSide(color: BonAppetitColors.black)),
       ),
       progressIndicatorTheme: const ProgressIndicatorThemeData(
         circularTrackColor: BonAppetitColors.mediumChampagne,

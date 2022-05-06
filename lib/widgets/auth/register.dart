@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
 import '../../style/index.dart';
-import 'button.dart';
+import 'button/button.dart';
+import 'button/google.dart';
 import 'label.dart';
-import 'provider_button/google.dart';
 import 'separator_text.dart';
 
 class AuthRegisterWidget extends StatefulWidget {
