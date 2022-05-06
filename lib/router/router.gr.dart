@@ -89,12 +89,16 @@ class AppRouter extends _i2.RootStackRouter {
           routeData: routeData, child: const _i1.AuthEmailPage());
     },
     AuthLoginRoute.name: (routeData) {
+      final args = routeData.argsAs<AuthLoginRouteArgs>();
       return _i2.MaterialPageX<dynamic>(
-          routeData: routeData, child: const _i1.AuthLoginPage());
+          routeData: routeData,
+          child: _i1.AuthLoginPage(email: args.email, key: args.key));
     },
     AuthRegisterRoute.name: (routeData) {
+      final args = routeData.argsAs<AuthRegisterRouteArgs>();
       return _i2.MaterialPageX<dynamic>(
-          routeData: routeData, child: const _i1.AuthRegisterPage());
+          routeData: routeData,
+          child: _i1.AuthRegisterPage(email: args.email, key: args.key));
     }
   };
 
@@ -314,16 +318,47 @@ class AuthEmailRoute extends _i2.PageRouteInfo<void> {
 
 /// generated route for
 /// [_i1.AuthLoginPage]
-class AuthLoginRoute extends _i2.PageRouteInfo<void> {
-  const AuthLoginRoute() : super(AuthLoginRoute.name, path: 'password');
+class AuthLoginRoute extends _i2.PageRouteInfo<AuthLoginRouteArgs> {
+  AuthLoginRoute({required String email, _i3.Key? key})
+      : super(AuthLoginRoute.name,
+            path: 'password', args: AuthLoginRouteArgs(email: email, key: key));
 
   static const String name = 'AuthLoginRoute';
 }
 
+class AuthLoginRouteArgs {
+  const AuthLoginRouteArgs({required this.email, this.key});
+
+  final String email;
+
+  final _i3.Key? key;
+
+  @override
+  String toString() {
+    return 'AuthLoginRouteArgs{email: $email, key: $key}';
+  }
+}
+
 /// generated route for
 /// [_i1.AuthRegisterPage]
-class AuthRegisterRoute extends _i2.PageRouteInfo<void> {
-  const AuthRegisterRoute() : super(AuthRegisterRoute.name, path: 'register');
+class AuthRegisterRoute extends _i2.PageRouteInfo<AuthRegisterRouteArgs> {
+  AuthRegisterRoute({required String email, _i3.Key? key})
+      : super(AuthRegisterRoute.name,
+            path: 'register',
+            args: AuthRegisterRouteArgs(email: email, key: key));
 
   static const String name = 'AuthRegisterRoute';
+}
+
+class AuthRegisterRouteArgs {
+  const AuthRegisterRouteArgs({required this.email, this.key});
+
+  final String email;
+
+  final _i3.Key? key;
+
+  @override
+  String toString() {
+    return 'AuthRegisterRouteArgs{email: $email, key: $key}';
+  }
 }

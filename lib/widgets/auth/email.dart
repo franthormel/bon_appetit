@@ -5,7 +5,7 @@ import 'package:provider/provider.dart';
 import '../../router/index.dart';
 import '../../services/index.dart';
 import '../../style/index.dart';
-import '../others/black_text_button.dart';
+import 'button.dart';
 import 'label.dart';
 
 class AuthEmailWidget extends StatefulWidget {
@@ -22,6 +22,7 @@ class _AuthEmailWidgetState extends State<AuthEmailWidget> {
   @override
   Widget build(BuildContext context) {
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         const AuthLabelWidget(text: "Email"),
         const SizedBox(height: 16.0),
@@ -40,13 +41,11 @@ class _AuthEmailWidgetState extends State<AuthEmailWidget> {
           textInputAction: TextInputAction.done,
         ),
         const SizedBox(height: 16.0),
-        BlackTextButtonWidget(
+        AuthButtonWidget(
           text: "NEXT",
           onPressed: () {
             _validateEmail(textController.text);
           },
-          height: 50.0,
-          width: double.infinity,
         ),
       ],
     );
@@ -81,11 +80,11 @@ class _AuthEmailWidgetState extends State<AuthEmailWidget> {
   }
 
   void _pushRoute(bool value) {
-    PageRouteInfo page = const AuthRegisterRoute();
+    PageRouteInfo page = AuthRegisterRoute(email: textController.text);
     final router = Provider.of<RouteProvider>(context, listen: false);
 
     if (value) {
-      page = const AuthLoginRoute();
+      page = AuthLoginRoute(email: textController.text);
     }
 
     router.push(page);

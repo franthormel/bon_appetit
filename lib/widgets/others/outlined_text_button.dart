@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../style/index.dart';
 
-class BlackTextButtonWidget extends StatelessWidget {
+class OutlinedTextButtonWidget extends StatelessWidget {
   /// Default is [BonAppetitColors.black]
   final Color? backgroundColor;
   final Color? borderColor;
@@ -14,7 +14,7 @@ class BlackTextButtonWidget extends StatelessWidget {
   final String text;
   final double? width;
 
-  const BlackTextButtonWidget({
+  const OutlinedTextButtonWidget({
     required this.onPressed,
     required this.text,
     this.backgroundColor,

@@ -3,14 +3,14 @@ import 'package:provider/provider.dart';
 
 import '../../../../../router/index.dart';
 import '../../../../../services/index.dart';
-import '../../../others/black_text_button.dart';
+import '../../../others/outlined_text_button.dart';
 
 class SearchPageFiltersActionApplyWidget extends StatelessWidget {
   const SearchPageFiltersActionApplyWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return BlackTextButtonWidget(
+    return OutlinedTextButtonWidget(
       text: "APPLY",
       onPressed: () {
         Provider.of<SearchProvider>(context, listen: false).searchForResults();
