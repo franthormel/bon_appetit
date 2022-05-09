@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 import '../others/scaffolded_will_pop.dart';
 import 'container.dart';
-import 'header.dart';
 import 'end.dart';
+import 'header.dart';
 
 class AuthMainWidget extends StatelessWidget {
   final Widget child;

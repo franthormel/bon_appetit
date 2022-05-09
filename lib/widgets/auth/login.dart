@@ -10,7 +10,7 @@ class AuthLoginWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: Implement login widgets
+    // TODO: Implement login
     return Container();
   }
 }

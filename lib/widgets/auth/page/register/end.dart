@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../others/underlined_text_button.dart';
+import '../../../others/underlined_text_button.dart';
 
 class AuthPageRegisterEndWidget extends StatelessWidget {
   const AuthPageRegisterEndWidget({Key? key}) : super(key: key);

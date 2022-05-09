@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
-import '../../../style/index.dart';
-import '../button/button.dart';
-import '../button/google.dart';
-import '../label.dart';
-import '../separator_text.dart';
+import '../../../../router/index.dart';
+import '../../../../style/index.dart';
+import '../../button/button.dart';
+import '../../button/google.dart';
+import '../../label.dart';
+import '../../separator_text.dart';
 
 class AuthPageRegisterWidget extends StatefulWidget {
   final String email;
@@ -36,9 +38,11 @@ class _AuthPageRegisterWidgetState extends State<AuthPageRegisterWidget> {
           controller: emailController,
           readOnly: true,
           decoration: InputDecoration(
-            suffixIcon: IconButton(
-              icon: const Icon(Icons.edit),
-              onPressed: () {},
+            suffixIcon: TextButton(
+              child: const Text("Edit"),
+              onPressed: () {
+                Provider.of<RouteProvider>(context, listen: false).pop();
+              },
             ),
           ),
           style: Theme.of(context).textTheme.bodyText2,
@@ -51,22 +55,20 @@ class _AuthPageRegisterWidgetState extends State<AuthPageRegisterWidget> {
           cursorColor: BonAppetitColors.black,
           decoration: InputDecoration(
             errorText: errorText,
+            errorMaxLines: 3,
             floatingLabelBehavior: FloatingLabelBehavior.never,
             labelText: "Enter your password",
-            suffixIcon: IconButton(
-              icon: Icon(obscureText ? Icons.visibility : Icons.visibility_off),
+            suffixIcon: TextButton(
+              child: Text(obscureText ? "Show" : "Hide"),
               onPressed: () {
-                setState(
-                  () {
-                    obscureText = !obscureText;
-                  },
-                );
+                setState(() {
+                  obscureText = !obscureText;
+                });
               },
             ),
           ),
           onSubmitted: (password) {
-            // TODO: Validate password (must be at least 6 chars)
-            // TODO: Create account if password is valid
+            _validatePassword(password);
           },
           obscureText: obscureText,
           textInputAction: TextInputAction.done,
@@ -76,8 +78,7 @@ class _AuthPageRegisterWidgetState extends State<AuthPageRegisterWidget> {
         AuthButtonWidget(
           text: "SIGN UP",
           onPressed: () {
-            // TODO: Validate password (must be at least 6 chars)
-            // TODO: Create account if password is valid
+            _validatePassword(passwordController.text);
           },
         ),
         const SizedBox(height: 16.0),
@@ -86,5 +87,28 @@ class _AuthPageRegisterWidgetState extends State<AuthPageRegisterWidget> {
         const AuthGoogleProviderButtonWidget(),
       ],
     );
+  }
+
+  void _validatePassword(String password) {
+    const minimumPasswordLength = 6;
+    String? value;
+
+    // If password is at least six (6) characters in length go to the next page ...
+    if (password.length >= minimumPasswordLength) {
+      // TODO: Implement confirmation page when registering
+    } else {
+      value = "Password should be at least $minimumPasswordLength characters.";
+    }
+
+    // ... otherwise show error text
+    _changeErrorText(value);
+  }
+
+  void _changeErrorText(String? value) {
+    if (errorText != value) {
+      setState(() {
+        errorText = value;
+      });
+    }
   }
 }
