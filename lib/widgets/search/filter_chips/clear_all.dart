@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../../../services/index.dart';
+import '../../others/underlined_text_button.dart';
 
 class SearchPageFilterChipsClearAllWidget extends StatelessWidget {
   const SearchPageFilterChipsClearAllWidget({Key? key}) : super(key: key);
@@ -10,15 +11,11 @@ class SearchPageFilterChipsClearAllWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     final provider = Provider.of<SearchProvider>(context, listen: false);
 
-    // TODO: Create underlined text button widget for reuse
-    return TextButton(
-      child: const Text(
-        "Clear All",
-        style: TextStyle(decoration: TextDecoration.underline),
-      ),
+    return UnderlinedTextButtonWidget(
       onPressed: () {
         provider.clearFilters();
       },
+      text: "Clear All",
     );
   }
 }
