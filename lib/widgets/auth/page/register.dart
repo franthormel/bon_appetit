@@ -1,24 +1,24 @@
 import 'package:flutter/material.dart';
 
-import '../../style/index.dart';
-import 'button/button.dart';
-import 'button/google.dart';
-import 'label.dart';
-import 'separator_text.dart';
+import '../../../style/index.dart';
+import '../button/button.dart';
+import '../button/google.dart';
+import '../label.dart';
+import '../separator_text.dart';
 
-class AuthRegisterWidget extends StatefulWidget {
+class AuthPageRegisterWidget extends StatefulWidget {
   final String email;
 
-  const AuthRegisterWidget({
+  const AuthPageRegisterWidget({
     required this.email,
     Key? key,
   }) : super(key: key);
 
   @override
-  State<AuthRegisterWidget> createState() => _AuthRegisterWidgetState();
+  State<AuthPageRegisterWidget> createState() => _AuthPageRegisterWidgetState();
 }
 
-class _AuthRegisterWidgetState extends State<AuthRegisterWidget> {
+class _AuthPageRegisterWidgetState extends State<AuthPageRegisterWidget> {
   final passwordController = TextEditingController();
   bool obscureText = true;
   String? errorText;

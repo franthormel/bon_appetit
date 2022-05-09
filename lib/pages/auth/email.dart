@@ -11,7 +11,7 @@ class AuthEmailPage extends StatelessWidget {
     return const AuthMainWidget(
       header: "Sign in to your account",
       subHeader: "Enter your email address to continue.",
-      child: AuthEmailWidget(),
+      child: AuthPageEmailWidget(),
     );
   }
 }

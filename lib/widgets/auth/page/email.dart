@@ -2,20 +2,20 @@ import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import '../../router/index.dart';
-import '../../services/index.dart';
-import '../../style/index.dart';
-import 'button/button.dart';
-import 'label.dart';
+import '../../../router/index.dart';
+import '../../../services/index.dart';
+import '../../../style/index.dart';
+import '../button/button.dart';
+import '../label.dart';
 
-class AuthEmailWidget extends StatefulWidget {
-  const AuthEmailWidget({Key? key}) : super(key: key);
+class AuthPageEmailWidget extends StatefulWidget {
+  const AuthPageEmailWidget({Key? key}) : super(key: key);
 
   @override
-  State<AuthEmailWidget> createState() => _AuthEmailWidgetState();
+  State<AuthPageEmailWidget> createState() => _AuthPageEmailWidgetState();
 }
 
-class _AuthEmailWidgetState extends State<AuthEmailWidget> {
+class _AuthPageEmailWidgetState extends State<AuthPageEmailWidget> {
   String? errorText;
   final textController = TextEditingController();
 
