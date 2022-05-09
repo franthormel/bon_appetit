@@ -1,6 +1,7 @@
 export 'assets_loader.dart';
-export 'auth.dart';
 export 'data_mock.dart';
+export 'firebase/auth.dart';
+export 'firebase/platform.dart';
 export 'inline_tag_parser.dart';
 export 'providers/filter.dart';
 export 'providers/recipe_filters/suggested.dart';

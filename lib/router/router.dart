@@ -2,6 +2,7 @@ import 'package:auto_route/auto_route.dart';
 
 import '../pages/index.dart';
 import 'constants.dart';
+import 'guards/auth_account.dart';
 
 @MaterialAutoRouter(
   routes: <AutoRoute>[
@@ -75,9 +76,10 @@ import 'constants.dart';
           page: SearchRecipeFiltersPage,
           name: RouteName.searchRecipeFilters,
           path: RoutePath.searchRecipeFilters,
-        ), // TODO: Place a guard when accessing the account page
+        ),
         AutoRoute(
           page: AuthAccountPage,
+          guards: [AuthAccountPageGuard],
           name: RouteName.authAccount,
           path: RoutePath.authAccount,
         ),

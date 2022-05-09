@@ -1,6 +1,8 @@
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter/foundation.dart' show kDebugMode;
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+
+import '../../../services/index.dart';
 
 /// This widget acts as a navigator when it comes to the user's authentication state.
 class AuthUserChangeWidget extends StatelessWidget {
@@ -20,7 +22,7 @@ class AuthUserChangeWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return StreamBuilder<User?>(
       initialData: null,
-      stream: FirebaseAuth.instance.userChanges(),
+      stream: FirebaseAuthService.userChanges(),
       builder: (context, snapshot) {
         if (snapshot.hasError) {
           if (kDebugMode) {

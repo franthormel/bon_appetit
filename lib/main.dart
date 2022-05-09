@@ -1,37 +1,18 @@
-import 'package:firebase_auth/firebase_auth.dart';
-import 'package:firebase_core/firebase_core.dart';
-import 'package:flutter/foundation.dart';
+import 'package:bon_appetit/services/firebase/auth.dart';
 import 'package:flutter/material.dart';
 
-import 'firebase_options.dart';
 import 'router/index.dart';
 import 'style/index.dart';
 
-bool get _platformIsSupported {
-  final unsupportedPlatforms = [TargetPlatform.windows, TargetPlatform.macOS];
-  return !kIsWeb && !unsupportedPlatforms.contains(defaultTargetPlatform);
-}
-
-Future<void> _initializeFirebase() async {
-  if (_platformIsSupported) {
-    await Firebase.initializeApp(
-      options: DefaultFirebaseOptions.currentPlatform,
-    );
-    // NOTE: Firebase Local Emulator will be used in debugging.
-    if (kDebugMode) {
-      await FirebaseAuth.instance.useAuthEmulator("localhost", 9099);
-    }
-  }
-}
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await _initializeFirebase();
+  await FirebaseAuthService.initializeFirebase();
   runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  final _appRouter = AppRouter();
+  final _appRouter = AppRouter(authAccountPageGuard: AuthAccountPageGuard());
 
   MyApp({Key? key}) : super(key: key);
 

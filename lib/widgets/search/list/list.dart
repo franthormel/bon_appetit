@@ -15,6 +15,7 @@ class SearchPageListWidget extends StatelessWidget {
     return Expanded(
       child: ListView.separated(
         padding: const EdgeInsets.all(8.0),
+        physics: const BouncingScrollPhysics(),
         itemBuilder: (context, i) => SearchPageListWrapperWidget(results[i]),
         itemCount: results.length,
         separatorBuilder: (context, i) => const SizedBox(height: 10.0),

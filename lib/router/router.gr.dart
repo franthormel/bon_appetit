@@ -12,14 +12,19 @@
 
 import 'package:auto_route/auto_route.dart' as _i2;
 import 'package:flutter/material.dart' as _i3;
-import 'package:flutter/widgets.dart' as _i5;
+import 'package:flutter/widgets.dart' as _i6;
 
-import '../models/index.dart' as _i4;
+import '../models/index.dart' as _i5;
 import '../pages/index.dart' as _i1;
+import 'guards/auth_account.dart' as _i4;
 
 class AppRouter extends _i2.RootStackRouter {
-  AppRouter([_i3.GlobalKey<_i3.NavigatorState>? navigatorKey])
+  AppRouter(
+      {_i3.GlobalKey<_i3.NavigatorState>? navigatorKey,
+      required this.authAccountPageGuard})
       : super(navigatorKey);
+
+  final _i4.AuthAccountPageGuard authAccountPageGuard;
 
   @override
   final Map<String, _i2.PageFactory> pagesMap = {
@@ -133,7 +138,9 @@ class AppRouter extends _i2.RootStackRouter {
           _i2.RouteConfig(SearchRecipeFiltersRoute.name,
               path: 'search-recipe-filters', parent: DataProviderRoute.name),
           _i2.RouteConfig(AuthAccountRoute.name,
-              path: 'account', parent: DataProviderRoute.name),
+              path: 'account',
+              parent: DataProviderRoute.name,
+              guards: [authAccountPageGuard]),
           _i2.RouteConfig(AuthEmailRoute.name,
               path: 'email', parent: DataProviderRoute.name),
           _i2.RouteConfig(AuthLoginRoute.name,
@@ -174,7 +181,7 @@ class SearchRoute extends _i2.PageRouteInfo<void> {
 /// generated route for
 /// [_i1.RecipeDetailsPage]
 class RecipeDetailsRoute extends _i2.PageRouteInfo<RecipeDetailsRouteArgs> {
-  RecipeDetailsRoute({required _i4.Recipe recipe, _i5.Key? key})
+  RecipeDetailsRoute({required _i5.Recipe recipe, _i6.Key? key})
       : super(RecipeDetailsRoute.name,
             path: 'recipe',
             args: RecipeDetailsRouteArgs(recipe: recipe, key: key));
@@ -185,9 +192,9 @@ class RecipeDetailsRoute extends _i2.PageRouteInfo<RecipeDetailsRouteArgs> {
 class RecipeDetailsRouteArgs {
   const RecipeDetailsRouteArgs({required this.recipe, this.key});
 
-  final _i4.Recipe recipe;
+  final _i5.Recipe recipe;
 
-  final _i5.Key? key;
+  final _i6.Key? key;
 
   @override
   String toString() {
@@ -198,7 +205,7 @@ class RecipeDetailsRouteArgs {
 /// generated route for
 /// [_i1.ArticleDetailsPage]
 class ArticleDetailsRoute extends _i2.PageRouteInfo<ArticleDetailsRouteArgs> {
-  ArticleDetailsRoute({required _i4.Article article, _i5.Key? key})
+  ArticleDetailsRoute({required _i5.Article article, _i6.Key? key})
       : super(ArticleDetailsRoute.name,
             path: 'article',
             args: ArticleDetailsRouteArgs(article: article, key: key));
@@ -209,9 +216,9 @@ class ArticleDetailsRoute extends _i2.PageRouteInfo<ArticleDetailsRouteArgs> {
 class ArticleDetailsRouteArgs {
   const ArticleDetailsRouteArgs({required this.article, this.key});
 
-  final _i4.Article article;
+  final _i5.Article article;
 
-  final _i5.Key? key;
+  final _i6.Key? key;
 
   @override
   String toString() {
@@ -222,7 +229,7 @@ class ArticleDetailsRouteArgs {
 /// generated route for
 /// [_i1.VideoDetailsPage]
 class VideoDetailsRoute extends _i2.PageRouteInfo<VideoDetailsRouteArgs> {
-  VideoDetailsRoute({required _i4.Video video, _i5.Key? key})
+  VideoDetailsRoute({required _i5.Video video, _i6.Key? key})
       : super(VideoDetailsRoute.name,
             path: 'video', args: VideoDetailsRouteArgs(video: video, key: key));
 
@@ -232,9 +239,9 @@ class VideoDetailsRoute extends _i2.PageRouteInfo<VideoDetailsRouteArgs> {
 class VideoDetailsRouteArgs {
   const VideoDetailsRouteArgs({required this.video, this.key});
 
-  final _i4.Video video;
+  final _i5.Video video;
 
-  final _i5.Key? key;
+  final _i6.Key? key;
 
   @override
   String toString() {
@@ -320,7 +327,7 @@ class AuthEmailRoute extends _i2.PageRouteInfo<void> {
 /// generated route for
 /// [_i1.AuthLoginPage]
 class AuthLoginRoute extends _i2.PageRouteInfo<AuthLoginRouteArgs> {
-  AuthLoginRoute({required String email, _i5.Key? key})
+  AuthLoginRoute({required String email, _i6.Key? key})
       : super(AuthLoginRoute.name,
             path: 'password', args: AuthLoginRouteArgs(email: email, key: key));
 
@@ -332,7 +339,7 @@ class AuthLoginRouteArgs {
 
   final String email;
 
-  final _i5.Key? key;
+  final _i6.Key? key;
 
   @override
   String toString() {
@@ -343,7 +350,7 @@ class AuthLoginRouteArgs {
 /// generated route for
 /// [_i1.AuthRegisterPage]
 class AuthRegisterRoute extends _i2.PageRouteInfo<AuthRegisterRouteArgs> {
-  AuthRegisterRoute({required String email, _i5.Key? key})
+  AuthRegisterRoute({required String email, _i6.Key? key})
       : super(AuthRegisterRoute.name,
             path: 'register',
             args: AuthRegisterRouteArgs(email: email, key: key));
@@ -356,7 +363,7 @@ class AuthRegisterRouteArgs {
 
   final String email;
 
-  final _i5.Key? key;
+  final _i6.Key? key;
 
   @override
   String toString() {

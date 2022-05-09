@@ -22,6 +22,7 @@ class DrawerPageWidget extends StatelessWidget {
     return ScaffoldedWillPopWidget(
       appBar: AppBar(),
       body: CustomScrollView(
+        physics: const BouncingScrollPhysics(),
         slivers: [
           SliverToBoxAdapter(
             child: DrawerPageHeaderWidget(title, subHeader: subHeader),

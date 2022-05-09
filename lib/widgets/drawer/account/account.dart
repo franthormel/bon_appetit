@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../services/index.dart';
 import 'auth/auth.dart';
 import 'entry.dart';
 
@@ -9,10 +10,10 @@ class DrawerAccountWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      children: const [
-        // TODO: Don't show this widget if platform is unsupported (ref main.dart)
-        DrawerAccountAuthWidget(),
-        DrawerAccountEntryWidget("Newsletter"),
+      children: [
+        if (FirebasePlatformService.isSupported)
+          const DrawerAccountAuthWidget(),
+        const DrawerAccountEntryWidget("Newsletter"),
       ],
     );
   }
