@@ -6,7 +6,7 @@ export 'articles/shopping_articles.dart';
 export 'articles/stories.dart';
 export 'auth/login.dart';
 export 'auth/main.dart';
-export 'auth/page/confirm.dart';
+export 'auth/page/confirm/confirm.dart';
 export 'auth/page/email.dart';
 export 'auth/page/register/end.dart';
 export 'auth/page/register/register.dart';
