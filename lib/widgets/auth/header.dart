@@ -36,7 +36,9 @@ class AuthHeaderWidget extends StatelessWidget {
           if (email != null)
             Text(
               email!,
-              style: BonAppetitThemeRadley.bodyText1,
+              style: BonAppetitThemeRadley.bodyText1?.copyWith(
+                fontWeight: FontWeight.w700,
+              ),
               textAlign: TextAlign.center,
             ),
         ],

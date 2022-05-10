@@ -7,6 +7,7 @@ import 'header.dart';
 
 class AuthMainWidget extends StatelessWidget {
   final Widget child;
+  final String? email;
   final Widget? end;
   final String header;
   final String subHeader;
@@ -15,6 +16,7 @@ class AuthMainWidget extends StatelessWidget {
     required this.child,
     required this.header,
     required this.subHeader,
+    this.email,
     this.end,
     Key? key,
   }) : super(key: key);
@@ -26,7 +28,7 @@ class AuthMainWidget extends StatelessWidget {
       body: ListView(
         padding: const EdgeInsets.symmetric(horizontal: 24.0),
         children: [
-          AuthHeaderWidget(header: header, subHeader: subHeader),
+          AuthHeaderWidget(email: email, header: header, subHeader: subHeader),
           AuthContainerWidget(child: child),
           if (end != null) AuthEndWidget(child: end!),
         ],

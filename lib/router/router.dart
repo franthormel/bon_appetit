@@ -98,6 +98,11 @@ import 'guards/auth_account.dart';
           name: RouteName.authRegister,
           path: RoutePath.authRegister,
         ),
+        AutoRoute(
+          page: AuthConfirmPage,
+          name: RouteName.authConfirm,
+          path: RoutePath.authConfirm,
+        ),
       ],
     ),
     RedirectRoute(path: '*', redirectTo: RouteName.initial),

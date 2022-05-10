@@ -11,10 +11,7 @@ import '../../separator_text.dart';
 class AuthPageRegisterWidget extends StatefulWidget {
   final String email;
 
-  const AuthPageRegisterWidget({
-    required this.email,
-    Key? key,
-  }) : super(key: key);
+  const AuthPageRegisterWidget(this.email, {Key? key}) : super(key: key);
 
   @override
   State<AuthPageRegisterWidget> createState() => _AuthPageRegisterWidgetState();
@@ -95,7 +92,9 @@ class _AuthPageRegisterWidgetState extends State<AuthPageRegisterWidget> {
 
     // If password is at least six (6) characters in length go to the next page ...
     if (password.length >= minimumPasswordLength) {
-      // TODO: Implement confirmation page when registering
+      Provider.of<RouteProvider>(context, listen: false).push(
+        AuthConfirmRoute(email: widget.email),
+      );
     } else {
       value = "Password should be at least $minimumPasswordLength characters.";
     }

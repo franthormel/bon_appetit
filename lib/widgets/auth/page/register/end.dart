@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
+import '../../../../router/index.dart';
 import '../../../others/underlined_text_button.dart';
 
 class AuthPageRegisterEndWidget extends StatelessWidget {
@@ -10,12 +12,10 @@ class AuthPageRegisterEndWidget extends StatelessWidget {
     return Column(
       children: [
         UnderlinedTextButtonWidget(
-          onPressed: () {},
+          onPressed: () {
+            Provider.of<RouteProvider>(context, listen: false).pop();
+          },
           text: "Sign in with a different account",
-        ),
-        UnderlinedTextButtonWidget(
-          onPressed: () {},
-          text: "Help me sign in",
         ),
       ],
     );
