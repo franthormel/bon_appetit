@@ -9,6 +9,10 @@ class BonAppetitThemeFutura {
       fontFamily: 'Futura PT',
       primaryColor: BonAppetitColors.black,
       appBarTheme: const AppBarTheme(backgroundColor: BonAppetitColors.black),
+      checkboxTheme: CheckboxThemeData(
+        checkColor: MaterialStateProperty.all<Color>(BonAppetitColors.white),
+        fillColor: MaterialStateProperty.all<Color>(BonAppetitColors.black),
+      ),
       chipTheme: const ChipThemeData(
         backgroundColor: BonAppetitColors.platinum,
         selectedColor: BonAppetitColors.black,
