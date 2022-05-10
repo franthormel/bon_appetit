@@ -93,7 +93,7 @@ class _AuthPageRegisterWidgetState extends State<AuthPageRegisterWidget> {
     // If password is at least six (6) characters in length go to the next page ...
     if (password.length >= minimumPasswordLength) {
       Provider.of<RouteProvider>(context, listen: false).push(
-        AuthConfirmRoute(email: widget.email),
+        AuthConfirmRoute(email: widget.email, password: password),
       );
     } else {
       value = "Password should be at least $minimumPasswordLength characters.";

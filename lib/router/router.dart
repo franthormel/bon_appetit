@@ -103,6 +103,11 @@ import 'guards/auth_account.dart';
           name: RouteName.authConfirm,
           path: RoutePath.authConfirm,
         ),
+        AutoRoute(
+          page: AuthSignInConfirmPage,
+          name: RouteName.authSignInConfirm,
+          path: RoutePath.authSignInConfirm,
+        ),
       ],
     ),
     RedirectRoute(path: '*', redirectTo: RouteName.initial),

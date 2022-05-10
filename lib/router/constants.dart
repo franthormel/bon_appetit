@@ -18,6 +18,7 @@ class RoutePath {
   static const authRegister = "register";
   static const authSelectAccount = "select-account";
   static const authConfirm = "confirm";
+  static const authSignInConfirm = "sign-in-confirmation";
 }
 
 class RouteName {
@@ -40,4 +41,5 @@ class RouteName {
   static const authRegister = "AuthRegisterRoute";
   static const authSelectAccount = "AuthSelectAccountRoute";
   static const authConfirm = "AuthConfirmRoute";
+  static const authSignInConfirm = "AuthPageSignInConfirmRoute";
 }

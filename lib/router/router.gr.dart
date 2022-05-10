@@ -109,7 +109,12 @@ class AppRouter extends _i2.RootStackRouter {
       final args = routeData.argsAs<AuthConfirmRouteArgs>();
       return _i2.MaterialPageX<dynamic>(
           routeData: routeData,
-          child: _i1.AuthConfirmPage(email: args.email, key: args.key));
+          child: _i1.AuthConfirmPage(
+              email: args.email, password: args.password, key: args.key));
+    },
+    AuthPageSignInConfirmRoute.name: (routeData) {
+      return _i2.MaterialPageX<dynamic>(
+          routeData: routeData, child: const _i1.AuthSignInConfirmPage());
     }
   };
 
@@ -153,7 +158,9 @@ class AppRouter extends _i2.RootStackRouter {
           _i2.RouteConfig(AuthRegisterRoute.name,
               path: 'register', parent: DataProviderRoute.name),
           _i2.RouteConfig(AuthConfirmRoute.name,
-              path: 'confirm', parent: DataProviderRoute.name)
+              path: 'confirm', parent: DataProviderRoute.name),
+          _i2.RouteConfig(AuthPageSignInConfirmRoute.name,
+              path: 'sign-in-confirmation', parent: DataProviderRoute.name)
         ]),
         _i2.RouteConfig('*#redirect',
             path: '*', redirectTo: 'DataProviderRoute', fullMatch: true)
@@ -381,23 +388,37 @@ class AuthRegisterRouteArgs {
 /// generated route for
 /// [_i1.AuthConfirmPage]
 class AuthConfirmRoute extends _i2.PageRouteInfo<AuthConfirmRouteArgs> {
-  AuthConfirmRoute({required String email, _i3.Key? key})
+  AuthConfirmRoute(
+      {required String email, required String password, _i3.Key? key})
       : super(AuthConfirmRoute.name,
             path: 'confirm',
-            args: AuthConfirmRouteArgs(email: email, key: key));
+            args: AuthConfirmRouteArgs(
+                email: email, password: password, key: key));
 
   static const String name = 'AuthConfirmRoute';
 }
 
 class AuthConfirmRouteArgs {
-  const AuthConfirmRouteArgs({required this.email, this.key});
+  const AuthConfirmRouteArgs(
+      {required this.email, required this.password, this.key});
 
   final String email;
+
+  final String password;
 
   final _i3.Key? key;
 
   @override
   String toString() {
-    return 'AuthConfirmRouteArgs{email: $email, key: $key}';
+    return 'AuthConfirmRouteArgs{email: $email, password: $password, key: $key}';
   }
+}
+
+/// generated route for
+/// [_i1.AuthSignInConfirmPage]
+class AuthPageSignInConfirmRoute extends _i2.PageRouteInfo<void> {
+  const AuthPageSignInConfirmRoute()
+      : super(AuthPageSignInConfirmRoute.name, path: 'sign-in-confirmation');
+
+  static const String name = 'AuthPageSignInConfirmRoute';
 }

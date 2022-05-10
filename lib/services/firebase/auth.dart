@@ -8,9 +8,24 @@ import 'platform.dart';
 class FirebaseAuthService {
   static bool get isAuthenticated => FirebaseAuth.instance.currentUser != null;
 
-  static Stream<User?> userChanges() => FirebaseAuth.instance.userChanges();
+  /// Returns true if the email is available for sign-in. Throws a [FirebaseAuthException] if the email is invalid.
+  static Future<bool> checkSignInEmail(String email) async {
+    final methods = await FirebaseAuth.instance.fetchSignInMethodsForEmail(
+      email,
+    );
 
-  static Future<void> signOut() async => await FirebaseAuth.instance.signOut();
+    return methods.isNotEmpty;
+  }
+
+  static Future<UserCredential> createUser({
+    required String email,
+    required String password,
+  }) async {
+    return await FirebaseAuth.instance.createUserWithEmailAndPassword(
+      email: email,
+      password: password,
+    );
+  }
 
   static Future<void> initializeFirebase() async {
     if (FirebasePlatformService.isSupported) {
@@ -23,12 +38,7 @@ class FirebaseAuthService {
     }
   }
 
-  /// Returns true if the email is available for sign-in. Throws a [FirebaseAuthException] if the email is invalid.
-  static Future<bool> checkSignInEmail(String email) async {
-    final methods = await FirebaseAuth.instance.fetchSignInMethodsForEmail(
-      email,
-    );
+  static Future<void> signOut() async => await FirebaseAuth.instance.signOut();
 
-    return methods.isNotEmpty;
-  }
+  static Stream<User?> userChanges() => FirebaseAuth.instance.userChanges();
 }

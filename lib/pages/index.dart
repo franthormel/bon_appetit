@@ -3,6 +3,7 @@ export 'auth/confirm.dart';
 export 'auth/email.dart';
 export 'auth/login.dart';
 export 'auth/register.dart';
+export 'auth/sign_in_confirm.dart';
 export 'data.dart';
 export 'details/article.dart';
 export 'details/recipe.dart';
