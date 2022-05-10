@@ -2,7 +2,6 @@ import 'package:auto_route/auto_route.dart';
 
 import '../pages/index.dart';
 import 'constants.dart';
-import 'guards/auth_account.dart';
 
 @MaterialAutoRouter(
   routes: <AutoRoute>[
@@ -79,7 +78,6 @@ import 'guards/auth_account.dart';
         ),
         AutoRoute(
           page: AuthAccountPage,
-          guards: [AuthAccountPageGuard],
           name: RouteName.authAccount,
           path: RoutePath.authAccount,
         ),

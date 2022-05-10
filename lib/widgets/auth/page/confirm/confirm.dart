@@ -36,9 +36,9 @@ class AuthPageConfirmWidget extends StatelessWidget {
           email: email, password: password);
 
       if (account.user != null) {
-        print("User account NOT NULL 🥳");
+        // TODO: Show sign in confirmation page
       } else {
-        print("User account NULL 😔");
+        // TODO: Throw generic Exception
       }
     } on FirebaseAuthException catch (e) {
       // TODO: Display error page with specified message

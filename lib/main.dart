@@ -11,7 +11,7 @@ Future<void> main() async {
 }
 
 class MyApp extends StatelessWidget {
-  final _appRouter = AppRouter(authAccountPageGuard: AuthAccountPageGuard());
+  final _appRouter = AppRouter();
 
   MyApp({Key? key}) : super(key: key);
 
