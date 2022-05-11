@@ -3,6 +3,8 @@ export 'auth/confirm.dart';
 export 'auth/email.dart';
 export 'auth/error.dart';
 export 'auth/login.dart';
+export 'auth/magic_link/magic_link.dart';
+export 'auth/magic_link/send.dart';
 export 'auth/register.dart';
 export 'auth/sign_in_confirm.dart';
 export 'data.dart';

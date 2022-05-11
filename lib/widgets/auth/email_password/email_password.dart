@@ -7,6 +7,7 @@ import '../button/button.dart';
 import '../button/google.dart';
 import '../label.dart';
 import '../separator_text.dart';
+import 'email.dart';
 
 class AuthEmailPasswordWidget extends StatefulWidget {
   final String buttonText;
@@ -38,18 +39,14 @@ class _AuthEmailPasswordWidgetState extends State<AuthEmailPasswordWidget> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const AuthLabelWidget(text: "Email"),
-        const SizedBox(height: 16.0),
-        TextField(
-          controller: emailController,
-          readOnly: true,
-          decoration: InputDecoration(
+        AuthEmailWidget(
+          emailController: emailController,
+          inputDecoration: InputDecoration(
             suffixIcon: TextButton(
               child: const Text("Edit"),
               onPressed: router.pop,
             ),
           ),
-          style: Theme.of(context).textTheme.bodyText2,
         ),
         const SizedBox(height: 16.0),
         const AuthLabelWidget(text: "Password"),

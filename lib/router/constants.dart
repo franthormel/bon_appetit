@@ -19,6 +19,8 @@ class RoutePath {
   static const authConfirm = "confirm";
   static const authSignInConfirm = "sign-in-confirm";
   static const authError = "error";
+  static const authMagicLink = "magic-link";
+  static const authMagicLinkSend = "magic-link-send";
 }
 
 class RouteName {
@@ -42,4 +44,6 @@ class RouteName {
   static const authConfirm = "AuthConfirmRoute";
   static const authSignInConfirm = "AuthSignInConfirmRoute";
   static const authError = "AuthErrorRoute";
+  static const authMagicLink = "AuthMagicLinkRoute";
+  static const authMagicLinkSend = "AuthMagicLinkSendRoute";
 }

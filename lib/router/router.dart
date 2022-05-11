@@ -109,7 +109,17 @@ import 'constants.dart';
         AutoRoute(
           page: AuthErrorPage,
           name: RouteName.authError,
-          path: RouteName.authError,
+          path: RoutePath.authError,
+        ),
+        AutoRoute(
+          page: AuthMagicLinkPage,
+          name: RouteName.authMagicLink,
+          path: RoutePath.authMagicLink,
+        ),
+        AutoRoute(
+          page: AuthMagicLinkSendPage,
+          name: RouteName.authMagicLinkSend,
+          path: RoutePath.authMagicLinkSend,
         ),
       ],
     ),

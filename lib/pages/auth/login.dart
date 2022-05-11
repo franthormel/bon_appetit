@@ -15,7 +15,7 @@ class AuthLoginPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return AuthMainWidget(
       child: AuthLoginWidget(email),
-      end: const AuthLoginPageEndWidget(),
+      end: AuthLoginPageEndWidget(email),
       header: "Sign in to your account",
       subHeader: "Enter your password to continue.",
     );
