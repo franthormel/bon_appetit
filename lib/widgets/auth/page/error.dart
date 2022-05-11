@@ -4,8 +4,8 @@ import 'package:provider/provider.dart';
 import '../../../router/index.dart';
 import '../button/button.dart';
 
-class AuthPageErrorWidget extends StatelessWidget {
-  const AuthPageErrorWidget({Key? key}) : super(key: key);
+class AuthErrorPageWidget extends StatelessWidget {
+  const AuthErrorPageWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

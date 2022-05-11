@@ -11,6 +11,7 @@ export 'auth/page/email.dart';
 export 'auth/page/error.dart';
 export 'auth/page/register/end.dart';
 export 'auth/page/register/register.dart';
+export 'auth/page/sign_in.dart';
 export 'auth/page/sign_in_confirm.dart';
 export 'drawer/drawer.dart';
 export 'drawer/page/article/article.dart';

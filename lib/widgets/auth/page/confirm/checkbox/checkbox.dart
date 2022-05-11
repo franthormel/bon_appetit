@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'input.dart';
 import 'label.dart';
 
-class AuthPageConfirmCheckboxWidget extends StatelessWidget {
-  const AuthPageConfirmCheckboxWidget({Key? key}) : super(key: key);
+class AuthConfirmPageCheckboxWidget extends StatelessWidget {
+  const AuthConfirmPageCheckboxWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

@@ -4,8 +4,8 @@ import 'package:provider/provider.dart';
 import '../../../../router/index.dart';
 import '../../../others/underlined_text_button.dart';
 
-class AuthPageRegisterEndWidget extends StatelessWidget {
-  const AuthPageRegisterEndWidget({Key? key}) : super(key: key);
+class AuthRegisterPageEndWidget extends StatelessWidget {
+  const AuthRegisterPageEndWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

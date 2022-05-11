@@ -8,11 +8,11 @@ import '../../button/button.dart';
 import 'checkbox/checkbox.dart';
 import 'utility_text.dart';
 
-class AuthPageConfirmWidget extends StatelessWidget {
+class AuthConfirmPageWidget extends StatelessWidget {
   final String email;
   final String password;
 
-  const AuthPageConfirmWidget({
+  const AuthConfirmPageWidget({
     required this.email,
     required this.password,
     Key? key,
@@ -22,8 +22,8 @@ class AuthPageConfirmWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        const AuthPageConfirmCheckboxWidget(),
-        const AuthPageConfirmUtilityTextWidget(),
+        const AuthConfirmPageCheckboxWidget(),
+        const AuthConfirmPageUtilityTextWidget(),
         AuthButtonWidget(
           onPressed: () {
             attemptAccountCreation(context);

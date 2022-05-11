@@ -14,9 +14,9 @@ class AuthLoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AuthMainWidget(
+      child: AuthLoginWidget(email: email),
       header: "Sign in to your account",
       subHeader: "Enter your password to continue.",
-      child: AuthLoginWidget(email: email),
     );
   }
 }

@@ -8,16 +8,16 @@ import '../../button/google.dart';
 import '../../label.dart';
 import '../../separator_text.dart';
 
-class AuthPageRegisterWidget extends StatefulWidget {
+class AuthRegisterPageWidget extends StatefulWidget {
   final String email;
 
-  const AuthPageRegisterWidget(this.email, {Key? key}) : super(key: key);
+  const AuthRegisterPageWidget(this.email, {Key? key}) : super(key: key);
 
   @override
-  State<AuthPageRegisterWidget> createState() => _AuthPageRegisterWidgetState();
+  State<AuthRegisterPageWidget> createState() => _AuthRegisterPageWidgetState();
 }
 
-class _AuthPageRegisterWidgetState extends State<AuthPageRegisterWidget> {
+class _AuthRegisterPageWidgetState extends State<AuthRegisterPageWidget> {
   final passwordController = TextEditingController();
   bool obscureText = true;
   String? errorText;

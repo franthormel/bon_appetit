@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class AuthPageConfirmUtilityTextWidget extends StatelessWidget {
-  const AuthPageConfirmUtilityTextWidget({Key? key}) : super(key: key);
+class AuthConfirmPageUtilityTextWidget extends StatelessWidget {
+  const AuthConfirmPageUtilityTextWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

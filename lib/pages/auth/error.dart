@@ -10,9 +10,9 @@ class AuthErrorPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AuthMainWidget(
+      child: const AuthErrorPageWidget(),
       header: "Error occurred",
       subHeader: errorText,
-      child: const AuthPageErrorWidget(),
     );
   }
 }

@@ -15,7 +15,7 @@ class AuthConfirmPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AuthMainWidget(
-      child: AuthPageConfirmWidget(email: email, password: password),
+      child: AuthConfirmPageWidget(email: email, password: password),
       email: email,
       header: "Create an account",
       subHeader: "Please enter a password to register a new account.",

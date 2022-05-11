@@ -4,8 +4,8 @@ import 'package:provider/provider.dart';
 import '../../../router/index.dart';
 import '../button/button.dart';
 
-class AuthPageSignInConfirmWidget extends StatelessWidget {
-  const AuthPageSignInConfirmWidget({Key? key}) : super(key: key);
+class AuthSignInPageConfirmWidget extends StatelessWidget {
+  const AuthSignInPageConfirmWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

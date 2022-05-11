@@ -8,14 +8,14 @@ import '../../../style/index.dart';
 import '../button/button.dart';
 import '../label.dart';
 
-class AuthPageEmailWidget extends StatefulWidget {
-  const AuthPageEmailWidget({Key? key}) : super(key: key);
+class AuthEmailPageWidget extends StatefulWidget {
+  const AuthEmailPageWidget({Key? key}) : super(key: key);
 
   @override
-  State<AuthPageEmailWidget> createState() => _AuthPageEmailWidgetState();
+  State<AuthEmailPageWidget> createState() => _AuthEmailPageWidgetState();
 }
 
-class _AuthPageEmailWidgetState extends State<AuthPageEmailWidget> {
+class _AuthEmailPageWidgetState extends State<AuthEmailPageWidget> {
   String? errorText;
   final textController = TextEditingController();
 
