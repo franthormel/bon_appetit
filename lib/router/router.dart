@@ -106,6 +106,11 @@ import 'constants.dart';
           name: RouteName.authSignInConfirm,
           path: RoutePath.authSignInConfirm,
         ),
+        AutoRoute(
+          page: AuthErrorPage,
+          name: RouteName.authError,
+          path: RouteName.authError,
+        ),
       ],
     ),
     RedirectRoute(path: '*', redirectTo: RouteName.initial),

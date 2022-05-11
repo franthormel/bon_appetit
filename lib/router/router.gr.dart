@@ -107,9 +107,15 @@ class AppRouter extends _i2.RootStackRouter {
           child: _i1.AuthConfirmPage(
               email: args.email, password: args.password, key: args.key));
     },
-    AuthPageSignInConfirmRoute.name: (routeData) {
+    AuthSignInConfirmRoute.name: (routeData) {
       return _i2.MaterialPageX<dynamic>(
           routeData: routeData, child: const _i1.AuthSignInConfirmPage());
+    },
+    AuthErrorRoute.name: (routeData) {
+      final args = routeData.argsAs<AuthErrorRouteArgs>();
+      return _i2.MaterialPageX<dynamic>(
+          routeData: routeData,
+          child: _i1.AuthErrorPage(errorText: args.errorText, key: args.key));
     }
   };
 
@@ -152,8 +158,10 @@ class AppRouter extends _i2.RootStackRouter {
               path: 'register', parent: DataProviderRoute.name),
           _i2.RouteConfig(AuthConfirmRoute.name,
               path: 'confirm', parent: DataProviderRoute.name),
-          _i2.RouteConfig(AuthPageSignInConfirmRoute.name,
-              path: 'sign-in-confirmation', parent: DataProviderRoute.name)
+          _i2.RouteConfig(AuthSignInConfirmRoute.name,
+              path: 'sign-in-confirm', parent: DataProviderRoute.name),
+          _i2.RouteConfig(AuthErrorRoute.name,
+              path: 'AuthErrorRoute', parent: DataProviderRoute.name)
         ]),
         _i2.RouteConfig('*#redirect',
             path: '*', redirectTo: 'DataProviderRoute', fullMatch: true)
@@ -409,9 +417,33 @@ class AuthConfirmRouteArgs {
 
 /// generated route for
 /// [_i1.AuthSignInConfirmPage]
-class AuthPageSignInConfirmRoute extends _i2.PageRouteInfo<void> {
-  const AuthPageSignInConfirmRoute()
-      : super(AuthPageSignInConfirmRoute.name, path: 'sign-in-confirmation');
+class AuthSignInConfirmRoute extends _i2.PageRouteInfo<void> {
+  const AuthSignInConfirmRoute()
+      : super(AuthSignInConfirmRoute.name, path: 'sign-in-confirm');
 
-  static const String name = 'AuthPageSignInConfirmRoute';
+  static const String name = 'AuthSignInConfirmRoute';
+}
+
+/// generated route for
+/// [_i1.AuthErrorPage]
+class AuthErrorRoute extends _i2.PageRouteInfo<AuthErrorRouteArgs> {
+  AuthErrorRoute({required String errorText, _i3.Key? key})
+      : super(AuthErrorRoute.name,
+            path: 'AuthErrorRoute',
+            args: AuthErrorRouteArgs(errorText: errorText, key: key));
+
+  static const String name = 'AuthErrorRoute';
+}
+
+class AuthErrorRouteArgs {
+  const AuthErrorRouteArgs({required this.errorText, this.key});
+
+  final String errorText;
+
+  final _i3.Key? key;
+
+  @override
+  String toString() {
+    return 'AuthErrorRouteArgs{errorText: $errorText, key: $key}';
+  }
 }

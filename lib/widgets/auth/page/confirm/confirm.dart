@@ -1,6 +1,8 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
+import '../../../../router/index.dart';
 import '../../../../services/index.dart';
 import '../../button/button.dart';
 import 'checkbox/checkbox.dart';
@@ -23,29 +25,34 @@ class AuthPageConfirmWidget extends StatelessWidget {
         const AuthPageConfirmCheckboxWidget(),
         const AuthPageConfirmUtilityTextWidget(),
         AuthButtonWidget(
-          onPressed: attemptAccountCreation,
+          onPressed: () {
+            attemptAccountCreation(context);
+          },
           text: "CREATE ACCOUNT",
         ),
       ],
     );
   }
 
-  Future<void> attemptAccountCreation() async {
+  Future<void> attemptAccountCreation(BuildContext context) async {
+    final router = Provider.of<RouteProvider>(context, listen: false);
+    const errorText = "Unknown error occurred.";
+
     try {
       final account = await FirebaseAuthService.createUser(
-          email: email, password: password);
+        email: email,
+        password: password,
+      );
 
       if (account.user != null) {
-        // TODO: Show sign in confirmation page
+        router.push(const AuthSignInConfirmRoute());
       } else {
-        // TODO: Throw generic Exception
+        throw Exception();
       }
     } on FirebaseAuthException catch (e) {
-      // TODO: Display error page with specified message
-      print("FirebaseAuthException: ${e.message}");
-    } on Exception catch (e) {
-      // TODO: Display general error page
-      print(e.toString());
+      router.push(AuthErrorRoute(errorText: e.message ?? errorText));
+    } on Exception {
+      router.push(AuthErrorRoute(errorText: errorText));
     }
   }
 }
