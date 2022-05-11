@@ -13,7 +13,7 @@ class AuthSignInPageConfirmWidget extends StatelessWidget {
       onPressed: () {
         Provider.of<RouteProvider>(context, listen: false).goToHomepage();
       },
-      text: "CONTINUE",
+      text: "GO TO HOMEPAGE",
     );
   }
 }

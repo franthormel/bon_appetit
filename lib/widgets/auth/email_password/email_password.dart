@@ -9,10 +9,12 @@ import '../label.dart';
 import '../separator_text.dart';
 
 class AuthEmailPasswordWidget extends StatefulWidget {
+  final String buttonText;
   final String email;
   final String? Function(RouteProvider, String) onPasswordSubmit;
 
   const AuthEmailPasswordWidget({
+    required this.buttonText,
     required this.email,
     required this.onPasswordSubmit,
     Key? key,
@@ -79,7 +81,7 @@ class _AuthEmailPasswordWidgetState extends State<AuthEmailPasswordWidget> {
         ),
         const SizedBox(height: 16.0),
         AuthButtonWidget(
-          text: "SIGN UP",
+          text: widget.buttonText,
           onPressed: () {
             final value = widget.onPasswordSubmit(
               router,

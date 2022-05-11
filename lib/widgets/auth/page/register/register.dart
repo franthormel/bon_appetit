@@ -13,6 +13,7 @@ class AuthRegisterPageWidget extends StatelessWidget
   @override
   Widget build(BuildContext context) {
     return AuthEmailPasswordWidget(
+      buttonText: "SIGN UP",
       email: email,
       onPasswordSubmit: onPasswordSubmit,
     );
@@ -23,11 +24,14 @@ class AuthRegisterPageWidget extends StatelessWidget
     const minimumPasswordLength = 6;
     String? value;
 
-    // If password is at least six (6) characters in length go to the next page ...
-    if (password.length >= minimumPasswordLength) {
-      router.push(AuthConfirmRoute(email: email, password: password));
-    } else {
+    // Password must not be empty and be at least six (6) characters in length
+    // to be able to proceed to the account creation confirmation page ...
+    if (password.isEmpty) {
+      value = "Required.";
+    } else if (password.length < minimumPasswordLength) {
       value = "Password should be at least $minimumPasswordLength characters.";
+    } else {
+      router.push(AuthConfirmRoute(email: email, password: password));
     }
 
     // ... otherwise show error text

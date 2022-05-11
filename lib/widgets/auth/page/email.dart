@@ -71,7 +71,7 @@ class _AuthEmailPageWidgetState extends State<AuthEmailPageWidget> {
     String? value;
 
     try {
-      final haveAccount = await FirebaseAuthService.checkSignInEmail(email);
+      final haveAccount = await FirebaseAuthService.checkEmail(email);
       _pushRoute(haveAccount);
     } catch (e) {
       return "Invalid email";

@@ -36,7 +36,6 @@ class AuthConfirmPageWidget extends StatelessWidget {
 
   Future<void> attemptAccountCreation(BuildContext context) async {
     final router = Provider.of<RouteProvider>(context, listen: false);
-    const errorText = "Unknown error occurred.";
 
     try {
       final account = await FirebaseAuthService.createUser(
@@ -50,9 +49,16 @@ class AuthConfirmPageWidget extends StatelessWidget {
         throw Exception();
       }
     } on FirebaseAuthException catch (e) {
-      router.push(AuthErrorRoute(errorText: e.message ?? errorText));
+      router.push(AuthErrorRoute(
+        errorButtonText: "GO TO HOMEPAGE",
+        errorText: e.message,
+        onPressed: router.goToHomepage,
+      ));
     } on Exception {
-      router.push(AuthErrorRoute(errorText: errorText));
+      router.push(AuthErrorRoute(
+        errorButtonText: "GO TO HOMEPAGE",
+        onPressed: router.goToHomepage,
+      ));
     }
   }
 }

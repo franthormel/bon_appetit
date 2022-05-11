@@ -10,18 +10,20 @@ class DrawerAccountAuthInWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final router = Provider.of<RouteProvider>(context, listen: false);
+
     return Column(
       children: [
         DrawerAccountEntryWidget(
           "My Account",
           onTap: () {
-            Provider.of<RouteProvider>(context, listen: false)
-                .push(const AuthAccountRoute());
+            router.push(const AuthAccountRoute());
           },
         ),
         DrawerAccountEntryWidget(
           "Sign Out",
           onTap: () {
+            router.goToHomepage();
             FirebaseAuthService.signOut();
           },
         ),

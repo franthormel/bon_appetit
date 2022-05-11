@@ -12,6 +12,7 @@
 
 import 'package:auto_route/auto_route.dart' as _i2;
 import 'package:flutter/material.dart' as _i3;
+import 'package:flutter/widgets.dart' as _i5;
 
 import '../models/index.dart' as _i4;
 import '../pages/index.dart' as _i1;
@@ -115,7 +116,11 @@ class AppRouter extends _i2.RootStackRouter {
       final args = routeData.argsAs<AuthErrorRouteArgs>();
       return _i2.MaterialPageX<dynamic>(
           routeData: routeData,
-          child: _i1.AuthErrorPage(errorText: args.errorText, key: args.key));
+          child: _i1.AuthErrorPage(
+              errorButtonText: args.errorButtonText,
+              onPressed: args.onPressed,
+              errorText: args.errorText,
+              key: args.key));
     }
   };
 
@@ -196,7 +201,7 @@ class SearchRoute extends _i2.PageRouteInfo<void> {
 /// generated route for
 /// [_i1.RecipeDetailsPage]
 class RecipeDetailsRoute extends _i2.PageRouteInfo<RecipeDetailsRouteArgs> {
-  RecipeDetailsRoute({required _i4.Recipe recipe, _i3.Key? key})
+  RecipeDetailsRoute({required _i4.Recipe recipe, _i5.Key? key})
       : super(RecipeDetailsRoute.name,
             path: 'recipe',
             args: RecipeDetailsRouteArgs(recipe: recipe, key: key));
@@ -209,7 +214,7 @@ class RecipeDetailsRouteArgs {
 
   final _i4.Recipe recipe;
 
-  final _i3.Key? key;
+  final _i5.Key? key;
 
   @override
   String toString() {
@@ -220,7 +225,7 @@ class RecipeDetailsRouteArgs {
 /// generated route for
 /// [_i1.ArticleDetailsPage]
 class ArticleDetailsRoute extends _i2.PageRouteInfo<ArticleDetailsRouteArgs> {
-  ArticleDetailsRoute({required _i4.Article article, _i3.Key? key})
+  ArticleDetailsRoute({required _i4.Article article, _i5.Key? key})
       : super(ArticleDetailsRoute.name,
             path: 'article',
             args: ArticleDetailsRouteArgs(article: article, key: key));
@@ -233,7 +238,7 @@ class ArticleDetailsRouteArgs {
 
   final _i4.Article article;
 
-  final _i3.Key? key;
+  final _i5.Key? key;
 
   @override
   String toString() {
@@ -244,7 +249,7 @@ class ArticleDetailsRouteArgs {
 /// generated route for
 /// [_i1.VideoDetailsPage]
 class VideoDetailsRoute extends _i2.PageRouteInfo<VideoDetailsRouteArgs> {
-  VideoDetailsRoute({required _i4.Video video, _i3.Key? key})
+  VideoDetailsRoute({required _i4.Video video, _i5.Key? key})
       : super(VideoDetailsRoute.name,
             path: 'video', args: VideoDetailsRouteArgs(video: video, key: key));
 
@@ -256,7 +261,7 @@ class VideoDetailsRouteArgs {
 
   final _i4.Video video;
 
-  final _i3.Key? key;
+  final _i5.Key? key;
 
   @override
   String toString() {
@@ -342,7 +347,7 @@ class AuthEmailRoute extends _i2.PageRouteInfo<void> {
 /// generated route for
 /// [_i1.AuthLoginPage]
 class AuthLoginRoute extends _i2.PageRouteInfo<AuthLoginRouteArgs> {
-  AuthLoginRoute({required String email, _i3.Key? key})
+  AuthLoginRoute({required String email, _i5.Key? key})
       : super(AuthLoginRoute.name,
             path: 'password', args: AuthLoginRouteArgs(email: email, key: key));
 
@@ -354,7 +359,7 @@ class AuthLoginRouteArgs {
 
   final String email;
 
-  final _i3.Key? key;
+  final _i5.Key? key;
 
   @override
   String toString() {
@@ -365,7 +370,7 @@ class AuthLoginRouteArgs {
 /// generated route for
 /// [_i1.AuthRegisterPage]
 class AuthRegisterRoute extends _i2.PageRouteInfo<AuthRegisterRouteArgs> {
-  AuthRegisterRoute({required String email, _i3.Key? key})
+  AuthRegisterRoute({required String email, _i5.Key? key})
       : super(AuthRegisterRoute.name,
             path: 'register',
             args: AuthRegisterRouteArgs(email: email, key: key));
@@ -378,7 +383,7 @@ class AuthRegisterRouteArgs {
 
   final String email;
 
-  final _i3.Key? key;
+  final _i5.Key? key;
 
   @override
   String toString() {
@@ -390,7 +395,7 @@ class AuthRegisterRouteArgs {
 /// [_i1.AuthConfirmPage]
 class AuthConfirmRoute extends _i2.PageRouteInfo<AuthConfirmRouteArgs> {
   AuthConfirmRoute(
-      {required String email, required String password, _i3.Key? key})
+      {required String email, required String password, _i5.Key? key})
       : super(AuthConfirmRoute.name,
             path: 'confirm',
             args: AuthConfirmRouteArgs(
@@ -407,7 +412,7 @@ class AuthConfirmRouteArgs {
 
   final String password;
 
-  final _i3.Key? key;
+  final _i5.Key? key;
 
   @override
   String toString() {
@@ -427,23 +432,39 @@ class AuthSignInConfirmRoute extends _i2.PageRouteInfo<void> {
 /// generated route for
 /// [_i1.AuthErrorPage]
 class AuthErrorRoute extends _i2.PageRouteInfo<AuthErrorRouteArgs> {
-  AuthErrorRoute({required String errorText, _i3.Key? key})
+  AuthErrorRoute(
+      {required String errorButtonText,
+      required void Function() onPressed,
+      String? errorText,
+      _i5.Key? key})
       : super(AuthErrorRoute.name,
             path: 'AuthErrorRoute',
-            args: AuthErrorRouteArgs(errorText: errorText, key: key));
+            args: AuthErrorRouteArgs(
+                errorButtonText: errorButtonText,
+                onPressed: onPressed,
+                errorText: errorText,
+                key: key));
 
   static const String name = 'AuthErrorRoute';
 }
 
 class AuthErrorRouteArgs {
-  const AuthErrorRouteArgs({required this.errorText, this.key});
+  const AuthErrorRouteArgs(
+      {required this.errorButtonText,
+      required this.onPressed,
+      this.errorText,
+      this.key});
 
-  final String errorText;
+  final String errorButtonText;
 
-  final _i3.Key? key;
+  final void Function() onPressed;
+
+  final String? errorText;
+
+  final _i5.Key? key;
 
   @override
   String toString() {
-    return 'AuthErrorRouteArgs{errorText: $errorText, key: $key}';
+    return 'AuthErrorRouteArgs{errorButtonText: $errorButtonText, onPressed: $onPressed, errorText: $errorText, key: $key}';
   }
 }

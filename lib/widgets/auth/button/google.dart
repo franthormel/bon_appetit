@@ -12,7 +12,9 @@ class AuthGoogleProviderButtonWidget extends StatelessWidget {
       child: ElevatedButton.icon(
         icon: SvgPicture.asset('assets/google.svg'),
         label: const Center(child: Text("SIGN IN WITH GOOGLE")),
-        onPressed: () {},
+        onPressed: () {
+          // TODO: Google provider sign in
+        },
       ),
     );
   }
