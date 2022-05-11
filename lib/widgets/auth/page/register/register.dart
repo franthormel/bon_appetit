@@ -1,113 +1,36 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 
 import '../../../../router/index.dart';
-import '../../../../style/index.dart';
-import '../../button/button.dart';
-import '../../button/google.dart';
-import '../../label.dart';
-import '../../separator_text.dart';
+import '../../email_password/email_password.dart';
+import '../../email_password/mixin.dart';
 
-class AuthRegisterPageWidget extends StatefulWidget {
+class AuthRegisterPageWidget extends StatelessWidget
+    with AuthEmailPasswordMixin {
   final String email;
 
   const AuthRegisterPageWidget(this.email, {Key? key}) : super(key: key);
 
   @override
-  State<AuthRegisterPageWidget> createState() => _AuthRegisterPageWidgetState();
-}
-
-class _AuthRegisterPageWidgetState extends State<AuthRegisterPageWidget> {
-  final passwordController = TextEditingController();
-  bool obscureText = true;
-  String? errorText;
-
-  @override
   Widget build(BuildContext context) {
-    final emailController = TextEditingController(text: widget.email);
-
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        const AuthLabelWidget(text: "Email"),
-        const SizedBox(height: 16.0),
-        TextField(
-          controller: emailController,
-          readOnly: true,
-          decoration: InputDecoration(
-            suffixIcon: TextButton(
-              child: const Text("Edit"),
-              onPressed: () {
-                Provider.of<RouteProvider>(context, listen: false).pop();
-              },
-            ),
-          ),
-          style: Theme.of(context).textTheme.bodyText2,
-        ),
-        const SizedBox(height: 16.0),
-        const AuthLabelWidget(text: "Password"),
-        const SizedBox(height: 16.0),
-        TextField(
-          controller: passwordController,
-          cursorColor: BonAppetitColors.black,
-          decoration: InputDecoration(
-            errorText: errorText,
-            errorMaxLines: 3,
-            floatingLabelBehavior: FloatingLabelBehavior.never,
-            labelText: "Enter your password",
-            suffixIcon: TextButton(
-              child: Text(obscureText ? "Show" : "Hide"),
-              onPressed: () {
-                setState(() {
-                  obscureText = !obscureText;
-                });
-              },
-            ),
-          ),
-          onSubmitted: (password) {
-            _validatePassword(password);
-          },
-          obscureText: obscureText,
-          textInputAction: TextInputAction.done,
-          style: Theme.of(context).textTheme.bodyText2,
-        ),
-        const SizedBox(height: 16.0),
-        AuthButtonWidget(
-          text: "SIGN UP",
-          onPressed: () {
-            _validatePassword(passwordController.text);
-          },
-        ),
-        const SizedBox(height: 16.0),
-        const AuthSeparatorTextWidget(),
-        const SizedBox(height: 16.0),
-        const AuthGoogleProviderButtonWidget(),
-      ],
+    return AuthEmailPasswordWidget(
+      email: email,
+      onPasswordSubmit: onPasswordSubmit,
     );
   }
 
-  void _validatePassword(String password) {
+  @override
+  String? onPasswordSubmit(RouteProvider router, String password) {
     const minimumPasswordLength = 6;
     String? value;
 
     // If password is at least six (6) characters in length go to the next page ...
     if (password.length >= minimumPasswordLength) {
-      Provider.of<RouteProvider>(context, listen: false).push(
-        AuthConfirmRoute(email: widget.email, password: password),
-      );
+      router.push(AuthConfirmRoute(email: email, password: password));
     } else {
       value = "Password should be at least $minimumPasswordLength characters.";
     }
 
     // ... otherwise show error text
-    _changeErrorText(value);
-  }
-
-  void _changeErrorText(String? value) {
-    if (errorText != value) {
-      setState(() {
-        errorText = value;
-      });
-    }
+    return value;
   }
 }
