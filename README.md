@@ -1,6 +1,6 @@
 # bon_appetit
 
-Bon Appetit mobile application improved using Flutter
+Bon Appétit Demo mobile application improved using Flutter.
 
 ## Getting Started
 
