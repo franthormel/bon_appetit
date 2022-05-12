@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../router/index.dart';
-import 'account/account.dart';
+import 'auth/auth.dart';
 import 'router.dart';
 
 class DrawerContentsWidget extends StatelessWidget {
@@ -17,7 +17,7 @@ class DrawerContentsWidget extends StatelessWidget {
         DrawerRouterWidget("Shopping", DrawerShoppingRoute()),
         DrawerRouterWidget("Restaurants", DrawerRestaurantsRoute()),
         DrawerRouterWidget("Videos", DrawerVideosRoute()),
-        DrawerAccountWidget(),
+        DrawerAuthWidget(),
       ],
     );
   }

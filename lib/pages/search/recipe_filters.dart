@@ -1,4 +1,3 @@
-import 'package:bon_appetit/widgets/others/scaffolded_will_pop.dart';
 import 'package:flutter/material.dart';
 
 import '../../widgets/index.dart';

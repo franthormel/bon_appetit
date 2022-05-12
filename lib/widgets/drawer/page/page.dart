@@ -1,6 +1,6 @@
-import 'package:bon_appetit/widgets/others/scaffolded_will_pop.dart';
 import 'package:flutter/material.dart';
 
+import '../../others/scaffolded_will_pop.dart';
 import 'header.dart';
 
 class DrawerPageWidget extends StatelessWidget {
