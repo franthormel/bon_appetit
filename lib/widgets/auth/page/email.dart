@@ -54,7 +54,19 @@ class _AuthEmailPageWidgetState extends State<AuthEmailPageWidget> {
   /// Validates the email and its sign in options and push the page according to the return value.
   /// If any exception is caught, display an error on the [TextField.errorText].
   Future<void> _validateEmail(String email) async {
-    final value = await _checkSignIn(email);
+    String? value;
+
+    if (email.isNotEmpty) {
+      try {
+        final haveAccount = await FirebaseAuthService.checkEmail(email);
+        _pushRoute(haveAccount);
+      } catch (e) {
+        value = "Invalid email";
+      }
+    } else {
+      value = "Required.";
+    }
+
     _changeErrorText(value);
   }
 
@@ -64,20 +76,6 @@ class _AuthEmailPageWidgetState extends State<AuthEmailPageWidget> {
         errorText = value;
       });
     }
-  }
-
-  /// Check if the email can be used for signing in, any Exception will return an "Invalid email" value.
-  Future<String?> _checkSignIn(String email) async {
-    String? value;
-
-    try {
-      final haveAccount = await FirebaseAuthService.checkEmail(email);
-      _pushRoute(haveAccount);
-    } catch (e) {
-      return "Invalid email";
-    }
-
-    return value;
   }
 
   /// Display the login page if [value] param is true otherwise show the register page.

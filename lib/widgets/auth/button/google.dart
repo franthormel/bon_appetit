@@ -21,7 +21,6 @@ class AuthGoogleProviderButtonWidget extends StatelessWidget {
   }
 
   Future<void> googleSignIn() async {
-    final  googleUser = await GoogleSignIn().signIn();
-
+    final googleUser = await GoogleSignIn().signIn();
   }
 }
