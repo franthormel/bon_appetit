@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:google_sign_in/google_sign_in.dart';
 
 import 'size.dart';
 
@@ -17,5 +18,10 @@ class AuthGoogleProviderButtonWidget extends StatelessWidget {
         },
       ),
     );
+  }
+
+  Future<void> googleSignIn() async {
+    final  googleUser = await GoogleSignIn().signIn();
+
   }
 }
