@@ -23,7 +23,7 @@ export 'drawer/page/page.dart';
 export 'drawer/page/recipe/recipe.dart';
 export 'drawer/page/video/video.dart';
 export 'others/appbar_title.dart';
-export 'others/auth/user_change.dart';
+export 'auth/user_change.dart';
 export 'others/cached_hero_image.dart';
 export 'others/category_box.dart';
 export 'others/details/author_date.dart';

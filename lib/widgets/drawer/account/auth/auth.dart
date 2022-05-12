@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../others/auth/user_change.dart';
+import '../../../auth/user_change.dart';
 import 'in.dart';
 import 'out.dart';
 

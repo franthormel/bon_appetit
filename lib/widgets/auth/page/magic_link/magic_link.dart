@@ -21,6 +21,8 @@ class AuthMagicLinkPageWidget extends StatelessWidget {
         const SizedBox(height: 16.0),
         AuthButtonWidget(
           onPressed: () {
+            // TODO: If you can, make this work.
+            // https://www.linkedin.com/pulse/passwordless-email-sign-using-flutter-firebase-dynamic-akhil-anand/
             Provider.of<RouteProvider>(context, listen: false).push(
               AuthMagicLinkSendRoute(email: email),
             );
