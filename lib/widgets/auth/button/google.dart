@@ -15,6 +15,7 @@ class AuthGoogleProviderButtonWidget extends StatelessWidget {
         label: const Center(child: Text("SIGN IN WITH GOOGLE")),
         onPressed: () {
           // TODO: Google provider sign in
+          googleSignIn();
         },
       ),
     );
