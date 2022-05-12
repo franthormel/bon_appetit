@@ -14,12 +14,13 @@ class ConsumerPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       drawer: const DrawerWidget(),
+      resizeToAvoidBottomInset: false,
       appBar: AppBar(
         actions: [
           IconButton(
             onPressed: () {
-              final route = Provider.of<RouteProvider>(context, listen: false);
-              route.change(const SearchRoute());
+              final router = Provider.of<RouteProvider>(context, listen: false);
+              router.push(const SearchRoute());
             },
             icon: const Icon(Icons.search),
           ),
@@ -31,7 +32,7 @@ class ConsumerPage extends StatelessWidget {
         builder: (context, router, source, child) => ChangeNotifierProvider(
           create: (context) => SearchProvider(source),
           child: AutoRouter.declarative(
-            routes: (context) => [...router.pageRouteInfo],
+            routes: (context) => [...router.pageRoutes],
           ),
         ),
       ),

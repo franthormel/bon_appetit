@@ -12,6 +12,15 @@ class RoutePath {
   static const drawerShopping = "shopping";
   static const drawerVideos = "videos";
   static const searchRecipeFilters = "search-recipe-filters";
+  static const authAccount = "account";
+  static const authEmail = "email";
+  static const authLogin = "password";
+  static const authRegister = "register";
+  static const authConfirm = "confirm";
+  static const authSignInConfirm = "sign-in-confirm";
+  static const authError = "error";
+  static const authMagicLink = "magic-link";
+  static const authMagicLinkSend = "magic-link-send";
 }
 
 class RouteName {
@@ -28,4 +37,13 @@ class RouteName {
   static const drawerShopping = "DrawerShoppingRoute";
   static const drawerVideos = "DrawerVideosRoute";
   static const searchRecipeFilters = "SearchRecipeFiltersRoute";
+  static const authAccount = "AuthAccountRoute";
+  static const authEmail = "AuthEmailRoute";
+  static const authLogin = "AuthLoginRoute";
+  static const authRegister = "AuthRegisterRoute";
+  static const authConfirm = "AuthConfirmRoute";
+  static const authSignInConfirm = "AuthSignInConfirmRoute";
+  static const authError = "AuthErrorRoute";
+  static const authMagicLink = "AuthMagicLinkRoute";
+  static const authMagicLinkSend = "AuthMagicLinkSendRoute";
 }

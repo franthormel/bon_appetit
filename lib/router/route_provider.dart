@@ -6,11 +6,9 @@ import 'router.gr.dart';
 class RouteProvider extends ChangeNotifier {
   List<PageRouteInfo> _pageRoutes = [const HomeRoute()];
 
-  void change(PageRouteInfo pageRouteInfo) {
-    if (!_pageRoutes.contains(pageRouteInfo)) {
-      _pageRoutes = [pageRouteInfo];
-      notifyListeners();
-    }
+  void goToHomepage() {
+    _pageRoutes = [const HomeRoute()];
+    notifyListeners();
   }
 
   void pop() {
@@ -20,10 +18,10 @@ class RouteProvider extends ChangeNotifier {
     }
   }
 
-  void push(PageRouteInfo pageRouteInfo) {
-    _pageRoutes.add(pageRouteInfo);
+  void push(PageRouteInfo route) {
+    _pageRoutes.add(route);
     notifyListeners();
   }
 
-  List<PageRouteInfo> get pageRouteInfo => _pageRoutes;
+  List<PageRouteInfo> get pageRoutes => _pageRoutes;
 }

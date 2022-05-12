@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 
 import 'router/index.dart';
+import 'services/index.dart';
 import 'style/index.dart';
 
-void main() {
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await FirebaseAuthService.initializeFirebase();
   runApp(MyApp());
 }
 

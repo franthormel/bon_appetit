@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'colors.dart';
+import '../colors.dart';
 
 class BonAppetitThemeFutura {
   static ThemeData get theme {
@@ -9,6 +9,10 @@ class BonAppetitThemeFutura {
       fontFamily: 'Futura PT',
       primaryColor: BonAppetitColors.black,
       appBarTheme: const AppBarTheme(backgroundColor: BonAppetitColors.black),
+      checkboxTheme: CheckboxThemeData(
+        checkColor: MaterialStateProperty.all<Color>(BonAppetitColors.white),
+        fillColor: MaterialStateProperty.all<Color>(BonAppetitColors.black),
+      ),
       chipTheme: const ChipThemeData(
         backgroundColor: BonAppetitColors.platinum,
         selectedColor: BonAppetitColors.black,
@@ -18,16 +22,38 @@ class BonAppetitThemeFutura {
         ),
       ),
       dividerTheme: const DividerThemeData(color: BonAppetitColors.black),
+      elevatedButtonTheme: ElevatedButtonThemeData(
+        style: ElevatedButton.styleFrom(
+          primary: BonAppetitColors.black,
+          elevation: 0.0,
+          shape: const RoundedRectangleBorder(borderRadius: BorderRadius.zero),
+        ),
+      ),
       floatingActionButtonTheme: const FloatingActionButtonThemeData(
         backgroundColor: BonAppetitColors.black,
       ),
+      inputDecorationTheme: const InputDecorationTheme(
+        border: OutlineInputBorder(
+          borderRadius: BorderRadius.zero,
+          borderSide: BorderSide(color: BonAppetitColors.black),
+        ),
+        errorStyle: TextStyle(
+          color: BonAppetitColors.rossoCorsa,
+          fontWeight: FontWeight.w400,
+        ),
+        focusedBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.zero,
+          borderSide: BorderSide(color: BonAppetitColors.black),
+        ),
+      ),
       outlinedButtonTheme: OutlinedButtonThemeData(
         style: OutlinedButton.styleFrom(
-          backgroundColor: BonAppetitColors.black,
-          primary: BonAppetitColors.white,
-          shape: const BeveledRectangleBorder(borderRadius: BorderRadius.zero),
-          side: const BorderSide(color: BonAppetitColors.white),
-        ),
+            backgroundColor: BonAppetitColors.white,
+            elevation: 0.0,
+            primary: BonAppetitColors.black,
+            shape:
+                const RoundedRectangleBorder(borderRadius: BorderRadius.zero),
+            side: const BorderSide(color: BonAppetitColors.black)),
       ),
       progressIndicatorTheme: const ProgressIndicatorThemeData(
         circularTrackColor: BonAppetitColors.mediumChampagne,
@@ -35,17 +61,15 @@ class BonAppetitThemeFutura {
         linearTrackColor: BonAppetitColors.mediumChampagne,
         refreshBackgroundColor: BonAppetitColors.dimGray,
       ),
+      textButtonTheme: TextButtonThemeData(
+        style: TextButton.styleFrom(primary: BonAppetitColors.black),
+      ),
       textTheme: _textTheme,
     );
   }
 
   static TextTheme get _textTheme {
     return const TextTheme(
-      caption: TextStyle(
-        color: BonAppetitColors.black,
-        fontWeight: FontWeight.w600,
-        letterSpacing: 1.5,
-      ),
       headline4: TextStyle(
         color: BonAppetitColors.black,
         fontWeight: FontWeight.w600,
@@ -63,6 +87,11 @@ class BonAppetitThemeFutura {
         fontWeight: FontWeight.w500,
       ),
       subtitle2: TextStyle(fontWeight: FontWeight.w600, letterSpacing: 1.0),
+      caption: TextStyle(
+        color: BonAppetitColors.black,
+        fontWeight: FontWeight.w600,
+        letterSpacing: 1.5,
+      ),
     );
   }
 }

@@ -71,6 +71,56 @@ import 'constants.dart';
           name: RouteName.searchRecipeFilters,
           path: RoutePath.searchRecipeFilters,
         ),
+        AutoRoute(
+          page: SearchRecipeFiltersPage,
+          name: RouteName.searchRecipeFilters,
+          path: RoutePath.searchRecipeFilters,
+        ),
+        AutoRoute(
+          page: AuthAccountPage,
+          name: RouteName.authAccount,
+          path: RoutePath.authAccount,
+        ),
+        AutoRoute(
+          page: AuthEmailPage,
+          name: RouteName.authEmail,
+          path: RoutePath.authEmail,
+        ),
+        AutoRoute(
+          page: AuthLoginPage,
+          name: RouteName.authLogin,
+          path: RoutePath.authLogin,
+        ),
+        AutoRoute(
+          page: AuthRegisterPage,
+          name: RouteName.authRegister,
+          path: RoutePath.authRegister,
+        ),
+        AutoRoute(
+          page: AuthConfirmPage,
+          name: RouteName.authConfirm,
+          path: RoutePath.authConfirm,
+        ),
+        AutoRoute(
+          page: AuthSignInConfirmPage,
+          name: RouteName.authSignInConfirm,
+          path: RoutePath.authSignInConfirm,
+        ),
+        AutoRoute(
+          page: AuthErrorPage,
+          name: RouteName.authError,
+          path: RoutePath.authError,
+        ),
+        AutoRoute(
+          page: AuthMagicLinkPage,
+          name: RouteName.authMagicLink,
+          path: RoutePath.authMagicLink,
+        ),
+        AutoRoute(
+          page: AuthMagicLinkSendPage,
+          name: RouteName.authMagicLinkSend,
+          path: RoutePath.authMagicLinkSend,
+        ),
       ],
     ),
     RedirectRoute(path: '*', redirectTo: RouteName.initial),

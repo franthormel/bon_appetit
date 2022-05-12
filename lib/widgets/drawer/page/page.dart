@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../others/scaffolded_will_pop.dart';
 import 'header.dart';
 
 class DrawerPageWidget extends StatelessWidget {
@@ -18,15 +19,19 @@ class DrawerPageWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return CustomScrollView(
-      slivers: [
-        SliverToBoxAdapter(
-          child: DrawerPageHeaderWidget(title, subHeader: subHeader),
-        ),
-        SliverList(
-          delegate: SliverChildBuilderDelegate(builder, childCount: count),
-        ),
-      ],
+    return ScaffoldedWillPopWidget(
+      appBar: AppBar(),
+      body: CustomScrollView(
+        physics: const BouncingScrollPhysics(),
+        slivers: [
+          SliverToBoxAdapter(
+            child: DrawerPageHeaderWidget(title, subHeader: subHeader),
+          ),
+          SliverList(
+            delegate: SliverChildBuilderDelegate(builder, childCount: count),
+          ),
+        ],
+      ),
     );
   }
 }

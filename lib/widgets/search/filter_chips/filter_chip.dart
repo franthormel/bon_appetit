@@ -24,8 +24,8 @@ class SearchPageFilterChipWidget extends StatelessWidget {
       onDeleted: () {
         provider.removeFilter(text, true);
       },
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(0.0),
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.zero,
         side: BorderSide.none,
       ),
     );

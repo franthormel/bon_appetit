@@ -13,9 +13,7 @@ class DrawerBannerWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        final route = Provider.of<RouteProvider>(context, listen: false);
-        route.change(const HomeRoute());
-
+        Provider.of<RouteProvider>(context, listen: false).goToHomepage();
         AutoRouter.of(context).pop();
       },
       child: DrawerHeader(

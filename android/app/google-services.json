@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "971857908357",
+    "project_id": "flutter-bon-appetit",
+    "storage_bucket": "flutter-bon-appetit.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:971857908357:android:815da727342a4fd8644fec",
+        "android_client_info": {
+          "package_name": "com.franca.demo.bon.appetit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "971857908357-7orglq9s92pk32rp6t7sfuo8akdp8riv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.franca.demo.bon.appetit",
+            "certificate_hash": "a9cc8cb8777c1fba6bb0acdfc6766ff87f3ef967"
+          }
+        },
+        {
+          "client_id": "971857908357-qrjkeotvtd7u7ropo4jn55vflsur5078.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNDNZp9skXPduXQThXw-AlJypd9kg1II8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "971857908357-qrjkeotvtd7u7ropo4jn55vflsur5078.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "971857908357-jh1c3g70r61pp4t9s0dsfvvas6f7jib9.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.franca.bon.appetit.bonAppetit"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
