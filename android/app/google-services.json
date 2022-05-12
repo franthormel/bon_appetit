@@ -14,6 +14,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "971857908357-as1j25tt91mbq4hodbkoiflffk8rdpcv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.franca.demo.bon.appetit",
+            "certificate_hash": "64e9e1ca3333f0673744f4e7daa18116fd7a00e5"
+          }
+        },
+        {
           "client_id": "971857908357-qrjkeotvtd7u7ropo4jn55vflsur5078.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -29,6 +37,13 @@
             {
               "client_id": "971857908357-qrjkeotvtd7u7ropo4jn55vflsur5078.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "971857908357-jh1c3g70r61pp4t9s0dsfvvas6f7jib9.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.franca.bon.appetit.bonAppetit"
+              }
             }
           ]
         }
