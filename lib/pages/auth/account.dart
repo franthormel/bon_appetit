@@ -8,7 +8,7 @@ class AuthAccountPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScaffoldedWillPopWidget(
-      appBar: AppBar(),
+      appBar: AppBar(title: const Text("My Account")),
       body: const AuthAccountPageWidget(),
     );
   }

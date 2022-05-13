@@ -20,7 +20,7 @@ class DrawerPageWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScaffoldedWillPopWidget(
-      appBar: AppBar(),
+      appBar: AppBar(title: Text(title)),
       body: CustomScrollView(
         physics: const BouncingScrollPhysics(),
         slivers: [

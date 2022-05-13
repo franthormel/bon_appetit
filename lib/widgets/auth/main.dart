@@ -11,11 +11,13 @@ class AuthMainWidget extends StatelessWidget {
   final Widget? end;
   final String header;
   final String subHeader;
+  final String title;
 
   const AuthMainWidget({
     required this.child,
     required this.header,
     required this.subHeader,
+    required this.title,
     this.email,
     this.end,
     Key? key,
@@ -24,7 +26,7 @@ class AuthMainWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScaffoldedWillPopWidget(
-      appBar: AppBar(),
+      appBar: AppBar(title: Text(title)),
       body: ListView(
         padding: const EdgeInsets.symmetric(horizontal: 24.0),
         children: [

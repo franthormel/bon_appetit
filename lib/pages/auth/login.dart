@@ -18,6 +18,7 @@ class AuthLoginPage extends StatelessWidget {
       end: AuthLoginPageEndWidget(email),
       header: "Sign in to your account",
       subHeader: "Enter your password to continue.",
+      title: "Sign in password",
     );
   }
 }

@@ -11,6 +11,7 @@ class AuthSignInConfirmPage extends StatelessWidget {
       child: AuthSignInPageConfirmWidget(),
       header: "You’re signed in",
       subHeader: "You can resume right where you left off.",
+      title: "Sign in success",
     );
   }
 }

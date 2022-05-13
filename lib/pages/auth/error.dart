@@ -23,6 +23,7 @@ class AuthErrorPage extends StatelessWidget {
       ),
       header: "Error occurred",
       subHeader: errorText ?? "Unknown error occurred.",
+      title: "Sign in error",
     );
   }
 }

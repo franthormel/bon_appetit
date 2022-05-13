@@ -12,9 +12,11 @@ mixin DetailsContentsMixin {
 class DetailsContentsWidget extends StatelessWidget {
   final List<Widget> children;
   final EdgeInsets? padding;
+  final String title;
 
   const DetailsContentsWidget({
     required this.children,
+    required this.title,
     this.padding,
     Key? key,
   }) : super(key: key);
@@ -22,7 +24,7 @@ class DetailsContentsWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScaffoldedWillPopWidget(
-      appBar: AppBar(),
+      appBar: AppBar(title: Text(title)),
       body: ListView.separated(
         padding: padding ?? const EdgeInsets.symmetric(vertical: 21.0),
         itemBuilder: (context, i) => children[i],

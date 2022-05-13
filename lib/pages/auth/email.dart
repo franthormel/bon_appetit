@@ -12,6 +12,7 @@ class AuthEmailPage extends StatelessWidget {
       child: AuthEmailPageWidget(),
       header: "Sign in to your account",
       subHeader: "Enter your email address to continue.",
+      title: "Sign in email",
     );
   }
 }

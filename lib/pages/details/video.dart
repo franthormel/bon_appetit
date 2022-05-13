@@ -13,6 +13,7 @@ class VideoDetailsPage extends StatelessWidget with DetailsContentsMixin {
     return DetailsContentsWidget(
       children: children,
       padding: const EdgeInsets.only(bottom: 21.0),
+      title: "Video",
     );
   }
 
