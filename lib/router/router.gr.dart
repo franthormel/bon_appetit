@@ -104,7 +104,7 @@ class AppRouter extends _i2.RootStackRouter {
       final args = routeData.argsAs<AuthConfirmRouteArgs>();
       return _i2.MaterialPageX<dynamic>(
           routeData: routeData,
-          child: _i1.AuthConfirmPage(
+          child: _i1.AuthRegisterConfirmPage(
               email: args.email, password: args.password, key: args.key));
     },
     AuthSignInConfirmRoute.name: (routeData) {
@@ -407,7 +407,7 @@ class AuthRegisterRouteArgs {
 }
 
 /// generated route for
-/// [_i1.AuthConfirmPage]
+/// [_i1.AuthRegisterConfirmPage]
 class AuthConfirmRoute extends _i2.PageRouteInfo<AuthConfirmRouteArgs> {
   AuthConfirmRoute(
       {required String email, required String password, _i3.Key? key})

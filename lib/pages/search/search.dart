@@ -8,7 +8,7 @@ class SearchPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScaffoldedWillPopWidget(
-      appBar: AppBar(),
+      appBar: AppBar(title: const Text("Search")),
       body: const SearchPageContentWidget(),
     );
   }

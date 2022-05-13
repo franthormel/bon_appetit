@@ -15,6 +15,7 @@ class AuthMagicLinkPage extends StatelessWidget {
       header: "Get help signing in",
       subHeader:
           "Enter your email address to receive a sign-in link, no password necessary.",
+      title: "Sign in help",
     );
   }
 }

@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-import '../../widgets/index.dart';
+import '../../../widgets/index.dart';
 
-class AuthConfirmPage extends StatelessWidget {
+class AuthRegisterConfirmPage extends StatelessWidget {
   final String email;
   final String password;
 
-  const AuthConfirmPage({
+  const AuthRegisterConfirmPage({
     required this.email,
     required this.password,
     Key? key,
@@ -18,7 +18,8 @@ class AuthConfirmPage extends StatelessWidget {
       child: AuthConfirmPageWidget(email: email, password: password),
       email: email,
       header: "Create an account",
-      subHeader: "Please enter a password to register a new account.",
+      subHeader: "Finish creating your account: ",
+      title: "Sign up confirm",
     );
   }
 }
