@@ -1,3 +1,4 @@
+import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:flutter/material.dart';
 
 import 'router/index.dart';
@@ -20,7 +21,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp.router(
       title: 'Bon Appétit',
       theme: BonAppetitThemeFutura.theme,
-      routerDelegate: _appRouter.delegate(),
+      routerDelegate: _appRouter.delegate(
+        navigatorObservers: () =>
+            [FirebaseAnalyticsObserver(analytics: FirebaseAnalytics.instance)],
+      ),
       routeInformationParser: _appRouter.defaultRouteParser(),
     );
   }
