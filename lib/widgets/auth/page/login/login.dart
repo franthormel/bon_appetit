@@ -16,6 +16,7 @@ class AuthLoginWidget extends StatelessWidget with AuthEmailPasswordMixin {
     return AuthEmailPasswordWidget(
       buttonText: "SIGN IN",
       email: email,
+      googleButtonCallback: FirebaseAnalyticsService.logLoginViaGoogle,
       onPasswordSubmit: onPasswordSubmit,
     );
   }

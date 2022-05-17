@@ -8,7 +8,13 @@ import '../../../services/index.dart';
 import 'size.dart';
 
 class AuthGoogleProviderButtonWidget extends StatelessWidget {
-  const AuthGoogleProviderButtonWidget({Key? key}) : super(key: key);
+  /// Called when trying to login via Google OAuth.
+  final void Function()? callback;
+
+  const AuthGoogleProviderButtonWidget({
+    this.callback,
+    Key? key,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -26,9 +32,13 @@ class AuthGoogleProviderButtonWidget extends StatelessWidget {
   }
 
   Future<void> signIn(RouteProvider router) async {
-
     try {
       await FirebaseAuthService.signInWithGoogle();
+
+      if (callback != null) {
+        callback!();
+      }
+
       router.goToHomepage();
     } on FirebaseAuthException catch (e) {
       router.push(AuthErrorRoute(

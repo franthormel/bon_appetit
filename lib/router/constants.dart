@@ -16,7 +16,7 @@ class RoutePath {
   static const authEmail = "email";
   static const authLogin = "password";
   static const authRegister = "register";
-  static const authConfirm = "confirm";
+  static const authRegisterConfirm = "register-confirm";
   static const authSignInConfirm = "sign-in-confirm";
   static const authError = "error";
   static const authMagicLink = "magic-link";
@@ -41,7 +41,7 @@ class RouteName {
   static const authEmail = "AuthEmailRoute";
   static const authLogin = "AuthLoginRoute";
   static const authRegister = "AuthRegisterRoute";
-  static const authConfirm = "AuthConfirmRoute";
+  static const authRegisterConfirm = "AuthRegisterConfirmRoute";
   static const authSignInConfirm = "AuthSignInConfirmRoute";
   static const authError = "AuthErrorRoute";
   static const authMagicLink = "AuthMagicLinkRoute";

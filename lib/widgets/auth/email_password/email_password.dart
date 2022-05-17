@@ -13,11 +13,13 @@ class AuthEmailPasswordWidget extends StatefulWidget {
   final String buttonText;
   final String email;
   final String? Function(RouteProvider, String) onPasswordSubmit;
+  final void Function()? googleButtonCallback;
 
   const AuthEmailPasswordWidget({
     required this.buttonText,
     required this.email,
     required this.onPasswordSubmit,
+    this.googleButtonCallback,
     Key? key,
   }) : super(key: key);
 
@@ -91,7 +93,7 @@ class _AuthEmailPasswordWidgetState extends State<AuthEmailPasswordWidget> {
         const SizedBox(height: 16.0),
         const AuthSeparatorTextWidget(),
         const SizedBox(height: 16.0),
-        const AuthGoogleProviderButtonWidget(),
+        AuthGoogleProviderButtonWidget(callback: widget.googleButtonCallback),
       ],
     );
   }

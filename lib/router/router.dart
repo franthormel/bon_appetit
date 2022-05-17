@@ -98,8 +98,8 @@ import 'constants.dart';
         ),
         AutoRoute(
           page: AuthRegisterConfirmPage,
-          name: RouteName.authConfirm,
-          path: RoutePath.authConfirm,
+          name: RouteName.authRegisterConfirm,
+          path: RoutePath.authRegisterConfirm,
         ),
         AutoRoute(
           page: AuthSignInConfirmPage,

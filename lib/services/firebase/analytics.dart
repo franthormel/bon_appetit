@@ -37,13 +37,23 @@ class FirebaseAnalyticsService {
     await _logSelectContent("Video", video.id);
   }
 
+  static Future<void> logSignUpViaGoogle() async {
+    await _logSignUp("Google OAuth");
+  }
+
+  static Future<void> logSignUp() async {
+    await _logSignUp("Sign up");
+  }
+
+  static Future<void> _logSignUp(String value) async {
+    await FirebaseAnalytics.instance.logSignUp(signUpMethod: value);
+  }
+
   static Future<void> _logLogin(String value) async {
     await FirebaseAnalytics.instance.logLogin(loginMethod: value);
   }
 
   static Future<void> _logSelectContent(String type, String id) async {
-    print(">>> Selected: $type \tID: $id");
-
     await FirebaseAnalytics.instance.logSelectContent(
       contentType: type,
       itemId: id,

@@ -23,6 +23,8 @@ class FirebaseAuthService {
     required String email,
     required String password,
   }) async {
+    await FirebaseAnalyticsService.logSignUp();
+
     return await FirebaseAuth.instance.createUserWithEmailAndPassword(
       email: email,
       password: password,
@@ -54,8 +56,6 @@ class FirebaseAuthService {
 
   static Future<UserCredential> signInWithGoogle() async {
     final credential = await _fetchGoogleCredential();
-
-    await FirebaseAnalyticsService.logLoginViaGoogle();
 
     // Once signed in, return the UserCredential.
     return await FirebaseAuth.instance.signInWithCredential(credential);
