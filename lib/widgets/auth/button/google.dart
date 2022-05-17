@@ -1,7 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:google_sign_in/google_sign_in.dart';
 import 'package:provider/provider.dart';
 
 import '../../../router/index.dart';
@@ -27,13 +26,9 @@ class AuthGoogleProviderButtonWidget extends StatelessWidget {
   }
 
   Future<void> signIn(RouteProvider router) async {
-    final credential = await _getGoogleCredential();
 
     try {
-      // Once signed in, return the UserCredential
-      await FirebaseAuth.instance.signInWithCredential(credential);
-
-      FirebaseAnalyticsService.logLoginViaGoogle();
+      await FirebaseAuthService.signInWithGoogle();
       router.goToHomepage();
     } on FirebaseAuthException catch (e) {
       router.push(AuthErrorRoute(
@@ -47,21 +42,5 @@ class AuthGoogleProviderButtonWidget extends StatelessWidget {
         onPressed: router.pop,
       ));
     }
-  }
-
-  Future<OAuthCredential> _getGoogleCredential() async {
-    // Trigger the authentication flow
-    final user = await GoogleSignIn().signIn();
-
-    // Obtain the auth details from the request
-    final auth = await user?.authentication;
-
-    // Create a new credential
-    final credential = GoogleAuthProvider.credential(
-      accessToken: auth?.accessToken,
-      idToken: auth?.idToken,
-    );
-
-    return credential;
   }
 }

@@ -19,6 +19,10 @@ class FirebaseAnalyticsService {
     await _logLogin("Google OAuth");
   }
 
+  static Future<void> logSearch(String value) async {
+    await FirebaseAnalytics.instance.logSearch(searchTerm: value);
+  }
+
   static Future<void> _logLogin(String value) async {
     await FirebaseAnalytics.instance.logLogin(loginMethod: value);
   }
