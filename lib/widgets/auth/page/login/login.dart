@@ -44,6 +44,7 @@ class AuthLoginWidget extends StatelessWidget with AuthEmailPasswordMixin {
 
       // Show the sign in confirm page if the email and password are valid
       if (account.user != null) {
+        FirebaseAnalyticsService.logLoginViaSignIn();
         router.push(const AuthSignInConfirmRoute());
       } else {
         throw Exception();

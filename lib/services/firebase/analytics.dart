@@ -10,4 +10,16 @@ class FirebaseAnalyticsService {
       },
     );
   }
+
+  static Future<void> logLoginViaSignIn() async {
+    await _logLogin("Password");
+  }
+
+  static Future<void> logLoginViaGoogle() async {
+    await _logLogin("Google OAuth");
+  }
+
+  static Future<void> _logLogin(String value) async {
+    await FirebaseAnalytics.instance.logLogin(loginMethod: value);
+  }
 }

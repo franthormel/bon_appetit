@@ -5,6 +5,7 @@ import 'package:google_sign_in/google_sign_in.dart';
 import 'package:provider/provider.dart';
 
 import '../../../router/index.dart';
+import '../../../services/index.dart';
 import 'size.dart';
 
 class AuthGoogleProviderButtonWidget extends StatelessWidget {
@@ -32,6 +33,7 @@ class AuthGoogleProviderButtonWidget extends StatelessWidget {
       // Once signed in, return the UserCredential
       await FirebaseAuth.instance.signInWithCredential(credential);
 
+      FirebaseAnalyticsService.logLoginViaGoogle();
       router.goToHomepage();
     } on FirebaseAuthException catch (e) {
       router.push(AuthErrorRoute(
