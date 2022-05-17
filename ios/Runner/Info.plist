@@ -47,5 +47,7 @@
     <dict>
        <key>NSAllowsArbitraryLoads</key><true/>
     </dict>
+    <key>FirebaseAutomaticScreenReportingEnabled</key>
+    <NO/>
 </dict>
 </plist>

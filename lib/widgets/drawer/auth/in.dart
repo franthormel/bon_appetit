@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import '../../../../router/index.dart';
-import '../../../../services/index.dart';
-import 'entry.dart';
+import '../../../router/index.dart';
+import '../../../services/index.dart';
+import '../entry.dart';
 
 class DrawerAccountAuthInWidget extends StatelessWidget {
   const DrawerAccountAuthInWidget({Key? key}) : super(key: key);

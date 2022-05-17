@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../../router/index.dart';
 import 'auth/auth.dart';
 import 'router.dart';
+import 'settings.dart';
 
 class DrawerContentsWidget extends StatelessWidget {
   const DrawerContentsWidget({Key? key}) : super(key: key);
@@ -17,6 +18,7 @@ class DrawerContentsWidget extends StatelessWidget {
         DrawerRouterWidget("Shopping", DrawerShoppingRoute()),
         DrawerRouterWidget("Restaurants", DrawerRestaurantsRoute()),
         DrawerRouterWidget("Videos", DrawerVideosRoute()),
+        DrawerSettingsWidget(),
         DrawerAuthWidget(),
       ],
     );

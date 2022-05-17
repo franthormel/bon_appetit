@@ -21,10 +21,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp.router(
       title: 'Bon Appétit',
       theme: BonAppetitThemeFutura.theme,
-      routerDelegate: _appRouter.delegate(
-        navigatorObservers: () =>
-            [FirebaseAnalyticsObserver(analytics: FirebaseAnalytics.instance)],
-      ),
+      routerDelegate: _appRouter.delegate(),
       routeInformationParser: _appRouter.defaultRouteParser(),
     );
   }
