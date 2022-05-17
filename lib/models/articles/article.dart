@@ -35,4 +35,7 @@ class Article with BaseModelsMixin {
       _$ArticleFromJson(json);
 
   Map<String, dynamic> toJson() => _$ArticleToJson(this);
+
+  @override
+  String get heroTag => id;
 }

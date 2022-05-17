@@ -80,4 +80,7 @@ class Recipe with BaseModelsMixin {
   Map<String, dynamic> toJson() => _$RecipeToJson(this);
 
   String? get issue => dateIssue != null ? "${dateIssue!} Issue" : null;
+
+  @override
+  String get heroTag => id;
 }
