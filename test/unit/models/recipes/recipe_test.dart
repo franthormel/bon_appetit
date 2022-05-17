@@ -37,23 +37,5 @@ void main() {
         expect(recipe.issue, "January 2022 Issue");
       });
     });
-
-    group("heroTag", () {
-      test("should return a String from its ObjectKey value", () {
-        final recipe = Recipe(
-          id: "1",
-          categories: [],
-          dateUploaded: DateTime.now(),
-          description: "description",
-          imageUrl: "imageUrl",
-          ingredients: [],
-          servings: "servings",
-          steps: [],
-          title: "title",
-        );
-
-        expect(recipe.heroTag, ObjectKey(recipe).toString());
-      });
-    });
   });
 }

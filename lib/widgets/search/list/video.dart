@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../models/index.dart';
 import '../../../router/index.dart';
+import '../../../services/index.dart';
 import 'item.dart';
 
 class SearchPageListVideoWidget extends StatelessWidget {
@@ -12,6 +13,9 @@ class SearchPageListVideoWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SearchPageListItemWidget(
+      callback: () {
+        FirebaseAnalyticsService.logSelectedVideo(video);
+      },
       category: "VIDEO",
       imageUrl: video.imageUrl,
       hasOverlayPlayButton: true,

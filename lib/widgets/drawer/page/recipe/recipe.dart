@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../../models/index.dart';
 import '../../../../router/index.dart';
+import '../../../../services/index.dart';
 import '../../../others/page_route_pusher.dart';
 import 'button.dart';
 import 'description.dart';
@@ -17,6 +18,9 @@ class DrawerPageRecipeWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return PageRoutePusherWidget(
+      callback: () {
+        FirebaseAnalyticsService.logSelectedRecipe(recipe);
+      },
       route: RecipeDetailsRoute(recipe: recipe),
       child: Column(
         children: [

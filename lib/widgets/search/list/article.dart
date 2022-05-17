@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../models/index.dart';
 import '../../../router/index.dart';
+import '../../../services/index.dart';
 import 'item.dart';
 
 class SearchPageListArticleWidget extends StatelessWidget {
@@ -12,6 +13,9 @@ class SearchPageListArticleWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SearchPageListItemWidget(
+      callback: () {
+        FirebaseAnalyticsService.logSelectedArticle(article);
+      },
       category: article.category,
       imageUrl: article.imageUrl,
       heroTag: article.heroTag,

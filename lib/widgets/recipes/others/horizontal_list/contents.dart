@@ -31,6 +31,9 @@ class HorizontalListRecipeContentsWidget extends StatelessWidget
           final recipe = recipes[i];
 
           return PageRoutePusherWidget(
+            callback: () {
+              FirebaseAnalyticsService.logSelectedRecipe(recipe);
+            },
             route: RecipeDetailsRoute(recipe: recipe),
             child: HorizontalListRecipeWidget(recipe),
           );

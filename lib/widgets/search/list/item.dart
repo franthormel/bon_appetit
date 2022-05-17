@@ -7,6 +7,7 @@ import '../../../style/index.dart';
 import '../../others/cached_hero_image.dart';
 
 class SearchPageListItemWidget extends StatelessWidget {
+  final void Function()? callback;
   final String category;
   final bool hasOverlayPlayButton;
   final String heroTag;
@@ -20,6 +21,7 @@ class SearchPageListItemWidget extends StatelessWidget {
     required this.heroTag,
     required this.route,
     required this.title,
+    this.callback,
     this.hasOverlayPlayButton = false,
     Key? key,
   }) : super(key: key);
@@ -32,6 +34,10 @@ class SearchPageListItemWidget extends StatelessWidget {
       borderRadius: BorderRadius.circular(1.0),
       child: InkWell(
         onTap: () {
+          if (callback != null) {
+            callback!();
+          }
+
           Provider.of<RouteProvider>(context, listen: false).push(route);
         },
         child: Padding(

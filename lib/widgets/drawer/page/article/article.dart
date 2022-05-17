@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../../models/index.dart';
 import '../../../../router/index.dart';
+import '../../../../services/index.dart';
 import '../../../../style/index.dart';
 import '../../../others/cached_hero_image.dart';
 import '../../../others/header_body/five.dart';
@@ -20,6 +21,9 @@ class DrawerPageArticleWidget extends StatelessWidget {
 
     return DrawerPagePaddingWidget(
       child: PageRoutePusherWidget(
+        callback: () {
+          FirebaseAnalyticsService.logSelectedArticle(article);
+        },
         route: ArticleDetailsRoute(article: article),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
