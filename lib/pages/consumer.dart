@@ -19,8 +19,9 @@ class ConsumerPage extends StatelessWidget {
         actions: [
           IconButton(
             onPressed: () {
-              final router = Provider.of<RouteProvider>(context, listen: false);
-              router.push(const SearchRoute());
+              Provider.of<RouteProvider>(context, listen: false).push(
+                const SearchRoute(),
+              );
             },
             icon: const Icon(Icons.search),
           ),

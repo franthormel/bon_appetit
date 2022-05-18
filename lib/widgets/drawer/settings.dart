@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 import 'entry.dart';
+import '../../services/index.dart';
+import '../../router/index.dart';
 
 class DrawerSettingsWidget extends StatelessWidget {
   const DrawerSettingsWidget({Key? key}) : super(key: key);
@@ -10,7 +13,9 @@ class DrawerSettingsWidget extends StatelessWidget {
     return DrawerAccountEntryWidget(
       "Settings",
       onTap: () {
-        // TODO: Create page for setConsent() settings page
+        Provider.of<RouteProvider>(context, listen: false).push(
+          const SettingsRoute(),
+        );
       },
     );
   }

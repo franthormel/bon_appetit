@@ -121,6 +121,11 @@ import 'constants.dart';
           name: RouteName.authMagicLinkSend,
           path: RoutePath.authMagicLinkSend,
         ),
+        AutoRoute(
+          page: SettingsPage,
+          name: RouteName.settings,
+          path: RoutePath.settings,
+        ),
       ],
     ),
     RedirectRoute(path: '*', redirectTo: RouteName.initial),

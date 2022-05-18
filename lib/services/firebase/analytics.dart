@@ -6,12 +6,12 @@ import '../../models/index.dart';
 class FirebaseAnalyticsService {
   static FirebaseAnalytics get _instance => FirebaseAnalytics.instance;
 
-  static Future<void> logLoginViaSignIn() async {
-    await _logLogin("Password");
-  }
-
   static Future<void> logLoginViaGoogle() async {
     await _logLogin("Google OAuth");
+  }
+
+  static Future<void> logLoginViaSignIn() async {
+    await _logLogin("Password");
   }
 
   static Future<void> logSearch(String value) async {

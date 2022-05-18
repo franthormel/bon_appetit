@@ -132,6 +132,10 @@ class AppRouter extends _i2.RootStackRouter {
       return _i2.MaterialPageX<dynamic>(
           routeData: routeData,
           child: _i1.AuthMagicLinkSendPage(email: args.email, key: args.key));
+    },
+    SettingsRoute.name: (routeData) {
+      return _i2.MaterialPageX<dynamic>(
+          routeData: routeData, child: const _i1.SettingsPage());
     }
   };
 
@@ -181,7 +185,9 @@ class AppRouter extends _i2.RootStackRouter {
           _i2.RouteConfig(AuthMagicLinkRoute.name,
               path: 'magic-link', parent: DataProviderRoute.name),
           _i2.RouteConfig(AuthMagicLinkSendRoute.name,
-              path: 'magic-link-send', parent: DataProviderRoute.name)
+              path: 'magic-link-send', parent: DataProviderRoute.name),
+          _i2.RouteConfig(SettingsRoute.name,
+              path: 'settings', parent: DataProviderRoute.name)
         ]),
         _i2.RouteConfig('*#redirect',
             path: '*', redirectTo: 'DataProviderRoute', fullMatch: true)
@@ -532,4 +538,12 @@ class AuthMagicLinkSendRouteArgs {
   String toString() {
     return 'AuthMagicLinkSendRouteArgs{email: $email, key: $key}';
   }
+}
+
+/// generated route for
+/// [_i1.SettingsPage]
+class SettingsRoute extends _i2.PageRouteInfo<void> {
+  const SettingsRoute() : super(SettingsRoute.name, path: 'settings');
+
+  static const String name = 'SettingsRoute';
 }
