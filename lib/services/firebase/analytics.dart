@@ -4,14 +4,7 @@ import 'package:firebase_analytics/firebase_analytics.dart';
 import '../../models/index.dart';
 
 class FirebaseAnalyticsService {
-  static Future<void> trackScreen(PageRouteInfo route) async {
-    await FirebaseAnalytics.instance.logEvent(
-      name: 'screen_view',
-      parameters: {
-        'screen_name': route.routeName,
-      },
-    );
-  }
+  static FirebaseAnalytics get _instance => FirebaseAnalytics.instance;
 
   static Future<void> logLoginViaSignIn() async {
     await _logLogin("Password");
@@ -22,7 +15,7 @@ class FirebaseAnalyticsService {
   }
 
   static Future<void> logSearch(String value) async {
-    await FirebaseAnalytics.instance.logSearch(searchTerm: value);
+    await _instance.logSearch(searchTerm: value);
   }
 
   static Future<void> logSelectedArticle(Article article) async {
@@ -37,24 +30,37 @@ class FirebaseAnalyticsService {
     await _logSelectContent("Video", video.id);
   }
 
-  static Future<void> logSignUpViaGoogle() async {
-    await _logSignUp("Google OAuth");
-  }
-
   static Future<void> logSignUp() async {
     await _logSignUp("Sign up");
   }
 
+  static Future<void> logSignUpViaGoogle() async {
+    await _logSignUp("Google OAuth");
+  }
+
+  static Future<void> trackScreen(PageRouteInfo route) async {
+    await _instance.logEvent(
+      name: 'screen_view',
+      parameters: {
+        'screen_name': route.routeName,
+      },
+    );
+  }
+
+  static Future<void> setUserId(String? id) async {
+    await _instance.setUserId(id: id);
+  }
+
   static Future<void> _logSignUp(String value) async {
-    await FirebaseAnalytics.instance.logSignUp(signUpMethod: value);
+    await _instance.logSignUp(signUpMethod: value);
   }
 
   static Future<void> _logLogin(String value) async {
-    await FirebaseAnalytics.instance.logLogin(loginMethod: value);
+    await _instance.logLogin(loginMethod: value);
   }
 
   static Future<void> _logSelectContent(String type, String id) async {
-    await FirebaseAnalytics.instance.logSelectContent(
+    await _instance.logSelectContent(
       contentType: type,
       itemId: id,
     );

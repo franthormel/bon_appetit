@@ -10,12 +10,11 @@ import 'platform.dart';
 class FirebaseAuthService {
   static bool get isAuthenticated => FirebaseAuth.instance.currentUser != null;
 
+  static FirebaseAuth get _instance => FirebaseAuth.instance;
+
   /// Returns true if the email is available for sign-in. Throws a [FirebaseAuthException] if the email is invalid.
   static Future<bool> checkEmail(String email) async {
-    final methods = await FirebaseAuth.instance.fetchSignInMethodsForEmail(
-      email,
-    );
-
+    final methods = await _instance.fetchSignInMethodsForEmail(email);
     return methods.isNotEmpty;
   }
 
@@ -25,10 +24,14 @@ class FirebaseAuthService {
   }) async {
     await FirebaseAnalyticsService.logSignUp();
 
-    return await FirebaseAuth.instance.createUserWithEmailAndPassword(
+    final credential = await _instance.createUserWithEmailAndPassword(
       email: email,
       password: password,
     );
+
+    _setAnalyticsUserId(credential: credential);
+
+    return credential;
   }
 
   static Future<void> initializeFirebase() async {
@@ -37,7 +40,7 @@ class FirebaseAuthService {
         options: DefaultFirebaseOptions.currentPlatform,
       );
       if (kDebugMode) {
-        await FirebaseAuth.instance.useAuthEmulator("localhost", 9099);
+        await _instance.useAuthEmulator("localhost", 9099);
       }
     }
   }
@@ -48,22 +51,33 @@ class FirebaseAuthService {
   }) async {
     await FirebaseAnalyticsService.logLoginViaSignIn();
 
-    return await FirebaseAuth.instance.signInWithEmailAndPassword(
+    final credential = await _instance.signInWithEmailAndPassword(
       email: email,
       password: password,
     );
+
+    _setAnalyticsUserId(credential: credential);
+
+    return credential;
   }
 
   static Future<UserCredential> signInWithGoogle() async {
-    final credential = await _fetchGoogleCredential();
+    final googleCredential = await _fetchGoogleCredential();
+    final credential = await _instance.signInWithCredential(
+      googleCredential,
+    );
 
-    // Once signed in, return the UserCredential.
-    return await FirebaseAuth.instance.signInWithCredential(credential);
+    _setAnalyticsUserId(credential: credential);
+
+    return credential;
   }
 
-  static Future<void> signOut() async => await FirebaseAuth.instance.signOut();
+  static Future<void> signOut() async {
+    _setAnalyticsUserId();
+    await _instance.signOut();
+  }
 
-  static Stream<User?> userChanges() => FirebaseAuth.instance.userChanges();
+  static Stream<User?> userChanges() => _instance.userChanges();
 
   static Future<OAuthCredential> _fetchGoogleCredential() async {
     // Trigger the authentication flow
@@ -79,5 +93,9 @@ class FirebaseAuthService {
     );
 
     return credential;
+  }
+
+  static Future<void> _setAnalyticsUserId({UserCredential? credential}) async {
+    await FirebaseAnalyticsService.setUserId(credential?.user?.uid);
   }
 }

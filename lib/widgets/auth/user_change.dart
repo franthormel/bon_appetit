@@ -32,9 +32,9 @@ class AuthUserChangeWidget extends StatelessWidget {
 
         if (snapshot.data == null) {
           return nullUserWidget;
-        } else {
-          return userWidget;
         }
+
+        return userWidget;
       },
     );
   }
