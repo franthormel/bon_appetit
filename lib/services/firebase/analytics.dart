@@ -47,6 +47,20 @@ class FirebaseAnalyticsService {
     );
   }
 
+  static Future<void> setAnalyticsCollectionEnabled(bool value) async {
+    await _instance.setAnalyticsCollectionEnabled(value);
+  }
+
+  static Future<void> setConsent({
+    required bool? adStorageConsentGranted,
+    required bool? analyticsStorageConsentGranted,
+  }) async {
+    await _instance.setConsent(
+      adStorageConsentGranted: adStorageConsentGranted,
+      analyticsStorageConsentGranted: analyticsStorageConsentGranted,
+    );
+  }
+
   static Future<void> setUserId(String? id) async {
     await _instance.setUserId(id: id);
   }

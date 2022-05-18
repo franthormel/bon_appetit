@@ -112,8 +112,8 @@ class SearchProvider extends ChangeNotifier {
         results = _filterVideos();
         break;
       case SearchCategory.allContent:
-      // NOTE: Precedence here matters. I placed recipes first because it is the most
-      // important thing to the user, then the articles, finally with the videos.
+        // NOTE: Precedence here matters. I placed recipes first because it is the most
+        // important thing to the user, then the articles, finally with the videos.
         results = [
           ..._filterRecipes(),
           ..._filterArticles(),

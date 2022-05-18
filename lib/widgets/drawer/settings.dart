@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import 'entry.dart';
-import '../../services/index.dart';
 import '../../router/index.dart';
+import 'entry.dart';
 
 class DrawerSettingsWidget extends StatelessWidget {
   const DrawerSettingsWidget({Key? key}) : super(key: key);

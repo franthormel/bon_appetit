@@ -10,7 +10,7 @@ class SettingsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     final settings = Provider.of<SettingsProvider>(context, listen: false);
 
-    // TODO: Add controls and use the given provider
+    // TODO: Add controls and use the given provider's toggle methods
     // TODO: Improve with better UI
     return Scaffold(
       appBar: AppBar(title: const Text("Settings")),

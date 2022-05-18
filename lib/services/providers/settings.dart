@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../firebase/analytics.dart';
 import '../shared_preferences.dart';
 
 class SettingsProvider extends ChangeNotifier {
@@ -68,27 +69,45 @@ class SettingsProvider extends ChangeNotifier {
   Future<void> _toggleAnalyticsCollectionEnabled() async {
     final value = !analyticsCollectionEnabled;
 
+    // Change preferences.
     await _sharedPreferencesService.setBool(
       _kAnalyticsCollectionEnabled,
       value,
     );
+
+    // Analytics collection
+    await FirebaseAnalyticsService.setAnalyticsCollectionEnabled(value);
   }
 
   Future<void> _toggleAdStorageConsentGranted() async {
     final value = !adStorageConsentGranted;
 
+    // Change preferences.
     await _sharedPreferencesService.setBool(
       _kAdStorageConsentGranted,
       value,
+    );
+
+    // Analytics consent
+    await FirebaseAnalyticsService.setConsent(
+      adStorageConsentGranted: value,
+      analyticsStorageConsentGranted: analyticsStorageConsentGranted,
     );
   }
 
   Future<void> _toggleAnalyticsStorageConsentGranted() async {
     final value = !analyticsStorageConsentGranted;
 
+    // Change preferences.
     await _sharedPreferencesService.setBool(
       _kAnalyticsStorageConsentGranted,
       value,
+    );
+
+    // Analytics consent
+    await FirebaseAnalyticsService.setConsent(
+      adStorageConsentGranted: adStorageConsentGranted,
+      analyticsStorageConsentGranted: value,
     );
   }
 }
