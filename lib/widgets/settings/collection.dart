@@ -16,7 +16,7 @@ class SettingsCollectionWidget extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         const SettingsHeaderWidget(
-          header: "Data collection",
+          header: "Data Collection",
           subHeader: "Controls in collecting data for analysis.",
         ),
         SettingsSwitchWidget(
