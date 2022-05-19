@@ -1,3 +1,4 @@
+import 'package:bon_appetit/services/index.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../router/index.dart';
@@ -15,6 +16,7 @@ class AuthRegisterPageWidget extends StatelessWidget
     return AuthEmailPasswordWidget(
       buttonText: "SIGN UP",
       email: email,
+      googleButtonCallback: FirebaseAnalyticsService.logSignUpViaGoogle,
       onPasswordSubmit: onPasswordSubmit,
     );
   }
@@ -31,7 +33,10 @@ class AuthRegisterPageWidget extends StatelessWidget
     } else if (password.length < minimumPasswordLength) {
       value = "Password should be at least $minimumPasswordLength characters.";
     } else {
-      router.push(AuthConfirmRoute(email: email, password: password));
+      router.push(AuthRegisterConfirmRoute(
+        email: email,
+        password: password,
+      ));
     }
 
     // ... otherwise show error text

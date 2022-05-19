@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../models/index.dart';
 import '../../router/index.dart';
+import '../../services/index.dart';
 import '../../style/index.dart';
 import '../others/cached_hero_image.dart';
 import '../others/header_body/four.dart';
@@ -15,6 +16,9 @@ class MainStoryWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return PageRoutePusherWidget(
+      callback: () {
+        FirebaseAnalyticsService.logSelectedArticle(article);
+      },
       route: ArticleDetailsRoute(article: article),
       child: Column(
         children: [

@@ -12,6 +12,7 @@ class BonAppetitThemeFutura {
       checkboxTheme: CheckboxThemeData(
         checkColor: MaterialStateProperty.all<Color>(BonAppetitColors.white),
         fillColor: MaterialStateProperty.all<Color>(BonAppetitColors.black),
+        side: const BorderSide(width: 1.0),
       ),
       chipTheme: const ChipThemeData(
         backgroundColor: BonAppetitColors.platinum,

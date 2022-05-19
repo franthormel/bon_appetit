@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../models/index.dart';
 import '../../../router/index.dart';
+import '../../../services/index.dart';
 import '../../others/header_body/four.dart';
 import '../../others/page_route_pusher.dart';
 import '../others/image.dart';
@@ -15,6 +16,9 @@ class TodayMainRecipeWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return PageRoutePusherWidget(
+      callback: () {
+        FirebaseAnalyticsService.logSelectedRecipe(recipe);
+      },
       route: RecipeDetailsRoute(recipe: recipe),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,

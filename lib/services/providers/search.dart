@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 
 import '../../models/index.dart';
 import '../comparator.dart';
+import '../firebase/analytics.dart';
 
 class SearchProvider extends ChangeNotifier {
   final DatasetSource _source;
@@ -23,7 +24,7 @@ class SearchProvider extends ChangeNotifier {
   // Order used when sorting results
   SearchSort _sort = SearchSort.relevance;
 
-  // Controlled by a TextEditingController
+  // Search term used and is controlled by a TextEditingController.
   String _text = "";
 
   SearchProvider(this._source);
@@ -96,6 +97,8 @@ class SearchProvider extends ChangeNotifier {
   }
 
   void searchForResults() {
+    FirebaseAnalyticsService.logSearch(_text);
+
     List<SearchResult> results = [];
 
     switch (_category) {

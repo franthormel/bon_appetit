@@ -100,8 +100,8 @@ class AppRouter extends _i2.RootStackRouter {
           routeData: routeData,
           child: _i1.AuthRegisterPage(email: args.email, key: args.key));
     },
-    AuthConfirmRoute.name: (routeData) {
-      final args = routeData.argsAs<AuthConfirmRouteArgs>();
+    AuthRegisterConfirmRoute.name: (routeData) {
+      final args = routeData.argsAs<AuthRegisterConfirmRouteArgs>();
       return _i2.MaterialPageX<dynamic>(
           routeData: routeData,
           child: _i1.AuthRegisterConfirmPage(
@@ -132,6 +132,10 @@ class AppRouter extends _i2.RootStackRouter {
       return _i2.MaterialPageX<dynamic>(
           routeData: routeData,
           child: _i1.AuthMagicLinkSendPage(email: args.email, key: args.key));
+    },
+    SettingsRoute.name: (routeData) {
+      return _i2.MaterialPageX<dynamic>(
+          routeData: routeData, child: const _i1.SettingsPage());
     }
   };
 
@@ -172,8 +176,8 @@ class AppRouter extends _i2.RootStackRouter {
               path: 'password', parent: DataProviderRoute.name),
           _i2.RouteConfig(AuthRegisterRoute.name,
               path: 'register', parent: DataProviderRoute.name),
-          _i2.RouteConfig(AuthConfirmRoute.name,
-              path: 'confirm', parent: DataProviderRoute.name),
+          _i2.RouteConfig(AuthRegisterConfirmRoute.name,
+              path: 'register-confirm', parent: DataProviderRoute.name),
           _i2.RouteConfig(AuthSignInConfirmRoute.name,
               path: 'sign-in-confirm', parent: DataProviderRoute.name),
           _i2.RouteConfig(AuthErrorRoute.name,
@@ -181,7 +185,9 @@ class AppRouter extends _i2.RootStackRouter {
           _i2.RouteConfig(AuthMagicLinkRoute.name,
               path: 'magic-link', parent: DataProviderRoute.name),
           _i2.RouteConfig(AuthMagicLinkSendRoute.name,
-              path: 'magic-link-send', parent: DataProviderRoute.name)
+              path: 'magic-link-send', parent: DataProviderRoute.name),
+          _i2.RouteConfig(SettingsRoute.name,
+              path: 'settings', parent: DataProviderRoute.name)
         ]),
         _i2.RouteConfig('*#redirect',
             path: '*', redirectTo: 'DataProviderRoute', fullMatch: true)
@@ -408,19 +414,20 @@ class AuthRegisterRouteArgs {
 
 /// generated route for
 /// [_i1.AuthRegisterConfirmPage]
-class AuthConfirmRoute extends _i2.PageRouteInfo<AuthConfirmRouteArgs> {
-  AuthConfirmRoute(
+class AuthRegisterConfirmRoute
+    extends _i2.PageRouteInfo<AuthRegisterConfirmRouteArgs> {
+  AuthRegisterConfirmRoute(
       {required String email, required String password, _i3.Key? key})
-      : super(AuthConfirmRoute.name,
-            path: 'confirm',
-            args: AuthConfirmRouteArgs(
+      : super(AuthRegisterConfirmRoute.name,
+            path: 'register-confirm',
+            args: AuthRegisterConfirmRouteArgs(
                 email: email, password: password, key: key));
 
-  static const String name = 'AuthConfirmRoute';
+  static const String name = 'AuthRegisterConfirmRoute';
 }
 
-class AuthConfirmRouteArgs {
-  const AuthConfirmRouteArgs(
+class AuthRegisterConfirmRouteArgs {
+  const AuthRegisterConfirmRouteArgs(
       {required this.email, required this.password, this.key});
 
   final String email;
@@ -431,7 +438,7 @@ class AuthConfirmRouteArgs {
 
   @override
   String toString() {
-    return 'AuthConfirmRouteArgs{email: $email, password: $password, key: $key}';
+    return 'AuthRegisterConfirmRouteArgs{email: $email, password: $password, key: $key}';
   }
 }
 
@@ -531,4 +538,12 @@ class AuthMagicLinkSendRouteArgs {
   String toString() {
     return 'AuthMagicLinkSendRouteArgs{email: $email, key: $key}';
   }
+}
+
+/// generated route for
+/// [_i1.SettingsPage]
+class SettingsRoute extends _i2.PageRouteInfo<void> {
+  const SettingsRoute() : super(SettingsRoute.name, path: 'settings');
+
+  static const String name = 'SettingsRoute';
 }

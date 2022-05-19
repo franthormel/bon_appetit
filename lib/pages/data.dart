@@ -36,6 +36,10 @@ class DataProviderPage extends StatelessWidget {
         ChangeNotifierProvider<TrendingRecipesFilter>(
           create: (context) => TrendingRecipesFilter(),
         ),
+        ChangeNotifierProvider<SettingsProvider>(
+          create: (context) => SettingsProvider(),
+          lazy: false,
+        ),
       ],
       child: Consumer2<DatasetSource?, DatasetHomepage?>(
         builder: (context, source, homepage, child) =>

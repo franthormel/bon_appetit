@@ -98,8 +98,8 @@ import 'constants.dart';
         ),
         AutoRoute(
           page: AuthRegisterConfirmPage,
-          name: RouteName.authConfirm,
-          path: RoutePath.authConfirm,
+          name: RouteName.authRegisterConfirm,
+          path: RoutePath.authRegisterConfirm,
         ),
         AutoRoute(
           page: AuthSignInConfirmPage,
@@ -120,6 +120,11 @@ import 'constants.dart';
           page: AuthMagicLinkSendPage,
           name: RouteName.authMagicLinkSend,
           path: RoutePath.authMagicLinkSend,
+        ),
+        AutoRoute(
+          page: SettingsPage,
+          name: RouteName.settings,
+          path: RoutePath.settings,
         ),
       ],
     ),

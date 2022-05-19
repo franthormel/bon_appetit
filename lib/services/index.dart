@@ -1,5 +1,6 @@
 export 'assets_loader.dart';
 export 'data_mock.dart';
+export 'firebase/analytics.dart';
 export 'firebase/auth.dart';
 export 'firebase/platform.dart';
 export 'inline_tag_parser.dart';
@@ -7,3 +8,4 @@ export 'providers/filter.dart';
 export 'providers/recipe_filters/suggested.dart';
 export 'providers/recipe_filters/trending.dart';
 export 'providers/search.dart';
+export 'providers/settings.dart';

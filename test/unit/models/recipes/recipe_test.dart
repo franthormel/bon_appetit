@@ -1,5 +1,4 @@
 import 'package:bon_appetit/models/index.dart';
-import 'package:flutter/material.dart';
 import 'package:test/test.dart';
 
 void main() {
@@ -35,24 +34,6 @@ void main() {
         );
 
         expect(recipe.issue, "January 2022 Issue");
-      });
-    });
-
-    group("heroTag", () {
-      test("should return a String from its ObjectKey value", () {
-        final recipe = Recipe(
-          id: "1",
-          categories: [],
-          dateUploaded: DateTime.now(),
-          description: "description",
-          imageUrl: "imageUrl",
-          ingredients: [],
-          servings: "servings",
-          steps: [],
-          title: "title",
-        );
-
-        expect(recipe.heroTag, ObjectKey(recipe).toString());
       });
     });
   });

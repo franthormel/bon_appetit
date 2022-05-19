@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../../models/index.dart';
 import '../../../../router/index.dart';
+import '../../../../services/index.dart';
 import '../../../others/cached_hero_image.dart';
 import '../../../others/page_route_pusher.dart';
 import '../padding.dart';
@@ -15,6 +16,9 @@ class DrawerPageVideoWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return DrawerPagePaddingWidget(
       child: PageRoutePusherWidget(
+        callback: () {
+          FirebaseAnalyticsService.logSelectedVideo(video);
+        },
         route: VideoDetailsRoute(video: video),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,

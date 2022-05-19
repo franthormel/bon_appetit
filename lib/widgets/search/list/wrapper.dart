@@ -14,9 +14,13 @@ class SearchPageListWrapperWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     if (result.category == SearchCategory.recipes) {
       return SearchPageListRecipeWidget(result.data as Recipe);
-    } else if (result.category == SearchCategory.articles) {
+    }
+
+    if (result.category == SearchCategory.articles) {
       return SearchPageListArticleWidget(result.data as Article);
-    } else if (result.category == SearchCategory.videos) {
+    }
+
+    if (result.category == SearchCategory.videos) {
       return SearchPageListVideoWidget(result.data as Video);
     }
 

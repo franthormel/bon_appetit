@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../models/index.dart';
 import '../../router/index.dart';
+import '../../services/index.dart';
 import '../../style/index.dart';
 import '../others/cached_hero_image.dart';
 import '../others/page_route_pusher.dart';
@@ -14,6 +15,9 @@ class VideoEntryWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return PageRoutePusherWidget(
+      callback: () {
+        FirebaseAnalyticsService.logSelectedVideo(video);
+      },
       route: VideoDetailsRoute(video: video),
       child: SizedBox(
         width: 300.0,

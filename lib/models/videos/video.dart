@@ -33,4 +33,7 @@ class Video with BaseModelsMixin {
   factory Video.fromJson(Map<String, dynamic> json) => _$VideoFromJson(json);
 
   Map<String, dynamic> toJson() => _$VideoToJson(this);
+
+  @override
+  String get heroTag => id;
 }

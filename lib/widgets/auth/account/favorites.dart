@@ -21,7 +21,7 @@ class AuthAccountPageFavoritesWidget extends StatelessWidget {
                 ?.copyWith(fontWeight: FontWeight.normal),
           ),
           const SizedBox(height: 16.0),
-          // TODO: Put list of favorite recipes, articles, and videos here.
+          // TODO: (Firestore) Put list of favorite recipes, articles, and videos here.
           const Text("Favorite items"),
         ],
       ),

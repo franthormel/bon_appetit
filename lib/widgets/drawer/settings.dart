@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import '../../../router/index.dart';
-import '../entry.dart';
+import '../../router/index.dart';
+import 'entry.dart';
 
-class DrawerAccountAuthOutWidget extends StatelessWidget {
-  const DrawerAccountAuthOutWidget({Key? key}) : super(key: key);
+class DrawerSettingsWidget extends StatelessWidget {
+  const DrawerSettingsWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return DrawerAccountEntryWidget(
-      "Sign in",
+      "Settings",
       onTap: () {
         Provider.of<RouteProvider>(context, listen: false).push(
-          const AuthEmailRoute(),
+          const SettingsRoute(),
         );
       },
     );

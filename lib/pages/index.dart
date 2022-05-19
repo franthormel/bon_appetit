@@ -21,3 +21,4 @@ export 'home.dart';
 export 'loading.dart';
 export 'search/recipe_filters.dart';
 export 'search/search.dart';
+export 'settings.dart';

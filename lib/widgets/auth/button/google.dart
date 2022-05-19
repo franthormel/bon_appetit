@@ -1,14 +1,20 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:google_sign_in/google_sign_in.dart';
 import 'package:provider/provider.dart';
 
 import '../../../router/index.dart';
+import '../../../services/index.dart';
 import 'size.dart';
 
 class AuthGoogleProviderButtonWidget extends StatelessWidget {
-  const AuthGoogleProviderButtonWidget({Key? key}) : super(key: key);
+  /// Called when trying to login via Google OAuth.
+  final void Function()? callback;
+
+  const AuthGoogleProviderButtonWidget({
+    this.callback,
+    Key? key,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -26,11 +32,12 @@ class AuthGoogleProviderButtonWidget extends StatelessWidget {
   }
 
   Future<void> signIn(RouteProvider router) async {
-    final credential = await _getGoogleCredential();
-
     try {
-      // Once signed in, return the UserCredential
-      await FirebaseAuth.instance.signInWithCredential(credential);
+      await FirebaseAuthService.signInWithGoogle();
+
+      if (callback != null) {
+        callback!();
+      }
 
       router.goToHomepage();
     } on FirebaseAuthException catch (e) {
@@ -45,21 +52,5 @@ class AuthGoogleProviderButtonWidget extends StatelessWidget {
         onPressed: router.pop,
       ));
     }
-  }
-
-  Future<OAuthCredential> _getGoogleCredential() async {
-    // Trigger the authentication flow
-    final user = await GoogleSignIn().signIn();
-
-    // Obtain the auth details from the request
-    final auth = await user?.authentication;
-
-    // Create a new credential
-    final credential = GoogleAuthProvider.credential(
-      accessToken: auth?.accessToken,
-      idToken: auth?.idToken,
-    );
-
-    return credential;
   }
 }
