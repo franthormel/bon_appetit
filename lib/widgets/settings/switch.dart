@@ -21,7 +21,7 @@ class SettingsSwitchWidget extends StatelessWidget {
       activeTrackColor: BonAppetitColors.mediumChampagne,
       inactiveTrackColor: BonAppetitColors.platinum,
       onChanged: onChanged,
-      title: Text(title),
+      title: Text(title, style: const TextStyle(color: BonAppetitColors.black)),
       value: value,
     );
   }

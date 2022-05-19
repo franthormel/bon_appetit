@@ -12,47 +12,45 @@ class SettingsProvider extends ChangeNotifier {
       "GOOGLE_ANALYTICS_DEFAULT_ALLOW_ANALYTICS_STORAGE";
 
   // Controls the collection and use of Analytics data.
-  // Read more: https://firebase.google.com/docs/analytics/configure-data-collection
-  bool? _analyticsCollectionEnabled;
+  // Read more (developers): https://firebase.google.com/docs/analytics/configure-data-collection
+  // Read more (support): https://support.google.com/firebase/answer/6318039
+  bool _analyticsCollectionEnabled = true;
 
   // User's consent status.
-  // Read more: https://developers.google.com/tag-platform/devguides/app-consent
-  bool? _adStorageConsentGranted;
-  bool? _analyticsStorageConsentGranted;
+  // Read more (developers): https://developers.google.com/tag-platform/devguides/app-consent
+  // Read more (support): https://support.google.com/analytics/answer/9976101
+  bool _adStorageConsentGranted = true;
+  bool _analyticsStorageConsentGranted = true;
 
   late final SharedPreferencesService _sharedPreferencesService;
 
   SettingsProvider() {
-    _sharedPreferencesService = SharedPreferencesService();
+    _sharedPreferencesService = const SharedPreferencesService();
     _initialize();
   }
 
   Future<void> _initialize() async {
-    // 1. Analytics collection
     _analyticsCollectionEnabled = await _sharedPreferencesService.getBool(
-      _kAnalyticsCollectionEnabled,
-    );
+          _kAnalyticsCollectionEnabled,
+        ) ??
+        true;
 
-    // 2. Ad storage
     _adStorageConsentGranted = await _sharedPreferencesService.getBool(
-      _kAdStorageConsentGranted,
-    );
+          _kAdStorageConsentGranted,
+        ) ??
+        true;
 
-    // 3. Analytics storage
     _analyticsStorageConsentGranted = await _sharedPreferencesService.getBool(
-      _kAnalyticsStorageConsentGranted,
-    );
+          _kAnalyticsStorageConsentGranted,
+        ) ??
+        true;
   }
 
-  /// Defaults to [true].
-  bool get analyticsCollectionEnabled => _analyticsCollectionEnabled ?? true;
+  bool get analyticsCollectionEnabled => _analyticsCollectionEnabled;
 
-  /// Defaults to [true].
-  bool get adStorageConsentGranted => _adStorageConsentGranted ?? true;
+  bool get adStorageConsentGranted => _adStorageConsentGranted;
 
-  /// Defaults to [true].
-  bool get analyticsStorageConsentGranted =>
-      _analyticsStorageConsentGranted ?? true;
+  bool get analyticsStorageConsentGranted => _analyticsStorageConsentGranted;
 
   void toggleAnalyticsCollectionEnabled() {
     _toggleAnalyticsCollectionEnabled();
@@ -66,49 +64,56 @@ class SettingsProvider extends ChangeNotifier {
     _toggleAnalyticsStorageConsentGranted();
   }
 
-  // TODO: Make toggle methods work
+  Future<void> _changeConsentValues() async {
+    // Analytics consent
+    await FirebaseAnalyticsService.setConsent(
+      adStorageConsentGranted: _adStorageConsentGranted,
+      analyticsStorageConsentGranted: _analyticsStorageConsentGranted,
+    );
+  }
+
   Future<void> _toggleAnalyticsCollectionEnabled() async {
-    final value = !analyticsCollectionEnabled;
+    _analyticsCollectionEnabled = !_analyticsCollectionEnabled;
 
     // Change preferences.
     await _sharedPreferencesService.setBool(
       _kAnalyticsCollectionEnabled,
-      value,
+      _analyticsCollectionEnabled,
     );
 
     // Analytics collection
-    await FirebaseAnalyticsService.setAnalyticsCollectionEnabled(value);
+    await FirebaseAnalyticsService.setAnalyticsCollectionEnabled(
+      _analyticsCollectionEnabled,
+    );
+
+    notifyListeners();
   }
 
   Future<void> _toggleAdStorageConsentGranted() async {
-    final value = !adStorageConsentGranted;
+    _adStorageConsentGranted = !_adStorageConsentGranted;
 
     // Change preferences.
     await _sharedPreferencesService.setBool(
       _kAdStorageConsentGranted,
-      value,
+      _adStorageConsentGranted,
     );
 
-    // Analytics consent
-    await FirebaseAnalyticsService.setConsent(
-      adStorageConsentGranted: value,
-      analyticsStorageConsentGranted: analyticsStorageConsentGranted,
-    );
+    await _changeConsentValues();
+
+    notifyListeners();
   }
 
   Future<void> _toggleAnalyticsStorageConsentGranted() async {
-    final value = !analyticsStorageConsentGranted;
+    _analyticsStorageConsentGranted = !_analyticsStorageConsentGranted;
 
     // Change preferences.
     await _sharedPreferencesService.setBool(
       _kAnalyticsStorageConsentGranted,
-      value,
+      _analyticsStorageConsentGranted,
     );
 
-    // Analytics consent
-    await FirebaseAnalyticsService.setConsent(
-      adStorageConsentGranted: adStorageConsentGranted,
-      analyticsStorageConsentGranted: value,
-    );
+    await _changeConsentValues();
+
+    notifyListeners();
   }
 }

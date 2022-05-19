@@ -38,6 +38,7 @@ class DataProviderPage extends StatelessWidget {
         ),
         ChangeNotifierProvider<SettingsProvider>(
           create: (context) => SettingsProvider(),
+          lazy: false,
         ),
       ],
       child: Consumer2<DatasetSource?, DatasetHomepage?>(

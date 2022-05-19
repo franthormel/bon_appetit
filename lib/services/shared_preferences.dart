@@ -1,6 +1,8 @@
 import 'package:shared_preferences/shared_preferences.dart';
 
 class SharedPreferencesService {
+  const SharedPreferencesService();
+
   Future<bool?> getBool(String key) async {
     final prefs = await _instance;
     return prefs.getBool(key);

@@ -10,7 +10,7 @@ class SettingsConsentWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final settings = Provider.of<SettingsProvider>(context, listen: false);
+    final settings = Provider.of<SettingsProvider>(context);
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
