@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 
 import '../../services/index.dart';
 import 'header.dart';
+import 'switch.dart';
 
 class SettingsConsentWidget extends StatelessWidget {
   const SettingsConsentWidget({Key? key}) : super(key: key);
@@ -18,15 +19,15 @@ class SettingsConsentWidget extends StatelessWidget {
           header: "Data Consent",
           subHeader: "Controls in collecting data for analysis.",
         ),
-        SwitchListTile.adaptive(
-          title: const Text("Enable ad storage"),
+        SettingsSwitchWidget(
+          title: "Enable ad storage",
           value: settings.adStorageConsentGranted,
           onChanged: (value) {
             settings.toggleAdStorageConsentGranted();
           },
         ),
-        SwitchListTile.adaptive(
-          title: const Text("Enable analytics storage"),
+        SettingsSwitchWidget(
+          title: "Enable analytics storage",
           value: settings.analyticsStorageConsentGranted,
           onChanged: (value) {
             settings.toggleAnalyticsStorageConsentGranted();
