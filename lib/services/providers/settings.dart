@@ -66,6 +66,7 @@ class SettingsProvider extends ChangeNotifier {
     _toggleAnalyticsStorageConsentGranted();
   }
 
+  // TODO: Make toggle methods work
   Future<void> _toggleAnalyticsCollectionEnabled() async {
     final value = !analyticsCollectionEnabled;
 

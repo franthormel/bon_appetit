@@ -51,6 +51,8 @@ export 'recipes/trending.dart';
 export 'search/content.dart';
 export 'search/filters/actions/actions.dart';
 export 'search/filters/list.dart';
+export 'settings/collection.dart';
+export 'settings/consent.dart';
 export 'videos/details/about.dart';
 export 'videos/details/credits.dart';
 export 'videos/details/image.dart';
