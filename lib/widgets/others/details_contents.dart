@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../models/index.dart';
 import 'favorite_button.dart';
 import 'scaffolded_will_pop.dart';
 
@@ -12,12 +13,16 @@ mixin DetailsContentsMixin {
 
 class DetailsContentsWidget extends StatelessWidget {
   final List<Widget> children;
+  final String id;
   final EdgeInsets? padding;
   final String title;
+  final ContentType type;
 
   const DetailsContentsWidget({
     required this.title,
     required this.children,
+    required this.id,
+    required this.type,
     this.padding,
     Key? key,
   }) : super(key: key);
@@ -27,7 +32,7 @@ class DetailsContentsWidget extends StatelessWidget {
     return ScaffoldedWillPopWidget(
       appBar: AppBar(
         title: Text(title),
-        actions: const [FavoriteButtonWidget()],
+        actions: [FavoriteButtonWidget(type: type, id: id)],
       ),
       body: ListView.separated(
         padding: padding ?? const EdgeInsets.symmetric(vertical: 21.0),
