@@ -2,6 +2,7 @@ export 'articles/article.dart';
 export 'datasets/homepage.dart';
 export 'datasets/recipe.dart';
 export 'datasets/source.dart';
+export 'others/content_type.dart';
 export 'others/image_aspect_ratio.dart';
 export 'others/inline_tag.dart';
 export 'others/product.dart';

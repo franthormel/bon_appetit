@@ -1,4 +1,3 @@
-
 enum SearchSort { relevance, newest, highestRated, mostReviewed }
 
 extension SearchSortStringer on SearchSort {

@@ -150,14 +150,14 @@ class SearchProvider extends ChangeNotifier {
         .toList();
     final sortedArticles = _sortArticles(articles);
 
-    return _mapResults(sortedArticles, SearchCategory.articles);
+    return _mapResults(sortedArticles, ContentType.article);
   }
 
   List<SearchResult> _filterRecipes() {
     final recipes = _source.recipes.where(_filterRecipeConditions).toList();
     final sortedRecipes = _sortRecipes(recipes);
 
-    return _mapResults(sortedRecipes, SearchCategory.recipes);
+    return _mapResults(sortedRecipes, ContentType.recipe);
   }
 
   bool _filterRecipeConditions(Recipe r) {
@@ -188,14 +188,13 @@ class SearchProvider extends ChangeNotifier {
         .toList();
     final sortedVideos = _sortVideos(videos);
 
-    return _mapResults(sortedVideos, SearchCategory.videos);
+    return _mapResults(sortedVideos, ContentType.video);
   }
 
-  List<SearchResult> _mapResults(Iterable values, SearchCategory category) {
+  List<SearchResult> _mapResults(Iterable values, ContentType type) {
     if (values.isNotEmpty) {
       return values
-          .map<SearchResult>(
-              (value) => SearchResult(category: category, data: value))
+          .map<SearchResult>((value) => SearchResult(type: type, data: value))
           .toList();
     }
 
