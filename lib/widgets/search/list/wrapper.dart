@@ -12,6 +12,7 @@ class SearchPageListWrapperWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // TODO: Make ContentType enum
     if (result.category == SearchCategory.recipes) {
       return SearchPageListRecipeWidget(result.data as Recipe);
     }

@@ -14,11 +14,11 @@
       },
       "oauth_client": [
         {
-          "client_id": "971857908357-7orglq9s92pk32rp6t7sfuo8akdp8riv.apps.googleusercontent.com",
+          "client_id": "971857908357-fg8n3ngk2uds4dp56cun1hca400s1m5f.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.franca.demo.bon.appetit",
-            "certificate_hash": "a9cc8cb8777c1fba6bb0acdfc6766ff87f3ef967"
+            "certificate_hash": "7f663e6741890dc4ed1b960c3cd01625d6f2410f"
           }
         },
         {

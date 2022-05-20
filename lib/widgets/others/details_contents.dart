@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'scaffolded_will_pop.dart';
+import 'favorite_button.dart';
 
 /// Use this mixin when using [DetailsContentsWidget]
 mixin DetailsContentsMixin {
@@ -24,7 +25,10 @@ class DetailsContentsWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScaffoldedWillPopWidget(
-      appBar: AppBar(title: Text(title)),
+      appBar: AppBar(
+        title: Text(title),
+        actions: const [FavoriteButtonWidget()],
+      ),
       body: ListView.separated(
         padding: padding ?? const EdgeInsets.symmetric(vertical: 21.0),
         itemBuilder: (context, i) => children[i],

@@ -34,6 +34,7 @@ export 'others/details/padded_body_text.dart';
 export 'others/details/padded_sponsor_text.dart';
 export 'others/details/title.dart';
 export 'others/details_contents.dart';
+export 'others/favorite_button.dart';
 export 'others/scaffolded_will_pop.dart';
 export 'recipes/details/ingredients.dart';
 export 'recipes/details/leave_review.dart';
