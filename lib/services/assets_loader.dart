@@ -2,22 +2,22 @@ import 'package:flutter/services.dart';
 
 class AssetsLoaderService {
   static Future<String> loadSponsorTxtFile() =>
-      _loadString("assets/data/sponsor.txt");
+      _loadFileAsString("assets/data/sponsor.txt");
 
   static Future<String> loadSourceJsonFile() =>
-      _loadString("assets/data/source.json");
+      _loadFileAsString("assets/data/source.json");
 
   static Future<String> loadHomepageJsonFile() =>
-      _loadString("assets/data/homepage.json");
+      _loadFileAsString("assets/data/homepage.json");
 
   static Future<String> loadDrawerJsonFile() =>
-      _loadString("assets/data/drawer.json");
+      _loadFileAsString("assets/data/drawer.json");
 
-  static Future<String> _loadString(String filename) async {
-    String result = "Could not load $filename";
+  static Future<String> _loadFileAsString(String file) async {
+    String result = "Could not load $file";
 
     try {
-      result = await rootBundle.loadString(filename);
+      result = await rootBundle.loadString(file);
     } on Exception catch (e) {
       result = e.toString();
     }

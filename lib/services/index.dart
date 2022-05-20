@@ -1,5 +1,5 @@
 export 'assets_loader.dart';
-export 'data_mock.dart';
+export 'mock_data.dart';
 export 'firebase/analytics.dart';
 export 'firebase/auth.dart';
 export 'firebase/platform.dart';

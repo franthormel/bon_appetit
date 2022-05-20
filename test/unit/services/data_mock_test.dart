@@ -1,5 +1,5 @@
 import 'package:bon_appetit/models/datasets/homepage.dart';
-import 'package:bon_appetit/services/data_mock.dart';
+import 'package:bon_appetit/services/mock_data.dart';
 import 'package:flutter_test/flutter_test.dart' hide group, test, expect;
 import 'package:test/test.dart';
 
