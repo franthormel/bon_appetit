@@ -1,4 +1,4 @@
-import 'enums.dart';
+import 'enums/category.dart';
 
 class SearchResult {
   /// Must be derived from [SearchCategory.toLiteralValue()].
