@@ -11,9 +11,9 @@ class VideoDetailsPage extends StatelessWidget with DetailsContentsMixin {
   @override
   Widget build(BuildContext context) {
     return DetailsContentsWidget(
-      children: children,
       padding: const EdgeInsets.only(bottom: 21.0),
       title: "Video",
+      children: children,
     );
   }
 

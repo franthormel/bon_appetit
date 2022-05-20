@@ -31,13 +31,13 @@ class OutlinedTextButtonWidget extends StatelessWidget {
       height: height,
       width: width,
       child: TextButton(
-        child: Text(text),
         onPressed: onPressed,
         style: ButtonStyle(
           backgroundColor: MaterialStateProperty.all<Color?>(backgroundColor),
           foregroundColor: MaterialStateProperty.all<Color?>(foregroundColor),
           side: MaterialStateProperty.all<BorderSide>(_borderSide),
         ),
+        child: Text(text),
       ),
     );
   }

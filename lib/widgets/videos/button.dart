@@ -10,16 +10,17 @@ class VideoButtonWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return OutlinedButton(
-      child: const Text('SEE MORE VIDEOS'),
       onPressed: () {
-        final router = Provider.of<RouteProvider>(context, listen: false);
-        router.push(const DrawerVideosRoute());
+        Provider.of<RouteProvider>(context, listen: false).push(
+          const DrawerVideosRoute(),
+        );
       },
       style: OutlinedButton.styleFrom(
         backgroundColor: BonAppetitColors.black,
         primary: BonAppetitColors.white,
         side: const BorderSide(color: BonAppetitColors.white, width: 2.0),
       ),
+      child: const Text('SEE MORE VIDEOS'),
     );
   }
 }

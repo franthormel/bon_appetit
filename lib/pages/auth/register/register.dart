@@ -14,11 +14,11 @@ class AuthRegisterPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AuthMainWidget(
-      child: AuthRegisterPageWidget(email),
       end: const AuthRegisterPageEndWidget(),
       header: "Create an account",
       subHeader: "Please enter a password to register a new account.",
       title: "Sign up",
+      child: AuthRegisterPageWidget(email),
     );
   }
 }

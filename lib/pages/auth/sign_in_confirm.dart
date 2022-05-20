@@ -8,10 +8,10 @@ class AuthSignInConfirmPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const AuthMainWidget(
-      child: AuthSignInPageConfirmWidget(),
       header: "You’re signed in",
       subHeader: "You can resume right where you left off.",
       title: "Sign in success",
+      child: AuthSignInPageConfirmWidget(),
     );
   }
 }

@@ -9,10 +9,10 @@ class AuthEmailPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const AuthMainWidget(
-      child: AuthEmailPageWidget(),
       header: "Sign in to your account",
       subHeader: "Enter your email address to continue.",
       title: "Sign in email",
+      child: AuthEmailPageWidget(),
     );
   }
 }

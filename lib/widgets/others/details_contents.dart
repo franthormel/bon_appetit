@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'scaffolded_will_pop.dart';
 import 'favorite_button.dart';
+import 'scaffolded_will_pop.dart';
 
 /// Use this mixin when using [DetailsContentsWidget]
 mixin DetailsContentsMixin {
@@ -16,8 +16,8 @@ class DetailsContentsWidget extends StatelessWidget {
   final String title;
 
   const DetailsContentsWidget({
-    required this.children,
     required this.title,
+    required this.children,
     this.padding,
     Key? key,
   }) : super(key: key);

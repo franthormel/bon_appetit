@@ -13,11 +13,11 @@ class UnderlinedTextButtonWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextButton(
+      onPressed: onPressed,
       child: Text(
         text,
         style: const TextStyle(decoration: TextDecoration.underline),
       ),
-      onPressed: onPressed,
     );
   }
 }

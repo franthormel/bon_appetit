@@ -13,11 +13,11 @@ class AuthMagicLinkSendPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AuthMainWidget(
-      child: const AuthMagicLinkSendPageWidget(),
+      email: email,
       header: "Check your inbox",
       subHeader: "Finish signing in by clicking the link sent to ",
-      email: email,
       title: "Sign in help",
+      child: const AuthMagicLinkSendPageWidget(),
     );
   }
 }

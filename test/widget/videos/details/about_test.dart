@@ -5,13 +5,15 @@ import 'package:flutter_test/flutter_test.dart';
 void main() {
   group("VideoDetailsAboutWidget", () {
     testWidgets('about is empty', (WidgetTester t) async {
-      await t.pumpWidget(Directionality(
-        child: VideoDetailsAboutWidget(
-          about: "",
-          uploadDate: DateTime(2022, 1, 1),
+      await t.pumpWidget(
+        Directionality(
+          textDirection: TextDirection.ltr,
+          child: VideoDetailsAboutWidget(
+            about: "",
+            uploadDate: DateTime(2022, 1, 1),
+          ),
         ),
-        textDirection: TextDirection.ltr,
-      ));
+      );
 
       expect(find.text(""), findsNothing);
     });

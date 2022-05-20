@@ -10,7 +10,7 @@ class RecipeDetailsPage extends StatelessWidget with DetailsContentsMixin {
 
   @override
   Widget build(BuildContext context) {
-    return DetailsContentsWidget(children: children, title: "Recipe");
+    return DetailsContentsWidget(title: "Recipe", children: children);
   }
 
   @override

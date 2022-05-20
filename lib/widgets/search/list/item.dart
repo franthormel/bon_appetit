@@ -88,10 +88,10 @@ class SearchPageListItemWidget extends StatelessWidget {
         children: [
           image,
           FloatingActionButton.small(
-            onPressed: () {},
-            child: const Icon(Icons.play_arrow),
-            backgroundColor: BonAppetitColors.white,
             foregroundColor: BonAppetitColors.black,
+            onPressed: () {},
+            backgroundColor: BonAppetitColors.white,
+            child: const Icon(Icons.play_arrow),
           ),
         ],
       );

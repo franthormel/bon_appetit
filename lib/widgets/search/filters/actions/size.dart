@@ -10,6 +10,6 @@ class SearchPageFiltersActionSizeWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(child: child, height: 40.0, width: 140.0);
+    return SizedBox(height: 40.0, width: 140.0, child: child);
   }
 }
