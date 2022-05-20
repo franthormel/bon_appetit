@@ -27,18 +27,22 @@ class DataProviderPage extends StatelessWidget {
           initialData: null,
           lazy: false,
         ),
+        ChangeNotifierProvider<FavoritesProvider>(
+          create: (context) => FavoritesProvider(),
+          lazy: false,
+        ),
         ChangeNotifierProvider<RouteProvider>(
           create: (context) => RouteProvider(),
+        ),
+        ChangeNotifierProvider<SettingsProvider>(
+          create: (context) => SettingsProvider(),
+          lazy: false,
         ),
         ChangeNotifierProvider<SuggestedRecipesFilter>(
           create: (context) => SuggestedRecipesFilter(),
         ),
         ChangeNotifierProvider<TrendingRecipesFilter>(
           create: (context) => TrendingRecipesFilter(),
-        ),
-        ChangeNotifierProvider<SettingsProvider>(
-          create: (context) => SettingsProvider(),
-          lazy: false,
         ),
       ],
       child: Consumer2<DatasetSource?, DatasetHomepage?>(

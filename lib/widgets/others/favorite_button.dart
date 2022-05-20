@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 import '../../models/index.dart';
 import '../../services/index.dart';
@@ -15,15 +16,29 @@ class FavoriteButtonWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final favorites = Provider.of<FavoritesProvider>(context);
+    final icon = _chooseIcon(favorites);
+
     if (FirebaseAuthService.isAuthenticated) {
       return IconButton(
-        icon: const Icon(Icons.favorite),
+        icon: icon,
         onPressed: () {
-          // TODO: Call a function for favorites using the type and id property
+          favorites.toggleFavorite(id, type);
         },
       );
     }
 
     return Container();
+  }
+
+  Icon _chooseIcon(FavoritesProvider favorites) {
+    final isFavorite = favorites.isFavorite(id, type);
+    IconData data = Icons.favorite_border;
+
+    if (isFavorite) {
+      data = Icons.favorite;
+    }
+
+    return Icon(data);
   }
 }

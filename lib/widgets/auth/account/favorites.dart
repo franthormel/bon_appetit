@@ -12,14 +12,9 @@ class AuthAccountPageFavoritesWidget extends StatelessWidget {
       padding: const EdgeInsets.all(32.0),
       width: double.infinity,
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(
-            "FAVORITES",
-            style: Theme.of(context)
-                .textTheme
-                .headline6
-                ?.copyWith(fontWeight: FontWeight.normal),
-          ),
+          Text("Favorites", style: Theme.of(context).textTheme.headline6),
           const SizedBox(height: 16.0),
           // TODO: (Firestore) Put list of favorite recipes, articles, and videos here.
           const Text("Favorite items"),
