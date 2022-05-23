@@ -1,10 +1,8 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:flutter/foundation.dart';
 
 import '../auth.dart';
 import 'constants.dart';
 import 'favorites.dart';
-import '../platform.dart';
 
 class FirestoreService {
   static FirebaseFirestore get _instance => FirebaseFirestore.instance;
@@ -20,8 +18,6 @@ class FirestoreService {
   }
 
   static Future<void> useEmulator() async {
-    if (kDebugMode && FirebasePlatformService.isSupported) {
-      _instance.useFirestoreEmulator("localhost", 8080);
-    }
+    _instance.useFirestoreEmulator("localhost", 8080);
   }
 }

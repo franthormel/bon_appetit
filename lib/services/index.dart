@@ -1,7 +1,7 @@
 export 'assets_loader.dart';
 export 'firebase/analytics.dart';
 export 'firebase/auth.dart';
-export 'firebase/platform.dart';
+export 'firebase/firebase.dart';
 export 'inline_tag_parser.dart';
 export 'mock_data.dart';
 export 'providers/favorites.dart';

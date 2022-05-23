@@ -1,11 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:firebase_core/firebase_core.dart';
-import 'package:flutter/foundation.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 
-import '../../firebase_options.dart';
 import 'analytics.dart';
-import 'platform.dart';
 
 class FirebaseAuthService {
   static bool get isAuthenticated => _instance.currentUser != null;
@@ -34,17 +30,6 @@ class FirebaseAuthService {
     _setAnalyticsUserId(credential: credential);
 
     return credential;
-  }
-
-  static Future<void> useEmulator() async {
-    if (FirebasePlatformService.isSupported) {
-      await Firebase.initializeApp(
-        options: DefaultFirebaseOptions.currentPlatform,
-      );
-      if (kDebugMode) {
-        await _instance.useAuthEmulator("localhost", 9099);
-      }
-    }
   }
 
   static Future<UserCredential> signIn({
@@ -77,6 +62,10 @@ class FirebaseAuthService {
   static Future<void> signOut() async {
     _setAnalyticsUserId();
     await _instance.signOut();
+  }
+
+  static Future<void> useEmulator() async {
+    await _instance.useAuthEmulator("localhost", 9099);
   }
 
   static Stream<User?> userChanges() => _instance.userChanges();

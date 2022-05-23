@@ -9,6 +9,7 @@ class FavoritesProvider extends ChangeNotifier {
   final _recipes = <String>[];
   final _videos = <String>[];
 
+  // TODO: Reset all favorites whenever the userAuth changes
   FavoritesProvider() {
     // TODO: (Firestore) Actual data must be fetched from Firestore but initial data must be set to empty.
   }
