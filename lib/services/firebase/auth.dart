@@ -8,7 +8,9 @@ import 'analytics.dart';
 import 'platform.dart';
 
 class FirebaseAuthService {
-  static bool get isAuthenticated => FirebaseAuth.instance.currentUser != null;
+  static bool get isAuthenticated => _instance.currentUser != null;
+
+  static String? get uid => _instance.currentUser?.uid;
 
   static FirebaseAuth get _instance => FirebaseAuth.instance;
 
@@ -34,7 +36,7 @@ class FirebaseAuthService {
     return credential;
   }
 
-  static Future<void> initializeFirebase() async {
+  static Future<void> useEmulator() async {
     if (FirebasePlatformService.isSupported) {
       await Firebase.initializeApp(
         options: DefaultFirebaseOptions.currentPlatform,

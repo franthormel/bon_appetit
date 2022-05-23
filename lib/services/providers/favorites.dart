@@ -1,13 +1,17 @@
 import 'package:flutter/material.dart';
 
 import '../../models/index.dart';
+import '../firebase/firestore/favorites.dart';
+import '../firebase/firestore/firestore.dart';
 
 class FavoritesProvider extends ChangeNotifier {
   final _articles = <String>[];
   final _recipes = <String>[];
   final _videos = <String>[];
 
-  // TODO: (Firestore) Actual data must be fetched from Firestore but initial data must be set to empty.
+  FavoritesProvider() {
+    // TODO: (Firestore) Actual data must be fetched from Firestore but initial data must be set to empty.
+  }
 
   List<Article> filterFavoriteArticles(List<Article> articles) {
     return articles.where((source) => _articles.contains(source.id)).toList();
@@ -68,7 +72,7 @@ class FavoritesProvider extends ChangeNotifier {
     } else {
       _recipes.add(id);
     }
-    // TODO: Store result on Firestore
+    _writeToFirestore();
   }
 
   void _toggleFavoriteArticle(String id) {
@@ -77,7 +81,7 @@ class FavoritesProvider extends ChangeNotifier {
     } else {
       _articles.add(id);
     }
-    // TODO: Store result on Firestore
+    _writeToFirestore();
   }
 
   void _toggleFavoriteVideo(String id) {
@@ -86,6 +90,16 @@ class FavoritesProvider extends ChangeNotifier {
     } else {
       _videos.add(id);
     }
-    // TODO: Store result on Firestore
+    _writeToFirestore();
+  }
+
+  Future<void> _writeToFirestore() async {
+    final favorites = FirestoreFavorites(
+      articles: _articles,
+      recipes: _recipes,
+      videos: _videos,
+    );
+
+    await FirestoreService.saveFavorites(favorites);
   }
 }
