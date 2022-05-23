@@ -7,12 +7,28 @@ class FavoritesPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: (FavoritesProvider) Put list of favorite recipes, articles, and videos here.
-    return ScaffoldedWillPopWidget(
-      appBar: AppBar(
-        title: const Text("Favorites"),
+    return DefaultTabController(
+      initialIndex: 0,
+      length: 3,
+      child: ScaffoldedWillPopWidget(
+        appBar: AppBar(
+          title: const Text("Favorites"),
+          bottom: const TabBar(
+            tabs: [
+              Tab(child: Text("Recipes")),
+              Tab(child: Text("Articles")),
+              Tab(child: Text("Videos")),
+            ],
+          ),
+        ),
+        body: const TabBarView(
+          children: [
+            FavoriteRecipesWidget(),
+            FavoriteArticlesWidget(),
+            FavoriteVideosWidget(),
+          ],
+        ),
       ),
-      body: const Text("Favorites here"),
     );
   }
 }
