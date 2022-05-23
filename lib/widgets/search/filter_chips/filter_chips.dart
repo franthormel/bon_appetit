@@ -14,7 +14,7 @@ class SearchPageFilterChipsWidget extends StatelessWidget {
 
     return provider.showFilterChips
         ? Wrap(
-      spacing: 5.0,
+            spacing: 5.0,
             children: [
               ...provider.filters
                   .map<Widget>((e) => SearchPageFilterChipWidget(e)),

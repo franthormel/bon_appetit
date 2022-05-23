@@ -62,6 +62,14 @@ class BonAppetitThemeFutura {
         linearTrackColor: BonAppetitColors.mediumChampagne,
         refreshBackgroundColor: BonAppetitColors.dimGray,
       ),
+      tabBarTheme: const TabBarTheme(
+        indicator: UnderlineTabIndicator(
+          borderSide: BorderSide(
+            color: BonAppetitColors.sizzlingSunrise,
+            width: 2.0,
+          ),
+        ),
+      ),
       textButtonTheme: TextButtonThemeData(
         style: TextButton.styleFrom(primary: BonAppetitColors.black),
       ),

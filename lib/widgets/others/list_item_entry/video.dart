@@ -3,16 +3,16 @@ import 'package:flutter/material.dart';
 import '../../../models/index.dart';
 import '../../../router/index.dart';
 import '../../../services/index.dart';
-import 'item.dart';
+import 'list_item_entry.dart';
 
-class SearchPageListVideoWidget extends StatelessWidget {
+class ListItemEntryVideoWidget extends StatelessWidget {
   final Video video;
 
-  const SearchPageListVideoWidget(this.video, {Key? key}) : super(key: key);
+  const ListItemEntryVideoWidget(this.video, {Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return SearchPageListItemWidget(
+    return ListItemEntryWidget(
       callback: () {
         FirebaseAnalyticsService.logSelectedVideo(video);
       },

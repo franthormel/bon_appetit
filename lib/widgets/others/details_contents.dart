@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../models/index.dart';
-import 'favorite_button.dart';
+import '../favorites/button.dart';
 import 'scaffolded_will_pop.dart';
 
 /// Use this mixin when using [DetailsContentsWidget]

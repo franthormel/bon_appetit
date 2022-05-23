@@ -1,3 +1,4 @@
+import 'package:bon_appetit/style/index.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -17,10 +18,13 @@ class FavoriteButtonWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final favorites = Provider.of<FavoritesProvider>(context);
-    final icon = _chooseIcon(favorites);
+    final isFavorite = favorites.isFavorite(id, type);
+    final icon = _chooseIcon(isFavorite);
+    final color = _chooseColor(isFavorite);
 
     if (FirebaseAuthService.isAuthenticated) {
       return IconButton(
+        color: color,
         icon: icon,
         onPressed: () {
           favorites.toggleFavorite(id, type);
@@ -31,8 +35,7 @@ class FavoriteButtonWidget extends StatelessWidget {
     return Container();
   }
 
-  Icon _chooseIcon(FavoritesProvider favorites) {
-    final isFavorite = favorites.isFavorite(id, type);
+  Icon _chooseIcon(bool isFavorite) {
     IconData data = Icons.favorite_border;
 
     if (isFavorite) {
@@ -40,5 +43,13 @@ class FavoriteButtonWidget extends StatelessWidget {
     }
 
     return Icon(data);
+  }
+
+  Color? _chooseColor(bool isFavorite) {
+    if (isFavorite) {
+      return BonAppetitColors.sizzlingSunrise;
+    }
+
+    return null;
   }
 }

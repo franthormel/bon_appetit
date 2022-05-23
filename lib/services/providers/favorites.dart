@@ -3,11 +3,23 @@ import 'package:flutter/material.dart';
 import '../../models/index.dart';
 
 class FavoritesProvider extends ChangeNotifier {
-  final _recipes = <String>[];
   final _articles = <String>[];
+  final _recipes = <String>[];
   final _videos = <String>[];
 
   // TODO: (Firestore) Actual data must be fetched from Firestore but initial data must be set to empty.
+
+  List<Article> filterFavoriteArticles(List<Article> articles) {
+    return articles.where((source) => _articles.contains(source.id)).toList();
+  }
+
+  List<Recipe> filterFavoriteRecipes(List<Recipe> recipes) {
+    return recipes.where((source) => _recipes.contains(source.id)).toList();
+  }
+
+  List<Video> filterFavoriteVideos(List<Video> videos) {
+    return videos.where((source) => _videos.contains(source.id)).toList();
+  }
 
   /// Returns [true] if the given [id] and [type] is already part of the favorites list.
   bool isFavorite(String id, ContentType type) {
