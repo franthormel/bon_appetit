@@ -7,7 +7,11 @@ class AuthAccountPageTitleWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 40.0),
-      child: Text("My Account", style: Theme.of(context).textTheme.headline4),
+      child: Text(
+        "My Account",
+        style: Theme.of(context).textTheme.headline4,
+        textAlign: TextAlign.center,
+      ),
     );
   }
 }
