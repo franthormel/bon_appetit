@@ -17,6 +17,7 @@ export 'drawer/recipes.dart';
 export 'drawer/restaurants.dart';
 export 'drawer/shopping.dart';
 export 'drawer/videos.dart';
+export 'favorites.dart';
 export 'home.dart';
 export 'loading.dart';
 export 'search/recipe_filters.dart';

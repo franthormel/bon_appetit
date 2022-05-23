@@ -136,6 +136,10 @@ class AppRouter extends _i2.RootStackRouter {
     SettingsRoute.name: (routeData) {
       return _i2.MaterialPageX<dynamic>(
           routeData: routeData, child: const _i1.SettingsPage());
+    },
+    FavoritesRoute.name: (routeData) {
+      return _i2.MaterialPageX<dynamic>(
+          routeData: routeData, child: const _i1.FavoritesPage());
     }
   };
 
@@ -187,7 +191,9 @@ class AppRouter extends _i2.RootStackRouter {
           _i2.RouteConfig(AuthMagicLinkSendRoute.name,
               path: 'magic-link-send', parent: DataProviderRoute.name),
           _i2.RouteConfig(SettingsRoute.name,
-              path: 'settings', parent: DataProviderRoute.name)
+              path: 'settings', parent: DataProviderRoute.name),
+          _i2.RouteConfig(FavoritesRoute.name,
+              path: 'FavoritesRoute', parent: DataProviderRoute.name)
         ]),
         _i2.RouteConfig('*#redirect',
             path: '*', redirectTo: 'DataProviderRoute', fullMatch: true)
@@ -546,4 +552,12 @@ class SettingsRoute extends _i2.PageRouteInfo<void> {
   const SettingsRoute() : super(SettingsRoute.name, path: 'settings');
 
   static const String name = 'SettingsRoute';
+}
+
+/// generated route for
+/// [_i1.FavoritesPage]
+class FavoritesRoute extends _i2.PageRouteInfo<void> {
+  const FavoritesRoute() : super(FavoritesRoute.name, path: 'FavoritesRoute');
+
+  static const String name = 'FavoritesRoute';
 }

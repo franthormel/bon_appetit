@@ -7,7 +7,7 @@ class FavoritesProvider extends ChangeNotifier {
   final _articles = <String>[];
   final _videos = <String>[];
 
-  // TODO: Actual data must be fetched from Firestore but initial data must be set to empty for assumption.
+  // TODO: (Firestore) Actual data must be fetched from Firestore but initial data must be set to empty.
 
   /// Returns [true] if the given [id] and [type] is already part of the favorites list.
   bool isFavorite(String id, ContentType type) {

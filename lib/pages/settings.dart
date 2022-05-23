@@ -10,11 +10,7 @@ class SettingsPage extends StatelessWidget {
     return ScaffoldedWillPopWidget(
       appBar: AppBar(title: const Text("Settings")),
       body: ListView(
-        padding: const EdgeInsets.only(
-          top: 40.0,
-          left: 24.0,
-          right: 24.0,
-        ),
+        padding: const EdgeInsets.all(16.0),
         children: const [
           SettingsCollectionWidget(),
           SizedBox(height: 24.0),
