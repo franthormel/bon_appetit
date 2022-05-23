@@ -4,12 +4,12 @@ import 'package:flutter/material.dart';
 
 import '../../services/index.dart';
 
-/// This widget acts as a navigator when it comes to the user's authentication state.
+/// This widget acts as a mediator when it comes to the user's authentication state.
 class AuthUserChangeWidget extends StatelessWidget {
-  /// This widget will be shown if the user is authenticated and/or signed in.
+  /// This widget will be displayed if the user IS AUTHENTICATED and/or signed in.
   final Widget userWidget;
 
-  /// This widget will be displayed if the user is not authenticated and/or signed out.
+  /// This widget will be displayed if the user IS NOT AUTHENTICATED and/or signed out.
   final Widget nullUserWidget;
 
   const AuthUserChangeWidget({
@@ -30,10 +30,13 @@ class AuthUserChangeWidget extends StatelessWidget {
           }
         }
 
+        // Display the unauthenticated user widget
         if (snapshot.data == null) {
+          // TODO: Reset the FavoritesProvider state when the user signs-out
           return nullUserWidget;
         }
 
+        // Display the widget for the authenticated user
         return userWidget;
       },
     );

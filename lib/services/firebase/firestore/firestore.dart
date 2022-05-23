@@ -7,6 +7,10 @@ import 'favorites.dart';
 class FirestoreService {
   static FirebaseFirestore get _instance => FirebaseFirestore.instance;
 
+  // TODO: Read favorites
+
+  // TODO: Delete favorites by type or collectively.
+
   static Future<void> saveFavorites(FirestoreFavorites favorites) async {
     if (FirebaseAuthService.isAuthenticated) {
       const collection = FirestoreCollection.userFavorites;

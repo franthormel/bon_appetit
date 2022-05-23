@@ -68,6 +68,7 @@ class FirebaseAuthService {
     await _instance.useAuthEmulator("localhost", 9099);
   }
 
+  /// Called by the [AuthUserChange] widget whenever user signs-in our signs-out.
   static Stream<User?> userChanges() => _instance.userChanges();
 
   static Future<OAuthCredential> _fetchGoogleCredential() async {
