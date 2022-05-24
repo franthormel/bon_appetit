@@ -7,18 +7,40 @@ import 'favorites.dart';
 class FirestoreService {
   static FirebaseFirestore get _instance => FirebaseFirestore.instance;
 
-  // TODO: Read favorites
+  static Future<FirestoreFavorites?> readFavorites() async {
+    if (FirebaseAuthService.isAuthenticated) {
+      final path = FirebaseAuthService.uid;
+      final document = await _userFavoritesCollection
+          .doc(path)
+          .withConverter(
+              fromFirestore: FirestoreFavorites.fromFirestore,
+              toFirestore: (FirestoreFavorites favorites, SetOptions? options) {
+                return favorites.toFirestore();
+              })
+          .get();
+
+      if (document.exists) {
+        return document.data();
+      }
+    }
+
+    return null;
+  }
 
   // TODO: Delete favorites by type or collectively.
 
-  static Future<void> saveFavorites(FirestoreFavorites favorites) async {
+  static Future<void> writeFavorites(FirestoreFavorites favorites) async {
     if (FirebaseAuthService.isAuthenticated) {
-      const collection = FirestoreCollection.userFavorites;
-      final data = favorites.toMap();
+      final data = favorites.toFirestore();
       final path = FirebaseAuthService.uid;
 
-      await _instance.collection(collection).doc(path).set(data);
+      await _userFavoritesCollection.doc(path).set(data);
     }
+  }
+
+  static CollectionReference get _userFavoritesCollection {
+    // TODO: Place withConverter() method here
+    return _instance.collection(FirestoreCollection.userFavorites);
   }
 
   static Future<void> useEmulator() async {

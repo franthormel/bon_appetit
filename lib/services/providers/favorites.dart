@@ -9,13 +9,11 @@ class FavoritesProvider extends ChangeNotifier {
   final _recipes = <String>[];
   final _videos = <String>[];
 
-  // TODO: Reset all favorites whenever the userAuth changes
   FavoritesProvider() {
-    // TODO: (Firestore) Actual data must be fetched from Firestore but initial data must be set to empty.
+    readFromFirestore();
   }
 
   void clear() {
-    debugPrint("clear");
     _articles.clear();
     _recipes.clear();
     _videos.clear();
@@ -50,6 +48,20 @@ class FavoritesProvider extends ChangeNotifier {
     }
 
     return value;
+  }
+
+  /// Reads the user's favorites from Firestore.
+  /// Called in the [FavoritesProvider] constructor and whenever a user signs in.
+  Future<void> readFromFirestore() async {
+    final data = await FirestoreService.readFavorites();
+
+    if (data != null) {
+      clear();
+
+      _articles.addAll(data.articles);
+      _recipes.addAll(data.recipes);
+      _videos.addAll(data.videos);
+    }
   }
 
   /// Toggles a given item using its [id] and [type] favorite status.
@@ -108,6 +120,6 @@ class FavoritesProvider extends ChangeNotifier {
       videos: _videos,
     );
 
-    await FirestoreService.saveFavorites(favorites);
+    await FirestoreService.writeFavorites(favorites);
   }
 }
