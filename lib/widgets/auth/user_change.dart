@@ -30,13 +30,14 @@ class AuthUserChangeWidget extends StatelessWidget {
           }
         }
 
-        // Display the unauthenticated user widget
+        // User signed out.
         if (snapshot.data == null) {
           // TODO: Reset the FavoritesProvider state when the user signs-out
           return nullUserWidget;
         }
 
-        // Display the widget for the authenticated user
+        // User signed in.
+        // TODO: Initialize new data for the user here
         return userWidget;
       },
     );
