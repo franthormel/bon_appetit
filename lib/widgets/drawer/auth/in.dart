@@ -11,6 +11,7 @@ class DrawerAccountAuthInWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final router = Provider.of<RouteProvider>(context, listen: false);
+    final favorites = Provider.of<FavoritesProvider>(context, listen: false);
 
     return Column(
       children: [
@@ -24,6 +25,7 @@ class DrawerAccountAuthInWidget extends StatelessWidget {
           "Sign Out",
           onTap: () {
             router.goToHomepage();
+            favorites.clear();
             FirebaseAuthService.signOut();
           },
         ),

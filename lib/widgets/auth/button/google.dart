@@ -39,6 +39,8 @@ class AuthGoogleProviderButtonWidget extends StatelessWidget {
         callback!();
       }
 
+      // TODO: Initialize new data for the user here
+
       router.goToHomepage();
     } on FirebaseAuthException catch (e) {
       router.push(AuthErrorRoute(

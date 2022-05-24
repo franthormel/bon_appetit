@@ -55,12 +55,10 @@ class DataProviderPage extends StatelessWidget {
   }
 
   T? catchError<T>(BuildContext context, Object? error) {
-    if (kDebugMode) {
-      final e = error as Error;
+    final e = error as Error;
 
-      print(">>> TITLE \n$e");
-      print(">>> Stack \n${e.stackTrace}");
-    }
+    debugPrint(">>> TITLE \n$e");
+    debugPrint(">>> Stack \n${e.stackTrace}");
 
     return null;
   }

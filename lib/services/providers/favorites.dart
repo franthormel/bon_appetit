@@ -14,6 +14,13 @@ class FavoritesProvider extends ChangeNotifier {
     // TODO: (Firestore) Actual data must be fetched from Firestore but initial data must be set to empty.
   }
 
+  void clear() {
+    debugPrint("clear");
+    _articles.clear();
+    _recipes.clear();
+    _videos.clear();
+  }
+
   List<Article> filterFavoriteArticles(List<Article> articles) {
     return articles.where((source) => _articles.contains(source.id)).toList();
   }

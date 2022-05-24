@@ -25,19 +25,15 @@ class AuthUserChangeWidget extends StatelessWidget {
       stream: FirebaseAuthService.userChanges(),
       builder: (context, snapshot) {
         if (snapshot.hasError) {
-          if (kDebugMode) {
-            print(">>> Auth Error: ${snapshot.error}");
-          }
+          debugPrint(">>> Auth Error: ${snapshot.error}");
         }
 
         // User signed out.
         if (snapshot.data == null) {
-          // TODO: Reset the FavoritesProvider state when the user signs-out
           return nullUserWidget;
         }
 
         // User signed in.
-        // TODO: Initialize new data for the user here
         return userWidget;
       },
     );
