@@ -7,14 +7,14 @@ class FirebaseAnalyticsService {
   static FirebaseAnalytics get _instance => FirebaseAnalytics.instance;
 
   static Future<void> logFavoriteAdd(String id, ContentType type) async {
-    final parameters = {'id': id, 'content_type': type.toString()};
+    final parameters = {'id': id, 'content_type': type.toLiteralValue()};
 
     await _logCustomEvent('favorite_add', parameters);
     await _logFavoriteItem(parameters);
   }
 
   static Future<void> logFavoriteRemove(String id, ContentType type) async {
-    final parameters = {'id': id, 'content_type': type.toString()};
+    final parameters = {'id': id, 'content_type': type.toLiteralValue()};
 
     await _logCustomEvent('favorite_remove', parameters);
     await _logFavoriteItem(parameters);
