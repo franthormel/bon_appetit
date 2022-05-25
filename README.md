@@ -1,16 +1,22 @@
-# bon_appetit
-
+# Bon Appétit Demo
+<!-- TODO: Add banner -->
 Bon Appétit Demo mobile application improved using Flutter.
 
-## Getting Started
+### Multi-platform📱
+Flutter supports multiple platform for developer using a single source code, however this app will only be available for Android's Google Play Store (for now).
 
-This project is a starting point for a Flutter application.
+### Smoother🌿
+The app was created with performance in mind by adhering to best practices provided by the framework itself and personal quality standards.
 
-A few resources to get you started if this is your first Flutter project:
+### Firebase integration
+Improved using Firebase [Analytics](https://firebase.google.com/products/analytics), [Authentication](https://firebase.google.com/products/auth) and [Firestore](https://firebase.google.com/products/firestore). Integrating all these services has never been easier with Flutter + Firebase🔥.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## Screenshots and GIFs
+Check the [Screens and interface Wiki page](https://github.com/pendraic/bon_appetit/wiki/Screens-and-interface) to view more meanwhile here's a peek of what's available. 😲
+<!-- TODO: Add 5 screenshots and 1 gif for homepage -->
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials, samples, guidance on
-mobile development, and a full API reference.
+## Additional information
+Check the [Wiki pages](https://github.com/pendraic/bon_appetit/wiki) to see more information.
+
+Here are some pages worth looking at: 👀
+1. [Installation](https://github.com/pendraic/bon_appetit/wiki/Installation)
