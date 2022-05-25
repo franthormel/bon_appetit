@@ -11,6 +11,7 @@ class CategoryBoxWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.all(9.0),
+      color: BonAppetitColors.black,
       child: Text(
         category.toUpperCase(),
         style: Theme.of(context)
@@ -18,7 +19,6 @@ class CategoryBoxWidget extends StatelessWidget {
             .caption
             ?.apply(color: BonAppetitColors.white),
       ),
-      color: BonAppetitColors.black,
     );
   }
 }

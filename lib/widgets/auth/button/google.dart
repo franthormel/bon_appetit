@@ -33,13 +33,17 @@ class AuthGoogleProviderButtonWidget extends StatelessWidget {
 
   Future<void> signIn(RouteProvider router) async {
     try {
-      await FirebaseAuthService.signInWithGoogle();
+      final account = await FirebaseAuthService.signInWithGoogle();
 
       if (callback != null) {
         callback!();
       }
 
-      router.goToHomepage();
+      if (account.user != null) {
+        router.push(const AuthSignInConfirmRoute());
+      } else {
+        throw Exception();
+      }
     } on FirebaseAuthException catch (e) {
       router.push(AuthErrorRoute(
         errorButtonText: "GO BACK",

@@ -126,6 +126,11 @@ import 'constants.dart';
           name: RouteName.settings,
           path: RoutePath.settings,
         ),
+        AutoRoute(
+          page: FavoritesPage,
+          name: RouteName.favorites,
+          path: RouteName.favorites,
+        ),
       ],
     ),
     RedirectRoute(path: '*', redirectTo: RouteName.initial),

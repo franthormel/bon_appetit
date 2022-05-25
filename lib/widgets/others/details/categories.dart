@@ -21,7 +21,7 @@ class DetailsCategoriesWidget extends StatelessWidget {
         children: [
           if (hasDivider)
             Column(children: const [Divider(), SizedBox(height: 10.0)]),
-          Wrap(children: children, spacing: 15.0, runSpacing: 10.0),
+          Wrap(runSpacing: 10.0, spacing: 15.0, children: children),
           const SizedBox(height: 10.0),
         ],
       ),

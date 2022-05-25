@@ -4,9 +4,9 @@ import 'package:provider/provider.dart';
 
 import '../../../router/index.dart';
 import '../../../style/index.dart';
-import '../../others/cached_hero_image.dart';
+import '../cached_hero_image.dart';
 
-class SearchPageListItemWidget extends StatelessWidget {
+class ListItemEntryWidget extends StatelessWidget {
   final void Function()? callback;
   final String category;
   final bool hasOverlayPlayButton;
@@ -15,7 +15,7 @@ class SearchPageListItemWidget extends StatelessWidget {
   final PageRouteInfo route;
   final String title;
 
-  const SearchPageListItemWidget({
+  const ListItemEntryWidget({
     required this.category,
     required this.imageUrl,
     required this.heroTag,
@@ -88,10 +88,10 @@ class SearchPageListItemWidget extends StatelessWidget {
         children: [
           image,
           FloatingActionButton.small(
-            onPressed: () {},
-            child: const Icon(Icons.play_arrow),
-            backgroundColor: BonAppetitColors.white,
             foregroundColor: BonAppetitColors.black,
+            onPressed: () {},
+            backgroundColor: BonAppetitColors.white,
+            child: const Icon(Icons.play_arrow),
           ),
         ],
       );

@@ -14,12 +14,12 @@ class SearchPageFilterChipsWidget extends StatelessWidget {
 
     return provider.showFilterChips
         ? Wrap(
+            spacing: 5.0,
             children: [
               ...provider.filters
                   .map<Widget>((e) => SearchPageFilterChipWidget(e)),
               const SearchPageFilterChipsClearAllWidget(),
             ],
-            spacing: 5.0,
           )
         : Container();
   }

@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -27,18 +26,22 @@ class DataProviderPage extends StatelessWidget {
           initialData: null,
           lazy: false,
         ),
+        ChangeNotifierProvider<FavoritesProvider>(
+          create: (context) => FavoritesProvider(),
+          lazy: false,
+        ),
         ChangeNotifierProvider<RouteProvider>(
           create: (context) => RouteProvider(),
+        ),
+        ChangeNotifierProvider<SettingsProvider>(
+          create: (context) => SettingsProvider(),
+          lazy: false,
         ),
         ChangeNotifierProvider<SuggestedRecipesFilter>(
           create: (context) => SuggestedRecipesFilter(),
         ),
         ChangeNotifierProvider<TrendingRecipesFilter>(
           create: (context) => TrendingRecipesFilter(),
-        ),
-        ChangeNotifierProvider<SettingsProvider>(
-          create: (context) => SettingsProvider(),
-          lazy: false,
         ),
       ],
       child: Consumer2<DatasetSource?, DatasetHomepage?>(
@@ -51,12 +54,10 @@ class DataProviderPage extends StatelessWidget {
   }
 
   T? catchError<T>(BuildContext context, Object? error) {
-    if (kDebugMode) {
-      final e = error as Error;
+    final e = error as Error;
 
-      print(">>> TITLE \n$e");
-      print(">>> Stack \n${e.stackTrace}");
-    }
+    debugPrint(">>> TITLE \n$e");
+    debugPrint(">>> Stack \n${e.stackTrace}");
 
     return null;
   }

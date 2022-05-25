@@ -29,7 +29,6 @@ class VideoDetailsImageWidget extends StatelessWidget {
             child: Padding(
               padding: const EdgeInsets.all(2.0),
               child: Container(
-                child: const Icon(Icons.play_arrow),
                 decoration: BoxDecoration(
                   color: Theme.of(context)
                       .floatingActionButtonTheme
@@ -38,6 +37,7 @@ class VideoDetailsImageWidget extends StatelessWidget {
                 ),
                 height: double.infinity,
                 width: double.infinity,
+                child: const Icon(Icons.play_arrow),
               ),
             ),
           ),

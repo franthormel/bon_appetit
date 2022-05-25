@@ -1,15 +1,14 @@
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 import '../../services/index.dart';
 
-/// This widget acts as a navigator when it comes to the user's authentication state.
+/// This widget acts as a mediator when it comes to the user's authentication state.
 class AuthUserChangeWidget extends StatelessWidget {
-  /// This widget will be shown if the user is authenticated and/or signed in.
+  /// This widget will be displayed if the user IS AUTHENTICATED and/or signed in.
   final Widget userWidget;
 
-  /// This widget will be displayed if the user is not authenticated and/or signed out.
+  /// This widget will be displayed if the user IS NOT AUTHENTICATED and/or signed out.
   final Widget nullUserWidget;
 
   const AuthUserChangeWidget({
@@ -25,15 +24,15 @@ class AuthUserChangeWidget extends StatelessWidget {
       stream: FirebaseAuthService.userChanges(),
       builder: (context, snapshot) {
         if (snapshot.hasError) {
-          if (kDebugMode) {
-            print(">>> Auth Error: ${snapshot.error}");
-          }
+          debugPrint(">>> Auth Error: ${snapshot.error}");
         }
 
+        // User signed out.
         if (snapshot.data == null) {
           return nullUserWidget;
         }
 
+        // User signed in.
         return userWidget;
       },
     );

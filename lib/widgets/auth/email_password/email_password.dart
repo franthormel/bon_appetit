@@ -45,8 +45,8 @@ class _AuthEmailPasswordWidgetState extends State<AuthEmailPasswordWidget> {
           emailController: emailController,
           inputDecoration: InputDecoration(
             suffixIcon: TextButton(
-              child: const Text("Edit"),
               onPressed: router.pop,
+              child: const Text("Edit"),
             ),
           ),
         ),

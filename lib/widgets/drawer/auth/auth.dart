@@ -12,7 +12,7 @@ class DrawerAuthWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        if (FirebasePlatformService.isSupported)
+        if (FirebaseService.platformIsSupported)
           const AuthUserChangeWidget(
             userWidget: DrawerAccountAuthInWidget(),
             nullUserWidget: DrawerAccountAuthOutWidget(),

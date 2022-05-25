@@ -3,16 +3,16 @@ import 'package:flutter/material.dart';
 import '../../../models/index.dart';
 import '../../../router/index.dart';
 import '../../../services/index.dart';
-import 'item.dart';
+import 'list_item_entry.dart';
 
-class SearchPageListArticleWidget extends StatelessWidget {
+class ListItemEntryArticleWidget extends StatelessWidget {
   final Article article;
 
-  const SearchPageListArticleWidget(this.article, {Key? key}) : super(key: key);
+  const ListItemEntryArticleWidget(this.article, {Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return SearchPageListItemWidget(
+    return ListItemEntryWidget(
       callback: () {
         FirebaseAnalyticsService.logSelectedArticle(article);
       },

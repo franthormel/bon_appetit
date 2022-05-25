@@ -15,16 +15,16 @@ class SearchPageControlShowWidget extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(left: 16.0),
       child: PopupMenuButton<SearchCategory>(
-        child: SearchPageControlWidget(
-          value: provider.category.toLiteralValue(),
-          title: "SHOW",
-        ),
         itemBuilder: (context) => SearchCategory.values
             .map<PopupMenuEntry<SearchCategory>>((e) =>
                 PopupMenuItem<SearchCategory>(
                     value: e, child: Text(e.toLiteralValue())))
             .toList(),
         onSelected: provider.changeCategory,
+        child: SearchPageControlWidget(
+          title: "SHOW",
+          value: provider.category.toLiteralValue(),
+        ),
       ),
     );
   }

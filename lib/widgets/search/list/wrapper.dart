@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
 import '../../../models/index.dart';
-import 'article.dart';
-import 'recipe.dart';
-import 'video.dart';
+import '../../others/list_item_entry/article.dart';
+import '../../others/list_item_entry/recipe.dart';
+import '../../others/list_item_entry/video.dart';
 
 class SearchPageListWrapperWidget extends StatelessWidget {
   final SearchResult result;
@@ -12,16 +12,16 @@ class SearchPageListWrapperWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    if (result.category == SearchCategory.recipes) {
-      return SearchPageListRecipeWidget(result.data as Recipe);
+    if (result.type == ContentType.recipe) {
+      return ListItemEntryRecipeWidget(result.data as Recipe);
     }
 
-    if (result.category == SearchCategory.articles) {
-      return SearchPageListArticleWidget(result.data as Article);
+    if (result.type == ContentType.article) {
+      return ListItemEntryArticleWidget(result.data as Article);
     }
 
-    if (result.category == SearchCategory.videos) {
-      return SearchPageListVideoWidget(result.data as Video);
+    if (result.type == ContentType.video) {
+      return ListItemEntryVideoWidget(result.data as Video);
     }
 
     return const ListTile(title: Text("Result"));

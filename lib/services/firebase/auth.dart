@@ -1,14 +1,14 @@
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:firebase_core/firebase_core.dart';
-import 'package:flutter/foundation.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 
-import '../../firebase_options.dart';
 import 'analytics.dart';
-import 'platform.dart';
 
 class FirebaseAuthService {
-  static bool get isAuthenticated => FirebaseAuth.instance.currentUser != null;
+  static String? get email => _instance.currentUser?.email;
+
+  static bool get isAuthenticated => _instance.currentUser != null;
+
+  static String? get uid => _instance.currentUser?.uid;
 
   static FirebaseAuth get _instance => FirebaseAuth.instance;
 
@@ -32,17 +32,6 @@ class FirebaseAuthService {
     _setAnalyticsUserId(credential: credential);
 
     return credential;
-  }
-
-  static Future<void> initializeFirebase() async {
-    if (FirebasePlatformService.isSupported) {
-      await Firebase.initializeApp(
-        options: DefaultFirebaseOptions.currentPlatform,
-      );
-      if (kDebugMode) {
-        await _instance.useAuthEmulator("localhost", 9099);
-      }
-    }
   }
 
   static Future<UserCredential> signIn({
@@ -77,6 +66,11 @@ class FirebaseAuthService {
     await _instance.signOut();
   }
 
+  static Future<void> useEmulator() async {
+    await _instance.useAuthEmulator("localhost", 9099);
+  }
+
+  /// Called by the [AuthUserChange] widget whenever user signs-in our signs-out.
   static Stream<User?> userChanges() => _instance.userChanges();
 
   static Future<OAuthCredential> _fetchGoogleCredential() async {

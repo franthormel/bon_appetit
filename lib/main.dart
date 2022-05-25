@@ -6,7 +6,7 @@ import 'style/index.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await FirebaseAuthService.initializeFirebase();
+  await FirebaseService.initialize();
   runApp(MyApp());
 }
 

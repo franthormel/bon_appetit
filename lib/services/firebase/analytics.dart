@@ -6,12 +6,26 @@ import '../../models/index.dart';
 class FirebaseAnalyticsService {
   static FirebaseAnalytics get _instance => FirebaseAnalytics.instance;
 
+  static Future<void> logFavoriteAdd(String id, ContentType type) async {
+    final parameters = {'id': id, 'content_type': type.toLiteralValue()};
+
+    await _logCustomEvent('favorite_add', parameters);
+    await _logFavoriteItem(parameters);
+  }
+
+  static Future<void> logFavoriteRemove(String id, ContentType type) async {
+    final parameters = {'id': id, 'content_type': type.toLiteralValue()};
+
+    await _logCustomEvent('favorite_remove', parameters);
+    await _logFavoriteItem(parameters);
+  }
+
   static Future<void> logLoginViaGoogle() async {
-    await _logLogin("Google OAuth");
+    await _logLogin('Google OAuth');
   }
 
   static Future<void> logLoginViaSignIn() async {
-    await _logLogin("Password");
+    await _logLogin('Password');
   }
 
   static Future<void> logSearch(String value) async {
@@ -19,31 +33,29 @@ class FirebaseAnalyticsService {
   }
 
   static Future<void> logSelectedArticle(Article article) async {
-    await _logSelectContent("Article", article.id);
+    await _logSelectContent('Article', article.id);
   }
 
   static Future<void> logSelectedRecipe(Recipe recipe) async {
-    await _logSelectContent("Recipe", recipe.id);
+    await _logSelectContent('Recipe', recipe.id);
   }
 
   static Future<void> logSelectedVideo(Video video) async {
-    await _logSelectContent("Video", video.id);
+    await _logSelectContent('Video', video.id);
   }
 
   static Future<void> logSignUp() async {
-    await _logSignUp("Sign up");
+    await _logSignUp('Sign up');
   }
 
   static Future<void> logSignUpViaGoogle() async {
-    await _logSignUp("Google OAuth");
+    await _logSignUp('Google OAuth');
   }
 
   static Future<void> trackScreen(PageRouteInfo route) async {
-    await _instance.logEvent(
-      name: 'screen_view',
-      parameters: {
-        'screen_name': route.routeName,
-      },
+    await _logCustomEvent(
+      'screen_view',
+      {'screen_name': route.routeName},
     );
   }
 
@@ -63,6 +75,17 @@ class FirebaseAnalyticsService {
 
   static Future<void> setUserId(String? id) async {
     await _instance.setUserId(id: id);
+  }
+
+  static Future<void> _logCustomEvent(
+    String name, [
+    Map<String, dynamic>? parameters,
+  ]) async {
+    await _instance.logEvent(name: name, parameters: parameters);
+  }
+
+  static Future<void> _logFavoriteItem(Map<String, String> parameters) async {
+    await _logCustomEvent('favorite_item', parameters);
   }
 
   static Future<void> _logSignUp(String value) async {

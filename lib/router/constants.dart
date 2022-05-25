@@ -22,6 +22,7 @@ class RoutePath {
   static const authMagicLink = "magic-link";
   static const authMagicLinkSend = "magic-link-send";
   static const settings = "settings";
+  static const favorites = "favorites";
 }
 
 class RouteName {
@@ -48,4 +49,5 @@ class RouteName {
   static const authMagicLink = "AuthMagicLinkRoute";
   static const authMagicLinkSend = "AuthMagicLinkSendRoute";
   static const settings = "SettingsRoute";
+  static const favorites = "FavoritesRoute";
 }

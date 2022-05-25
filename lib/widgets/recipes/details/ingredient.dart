@@ -16,8 +16,8 @@ class RecipeDetailsIngredientWidget extends StatelessWidget {
       children: [
         ingredient.count != null
             ? SizedBox(
-                child: Text(ingredient.count!, textAlign: TextAlign.center),
                 width: 25.0,
+                child: Text(ingredient.count!, textAlign: TextAlign.center),
               )
             : const SizedBox(width: 25.0),
         const SizedBox(width: 10.0),

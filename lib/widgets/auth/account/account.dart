@@ -8,14 +8,12 @@ class AuthAccountPageWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
+    return ListView(
       padding: const EdgeInsets.symmetric(horizontal: 24.0),
-      child: Column(
-        children: const [
-          AuthAccountPageTitleWidget(),
-          AuthAccountPageFavoritesWidget(),
-        ],
-      ),
+      children: const [
+        AuthAccountPageTitleWidget(),
+        AuthAccountPageFavoritesWidget(),
+      ],
     );
   }
 }

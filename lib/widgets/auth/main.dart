@@ -14,10 +14,10 @@ class AuthMainWidget extends StatelessWidget {
   final String title;
 
   const AuthMainWidget({
-    required this.child,
     required this.header,
     required this.subHeader,
     required this.title,
+    required this.child,
     this.email,
     this.end,
     Key? key,

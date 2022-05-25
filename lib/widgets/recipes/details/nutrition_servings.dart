@@ -18,7 +18,7 @@ class RecipeDetailsNutritionServingsWidget extends StatelessWidget {
     return HorizontalPaddingWidget(
       child: HeaderDetailsWidget(
         header: "Nutrition Per Serving",
-        child: Wrap(children: children, spacing: 5.0),
+        child: Wrap(spacing: 5.0, children: children),
       ),
     );
   }
