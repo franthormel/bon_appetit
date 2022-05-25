@@ -1,24 +1,12 @@
 enum SearchSort { relevance, newest, highestRated, mostReviewed }
 
 extension SearchSortStringer on SearchSort {
-  String toLiteralValue() {
-    String value = "None";
+  static const _kDefinitions = <SearchSort, String>{
+    SearchSort.relevance: "Relevance",
+    SearchSort.newest: "Newest",
+    SearchSort.highestRated: "Highest Rated",
+    SearchSort.mostReviewed: "Most Reviewed",
+  };
 
-    switch (this) {
-      case SearchSort.relevance:
-        value = "Relevance";
-        break;
-      case SearchSort.newest:
-        value = "Newest";
-        break;
-      case SearchSort.highestRated:
-        value = "Highest Rated";
-        break;
-      case SearchSort.mostReviewed:
-        value = "Most Reviewed";
-        break;
-    }
-
-    return value;
-  }
+  String toLiteralValue() => _kDefinitions[this] ?? "None";
 }

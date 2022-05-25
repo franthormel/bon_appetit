@@ -5,7 +5,9 @@ import 'analytics.dart';
 
 class FirebaseAuthService {
   static String? get email => _instance.currentUser?.email;
+
   static bool get isAuthenticated => _instance.currentUser != null;
+
   static String? get uid => _instance.currentUser?.uid;
 
   static FirebaseAuth get _instance => FirebaseAuth.instance;

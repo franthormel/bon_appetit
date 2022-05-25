@@ -1,24 +1,12 @@
 enum SearchCategory { allContent, recipes, articles, videos }
 
 extension SearchCategoryStringer on SearchCategory {
-  String toLiteralValue() {
-    String value = "None";
+  static const _kDefinitions = <SearchCategory, String>{
+    SearchCategory.allContent: "All Content",
+    SearchCategory.recipes: "Recipes",
+    SearchCategory.articles: "Articles",
+    SearchCategory.videos: "Videos",
+  };
 
-    switch (this) {
-      case SearchCategory.allContent:
-        value = "All Content";
-        break;
-      case SearchCategory.recipes:
-        value = "Recipes";
-        break;
-      case SearchCategory.articles:
-        value = "Articles";
-        break;
-      case SearchCategory.videos:
-        value = "Videos";
-        break;
-    }
-
-    return value;
-  }
+  String toLiteralValue() => _kDefinitions[this] ?? "None";
 }

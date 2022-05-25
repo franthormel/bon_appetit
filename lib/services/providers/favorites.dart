@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../models/index.dart';
+import '../firebase/analytics.dart';
 import '../firebase/firestore/favorites.dart';
 import '../firebase/firestore/firestore.dart';
 
@@ -89,8 +90,10 @@ class FavoritesProvider extends ChangeNotifier {
   void _toggleFavoriteRecipe(String id) {
     if (_recipes.contains(id)) {
       _recipes.remove(id);
+      FirebaseAnalyticsService.logFavoriteRemove(id, ContentType.recipe);
     } else {
       _recipes.add(id);
+      FirebaseAnalyticsService.logFavoriteAdd(id, ContentType.recipe);
     }
     _writeToFirestore();
   }
@@ -98,8 +101,10 @@ class FavoritesProvider extends ChangeNotifier {
   void _toggleFavoriteArticle(String id) {
     if (_articles.contains(id)) {
       _articles.remove(id);
+      FirebaseAnalyticsService.logFavoriteRemove(id, ContentType.article);
     } else {
       _articles.add(id);
+      FirebaseAnalyticsService.logFavoriteAdd(id, ContentType.article);
     }
     _writeToFirestore();
   }
@@ -107,8 +112,10 @@ class FavoritesProvider extends ChangeNotifier {
   void _toggleFavoriteVideo(String id) {
     if (_videos.contains(id)) {
       _videos.remove(id);
+      FirebaseAnalyticsService.logFavoriteRemove(id, ContentType.video);
     } else {
       _videos.add(id);
+      FirebaseAnalyticsService.logFavoriteAdd(id, ContentType.video);
     }
     _writeToFirestore();
   }
