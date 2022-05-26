@@ -20,3 +20,6 @@ Check the [Wiki pages](https://github.com/pendraic/bon_appetit/wiki) to see more
 
 Here are some pages worth looking at: 👀
 1. [Installation](https://github.com/pendraic/bon_appetit/wiki/Installation)
+2. [Cloud Firestore data model](https://github.com/pendraic/bon_appetit/wiki/Additional-info#cloud-firestore-data-model)
+3. [Supported platforms](https://github.com/pendraic/bon_appetit/wiki/Additional-info#supported-platforms)
+4. [Analytics provider](https://github.com/pendraic/bon_appetit/wiki/Additional-info#analytics-provider)
