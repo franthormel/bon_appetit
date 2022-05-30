@@ -2,7 +2,7 @@
 
 ### Bon Appétit Demo mobile application improved using Flutter.
 
-![Banner](https://i.imgur.com/bZLI8DE.jpg)
+![Banner](https://github.com/pendraic/bon_appetit/blob/main/.github/images/banner.jpg)
 
 ### Multi-platform📱
 Flutter supports multiple platforms for developers using a single source code, however, this app will only be available for Android's Google Play Store (for now).
@@ -16,7 +16,14 @@ Improved using Firebase [Analytics](https://firebase.google.com/products/analyti
 &nbsp;
 
 ## Screenshots
-Check the [Screens and interface Wiki page](https://github.com/pendraic/bon_appetit/wiki/Screens-and-interface) to see what's available. 😲
+#### Check the [Screens and interface Wiki page](https://github.com/pendraic/bon_appetit/wiki/Screens-and-interface) to see the rest of what's available.
+Here is an overview of the homepage:
+
+<img src="https://raw.githubusercontent.com/pendraic/bon_appetit/main/.github/images/screenshots/1-home/1-home-main.png" alt="Today's recipe" width="400">
+<img src="https://raw.githubusercontent.com/pendraic/bon_appetit/main/.github/images/screenshots/1-home/3-home-what-to-cook.png" alt="What to cook" width="400">
+<img src="https://raw.githubusercontent.com/pendraic/bon_appetit/main/.github/images/screenshots/1-home/4-home-article-main.png" alt="Article main" width="400">
+<img src="https://raw.githubusercontent.com/pendraic/bon_appetit/main/.github/images/screenshots/1-home/5-home-articles.png" alt="Articles" width="400">
+<img src="https://raw.githubusercontent.com/pendraic/bon_appetit/main/.github/images/screenshots/1-home/7-home-videos.png" alt="Videos" width="400">
 
 ## Additional information
 Check the [Wiki pages](https://github.com/pendraic/bon_appetit/wiki) to see more information.
