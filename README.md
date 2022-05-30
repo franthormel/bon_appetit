@@ -2,6 +2,8 @@
 
 ### Bon Appétit Demo mobile application improved using Flutter.
 
+<!-- TODO: ### [Available on Google Play!]() -->
+
 ![Banner](https://github.com/pendraic/bon_appetit/blob/main/.github/images/banner.jpg)
 
 ### Multi-platform📱
